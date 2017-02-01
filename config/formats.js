@@ -4045,12 +4045,11 @@ desc:["&bullet;<a href=\"http://www.smogon.com/forums/threads/recyclables.358181
 	{
 		name: "Trademarked",
 		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/trademarked.3572949/\">Trademarked</a>"],
-		ruleset: ['[Gen 7] OU'],
 		section: "New Other Metagames",
 		column: 1,
 
 		mod: 'trademarked',
-		ruleset: ['OU','trademarkclause'],
+		ruleset: ['[Gen 7] OU','trademarkclause'],
 		banlist: ['Slaking','Regigigas','Nature Power'],
 		validateSet: function (set, teamHas) {
 			if (!this.validateSet(set, teamHas).length) return [];
