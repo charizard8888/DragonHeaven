@@ -76,10 +76,10 @@ exports.BattleItems = {
                 id: "vanilliumz",
                 name: "Vanillium-Z",
                 onTakeItem: false,
-                zMove: "Snowstorm Spinkle",
+                zMove: "Snowstorm Sprinkle",
                 zMoveFrom: "Blizzard",
                 zMoveUser: ["Vanilluxe"],
-                desc: "If the holder is Vanilluxe with the move Blizzard, it can use Snowstorm Spinkle",
+                desc: "If the holder is Vanilluxe with the move Blizzard, it can use Snowstorm Sprinkle",
         },
 
 };
