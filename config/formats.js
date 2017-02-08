@@ -3834,7 +3834,7 @@ desc:["&bullet;<a href=\"http://www.smogon.com/forums/threads/recyclables.358181
 	{
         	name: "VoltTurn Mayhem",
         	desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/voltturn-mayhem-lcotm.3527847/\">VoltTurn Mayhem</a>"],
-	        section: "New Other Metagames",
+	        section: "Old Other Metagames",
 
         	ruleset: ['Pokemon', 'Standard', 'Team Preview'],
         	banlist: ['Uber', 'Soul Dew', 'Gengarite', 'Kangaskhanite', 'Lucarionite'],
