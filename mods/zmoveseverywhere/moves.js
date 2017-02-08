@@ -31,7 +31,21 @@ exports.BattleMovedex = {
 		flags: {},
 	  	onPrepareHit: function (target, source) {
 			this.attrLastMove('[still]');
-			this.add('-anim', source, "Blast Burn", target);
+			this.add('-anim', source, "Inferno Overdrive", target);
+		},
+	  	effect: {
+			duration: 4,
+			onStart: function (targetSide) {
+				this.add('-sidestart', targetSide, 'Fire Pledge');
+			},
+		onResidual: function (side) {
+				for (let i = 0; i < side.active.length; i++) {
+					let pokemon = side.active[i];
+					if (pokemon && !pokemon.hasType('Fire')) {
+						this.damage(pokemon.maxhp / 8, pokemon);
+					}
+				}
+			},
 		},
 		target: "normal",
 		type: "Fire",
@@ -49,7 +63,7 @@ exports.BattleMovedex = {
 		flags: {},
 	  	onPrepareHit: function (target, source) {
 			this.attrLastMove('[still]');
-			this.add('-anim', source, "Hydro Cannon", target);
+			this.add('-anim', source, "Hydro Vortex", target);
 		},
 		target: "normal",
 		type: "Water",
@@ -163,6 +177,9 @@ exports.BattleMovedex = {
 		onPrepareHit: function (target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Tectonic Rage", target);
+			this.add('-anim', source, "Tectonic Rage", target);
+			this.useMove('Stealth Rock', source);
+			this.useMove('Stealth Rock', target);
 		},
 		target: "normal",
 		type: "Ground",
@@ -235,16 +252,16 @@ exports.BattleMovedex = {
 				}
 				return 4;
 			},
-			onStart: function (side) {
-				this.add('-sidestart', side, 'move: Tailwind');
+			onStart: function (allySide) {
+				this.add('-sidestart', allySide, 'move: Tailwind');
 			},
 			onModifySpe: function (spe, pokemon) {
 				return this.chainModify(2);
 			},
 			onResidualOrder: 21,
 			onResidualSubOrder: 4,
-			onEnd: function (side) {
-				this.add('-sideend', side, 'move: Tailwind');
+			onEnd: function (allySide) {
+				this.add('-sideend', allySide, 'move: Tailwind');
 			},
 		},
 		target: "normal",
