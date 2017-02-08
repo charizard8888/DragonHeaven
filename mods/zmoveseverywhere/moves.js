@@ -118,6 +118,10 @@ exports.BattleMovedex = {
 		pp: 1,
 		priority: 0,
 	   	flags: {},
+	   	onPrepareHit: function (target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Black Hole Eclipse", target);
+		},
 	   	beforeTurnCallback: function (pokemon, target) {
 			target.side.addSideCondition('pursuit', pokemon);
 			if (!target.side.sideConditions['pursuit'].sources) {
