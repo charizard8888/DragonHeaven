@@ -205,6 +205,7 @@ exports.BattleMovedex = {
 		onPrepareHit: function (target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Diamond Storm", target);
+			this.useMove('Stealth Rock', source);
 		},
 		target: "self",
 		type: "Rock",
