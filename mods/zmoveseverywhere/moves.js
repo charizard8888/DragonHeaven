@@ -77,6 +77,14 @@ exports.BattleMovedex = {
 		onPrepareHit: function(target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Icicle Spear", target);
+			this.add('-anim', source, "Icicle Spear", target);
+			this.add('-anim', source, "Icicle Spear", target);
+			this.add('-anim', source, "Icicle Spear", target);
+			this.add('-anim', source, "Icicle Spear", target);
+			this.add('-anim', source, "Icicle Spear", target);
+			this.add('-anim', source, "Icicle Spear", target);
+			this.add('-anim', source, "Icicle Spear", target);
+			this.add('-anim', source, "Blizzard", target);
 		},
 		secondary: {
 			chance: 10,
