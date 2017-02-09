@@ -166,7 +166,7 @@ exports.BattleMovedex = {
 		onPrepareHit: function(target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Tectonic Rage", target);
-      this.add('-anim', source, "Tectonic Rage", target);
+      			this.add('-anim', source, "Tectonic Rage", target);
 		},
 		onModifyMove: function(move, pokemon, target) {
 			if (!target.isGrounded()) {
