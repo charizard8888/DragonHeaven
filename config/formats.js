@@ -2433,60 +2433,115 @@ exports.Formats = [
 			 ruleset: ['[Gen 7] Ubers'],
 			 banlist: ['Eviolite', 'Huge Power', 'Pure Power']
 	 },
-    {
-       name: "[Gen 7] Pokebilities",
-       desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/3588652/\">Pokebilities</a>: A Pokemon has all of its abilities active at the same time."],
-       mod: 'pokebilities',
-       ruleset: ["OU"],
-       onSwitchInPriority: 1,
-       onBegin: function() {
-         let statusability = {
-           "aerilate": true,
-           "aurabreak": true,
-           "flashfire": true,
-           "parentalbond": true,
-           "pixilate": true,
-           "refrigerate": true,
-           "sheerforce": true,
-           "slowstart": true,
-           "truant": true,
-           "unburden": true,
-           "zenmode": true
-         };
-         for (let p = 0; p < this.sides.length; p++) {
-           for (let i = 0; i < this.sides[p].pokemon.length; i++) {
-             let pokemon = this.sides[p].pokemon[i];
-             let template = this.getTemplate(pokemon.species);
-             this.sides[p].pokemon[i].innates = [];
-             let bans = this.data.Formats.gen7ou.banlist;
-             bans.push("Battle Bond");
-             for (let a in template.abilities) {
-               for (let k = 0; k < bans.length; k++) {
-                 if (toId(bans[k]) === toId(template.abilities[a])) continue;
-               }
+	{
+		name: "[Gen 7] Cross Evolution",
+		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/3569577/\">Cross Evolution</a>"],
+		section: "Old Other Metagames",
 
-               if (toId(a) == 'h' && template.unreleasedHidden) continue;
-               if (toId(template.abilities[a]) == pokemon.ability) continue;
-               if (statusability[toId(template.abilities[a])])
-                 this.sides[p].pokemon[i].innates.push("other" + toId(template.abilities[a]));
-               else
-                 this.sides[p].pokemon[i].innates.push(toId(template.abilities[a]));
-             }
-           }
-         }
-       },
-       onSwitchIn: function(pokemon) {
-         for (let i = 0; i < pokemon.innates.length; i++) {
-           if (!pokemon.volatiles[pokemon.innates[i]])
-             pokemon.addVolatile(pokemon.innates[i]);
-         }
-       },
-       onAfterMega: function(pokemon) {
-         for (let i = 0; i < pokemon.innates.length; i++) {
-           pokemon.removeVolatile(pokemon.innates[i]);
-         }
-       },
-    },
+		ruleset: ['[Gen 7] Ubers', 'Baton Pass Clause'],
+		banlist: ['Rule:nicknameclause'],
+		onValidateTeam: function (team) {
+			let nameTable = {};
+			for (let i = 0; i < team.length; i++) {
+				let name = team[i].name;
+				if (name) {
+					if (nameTable[name]) {
+						return ["Your Pokémon must have different nicknames.", "(You have more than one " + name + ")"];
+					}
+					nameTable[name] = true;
+				}
+			}
+		},
+		validateSet: function (set, teamHas) {
+			let crossTemplate = this.tools.getTemplate(set.name);
+			if (!crossTemplate.exists) return this.validateSet(set, teamHas);
+			let template = this.tools.getTemplate(set.species);
+			if (!template.exists) return ["The Pokemon '" + set.species + "' does not exist."];
+			if (!template.evos.length) return ["" + template.species + " cannot cross evolve because it doesn't evolve."];
+			if (crossTemplate.species == 'Shedinja') return ["" + template.species + " cannot cross evolve into " + crossTemplate.species + " because it is banned."];
+			if (crossTemplate.battleOnly || !crossTemplate.prevo) return ["" + template.species + " cannot cross evolve into " + crossTemplate.species + " because it isn't an evolution."];
+			let crossPrevoTemplate = this.tools.getTemplate(crossTemplate.prevo);
+			if (!crossPrevoTemplate.prevo !== !template.prevo) return ["" + template.species + " cannot cross into " + crossTemplate.species + " because they are not consecutive evolutionary stages."];
+
+			// Make sure no stat is too high/low to cross evolve to
+			let stats = {'hp': 'HP', 'atk': 'Attack', 'def': 'Defense', 'spa': 'Special Attack', 'spd': 'Special Defense', 'spe': 'Speed'};
+			for (let statid in template.baseStats) {
+				let evoStat = template.baseStats[statid] + crossTemplate.baseStats[statid] - crossPrevoTemplate.baseStats[statid];
+				if (evoStat < 1) {
+					return ["" + template.species + " cannot cross evolve to " + crossTemplate.species + " because its " + stats[statid] + " would be too low."];
+				} else if (evoStat > 255) {
+					return ["" + template.species + " cannot cross evolve to " + crossTemplate.species + " because its " + stats[statid] + " would be too high."];
+				}
+			}
+
+			let mixedTemplate = Object.assign({}, template);
+			// Ability test
+			let ability = this.tools.getAbility(set.ability);
+			if (ability.name !== 'Huge Power' && ability.name !== 'Pure Power' && ability.name !== 'Shadow Tag') mixedTemplate.abilities = crossTemplate.abilities;
+
+			mixedTemplate.learnset = Object.assign({}, template.learnset);
+			let newMoves = 0;
+			for (let i in set.moves) {
+				let move = toId(set.moves[i]);
+				if (!this.checkLearnset(move, template)) continue;
+				if (this.checkLearnset(move, crossTemplate)) continue;
+				if (++newMoves > 2) continue;
+				mixedTemplate.learnset[move] = ['6T'];
+			}
+			return this.validateSet(set, teamHas, mixedTemplate);
+		},
+		onBegin: function () {
+			let allPokemon = this.p1.pokemon.concat(this.p2.pokemon);
+			for (let i = 0, len = allPokemon.length; i < len; i++) {
+				let pokemon = allPokemon[i];
+                                if (pokemon.set.name === pokemon.set.species) continue;
+				let crossTemplate = this.getTemplate(pokemon.name);
+				if (!crossTemplate.exists) continue;
+				try {
+				let template = pokemon.baseTemplate;
+				let crossPrevoTemplate = this.getTemplate(crossTemplate.prevo);
+				let mixedTemplate = Object.assign({}, template);
+				mixedTemplate.baseSpecies = mixedTemplate.species = template.species + '-' + crossTemplate.species;
+				mixedTemplate.weightkg = Math.max(0.1, template.weightkg + crossTemplate.weightkg - crossPrevoTemplate.weightkg);
+				mixedTemplate.nfe = false;
+
+				mixedTemplate.baseStats = {};
+				for (let statid in template.baseStats) {
+					mixedTemplate.baseStats[statid] = template.baseStats[statid] + crossTemplate.baseStats[statid] - crossPrevoTemplate.baseStats[statid];
+				}
+				pokemon.hp = pokemon.maxhp = Math.floor(Math.floor(2 * mixedTemplate.baseStats['hp'] + pokemon.set.ivs['hp'] + Math.floor(pokemon.set.evs['hp'] >> 2) + 100) * pokemon.level / 100 + 10);
+
+				mixedTemplate.types = template.types.slice();
+				if (crossTemplate.types[0] !== crossPrevoTemplate.types[0]) mixedTemplate.types[0] = crossTemplate.types[0];
+				if (crossTemplate.types[1] !== crossPrevoTemplate.types[1]) mixedTemplate.types[1] = crossTemplate.types[1] || crossTemplate.types[0];
+				if (mixedTemplate.types[0] === mixedTemplate.types[1]) mixedTemplate.types.length = 1;
+
+				pokemon.baseTemplate = mixedTemplate;
+				pokemon.formeChange(mixedTemplate);
+				pokemon.crossEvolved = true;
+				} catch (e) {
+					this.add('-hint', 'Failed to cross evolve ' + pokemon.baseTemplate.species + ' to ' + crossTemplate.species + '. Please report this error so that it can be fixed.');
+				}
+			}
+		},
+		onSwitchInPriority: 1,
+		onSwitchIn: function (pokemon) {
+			if (pokemon.crossEvolved) {
+				this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
+			}
+		},
+	},
+	{
+   name: "Gods and Followers",
+   desc: [
+     "The Pok&eacute;mon in the first slot is the God; the Followers must share a type with the God. If the God Pok&eacute;mon faints, the Followers are inflicted with Curse.",
+     "&bullet; <a href=\"https://www.smogon.com/forums/threads/3545230/\">Gods and Followers</a>",
+   ],
+
+   mod: 'godsandfollowers',
+   ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'OHKO Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause', 'Followers Clause', 'Cancel Mod'],
+   banlist: ['Illegal']
+},
 	{
 		name: "[Gen 7] Inheritance",
 		desc: [
@@ -2732,6 +2787,60 @@ exports.Formats = [
             }
         }
     },
+	{
+       name: "[Gen 7] Pokebilities",
+       desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/3588652/\">Pokebilities</a>: A Pokemon has all of its abilities active at the same time."],
+       mod: 'pokebilities',
+       ruleset: ["OU"],
+       onSwitchInPriority: 1,
+       onBegin: function() {
+         let statusability = {
+           "aerilate": true,
+           "aurabreak": true,
+           "flashfire": true,
+           "parentalbond": true,
+           "pixilate": true,
+           "refrigerate": true,
+           "sheerforce": true,
+           "slowstart": true,
+           "truant": true,
+           "unburden": true,
+           "zenmode": true
+         };
+         for (let p = 0; p < this.sides.length; p++) {
+           for (let i = 0; i < this.sides[p].pokemon.length; i++) {
+             let pokemon = this.sides[p].pokemon[i];
+             let template = this.getTemplate(pokemon.species);
+             this.sides[p].pokemon[i].innates = [];
+             let bans = this.data.Formats.gen7ou.banlist;
+             bans.push("Battle Bond");
+             for (let a in template.abilities) {
+               for (let k = 0; k < bans.length; k++) {
+                 if (toId(bans[k]) === toId(template.abilities[a])) continue;
+               }
+
+               if (toId(a) == 'h' && template.unreleasedHidden) continue;
+               if (toId(template.abilities[a]) == pokemon.ability) continue;
+               if (statusability[toId(template.abilities[a])])
+                 this.sides[p].pokemon[i].innates.push("other" + toId(template.abilities[a]));
+               else
+                 this.sides[p].pokemon[i].innates.push(toId(template.abilities[a]));
+             }
+           }
+         }
+       },
+       onSwitchIn: function(pokemon) {
+         for (let i = 0; i < pokemon.innates.length; i++) {
+           if (!pokemon.volatiles[pokemon.innates[i]])
+             pokemon.addVolatile(pokemon.innates[i]);
+         }
+       },
+       onAfterMega: function(pokemon) {
+         for (let i = 0; i < pokemon.innates.length; i++) {
+           pokemon.removeVolatile(pokemon.innates[i]);
+         }
+       },
+    },
     
 	{
 		name: "[Gen 7] Trademarked",
@@ -2969,7 +3078,7 @@ exports.Formats = [
         	ruleset: ['[Gen 7] OU'],
 	},
 	{
-		name: "[Gen 7] Follow The Leader",
+		name: "Follow The Leader",
 		desc: ["&bullet; <a href=\"https://www.smogon.com/forums/threads/3565685/\">Follow The Leader</a>"],
 		section: "Old Other Metagames",
 
@@ -2999,7 +3108,7 @@ exports.Formats = [
 		},
 	},
     	{
-        name: "[Gen 7] Gifts of the Gods",
+        name: "Gifts of the Gods",
         desc: [
             "Each Pok&eacute;mon receives one base stat, depending on its position, from the Uber.",
             "&bullet; <a href=\"https://www.smogon.com/forums/threads/3579610/\">Gifts of the Gods</a>",
@@ -3007,7 +3116,7 @@ exports.Formats = [
         section: "Old Other Metagames",
         column: 4,
 
-        ruleset: ['[Gen 7] Ubers', 'Baton Pass Clause'],
+        ruleset: ['Ubers', 'Baton Pass Clause'],
         banlist: ['Uber > 1', 'AG ++ Uber', 'Blissey', 'Chansey', 'Eviolite', 'Mawilite', 'Medichamite', 'Sablenite', 'Soul Dew', 'Huge Power', 'Pure Power', 'Shadow Tag'],
         onBegin: function () {
             let stats = ['hp', 'atk', 'def', 'spa', 'spd', 'spe'];
@@ -3032,18 +3141,6 @@ exports.Formats = [
             }
         },
     	},
-	{
-   name: "[Gen 7] Gods and Followers",
-	 desc: [
-		 "The Pok&eacute;mon in the first slot is the God; the Followers must share a type with the God. If the God Pok&eacute;mon faints, the Followers are inflicted with Curse.",
-		 "&bullet; <a href=\"https://www.smogon.com/forums/threads/3545230/\">Gods and Followers</a>",
-	 ],
-   section: "Old Other Metagames",
-
-   mod: 'godsandfollowers',
-   ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'OHKO Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause', 'Followers Clause', 'Cancel Mod'],
-   banlist: ['Illegal']
-},
 	{
 		name: "[Gen 7] Haxmons",
 		section: "Old Other Metagames",
@@ -3248,11 +3345,11 @@ exports.Formats = [
         },
     },
     {
-		name: "[Gen 7] Nature Swap",
+		name: "Nature Swap",
 		desc: ["&bullet; <a href=\"https://www.smogon.com/forums/threads/3577739/\">Nature Swap</a>"],
 		section: "Old Other Metagames",
 
-		ruleset: ['[Gen 7] OU'],
+		ruleset: ['OU'],
 		banlist: ['Chansey', 'Cloyster'],
 		onBegin: function () {
 			let allPokemon = this.p1.pokemon.concat(this.p2.pokemon);
@@ -3277,14 +3374,14 @@ exports.Formats = [
 		},
 	},
 	{
-		name: "[Gen 7] Meta Man",
+		name: "Meta Man",
 		desc: [
 			"When a Pokemon faints, the opposing Pokemon replaces its current ability with the fainted Pokemon's and gains its last-used move in a new slot (for up to 9 total moves). These changes last the entire match. If a Pokemon faints before using a move during the match, no move is gained by the opponent.",
 			"&bullet; <a href=\"http://www.smogon.com/forums/threads/meta-man.3565966/\">Meta Man</a>",
 		],
 		section: "Old Other Metagames",
 		mod: "metaman",
-		ruleset: ['[Gen 7] OU'],
+		ruleset: ['OU'],
 		onFaint: function(pokemon)
 		{
 			this.add("-message",pokemon.side.foe.pokemon[0].name+" received "+pokemon.name+"'s "+this.data.Abilities[pokemon.ability].name+"!");
@@ -3301,11 +3398,11 @@ exports.Formats = [
 		},
 	},
 	{
-	    name: "{gen 7] Top Percentage",
+	    name: "Top Percentage",
 	    section: "Old Other Metagames",
 	    mod: 'toppercentage',
 	    desc:["&lt; <a href=\"http://www.smogon.com/forums/threads/top-percentage.3564459/\">Top Percentage</a>"],
-	    ruleset: ['[Gen 7] OU'],
+	    ruleset: ['OU'],
 	    onBegin: function() {
 			this.add("raw|Welcome to Top Percentage! The first Player to deal 400% damage wins! HAHAHAH!");
 		for (var i = 0; i < this.sides.length; i++) {
@@ -3331,12 +3428,12 @@ exports.Formats = [
 
 	},
 	{
-    	 name: "[Gen 7] Baton Pass Marathon",
+    	 name: "Baton Pass Marathon",
     	 desc:["&bullet; <a href=\"http://www.smogon.com/forums/threads/baton-pass-marathon-coded-looking-for-a-server.3517800\">Baton Pass Marathon</a>",],
     	 section: "Old Other Metagames",
     	 mod: 'batonpassmarathon',
 
-    	 ruleset: ['[Gen 7] OU'],
+    	 ruleset: ['OU'],
     	 banlist: ['Perish Song', 'Sand Attack', 'Flash', 'Kinesis', 'Mud-Slap', 'Smokescreen', 'Acupressure'],
     	 onFaint: function (pokemon) {
     	      pokemon.clearVolatile();
@@ -3344,14 +3441,14 @@ exports.Formats = [
 	},
 	{
 
-			 name: "[Gen 7] Camomons",
+			 name: "Camomons",
 			 desc: [
 					 "Pok&eacute;mon change type to match their first two moves.",
 					 "&bullet; <a href=\"https://www.smogon.com/forums/threads/3513059/\">Camomons</a>",
 			 ],
 			section: "Old Other Metagames",
 
-			 ruleset: ['[Gen 7] OU'],
+			 ruleset: ['OU'],
 			 onBegin: function () {
 					 let allPokemon = this.p1.pokemon.concat(this.p2.pokemon);
 					 for (let i = 0, len = allPokemon.length; i < len; i++) {
@@ -3419,9 +3516,9 @@ exports.Formats = [
 		},
 	},
 	{
-			name: "[Gen 7] The All-Stars Metagame",
+			name: "The All-Stars Metagame",
 			section: "Old Other Metagames",
-			ruleset: ['[Gen 7] OU'],
+			ruleset: ['OU'],
 			desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/the-all-stars-metagame-v2-enter-the-pu-a-pokemon-from-each-tier.3510864//\">The All-Stars Metagame</a>"],
 			banlist: [],
 
@@ -3455,10 +3552,10 @@ exports.Formats = [
 		},
 	},
 	{
-	    name: "[Gen 7] Mirror Move",
+	    name: "Mirror Move",
 	    desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/mirror-move.3572990/\">Mirror Move</a>"],
 	    section: "Old Other Metagames",
-	    ruleset: ['[Gen 7] OU'],
+	    ruleset: ['OU'],
 	    banlist: ["Imprison"],
 	    mod: "mirrormove",
 	    onBegin: function() {
@@ -3487,9 +3584,9 @@ exports.Formats = [
 	    }
 	},
 	{
-		name: "[Gen 7] Nature's Fear",
+		name: "Nature's Fear",
 		section: "Old Other Metagames",
-		ruleset:['[Gen 7] OU'],
+		ruleset:['OU'],
 		desc: ["All pokes have a special \"Intimidate\" on top on their ability, which means it still have their original Ability. This Intimidate lowers opposing stats by 1 stage based on negative (may be changed to positive if it's better) side of the Nature. For example, if you send out a Timid natured pokemon, your opponent's Attack is lowered.",
 		       "&bullet; <a href=\"http://www.smogon.com/forums/threads/natures-fear.3584688/\">Nature's Fear</a>"],
 		onSwitchIn: function (pokemon) {
@@ -3530,10 +3627,10 @@ exports.Formats = [
 		},
 	},
 	{
-    name: "[Gen 7] Open House",
+    name: "Open House",
     section: "Old Other Metagames",
 
-    ruleset: ['[Gen 7] OU'],
+    ruleset: ['OU'],
     banlist: [],
 
 
@@ -3609,10 +3706,10 @@ exports.Formats = [
 		}
 	},
 	{
-     name: "[Gen 7] Palette Pals",
+     name: "Palette Pals",
      section: "Old Other Metagames",
      desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/palette-pals-formerly-tradeoff.3578405/\">Palette Pals</a>"],
-     ruleset: ['[Gen 7] OU'],
+     ruleset: ['OU'],
      banlist: ['Huge Power', 'Pure Power', 'Medichamite', 'Kyurem-Black', 'Slaking', 'Regigigas', 'Light Ball', 'Eviolite', 'Deep Sea Tooth', 'Deep Sea Scale', 'Thick Club'],
      onBegin: function () {
        for (let j = 0; j < this.sides.length; j++) {
@@ -3653,10 +3750,10 @@ exports.Formats = [
      }
    },
 {
-	name:"[Gen 7] Recyclables",
+	name:"Recyclables",
 	section: "Old Other Metagames",
 desc:["&bullet;<a href=\"http://www.smogon.com/forums/threads/recyclables.3581818/\">Recyclables</a>: <br />If the item on a Pokemon was not knocked off, it will be recycled at the end of every turn."],
-	ruleset:['[Gen 7] OU'],
+	ruleset:['OU'],
 		onResidualOrder: 999, //This will always occur as the last possible occurence of the turn's residual phase.
         onResidual: function () {
             if ((this.p1.pokemon[0].item || !this.p1.pokemon[0].lastItem)&&!(this.p2.pokemon[0].item || !this.p2.pokemon[0].lastItem))
@@ -3682,7 +3779,7 @@ desc:["&bullet;<a href=\"http://www.smogon.com/forums/threads/recyclables.358181
         }
 },
 	{
-        name: "[Gen 7] The Negative Metagame",
+        name: "The Negative Metagame",
         desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/the-negative-metagame-playable-on-aqua.3529936/\">The Negative Metagame</a>"],
         section: "Old Other Metagames",
         mod: 'thenegativemetagame',
@@ -3690,10 +3787,10 @@ desc:["&bullet;<a href=\"http://www.smogon.com/forums/threads/recyclables.358181
         banlist: ['DeepSeaTooth', 'DeepSeaScale', 'Eviolite', 'Huge Power', 'Light Ball', 'Pure Power', 'Smeargle', 'Thick Club', 'Illegal', 'Unreleased']
     	},
          {
-		name: "[Gen 7] Therianmons",
+		name: "Therianmons",
 	    section: "Old Other Metagames",
 	    desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/therianmons.3566303/\">Therianmons</a>"],
-	    ruleset: ['[Gen 7] OU'],
+	    ruleset: ['OU'],
 
 	    onBegin: function() {
 	    	for (let j = 0; j < this.sides.length; j++) {
@@ -3735,9 +3832,9 @@ desc:["&bullet;<a href=\"http://www.smogon.com/forums/threads/recyclables.358181
 	    },
 	},
 	{
-	name:"[Gen 7] The Great Pledge",
+	name:"The Great Pledge",
 	section: "Old Other Metagames",
-	ruleset:['[Gen 7] OU'],
+	ruleset:['OU'],
 	desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/the-great-pledge.3581858/\">The Great Pledge</a>"],
 	onBegin: function()
 	{
@@ -3858,7 +3955,7 @@ desc:["&bullet;<a href=\"http://www.smogon.com/forums/threads/recyclables.358181
 	},
 },
 	{
-        name: "[Gen 7] Type Omelette",
+        name: "Type Omelette",
         section: "Old Other Metagames",
 
 
@@ -3874,7 +3971,7 @@ desc:["&bullet;<a href=\"http://www.smogon.com/forums/threads/recyclables.358181
         }
     	},
 	{
-        	name: "[Gen 7] VoltTurn Mayhem",
+        	name: "VoltTurn Mayhem",
         	desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/voltturn-mayhem-lcotm.3527847/\">VoltTurn Mayhem</a>"],
 	        section: "Old Other Metagames",
 
@@ -3887,7 +3984,7 @@ desc:["&bullet;<a href=\"http://www.smogon.com/forums/threads/recyclables.358181
         	}
     	},
 	{
-        name: "[Gen 7] Move Equality",
+        name: "Move Equality",
 	desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/move-equality-playable-whirlpool-fire-spin-infestation-sand-tomb-are-now-banned-see-post-193.3539145/\">Move Equality</a>"],
         section: "Old Other Metagames",
         ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
@@ -3907,7 +4004,7 @@ desc:["&bullet;<a href=\"http://www.smogon.com/forums/threads/recyclables.358181
         }
     },
 	{
-        name: "[Gen 7] Move Equality 1v1",
+        name: "Move Equality 1v1",
 	desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/move-equality-playable-whirlpool-fire-spin-infestation-sand-tomb-are-now-banned-see-post-193.3539145/\">Move Equality</a>"],
         section: "Old Other Metagames",
         ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
@@ -3936,7 +4033,7 @@ desc:["&bullet;<a href=\"http://www.smogon.com/forums/threads/recyclables.358181
         }
     },
 	{
-        name: "[Gen 7] Mega Mania",
+        name: "Mega Mania",
 	desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/mega-mania-playable-on-aqua.3525444/\">Mega Mania</a>"],
         section: "Old Other Metagames",
 
@@ -3945,7 +4042,7 @@ desc:["&bullet;<a href=\"http://www.smogon.com/forums/threads/recyclables.358181
         banlist: ['Uber', 'Soul Dew', 'Gengarite', 'Kangaskhanite', 'Lucarionite', 'Mawilite', 'Salamencite', 'Regigigas', 'Slaking', 'Ignore Illegal Abilities']
     },
 	{
-  name: "[Gen 7] Technician Tower",
+  name: "Technician Tower",
   desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/technician-tower-2-0-now-playable-on-the-aqua-server.3521635/\">Technician Tower</a>"],
   section: "Old Other Metagames",
   mod:'technichiantower',
@@ -3993,7 +4090,7 @@ desc:["&bullet;<a href=\"http://www.smogon.com/forums/threads/recyclables.358181
         }
     },
 	{
-    name: "[Gen 7] Type Exchange",
+    name: "Type Exchange",
     desc: [
         "&bullet; <a href=\"http://www.smogon.com/forums/threads/type-exchange.3556479/\">Type Exchange Metagame Discussion</a>",
         "&bullet; <a href=\"http://www.smogon.com/forums/threads/type-exchange.3556479/page-2#post-6547201/\">Gothitelle & Gothorita Quick Ban</a>"
@@ -4051,111 +4148,11 @@ desc:["&bullet;<a href=\"http://www.smogon.com/forums/threads/recyclables.358181
         ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
         banlist: ['Uber', 'Soul Dew', 'Gengarite', 'Kangaskhanite', 'Lucarionite', 'Weather Ball', 'Castform']
     },
-
-
-    	{
-		name: "[Gen 7] Cross Evolution",
-		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/3569577/\">Cross Evolution</a>"],
-		section: "Old Other Metagames",
-
-		ruleset: ['[Gen 7] Ubers', 'Baton Pass Clause'],
-		banlist: ['Rule:nicknameclause'],
-		onValidateTeam: function (team) {
-			let nameTable = {};
-			for (let i = 0; i < team.length; i++) {
-				let name = team[i].name;
-				if (name) {
-					if (nameTable[name]) {
-						return ["Your Pokémon must have different nicknames.", "(You have more than one " + name + ")"];
-					}
-					nameTable[name] = true;
-				}
-			}
-		},
-		validateSet: function (set, teamHas) {
-			let crossTemplate = this.tools.getTemplate(set.name);
-			if (!crossTemplate.exists) return this.validateSet(set, teamHas);
-			let template = this.tools.getTemplate(set.species);
-			if (!template.exists) return ["The Pokemon '" + set.species + "' does not exist."];
-			if (!template.evos.length) return ["" + template.species + " cannot cross evolve because it doesn't evolve."];
-			if (crossTemplate.species == 'Shedinja') return ["" + template.species + " cannot cross evolve into " + crossTemplate.species + " because it is banned."];
-			if (crossTemplate.battleOnly || !crossTemplate.prevo) return ["" + template.species + " cannot cross evolve into " + crossTemplate.species + " because it isn't an evolution."];
-			let crossPrevoTemplate = this.tools.getTemplate(crossTemplate.prevo);
-			if (!crossPrevoTemplate.prevo !== !template.prevo) return ["" + template.species + " cannot cross into " + crossTemplate.species + " because they are not consecutive evolutionary stages."];
-
-			// Make sure no stat is too high/low to cross evolve to
-			let stats = {'hp': 'HP', 'atk': 'Attack', 'def': 'Defense', 'spa': 'Special Attack', 'spd': 'Special Defense', 'spe': 'Speed'};
-			for (let statid in template.baseStats) {
-				let evoStat = template.baseStats[statid] + crossTemplate.baseStats[statid] - crossPrevoTemplate.baseStats[statid];
-				if (evoStat < 1) {
-					return ["" + template.species + " cannot cross evolve to " + crossTemplate.species + " because its " + stats[statid] + " would be too low."];
-				} else if (evoStat > 255) {
-					return ["" + template.species + " cannot cross evolve to " + crossTemplate.species + " because its " + stats[statid] + " would be too high."];
-				}
-			}
-
-			let mixedTemplate = Object.assign({}, template);
-			// Ability test
-			let ability = this.tools.getAbility(set.ability);
-			if (ability.name !== 'Huge Power' && ability.name !== 'Pure Power' && ability.name !== 'Shadow Tag') mixedTemplate.abilities = crossTemplate.abilities;
-
-			mixedTemplate.learnset = Object.assign({}, template.learnset);
-			let newMoves = 0;
-			for (let i in set.moves) {
-				let move = toId(set.moves[i]);
-				if (!this.checkLearnset(move, template)) continue;
-				if (this.checkLearnset(move, crossTemplate)) continue;
-				if (++newMoves > 2) continue;
-				mixedTemplate.learnset[move] = ['6T'];
-			}
-			return this.validateSet(set, teamHas, mixedTemplate);
-		},
-		onBegin: function () {
-			let allPokemon = this.p1.pokemon.concat(this.p2.pokemon);
-			for (let i = 0, len = allPokemon.length; i < len; i++) {
-				let pokemon = allPokemon[i];
-                                if (pokemon.set.name === pokemon.set.species) continue;
-				let crossTemplate = this.getTemplate(pokemon.name);
-				if (!crossTemplate.exists) continue;
-				try {
-				let template = pokemon.baseTemplate;
-				let crossPrevoTemplate = this.getTemplate(crossTemplate.prevo);
-				let mixedTemplate = Object.assign({}, template);
-				mixedTemplate.baseSpecies = mixedTemplate.species = template.species + '-' + crossTemplate.species;
-				mixedTemplate.weightkg = Math.max(0.1, template.weightkg + crossTemplate.weightkg - crossPrevoTemplate.weightkg);
-				mixedTemplate.nfe = false;
-
-				mixedTemplate.baseStats = {};
-				for (let statid in template.baseStats) {
-					mixedTemplate.baseStats[statid] = template.baseStats[statid] + crossTemplate.baseStats[statid] - crossPrevoTemplate.baseStats[statid];
-				}
-				pokemon.hp = pokemon.maxhp = Math.floor(Math.floor(2 * mixedTemplate.baseStats['hp'] + pokemon.set.ivs['hp'] + Math.floor(pokemon.set.evs['hp'] >> 2) + 100) * pokemon.level / 100 + 10);
-
-				mixedTemplate.types = template.types.slice();
-				if (crossTemplate.types[0] !== crossPrevoTemplate.types[0]) mixedTemplate.types[0] = crossTemplate.types[0];
-				if (crossTemplate.types[1] !== crossPrevoTemplate.types[1]) mixedTemplate.types[1] = crossTemplate.types[1] || crossTemplate.types[0];
-				if (mixedTemplate.types[0] === mixedTemplate.types[1]) mixedTemplate.types.length = 1;
-
-				pokemon.baseTemplate = mixedTemplate;
-				pokemon.formeChange(mixedTemplate);
-				pokemon.crossEvolved = true;
-				} catch (e) {
-					this.add('-hint', 'Failed to cross evolve ' + pokemon.baseTemplate.species + ' to ' + crossTemplate.species + '. Please report this error so that it can be fixed.');
-				}
-			}
-		},
-		onSwitchInPriority: 1,
-		onSwitchIn: function (pokemon) {
-			if (pokemon.crossEvolved) {
-				this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
-			}
-		},
-	},
 	{
 			name:"Partners in Crime",
 		        section: "Old Other Metagames",
 		        desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/partners-in-crime.3559988/\">Partners in Crime</a>"],
-		        ruleset: ['[Gen 7] Doubles OU'],
+		        ruleset: ['Doubles OU'],
 		        mod: "pic",
 		        gameType:"doubles",
 		        banlist: ["Huge Power","Kangaskhanite", "Mawilite","Medichamite","Pure Power","Wonder Guard"],
@@ -4237,7 +4234,7 @@ desc:["&bullet;<a href=\"http://www.smogon.com/forums/threads/recyclables.358181
 		        },
 		},
 	{
-		name: "[Gen 7] Averagemons",
+		name: "Averagemons",
 		desc: [
 			"Every Pok&eacute;mon has a stat spread of 100/100/100/100/100/100.",
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3526481/\">Averagemons</a>",
@@ -4268,7 +4265,7 @@ desc:["&bullet;<a href=\"http://www.smogon.com/forums/threads/recyclables.358181
         }
     },
 	{
-        name: "[Gen 7] Protean Palace",
+        name: "Protean Palace",
 				desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/protean-palace.3496299/\">Protean Palace</a>"],
 				section: "Old Other Metagames",
 				column: 2,
