@@ -11,15 +11,18 @@ exports.BattleMovedex = {
 		pp: 1,
 		priority: 0,
 		flags: {},
-		onPrepareHit: function (target, source) {
+		onPrepareHit: function(target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Frenzy Plant", target);
 		},
+		onHit: function (target, source, move) {
+			target.side.addSideCondition('grasspledge');
+		},
 		target: "normal",
 		type: "Grass",
-		isZ: "venusauramz",
+		isZ: "venusaurumz",
 	},
-  "intensifiedinferno": {
+	"intensifiedinferno": {
 		accuracy: 100,
 		basePower: 200,
 		category: "Special",
@@ -29,29 +32,18 @@ exports.BattleMovedex = {
 		pp: 1,
 		priority: 0,
 		flags: {},
-	  	onPrepareHit: function (target, source) {
+		onPrepareHit: function(target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Inferno Overdrive", target);
 		},
-	  	effect: {
-			duration: 4,
-			onStart: function (targetSide) {
-				this.add('-sidestart', targetSide, 'Fire Pledge');
-			},
-		onResidual: function (side) {
-				for (let i = 0; i < side.active.length; i++) {
-					let pokemon = side.active[i];
-					if (pokemon && !pokemon.hasType('Fire')) {
-						this.damage(pokemon.maxhp / 8, pokemon);
-					}
-				}
-			},
+		onHit: function (target, source, move) {
+			target.side.addSideCondition('firepledge');
 		},
 		target: "normal",
 		type: "Fire",
 		isZ: "charizardiumz",
 	},
-  "destructivedownpour": {
+	"destructivedownpour": {
 		accuracy: 100,
 		basePower: 200,
 		category: "Special",
@@ -61,15 +53,18 @@ exports.BattleMovedex = {
 		pp: 1,
 		priority: 0,
 		flags: {},
-	  	onPrepareHit: function (target, source) {
+		onPrepareHit: function(target, source) {
 			this.attrLastMove('[still]');
-			this.add('-anim', source, "Hydro Vortex", target);
+			this.add('-anim', source, "Hydro Cannon", target);
+		},
+		onHit: function (target, source, move) {
+			source.side.addSideCondition('waterpledge');
 		},
 		target: "normal",
 		type: "Water",
 		isZ: "blastoisiumz",
 	},
-  "hailhydra": {
+	"hailhydra": {
 		accuracy: 100,
 		basePower: 20,
 		category: "Special",
@@ -79,31 +74,23 @@ exports.BattleMovedex = {
 		pp: 1,
 		priority: 0,
 		flags: {},
-	  	onPrepareHit: function (target, source) {
+		onPrepareHit: function(target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Icicle Spear", target);
-			this.add('-anim', source, "Icicle Spear", target);
-			this.add('-anim', source, "Icicle Spear", target);
-			this.add('-anim', source, "Icicle Spear", target);
-			this.add('-anim', source, "Icicle Spear", target);
-			this.add('-anim', source, "Icicle Spear", target);
-			this.add('-anim', source, "Icicle Spear", target);
-			this.add('-anim', source, "Icicle Spear", target);
-			this.add('-anim', source, "Blizzard", target);
 		},
-	  	secondary: {
+		secondary: {
 			chance: 10,
 			status: 'frz',
 		},
-    		multihit: 9,
+		multihit: 9,
 		target: "normal",
 		type: "Ice",
 		isZ: "alolaninetaliumz",
 	},
-   "pursuingstrike": {
+	"pursuingstrike": {
 		accuracy: 100,
 		basePower: 180,
-	        basePowerCallback: function (pokemon, target, move) {
+		basePowerCallback: function(pokemon, target, move) {
 			// You can't get here unless the pursuit succeeds
 			if (target.beingCalledBack) {
 				this.debug('Pursuit damage boost');
@@ -117,34 +104,29 @@ exports.BattleMovedex = {
 		name: "Pursuing Strike",
 		pp: 1,
 		priority: 0,
-	   	flags: {},
-	   	onPrepareHit: function (target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Black Hole Eclipse", target);
-		},
-	   	beforeTurnCallback: function (pokemon, target) {
-			target.side.addSideCondition('pursuit', pokemon);
-			if (!target.side.sideConditions['pursuit'].sources) {
-				target.side.sideConditions['pursuit'].sources = [];
+		beforeTurnCallback: function(pokemon, target) {
+			target.side.addSideCondition('pursuingstrike', pokemon);
+			if (!target.side.sideConditions['pursuingstrike'].sources) {
+				target.side.sideConditions['pursuingstrike'].sources = [];
 			}
-			target.side.sideConditions['pursuit'].sources.push(pokemon);
+			target.side.sideConditions['pursuingstrike'].sources.push(pokemon);
 		},
-		onModifyMove: function (move, source, target) {
+		onModifyMove: function(move, source, target) {
 			if (target && target.beingCalledBack) move.accuracy = true;
 		},
-		onTryHit: function (target, pokemon) {
-			target.side.removeSideCondition('pursuit');
+		onTryHit: function(target, pokemon) {
+			target.side.removeSideCondition('pursuingstrike');
 		},
 		effect: {
 			duration: 1,
-			onBeforeSwitchOut: function (pokemon) {
-				this.debug('Pursuit start');
+			onBeforeSwitchOut: function(pokemon) {
+				this.debug('Pursuing Strike start');
 				let sources = this.effectData.sources;
 				let alreadyAdded = false;
 				for (let i = 0; i < sources.length; i++) {
 					if (sources[i].moveThisTurn || sources[i].fainted) continue;
 					if (!alreadyAdded) {
-						this.add('-activate', pokemon, 'move: Pursuit');
+						this.add('-activate', pokemon, 'move: Pursuing Strike');
 						alreadyAdded = true;
 					}
 					this.cancelMove(sources[i]);
@@ -159,18 +141,21 @@ exports.BattleMovedex = {
 							}
 						}
 					}
-					this.runMove('pursuit', sources[i], this.getTargetLoc(pokemon, sources[i]));
+					this.runMove('pursuingstrike', sources[i], this.getTargetLoc(pokemon, sources[i]));
 				}
 			},
 		},
-	   	breaksProtect: true,
 		target: "normal",
 		type: "Dark",
+    onPrepareHit: function(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Black Hole Eclipse", target);
+		},
 		isZ: "tyraniumz",
 	},
 	"earthlycrush": {
 		accuracy: 100,
-		basePower: 200,
+		basePower: 175,
 		category: "Physical",
 		id: "earthlycrush",
 		isViable: true,
@@ -178,12 +163,19 @@ exports.BattleMovedex = {
 		pp: 1,
 		priority: 0,
 		flags: {},
-		onPrepareHit: function (target, source) {
+		onPrepareHit: function(target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Tectonic Rage", target);
-			this.add('-anim', source, "Tectonic Rage", target);
-			this.useMove('Stealth Rock', source);
-			this.useMove('Stealth Rock', target);
+      this.add('-anim', source, "Tectonic Rage", target);
+		},
+		onModifyMove: function(move, pokemon, target) {
+			if (!target.isGrounded()) {
+				move.type = 'Rock';
+			}
+		},
+		onHit: function (target, source, move) {
+			this.add('-sidestart', source.side, 'move: Stealth Rock');
+			this.add('-sidestart', target.side, 'move: Stealth Rock');
 		},
 		target: "normal",
 		type: "Ground",
@@ -200,7 +192,7 @@ exports.BattleMovedex = {
 		pp: 1,
 		priority: 0,
 		flags: {},
-		onPrepareHit: function (target, source) {
+		onPrepareHit: function(target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Giga Drain", target);
 		},
@@ -223,54 +215,37 @@ exports.BattleMovedex = {
 			atk: 2,
 		},
 		flags: {},
-		onPrepareHit: function (target, source) {
+		onPrepareHit: function(target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Diamond Storm", target);
-			this.useMove('Stealth Rock', source);
+		},
+    onHit: function (target, source, move) {
+			this.add('-sidestart', target.side, 'move: Stealth Rock');
 		},
 		target: "self",
 		type: "Rock",
 		isZ: "gigaliumz",
 	},
-	"snowstormsprinkle": {
+	"snowstormspinkle": {
 		accuracy: 100,
 		basePower: 210,
 		category: "Special",
-		id: "snowstormsprinkle",
+		id: "snowstormspinkle",
 		isViable: true,
-		name: "Snowstorm Sprinkle",
+		name: "Snowstorm Spinkle",
 		pp: 1,
 		priority: 0,
 		flags: {},
-		onPrepareHit: function (target, source) {
+		onPrepareHit: function(target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Blizzard", target);
 		},
-		weather: 'hail',
-		sideCondition: 'tailwind',
-		effect: {
-			duration: 4,
-			durationCallback: function (target, source, effect) {
-				if (source && source.hasAbility('persistent')) {
-					return 6;
-				}
-				return 4;
-			},
-			onStart: function (allySide) {
-				this.add('-sidestart', allySide, 'move: Tailwind');
-			},
-			onModifySpe: function (spe, pokemon) {
-				return this.chainModify(2);
-			},
-			onResidualOrder: 21,
-			onResidualSubOrder: 4,
-			onEnd: function (allySide) {
-				this.add('-sideend', allySide, 'move: Tailwind');
-			},
+		onHit: function(target, source, move) {
+			this.add('-sidestart', source.side, 'move: Tailwind');
 		},
+		weather: 'hail',
 		target: "normal",
 		type: "Ice",
 		isZ: "vanilliumz",
 	},
-
 };
