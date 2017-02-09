@@ -14,8 +14,8 @@ exports.Formats = [
 		mod: 'gen7',
 		team: 'randomFactory',
 		ruleset: ['Pokemon', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod'],
-	},
-	{
+	}, 
+    {
 		name: "[Gen 7] Hackmons Cup",
 		desc: ["Randomized teams of level-balanced Pok&eacute;mon with absolutely any ability, moves, and item."],
 
@@ -23,6 +23,7 @@ exports.Formats = [
 		team: 'randomHC',
 		ruleset: ['Pokemon', 'HP Percentage Mod', 'Cancel Mod'],
 	},
+	
 	{
 		name: "[Gen 7] Doubles Hackmons Cup",
 
@@ -1579,6 +1580,21 @@ exports.Formats = [
 		team: 'random',
 		ruleset: ['Pokemon', 'Same Type Clause', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod'],
 	},
+  {
+		name: "[Gen 7] Metronome Battle",
+		desc: ["&bullet; Metronome battles format: 6v6 singles, Only move allowed is metronome, all healing items/abilities are banned, Ubers (and mega rayquaza) are banned, immunites dont exist in this format (ex normal is not very effective on ghost instead of x0)"],
+		ruleset: ['[Gen 7] OU'],
+		banlist: ['Aguav Berry', 'Berry Juice', 'Cheek Pouch', 'Dry Skin', 'Ice Body', 'Poison Heal', 'Regenerator', 'Volt Absorb', 'Water Absorb', 'Rain Dish', 'Blace Sludge', 'Enigma Berry', 'Figy Berry', 'Iapapa Berry', 'Mago Berry', 'Oran Berry', 'Shell Bell', 'Sitrus Berry', 'Wiki Berry', 'Leftovers'],
+		onValidateSet: function (set) {
+			if (set.moves.length >= 1 || toId(set.moves[0]) !== 'metronome') {
+				return [(set.name || set.species) + " can only have Metronome."];
+			}
+		},
+		onEffectiveness: function (typeMod, target, type, move) {
+			//change no effect to not very effective
+			if (move && !this.getImmunity(move, type)) return 2;
+		},
+  },
 	{
 		name: "[Gen 7] Random Battle",
 		desc: ["Randomized teams of level-balanced Pok&eacute;mon with sets that are generated to be competitively viable."],
