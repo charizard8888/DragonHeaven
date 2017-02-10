@@ -4775,10 +4775,10 @@ desc:["&bullet;<a href=\"http://www.smogon.com/forums/threads/recyclables.358181
 			}
 		},
 	},
-	/*// RoA Spotlight
+	// RoA Spotlight
 	///////////////////////////////////////////////////////////////////
 
-	{
+	/*{
 		section: "RoA Spotlight",
 		column: 4,
 	},
