@@ -298,7 +298,6 @@ exports.grouplist = [
 		addhtml: true,
 		potd: true,
 		pminfobox:true,
-		eztc:true,
 		disableladder: true,
                 globalonly: true,
 		tournamentsmanagement: true,
