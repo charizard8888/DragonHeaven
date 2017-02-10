@@ -2436,7 +2436,7 @@ exports.Formats = [
 	{
 		name: "[Gen 7] Cross Evolution",
 		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/3569577/\">Cross Evolution</a>"],
-		section: "Old Other Metagames",
+		section: "New Other Metagames",
 
 		ruleset: ['[Gen 7] Ubers', 'Baton Pass Clause'],
 		banlist: ['Rule:nicknameclause'],
@@ -2869,7 +2869,7 @@ exports.Formats = [
 		column: 3,
 	},
 	{
-		name: "[Gen 7] Ascension",
+		name: "Ascension",
 		desc: [
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3546114/\">OU Metagame Discussion</a>",
 			"&bullet; <a href=\"https://www.smogon.com/dex/xy/tags/ou/\">OU Banlist</a>",
@@ -2903,7 +2903,7 @@ exports.Formats = [
 		},
 	},
 	{
-		name: "Move Mastery",
+		name: "[Gen 7] Move Mastery",
 		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/move-mastery.3590075/\">Move Mastery</a>"],
 		ruleset: ['Pokemon', 'Species Clause', 'Moody Clause', 'Baton Pass Clause', 'Evasion Moves Clause', 'OHKO Clause', 'Swagger Clause', 'Endless Battle Clause', 'Team Preview', 'HP Percentage Mod', 'Sleep Clause Mod', 'Cancel Mod'],
 		banlist: ['Unreleased', 'Illegal'],
@@ -3071,11 +3071,11 @@ exports.Formats = [
 		column: 4,
 	},
 	{
-        	name: "[Gen 7] Anti-Vaxxers",
+        	name: "Anti-Vaxxers",
 		desc: ["All type-based immunities cease to apply."],
         	section: "Old Other Metagames",
         	mod: "antivaxxers",
-        	ruleset: ['[Gen 7] OU'],
+        	ruleset: ['OU'],
 	},
 	{
 		name: "Follow The Leader",
@@ -3142,10 +3142,10 @@ exports.Formats = [
         },
     	},
 	{
-		name: "[Gen 7] Haxmons",
+		name: "Haxmons",
 		section: "Old Other Metagames",
 
-		ruleset: ['[Gen 7] OU', 'Freeze Clause'],
+		ruleset: ['OU', 'Freeze Clause'],
 		banlist: ["King's Rock", 'Razor Fang', 'Stench'],
 		onModifyMovePriority: -100,
 		onModifyMove: function (move) {
@@ -3159,14 +3159,14 @@ exports.Formats = [
 		}
 	},
 	{
-		name: "[Gen 7] STABmons",
+		name: "STABmons",
 		desc: [
 			"Pok&eacute;mon can use any move of their typing, in addition to the moves they can normally learn.",
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3547279/\">STABmons</a>",
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3558034/\">STABmons Viability Ranking</a>",
 		],
 
-		ruleset: ['[Gen 7] OU'],
+		ruleset: ['OU'],
 		banlist: ['Ignore STAB Moves', 'Diggersby', 'Kyurem-Black', 'Porygon-Z', 'Thundurus', 'Aerodactylite', 'Altarianite', "King's Rock", 'Metagrossite', 'Razor Fang'],
 	},
 	
@@ -3322,12 +3322,12 @@ exports.Formats = [
 		},
 	},
 	{
-        name: "[Gen 7] Metagamiate",
+        name: "Metagamiate",
         desc: ["&bullet; <a href=\"https://www.smogon.com/forums/threads/3502303/\">Metagamiate</a>"],
 
 		section: "Old Other Metagames",
 
-        ruleset: ['[Gen 7] OU'],
+        ruleset: ['OU'],
         banlist: ['Dragonite', 'Kyurem-Black'],
         onModifyMovePriority: -1,
         onModifyMove: function (move, pokemon) {
@@ -3472,9 +3472,9 @@ exports.Formats = [
 	},
 
 		{
-		name:"[Gen 7] Imprisoned",
+		name:"Imprisoned",
 		section: "Old Other Metagames",
-		ruleset:['[Gen 7] OU'],
+		ruleset:['OU'],
 		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/imprisoned.3580920/\">Imprisoned</a>"],
 		onBegin: function()
 		{
@@ -3689,10 +3689,10 @@ exports.Formats = [
 
 },
 	{
-		name: "[Gen 7] No Haxmons",
+		name: "No Haxmons",
 		section: "Old Other Metagames",
 
-		ruleset: ['[Gen 7] OU', 'Freeze Clause'],
+		ruleset: ['OU', 'Freeze Clause'],
 		banlist: [],
 		onModifyMovePriority: -100,
 		onModifyMove: function (move) {
@@ -4067,10 +4067,10 @@ desc:["&bullet;<a href=\"http://www.smogon.com/forums/threads/recyclables.358181
    },
 },
 	 {
-        name: "[Gen 7] Hawluchange",
+        name: "Hawluchange",
         section: "Old Other Metagames",
        
-        ruleset: ['[Gen 7] OU'],
+        ruleset: ['OU'],
         banlist: ['Uber', 'Soul Dew', 'Gengarite', 'Kangaskhanite', 'Lucarionite'],
 	desc: [" &bullet; <a href=http://www.smogon.com/forums/threads/hawluchange-now-playable.3529847/>"],
         mod: "hawluchange",
@@ -4114,11 +4114,11 @@ desc:["&bullet;<a href=\"http://www.smogon.com/forums/threads/recyclables.358181
     },
 },
 	    {
-        name: "[Gen 7] Immunimons",
+        name: "Immunimons",
 	desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/immunimons.3516996/\">Immunimons</a>"],
         section: "Old Other Metagames",
 
-        ruleset: ['[Gen 7] OU'],
+        ruleset: ['OU'],
         banlist: [],
         onTryHit: function (target, source, move) {
             if (target === source || move.type === '???' || move.id === 'struggle') return;
@@ -4249,10 +4249,10 @@ desc:["&bullet;<a href=\"http://www.smogon.com/forums/threads/recyclables.358181
 		],
 	},
 	 {
-        name: "[Gen 7] No Status",
+        name: "No Status",
 	desc: ["&bullet; All Status moves are banned <br> &bullet; <a href=\"http://www.smogon.com/forums/threads/no-status.3542555/\">No Status</a>"],
         section: "Old Other Metagames",
-        ruleset: ['[Gen 7] OU'],
+        ruleset: ['OU'],
         validateSet: function (set) {
             var problems = [];
             if (set.moves) {
