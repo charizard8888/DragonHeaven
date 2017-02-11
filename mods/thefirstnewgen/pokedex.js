@@ -79,7 +79,7 @@ exports.BattlePokedex = {
 	sciuridark: {
 		num: 8017,
 		species: "Sciuridark",
-		types: ["Normal"],
+		types: ["Normal","Dark"],
 		baseStats: {hp: 85, atk: 70, def: 75, spa: 40, spd: 90, spe: 65},
 		abilities: {0: "Fur Coat", 1:"Justified", H: "Cheek Pouch"},
 		heightm: 0.6,
