@@ -276,7 +276,7 @@ exports.commands= {
 	},
 	cup350help: ["/350 <pokemon> - Shows the base stats that a Pokemon would have in 350 cup."],
 	
-bnb: function(target, room, user) {
+		bnb: function(target, room, user) {
 		if (!this.runBroadcast()) return;
 		let text = "";
 		let separated = target.split(",");
@@ -318,5 +318,5 @@ bnb: function(target, room, user) {
 			this.sendReplyBox(text);
 		}
 	},
-	bnb: ["/bnb <pokemon> - Shows the base stats that a Pokemon would have in Bad n Boosted."],
+	bnbhelp: ["/bnb <pokemon> - Shows the base stats that a Pokemon would have in Bad n Boosted."],
 };
