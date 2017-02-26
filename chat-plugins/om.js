@@ -279,8 +279,7 @@ exports.commands= {
 		bnb: function(target, room, user) {
 		if (!this.runBroadcast()) return;
 		let text = "";
-		let separated = target.split(",");
-		let name = (("" + separated[0]).trim()).toLowerCase();
+		let name = "";
 		name = toId(name);;
 		let pokemen = Tools.data.Pokedex;
 		if (pokemen[name] == undefined)
