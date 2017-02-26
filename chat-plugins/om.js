@@ -275,4 +275,48 @@ exports.commands= {
 		this.sendReplyBox(text);
 	},
 	cup350help: ["/350 <pokemon> - Shows the base stats that a Pokemon would have in 350 cup."],
+	
+bnb: function(target, room, user) {
+		if (!this.runBroadcast()) return;
+		let text = "";
+		let separated = target.split(",");
+		let name = (("" + separated[0]).trim()).toLowerCase();
+		name = toId(name);;
+		let pokemen = Tools.data.Pokedex;
+		if (pokemen[name] == undefined)
+		{
+			this.errorReply("Error: Pokemon not found");
+			return;
+		}
+		if(pokemen[name].baseStats.atk > 70) {
+			this.sendReply(pokemen[name].baseStats.atk);
+			
+		}
+		if(pokemen[name].baseStats.spa > 70) {
+			this.sendReply(pokemen[name].baseStats.spa);
+		}
+		if(pokemen[name].baseStats.def > 70) {
+			this.sendReply(pokemen[name].baseStats.def);
+		}
+		if(pokemen[name].baseStats.spd > 70) {
+			this.sendReply(pokemen[name].baseStats.spd);
+		}
+		if(pokemen[name].baseStats.spe > 70) {
+			this.sendReply(pokemen[name].baseStats.spe);
+		}
+		else {
+			let baseStats = {};
+			baseStats['bnbhp'] = Math.floor((pokemen[name].baseStats.hp) * 2);
+			baseStats['bnbatk'] = Math.floor((pokemen[name].baseStats.atk) * 2);
+			baseStats['bnbdef'] = Math.floor((pokemen[name].baseStats.def) * 2);
+			baseStats['bnbspa'] = Math.floor((pokemen[name].baseStats.spa) * 2);
+			baseStats['bnbspd'] = Math.floor((pokemen[name].baseStats.spd) * 2);
+			baseStats['bnbspe'] = Math.floor((pokemen[name].baseStats.spe) * 2);
+			let ability = "";
+			let bst = baseStats['bnbhp'] + baseStats['bnbatk'] + baseStats['bnbdef'] + baseStats['bnbspa'] + baseStats['bnbspd'] + baseStats['bnbspe'];
+			text = "<b>Stats</b>: " + baseStats['bnbhp'] + "/" + baseStats['bnbatk'] + "/" + baseStats['bnbdef'] + "/" + baseStats['bnbspa'] + "/" + baseStats['bnbspd'] + "/" + baseStats['bnbspe'] + "<br /><b>BST</b>:" + bst + " ";
+			this.sendReplyBox(text);
+		}
+	},
+	bnb: ["/bnb <pokemon> - Shows the base stats that a Pokemon would have in Bad n Boosted."],
 };
