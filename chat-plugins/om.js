@@ -276,7 +276,7 @@ exports.commands= {
 	},
 	cup350help: ["/350 <pokemon> - Shows the base stats that a Pokemon would have in 350 cup."],
 	
-		bnb: function(target, room, user) {
+bnb: function(target, room, user) {
 		if (!this.runBroadcast()) return;
 		let text = "";
 		let separated = target.split(",");
@@ -288,22 +288,6 @@ exports.commands= {
 			this.errorReply("Error: Pokemon not found");
 			return;
 		}
-		if(pokemen[name].baseStats.atk > 70) {
-			this.sendReply(pokemen[name].baseStats.atk);
-			
-		}
-		if(pokemen[name].baseStats.spa > 70) {
-			this.sendReply(pokemen[name].baseStats.spa);
-		}
-		if(pokemen[name].baseStats.def > 70) {
-			this.sendReply(pokemen[name].baseStats.def);
-		}
-		if(pokemen[name].baseStats.spd > 70) {
-			this.sendReply(pokemen[name].baseStats.spd);
-		}
-		if(pokemen[name].baseStats.spe > 70) {
-			this.sendReply(pokemen[name].baseStats.spe);
-		}
 		else {
 			let baseStats = {};
 			baseStats['bnbhp'] = Math.floor((pokemen[name].baseStats.hp) * 2);
@@ -313,6 +297,25 @@ exports.commands= {
 			baseStats['bnbspd'] = Math.floor((pokemen[name].baseStats.spd) * 2);
 			baseStats['bnbspe'] = Math.floor((pokemen[name].baseStats.spe) * 2);
 			let ability = "";
+			
+		if(pokemen[name].baseStats.hp > 70) {
+			baseStats['bnbhp'] = (pokemen[name].baseStats.hp);
+		}
+		if(pokemen[name].baseStats.atk > 70) {
+			baseStats['bnbatk'] = (pokemen[name].baseStats.atk);
+		}
+		if(pokemen[name].baseStats.def > 70) {
+			baseStats['bnbdef'] = (pokemen[name].baseStats.def);
+		}
+		if(pokemen[name].baseStats.spa > 70) {
+			baseStats['bnbspa'] = (pokemen[name].baseStats.spa);
+		}
+		if(pokemen[name].baseStats.spd > 70) {
+			baseStats['bnbspd'] = (pokemen[name].baseStats.spd);
+		}
+		if(pokemen[name].baseStats.spe > 70) {
+			baseStats['bnbspe'] = (pokemen[name].baseStats.spe);
+		}
 			let bst = baseStats['bnbhp'] + baseStats['bnbatk'] + baseStats['bnbdef'] + baseStats['bnbspa'] + baseStats['bnbspd'] + baseStats['bnbspe'];
 			text = "<b>Stats</b>: " + baseStats['bnbhp'] + "/" + baseStats['bnbatk'] + "/" + baseStats['bnbdef'] + "/" + baseStats['bnbspa'] + "/" + baseStats['bnbspd'] + "/" + baseStats['bnbspe'] + "<br /><b>BST</b>:" + bst + " ";
 			this.sendReplyBox(text);
