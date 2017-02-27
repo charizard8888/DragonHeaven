@@ -296,13 +296,20 @@ bnb: function(target, room, user) {
 			baseStats['bnbspa'] = Math.floor((pokemen[name].baseStats.spa) * 2);
 			baseStats['bnbspd'] = Math.floor((pokemen[name].baseStats.spd) * 2);
 			baseStats['bnbspe'] = Math.floor((pokemen[name].baseStats.spe) * 2);
+			let types = pokemen[name].types;
+			let type = '<span class="col typecol">';
+			for(let i = 0; i<types.length;i++) {
+				type = type+ '<img src="https://play.pokemonshowdown.com/sprites/types/'+types[i]+'.png" alt="'+types[i]+'" height="14" width="32">';
+			}
+			type = type+"</span>";
 			let ability = "";
 			for (let i in pokemen[name].abilities) {
 				ability += pokemen[name].abilities[i] + "/";
 			}
+			let weight = pokemen[name].weightkg;
 			ability = ability.substring(0, ability.length - 1);
 			ability = ability;
-			
+			 
 		if(pokemen[name].baseStats.hp > 70) {
 			baseStats['bnbhp'] = (pokemen[name].baseStats.hp);
 		}
@@ -322,7 +329,7 @@ bnb: function(target, room, user) {
 			baseStats['bnbspe'] = (pokemen[name].baseStats.spe);
 		}
 			let bst = baseStats['bnbhp'] + baseStats['bnbatk'] + baseStats['bnbdef'] + baseStats['bnbspa'] + baseStats['bnbspd'] + baseStats['bnbspe'];
-			text = "<b>Stats</b>: " + baseStats['bnbhp'] + "/" + baseStats['bnbatk'] + "/" + baseStats['bnbdef'] + "/" + baseStats['bnbspa'] + "/" + baseStats['bnbspd'] + "/" + baseStats['bnbspe'] + "<br /><b>BST</b>:" + bst + " <br><b>Ability:</b> "+ ability +" ";
+			text = "<b>Stats</b>: " + baseStats['bnbhp'] + "/" + baseStats['bnbatk'] + "/" + baseStats['bnbdef'] + "/" + baseStats['bnbspa'] + "/" + baseStats['bnbspd'] + "/" + baseStats['bnbspe'] + "<br /><b>BST</b>:" + bst + " <br><b>Ability:</b> "+ ability +" <br><b>Type:</b> " + type +" <br><b>Weight:</b> "+ weight +" kg <br>";
 			this.sendReplyBox(text);
 		}
 	},
