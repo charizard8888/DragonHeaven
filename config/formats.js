@@ -1678,11 +1678,15 @@ exports.Formats = [
 				pokemon.types = pokemon.template.types = types;
 			}
 		},
+		onSwitchIn: function(pokemon) {
+			this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
+		},
 		onAfterMega: function(pokemon) {
 			let types = [this.getMove(pokemon.moves[0]).type];
 			if (pokemon.moves[1] && this.getMove(pokemon.moves[1]).type !== types[0]) types.push(this.getMove(pokemon.moves[1]).type);
 			pokemon.baseTemplate = pokemon.template = Object.assign({}, pokemon.template);
 			pokemon.types = pokemon.template.types = types;
+			this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
 		},
 	},
 	{
@@ -1712,7 +1716,7 @@ exports.Formats = [
 				pokemon.types = pokemon.template.types = types;
 			}
 		},
-		onSwitchIn(pokemon) {
+		onSwitchIn: function(pokemon) {
 			this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
 		},
 		onAfterMega: function(pokemon) {
@@ -2458,32 +2462,35 @@ exports.Formats = [
 	},
 	{
 		name: "[Gen 7] Automagic",
-		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/3594333/\">Automagic</a>: Whenever an attack activates a secondary effect, any setup moves in that Pokemon's movepool are activated too."],
-		ruleset: ['[Gen 7] OU'],
+		desc: [
+			"Whenever an attack's secondary effect is triggered, any setup moves in that Pok&eacute;mon's moveset are run.",
+			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3594333/\">Automagic</a>",
+		],
+
 		mod: 'automagic',
-		onAfterSecondaryEffect: function(target, source, move) {
-			let moreSetup = ['bellydrum'];
+		searchShow: false,
+		ruleset: ['[Gen 7] OU'],
+		banlist: ["King's Rock", 'Razor Fang'],
+		onAfterSecondaryEffect: function (target, source, move) {
+			let moreSetup = ['acupressure', 'bellydrum', 'stockpile'];
 			if (!source.types.includes("Ghost")) moreSetup.push("curse");
 			source.baseMoveset.forEach(curmove => {
 				let move = this.getMove(curmove.id);
 				if (moreSetup.includes(move.id) || (move.category === "Status" && move.boosts && move.target === "self")) {
 					this.useMove(move, source);
-					curmove.pp = target.hasAbility("pressure") ? (curmove.pp - 2) : (curmove.pp - 1);
 				}
 			});
 		},
-		onAfterMove: function(source, target, move) {
+		onAfterMove: function (source, target, move) {
 			if (move.id !== "genesissupernova") return;
 			source.baseMoveset.forEach(curmove => {
 				let move = this.getMove(curmove.id);
-				let isDead = target.hp === undefined || target.hp <= 0;
-				if ((move.id === 'bellydrum' || (move.category === "Status" && move.boosts && move.target === "self")) && this.terrain === "psychicterrain") {
+				if ((move.id === 'bellydrum' || (move.category === "Status" && move.boosts && move.target === "self")) && this.terrain === "psychicterrain") { // Confirm that it successfully set Psychic Terrain
 					this.useMove(move, source);
-					curmove.pp = target.hasAbility("pressure") ? (curmove.pp - 2) : (curmove.pp - 1);
 				}
 			});
 		},
-	},
+},
 	{
 		name: "[Gen 7] Bad \'n Boosted",
 		desc: ["&bullet; All the stats of a pokemon which are 70 or below get doubled.<br>For example, Growlithe's stats are 55/70/45/70/50/60 in BnB they become 110/140/90/140/100/120<br><b>Banlist:</b>Eviolite, Huge Power, Pure Power"],
@@ -2493,8 +2500,8 @@ exports.Formats = [
 	},
 	{
 		name: "[Gen 7] Cross Evolution",
-		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/3569577/\">Cross Evolution</a>"],
-
+		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/3594854\">Cross Evolution</a>"],
+		mod: 'gen7',
 		ruleset: ['[Gen 7] Ubers', 'Baton Pass Clause'],
 		banlist: ['Rule:nicknameclause'],
 		onValidateTeam: function(team) {
@@ -2515,6 +2522,7 @@ exports.Formats = [
 			let template = this.tools.getTemplate(set.species);
 			if (!template.exists) return ["The Pokemon '" + set.species + "' does not exist."];
 			if (!template.evos.length) return ["" + template.species + " cannot cross evolve because it doesn't evolve."];
+			if (template.species === 'Sneasel') return [`Sneasel as a base Pokemon is banned.`];
 			if (crossTemplate.species == 'Shedinja') return ["" + template.species + " cannot cross evolve into " + crossTemplate.species + " because it is banned."];
 			if (crossTemplate.battleOnly || !crossTemplate.prevo) return ["" + template.species + " cannot cross evolve into " + crossTemplate.species + " because it isn't an evolution."];
 			let crossPrevoTemplate = this.tools.getTemplate(crossTemplate.prevo);
@@ -2602,6 +2610,38 @@ exports.Formats = [
 		//team: 'random',
 		mod: 'fullpotential',
 		banlist: ['Pheromosa', 'Shuckle', 'Speed Boost'],
+	},
+	{
+		name: "[Gen 7] Godly Gift",
+		desc: [
+			"Each Pok&eacute;mon receives one base stat, depending on its position, from the Uber.",
+			"&bullet; <a href=\"http://www.smogon.com/forums/threads/3597618/\">Godly Gift</a>",
+		],
+
+		ruleset: ['Ubers', 'Baton Pass Clause'],
+		banlist: ['Uber > 1', 'AG ++ Uber', 'Blissey', 'Chansey', 'Eviolite', 'Gengarite', 'Sablenite', 'Huge Power', 'Pure Power', 'Shadow Tag'],
+		onBegin: function() {
+			let stats = ['hp', 'atk', 'def', 'spa', 'spd', 'spe'];
+			for (let j = 0; j < this.sides.length; j++) {
+				// onBegin happens before Mega Rayquaza clause
+				let uber = this.sides[j].pokemon.find(pokemon => ['AG', 'Uber'].includes(this.getTemplate(pokemon.canMegaEvo || pokemon.baseTemplate).tier)) || this.sides[j].pokemon[0];
+				for (let i = 0, len = this.sides[j].pokemon.length; i < len; i++) {
+					let pokemon = this.sides[j].pokemon[i];
+					["baseTemplate", "canMegaEvo"].forEach(key => {
+						if (pokemon[key]) {
+							let template = Object.assign({}, this.getTemplate(pokemon[key]));
+							template.baseStats = Object.assign({}, template.baseStats);
+							template.baseStats[stats[i]] = uber.baseTemplate.baseStats[stats[i]];
+							pokemon[key] = template;
+						}
+					});
+					pokemon.formeChange(pokemon.baseTemplate);
+					if (i === 0 && !pokemon.template.maxHP) {
+						pokemon.hp = pokemon.maxhp = Math.floor(Math.floor(2 * pokemon.template.baseStats['hp'] + pokemon.set.ivs['hp'] + Math.floor(pokemon.set.evs['hp'] / 4) + 100) * pokemon.level / 100 + 10);
+					}
+				}
+			}
+		},
 	},
 	{
 		name: "[Gen 7] Gods and Followers",
@@ -2789,6 +2829,26 @@ exports.Formats = [
 		mod: 'mergemons',
 		ruleset: ['[Gen 7] OU'],
 		banlist: [],
+	},
+	{
+		name: "[Gen 7] Metagamiate",
+		desc: ["&bullet; Every Pokemon has a -ate ability matching its primary type or secondary type if shiny."],
+		mod: 'gen7',
+		ruleset: ['[Gen 7] OU'],
+		banlist: ['Dragonite', 'Kyurem-Black'],
+		onModifyMovePriority: -1,
+		onModifyMove: function(move, pokemon) {
+			if (move.type !== 'Normal' || move.id === 'hiddenpower' || pokemon.hasAbility(['aerilate', 'galvanize', 'pixilate', 'refrigerate']) || move.isZ) return;
+			let types = pokemon.getTypes();
+			let type = types.length < 2 || !pokemon.set.shiny ? types[0] : types[1];
+			move.type = type;
+			move.isMetagamiate = true;
+		},
+		onBasePowerPriority: 8,
+		onBasePower: function(basePower, attacker, defender, move) {
+			if (!move.isMetagamiate) return;
+			return this.chainModify([0x14CD, 0x1000]);
+		},
 	},
 	{
 		name: "[Gen 7] Offensification",
@@ -2987,13 +3047,13 @@ exports.Formats = [
 		},
 	},
 	{
-		name: "[Gen 7] Fusion Evolution",
-		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/fusion-evolution-v2-submission-phase.3560216/>Fusion Evolution</a>",
-		       "&bullet; <a href=http://www.smogon.com/forums/threads/fusion-moves-fusion-evolution-companion-project.3564805/>Fusion Moves</a>",
-		      ],
-		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
-		mod: 'fusionevolution',
-	},
+ 		name: "[Gen 7] Fusion Evolution",
+ 		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/fusion-evolution-v2-submission-phase.3560216/>Fusion Evolution</a>",
+ 		       "&bullet; <a href=http://www.smogon.com/forums/threads/fusion-moves-fusion-evolution-companion-project.3564805/>Fusion Moves</a>",
+ 		      ],
+ 		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+ 		mod: 'fusionevolution',
+ 	},
 	{
 		name: "[Gen 2] Traps",
 		desc: [
@@ -3234,38 +3294,6 @@ exports.Formats = [
 			set.name = (name === set.species ? "" : name);
 
 			return problems;
-		},
-	},
-	{
-		name: "Gifts of the Gods",
-		desc: [
-			"Each Pok&eacute;mon receives one base stat, depending on its position, from the Uber.",
-			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3579610/\">Gifts of the Gods</a>",
-		],
-
-		ruleset: ['Ubers', 'Baton Pass Clause'],
-		banlist: ['Uber > 1', 'AG ++ Uber', 'Blissey', 'Chansey', 'Eviolite', 'Mawilite', 'Medichamite', 'Sablenite', 'Soul Dew', 'Huge Power', 'Pure Power', 'Shadow Tag'],
-		onBegin: function() {
-			let stats = ['hp', 'atk', 'def', 'spa', 'spd', 'spe'];
-			for (let j = 0; j < this.sides.length; j++) {
-				// onBegin happens before Mega Rayquaza clause
-				let uber = this.sides[j].pokemon.find(pokemon => ['AG', 'Uber'].includes(this.getTemplate(pokemon.canMegaEvo || pokemon.baseTemplate).tier)) || this.sides[j].pokemon[0];
-				for (let i = 0, len = this.sides[j].pokemon.length; i < len; i++) {
-					let pokemon = this.sides[j].pokemon[i];
-					["baseTemplate", "canMegaEvo"].forEach(key => {
-						if (pokemon[key]) {
-							let template = Object.assign({}, this.getTemplate(pokemon[key]));
-							template.baseStats = Object.assign({}, template.baseStats);
-							template.baseStats[stats[i]] = uber.baseTemplate.baseStats[stats[i]];
-							pokemon[key] = template;
-						}
-					});
-					pokemon.formeChange(pokemon.baseTemplate);
-					if (i === 0 && !pokemon.template.maxHP) {
-						pokemon.hp = pokemon.maxhp = Math.floor(Math.floor(2 * pokemon.template.baseStats['hp'] + pokemon.set.ivs['hp'] + Math.floor(pokemon.set.evs['hp'] / 4) + 100) * pokemon.level / 100 + 10);
-					}
-				}
-			}
 		},
 	},
 	{
