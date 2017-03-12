@@ -79,9 +79,9 @@ exports.BattleAbilities = {
 		rating: 2,
 		num: 194
 	},
+/* Spandamn its starting to crack from here so commenting it, fix it */
 
-
-	"flashweather": {
+/*	"flashweather": {
 		desc: "This Pokemon is immune to Fire-type moves. The first time it is hit by a Fire-type move, its attacking stat is multiplied by 1.5 while using a Fire-type attack as long as it remains active and has this Ability. If this Pokemon is frozen, it cannot be defrosted by Fire-type attacks.",
 		shortDesc: "This Pokemon's Fire attacks do 1.5x damage if hit by one Fire move; Fire immunity.",
 		onTryHit: function (target, source, move) {
@@ -93,7 +93,7 @@ exports.BattleAbilities = {
 				}
 				return null;
 		}
-				},
+		},
 		onEnd: function (pokemon) {
 			pokemon.removeVolatile('flashfire');
 		},
@@ -120,8 +120,8 @@ exports.BattleAbilities = {
 				this.add('-end', target, 'ability: Flash Fire', '[silent]');
 			}
 },
-if (this.isWeather(['raindance', 'primordialsea'])) {
-if (target !== source && move.type === 'water') {
+			if (this.isWeather(['raindance', 'primordialsea'])) {
+			if (target !== source && move.type === 'water') {
 				move.accuracy = true;
 				if (!target.addVolatile('flashwater')) {
 					this.add('-immune', target, '[msg]', '[from] ability: Flash water');
@@ -235,7 +235,7 @@ if (target !== source && move.type === 'rock') {
 		rating: 3,
 		num: 195
 	},
-
+*/
 "intenserivalry": {
 		desc: "This Pokemon's attacks have their power multiplied by 1.25 against targets of the same gender or multiplied by 0.75 against targets of the opposite gender. There is no modifier if either this Pokemon or the target is genderless.",
 		shortDesc: "This Pokemon's attacks do 1.25x on same gender targets; 0.75x on opposite gender.",
@@ -244,7 +244,7 @@ if (target !== source && move.type === 'rock') {
 			if (attacker.gender && defender.gender) {
 				if (attacker.gender === defender.gender) {
 					
-onStart: function (pokemon) {
+		onStart: function (pokemon) {
 			this.add('-ability', pokemon, 'Mold Breaker');
 		},
 		stopAttackEvents: true,
@@ -270,12 +270,14 @@ onStart: function (pokemon) {
 					this.add('-ability', pokemon, 'Intimidate');
 					activated = true;
 				}
+				}
 				if (foeactive[i].volatiles['substitute']) {
 					this.add('-activate', foeactive[i], 'Substitute', 'ability: Intimidate', '[of] ' + pokemon);
 				} else {
 					this.boost({atk: -1}, foeactive[i], pokemon);
 				}
-onImmunity: function (type, pokemon) {
+			},
+			onImmunity: function (type, pokemon) {
 			if (type === 'sandstorm') return false;
 		},
 		onModifyAccuracy: function (accuracy) {
@@ -298,27 +300,27 @@ onImmunity: function (type, pokemon) {
 		shortDesc: "This Pokemon is immune to Ground; Gravity/Ingrain/Smack Down/Iron Ball nullify it.",
 		onImmunity: function (type) {
 			if (type === 'Ground') return false;
- {
-	source.trySetStatus('psn', target, move);
-}
+		{
+		source.trySetStatus('psn', target, move);
+		}
 
 		},
 		id: "levipoison",
 		name: "Levipoison",
 		rating: 3.5,
-		num: 198
+		num: 198,
 
 "unburden": {
 		desc: "If this Pokemon loses its held item for any reason, its Speed is doubled. This boost is lost if it switches out or gains a new item or Ability.",
 		shortDesc: "Speed is doubled on held item loss; boost is lost if it switches, gets new item/Ability.",
 		onAfterUseItem: function (item, pokemon) {
 			if (pokemon !== this.effectData.target)
-return this.boost({atk: 2, spe:2});
-return this.boost({def:-1, spd:-1});			
+		return this.boost({atk: 2, spe:2});
+		return this.boost({def:-1, spd:-1});			
 		},
 		onTakeItem: function (item, pokemon) {
 			return this.boost({atk: 2, spe:2});
-return this.boost({def:-1, spd:-1});
+		return this.boost({def:-1, spd:-1});
 		},
 		
 		id: "armorcast",
@@ -366,7 +368,7 @@ return this.boost({def:-1, spd:-1});
 		shortDesc: "This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage.",
 		onDamage: function (damage, target, source, effect) {
 			if (effect.id === 'recoil' && this.activeMove.id !== 'struggle') return null;
-onStart: function (pokemon) {
+			onStart: function (pokemon) {
 			var foeactive = pokemon.side.foe.active;
 			var activated = false;
 			for (var i = 0; i < foeactive.length; i++) {
@@ -374,6 +376,7 @@ onStart: function (pokemon) {
 				if (!activated) {
 					this.add('-ability', pokemon, 'Intimidate');
 					activated = true;
+				}
 				}
 				if (foeactive[i].volatiles['substitute']) {
 					this.add('-activate', foeactive[i], 'Substitute', 'ability: Intimidate', '[of] ' + pokemon);
@@ -391,9 +394,10 @@ onStart: function (pokemon) {
 "cactuspower": {
 		shortDesc: "On switch-in, this Pokemon summons Sandstorm.",
 		onStart: function (source) {
-			this.setWeather('sandstorm');
-onModifyAtk: function (atk, attacker, defender, move) {
-if (move.type === 'Grass') {
+		this.setWeather('sandstorm');
+		},
+		onModifyAtk: function (atk, attacker, defender, move) {
+		if (move.type === 'Grass') {
 				this.debug('Overgrow boost');
 				return this.chainModify(1.5);
 			}
@@ -443,7 +447,8 @@ if (move.type === 'Grass') {
 				this.debug('Technician boost');
 				return this.chainModify(1.5);
 			}
-onBoost: function (boost, target, source, effect) {
+			},
+			onBoost: function (boost, target, source, effect) {
 			if (source && target === source) return;
 			if (boost['atk'] && boost['atk'] < 0) {
 				boost['atk'] = 0;
@@ -530,7 +535,7 @@ onUpdate: function (pokemon) {
 				return target.hp - 1;
 			}
 		},
-onModifyAtkPriority: 5,
+		onModifyAtkPriority: 5,
 		onModifyAtk: function (atk, attacker, defender, move) {
 			if (move.type === 'Fire' && attacker.hp <= attacker.maxhp / 3) {
 				this.debug('Blaze boost');
@@ -556,12 +561,12 @@ onModifyAtkPriority: 5,
 			if (effect.id === 'hail') {
 				this.heal(target.maxhp / 16);
 			}
-onAfterDamage: function (damage, target, source, effect) {
+			},
+			onAfterDamage: function (damage, target, source, effect) {
 				if (this.random(10) < 3) {
 					source.trySetStatus('par', target, effect);
 				}
 			
-		},
 		},
 		onImmunity: function (type, pokemon) {
 			if (type === 'hail') return false;
@@ -583,12 +588,14 @@ onAfterDamage: function (damage, target, source, effect) {
 					this.add('-ability', pokemon, 'Intimidate');
 					activated = true;
 				}
+			}
 				if (foeactive[i].volatiles['substitute']) {
 					this.add('-activate', foeactive[i], 'Substitute', 'ability: Intimidate', '[of] ' + pokemon);
 				} else {
 					this.boost({atk: -1}, foeactive[i], pokemon);
 				}
-onModifyAtkPriority: 5,
+		},
+		onModifyAtkPriority: 5,
 		onModifyAtk: function (atk, attacker, defender, move) {
 			if (move.type === 'Fire' && attacker.hp <= attacker.maxhp / 3) {
 				this.debug('Blaze boost');
@@ -600,8 +607,6 @@ onModifyAtkPriority: 5,
 			if (move.type === 'Fire' && attacker.hp <= attacker.maxhp / 3) {
 				this.debug('Blaze boost');
 				return this.chainModify(1.5);
-			}
-		},
 			}
 		},
 		id: "dreadedflames",
@@ -692,6 +697,7 @@ onAfterDamage: function (damage, target, source, move) {
 					this.add('-ability', pokemon, 'Intimidate');
 					activated = true;
 				}
+			}
 				if (foeactive[i].volatiles['substitute']) {
 					this.add('-activate', foeactive[i], 'Substitute', 'ability: Intimidate', '[of] ' + pokemon);
 				} else {
@@ -1009,7 +1015,7 @@ onModifySpAPriority: 5,
 		shortDesc: "If this Pokemon has a stat stage raised it is lowered instead, and vice versa.",
 		onBoost: function (boost) {
 				boost.spe *= -1;
-			}
+			},
 		id: "speedbreak",
 		name: "Speed Break",
 		rating: 4,
@@ -1057,9 +1063,9 @@ onDeductPP: function (damage, target, source, effect) {
 				return;
 			}
 		},
-if(source.ability==target.ability)
-{
-onStart: function (pokemon) {
+				if(source.ability==target.ability)
+		{
+				onStart: function (pokemon) {
 				this.add('-endability', pokemon);
 				this.singleEvent('End', this.getAbility(pokemon.ability), pokemon.abilityData, pokemon, pokemon, 'gastroacid');
 			}
@@ -1251,7 +1257,7 @@ var oldAbility = source.setAbility('levitate', source, 'levitate', true);
 				if (!pokemon.item) {
 					return this.chainModify(1.5);
 				}
-			}
+			
 		},
 		id: "cleanmatch",
 		name: "cleanmatch",
@@ -1306,7 +1312,7 @@ onModifySpAPriority: 8,
 		if (move.category === 'Status') return 'Status';
 		if (move.category === 'Physical') return 'Special';
 		return 'Physical';
-		}
+		},
 		onBeforeMovePriority: 11,
 		onBeforeMove: function (attacker, defender, move) {
 			if (attacker.template.baseSpecies !== 'Aegislash') return;
@@ -1325,8 +1331,8 @@ onModifySpAPriority: 8,
 "latebloomer": {
 		desc: "The power of this Pokemon's move is multiplied by 1.3 if it is the last to move in a turn. Does not affect Doom Desire and Future Sight.",
 		shortDesc: "This Pokemon's attacks have 1.3x power if it is the last to move in a turn.",
-		OnAfterDamagePriority: 8
-onAfterDamage: function (damage, attacker, defender, move) {
+		OnAfterDamagePriority: 8,
+		onAfterDamage: function (damage, attacker, defender, move) {
 			if (!this.willMove(defender)) {
 				if (this.random(10) < 3) {
 					source.addVolatile('attract', target);
@@ -1616,10 +1622,6 @@ onStart: function (pokemon) {
 		rating: 2,
 		num: 251
 	},
-	
-	
-
-{
 				
 "overwhelmingpresence": {
 		shortDesc: "This Pokemon's moves and their effects ignore the Abilities of other Pokemon.",
@@ -1699,7 +1701,7 @@ onStart: function (pokemon) {
                 this.add('-formechange', pokemon, forme, '[msg]');
             }
         },
-onImmunity: function (type) {
+	onImmunity: function (type) {
             if (type === 'Ground') return false;
         },
         id: "monsoonaltered",
