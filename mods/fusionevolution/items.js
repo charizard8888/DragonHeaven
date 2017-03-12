@@ -6,8 +6,8 @@ exports.BattleItems = {
 		id: "swampertite",
 		name: "Swampertite",
 		spritenum: 612,
-		megaStone: "Swampert-Mega", "Swampamar-Mega", "Swank-Mega"
-		megaEvolves: "Swampert", "Swampamar", "Swank"
+		megaStone: "Swampert-Mega", "Swampamar-Mega", "Swank-Mega",
+		megaEvolves: "Swampert", "Swampamar", "Swank",
 		onTakeItem: function (item, source) {
 			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
 			return true;
@@ -51,7 +51,7 @@ exports.BattleItems = {
 		id: "garchompite",
 		name: "Garchompite",
 		spritenum: 589,
-		megaStone: "Garchomp-Mega", "Garchados-Mega-X", "Gargatr-Mega", "Tyranichomp-Mega-Y"
+		megaStone: "Garchomp-Mega", "Garchados-Mega-X", "Gargatr-Mega", "Tyranichomp-Mega-Y",
 		megaEvolves: "Garchomp", "Garchados", "Gargatr", "Tyranichomp",
 		onTakeItem: function (item, source) {
 			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
@@ -185,7 +185,7 @@ exports.BattleItems = {
 		id: "venusaurite",
 		name: "Venusaurite",
 		spritenum: 608,
-		megaStone: "Venusaur-Mega", "Aggrosaur-Mega-X"
+		megaStone: "Venusaur-Mega", "Aggrosaur-Mega-X",
 		megaEvolves: "Venusaur", "Aggrosaur", 
 		onTakeItem: function (item, source) {
 			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
@@ -246,7 +246,7 @@ exports.BattleItems = {
 		name: "Pidgeotite",
 		spritenum: 622,
 		megaStone: "Pidgeot-Mega", "Pidgetot-Mega", "Pidgemie-Mega", "Peatran-Mega", "Shot-Mega",
-		megaEvolves: "Pidgeot", "Pidgetot", "Pidgemie", "Peatran", "Shot"
+		megaEvolves: "Pidgeot", "Pidgetot", "Pidgemie", "Peatran", "Shot",
 		onTakeItem: function (item, source) {
 			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
 			return true;
@@ -290,7 +290,7 @@ exports.BattleItems = {
 		id: "metagrossite",
 		name: "Metagrossite",
 		spritenum: 618,
-		megaStone: "Metagross-Mega", "Metabat-Mega", "Banegross-Mega-X", "Metsir-Mega-M',
+		megaStone: "Metagross-Mega", "Metabat-Mega", "Banegross-Mega-X", "Metsir-Mega-M",
 		megaEvolves: "Metagross", "Metabat", "Banegross", "Metsir",
 		onTakeItem: function (item, source) {
 			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
@@ -304,7 +304,7 @@ exports.BattleItems = {
 		id: "latiosite",
 		name: "Latiosite",
 		spritenum: 630,
-		megaStone: "Latios-Mega", "Dartios-Mega".
+		megaStone: "Latios-Mega", "Dartios-Mega",
 		megaEvolves: "Latios", "Dartios", 
 		onTakeItem: function (item, source) {
 			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
@@ -318,7 +318,7 @@ exports.BattleItems = {
 		id: "banettite",
 		name: "Banettite",
 		spritenum: 582,
-		megaStone: "Banette-Mega", "Banegross-Mega-Y"
+		megaStone: "Banette-Mega", "Banegross-Mega-Y",
 		megaEvolves: "Banette", "Banegross",
 		onTakeItem: function (item, source) {
 			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
