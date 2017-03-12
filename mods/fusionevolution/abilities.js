@@ -8,7 +8,8 @@ exports.BattleAbilities = {
 		onBoost: function (boost) {
 			for (var i in boost) {
 				boost[i] *= -1;
-			}		
+			}
+		},
 		onModifyAtkPriority: 5,
 		onModifyAtk: function (atk, attacker, defender, move) {
 			if (move.type === 'Water' && attacker.hp >= attacker.maxhp / 3) {
@@ -42,14 +43,14 @@ exports.BattleAbilities = {
 					this.add('-ability', pokemon, 'Intimidate');
 					activated = true;
 				}
+				}
 				if (foeactive[i].volatiles['substitute']) {
 					this.add('-activate', foeactive[i], 'Substitute', 'ability: Intimidate', '[of] ' + pokemon);
 				} else {
 					this.boost({atk: -1}, foeactive[i], pokemon);
 				}
-},
-			
-onModifyDefPriority: 6,
+				},
+		onModifyDefPriority: 6,
 		onModifyDef: function (def, pokemon) {
 			if (pokemon.status) {
 				return this.chainModify(1.5);
@@ -84,15 +85,15 @@ onModifyDefPriority: 6,
 		desc: "This Pokemon is immune to Fire-type moves. The first time it is hit by a Fire-type move, its attacking stat is multiplied by 1.5 while using a Fire-type attack as long as it remains active and has this Ability. If this Pokemon is frozen, it cannot be defrosted by Fire-type attacks.",
 		shortDesc: "This Pokemon's Fire attacks do 1.5x damage if hit by one Fire move; Fire immunity.",
 		onTryHit: function (target, source, move) {
-if (this.isWeather(['sunnyday', 'desolateland'])) {
+		if (this.isWeather(['sunnyday', 'desolateland'])) {
 			if (target !== source && move.type === 'Fire') {
 				move.accuracy = true;
 				if (!target.addVolatile('flashfire')) {
 					this.add('-immune', target, '[msg]', '[from] ability: Flash Fire');
 				}
 				return null;
-			}
-		},
+		}
+				},
 		onEnd: function (pokemon) {
 			pokemon.removeVolatile('flashfire');
 		},
