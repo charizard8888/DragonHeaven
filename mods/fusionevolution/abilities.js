@@ -235,15 +235,14 @@ if (target !== source && move.type === 'rock') {
 		rating: 3,
 		num: 195
 	},
-*/
+
 "intenserivalry": {
 		desc: "This Pokemon's attacks have their power multiplied by 1.25 against targets of the same gender or multiplied by 0.75 against targets of the opposite gender. There is no modifier if either this Pokemon or the target is genderless.",
 		shortDesc: "This Pokemon's attacks do 1.25x on same gender targets; 0.75x on opposite gender.",
 		onBasePowerPriority: 8,
 		onBasePower: function (basePower, attacker, defender, move) {
 			if (attacker.gender && defender.gender) {
-				if (attacker.gender === defender.gender) {
-					
+			if (attacker.gender === defender.gender) {
 		onStart: function (pokemon) {
 			this.add('-ability', pokemon, 'Mold Breaker');
 		},
@@ -257,7 +256,7 @@ if (target !== source && move.type === 'rock') {
 		num: 196
 
 		},
-
+*/
 	"intimidateveil": {
 		desc: "On switch-in, this Pokemon lowers the Attack of adjacent opposing Pokemon by 1 stage. Pokemon behind a substitute are immune.",
 		shortDesc: "On switch-in, this Pokemon lowers the Attack of adjacent opponents by 1 stage.",
@@ -285,7 +284,6 @@ if (target !== source && move.type === 'rock') {
 			if (this.isWeather('sandstorm')) {
 				this.debug('Sand Veil - decreasing accuracy');
 				return accuracy * 0.8;
-			}
 			}
 		},
 		id: "intimidateveil",
@@ -1673,6 +1671,7 @@ onStart: function (pokemon) {
         name: "Monsoon",
         rating: 3,
         num: 253
+},
 
 "monsoonaltered": {
         desc: "If this Pokemon is a Casting, its type changes to the current weather condition's type, except Sandstorm.",
