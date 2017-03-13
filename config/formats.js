@@ -1830,6 +1830,33 @@ exports.Formats = [
 		},
 	},
 	{
+		name: "[Gen 7] Random Last Will",
+		desc: ["&bullet; Every Pokemon will use the move in their last moveslot before fainting in battle."],
+		ruleset: ['Random Battle'],
+		mod: 'lastwill',
+		team: 'random',
+	},
+	{
+		name: "[Gen 7] Random Move Equality",
+		desc: ["&bullet; Every Move has 100 base power with the exception of moves that have varying base powers."],
+		mod: 'gen7',
+		ruleset: ['Random Battle'],
+		team: 'random',
+		onModifyMovePriority: 5,
+		onModifyMove: function(move, pokemon) {
+			if (move.category === 'Status' || move.priority !== 0 || move.onBasePower || move.basePowerCallback) return;
+			if (move.isZ) {
+				move.basePower = 180;
+				return;
+			}
+			if (move.multihit) {
+				move.basePower = parseInt(100 / move.multihit[move.multihit.length - 1]);
+				return;
+			}
+			move.basePower = 100;
+		},
+	},
+	{
 		name: "[Gen 7] Random Pokebilities",
 		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/pokébilities.3588652\">Pokebilities</a>: A Pokemon can have all of its abilities at the same time."],
 		ruleset: ["Random Battle"],
@@ -2490,7 +2517,7 @@ exports.Formats = [
 				}
 			});
 		},
-},
+	},
 	{
 		name: "[Gen 7] Bad \'n Boosted",
 		desc: ["&bullet; All the stats of a pokemon which are 70 or below get doubled.<br>For example, Growlithe's stats are 55/70/45/70/50/60 in BnB they become 110/140/90/140/100/120<br><b>Banlist:</b>Eviolite, Huge Power, Pure Power"],
@@ -2617,7 +2644,7 @@ exports.Formats = [
 			"Each Pok&eacute;mon receives one base stat, depending on its position, from the Uber.",
 			"&bullet; <a href=\"http://www.smogon.com/forums/threads/3597618/\">Godly Gift</a>",
 		],
-
+		mod: 'gen7',
 		ruleset: ['Ubers', 'Baton Pass Clause'],
 		banlist: ['Uber > 1', 'AG ++ Uber', 'Blissey', 'Chansey', 'Eviolite', 'Gengarite', 'Sablenite', 'Huge Power', 'Pure Power', 'Shadow Tag'],
 		onBegin: function() {
@@ -2786,6 +2813,12 @@ exports.Formats = [
 		},
 	},
 	{
+		name: "[Gen 7] Last Will",
+		desc: ["&bullet; Every Pokemon will use the move in their last moveslot before fainting in battle."],
+		ruleset: ['[Gen 7] OU'],
+		mod: 'lastwill',
+	},
+	{
 		name: "[Gen 7] Lockdown",
 		desc: [
 			"&bullet; <a href=\"http://www.smogon.com/forums/threads/3593815\">Lockdown</a>",
@@ -2820,6 +2853,19 @@ exports.Formats = [
 		},
 	},
 	{
+		name: "[Gen 7] Mediocremons",
+		desc: ['&bullet; Only Pokemon with stats below 100 are allowed'],
+		ruleset: ['[Gen 7] OU'],
+		mod: 'gen7',
+		onValidateSet: function (set) {
+			let stats = this.getTemplate(set.species).baseStats;
+			for (let i = 0; i < stats.length; i++) {
+				let stat = stats[i];
+				if(stat >= 100) return [`${set.name || set.species} is banned by Mediocremons.`];
+			}
+		},
+	},
+	{
 		name: "[Gen 7] Mergemons",
 		desc: [
 			"Pok&eacute;mon gain the movepool of the previous and the next fully evolved Pok&eacute;mon, according to the Pok&eacute;dex.",
@@ -2848,6 +2894,26 @@ exports.Formats = [
 		onBasePower: function(basePower, attacker, defender, move) {
 			if (!move.isMetagamiate) return;
 			return this.chainModify([0x14CD, 0x1000]);
+		},
+	},
+	{
+		name: "[Gen 7] Move Equality",
+		desc: ["&bullet; Every Move has 100 base power with the exception of moves that have varying base powers."],
+		mod: 'gen7',
+		ruleset: ['[Gen 7] OU'],
+		banlist: ['Power Up Punch'],
+		onModifyMovePriority: 5,
+		onModifyMove: function(move, pokemon) {
+			if (move.category === 'Status' || move.priority !== 0 || move.onBasePower || move.basePowerCallback) return;
+			if (move.isZ) {
+				move.basePower = 180;
+				return;
+			}
+			if (move.multihit) {
+				move.basePower = parseInt(100 / move.multihit[move.multihit.length - 1]);
+				return;
+			}
+			move.basePower = 100;
 		},
 	},
 	{
@@ -2970,7 +3036,41 @@ exports.Formats = [
 			}
 		},
 	},
-
+	{
+		name: "[Gen 7] Poketrade",
+		desc: [
+			"Pok&eacute;mon with the same item swap base stats.",
+			"&bullet; <a href=\"https://cloud.githubusercontent.com/assets/19758381/23832074/f89d6c1e-0753-11e7-94c8-42f8c3dcfbda.png\">Pok&eacute;trade</a>",
+		],
+		mod: 'gen7',
+		ruleset: ['[Gen 7] OU'],
+		banlist: [],
+		onBegin: function () {
+			for (let j = 0; j < this.sides.length; j++) {
+				let itemTable = {};
+				for (let i = 0; i < this.sides[j].pokemon.length; i++) {
+					let pokemon = item = this.sides[j].pokemon[i].getItem();
+					if(!item) return;
+					if(!(item.id in itemTable)) itemTable[item.id] = [];
+					itemTable[item.id].push(i);
+				}
+				for (let i in itemTable) {
+					for (let k = 0; k < itemTable[i].length; k++) {
+						let pokemon = this.sides[j].pokemon[k], swapmon = itemTable[k+1] || itemTable[0];
+						["baseTemplate", "canMegaEvo"].forEach(key => {
+							if (pokemon[key]) {
+								let template = Object.assign({}, this.getTemplate(pokemon[key])), template2 = this.getTemplate(swapmon);
+								template.baseStats = Object.assign({}, template2.baseStats);
+								pokemon[key] = template;
+							}
+						});
+						pokemon.formeChange(pokemon.baseTemplate);
+						pokemon.hp = pokemon.maxhp = Math.floor(Math.floor(2 * pokemon.template.baseStats['hp'] + pokemon.set.ivs['hp'] + Math.floor(pokemon.set.evs['hp'] / 4) + 100) * pokemon.level / 100 + 10);
+					}
+				}
+			}
+		},
+	},
 	{
 		name: "[Gen 7] Trademarked",
 		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/trademarked.3572949/\">Trademarked</a>"],
@@ -3049,8 +3149,8 @@ exports.Formats = [
 	{
  		name: "[Gen 7] Fusion Evolution",
  		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/fusion-evolution-v2-submission-phase.3560216/>Fusion Evolution</a>",
- 		       "&bullet; <a href=http://www.smogon.com/forums/threads/fusion-moves-fusion-evolution-companion-project.3564805/>Fusion Moves</a>",
- 		      ],
+		       "&bullet; <a href=http://www.smogon.com/forums/threads/fusion-moves-fusion-evolution-companion-project.3564805/>Fusion Moves</a>",
+		      ],
  		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
  		mod: 'fusionevolution',
  	},
@@ -4424,6 +4524,25 @@ exports.Formats = [
 		column: 3,
 	},
 	{
+		name: "[Gen 7] Dual Wielding",
+		desc: ["&bullet; A Pokemon can hold two items, the second item in the Ability Slot."],
+		ruleset: ['[Gen 7] OU'],
+		banlist: ['Ignore Illegal Abilities', 'Fling', 'Regigigas', 'Slaking'],
+		mod: 'dualwielding',
+		validateSet: function(set, teamHas) {
+			let ability = set.ability;
+			if (!this.tools.data.Items[toId(ability)]) return [`${set.name || set.species}  has an invalid item.`];
+			let problems = this.validateSet(set, teamHas) || [];
+			let item2 = this.tools.getItem(toId(ability));
+			let bans = {};
+			if (bans[toId(item2.id)]) problems.push(set.species + "'s item " + item2.name + " is banned by Dual Wielding.");
+			if (item2.id === toId(set.item)) problems.push(`You cannot have two of ${item2.name} on the same Pokemon.`);
+			if (item2.id.includes('choice') && toId(set.item).includes('choice')) problems.push(`You cannot have ${item2.name} and ${this.tools.getItem(set.item).name} on the same Pokemon.`);
+			set.ability = ability;
+			return problems;
+		},
+	},
+	{
 		name: "[Gen 7] Z-Shift",
 		desc: ["&bullet; In Z-Shift, the Type, Base Power and Priority of the move in the first slot is transferred to the Z-Move being used.<br><br>Necrozma @ <b>Electrium Z</b>  <br>Ability: Prism Armor  <br>EVs: 252 HP / 252 SpA / 4 SpD<br>Modest Nature  <br>IVs: 0 Atk  <br>- <b>Prismatic Laser</b> <br>- Dark Pulse  <br>- <b>Charge Beam</b>  <br>- Moonlight<br><br>So if this is the set then<br><b>Z-Charge Beam:</b> 160 Base Power, 90% Accuracy, Psychic type move with 70% chance to raise the user's SpA by 1 stage"],
 		ruleset: ['[Gen 7] OU'],
@@ -5777,6 +5896,6 @@ exports.Formats = [
 		mod: 'fakemon',
 		team: 'randomFotW',
 		ruleset: ['Pokemon', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod', 'Freeze Clause Mod'],
-		fotw: "Jawnado",
+		fotw: "Valkyrieti",
 	},
 ];
