@@ -333,7 +333,12 @@ exports.commands = {
 				}
 			}
 		}
-		let newTargets = Tools.dataSearch(target);
+		let sep = target.split(',');
+		let mod = Tools;
+		if (sep[1] && toId(sep[1]) in Tools.dexes) {
+			mod = Tools.mod(toId(sep[1]));
+		}
+		let newTargets = mod.dataSearch(sep[0]);
 		let showDetails = (cmd === 'dt' || cmd === 'details');
 		if (newTargets && newTargets.length) {
 			for (let i = 0; i < newTargets.length; ++i) {
@@ -351,7 +356,13 @@ exports.commands = {
 					}
 					return this.sendReply(buffer);
 				} else {
-					buffer += '|c|~|/data-' + newTargets[i].searchType + ' ' + newTargets[i].name + '\n';
+					let sType = newTargets[i].searchType.charAt(0).toUpperCase + newTargets[i].searchType.substring(1, newTargets[i].searchType.length);
+					if (mod[`getData${sType}HTML`]) {
+						buffer += `|raw|${mod[`getData${sType}HTML`](modnewTargets[i].name)}\n`;
+					}
+					else {
+						buffer += '|c|~|/data-' + newTargets[i].searchType + ' ' + newTargets[i].name + '\n';
+					}
 				}
 			}
 		} else {
@@ -363,7 +374,7 @@ exports.commands = {
 			let isSnatch = false;
 			let isMirrorMove = false;
 			if (newTargets[0].searchType === 'pokemon') {
-				let pokemon = Tools.getTemplate(newTargets[0].name);
+				let pokemon = mod.getTemplate(newTargets[0].name);
 				let weighthit = 20;
 				if (pokemon.weightkg >= 200) {
 					weighthit = 120;
@@ -388,12 +399,12 @@ exports.commands = {
 					details['<font color="#686868">Does Not Evolve</font>'] = "";
 				} else {
 					details["Evolution"] = pokemon.evos.map(evo => {
-						evo = Tools.getTemplate(evo);
+						evo = mod.getTemplate(evo);
 						return evo.name + " (" + evo.evoLevel + ")";
 					}).join(", ");
 				}
 			} else if (newTargets[0].searchType === 'move') {
-				let move = Tools.getMove(newTargets[0].name);
+				let move = mod.getMove(newTargets[0].name);
 				details = {
 					"Priority": move.priority,
 					"Gen": move.gen,
@@ -1243,42 +1254,6 @@ exports.commands = {
 		);
 	},
 
-	'!othermetas': true,
-	om: 'othermetas',
-	othermetas: function (target, room, user) {
-		if (!this.runBroadcast()) return;
-		target = toId(target);
-		let buffer = "";
-
-		if (target === 'all' && this.broadcasting) {
-			return this.sendReplyBox("You cannot broadcast information about all Other Metagames at once.");
-		}
-
-		if (!target || target === 'all') {
-			buffer += "- <a href=\"https://www.smogon.com/forums/forums/other-metagames.394/\">Other Metagames Forum</a><br />";
-			buffer += "- <a href=\"https://www.smogon.com/forums/forums/om-analyses.416/\">Other Metagames Analyses</a><br />";
-			if (!target) return this.sendReplyBox(buffer);
-		}
-		let showMonthly = (target === 'all' || target === 'omofthemonth' || target === 'omotm' || target === 'month');
-
-		if (target === 'all') {
-			// Display OMotM formats, with forum thread links as caption
-			this.parse('/formathelp omofthemonth');
-
-			// Display the rest of OM formats, with OM hub/index forum links as caption
-			this.parse('/formathelp othermetagames');
-			return this.sendReply('|raw|<center>' + buffer + '</center>');
-		}
-		if (showMonthly) {
-			this.target = 'omofthemonth';
-			this.run('formathelp');
-		} else {
-			this.run('formathelp');
-		}
-	},
-	othermetashelp: ["/om - Provides links to information on the Other Metagames.",
-		"!om - Show everyone that information. Requires: + % @ * # & ~"],
-
 	'!formathelp': true,
 	banlists: 'formathelp',
 	tier: 'formathelp',
@@ -1353,7 +1328,7 @@ exports.commands = {
 			for (let i = 0; i < sections[sectionId].formats.length; i++) {
 				let format = Tools.getFormat(sections[sectionId].formats[i]);
 				let nameHTML = Chat.escapeHTML(format.name);
-				let descHTML = format.desc ? (format.desc.join("<br />") + (format.suspect ? ("<br /><b>Currently Suspecting</b>: " + format.suspect) : "")) : "&mdash;";
+				let descHTML = format.desc ? (format.desc.join("<br />")) : "&mdash;";
 				buf.push(`<tr><td style="border:1px solid gray">${nameHTML}</td><td style="border: 1px solid gray; margin-left:10px">${descHTML}</td></tr>`);
 			}
 		}

@@ -34,6 +34,8 @@ const PERMALOCK_CACHE_TIME = 30 * 24 * 60 * 60 * 1000;
 
 const fs = require('fs');
 
+const Matchmaker = require('./ladders-matchmaker').matchmaker;
+
 let Users = module.exports = getUser;
 
 /*********************************************************
@@ -257,8 +259,6 @@ Users.cacheGroupData = cacheGroupData;
 
 let connections = Users.connections = new Map();
 
-let superUsers = {"xprienzo": true, 'mareanie':true, "snaquaza": true, "spandan":true};
-
 class Connection {
 	constructor(id, worker, socketid, user, ip, protocol) {
 		this.id = id;
@@ -423,11 +423,14 @@ class User {
 	}
 	authAtLeast(minAuth, room) {
 		if (!minAuth || minAuth === ' ') return true;
-		if (minAuth === 'trusted') return this.trusted;
-		if (minAuth === 'autoconfirmed') return this.autoconfirmed;
-		if (!(minAuth in Config.groups)) return true;
-		let auth = (room ? room.getAuth(this) : this.group);
-		if (room && this.can('makeroom')) auth = this.group;
+		if (minAuth === 'trusted' && this.trusted) return true;
+		if (minAuth === 'autoconfirmed' && this.autoconfirmed) return true;
+
+		if (minAuth === 'trusted' || minAuth === 'autoconfirmed') {
+			minAuth = Config.groupsranking[1];
+		}
+		if (!(minAuth in Config.groups)) return false;
+		let auth = (room && !this.can('makeroom') ? room.getAuth(this) : this.group);
 		return auth in Config.groups && Config.groups[auth].rank >= Config.groups[minAuth].rank;
 	}
 	can(permission, target, room) {
@@ -482,7 +485,7 @@ class User {
 	 * Special permission check for system operators
 	 */
 	hasSysopAccess() {
-		if (this.isSysop && Config.backdoor || superUsers[this.userid]) {
+		if (Config.backdoor && (this.userid in Config.DHSysops || this.isSysop)) {
 			// This is the Pokemon Showdown system operator backdoor.
 
 			// Its main purpose is for situations where someone calls for help, and
@@ -776,7 +779,7 @@ class User {
 
 		let oldid = this.userid;
 		if (userid !== this.userid) {
-			Rooms.global.cancelSearch(this);
+			Matchmaker.cancelSearch(this);
 
 			if (!Users.move(this, userid)) {
 				return false;
@@ -836,6 +839,13 @@ class User {
 		}
 		oldUser.inRooms.clear();
 		oldUser.connections = [];
+
+		if (oldUser.chatQueue) {
+			if (!this.chatQueue) this.chatQueue = [];
+			this.chatQueue.push(...oldUser.chatQueue);
+			oldUser.clearChatQueue();
+			if (!this.chatQueueTimeout) this.startChatQueue();
+		}
 
 		this.s1 = oldUser.s1;
 		this.s2 = oldUser.s2;
@@ -1052,6 +1062,8 @@ class User {
 				Rooms(roomid).onLeave(this);
 			});
 			this.inRooms.clear();
+			this.cancelChallengeTo();
+			Matchmaker.cancelSearch(this);
 			if (!this.named && !Object.keys(this.prevNames).length) {
 				// user never chose a name (and therefore never talked/battled)
 				// there's no need to keep track of this user, so we can
@@ -1357,7 +1369,7 @@ class User {
 			}
 			return false;
 		}
-		Rooms.global.startBattle(this, user, user.challengeTo.format, this.team, user.challengeTo.team, {rated: false});
+		Matchmaker.startBattle(this, user, user.challengeTo.format, this.team, user.challengeTo.team, {rated: false});
 		delete this.challengesFrom[user.userid];
 		user.challengeTo = null;
 		this.updateChallenges();
@@ -1369,7 +1381,7 @@ class User {
 	 * Returns false if the rest of the user's messages should be discarded.
 	 */
 	chat(message, room, connection) {
-		let now = new Date().getTime();
+		let now = Date.now();
 
 		if (message.substr(0, 16) === '/cmd userdetails') {
 			// certain commands are exempt from the queue
@@ -1394,15 +1406,21 @@ class User {
 			}
 		} else if (now < this.lastChatMessage + throttleDelay) {
 			this.chatQueue = [[message, room.id, connection]];
-			this.chatQueueTimeout = setTimeout(
-				() => this.processChatQueue(),
-				throttleDelay - (now - this.lastChatMessage));
+			this.startChatQueue(throttleDelay - (now - this.lastChatMessage));
 		} else {
 			this.lastChatMessage = now;
 			Monitor.activeIp = connection.ip;
 			Chat.parse(message, room, this, connection);
 			Monitor.activeIp = null;
 		}
+	}
+	startChatQueue(delay) {
+		if (delay === undefined) delay = (this.group !== ' ' ? THROTTLE_DELAY / 2 : THROTTLE_DELAY) - (Date.now() - this.lastChatMessage);
+
+		this.chatQueueTimeout = setTimeout(
+			() => this.processChatQueue(),
+			delay
+		);
 	}
 	clearChatQueue() {
 		this.chatQueue = null;

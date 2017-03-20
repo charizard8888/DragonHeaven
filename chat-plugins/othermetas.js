@@ -1,34 +1,156 @@
+// Other Metas plugin by Spandan
 'use strict';
 
-exports.commands= {
-	mixandmega: 'mnm',
-	mnm: function (target, room, user) {
+exports.commands = {
+	'!othermetas': true,
+	om: 'othermetas',
+	othermetas: function (target, room, user) {
 		if (!this.runBroadcast()) return;
-		if (!target || toId(target) === "" || !target.includes('@')) return this.parse('/help mixandmega');
+		target = toId(target);
+		let buffer = "";
+
+		if (target === 'all' && this.broadcasting) {
+			return this.sendReplyBox("You cannot broadcast information about all Other Metagames at once.");
+		}
+
+		if (!target || target === 'all') {
+			buffer += "- <a href=\"https://www.smogon.com/forums/forums/other-metagames.394/\">Other Metagames Forum</a><br />";
+			buffer += "- <a href=\"https://www.smogon.com/forums/forums/om-analyses.416/\">Other Metagames Analyses</a><br />";
+			if (!target) return this.sendReplyBox(buffer);
+		}
+		let showMonthly = (target === 'all' || target === 'omofthemonth' || target === 'omotm' || target === 'month');
+
+		if (target === 'all') {
+			// Display OMotM formats, with forum thread links as caption
+			this.parse('/formathelp omofthemonth');
+
+			// Display the rest of OM formats, with OM hub/index forum links as caption
+			this.parse('/formathelp othermetagames');
+			return this.sendReply('|raw|<center>' + buffer + '</center>');
+		}
+		if (showMonthly) {
+			this.target = 'omofthemonth';
+			this.run('formathelp');
+		} else {
+			this.run('formathelp');
+		}
+	},
+	othermetashelp: ["/om - Provides links to information on the Other Metagames.",
+		"!om - Show everyone that information. Requires: + % @ * # & ~"],
+
+	ce: "crossevolve",
+	crossevo: "crossevolve",
+	crossevolve: function(target, user, room)
+	{
+		if (!this.runBroadcast()) return;
+		if (!target || !target.includes(',')) return this.parse('/help crossevo')
+		let pokes = target.split(",");
+		if (!Tools.data.Pokedex[toId(pokes[0])] || !Tools.data.Pokedex[toId(pokes[1])]) {
+			return this.errorReply('Error: Pokemon not found.')
+		}
+		let template = Object.assign({}, Tools.getTemplate(pokes[0])), crossTemplate = Object.assign({}, Tools.getTemplate(pokes[1]));
+		let prevo = Tools.getTemplate(crossTemplate.prevo);
+		let mixedTemplate = Object.assign({}, template);
+		if (!template.evos || !template.evos.length) {
+			return this.errorReply(`Error: ${template.species} does not evolve.`);
+		}
+		if (!prevo.exists) {
+			return this.errorReply(`Error: You cannot cross evolve into ${crossTemplate.species}.`);
+		}
+		let setStage = 1, crossStage = 1;
+		if (template.prevo) {
+			setStage++;
+			if (Tools.data.Pokedex[template.prevo].prevo) {
+				setStage++;
+			}
+		}
+		if (crossTemplate.prevo) {
+			crossStage++;
+			if (prevo.prevo) {
+				crossStage++;
+			}
+		}
+		if (setStage + 1 !== crossStage) {
+			return this.sendReply(`Error: Cross evolution must follow evolutionary stages. (${poke1.species} is Stage ${setStage} and can only cross evolve to Stage ${setStage + 1})`);
+		}
+		mixedTemplate.abilities = Object.assign({}, crossTemplate.abilities);
+		mixedTemplate.baseStats = {};
+		for (let statName in template.baseStats) {
+			mixedTemplate.baseStats[statName] = (crossTemplate.baseStats[statName] - prevo.baseStats[statName]) + Tools.data.Pokedex[template.id].baseStats[statName];
+		}
+		mixedTemplate.types = [Tools.data.Pokedex[template.id].types[0]];
+		if (Tools.data.Pokedex[template.id].types[1]) mixedTemplate.types.push(Tools.data.Pokedex[template.id].types[1]);
+		if (crossTemplate.types[0] !== prevo.types[0]) mixedTemplate.types[0] = crossTemplate.types[0];
+		if (crossTemplate.types[1] !== prevo.types[1]) mixedTemplate.types[1] = crossTemplate.types[1] || crossTemplate.types[0];
+		if (mixedTemplate.types[0] === mixedTemplate.types[1]) mixedTemplate.types.length = 1;
+		mixedTemplate.weightkg = crossTemplate.weightkg - prevo.weightkg + Tools.data.Pokedex[template.id].weightkg;
+		if (mixedTemplate.weightkg <= 0) {
+			mixedTemplate.weightkg = 0.1;
+		}
+		for (var i in mixedTemplate.baseStats) {
+			if (mixedTemplate.baseStats[i] < 1 || mixedTemplate.baseStats[i] > 255) {
+				return this.errorReply(`This Cross Evolution cannot happen since a stat goes below 0 or above 255.`);
+			}
+		}
+		mixedTemplate.tier = "CE";
+		let details;
+		let weighthit = 20;
+		if (mixedTemplate.weightkg >= 200) {
+			weighthit = 120;
+		} else if (mixedTemplate.weightkg >= 100) {
+			weighthit = 100;
+		} else if (mixedTemplate.weightkg >= 50) {
+			weighthit = 80;
+		} else if (mixedTemplate.weightkg >= 25) {
+			weighthit = 60;
+		} else if (mixedTemplate.weightkg >= 10) {
+			weighthit = 40;
+		}
+		details = {
+			"Dex#": mixedTemplate.num,
+			"Gen": mixedTemplate.gen,
+			"Height": mixedTemplate.heightm + " m",
+			"Weight": mixedTemplate.weightkg + " kg <em>(" + weighthit + " BP)</em>",
+			"Dex Colour": mixedTemplate.color,
+		};
+		if (mixedTemplate.eggGroups) details["Egg Group(s)"] = mixedTemplate.eggGroups.join(", ");
+		details['<font color="#686868">Does Not Evolve</font>'] = "";
+		this.sendReply(`|raw|${Tools.getDataPokemonHTML(mixedTemplate)}`);
+		this.sendReply('|raw|<font size="1">' + Object.keys(details).map(detail => {
+				if (details[detail] === '') return detail;
+				return '<font color="#686868">' + detail + ':</font> ' + details[detail];
+			}).join("&nbsp;|&ThickSpace;") + '</font>');
+	},
+	crossevolvehelp: ["/crossevo <base pokemon>, <evolved pokemon> - Shows the type and stats for the Cross Evolved Pokemon."],
+
+	mnm: 'mixandmega',
+	mixandmega: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		if (!toId(target) || !target.includes('@')) return this.parse('/help mixandmega');
 		let sep = target.split('@');
-		let stone = toId(sep[1]), template = toId(sep[0]);
-		if ((!Tools.data.Items[stone] || !Tools.data.Items[stone].megaEvolves) && !Tools.data.Items[stone].onPrimal) {
-			return this.errorReply('Error: Mega Stone not found');
+		let stone = toId(sep[1]);
+		let template = toId(sep[0]);
+		if (!Tools.data.Items[stone] || (Tools.data.Items[stone] && !Tools.data.Items[stone].megaEvolves && !Tools.data.Items[stone].onPrimal)) {
+			return this.errorReply(`Error: Mega Stone not found`);
 		}
 		if (!Tools.data.Pokedex[toId(template)]) {
-			return this.errorReply("Error: Pokemon not found");
+			return this.errorReply(`Error: Pokemon not found`);
 		}
 		template = Object.assign({}, Tools.getTemplate(template));
 		stone = Object.assign({}, Tools.getItem(stone));
-		if (template.isMega || (template.evos && Object.keys(template.evos).length > 0)) {
+		if (template.isMega || (template.evos && Object.keys(template.evos).length > 0)) { // Mega Pokemon cannot be mega evolved
 			return this.errorReply(`You cannot mega evolve ${template.name} in Mix and Mega.`);
 		}
-		let deltas; //This hack is, yes, terribluh.
-		let baseTemplate = Tools.getTemplate(stone.megaEvolves), megaTemplate = Tools.getTemplate(stone.megaStone);
-		if (stone.id === 'redorb') {
+		let baseTemplate = Tools.getTemplate(stone.megaEvolves);
+		let megaTemplate = Tools.getTemplate(stone.megaStone);
+		if (stone.id === 'redorb') { // Orbs do not have 'Item.megaStone' or 'Item.megaEvolves' properties.
 			megaTemplate = Tools.getTemplate("Groudon-Primal");
 			baseTemplate = Tools.getTemplate("Groudon");
 		} else if (stone.id === 'blueorb') {
 			megaTemplate = Tools.getTemplate("Kyogre-Primal");
 			baseTemplate = Tools.getTemplate("Kyogre");
 		}
-		deltas = {
-			ability: megaTemplate.abilities['0'],
+		let deltas = {
 			baseStats: {},
 			weightkg: megaTemplate.weightkg - baseTemplate.weightkg,
 		};
@@ -43,38 +165,154 @@ exports.commands= {
 			deltas.type = megaTemplate.types[1];
 		}
 		//////////////////////////////////////////
-		let ability = deltas.ability, types = template.types, baseStats = Object.assign({}, template.baseStats);
-		if (types[0] === deltas.type) {
-			types = [deltas.type];
+		let mixedTemplate = Object.assign({}, template);
+		mixedTemplate.abilities = Object.assign({}, megaTemplate.abilities);
+		if (mixedTemplate.types[0] === deltas.type) { // Add any type gains
+			mixedTemplate.types = [deltas.type];
 		} else if (deltas.type) {
-			types = [types[0], deltas.type];
+			mixedTemplate.types = [types[0], deltas.type];
 		}
-		for (let statName in baseStats) {
-			baseStats[statName] = Tools.clampIntRange(baseStats[statName] + deltas.baseStats[statName], 1, 255);
+		mixedTemplate.baseStats = {};
+		for (let statName in template.baseStats) { // Add the changed stats and weight
+			mixedTemplate.baseStats[statName] = Tools.clampIntRange(Tools.data.Pokedex[template.id].baseStats[statName] + deltas.baseStats[statName], 1, 255);
 		}
-		let weightkg = Math.max(0.1, template.weightkg + deltas.weightkg);
-		let type = '<span class="col typecol">';
-		for (let i = 0; i < types.length; i++) {
-			type = `${type}<img src="https://play.pokemonshowdown.com/sprites/types/${types[i]}.png" alt="${types[i]}" height="14" width="32">`;
+		mixedTemplate.weightkg = Math.round(Math.max(0.1, template.weightkg + deltas.weightkg) * 100) / 100;
+		mixedTemplate.tier = "MnM";
+		let details;
+		let weighthit = 20;
+		if (mixedTemplate.weightkg >= 200) {
+			weighthit = 120;
+		} else if (mixedTemplate.weightkg >= 100) {
+			weighthit = 100;
+		} else if (mixedTemplate.weightkg >= 50) {
+			weighthit = 80;
+		} else if (mixedTemplate.weightkg >= 25) {
+			weighthit = 60;
+		} else if (mixedTemplate.weightkg >= 10) {
+			weighthit = 40;
 		}
-		type = type + "</span>";
-		let gnbp = 20;
-		if (weightkg >= 200) {
-			gnbp = 120;
-		} else if (weightkg >= 100) {
-			gnbp = 100;
-		} else if (weightkg >= 50) {
-			gnbp = 80;
-		} else if (weightkg >= 25) {
-			gnbp = 60;
-		} else if (weightkg >= 10) {
-			gnbp = 40;
-		}
-		let bst = baseStats['hp'] + baseStats['atk'] + baseStats['def'] + baseStats['spa'] + baseStats['spd'] + baseStats['spe'];
-		let text = `<b>Stats</b>: ${baseStats['hp']}/${baseStats['atk']}/${baseStats['def']}/${baseStats['spa']}/${baseStats['spd']}/${baseStats['spe']}<br /><b>BST</b>:${bst}<br /><b>Type:</b> ${type}<br /><b>Ability</b>: ${ability}<br /><b>Weight</b>: ${weightkg} kg (${gnbp} BP)`;
-		return this.sendReplyBox(text);
+		details = {
+			"Dex#": mixedTemplate.num,
+			"Gen": mixedTemplate.gen,
+			"Height": mixedTemplate.heightm + " m",
+			"Weight": mixedTemplate.weightkg + " kg <em>(" + weighthit + " BP)</em>",
+			"Dex Colour": mixedTemplate.color,
+		};
+		if (mixedTemplate.eggGroups) details["Egg Group(s)"] = mixedTemplate.eggGroups.join(", ");
+		details['<font color="#686868">Does Not Evolve</font>'] = "";
+		this.sendReply(`|raw|${Tools.getDataPokemonHTML(mixedTemplate)}`);
+		this.sendReply('|raw|<font size="1">' + Object.keys(details).map(detail => {
+				if (details[detail] === '') return detail;
+				return '<font color="#686868">' + detail + ':</font> ' + details[detail];
+			}).join("&nbsp;|&ThickSpace;") + '</font>');
 	},
-	mixandmegahelp: ["/mnm <pokemon> @ <mega stone> - Shows the mix and mega evolved Pokemon's type and stats."],
+	mixandmegahelp: ["/mnm <pokemon> @ <mega stone> - Shows the Mix and Mega evolved Pokemon's type and stats."],
+
+	'350': '350cup',
+	'350cup': function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		if (!Tools.data.Pokedex[toId(target)]) {
+			return this.errorReply("Error: Pokemon not found.");
+		}
+		let bst = 0;
+		let mixedTemplate = Object.assign({}, Tools.getTemplate(target));
+		for (let i in mixedTemplate.baseStats) {
+			bst += mixedTemplate.baseStats[i];
+		}
+		let newStats = {};
+		for (let i in mixedTemplate.baseStats) {
+			newStats[i] = mixedTemplate.baseStats[i] * (bst <= 350 ? 2 : 1);
+		}
+		mixedTemplate.baseStats = Object.assign({}, newStats);
+		mixedTemplate.tier = "350Cup";
+		let details;
+		let weighthit = 20;
+		if (mixedTemplate.weightkg >= 200) {
+			weighthit = 120;
+		} else if (mixedTemplate.weightkg >= 100) {
+			weighthit = 100;
+		} else if (mixedTemplate.weightkg >= 50) {
+			weighthit = 80;
+		} else if (mixedTemplate.weightkg >= 25) {
+			weighthit = 60;
+		} else if (mixedTemplate.weightkg >= 10) {
+			weighthit = 40;
+		}
+		details = {
+			"Dex#": mixedTemplate.num,
+			"Gen": mixedTemplate.gen,
+			"Height": mixedTemplate.heightm + " m",
+			"Weight": mixedTemplate.weightkg + " kg <em>(" + weighthit + " BP)</em>",
+			"Dex Colour": mixedTemplate.color,
+		};
+		if (mixedTemplate.eggGroups) details["Egg Group(s)"] = mixedTemplate.eggGroups.join(", ");
+		details['<font color="#686868">Does Not Evolve</font>'] = "";
+		this.sendReply(`|raw|${Tools.getDataPokemonHTML(mixedTemplate)}`);
+		this.sendReply('|raw|<font size="1">' + Object.keys(details).map(detail => {
+				if (details[detail] === '') return detail;
+				return '<font color="#686868">' + detail + ':</font> ' + details[detail];
+			}).join("&nbsp;|&ThickSpace;") + '</font>');
+	},
+	'350cuphelp': ["/350 OR /350cup <pokemon> - Shows the base stats that a Pokemon would have in 350 Cup."],
+
+	ts: 'tiershift',
+	tiershift: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		if (!Tools.data.Pokedex[toId(target)]) {
+			return this.errorReply("Error: Pokemon not found.");
+		}
+		let boosts = {
+			'UU': 5,
+			'BL2': 5,
+			'RU': 10,
+			'BL3': 10,
+			'NU': 15,
+			'BL4': 15,
+			'PU': 20,
+			'NFE': 20,
+			'LC Uber': 20,
+			'LC': 20,
+		};
+		let mixedTemplate = Object.assign({}, Tools.getTemplate(target));
+		let boost = boosts[mixedTemplate.tier];
+		if (!(mixedTemplate.tier in boosts)) boost = 0;
+		let newStats = {};
+		for (let statName in mixedTemplate.baseStats) {
+			newStats[statName] = Tools.clampIntRange(mixedTemplate.baseStats[statName] + boost, 1, 255);
+		}
+		mixedTemplate.baseStats = Object.assign({}, newStats);
+		mixedTemplate.tier = "TS";
+		let details;
+		let weighthit = 20;
+		if (mixedTemplate.weightkg >= 200) {
+			weighthit = 120;
+		} else if (mixedTemplate.weightkg >= 100) {
+			weighthit = 100;
+		} else if (mixedTemplate.weightkg >= 50) {
+			weighthit = 80;
+		} else if (mixedTemplate.weightkg >= 25) {
+			weighthit = 60;
+		} else if (mixedTemplate.weightkg >= 10) {
+			weighthit = 40;
+		}
+		details = {
+			"Dex#": mixedTemplate.num,
+			"Gen": mixedTemplate.gen,
+			"Height": mixedTemplate.heightm + " m",
+			"Weight": mixedTemplate.weightkg + " kg <em>(" + weighthit + " BP)</em>",
+			"Dex Colour": mixedTemplate.color,
+		};
+		if (mixedTemplate.eggGroups) details["Egg Group(s)"] = mixedTemplate.eggGroups.join(", ");
+		details['<font color="#686868">Does Not Evolve</font>'] = "";
+		this.sendReply(`|raw|${Tools.getDataPokemonHTML(mixedTemplate)}`);
+		this.sendReply('|raw|<font size="1">' + Object.keys(details).map(detail => {
+				if (details[detail] === '') return detail;
+				return '<font color="#686868">' + detail + ':</font> ' + details[detail];
+			}).join("&nbsp;|&ThickSpace;") + '</font>');
+	},
+	'tiershifthelp': ["/ts OR /tiershift <pokemon> - Shows the base stats that a Pokemon would have in Tier Shift."],
+
+	//Misc commands for DragonHeaven
 	ns: 'natureswap',
         'natureswap': function(target, room, user) {
 		if (!this.runBroadcast()) return;
@@ -253,62 +491,17 @@ exports.commands= {
 			return this.errorReply("Error: Pokemon/Ability/Move/Item not found");
 	},
 	
-	'350': 'cup350',
-	'350cup': function (target, room, user) {
-		if (!this.runBroadcast()) return;
-		if (!Tools.data.Pokedex[toId(target)]) {
-			return this.errorReply("Error: Pokemon not found.");
-		}
-		let bst = 0;
-		let pokeobj = Tools.getTemplate(toId(target));
-		for (let i in pokeobj.baseStats) {
-			bst += pokeobj.baseStats[i];
-		}
-		let newStats = {};
-		for (let i in pokeobj.baseStats) {
-			newStats[i] = pokeobj.baseStats[i] * (bst <= 350 ? 2 : 1);
-		}
-		let text = `${pokeobj.species} in 350 Cup: <br /> ${Object.values(newStats).join('/')}`;
-		this.sendReplyBox(text);
-	},
-	'350cuphelp': ["/350 OR /350cup <pokemon> - Shows the base stats that a Pokemon would have in 350 cup."],
-	
 	'bnb' : 'badnboosted',
 	badnboosted : function (target, room, user) {
 		if (!this.runBroadcast()) return;
 		if(!Tools.data.Pokedex[toId(target)]) {
 			return this.errorReply("Error: Pokemon not found.")
 		}
-		this.sendReplyBox(`${Tools.data.Pokedex[toId(target)].species} in Bad 'n Boosted: <br /> ` + Object.values(Tools.mod("bnb").data.Pokedex[toId(target)].baseStats).join('/'));
+		let template = Object.assign({}, Tools.getTemplate(target));
+		let newStats = Object.values(template.baseStats).map(function (stat) {
+ 			return (stat <= 70) ? (stat * 2) : stat;
+ 		});
+		this.sendReplyBox(`${Tools.data.Pokedex[toId(target)].species} in Bad 'n Boosted: <br /> ${newStats.join('/')}`);
 	},
 	badnboostedhelp: ["/bnb <pokemon> - Shows the base stats that a Pokemon would have in Bad 'n Boosted."],
-	
-	ts: 'tiershift',
-	tiershift: function (target, room, user) {
-		if (!this.runBroadcast()) return;
-		if (!Tools.data.Pokedex[toId(target)]) {
-			return this.errorReply("Error: Pokemon not found.");
-		}
-		let boosts = {
-			'UU': 5,
-			'BL2': 5,
-			'RU': 10,
-			'BL3': 10,
-			'NU': 15,
-			'BL4': 15,
-			'PU': 20,
-			'NFE': 20,
-			'LC Uber': 20,
-			'LC': 20,
-		};
-		let template = Object.assign({}, Tools.getTemplate(target));
-		if (!(template.tier in boosts)) return this.sendReplyBox(`${template.species} in 350 Cup: <br /> ${Object.values(template.baseStats).join('/')}`);
-		let boost = boosts[template.tier];
-		let newStats = Object.assign({}, template.baseStats);
-		for (let statName in template.baseStats) {
-			newStats[statName] = Tools.clampIntRange(newStats[statName] + boost, 1, 255);
-		}
-		this.sendReplyBox(`${template.species} in 350 Cup: <br /> ${Object.values(newStats).join('/')}`);
-	},
-	'tiershifthelp': ["/ts OR /tiershift <pokemon> - Shows the base stats that a Pokemon would have in Tier Shift."],
 };
