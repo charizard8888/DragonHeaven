@@ -20,11 +20,11 @@ exports.BattleMovedex = {
                     chance: 30,
 	                  status: 'brn',
           },
-	        onPrepareHit: function (target, source) {
+	  onPrepareHit: function (target, source) {
 			    this.attrLastMove('[still]');
 			    this.add('-anim', source, "Scald", target);
-	      	},
-          target: "normal",
-          type: "water,
+	    },
+          target:"normal",
+          type: "Water,
   },      
 };
