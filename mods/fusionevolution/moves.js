@@ -25,6 +25,6 @@ exports.BattleMovedex = {
 			    this.add('-anim', source, "Scald", target);
 	      	},
           target: "normal",
-          type: "Water,
+          type: "water,
   },      
 };
