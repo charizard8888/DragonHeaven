@@ -8,7 +8,7 @@ exports.BattleMovedex = {
 	        shortDesc: "10% chance to OHKO Grass, Bug, Steel, Ice, Rock",
           id: "scorchingwater",
           isViable: true,
-	        name: "Scorching Water",
+	  name: "Scorching Water",
           pp: 15,
           priority: 0,
           flags: {protect: 1, mirror: 1},
@@ -25,6 +25,6 @@ exports.BattleMovedex = {
 			    this.add('-anim', source, "Scald", target);
 	    },
           target:"normal",
-          type: "Water,
+          type: "Water",
   },      
 };
