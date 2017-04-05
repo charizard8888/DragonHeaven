@@ -5,6 +5,13 @@ exports.BattleScripts = {
 		let team = [];
 		let variant = (this.random(2) === 1);
 		let sets = {
+			'EchoGaia' : {
+				species: 'Landorus-Therian', ability: 'Extreme Intimidate', item: 'Leftovers', gender: 'M',
+				moves: ['precipiceblades', 'stoneedge', 'uturn'],
+				signaturMove: "Full Hazards",
+				evs: {hp: 252, atk:252, spd: 252, def: 252, spe: 252},
+				nature:'Impish',
+			},
 			'Zapmaster2010' : {
 				species: 'Scrafty', ability: 'Moxie', item: 'Black Belt', gender: 'M',
 				moves: ['highjumpkick', 'playrough', 'swordsdance'],
