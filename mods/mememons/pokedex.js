@@ -17,7 +17,7 @@ exports.BattlePokedex = {
   },
     farfetchdmemega: {
              num: 83,
-             species: "Farfetched-Memega",
+             species: "Farfetch'd-Memega",
              baseSpecies: "Farfetch'd",
              forme: "Memega",
              formeLetter: "M",
@@ -29,3 +29,4 @@ exports.BattlePokedex = {
 		         color: "Brown",
 		         eggGroups: ["Flying", "Field"],
   },
+};
