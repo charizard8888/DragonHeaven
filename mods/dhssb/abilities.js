@@ -1,12 +1,37 @@
 'use strict';
 
 exports.BattleAbilities = {
+	"extremeintimidate": {
+		name:"Extreme Intimidate",
+		id:"extremeintimidate",
+		onStart: function (pokemon) {
+			this.add('-clearallboost');
+			for (let i = 0; i < this.sides.length; i++) {
+				for (let j = 0; j < this.sides[i].active.length; j++) {
+					if (this.sides[i].active[j] && this.sides[i].active[j].isActive) this.sides[i].active[j].clearBoosts();
+				}
+			}
+		let foeactive = pokemon.side.foe.active;
+			let activated = false;
+			for (let i = 0; i < foeactive.length; i++) {
+				if (!foeactive[i] || !this.isAdjacent(foeactive[i], pokemon)) continue;
+				if (!activated) {
+					this.add('-ability', pokemon, 'Intimidate', 'boost');
+					activated = true;
+				}
+				if (foeactive[i].volatiles['substitute']) {
+					this.add('-immune', foeactive[i], '[msg]');
+				} else {
+					this.boost({atk: -1}, foeactive[i], pokemon);
+				}
+			}
+		},
+},
 	"rawr": {
 		shortDesc: "Thick Fat + Clear Body",
 		onStart: function(pokemon) {
 			this.add('-ability', pokemon, 'Rawr');
 			this.add('-formechange', pokemon, 'Sharpedo-Mega', '[msg]');
-			this.add('-formechange', pokemon, 'Sharpedo', '[msg]');
 			this.add('-formechange', pokemon, 'Absol-Mega', '[msg]');
 			this.add('-formechange', pokemon, 'Zygarde-Complete', '[msg]');
 			pokemon.formeChange("Zygarde-Complete");
