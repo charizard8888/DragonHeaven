@@ -20,4 +20,13 @@ exports.BattlePokedex = {
 		inherit: true,
 		otherForms: ["dragonite", "gyarados"],
 	},
+	scraftymega: {
+		num: 560,
+		species: "Scrafty-Mega",
+		forme: "Mega",
+		formeLetter: "M",
+		types: ["Fighting", "Dark"],
+		baseStats: {hp:65, atk:140, def:140, spa:20, spd:140, spe:83},
+		abilities:{0:"Adaptibility"},
+	},
 };
