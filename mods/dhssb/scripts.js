@@ -13,7 +13,7 @@ exports.BattleScripts = {
 				nature:'Impish',
 			},
 			'Zapmaster2010' : {
-				species: 'Scrafty', ability: 'Moxie', item: 'Black Belt', gender: 'M',
+				species: 'Scrafty', ability: 'Zapdem', item: 'Black Belt', gender: 'M', shiny:true,
 				moves: ['highjumpkick', 'playrough', 'swordsdance'],
 				signaturMove: "Knee of Justice",
 				evs: {hp: 252, atk:252, spd: 252, def: 252, spe: 252},
