@@ -52,5 +52,38 @@ exports.BattlePokedex = {
         abilities: {0: "Blaze", H: "Sheer Force"},
         prevo: "marsminian",
 	},
-  
+   aquario: {
+        num: 1000007,
+        species: "Aquario",
+        types: ["Water"],
+        baseStats: {hp: 36, atk: 45, def: 28, spa: 75, spd: 65, spe: 34},
+        abilities: {0: "Torrent", H: "Dry Skin"},
+        evos: ["seamunian"],
+	},
+   seamunian: {
+        num: 1000008,
+        species: "Seamunian",
+        types: ["Water"],
+        baseStats: {hp: 59, atk: 72, def: 86, spa: 85, spd: 74, spe: 52},
+       abilities: {0: "Torrent", H: "Dry Skin"},
+        evos: ["poseidonion"],
+        prevo: "aquario",
+	},
+    poseidonion: {
+        num: 1000009,
+        species: "Poseidonion",
+        types: ["Water", "Electric"],
+        baseStats: {hp: 86, atk: 103, def: 70, spa: 110, spd: 78, spe: 71},
+        abilities: {0: "Torrent", H: "Dry Skin"},
+        prevo: "seamunian",
+	},
+     avislon: {
+        num: 1000010,
+        species: "Avislon",
+        types: ["Normal", "Flying"],
+        baseStats: {hp: 28, atk: 40, def: 19, spa: 25, spd: 68, spe: 65},
+        abilities: {0: "Keen Eye", 1: "Big Pecks", H: "Aerilate"},
+        evos: ["avislorion"],
+	},
 };
+/* https://pastebin.com/8SudG3w9 */
