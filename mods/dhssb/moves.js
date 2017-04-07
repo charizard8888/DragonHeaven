@@ -1,6 +1,32 @@
 "use strict";
 
 exports.BattleMovedex = {
+	"Full Hazards" :{
+		accuracy: true,
+		desc: "Sets up all hazards",
+		shortDesc: "Sets up all hazards",
+		id: "fullhazards",
+		name: "Full Hazards",
+		pp: 15,
+		priority: 0,
+		flags: {reflectable: 1},
+		onPrepareHit: function (target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Stealth Rock", target);
+			this.add('-anim', source, "Spikes", target);
+			this.add('-anim', source, "Toxic Spikes", target);
+			this.add('-anim', source, "Sticky Web", target);
+		},
+		onHit: function (target, source) {
+			target.side.addSideCondition('toxicspikes', source);
+			target.side.addSideCondition('toxicspikes', source);
+			target.side.addSideCondition('toxicspikes', source);
+			target.side.addSideCondition('spikes', source);
+			target.side.addSideCondition('stealthrock', source);
+			target.side.addSideCondition('stickyweb', source);
+			if (source.name === 'EchoGaia') this.add("c|$EchoGaia|Insert Text Here)");
+		},
+	},
 	"kneeofjustice": {
 		accuracy: 80,
 		basePower: 140,
