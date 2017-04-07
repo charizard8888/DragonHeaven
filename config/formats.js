@@ -2664,6 +2664,7 @@ exports.Formats = [
 		],
 		mod: 'gen7',
 		ruleset: ['[Gen 7] OU'],
+		banlist: ['Shedinja'],
 		onModifyTemplate: function (template, pokemon) {
 			let types = [this.getMove(pokemon.moves[0]).type];
 			if (pokemon.moves[1] && this.getMove(pokemon.moves[1]).type !== types[0]) types.push(this.getMove(pokemon.moves[1]).type);
@@ -3492,9 +3493,9 @@ exports.Formats = [
 		}
 	},
 	{
-  		name: "[Gen 7] Memeons",
+  		name: "[Gen 7] Mememons",
   		desc: ["&bullet; <a href=https://pastebin.com/3MpyAJ4x>Mememons</a><br>Brought to you by smellslikememe",
-  		      ],
+		      ],
   		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
   		mod: 'mememons',
   	},
