@@ -14,7 +14,7 @@ exports.BattleItems = {
                     },
                     num: -1100,
                     gen: 6,
-                    desc: "If holder is a Gardevoir, this item allows it to Mega Evolve in battle.",
+                    desc: "If holder is a Gardevoir, this item allows it to Memega Evolve in battle.",
 	},
    "farfite": {
                     id: "farfite",
@@ -28,6 +28,20 @@ exports.BattleItems = {
                     },
                     num: -1100,
                     gen: 6,
-                    desc: "If holder is a Farfecth'd, this item allows it to Mega Evolve in battle.",
+                    desc: "If holder is a Farfecth'd, this item allows it to Memega Evolve in battle.",
+	},
+    "helixite": {
+                    id: "helixite",
+                    name: "helixite",
+                    spritenum: 608,
+                    megaStone: "Omastar-Memega",
+                    megaEvolves: "Omastar",
+                    onTakeItem: function (item, source) {
+                     if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+                      return true;
+                    },
+                    num: -1100,
+                    gen: 6,
+                    desc: "If holder is a Farfecth'd, this item allows it to Memega Evolve in battle.",
 	},
 };
