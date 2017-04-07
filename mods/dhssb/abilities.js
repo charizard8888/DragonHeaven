@@ -1,7 +1,19 @@
 'use strict';
 
 exports.BattleAbilities = {
-	"extremeintimidate": {
+	"zarpdem": {
+		name:"Zap Dem",
+		id:"zapdem",
+		shortDesc: "Mega evolves Zap, boosts Attack by 2 stages and Def & SpD by 4 stages",
+		onStart: function(pokemon) {
+			this.add('-ability', pokemon, 'Zap');
+			this.boost({atk:2, def:4, spd:4});
+			this.add('-formechange', pokemon, 'Charizard-Mega-Y', '[msg]');
+			pokemon.formeChange("Scrafty-Mega");
+		},
+		
+	},
+	"extremeintimidate": { /* Fix this On switchin --> Haze --> Lower all of th foe's stats by one*/
 		name:"Extreme Intimidate",
 		id:"extremeintimidate",
 		onStart: function (pokemon) {
@@ -26,7 +38,7 @@ exports.BattleAbilities = {
 				}
 			}
 		},
-},
+	},
 	"rawr": {
 		shortDesc: "Thick Fat + Clear Body",
 		onStart: function(pokemon) {
@@ -104,7 +116,7 @@ exports.BattleAbilities = {
 		shortDesc: "+1 in all stats upon switch in",
 		onStart: function (pokemon) {
 			this.add('-ability', pokemon, 'Static Boost');
-			this.boost({atk:1, def:1, spa:1, spd:1, spe:1, accuracy:1, evasion:1});
+			this.boost({atk:1, def:1, spa:1, spd:1, spe:1, accuracy:2});
 		},
 		id:'staticboost',
 		name:'Static Boost',
