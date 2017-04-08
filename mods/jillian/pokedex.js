@@ -85,5 +85,14 @@ exports.BattlePokedex = {
         abilities: {0: "Keen Eye", 1: "Big Pecks", H: "Aerilate"},
         evos: ["avislorion"],
 	},
+     avislorion: {
+        num: 1000011,
+        species: "Avislorion",
+        types: ["Normal", "Flying"],
+        baseStats: {hp: 39, atk: 56, def: 38, spa: 40, spd: 75, spe: 78},
+        abilities: {0: "Keen Eye", 1: "Big Pecks", H: "Aerilate"},
+        evos: ["avissolorian"],
+        prevo: "avislon",
+	},
 };
 /* https://pastebin.com/8SudG3w9 */
