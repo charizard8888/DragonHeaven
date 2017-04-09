@@ -6539,6 +6539,7 @@ exports.Formats = [
 	},
 	{
 		name: "[Gen 7] 1v1 Almost Any Ability",
+		section: "1v1 Other Metas",
 		desc: [
 			"Pok&eacute;mon can use any ability, barring the few that are banned.",
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3587901/\">Almost Any Ability</a>",
@@ -6582,6 +6583,7 @@ exports.Formats = [
 	},
 	{
 		name: "[Gen 7] 1v1 Anything Goes",
+		section: "1v1 Other Metas",
 		desc: [
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3523229/\">Anything Goes</a>",
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3548945/\">AG Resources</a>",
@@ -6596,6 +6598,7 @@ exports.Formats = [
 	},
 	{
 		name: "[Gen 7] 1v1 Balanced Hackmons",
+		section: "1v1 Other Metas",
 		desc: [
 			"Anything that can be hacked in-game and is usable in local battles is allowed.",
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3587475/\">Balanced Hackmons</a>",
@@ -6621,6 +6624,7 @@ exports.Formats = [
 	},
 	{
 		name: "[Gen 7] 1v1 Classic Hackmons",
+		section: "1v1 Other Metas",
 		ruleset: ['HP Percentage Mod', 'Cancel Mod'],
 		teamLength: {
 			validate: [1, 3],
@@ -6659,7 +6663,7 @@ exports.Formats = [
 	},
 	{
 		name: "1v1",
-		section: '1v1 Other Metas',
+		section: "1v1 Other Metas",
 		mod: 'gen6',
 		ruleset: ['Pokemon', 'Moody Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Swagger Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview 1v1'],
 		banlist: ['Illegal', 'Unreleased', 'Arceus', 'Blaziken', 'Darkrai', 'Deoxys', 'Deoxys-Attack', 'Dialga', 'Giratina', 'Giratina-Origin',
@@ -6678,6 +6682,7 @@ exports.Formats = [
 	},
 	{
 		name: "[Gen 7] 1v1 Mix and Mega",
+		section: "1v1 Other Metas",
 		desc: [
 			"Mega Stones and Primal Orbs can be used on almost any fully evolved Pok&eacute;mon with no Mega Evolution limit.",
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3587740/\">Mix and Mega</a>",
@@ -6742,6 +6747,7 @@ exports.Formats = [
 	},
 	{
 		name: "[Gen 7]1v1  Monotype",
+		section: "1v1 Other Metas",
 		desc: [
 			"All the Pok&eacute;mon on a team must share a type.",
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3587204/\">Monotype</a>",
@@ -6762,6 +6768,7 @@ exports.Formats = [
 	},
 	{
 		name: "[Gen 7] 1v1 Sketchmons",
+		section: "1v1 Other Metas",
 		desc: [
 			"Pok&eacute;mon gain access to one Sketched move.",
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3587743/\">Sketchmons</a>",
