@@ -946,38 +946,6 @@ exports.BattleScripts = {
 
 		return team;
 	},
-	randomRPSTeam: function (side) {
-		let team;
-		let natures = Object.keys(this.data.Natures);
-		let nature = natures[this.random(natures.length)];
-		let rock = this.random(5);
-		let scissors = this.random(2);
-		let moves = [['phantomforce','naturalgift','aerialace','shadowclaw','shadowball'][rock], 'suckerpunch', ['toxic','willowisp'][scissors]];
-		let item;
-		if (!rock) {
-			item = 'powerherb';
-		} else if (rock === 1) {
-			let berries = ['cheriberry','wikiberry','magoberry','iapapaberry','blukberry','grepaberry','magostberry','rabutaberry','spelonberry','watmelberry','occaberry','cobaberry','chartiberry','kasibberry','colburberry','lansatberry','micleberry','custapberry','rowapberry','marangaberry'];
-			item = berries[this.random(berries.length)];
-		} else {
-			item = ['leftovers','sitrusberry','smoothrock','widelens'][this.random(4)];
-		}
-		team = [{
-			name: 'Shedinja',
-			species: 'Shedinja',
-			item: item,
-			ability: 'wonderguard',
-			moves: moves,
-			evs: {hp: 252, atk: 0, def: 0, spa: 0, spd: 0, spe: 0},
-			ivs: {hp: 31, atk: 0, def: 0, spa: 0, spd: 0, spe: 0},
-			nature: nature,
-			level: 100,
-			happiness: 255,
-			shiny: false,
-		}];
-
-		return team;
-	},
 	randomCCTeam: function (side) {
 		let team = [];
 
@@ -1553,7 +1521,7 @@ exports.BattleScripts = {
 					isSetup = true;
 					break;
 				case 'agility': case 'autotomize': case 'rockpolish':
-					if (counter.damagingMoves.length < 2 && !counter.setupType && !hasMove['batonpass']) rejected = true;
+					if (counter.damagingMoves.length < 2 && !hasMove['batonpass']) rejected = true;
 					if (hasMove['rest'] && hasMove['sleeptalk']) rejected = true;
 					if (!counter.setupType) isSetup = true;
 					break;
@@ -1578,6 +1546,7 @@ exports.BattleScripts = {
 					break;
 				case 'foulplay':
 					if (counter.setupType || !!counter['speedsetup'] || counter['Dark'] > 2 || (hasMove['rest'] && hasMove['sleeptalk'])) rejected = true;
+					if (counter.damagingMoves.length - 1 === counter['priority']) rejected = true;
 					break;
 				case 'haze': case 'spikes': case 'waterspout':
 					if (counter.setupType || !!counter['speedsetup'] || (hasMove['rest'] && hasMove['sleeptalk'])) rejected = true;
@@ -1670,7 +1639,7 @@ exports.BattleScripts = {
 					if (hasMove['playrough'] && counter.setupType !== 'Special') rejected = true;
 					break;
 				case 'drainingkiss':
-					if (hasMove['dazzlinggleam'] || counter.setupType !== 'Special') rejected = true;
+					if (hasMove['dazzlinggleam'] || counter.setupType !== 'Special' && !hasAbility['triage']) rejected = true;
 					break;
 				case 'aurasphere': case 'focusblast':
 					if ((hasMove['closecombat'] || hasMove['superpower']) && counter.setupType !== 'Special') rejected = true;
@@ -2144,10 +2113,6 @@ exports.BattleScripts = {
 			moves[moves.indexOf('thunderpunch')] = 'return';
 		}
 
-		if (hasMove['thunderpunch'] && ability === 'Galvanize') {
-			moves[moves.indexOf('thunderpunch')] = 'return';
-		}
-
 		item = 'Leftovers';
 		if (template.requiredItems) {
 			if (template.baseSpecies === 'Arceus' && hasMove['judgment']) {
@@ -2260,7 +2225,7 @@ exports.BattleScripts = {
 			item = 'Air Balloon';
 		} else if (hasMove['outrage'] && (counter.setupType || ability === 'Multiscale')) {
 			item = 'Lum Berry';
-		} else if (ability === 'Slow Start' || hasMove['clearsmog'] || hasMove['detect'] || hasMove['protect'] || hasMove['sleeptalk']) {
+		} else if (ability === 'Slow Start' || hasMove['clearsmog'] || hasMove['curse'] || hasMove['detect'] || hasMove['protect'] || hasMove['sleeptalk']) {
 			item = 'Leftovers';
 		} else if (hasMove['substitute']) {
 			item = !counter['drain'] || counter.damagingMoves.length < 2 ? 'Leftovers' : 'Life Orb';
@@ -3457,10 +3422,11 @@ exports.BattleScripts = {
 		if (!depth) depth = 0;
 		let forceResult = (depth >= 4);
 
-		const prevSeed = this.seed;
-		this.seed = this.startingSeed.slice(0, 4);
-		const chosenTier = 'BH';
-		this.seed = prevSeed;
+		// The teams generated depend on the tier choice in such a way that
+		// no exploitable information is leaked from rolling the tier in getTeam(p1).
+		let availableTiers = ['Uber', 'OU', 'UU', 'RU', 'NU', 'PU'];
+		if (!this.factoryTier) this.factoryTier = availableTiers[this.random(availableTiers.length)];
+		const chosenTier = this.factoryTier;
 
 		let pokemon = [];
 

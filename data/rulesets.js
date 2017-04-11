@@ -394,20 +394,13 @@ exports.BattleFormats = {
 			for (let i = 0; i < team.length; i++) {
 				let ability = toId(team[i].ability);
 				if (!ability) continue;
-				if (ability in abilityTable || base[ability] in abilityTable) {
-					if (abilityTable[ability] >= 2 || abilityTable[base[ability]] >= 2) {
-						return ["You are limited to two of each ability by the Ability Clause.", "(You have more than two " + this.getAbility(ability).name + " or one of its variants)"];
-					}
-					if (base[ability]) {
-						abilityTable[base[ability]]++;
-						continue;
+				if (ability in base) ability = base[ability];
+				if (ability in abilityTable) {
+					if (abilityTable[ability] >= 2) {
+						return ["You are limited to two of each ability by the Ability Clause.", `(You have more than two ${this.getAbility(ability).name} variants)`];
 					}
 					abilityTable[ability]++;
 				} else {
-					if (base[ability]) {
-						abilityTable[base[ability]] = 1;
-						continue;
-					}
 					abilityTable[ability] = 1;
 				}
 			}
@@ -545,10 +538,10 @@ exports.BattleFormats = {
 				}
 				if (item.zMove && move.type === item.zMoveType) {
 					if (move.zMoveBoost && move.zMoveBoost.spe > 0) {
-						speedBoosted = true;
+						if (!speedBoosted) speedBoosted = move.name;
 					}
 					if (move.zMoveBoost && (move.zMoveBoost.atk > 0 || move.zMoveBoost.def > 0 || move.zMoveBoost.spa > 0 || move.zMoveBoost.spd > 0)) {
-						nonSpeedBoosted = true;
+						if (!nonSpeedBoosted || move.name === speedBoosted) nonSpeedBoosted = move.name;
 					}
 				}
 			}
