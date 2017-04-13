@@ -1830,10 +1830,10 @@ exports.Formats = [
 		},
 	},
 	{
-		name: "[Gen 7] Random Ability Sharing",
+		name: "[Gen 7] Random Quantumbility",
 		desc: [
-			"&bullet; Ability sharing is an OU-based meta where you basically share your ability with your opponent, with a reset every switch. (your ability isn't replaced by the ability of the opponent, but you still can profit of it)",
-			"&bullet; <a href=\"http://www.smogon.com/forums/threads/3598275/#post-7271345\">Ability Sharing</a>",
+			"&bullet; Quantumbilityg is an OU-based meta where you basically share your ability with your opponent, with a reset every switch. (your ability isn't replaced by the ability of the opponent, but you still can profit of it)",
+			"&bullet; <a href=\"http://www.smogon.com/forums/threads/3598275/#post-7271345\">Quantumbility</a>",
 		],
 		mod: 'franticfusions',
 		ruleset: ['[Gen 7] OU'],
@@ -5392,10 +5392,10 @@ exports.Formats = [
 		column: 3,
 	},
 	{
-		name: "[Gen 7] Ability Sharing",
+		name: "[Gen 7] Quantumbility",
 		desc: [
-			"&bullet; Ability sharing is an OU-based meta where you basically share your ability with your opponent, with a reset every switch. (your ability isn't replaced by the ability of the opponent, but you still can profit of it)",
-			"&bullet; <a href=\"http://www.smogon.com/forums/threads/3598275/#post-7271345\">Ability Sharing</a>",
+			"&bullet; Quantumbility is an OU-based meta where you basically share your ability with your opponent, with a reset every switch. (your ability isn't replaced by the ability of the opponent, but you still can profit of it)",
+			"&bullet; <a href=\"http://www.smogon.com/forums/threads/3598275/#post-7271345\">Quantumbility</a>",
 		],
 		mod: 'franticfusions',
 		ruleset: ['[Gen 7] OU'],
