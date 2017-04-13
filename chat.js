@@ -959,20 +959,22 @@ Chat.getDataPokemonHTML = function (template) {
 		}
 	}
 	buf += '</span> ';
-	buf += '<span style="float:left;min-height:26px">';
-	if (template.abilities['1']) {
-		buf += '<span class="col twoabilitycol">' + template.abilities['0'] + '<br />' + template.abilities['1'] + '</span>';
-	} else {
-		buf += '<span class="col abilitycol">' + template.abilities['0'] + '</span>';
+	if (template.abilities) {
+		buf += '<span style="float:left;min-height:26px">';
+		if (template.abilities['1']) {
+			buf += '<span class="col twoabilitycol">' + template.abilities['0'] + '<br />' + template.abilities['1'] + '</span>';
+		} else {
+			buf += '<span class="col abilitycol">' + template.abilities['0'] + '</span>';
+		}
+		if (template.abilities && template.abilities['S']) {
+			buf += '<span class="col twoabilitycol' + (template.unreleasedHidden ? ' unreleasedhacol' : '') + '"><em>' + template.abilities['H'] + '<br />' + template.abilities['S'] + '</em></span>';
+		} else if (template.abilities['H']) {
+			buf += '<span class="col abilitycol' + (template.unreleasedHidden ? ' unreleasedhacol' : '') + '"><em>' + template.abilities['H'] + '</em></span>';
+		} else {
+			buf += '<span class="col abilitycol"></span>';
+		}
+		buf += '</span>';
 	}
-	if (template.abilities['S']) {
-		buf += '<span class="col twoabilitycol' + (template.unreleasedHidden ? ' unreleasedhacol' : '') + '"><em>' + template.abilities['H'] + '<br />' + template.abilities['S'] + '</em></span>';
-	} else if (template.abilities['H']) {
-		buf += '<span class="col abilitycol' + (template.unreleasedHidden ? ' unreleasedhacol' : '') + '"><em>' + template.abilities['H'] + '</em></span>';
-	} else {
-		buf += '<span class="col abilitycol"></span>';
-	}
-	buf += '</span>';
 	buf += '<span style="float:left;min-height:26px">';
 	buf += '<span class="col statcol"><em>HP</em><br />' + template.baseStats.hp + '</span> ';
 	buf += '<span class="col statcol"><em>Atk</em><br />' + template.baseStats.atk + '</span> ';
