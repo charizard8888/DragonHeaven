@@ -39,7 +39,6 @@ const BROADCAST_TOKEN = '!';
 
 const fs = require('fs');
 const path = require('path');
-const parseEmoticons = require('./chat-plugins/emoticons').parseEmoticons;
 
 class PatternTester {
 	// This class sounds like a RegExp
@@ -169,8 +168,6 @@ class CommandContext {
 
 		if (message && message !== true && typeof message.then !== 'function') {
 			if (this.pmTarget) {
-				const parsedMsg = parseEmoticons(message, this.room, this.user, true);
-				if (parsedMsg) message = '/html ' + parsedMsg;
 				let buf = `|pm|${this.user.getIdentity()}|${this.pmTarget.getIdentity()}|${message}`;
 				this.user.send(buf);
 				if (this.pmTarget !== this.user) this.pmTarget.send(buf);
@@ -178,11 +175,9 @@ class CommandContext {
 				this.pmTarget.lastPM = this.user.userid;
 				this.user.lastPM = this.pmTarget.userid;
 			} else {
-				if (parseEmoticons(message, this.room, this.user)) return;
 				this.room.add(`|c|${this.user.getIdentity(this.room.id)}|${message}`);
 			}
 		}
-
 
 		this.update();
 
@@ -393,7 +388,7 @@ class CommandContext {
 		}
 	}
 	errorReply(message) {
-		if (this.pmTarget && this.pmTarget.getIdentity) {
+		if (this.pmTarget) {
 			let prefix = '|pm|' + this.user.getIdentity() + '|' + this.pmTarget.getIdentity() + '|/error ';
 			this.connection.send(prefix + message.replace(/\n/g, prefix));
 		} else {
@@ -480,6 +475,12 @@ class CommandContext {
 
 			// broadcast cooldown
 			let broadcastMessage = message.toLowerCase().replace(/[^a-z0-9\s!,]/g, '');
+
+			if (this.room && this.room.lastBroadcast === this.broadcastMessage &&
+					this.room.lastBroadcastTime >= Date.now() - BROADCAST_COOLDOWN) {
+				this.errorReply("You can't broadcast this because it was just broadcasted.");
+				return false;
+			}
 
 			this.message = message;
 			this.broadcastMessage = broadcastMessage;
@@ -618,6 +619,11 @@ class CommandContext {
 
 			if (room) {
 				let normalized = message.trim();
+				if (room.id === 'lobby' && (normalized === user.lastMessage) &&
+						((Date.now() - user.lastMessageTime) < MESSAGE_COOLDOWN)) {
+					this.errorReply("You can't send the same message again so soon.");
+					return false;
+				}
 				user.lastMessage = message;
 				user.lastMessageTime = Date.now();
 			}
@@ -975,6 +981,10 @@ Chat.getDataPokemonHTML = function (template) {
 		}
 		buf += '</span>';
 	}
+	let bst = 0;
+	for (let i in template.baseStats) {
+		bst += template.baseStats[i];
+	}
 	buf += '<span style="float:left;min-height:26px">';
 	buf += '<span class="col statcol"><em>HP</em><br />' + template.baseStats.hp + '</span> ';
 	buf += '<span class="col statcol"><em>Atk</em><br />' + template.baseStats.atk + '</span> ';
@@ -984,12 +994,9 @@ Chat.getDataPokemonHTML = function (template) {
 	} else {
 		buf += '<span class="col statcol"><em>SpA</em><br />' + template.baseStats.spa + '</span> ';
 		buf += '<span class="col statcol"><em>SpD</em><br />' + template.baseStats.spd + '</span> ';
+		buf -= template.baseStats.spa + template.baseStats.spd;
 	}
 	buf += '<span class="col statcol"><em>Spe</em><br />' + template.baseStats.spe + '</span> ';
-	let bst = 0;
-	for (let i in template.baseStats) {
-		bst += template.baseStats[i];
-	}
 	buf += '<span class="col bstcol"><em>BST<br />' + bst + '</em></span> ';
 	buf += '</span>';
 	buf += '</li>';
@@ -1014,7 +1021,7 @@ Chat.getDataAbilityHTML = function (ability) {
 	if (typeof ability === 'string') ability = Object.assign({}, Tools.getAbility(ability));
 	let buf = `<ul class="utilichart"><li class="result">`;
 	buf += `<a data-entry="ability|${ability.name}"><span class="col namecol">${ability.name}</span> `;
-	buf += `<span class="col abilitydesccol">${ability.desc || ability.shortDesc}</span> `;
+	buf += `<span class="col abilitydesccol">${ability.shortDesc || ability.desc}</span> `;
 	buf += `</a></li><li style="clear:both"></li></ul>`;
 	return buf;
 };
@@ -1024,8 +1031,8 @@ Chat.getDataItemHTML = function (item) {
 	let top = Math.floor(item.spritenum / 16) * 24;
 	let left = (item.spritenum % 16) * 24;
 	let buf = `<ul class="utilichart"><li class="result">`;
-	buf  += `<a data-entry="item|${item.name}"><span class="col itemiconcol"><span style="background:transparent url(//play.pokemonshowdown.com/sprites/itemicons-sheet.png) no-repeat scroll -${left}px -${top}px"></span></span> <span class="col namecol">${item.name}</span> `;
-	buf += `<span class="col itemdesccol">${item.desc || item.shortDesc}</span> `;
+	buf += `<a data-entry="item|${item.name}"><span class="col itemiconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/itemicons-sheet.png) no-repeat scroll -${left}px -${top}px"></span></span> <span class="col namecol">${item.name}</span> `;
+	buf += `<span class="col itemdesccol">${item.shortDesc || item.desc}</span> `;
 	buf += `</a></li><li style="clear:both"></li></ul>`;
 	return buf;
 };
