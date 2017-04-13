@@ -982,10 +982,10 @@ Chat.getDataPokemonHTML = function (template) {
 	buf += '<span class="col statcol"><em>Def</em><br />' + template.baseStats.def + '</span> ';
 	if (template.baseStats.spc) {
 		buf += '<span class="col statcol"><em>Spc</em><br />' + template.baseStats.spc + '</span> ';
+		bst -= template.baseStats.spa + template.baseStats.spd;
 	} else {
 		buf += '<span class="col statcol"><em>SpA</em><br />' + template.baseStats.spa + '</span> ';
 		buf += '<span class="col statcol"><em>SpD</em><br />' + template.baseStats.spd + '</span> ';
-		bst -= template.baseStats.spa + template.baseStats.spd;
 	}
 	buf += '<span class="col statcol"><em>Spe</em><br />' + template.baseStats.spe + '</span> ';
 	buf += '<span class="col bstcol"><em>BST<br />' + bst + '</em></span> ';
