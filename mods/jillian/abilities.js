@@ -117,14 +117,15 @@ exports.BattleAbilities = {
         name: "Medicine",
         rating: 5,
     },
-                   "predator": {
+         "predator": {
                      shortDesc: "This Pokemon's super effective attacks against the target have x1.3 power",
                     },
 		                onModifyDamage: function (damage, source, target, move) {
 			              if (move && move.typeMod > 0) {
 				            return this.chainModify([0x14CD, 0x1000]);
+				      }
       },
-      id: "predator"
-      name: "Predator"
-      rating: 3
+      id: "predator",
+      name: "Predator",
+      rating: 3,
 };  
