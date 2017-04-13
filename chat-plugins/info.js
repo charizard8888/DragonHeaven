@@ -390,7 +390,14 @@ exports.commands = {
 					let sType = newTargets[i].searchType.charAt(0).toUpperCase() + newTargets[i].searchType.substring(1, newTargets[i].searchType.length);
 					if (Chat[`getData${sType}HTML`]) {
 						let template = mod["get" + (sType === "Pokemon" ? "Template" : sType)](newTargets[i].name);
-						if (sType === "Pokemon" && mod.gen < 3) delete template.abilities;
+						if (sType === "Pokemon") {
+							if (mod.gen === 1) {
+								template.baseStats["spc"] = template.baseStats.spa;
+								delete template.baseStats.spa;
+								delete template.baseStats.spd;
+							}
+							if (mod.gen < 3) delete template.abilities;
+						}
 						buffer += `|raw|${Chat[`getData${sType}HTML`](template)}\n`;
 					} else {
 						buffer += '|c|~|/data-' + newTargets[i].searchType + ' ' + newTargets[i].name + '\n';
