@@ -1,7 +1,8 @@
 'use strict';
 
 exports.BattleItems = {
-       "luxraynitea": {
+       
+	"luxraynitea": {
 		           id: "luxraynitea",
                name: "Luxraynite A",
 		           megaStone: "Luxray-Mega-A",
