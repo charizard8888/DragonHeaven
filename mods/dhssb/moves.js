@@ -734,7 +734,7 @@ exports.BattleMovedex = {
 		onPrepareHit: function (target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Dragon Dance", source);
-			if (source.name === 'Flygonerz') this.add("c|&Flygonerz|Get re(kt)ddy");
+			if (source.name === 'Kyuramber') this.add("c|&Kyuramber|Get re(kt)ddy");
 			this.useMove('Wish', source);
 		},
 		target: "self",
