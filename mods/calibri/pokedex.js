@@ -27,7 +27,7 @@ exports.BattlePokedex = {
         evos: [""],
         prevo: "",
   },
-  sudowoodo-mega: {
+  sudowoodomega: {
         num: 1000004,
         species: "Sudowoodo-Mega",
         types: ["Rock"],
