@@ -127,8 +127,8 @@ exports.BattleScripts = {
 				signatureMove: "Legend's Ambition",
 				evs: {hp:248, atk:252, spa:252, spe:252}, nature: 'Mild',
 			},
-			'Flygonerz': {
-				species: 'Flygon', ability: 'Tough Bounce', item: 'Focus Sash', gender: ['F'],shiny:true,
+			'Kyuramber': {
+				species: 'Kyurem', ability: 'Tough Bounce', item: 'Focus Sash', gender: ['F'],shiny:true,
 				moves: ['outrage', 'thousandarrows', 'extremespeed'],
 				signatureMove: "Dragon Shift",
 				evs: {hp:4, atk:252, spe:252}, nature: 'Jolly',
