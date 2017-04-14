@@ -5438,6 +5438,7 @@ exports.Formats = [
 		name: "[Gen 7] Partners in Crime",
 		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/partners-in-crime.3559988/\">Partners in Crime</a>"],
 		mod: 'franticfusions',
+		gameType: 'doubles',
 		ruleset: ['[Gen 7] Doubles OU'],
 		onBegin: function () {
 			this.statusability = {
