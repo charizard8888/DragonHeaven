@@ -5480,8 +5480,8 @@ exports.Formats = [
 			sec = this.statusability[partner.ability] ? ("other" + partner.ability) : partner.ability;
 			pokemon.sec = sec;
 			pokemon.addVolatile(sec);
-			pokemon.baseMoveset.length = pokemon.baseMoves.length = pokemon.moves.length = pokemon.obms.length;
-			partner.baseMoveset.length = partner.baseMoves.length = partner.moves.length = partner.obms.length;
+			pokemon.baseMoveset.length = pokemon.moveset.length = pokemon.baseMoves.length = pokemon.moves.length = pokemon.obms.length;
+			partner.baseMoveset.length = partner.moveset.length = partner.baseMoves.length = partner.moves.length = partner.obms.length;
 			for (let i = pokemon.obms.length; i < pokemon.obms.length + partner.obms.length; i++) {
 				pokemon.baseMoveset[i] = Object.assign({}, partner.obms[i - partner.obms.length]);
 				pokemon.moveset[i] = Object.assign({}, partner.oms[i - partner.oms.length]);
@@ -5500,14 +5500,14 @@ exports.Formats = [
 			if (!partner) return;
 			partner.removeVolatile(pokemon.side.active[1].sec);
 			delete partner.sec;
-			partner.baseMoveset.length = partner.baseMoves.length = partner.moves.length = partner.obms.length;
+			partner.baseMoveset.length = partner.moveset.length = partner.baseMoves.length = partner.moves.length = partner.obms.length;
 		},
 		onFaint: function (pokemon) {
 			let partner = pokemon.side.active[1 ^ pokemon.position];
 			if (!partner) return;
 			partner.removeVolatile(pokemon.side.active[1].sec);
 			delete partner.sec;
-			partner.baseMoveset.length = partner.baseMoves.length = partner.moves.length = partner.obms.length;
+			partner.baseMoveset.length = partner.moveset.length = partner.baseMoves.length = partner.moves.length = partner.obms.length;
 		},
 	},
 	{
