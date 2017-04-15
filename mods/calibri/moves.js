@@ -30,7 +30,7 @@ exports.BattleMovedex = {
           category: "Status",
           desc: "Raises the user's accuracy by 1 stage and allows Dragon type moves to hit Fairy type Pokemon. This effect is canceled if Odor Sleuth, Foresight or Miracle Eye is used.",
           shortDesc: "Raises the user's accuracy by 1; Dragon can hit Fairy types.",
-          id: "mythical aura",
+          id: "mythicalaura",
           name: "Mythical Aura",
           pp: 20,
           priority: 0,
