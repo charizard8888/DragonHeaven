@@ -25,14 +25,13 @@ sound: Has no effect on Pokemon with the Ability Soundproof.
 
 exports.BattleMovedex = {
     "mythicalaura": {
-          num: 1000,
           accuracy: true,
           basePower: 0,
           category: "Status",
           desc: "Raises the user's accuracy by 1 stage and allows Dragon type moves to hit Fairy type Pokemon. This effect is canceled if Odor Sleuth, Foresight or Miracle Eye is used.",
           shortDesc: "Raises the user's accuracy by 1; Dragon can hit Fairy types.",
-          id: "miracleeye",
-          name: "Miracle Eye",
+          id: "mythicalaura",
+          name: "Mythical Aura",
           pp: 20,
           priority: 0,
           flags: {protect: 1, reflectable: 1, mirror: 1, authentic: 1},
@@ -66,14 +65,13 @@ exports.BattleMovedex = {
           type: "Dragon",
     },
     "energygamble": {
-		num: 1001,
-		accuracy: 100,
+		accuracy: true,
 		basePower: 0,
 		category: "Special",
 		desc: "Doesn't check accuracy. Becomes either a 30 BP or 150 BP move when used. Locked Base Power of 200 when used as a Z-Move.",
 		shortDesc: "50% chance of becoming 30 BP, 50% chance of becoming 150 BP.",
 		id: "energygamble",
-		name: "energygamble",
+		name: "Energy Gamble",
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, distance: 1},
