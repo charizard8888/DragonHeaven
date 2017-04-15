@@ -100,19 +100,16 @@ exports.BattleAbilities = {
 		rating: 5,
 		},
                 "medicine": {
-                     shortDesc: "On switch-in, this pokemon cures itself and its teammates of status",
-                     onStart: function (pokemon)
-                              this.useMove("Heal Bell", pokemon);
-                }
-            }
-        },
-        id: "medicine",
-        name: "Medicine",
-        rating: 5,
-    },
+		shortDesc: "On switch-in, this pokemon cures itself and its teammates of status",
+		onStart: function (source) {
+			this.useMove('Heal Bell', source);
+		},
+		id: "medicine",
+		name: "Medicine",
+	},
          "predator": {
                      shortDesc: "This Pokemon's super effective attacks against the target have x1.3 power",
-                    },
+                   
 		                onModifyDamage: function (damage, source, target, move) {
 			              if (move && move.typeMod > 0) {
 				            return this.chainModify([0x14CD, 0x1000]);
@@ -124,10 +121,10 @@ exports.BattleAbilities = {
     },
 	"gatesofhell": {
 		       shortDesc: "On switch-in, this pokemon uses Curse and takes halved damage from Fairy type moves",
-	              },
+	              
 		          onStart: function (pokemon) {
 			           this.useMove("Curse", pokemon);
-	     }
+	     },
 		  onBasePowerPriority: 7,
 		  onSourceBasePower: function (basePower, attacker, defender, move) {
 			                   if (move.type === 'Fairy') {
@@ -140,10 +137,10 @@ exports.BattleAbilities = {
      },
 	 "gatesofheaven": {
 		       shortDesc: "On switch-in, this pokemon heals back 1/3 of its max HP and takes halved damage from Dark type moves",
-	              },
+	             
 			 onStart: function (pokemon) {
 			pokemon.heal(pokemon.maxhp / 3);
-	      }
+	      },
                   onBasePowerPriority: 7,
 		  onSourceBasePower: function (basePower, attacker, defender, move) {
 			                   if (move.type === 'Dark') {
@@ -153,10 +150,11 @@ exports.BattleAbilities = {
      id: "gatesofheaven",
      name: "Gates of Heaven",
      rating: 3.5,
-     },
+     
+},
 	 "leadership": {
-		     shortDesc: "This Pokemon's attacks get a x1.3 power boost if it moves first in the turn"
-	             },
+		     shortDesc: "This Pokemon's attacks get a x1.3 power boost if it moves first in the turn",
+	             
 			     onBasePowerPriority: 8,
 		             onBasePower: function (basePower, attacker, defender, move) {
 			            if (!this.willMove(attacker)) {
@@ -170,7 +168,7 @@ exports.BattleAbilities = {
       },
          "fiendishshield": {
 		            shortDesc: "This pokemon bounces back status moves to the user. Damage taken from sup.eff moves are reduced by 30%",
-	                    },
+	                    
                           onTryHitPriority: 1,
 		          onTryHit: function (target, source, move) {
 			       if (target === source || move.hasBounced || !move.flags['reflectable']) {
@@ -194,7 +192,7 @@ exports.BattleAbilities = {
 		},
 		effect: {
 			duration: 1,
-		     }
+		     
 		},			
 	onSourceModifyDamage: function (damage, source, target, move) {
 			if (move.typeMod > 0) {
@@ -207,13 +205,13 @@ exports.BattleAbilities = {
 	        rating: 3.5,
 	 },
 	"heavenlyshield": {
-	             shortDesc: "Heals the user by 1/6 of its max HP per turn, reduces damage from sup.eff attacks by 30%"
-	              },
+	             shortDesc: "Heals the user by 1/6 of its max HP per turn, reduces damage from sup.eff attacks by 30%",
+	              
 				onResidualOrder: 5,
 		                onResidualSubOrder: 2,
 		                onResidual: function (pokemon) {
 			                 this.heal(pokemon.maxhp / 6);
-		     }
+		     
 		},			
 	onSourceModifyDamage: function (damage, source, target, move) {
 			if (move.typeMod > 0) {
@@ -227,7 +225,7 @@ exports.BattleAbilities = {
         },
 	"finalflicker": {
 		    shortDesc: "If the pokemon is Koed by a move, it uses Burn Up upon fainting",
-	             },
+	             
 		               onAfterDamageOrder: 1,
 		               onAfterDamage: function (damage, target, source, move) {
 			              if (source && source !== target && move && move.effectType === 'Move' && !target.hp) {
@@ -240,7 +238,7 @@ exports.BattleAbilities = {
 	},
         "magnetism": {
 		 shortDesc: "On switch-in, this pokemon uses Magnet Rise, and its Electric type moves deals double damage to the foe",
-		             },
+		             
 		          onStart: function (pokemon) {
 			           this.useMove("Magnet Rise", pokemon);
 			  }
