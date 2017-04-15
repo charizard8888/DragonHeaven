@@ -6729,7 +6729,7 @@ exports.Formats = [
 		}
 	},
 	{
-		name: "1v1",
+		name: "[Gen 6] 1v1",
 		section: "1v1 Other Metas",
 		mod: 'gen6',
 		ruleset: ['Pokemon', 'Moody Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Swagger Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview 1v1'],
@@ -6983,9 +6983,9 @@ exports.Formats = [
 		},
 		ruleset: ['Pokemon', 'Standard', 'Swagger Clause', 'Same Type Clause', 'Team Preview'],
 		banlist: [
-			'Aegislash', 'Arceus', 'Blaziken', 'Darkrai', 'Deoxys-Base', 'Deoxys-Attack', 'Dialga', 'Genesect', 'Giratina', 'Groudon', 'Ho-Oh', 'Hoopa-Unbound', 'Kartana', 'Kyogre',
-			'Kyurem-White', 'Lugia', 'Lunala', 'Mewtwo', 'Palkia', 'Pheromosa', 'Rayquaza', 'Reshiram', 'Shaymin-Sky', 'Solgaleo', 'Tapu Lele', 'Xerneas', 'Yveltal', 'Zekrom', 'Zygarde',
-			'Battle Bond', 'Damp Rock', 'Gengarite', 'Kangaskhanite', 'Lucarionite', 'Mawilite', 'Metagrossite', 'Salamencite', 'Smooth Rock', 'Terrain Extender', 'Baton Pass',
+			'Illegal', 'Unreleased', 'Arceus', 'Blaziken', 'Darkrai', 'Deoxys-Base', 'Deoxys-Attack', 'Dialga', 'Giratina', 'Groudon', 'Ho-Oh', 'Kyogre',
+			'Kyurem-White', 'Lugia', 'Lunala', 'Mewtwo', 'Palkia', 'Rayquaza', 'Reshiram', 'Shaymin-Sky', 'Solgaleo', 'Xerneas', 'Yveltal', 'Zekrom',
+			'Power Construct', 'Perish Song', 'Focus Sash', 'Kangaskhanite', 'Salamencite', 'Chansey + Charm + Seismic Toss',
 		],
 	},
 	{
@@ -7020,5 +7020,36 @@ exports.Formats = [
 				sketchedMoves[move] = (team[i].name || team[i].species);
 			}
 		},
+	},
+	{
+		name: "[Gen 7] 2v2",
+		desc: [
+			"Double battle where you bring four Pok&eacute;mon to Team Preview and choose only two.",
+			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3547040/\">2v2 Doubles</a>",
+		],
+		mod: 'gen7',
+
+		teamLength: {
+			validate: [2, 4],
+			battle: 2,
+		},
+		ruleset: ['Doubles OU'],
+		banlist: ['Kangaskhanite', 'Perish Song'],
+	},
+		{
+		name: "[Gen 7] 2v2 Doubles",
+		desc: [
+			"Double battle where you bring four Pok&eacute;mon to Team Preview and choose only two.",
+			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3547040/\">2v2 Doubles</a>",
+		],
+		mod: 'gen7',
+		gameType: 'doubles',
+
+		teamLength: {
+			validate: [2, 4],
+			battle: 2,
+		},
+		ruleset: ['Doubles OU'],
+		banlist: ['Kangaskhanite', 'Perish Song'],
 	},
 ];
