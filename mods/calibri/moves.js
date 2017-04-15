@@ -55,9 +55,9 @@ exports.BattleMovedex = {
 			},
 		},
 		secondary: {
-    chance: 100
-    self: {
-    boosts: {
+    		chance: 100,
+    		self: {
+    		boosts: {
     acc: 1,
     },
     },
