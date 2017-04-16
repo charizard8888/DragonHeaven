@@ -14,7 +14,7 @@ exports.BattleScripts = {
 				effect: effect,
 			});
 			this.battle.add('-hint', `${this.name || this.species}'s Last Will made it get off one last move!`);
-			this.battle.useMove(this.moves[this.moves.length - 1], this);
+			this.battle.runMove(this.moves[this.moves.length - 1], this);
 			return d;
 		},
 	},
