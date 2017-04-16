@@ -999,7 +999,12 @@ exports.BattlePokedex = {
 		formeLetter: "M",
 		types: ["Bug", "Dragon"],
 		baseStats: {hp: 80, atk: 135, def: 100, spa: 100, spd: 80, spe: 125},
-		abilities: {0: "Titend Lens"},  	     
+		abilities: {0: "Titend Lens"}, 
+         },
+     hydreigon: {
+		inherit: true,
+		abilities: {0: "Levitate"},
+		otherFormes: ["hydreigonmega"],
 	 },
      hydreigonmega: {
 	        num: 635,
@@ -1010,6 +1015,11 @@ exports.BattlePokedex = {
 		types: ["Dark", "Dragon"],
 		baseStats: {hp: 92, atk: 105, def: 110, spa: 165, spd: 100, spe: 128},
 	        abilities: {0: "Mega Launcher"}
+         },
+     milotic: {
+		inherit: true,
+		abilities: {0: "Marvel Scale", 1: "Competitive", H: "Cute Charm"},
+		otherFormes: ["miloticmega"],
           },
      miloticmega: {
 	        num: 350,
@@ -1018,7 +1028,7 @@ exports.BattlePokedex = {
 		forme: "Mega",
 		formeLetter: "M",
 		types: ["Water", "Dragon"],
-		baseStats: {hp: 95, atk: 60, def: 119, spa: 140, spd: 145, spe: 61},
+		baseStats: {hp: 95, atk: 60, def: 134, spa: 145, spd: 145, spe: 61},
 		abilities: {0: "Multiscale"},
           }, 
  };
