@@ -1014,7 +1014,7 @@ exports.BattlePokedex = {
 		formeLetter: "M",
 		types: ["Dark", "Dragon"],
 		baseStats: {hp: 92, atk: 105, def: 110, spa: 165, spd: 100, spe: 128},
-	        abilities: {0: "Mega Launcher"}
+	        abilities: {0: "Mega Launcher"},
          },
      milotic: {
 		inherit: true,
@@ -1046,5 +1046,5 @@ exports.BattlePokedex = {
 		baseStats: {hp: 75, atk: 80, def: 115, spa: 150, spd: 110, spe: 60},
 		abilities: {0: "Toxic Emanations"},
           }, 
- };
+};
 /* https://pastebin.com/8SudG3w9 */
