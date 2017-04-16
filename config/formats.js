@@ -7033,7 +7033,7 @@ exports.Formats = [
 			validate: [2, 4],
 			battle: 2,
 		},
-		ruleset: ['Doubles OU'],
+		ruleset: ['Pokemon', 'Species Clause', 'Nickname Clause', 'Moody Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Swagger Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview'],
 		banlist: ['Kangaskhanite', 'Perish Song', 'Illegal'],
 	},
 		{
@@ -7044,12 +7044,12 @@ exports.Formats = [
 		],
 		mod: 'gen7',
 		gameType: 'doubles',
-
+		
 		teamLength: {
 			validate: [2, 4],
 			battle: 2,
 		},
-		ruleset: ['Doubles OU'],
+		ruleset: ['Pokemon', 'Species Clause', 'Nickname Clause', 'Moody Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Swagger Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview'],
 		banlist: ['Kangaskhanite', 'Perish Song', 'Illegal'],
 	},
 ];
