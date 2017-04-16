@@ -7034,7 +7034,7 @@ exports.Formats = [
 			battle: 2,
 		},
 		ruleset: ['Doubles OU'],
-		banlist: ['Kangaskhanite', 'Perish Song'],
+		banlist: ['Kangaskhanite', 'Perish Song', 'Illegal'],
 	},
 		{
 		name: "[Gen 7] 2v2 Doubles",
@@ -7050,6 +7050,6 @@ exports.Formats = [
 			battle: 2,
 		},
 		ruleset: ['Doubles OU'],
-		banlist: ['Kangaskhanite', 'Perish Song'],
+		banlist: ['Kangaskhanite', 'Perish Song', 'Illegal'],
 	},
 ];
