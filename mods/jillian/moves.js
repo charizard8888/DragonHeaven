@@ -75,7 +75,7 @@ exports.BattleMovedex = {
 		                pp: 15,
 		                priority: 0,
 		                flags: {protect: 1, mirror: 1},
-                    secondary: false
+                    		secondary: false,
 		                volatileStatus: 'partiallytrapped',
 		                target: "normal",
 		                type: "Electric",
@@ -231,7 +231,6 @@ exports.BattleMovedex = {
 		                secondary: {
 			                       chance: 30,
 			                       status: 'brn',
-                          }
 		                },
 		                target: "normal",
 		                type: "Fire",
@@ -269,7 +268,7 @@ exports.BattleMovedex = {
                      category: "Special",
                      desc: "This move has 30% chance to paralyze the foe, under Rain Dance, the power is doubled",
                      shortDesc: "30% chance to paralyze the foe. In Rain, x2 power",
-                     id: "electriccloud"
+                     id: "electriccloud",
                      isViable: true,
                      name: "Electric Cloud",
                      pp: 15,
@@ -283,39 +282,14 @@ exports.BattleMovedex = {
 		                  secondary: {
 			                         chance: 30,
 			                         status: 'par',
-                             }
+                             
 		                  },
 		                  target: "normal",
 		                  type: "Electric",
 		                  zMovePower: 140,
 		                  contestType: "Cool",
 	                    },
-                "megabeam": {
-		                  accuracy: 85,
-		                  basePower: 110,
-		                  category: "Special",
-		                  desc: "Has a 20% chance to lower the target's Special Defense by 2 stages. It also hits Electric types neutrally",
-		                  shortDesc: "20% chance to lower the target's Sp. Def by 2. Neutral on Electric types",
-		                  id: "megabeam",
-		                  isViable: true,
-		                  name: "Mega Beam",
-		                  pp: 10,
-		                  priority: 0,
-		                  flags: {protect: 1, mirror: 1},
-                                  onEffectiveness: function (typeMod, type, move) {
-                                    if (target.hasType('Electric')) return 0;
-                            {
-		                       secondary: {
-			                     chance: 20,
-			                     boosts: {
-				                   spd: -2,
-			                     },
-		                   },
-		                   target: "normal",
-		                   type: "Steel",
-		                   zMovePower: 190,
-		                   contestType: "Beautiful",
-	                     },
+               
                  "dynamitekick": {
 		                   accuracy: 90,
 		                   basePower: 100,
@@ -331,7 +305,7 @@ exports.BattleMovedex = {
                                      hasCustomRecoil: true,
 		                                          onMoveFail: function (target, source, move) {
 			                                        this.damage(source.maxhp / 3, source, source, 'dynamitekick');
-                                           {
+							  },
 		                       secondary: {
 			                     chance: 10,
 			                     status: 'par',
@@ -370,12 +344,12 @@ exports.BattleMovedex = {
                        shortDesc: "40% chance of confusing the target",
                        id: "bombattack",
                        isViable: true,
-                       name: "Bomb Attack"
+                       name: "Bomb Attack",
                        pp: 5,
                        priority: 0,
                        flags: {bullet: 1, contact: 1, protect: 1, mirror: 1},
                        secondary: {
-                                 chance: 40
+                                 chance: 40,
                                  volatileStatus: 'confusion',
                        },
                        target: "normal",
@@ -386,7 +360,7 @@ exports.BattleMovedex = {
                   "poisonscent": {
                         accuracy: true,
                         basePower: 0,
-                        category: "Status"
+                        category: "Status",
                         desc: "This move spreads a poisoned air onto the battlefield for 5 turns, Pokemon in battle take damage factoring Poison weakness each turn",
                         shortDesc: "Pokemon in battle take damage each turn, factoring Poison weakness",
                         id: "poisonscent",
@@ -394,7 +368,7 @@ exports.BattleMovedex = {
                         name: "Poison Scent",
                         pp: 10,
                         priority: 0,
-                        flags: {}                       
+                        flags: {},                       
                         weather: 'poisonedscent',
 		                    secondary: false,
 		                    target: "all",
@@ -422,7 +396,7 @@ exports.BattleMovedex = {
                         secondary: {
                                  chance: 40,
                                  status: 'frz',
-                         			 },
+                         			 
 		                      },     
                         target: "normal",
                         type: "Ice",
@@ -466,12 +440,12 @@ exports.BattleMovedex = {
                         flags: {contact: 1, protect: 1, mirror: 1},
                                      onHit: function (source, effect) {
 			                                          this.addPseudoWeather('trickroom', source, effect, '[of] ' + source);
-                                         }
+				     
                               },
                         secondary: false,
                         target: "normal",
                         type: "Psychic",
-                        zMovePower: 210
+                        zMovePower: 210,
                         contestType: "Clever",
                         },
                     "metalcutters": {
@@ -479,9 +453,9 @@ exports.BattleMovedex = {
                         basePower: 80,
                         category: "Physical",
                         desc: "Has a higher chance for a critical hit",
-                        shortDesc "High critical hit ratio",
+                        shortDesc: "High critical hit ratio",
                         id: "metalcutters",
-                        isViable: true
+                        isViable: true,
                         name: "Metal Cutters",
                         pp: 15,
                         priority: 0,
@@ -508,10 +482,10 @@ exports.BattleMovedex = {
                                   onEffectiveness: function (typeMod, type, move) {
 			                             return typeMod + this.getEffectiveness('Rock', type);
 		                       },
-                        secondary:
+                        secondary:{
                              chance: 20,
                              status: 'brn',
-                             },
+                             
                         },
                         target: "normal",
                         type: "Fire",
@@ -564,7 +538,7 @@ exports.BattleMovedex = {
                         id: "bellbang",
                         isViable: true,
                         name: "Bell Bang",
-                        flags: {protect: 1, mirror: 1, sound: 1}
+                        flags: {protect: 1, mirror: 1, sound: 1},
                         pp: 15,
                         priority: 0,
                         secondary: false,
@@ -713,4 +687,30 @@ exports.BattleMovedex = {
 		                  zMovePower: 185,
 		                  contestType: "Tough",
                       },
+	/* "megabeam": {
+		                  accuracy: 85,
+		                  basePower: 110,
+		                  category: "Special",
+		                  desc: "Has a 20% chance to lower the target's Special Defense by 2 stages. It also hits Electric types neutrally",
+		                  shortDesc: "20% chance to lower the target's Sp. Def by 2. Neutral on Electric types",
+		                  id: "megabeam",
+		                  isViable: true,
+		                  name: "Mega Beam",
+		                  pp: 10,
+		                  priority: 0,
+		                  flags: {protect: 1, mirror: 1},
+                                   onEffectiveness: function (typeMod, type, move) {
+                                    if (target.hasType('Electric')) return 0;
+                            		{
+		                       secondary: {
+			                     chance: 20,
+			                     boosts: {
+				                   spd: -2,
+			                     },
+		                   },
+		                   target: "normal",
+		                   type: "Steel",
+		                   zMovePower: 190,
+		                   contestType: "Beautiful",
+	                   },  Can't fix this one you do et Spandan*/
 };
