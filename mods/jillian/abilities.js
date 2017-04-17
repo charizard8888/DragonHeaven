@@ -236,7 +236,16 @@ exports.BattleAbilities = {
 		 name: "Final Flicker",
 		 rating: 4,
 	},
-        "magnetism": {
+	"toxicemanations": {
+		shortDesc: "On switch-in, this Pokemon summons Poisoned Scent.",       
+	        onStart: function (source) {
+			this.setWeather('poisonscent');
+		},
+		id: "toxicemanations",
+		name: "Toxic Emanations",
+		rating: 4.5,
+	},
+	    "magnetism": {
 		 shortDesc: "On switch-in, uses Magnet Rise, and its Electric type moves x2 damage",
 		             
 		          onStart: function (pokemon) {
@@ -253,12 +262,4 @@ exports.BattleAbilities = {
 	name: "Magnetism",
 	rating: 5,
         },
-	"toxicemanations": {
-		shortDesc: "On switch-in, this Pokemon summons Poisoned Scent.",       
-	        onStart: function (source) {
-			this.setWeather('poisonscent');
-		},
-		id: "toxicemanations",
-		name: "Toxic Emanations",
-		rating: 4.5,
 };                
