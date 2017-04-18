@@ -5723,7 +5723,6 @@ exports.Formats = [
 		],
 
 		mod: 'mixandmega2',
-		searchShow: false,
 		ruleset: ['Pokemon', 'Standard', 'Swagger Clause', 'Mega Rayquaza Clause', 'Team Preview'],
 		banlist: ['Baton Pass'],
 		onValidateTeam: function (team) {
