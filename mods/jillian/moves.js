@@ -646,13 +646,14 @@ exports.BattleMovedex = {
 		                   priority: 0,
 		                   flags: {protect: 1, mirror: 1, sound: 1, authentic: 1},
 		                   secondary: {
-			                 chance: 10,
-			                 status: 'slp',
-		                   target: "allAdjacentFoes",
+			           	chance: 10,
+			               status: 'slp',
+		            	       target: "allAdjacentFoes",
 		                   type: "Normal",
 		                   zMovePower: 140,
 		                   contestType: "Beautiful",
 	                  },
+			},
                  	  "skywarth": {
 		                   accuracy: 70,
 		                   basePower: 110,
