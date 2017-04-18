@@ -5723,8 +5723,7 @@ exports.Formats = [
 		],
 
 		mod: 'mixandmega2',
-		ruleset: ['Pokemon', 'Standard', 'Swagger Clause', 'Mega Rayquaza Clause', 'Team Preview'],
-		banlist: ['Baton Pass'],
+		ruleset: ['[Gen 7] Mix and Mega'],
 		onValidateTeam: function (team) {
 			let itemTable = {};
 			for (let i = 0; i < team.length; i++) {
