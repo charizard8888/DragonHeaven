@@ -703,12 +703,12 @@ exports.BattleMovedex = {
 					      this.debug('Mega Beam boost');
 				              return this.chainModify(2);
 				          },
-				     },
 		                   secondary: {
 			                 chance: 20,
 			                 boosts: {
 				         spd: -2,
-			              },
+			              }
+				   },
 		                    target: "normal",
 		                    type: "Steel",
 		                    zMovePower: 190,
