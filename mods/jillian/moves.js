@@ -708,7 +708,6 @@ exports.BattleMovedex = {
 			                 boosts: {
 				         spd: -2,
 			              },
-		                    },
 		                    target: "normal",
 		                    type: "Steel",
 		                    zMovePower: 190,
