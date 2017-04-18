@@ -649,10 +649,10 @@ exports.BattleMovedex = {
 			           	chance: 10,
 			               status: 'slp',
 		            	       target: "allAdjacentFoes",
+				   },
 		                   type: "Normal",
 		                   zMovePower: 140,
 		                   contestType: "Beautiful",
-	                  },
 			},
                  	  "skywarth": {
 		                   accuracy: 70,
@@ -668,7 +668,6 @@ exports.BattleMovedex = {
 		                   flags: {protect: 1, mirror: 1, distance: 1},
                                       onHit: function (target) {
                                          this.setWeather('raindance');
-                                         }
                                    },
 		                   onModifyMove: function (move) {
 			                 if (this.isWeather(['raindance', 'primordialsea'])) {
