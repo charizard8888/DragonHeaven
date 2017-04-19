@@ -5822,6 +5822,65 @@ exports.Formats = [
 		},
 	},
 	{
+		name: "[Gen 7] Mix and Mega Stones Unleashed",
+		desc: [
+			"Mega Stones and Primal Orbs can be used on almost any fully evolved Pok&eacute;mon with no Mega Evolution limit.",
+			"&bullet; <a href=\"http://www.smogon.com/forums/threads/3601590\">Mix and Mega Stones Unleashed</a>",
+		],
+
+		mod: 'mixandmega2',
+		ruleset: ['[Gen 7] Mix and Mega'],
+		banlist: ['Electrify'],
+		onValidateTeam: function (team) {
+			let itemTable = {};
+			for (let i = 0; i < team.length; i++) {
+				let item = this.getItem(team[i].item);
+				if (!item) continue;
+				if (!(item in itemTable)) {
+					itemTable[item] = 1;
+				} else if (itemTable[item] < 2) {
+					itemTable[item]++;
+				} else {
+					if (item.megaStone) return ["You are limited to two of each Mega Stone.", "(You have more than two " + this.getItem(item).name + ")"];
+					if (item.id === 'blueorb' || item.id === 'redorb') return ["You are limited to two of each Primal Orb.", "(You have more than two " + this.getItem(item).name + ")"];
+				}
+			}
+		},
+		onValidateSet: function (set) {
+			let template = this.getTemplate(set.species || set.name);
+			let item = this.getItem(set.item);
+			if (!item.megaEvolves && item.id !== 'blueorb' && item.id !== 'redorb') return;
+			if (template.baseSpecies === item.megaEvolves || (template.baseSpecies === 'Groudon' && item.id === 'redorb') || (template.baseSpecies === 'Kyogre' && item.id === 'blueorb')) return;
+			if (template.evos.length) return ["" + template.species + " is not allowed to hold " + item.name + " because it's not fully evolved."];
+			let uberStones = ['beedrillite', 'gengarite', 'kangaskhanite', 'mawilite', 'medichamite'];
+			if (template.tier === 'Uber' || set.ability === 'Power Construct' || uberStones.includes(item.id)) return ["" + template.species + " is not allowed to hold " + item.name + "."];
+		},
+		onBegin: function () {
+			let allPokemon = this.p1.pokemon.concat(this.p2.pokemon);
+			for (let i = 0, len = allPokemon.length; i < len; i++) {
+				let pokemon = allPokemon[i];
+				pokemon.originalSpecies = pokemon.baseTemplate.species;
+			}
+		},
+		onSwitchIn: function (pokemon) {
+			let oMegaTemplate = this.getTemplate(pokemon.template.originalMega);
+			if (oMegaTemplate.exists && pokemon.originalSpecies !== oMegaTemplate.baseSpecies) {
+				// Place volatiles on the Pokémon to show its mega-evolved condition and details
+				this.add('-start', pokemon, oMegaTemplate.requiredItem || oMegaTemplate.requiredMove, '[silent]');
+				let oTemplate = this.getTemplate(pokemon.originalSpecies);
+				if (oTemplate.types.length !== pokemon.template.types.length || oTemplate.types[1] !== pokemon.template.types[1]) {
+					this.add('-start', pokemon, 'typechange', pokemon.template.types.join('/'), '[silent]');
+				}
+			}
+		},
+		onSwitchOut: function (pokemon) {
+			let oMegaTemplate = this.getTemplate(pokemon.template.originalMega);
+			if (oMegaTemplate.exists && pokemon.originalSpecies !== oMegaTemplate.baseSpecies) {
+				this.add('-end', pokemon, oMegaTemplate.requiredItem || oMegaTemplate.requiredMove, '[silent]');
+			}
+		},
+	},
+	{
 		name: "Enchanted Items Plus",
 		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/enchanted-items-enchanted-items-plus-announced.3570431/page-20#post-6939744\">Enchanted Items Plus</a>"],
 
@@ -7133,30 +7192,31 @@ exports.Formats = [
 		},
 	},
 	{
-		name: "[Gen 7] 1v1 UU",
-		desc: [
-			"Bring three Pok&eacute;mon to Team Preview and choose one to battle.",
-			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3587523/\">1v1</a>",
-			"<b>Banned Pokemon for UU 1v1:</b> Gyaradosite, Kyurem-Black, Charizardite X, Tapu Koko, Donphan, Mimikyu, Aegislash, Magnezone, Charizardite Y, Porygon-Z, Metagrossite, Tapu Lele, Jirachi, Durant, Golem, Dragonite, Venusaurite, Celesteela, Crustle, Kartana, Greninja, Snorlax",
-		],
-
-		mod: 'gen7',
-		teamLength: {
-			validate: [1, 3],
-			battle: 1,
-		},
-		ruleset: ['Pokemon', 'Species Clause', 'Nickname Clause', 'Moody Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Swagger Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview'],
-		banlist: [
-			'Illegal', 'Unreleased', 'Arceus', 'Blaziken', 'Darkrai', 'Deoxys-Base', 'Deoxys-Attack', 'Dialga', 'Giratina', 'Groudon', 'Ho-Oh', 'Kyogre',
-			'Kyurem-White', 'Lugia', 'Lunala', 'Mewtwo', 'Palkia', 'Rayquaza', 'Reshiram', 'Shaymin-Sky', 'Solgaleo', 'Xerneas', 'Yveltal', 'Zekrom',
-			'Gyaradosite' , 'Kyurem-Black' , 'Charizardite X' , ' Tapu Koko' , 'Donphan' , 'Mimikyu' , 'Aegislash' , 'Magnezone' , 'Charizardite Y' , 'Porygon-Z' , 'Metagrossite' , 'Tapu Lele' , 'Jirachi' , 'Durant' , 'Golem' , 'Dragonite' , 'Venusaurite' , 'Celesteela' , 'Crustle' , 'Kartana' , 'Greninja' , 'Snorlax',
-			'Power Construct', 'Perish Song', 'Focus Sash', 'Kangaskhanite', 'Salamencite', 'Chansey + Charm + Seismic Toss',
-		],
-	},
+ 		name: "[Gen 7] 1v1 UU",
+ 		desc: [
+ 			"Bring three Pok&eacute;mon to Team Preview and choose one to battle.",
+ 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3587523/\">1v1</a>",
+ 			"<b>Banned Pokemon for UU 1v1:</b> Gyaradosite, Kyurem-Black, Charizardite X, Tapu Koko, Donphan, Mimikyu, Aegislash, Magnezone, Charizardite Y, Porygon-Z, Metagrossite, Tapu Lele, Jirachi, Durant, Golem, Dragonite, Venusaurite, Celesteela, Crustle, Kartana, Greninja, Snorlax",
+ 		],
+ 
+ 		mod: 'gen7',
+ 		teamLength: {
+ 			validate: [1, 3],
+ 			battle: 1,
+ 		},
+ 		ruleset: ['Pokemon', 'Species Clause', 'Nickname Clause', 'Moody Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Swagger Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview'],
+ 		banlist: [
+ 			'Illegal', 'Unreleased', 'Arceus', 'Blaziken', 'Darkrai', 'Deoxys-Base', 'Deoxys-Attack', 'Dialga', 'Giratina', 'Groudon', 'Ho-Oh', 'Kyogre',
+ 			'Kyurem-White', 'Lugia', 'Lunala', 'Mewtwo', 'Palkia', 'Rayquaza', 'Reshiram', 'Shaymin-Sky', 'Solgaleo', 'Xerneas', 'Yveltal', 'Zekrom',
+ 			'Gyaradosite' , 'Kyurem-Black' , 'Charizardite X' , ' Tapu Koko' , 'Donphan' , 'Mimikyu' , 'Aegislash' , 'Magnezone' , 'Charizardite Y' , 'Porygon-Z' , 'Metagrossite' , 'Tapu Lele' , 'Jirachi' , 'Durant' , 'Golem' , 'Dragonite' , 'Venusaurite' , 'Celesteela' , 'Crustle' , 'Kartana' , 'Greninja' , 'Snorlax',
+ 			'Power Construct', 'Perish Song', 'Focus Sash', 'Kangaskhanite', 'Salamencite', 'Chansey + Charm + Seismic Toss',
+ 		],
+ 	},
 	{
 		name: "[Gen 7] 2v2",
 		desc: [
-			"Bring 4 Pokemon Send 2 to battle one after the other",
+			"Double battle where you bring four Pok&eacute;mon to Team Preview and choose only two.",
+			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3547040/\">2v2 Doubles</a>",
 		],
 		mod: 'gen7',
 
