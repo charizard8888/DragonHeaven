@@ -224,7 +224,7 @@ exports.BattleAbilities = {
 		rating: 1,
 		num: 200
 	},
-
+/*
 	"fear": {
 		desc: "This Pokemon does not take recoil damage besides Struggle, Life Orb, and crash damage.",
 		shortDesc: "This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage.",
@@ -253,7 +253,7 @@ exports.BattleAbilities = {
 		name: "FEAR",
 		rating: 3,
 		num: 201
-	},
+	}, To get things working rn, fix it later Xp Spandan */
 
 	"cactuspower": {
 		shortDesc: "On switch-in, this Pokemon summons Sandstorm.",
