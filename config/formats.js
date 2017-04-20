@@ -1830,6 +1830,83 @@ exports.Formats = [
 		},
 	},
 	{
+		name: "[Gen 7] Random Partners in Crime",
+		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/partners-in-crime.3559988/\">Partners in Crime</a>"],
+		mod: 'franticfusions',
+		team: 'random',
+		gameType: 'doubles',
+		ruleset: ['[Gen 7] Random Doubles Battle'],
+		onBegin: function () {
+			this.statusability = {
+				"aerilate": true,
+				"aurabreak": true,
+				"flashfire": true,
+				"galvanize": true,
+				"normalize": true,
+				"parentalbond": true,
+				"pixilate": true,
+				"refrigerate": true,
+				"sheerforce": true,
+				"slowstart": true,
+				"truant": true,
+				"unburden": true,
+				"zenmode": true,
+			};
+			for (let k = 0; k < this.sides.length; k++) {
+				for (let i = 0; i < this.sides[k].pokemon.length; i++) {
+					let pokemon = this.sides[k].pokemon[i];
+					pokemon.oms = [];
+					pokemon.obms = [];
+					pokemon.om = Object.assign({}, pokemon.moves);
+					pokemon.obm = Object.assign({}, pokemon.baseMoves);
+					for (let j = 0; j < pokemon.baseMoveset.length; j++) {
+						pokemon.obms.push(Object.assign({}, pokemon.baseMoveset[j]));
+						pokemon.oms.push(Object.assign({}, pokemon.moveset[j]));
+					}
+				}
+			}
+		},
+		onSwitchInPriority: 1,
+		onSwitchIn: function (pokemon) {
+			let partner = pokemon.side.active[1 ^ pokemon.position];
+			if (!partner) return;
+			let sec = this.statusability[pokemon.ability] ? ("other" + pokemon.ability) : pokemon.ability;
+			partner.sec = sec;
+			partner.addVolatile(sec);
+			sec = this.statusability[partner.ability] ? ("other" + partner.ability) : partner.ability;
+			pokemon.sec = sec;
+			pokemon.addVolatile(sec);
+			pokemon.baseMoveset.length = pokemon.moveset.length = pokemon.baseMoves.length = pokemon.moves.length = pokemon.obms.length;
+			partner.baseMoveset.length = partner.moveset.length = partner.baseMoves.length = partner.moves.length = partner.obms.length;
+			for (let i = pokemon.obms.length; i < pokemon.obms.length + partner.obms.length; i++) {
+				pokemon.baseMoveset[i] = Object.assign({}, partner.obms[i - partner.obms.length]);
+				pokemon.moveset[i] = Object.assign({}, partner.oms[i - partner.oms.length]);
+				pokemon.moves[i] = partner.om[i - partner.om.length];
+				pokemon.baseMoves[i] = partner.obm[i - partner.obm.length];
+			}
+			for (let i = partner.obms.length; i < pokemon.obms.length + partner.obms.length; i++) {
+				partner.baseMoveset[i] = Object.assign({}, pokemon.obms[i - pokemon.obms.length]);
+				partner.moveset[i] = Object.assign({}, pokemon.oms[i - pokemon.oms.length]);
+				partner.moves[i] = pokemon.om[i - pokemon.om.length];
+				partner.baseMoves[i] = pokemon.obm[i - pokemon.obm.length];
+			}
+		},
+		onSwitchOut: function (pokemon) {
+			let partner = pokemon.side.active[1 ^ pokemon.position];
+			if (!partner) return;
+			partner.removeVolatile(pokemon.side.active[1].sec);
+			delete partner.sec;
+			partner.baseMoveset.length = partner.moveset.length = partner.baseMoves.length = partner.moves.length = partner.obms.length;
+		},
+		onFaint: function (pokemon) {
+			let partner = pokemon.side.active[1 ^ pokemon.position];
+			if (!partner) return;
+			partner.removeVolatile(pokemon.side.active[1].sec);
+			delete partner.sec;
+			partner.baseMoveset.length = partner.moveset.length = partner.baseMoves.length = partner.moves.length = partner.obms.length;
+		},
+	},
+	{
 		name: "[Gen 7] Random Quantumbility",
 		desc: [
 			"&bullet; Quantumbilityg is an OU-based meta where you basically share your ability with your opponent, with a reset every switch. (your ability isn't replaced by the ability of the opponent, but you still can profit of it)",
@@ -2249,7 +2326,7 @@ exports.Formats = [
 		section: "SM Doubles",
 	},
 	{
-		name: "Random Doubles Battle",
+		name: "[Gen 7] Random Doubles Battle",
 
 		mod: 'gen7',
 		gameType: 'doubles',
