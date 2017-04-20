@@ -944,7 +944,12 @@ Chat.getDataPokemonHTML = function (template) {
 	if (typeof template === 'string') template = Object.assign({}, Tools.getTemplate(template));
 	let buf = '<li class="result">';
 	buf += '<span class="col numcol">' + (template.tier) + '</span> ';
-	let num = template.spritenum || template.num;
+	let num = 0;
+	if (template.spritenum) {
+		num = template.spritenum;
+	} else if (template.num < 802 && template.num > 0) {
+		num = template.num;
+	}
 	let top = Math.floor(num / 12) * 30;
 	let left = (num % 12) * 40;
 	buf += `<span class="col iconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1) no-repeat scroll -${left}px -${top}px"></span></span> `;
