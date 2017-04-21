@@ -253,8 +253,7 @@ exports.BattleAbilities = {
 		name: "FEAR",
 		rating: 3,
 		num: 201
-	}, To get things working rn, fix it later Xp Spandan */
-
+	}, 
 	"cactuspower": {
 		shortDesc: "On switch-in, this Pokemon summons Sandstorm.",
 		onStart: function(source) {
@@ -284,7 +283,8 @@ exports.BattleAbilities = {
 				return this.chainModify([0x14CD, 0x1000]);
 			}
 		}
-	},
+	}, To get things working rn, fix it later Xp Spandan */
+
 	"sandyskin": {
 		desc: "This Pokemon has its major status condition cured at the end of each turn if Rain Dance is active.",
 		shortDesc: "This Pokemon has its status cured at the end of each turn if Rain Dance is active.",
