@@ -5848,7 +5848,7 @@ exports.Formats = [
 		],
 
 		mod: 'mixandmega2',
-		ruleset: ['[Gen 7] Mix and Mega'],
+		ruleset: ['[Gen 7] Mix and Mega', 'Stone Clause'],
 		onValidateTeam: function (team) {
 			let itemTable = {};
 			for (let i = 0; i < team.length; i++) {
@@ -5906,7 +5906,7 @@ exports.Formats = [
 		],
 
 		mod: 'mixandmega2',
-		ruleset: ['[Gen 7] Mix and Mega'],
+		ruleset: ['[Gen 7] Mix and Mega', 'Stone Clause'],
 		banlist: ['Electrify'],
 		onValidateTeam: function (team) {
 			let itemTable = {};
