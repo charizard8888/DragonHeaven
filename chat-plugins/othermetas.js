@@ -177,7 +177,7 @@ exports.commands = {
 		if (mixedTemplate.types[0] === deltas.type) { // Add any type gains
 			mixedTemplate.types = [deltas.type];
 		} else if (deltas.type) {
-			mixedTemplate.types = [types[0], deltas.type];
+			mixedTemplate.types = [mixedTemplate.types[0], deltas.type];
 		}
 		mixedTemplate.baseStats = {};
 		for (let statName in template.baseStats) { // Add the changed stats and weight
