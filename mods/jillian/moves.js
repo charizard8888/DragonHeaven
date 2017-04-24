@@ -651,6 +651,7 @@ exports.BattleMovedex = {
 					evasion: -1
 				}, pokemon, pokemon.side.foe.active[0], this.getMove('marabunta'));
 			},
+		},
 		secondary: false,
 		target: "foeSide",
 		type: "Bug",
