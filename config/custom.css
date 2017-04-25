@@ -382,16 +382,13 @@ button.button.mainmenu5{
     color: #37348E;
   }
 
-  .popupmenu h3 {
+ .popupmenu h3 {
     color: #1E2C28;
   }
   .ps-popup {
-    background: #ffe4ad
-    url("") no-repeat bottom right;
-    border-color: black;
-    color: #000000;
-    text-shadow: 0px 0px 2px #ff6600;
-  }
+    background-color: #ffe4ad;
+    color: black;
+	}
 
   .ps-popup a, .ps-popup a.ilink {
     color: #37348E;
@@ -454,7 +451,6 @@ button.button.mainmenu5{
   .ps-room .battle-controls {
     background: rgba(0, 0, 0, 0);
   }
-
   .battle-log {
     background: url("");
     border-color: #413B45;
