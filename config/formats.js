@@ -3120,8 +3120,9 @@ exports.Formats = [
 	},
 	{
 		name: "[Gen 7] Mediocremons",
-		desc: ['&bullet; Only Pokemon with stats below 100 are allowed'],
+		desc: ['&bullet; <a href="http://www.smogon.com/forums/threads/mediocremons.3602094/">Medicoremons</a>: Only Pokemon with stats below 100 are allowed.'],
 		ruleset: ['[Gen 7] OU'],
+		banlist: ['Silvally', 'Type: Null', 'Huge Power', 'Pure Power'],
 		mod: 'gen7',
 		onValidateSet: function (set) {
 			let stats = this.getTemplate(set.species).baseStats;
