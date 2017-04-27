@@ -11494,7 +11494,7 @@ exports.BattleMovedex = {
 				for (let j = 0; j < this.sides[i].active.length; j++) {
 					if (this.sides[i].active[j] && this.sides[i].active[j].isActive) {
 						if (this.runEvent('TryHit', this.sides[i].active[j], source, move) === null) {
-							result = true;
+							result = false;
 						} else if (!this.sides[i].active[j].volatiles['perishsong']) {
 							this.sides[i].active[j].addVolatile('perishsong');
 							this.add('-start', this.sides[i].active[j], 'perish3', '[silent]');
