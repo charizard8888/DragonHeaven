@@ -2677,6 +2677,21 @@ exports.Formats = [
 		section: "New Other Metagames",
 		column: 2,
 	},
+		{
+		name: "[Gen 7] 2v2 Doubles",
+		desc: [
+			"Double battle where you bring four Pok&eacute;mon to Team Preview and choose only two.",
+			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3547040/\">2v2 Doubles</a>",
+		],
+		mod: 'gen7',
+		gameType: 'doubles',
+		
+		teamLength: {
+			validate: [2, 4],
+			battle: 2,
+		},
+		ruleset: ['[Gen 7] Doubles OU'],
+	},
 	{
 		name: "[Gen 7] 350 Cup",
 		desc: [
@@ -7290,35 +7305,4 @@ exports.Formats = [
  			'Power Construct', 'Perish Song', 'Focus Sash', 'Kangaskhanite', 'Salamencite', 'Chansey + Charm + Seismic Toss',
  		],
  	},
-	{
-		name: "[Gen 7] 2v2",
-		desc: [
-			"Double battle where you bring four Pok&eacute;mon to Team Preview and choose only two.",
-			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3547040/\">2v2 Doubles</a>",
-		],
-		mod: 'gen7',
-
-		teamLength: {
-			validate: [2, 4],
-			battle: 2,
-		},
-		ruleset: ['Pokemon', 'Species Clause', 'Nickname Clause', 'Moody Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Swagger Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview'],
-		banlist: ['Kangaskhanite', 'Perish Song', 'Illegal'],
-	},
-		{
-		name: "[Gen 7] 2v2 Doubles",
-		desc: [
-			"Double battle where you bring four Pok&eacute;mon to Team Preview and choose only two.",
-			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3547040/\">2v2 Doubles</a>",
-		],
-		mod: 'gen7',
-		gameType: 'doubles',
-		
-		teamLength: {
-			validate: [2, 4],
-			battle: 2,
-		},
-		ruleset: ['Pokemon', 'Species Clause', 'Nickname Clause', 'Moody Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Swagger Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview'],
-		banlist: ['Kangaskhanite', 'Perish Song', 'Illegal'],
-	},
 ];
