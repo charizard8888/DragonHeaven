@@ -1890,9 +1890,9 @@ exports.Formats = [
 				partner.moves[i] = pokemon.om[i - pokemon.om.length];
 				partner.baseMoves[i] = pokemon.obm[i - pokemon.obm.length];
 			}
-			[partner, pokemon].forEach(mon => {
+			[partner, pokemon].forEach((mon => {
 				this.runEvent("DisableMove", mon);
-			}.bind(this));
+			}).bind(this));
 		},
 		onSwitchOut: function (pokemon) {
 			let partner = pokemon.side.active[1 ^ pokemon.position];
@@ -5628,9 +5628,9 @@ exports.Formats = [
 				partner.moves[i] = pokemon.om[i - pokemon.om.length];
 				partner.baseMoves[i] = pokemon.obm[i - pokemon.obm.length];
 			}
-			[partner, pokemon].forEach(mon => {
+			[partner, pokemon].forEach((mon => {
 				this.runEvent("DisableMove", mon);
-			}.bind(this));
+			}).bind(this));
 		},
 		onSwitchOut: function (pokemon) {
 			let partner = pokemon.side.active[1 ^ pokemon.position];
