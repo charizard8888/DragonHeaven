@@ -5604,7 +5604,8 @@ exports.Formats = [
 		onSwitchIn: function (pokemon) {
 			let partner = pokemon.side.active[1 ^ pokemon.position];
 			if (!partner) return;
-			let sec = this.statusability[pokemon.ability] ? ("other" + pokemon.ability) : pokemon.ability;
+			let sec;
+			sec = this.statusability[pokemon.ability] ? ("other" + pokemon.ability) : pokemon.ability;
 			partner.sec = sec;
 			partner.addVolatile(sec);
 			sec = this.statusability[partner.ability] ? ("other" + partner.ability) : partner.ability;
@@ -5624,6 +5625,9 @@ exports.Formats = [
 				partner.moves[i] = pokemon.om[i - pokemon.om.length];
 				partner.baseMoves[i] = pokemon.obm[i - pokemon.obm.length];
 			}
+			[partner, pokemon].forEach(mon => {
+				this.runEvent("DisableMove", mon);
+			}.bind(this));
 		},
 		onSwitchOut: function (pokemon) {
 			let partner = pokemon.side.active[1 ^ pokemon.position];
