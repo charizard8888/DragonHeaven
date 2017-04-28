@@ -806,26 +806,6 @@ exports.BattleMovedex = {
 		zMovePower: 190,
 		contestType: "Cool",
 	},
-	"naturetricks": {
-		accuracy: 100,
-		basePower: 80,
-		category: "Physical",
-		desc: "The user uses Lady Nature to trick its opponent, with a chance to flinch",
-		shortDesc: "20% chance to flinch the target",
-		id: "naturetricks",
-		name: "Nature Tricks",
-		pp: 20,
-		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
-		secondary: {
-			chance: 20,
-			volatileStatus: 'flinch',
-		},
-		target: "normal",
-		type: "Grass",
-		zMovePower: 160,
-		contestType: "Tough",
-	},
 	"wonderroom": {
 		num: 472,
 		accuracy: true,
@@ -946,8 +926,29 @@ exports.BattleMovedex = {
 				this.add('-fieldend', 'move: Trick Room');
 			},
 		},
-
-
-
-
+		secondary: false,
+		target: "all",
+		type: "Psychic",
+		zMoveBoost: {accuracy: 1},
+		contestType: "Clever",
+	},
+	"naturetricks" : {
+		accuracy: 100,
+		basePower: 80,
+		category: 'Physical',
+		desc: "30% chance to flinch the target",
+		id: "naturetricks",
+		name: "Nature Tricks",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Grass",
+		zMovePower: 160,
+		contestType: "Cool",
+	},
 };	
