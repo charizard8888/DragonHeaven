@@ -5,6 +5,12 @@ exports.BattleStatuses = {
 	poisonscent: {
 		effectType: 'Weather',
 		duration: 5,
+		durationCallback: function (source, effect) {
+				if (source && source.hasItem('toxicstone')) {
+					return 8;
+				}
+				return 5;
+			},
 	},
 	onStart: function(battle, source, effect) {
 		if (effect && effect.effectType === 'Ability') {
