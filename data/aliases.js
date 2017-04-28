@@ -41,7 +41,7 @@ exports.BattleAliases = {
 	"tme": "Trademarked Enchantment",
 	"ei": "Enchanted Items",
 	"eip": "Enchanted Items Plus",
-	"eih": "Enchanted Items Hackmons",
+	"pic": "[Gen 7] Partners in Crime",
 	"eibh": "Enchanted Items Balanced Hackmons",
 	"ff": "[Gen 7] Frantic Fusions",
 	"franticfusions": "[Gen 7] Frantic Fusions",
