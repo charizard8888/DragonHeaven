@@ -826,4 +826,128 @@ exports.BattleMovedex = {
 		zMovePower: 160,
 		contestType: "Tough",
 	},
-};		
+	"wonderroom": {
+		num: 472,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "For 5 turns, all active Pokemon have their Defense and Special Defense stats swapped. Stat stage changes are unaffected. If this move is used during the effect, the effect ends.",
+		shortDesc: "For 5 turns, all Defense and Sp. Def stats switch.",
+		id: "wonderroom",
+		name: "Wonder Room",
+		pp: 10,
+		priority: 0,
+		flags: {mirror: 1},
+		onHitField: function (target, source, effect) {
+			if (this.pseudoWeather['wonderroom']) {
+				this.removePseudoWeather('wonderroom', source, effect, '[of] ' + source);
+			} else {
+				this.addPseudoWeather('wonderroom', source, effect, '[of] ' + source);
+			}
+		},
+		effect: {
+			duration: 5,
+			durationCallback: function (source, effect) {
+				if (source && source.hasItem('wonderstone')) {
+					return 8;
+				}
+				return 5;
+			},
+			onStart: function (side, source) {
+				this.add('-fieldstart', 'move: WonderRoom', '[of] ' + source);
+			},
+			// Swapping defenses implemented in battle-engine.js:BattlePokemon#calculateStat and BattlePokemon#getStat
+			onResidualOrder: 24,
+			onEnd: function () {
+				this.add('-fieldend', 'move: Wonder Room');
+			},
+		},
+		secondary: false,
+		target: "all",
+		type: "Psychic",
+		zMoveBoost: {spd: 1},
+		contestType: "Clever",
+	},
+	"magicroom": {
+		num: 478,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "For 5 turns, the held items of all active Pokemon have no effect. An item's effect of causing forme changes is unaffected, but any other effects from such items are negated. During the effect, Fling and Natural Gift are prevented from being used by all active Pokemon. If this move is used during the effect, the effect ends.",
+		shortDesc: "For 5 turns, all held items have no effect.",
+		id: "magicroom",
+		name: "Magic Room",
+		pp: 10,
+		priority: 0,
+		flags: {mirror: 1},
+		onHitField: function (target, source, effect) {
+			if (this.pseudoWeather['magicroom']) {
+				this.removePseudoWeather('magicroom', source, effect, '[of] ' + source);
+			} else {
+				this.addPseudoWeather('magicroom', source, effect, '[of] ' + source);
+			}
+		},
+		effect: {
+			duration: 5,
+			durationCallback: function (source, effect) {
+				if (source && source.hasItem('magicstone')) {
+					return 8;
+				}
+				return 5;
+			},
+			onStart: function (target, source) {
+				this.add('-fieldstart', 'move: Magic Room', '[of] ' + source);
+			},
+			// Item suppression implemented in BattlePokemon.ignoringItem() within battle-engine.js
+			onResidualOrder: 25,
+			onEnd: function () {
+				this.add('-fieldend', 'move: Magic Room', '[of] ' + this.effectData.source);
+			},
+		},
+		secondary: false,
+		target: "all",
+		type: "Psychic",
+		zMoveBoost: {spd: 1},
+		contestType: "Clever",
+	},
+	"trickroom": {
+		num: 433,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "For 5 turns, all active Pokemon with lower Speed will move before those with higher Speed, within their priority brackets. If this move is used during the effect, the effect ends.",
+		shortDesc: "For 5 turns, slower Pokemon move first.",
+		id: "trickroom",
+		name: "Trick Room",
+		pp: 5,
+		priority: -7,
+		flags: {mirror: 1},
+		onHitField: function (target, source, effect) {
+			if (this.pseudoWeather['trickroom']) {
+				this.removePseudoWeather('trickroom', source, effect, '[of] ' + source);
+			} else {
+				this.addPseudoWeather('trickroom', source, effect, '[of] ' + source);
+			}
+		},
+		effect: {
+			duration: 5,
+			durationCallback: function (source, effect) {
+				if (source && source.hasItem('trickystone')) {
+					return 8;
+				}
+				return 5;
+			},
+			onStart: function (target, source) {
+				this.add('-fieldstart', 'move: Trick Room', '[of] ' + source);
+			},
+			// Speed modification is changed in BattlePokemon.getDecisionSpeed() in battle-engine.js
+			onResidualOrder: 23,
+			onEnd: function () {
+				this.add('-fieldend', 'move: Trick Room');
+			},
+		},
+
+
+
+
+};	
