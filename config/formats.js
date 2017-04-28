@@ -2048,8 +2048,11 @@ exports.Formats = [
 		name: "[Gen 7] Random Last Will",
 		desc: ["&bullet; Every Pokemon will use the move in their last moveslot before fainting in battle."],
 		ruleset: ['Random Battle'],
-		mod: 'lastwill',
 		team: 'random',
+		onBeforeFaint: function (pokemon, source) {
+			this.add('-hint', `${pokemon.name || pokemon.species}'s Last Will made it get off one last move!`);
+			this.useMove(pokemon.moves[pokemon.moves.length - 1], pokemon, source);
+		},
 	},
 	{
 		name: "[Gen 7] Random Move Equality",
@@ -3097,7 +3100,10 @@ exports.Formats = [
 		desc: ['&bullet; <a href="http://www.smogon.com/forums/threads/3601362/">Last Will</a>: Every Pokemon will use the move in their last moveslot before fainting in battle.'],
 		ruleset: ['[Gen 7] OU'],
 		banlist: ['Endeavor'],
-		mod: 'lastwill',
+		onBeforeFaint: function (pokemon, source) {
+			this.add('-hint', `${pokemon.name || pokemon.species}'s Last Will made it get off one last move!`);
+			this.useMove(pokemon.moves[pokemon.moves.length - 1], pokemon, source);
+		},
 	},
 	{
 		name: "[Gen 7] Lockdown",
