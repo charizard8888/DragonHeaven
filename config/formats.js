@@ -2051,6 +2051,7 @@ exports.Formats = [
 		name: "[Gen 7] Random Last Will",
 		desc: ["&bullet; Every Pokemon will use the move in their last moveslot before fainting in battle."],
 		ruleset: ['Random Battle'],
+		mod: ['gen7'],
 		team: 'random',
 		onBeforeFaint: function (pokemon, source) {
 			this.add('-hint', `${pokemon.name || pokemon.species}'s Last Will made it get off one last move!`);
@@ -3101,6 +3102,7 @@ exports.Formats = [
 	{
 		name: "[Gen 7] Last Will",
 		desc: ['&bullet; <a href="http://www.smogon.com/forums/threads/3601362/">Last Will</a>: Every Pokemon will use the move in their last moveslot before fainting in battle.'],
+		mod: ['gen7'],
 		ruleset: ['[Gen 7] OU'],
 		banlist: ['Endeavor'],
 		onBeforeFaint: function (pokemon, source) {
