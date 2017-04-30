@@ -23,7 +23,7 @@ exports.BattleAbilities = {
 					if (this.sides[i].active[j] && this.sides[i].active[j].isActive) this.sides[i].active[j].clearBoosts();
 				}
 			}
-		let foeactive = pokemon.side.foe.active;
+			let foeactive = pokemon.side.foe.active;
 			let activated = false;
 			for (let i = 0; i < foeactive.length; i++) {
 				if (!foeactive[i] || !this.isAdjacent(foeactive[i], pokemon)) continue;
@@ -34,7 +34,7 @@ exports.BattleAbilities = {
 				if (foeactive[i].volatiles['substitute']) {
 					this.add('-immune', foeactive[i], '[msg]');
 				} else {
-					this.boost({atk: -1}, {def: -1}, {spa: -1}, {spd: -1}, {spe: -1}, foeactive[i], pokemon);
+					this.boost({atk: -1, def: -1, spa: -1, spd: -1, spe: -1}, foeactive[i], pokemon);
 				}
 			}
 		},

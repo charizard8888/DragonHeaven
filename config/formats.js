@@ -5641,6 +5641,13 @@ exports.Formats = [
 				this.runEvent("DisableMove", mon);
 			}).bind(this));
 		},
+		onAfterMega: function (pokemon) {
+			let partner = pokemon.side.active[1 ^ pokemon.position];
+			if (!partner) return;
+			let sec = this.statusability[pokemon.ability] ? ("other" + pokemon.ability) : pokemon.ability;
+			partner.sec = sec;
+			partner.addVolatile(sec);
+		},
 		onSwitchOut: function (pokemon) {
 			let partner = pokemon.side.active[1 ^ pokemon.position];
 			if (!partner) return;
