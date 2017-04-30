@@ -1,12 +1,12 @@
 "use strict";
 
 exports.BattleMovedex = {
-	"Full Hazards" :{
+	"fullhazards" :{
+		id: "fullhazards",
+		name: "Full Hazards",
 		accuracy: true,
 		desc: "Sets up all hazards",
 		shortDesc: "Sets up all hazards",
-		id: "fullhazards",
-		name: "Full Hazards",
 		pp: 15,
 		priority: 0,
 		flags: {reflectable: 1},
