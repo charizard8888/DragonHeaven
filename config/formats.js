@@ -3105,7 +3105,7 @@ exports.Formats = [
 	{
 		name: "[Gen 7] Last Will",
 		desc: ['&bullet; <a href="http://www.smogon.com/forums/threads/3601362/">Last Will</a>: Every Pokemon will use the move in their last moveslot before fainting in battle.'],
-		mod: ['gen7'],
+		mod: 'gen7',
 		ruleset: ['[Gen 7] OU'],
 		banlist: ['Endeavor'],
 		onBeforeFaint: function (pokemon, source) {
