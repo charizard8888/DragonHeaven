@@ -176,9 +176,9 @@ class Validator {
 		if (set.level > maxLevel || set.level === set.forcedLevel || set.level === set.maxForcedLevel) {
 			set.level = maxLevel;
 		}
-                let nicknameformat = { "[Gen 7] Frantic Fusions":true, "Cross Evolution":true, "[Gen 7] Frantic Fusions Ubers": true}
+        let nicknameformat = { "gen7franticfusions":true, "gen7crossevolution":true, "gen7franticfusionubers": true}
 		let nameTemplate = tools.getTemplate(set.name);
-		if (!nicknameformat[format.name] && nameTemplate.exists && nameTemplate.name.toLowerCase() === set.name.toLowerCase()) {
+		if (!nicknameformat[toId(format.name)] && nameTemplate.exists && nameTemplate.name.toLowerCase() === set.name.toLowerCase()) {
 			set.name = null;
 		}
 		set.name = set.name || set.baseSpecies;
