@@ -3104,13 +3104,20 @@ exports.Formats = [
 	},
 	{
 		name: "[Gen 7] Last Will",
-		desc: ['&bullet; <a href="http://www.smogon.com/forums/threads/3601362/">Last Will</a>: Every Pokemon will use the move in their last moveslot before fainting in battle.'],
+		desc: [
+			"Before fainting, Pok&eacute;mon will use the move in their last moveslot.",
+			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3601362/\">Last Will</a>",
+		],
 		mod: 'gen7',
 		ruleset: ['[Gen 7] OU'],
 		banlist: ['Endeavor'],
 		onBeforeFaint: function (pokemon, source) {
-			this.add('-hint', `${pokemon.name || pokemon.species}'s Last Will made it get off one last move!`);
-			this.useMove(pokemon.moves[pokemon.moves.length - 1], pokemon, source);
+			this.add('-hint', `${pokemon.name || pokemon.species}'s Last Will let it use one last move!`);
+			if (pokemon === source) {
+				this.useMove(pokemon.moves[pokemon.moves.length - 1], pokemon);
+			} else {
+				this.useMove(pokemon.moves[pokemon.moves.length - 1], pokemon, source);
+			}
 		},
 	},
 	{
