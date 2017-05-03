@@ -2876,7 +2876,7 @@ exports.Formats = [
 			return this.validateSet(set, teamHas, mixedTemplate);
 		},
 		onModifyTemplate: function (template, pokemon) {
-			if (pokemon.crossEvolved || !pokemon.set.name) return template;
+			if (pokemon.crossEvolved || !pokemon.set.name || pokemon.set.name === pokemon.species) return template;
 			let crossTemplate = this.getTemplate(pokemon.name);
 			if (!crossTemplate.exists || crossTemplate.num === template.num) return template;
 			let crossPrevoTemplate = this.getTemplate(crossTemplate.prevo);
@@ -2896,12 +2896,12 @@ exports.Formats = [
 			if (mixedTemplate.types[0] === mixedTemplate.types[1]) mixedTemplate.types.length = 1;
 
 			pokemon.baseTemplate = mixedTemplate;
-			pokemon.crossEvolved = true;
+			pokemon.crossEvolved = "Yes";
 			return mixedTemplate;
 		},
 		onSwitchInPriority: 1,
 		onSwitchIn: function (pokemon) {
-			if (pokemon.crossEvolved) {
+			if (pokemon.crossEvolved === "Yes") {
 				this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
 			}
 		},
