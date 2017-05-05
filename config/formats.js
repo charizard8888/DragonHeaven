@@ -2061,8 +2061,8 @@ exports.Formats = [
 		mod: ['gen7'],
 		team: 'random',
 		onBeforeFaint: function (pokemon, source) {
-			this.add('-hint', `${pokemon.name || pokemon.species}'s Last Will made it get off one last move!`);
-			this.useMove(pokemon.moves[pokemon.moves.length - 1], pokemon, source);
+			this.add('-hint', `${pokemon.name || pokemon.species}'s Last Will let it use one last move!`);
+			this.runMove(pokemon.moves[pokemon.moves.length - 1], pokemon);
 		},
 	},
 	{
