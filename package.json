@@ -5,6 +5,7 @@
   "version": "0.11.0",
   "dependencies": {
     "dem-feels": "^1.8.1",
+    "githubhook": "^1.6.1",
     "moment": "2.11.2",
     "nef": "^1.1.0",
     "nef-fs": "^1.0.0",
