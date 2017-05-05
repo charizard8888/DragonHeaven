@@ -381,7 +381,7 @@ exports.commands = {
 		fusedTemplate.baseStats = Object.assign({}, baseStats);
 		fusedTemplate.types = [fusedTemplate.types[0]];
 		let type = (separated[2] && toId(separated[2]) === 'shiny') ? 0 : 1;
-		if(template.types[type] && template.types[type] !== fusedTemplate.types[0]);
+		if(template.types[type] && template.types[type] !== fusedTemplate.types[0]) fusedTemplate.types.push(template.types[type]);
 		let weight = (Tools.data.Pokedex[fusedTemplate.id].weightkg + template.weightkg) / 2;
 		fusedTemplate.weightkg = weight;
 		fusedTemplate.abilities = Object.assign({'S': `<b>${template.abilities['0']}</b>`}, Tools.data.Pokedex[fusedTemplate.id].abilities);
