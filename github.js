@@ -60,7 +60,7 @@ git.on('push', (repo, ref, result) => {
 	sendReport(messages.join('<br>'));
 });
 
-github.on('pull_request', function pullRequest(repo, ref, result) {
+git.on('pull_request', function pullRequest(repo, ref, result) {
 	let COOLDOWN = 10 * 60 * 1000;
 	let requestNumber = result.pull_request.number;
 	let url = result.pull_request.html_url;
@@ -86,4 +86,4 @@ github.on('pull_request', function pullRequest(repo, ref, result) {
 	sendMessages(message);
 });
 
-github.listen();
+git.listen();
