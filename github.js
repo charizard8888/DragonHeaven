@@ -18,6 +18,8 @@ if (!Config.github) {
 
 let git = exports.github = require('githubhook')(config);
 
+let updates = {};
+
 let sendReport = function (html) {
 	if (Config.github && Config.github.rooms) {
 		Object.keys(Config.github.rooms).forEach(room => {
