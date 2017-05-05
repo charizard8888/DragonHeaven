@@ -1,6 +1,7 @@
 /*
 	Github plugin by Spandamn
 	this is based on https://github.com/Ecuacion/Pokemon-Showdown-Node-Bot/blob/master/features/github/index.js
+	yes some of the code is copied so credits to xfix, 
 */
 'use strict';
 
@@ -85,7 +86,7 @@ git.on('pull_request', function pullRequest(repo, ref, result) {
 	message += "<font color='909090'>" + result.sender.login + "</font> ";
 	message += action + " pull request <a href=\"" + url + "\">#" + requestNumber + "</a>: ";
 	message += result.pull_request.title;
-	sendMessages(message);
+	sendReport(message);
 });
 
 git.listen();
