@@ -1611,29 +1611,6 @@ exports.Formats = [
 		ruleset: ['PotD', 'Pokemon', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod'],
 	},
 	{
-		name: "[Gen 7] Dragonify",
-		desc: ["Heaven of Dragons",
-		],
-
-		mod: 'gen7',
-		team: 'random',
-		ruleset: ['PotD', 'Pokemon', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod'],
-		onModifyTemplate: function (template) {
-			template.types = ["Dragon"];
-			return template;
-		},
-		onModifyMove: function (move) {
-			move.type = "Dragon";
-			return move;
-		},
-		onSwitchIn: function(pokemon) {
-			this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
-		},
-		onAfterMega: function(pokemon) {
-			this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
-		},
-	},
-	{
 		name: "[Gen 7] Rock Paper Shedinja",
 		desc: ["challenge your friends to a friendly game of rock paper scissors on Pokemon Showdown"],
 		team: 'randomRPS',
