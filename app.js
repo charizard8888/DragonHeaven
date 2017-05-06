@@ -174,4 +174,4 @@ TeamValidator.PM.spawn();
 
 require('./repl').start('app', cmd => eval(cmd));
 
-require('./github'); //Github Alerts!!
+require('./chat-plugins/github'); //Github Alerts!!
