@@ -26,10 +26,10 @@ let sendReport = function (html) {
 		Object.keys(Config.github.rooms).forEach(room => {
 			let boom = Rooms(room);
 			if (!boom) return;
-			boom.add(`|html|${html}`);
+			boom.add(`|html|<div class="infobox">${html}</div>`);
 		});
 	} else if (Rooms('development')) {
-		Rooms('development').add(`|html|${html}`);
+		Rooms('development').add(`|html|<div class="infobox">${html}</div>`);
 	}
 };
 
