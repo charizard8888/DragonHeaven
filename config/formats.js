@@ -5942,6 +5942,7 @@ exports.Formats = [
 		onModifyPriority: function (priority, pokemon, target, move) {
 			if (move.isShifted) return this.getMove(pokemon.moves[0]).priority || 0;
 		},
+	},
 	{
 		section: "Experimental Metagames",
 		column: 3,
