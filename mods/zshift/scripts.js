@@ -83,17 +83,18 @@ exports.BattleScripts = {
 
 		let target = this.getMove(pokemon.moves[0]);
 		zMove = this.getMoveCopy(move.name);
-		zMove.basePower = target.category === 'Status' ? 0 : target.basePower;
+		let intendedBasePower = 1;
+		if (target.category !== 'Status') intendedBasePower = 0;
+		if (zMove.category !== 'Status') zMove.basePower = intendedBasePower;
 		zMove.type = target.type;
 		zMove.priority = target.priority;
-		zMove.name = "Z-"+zMove.name;
+		zMove.name = `Z-${zMove.name}`;
 		zMove.baseMove = target.name;
 		zMove.isShifted = true;
 		return zMove;
 	},
 
 	canZMove: function (pokemon) {
-		if (pokemon.side.zMoveUsed) return;
 		let item = pokemon.getItem();
 		if (!item.zMove) return;
 		if (item.zMoveUser && item.zMoveUser.includes(pokemon.species)) return;
