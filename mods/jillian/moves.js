@@ -1424,26 +1424,6 @@ exports.BattleMovedex = {
 		target: "self",
 		type: "Fire",
 		contestType: "Beautiful",
-	},	
-	"propheticalcurse": {
-		accuracy: true,
-		basePower: 210,
-		category: "Special",
-		desc: "Combines Fire and Ghost type effectivnesses in damage dealt",
-		id: "propheticalcurse",
-		isViable: true,
-		name: "Prophetical Curse",
-		pp: 1,
-		priority: 0,
-		flags: {},
-		isZ: "ninetalesiumz",
-		onEffectiveness: function(typeMod, type, move) {
-			return typeMod + this.getEffectiveness('Fire', type);
-		},
-		secondary: false,
-		target: "normal",
-		type: "Ghost",
-		contestType: "Beautiful",
 	},
 	"warthofthehundredyearoldtrees": {
 		accuracy: true,
@@ -1477,5 +1457,25 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Grass",
 		contestType: "Cool",
+	},
+	"propheticalcurse": {
+		accuracy: true,
+		basePower: 210,
+		category: "Special",
+		desc: "Combines Fire and Ghost type effectivnesses in damage dealt",
+		id: "propheticalcurse",
+		isViable: true,
+		name: "Prophetical Curse",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		isZ: "ninetalesiumz",
+		onEffectiveness: function(typeMod, type, move) {
+			return typeMod + this.getEffectiveness('Fire', type);
+		},
+		secondary: false,
+		target: "normal",
+		type: "Ghost",
+		contestType: "Beautiful",
 	},
 };
