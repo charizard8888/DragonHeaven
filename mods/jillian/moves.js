@@ -1464,22 +1464,20 @@ exports.BattleMovedex = {
 		flags: {},
 		isZ: "leafeoniumz",
 		secondary: {
-				chance: 50,
-				onHit: function (target, source) {
-				         	let result = this.random(4);
-				             	if (result === 0) {
-					          	target.trySetStatus('brn', source);
-				         	} else if (result === 1) {
-					       		target.trySetStatus('par', source);
-				         	} else if (result === 2) {
-					       		target.trySetStatus('frz', source);
-				         	} else if (result === 3) {
-					       		target.trySetStatus('psn', source);
-				         	} else if (result === 4) {
-					      		 target.trySetStatus('slp', source);
-						}
-					},
-				},
+			chance: 50,
+			onHit: function (target, source) {
+				let result = this.random(5);
+				if (result === 0) {
+					target.trySetStatus('brn', source);
+				} else if (result === 1) {
+					target.trySetStatus('par', source);
+				} else if (result === 2) {
+					target.trySetStatus('frz', source);
+				} else if (result === 3) {
+					target.trySetStatus('psn', source);
+				} else if (result === 4) {
+					target.trySetStatus('slp', source);
+				}
 			},
 		},
 		target: "normal",
