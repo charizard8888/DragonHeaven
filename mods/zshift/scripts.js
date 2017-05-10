@@ -14,8 +14,7 @@ exports.BattleScripts = {
 		move = zMove ? this.getZMoveCopy(move, pokemon) : baseMove;
 		if (!target && target !== false) target = this.resolveTarget(pokemon, move);
 
-		// copy the priority for Quick Guard
-		//if (zMove) move.priority = baseMove.priority;
+		if (zMove && zMove.isShifted) move.priority = this.getMove(pokemon.moves[0]).priority;
 
 		this.setActiveMove(move, pokemon, target);
 
@@ -82,11 +81,6 @@ exports.BattleScripts = {
 		move = this.getMove(move);
 		let zMove;
 
-		if (move.category === 'Status') {
-			zMove = this.getMoveCopy(move);
-			zMove.isZ = true;
-			return zMove;
-		}
 		let target = this.getMove(pokemon.moves[0]);
 		zMove = this.getMoveCopy(move.name);
 		zMove.basePower = target.category === 'Status' ? 0 : target.basePower;
@@ -94,6 +88,7 @@ exports.BattleScripts = {
 		zMove.priority = target.priority;
 		zMove.name = "Z-"+zMove.name;
 		zMove.baseMove = target.name;
+		zMove.isShifted = true;
 		return zMove;
 	},
 
