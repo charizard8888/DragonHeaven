@@ -1375,17 +1375,11 @@ exports.BattleMovedex = {
 		priority: 0,
 		flags: {},
 		isZ: "jirachiumz",
-		onTryHit: function (pokemon, target, move) {
-			if (!this.canSwitch(pokemon.side)) {
-				delete move.selfdestruct;
-				return false;
-			}
-		},
 		onHit: function (target, source) {
-			target.side.addSideCondition('lightscreen', source);
-			target.side.addSideCondition('reflect', source);
-			target.side.addSideCondition('safeguard', source);
-			target.side.addSideCondtion('lunardance', source);
+			this.add('-sidestart', target.side, 'move: Light Screen');
+			this.add('-sidestart', target.side, 'move: Reflect');
+			this.add('-sidestart', target.side, 'move: Safeguard');
+			target.useMove('Lunar Dance');
 		},
 		secondary: false,
 		target: "self",
