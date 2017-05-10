@@ -3393,6 +3393,30 @@ exports.Formats = [
 		},
 
 	},
+	{
+		name: "[Gen 7] Z-Shift",
+		desc: ["&bullet; In Z-Shift, the Type, Base Power and Priority of the move in the first slot is transferred to the Z-Move being used.<br><br>Necrozma @ <b>Electrium Z</b>  <br>Ability: Prism Armor  <br>EVs: 252 HP / 252 SpA / 4 SpD<br>Modest Nature  <br>IVs: 0 Atk  <br>- <b>Prismatic Laser</b> <br>- Dark Pulse  <br>- <b>Charge Beam</b>  <br>- Moonlight<br><br>So if this is the set then<br><b>Z-Charge Beam:</b> 160 Base Power, 90% Accuracy, Psychic type move with 70% chance to raise the user's SpA by 1 stage"],
+		ruleset: ['[Gen 7] OU'],
+		mod: 'zshift',
+		onValidateSet: function(set) {
+			let problems = [];
+			set.moves.forEach(move => {
+				let moveData = this.getMove(move);
+				if (moveData.multihit) {
+					problems.push((set.name || set.species) + " has " + moveData.name + ", which is a multihit move and is banned by Z-Shift.")
+				}
+			});
+			return problems;
+		},
+		onPrepareHit: function(target, source, move) {
+			if (!(move.isZ && move.baseMove)) return;
+			this.attrLastMove('[still]');
+			this.add('-anim', target, move.baseMove, source);
+		},
+		onModifyPriority: function (priority, pokemon, target, move) {
+			if (move.isShifted) return this.getMove(pokemon.moves[0]).priority || 0;
+		},
+	},
 	// Pet Mods ///////////////////////////////////////////////////////////////////
 	{
 		section: "Pet Mods",
@@ -5917,30 +5941,6 @@ exports.Formats = [
 			if(pokemon.side.totemSet) return;
 			pokemon.side.pokemon[0].addVolatile('totem');
 			pokemon.side.totemSet = true;
-		},
-	},
-	{
-		name: "[Gen 7] Z-Shift",
-		desc: ["&bullet; In Z-Shift, the Type, Base Power and Priority of the move in the first slot is transferred to the Z-Move being used.<br><br>Necrozma @ <b>Electrium Z</b>  <br>Ability: Prism Armor  <br>EVs: 252 HP / 252 SpA / 4 SpD<br>Modest Nature  <br>IVs: 0 Atk  <br>- <b>Prismatic Laser</b> <br>- Dark Pulse  <br>- <b>Charge Beam</b>  <br>- Moonlight<br><br>So if this is the set then<br><b>Z-Charge Beam:</b> 160 Base Power, 90% Accuracy, Psychic type move with 70% chance to raise the user's SpA by 1 stage"],
-		ruleset: ['[Gen 7] OU'],
-		mod: 'zshift',
-		onValidateSet: function(set) {
-			let problems = [];
-			set.moves.forEach(move => {
-				let moveData = this.getMove(move);
-				if (moveData.multihit) {
-					problems.push((set.name || set.species) + " has " + moveData.name + ", which is a multihit move and is banned by Z-Shift.")
-				}
-			});
-			return problems;
-		},
-		onPrepareHit: function(target, source, move) {
-			if (!(move.isZ && move.baseMove)) return;
-			this.attrLastMove('[still]');
-			this.add('-anim', target, move.baseMove, source);
-		},
-		onModifyPriority: function (priority, pokemon, target, move) {
-			if (move.isShifted) return this.getMove(pokemon.moves[0]).priority || 0;
 		},
 	},
 	{
