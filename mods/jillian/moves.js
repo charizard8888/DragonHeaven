@@ -1451,7 +1451,7 @@ exports.BattleMovedex = {
 		type: "Ghost",
 		contestType: "Beautiful",
 	},
-	"warthofthehundredyearoldtrees",
+	"warthofthehundredyearoldtrees": {
 		accuracy: true,
 		basePower: 180,
 		category: "Special",
