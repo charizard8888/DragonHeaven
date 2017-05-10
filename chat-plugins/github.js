@@ -101,8 +101,8 @@ git.on('pull_request', function pullRequest(repo, ref, result) {
 git.listen();
 
 exports.commands = {
-	'gb': gitban,
-	'gitban': function (target, room, user, connection, cmd) {
+	'gb': 'gitban',
+	gitban: function (target, room, user, connection, cmd) {
 		if (!targetRooms.some(curRoom => toId(room) === curRoom)) return this.sendReply(`|html|<div class="message-error">The command "/${cmd}" does not exist. To send a message starting with "/${cmd}", type "//${cmd}".</div>`);
 		if (!this.can('ban', null, room)) return false;
 		if (!target) return this.parse('/help gitban');
@@ -114,8 +114,8 @@ exports.commands = {
 	},
 	'gitbanhelp': ["/gitban <github username>: Makes the Github Plugin ignore the github username's alerts. Requires: @ # & ~"],
 
-	'gub': gitunban,
-	'gitunban': function (target, room, user, connection, cmd) {
+	'gub': 'gitunban',
+	gitunban: function (target, room, user, connection, cmd) {
 		if (!targetRooms.some(curRoom => toId(room) === curRoom)) return this.sendReply(`|html|<div class="message-error">The command "/${cmd}" does not exist. To send a message starting with "/${cmd}", type "//${cmd}".</div>`);
 		if (!this.can('ban', null, room)) return false;
 		if (!target) return this.parse('/help gitunban');
