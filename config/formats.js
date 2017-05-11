@@ -3414,7 +3414,7 @@ exports.Formats = [
 			this.add('-anim', target, move.baseMove, source);
 		},
 		onModifyPriority: function (priority, pokemon, target, move) {
-			if (move.isShifted) return this.getMove(pokemon.moves[0]).priority || 0;
+			if (move.isShifted) return this.getMove(pokemon.moves[0]).priority || priority;
 		},
 	},
 	// Pet Mods ///////////////////////////////////////////////////////////////////

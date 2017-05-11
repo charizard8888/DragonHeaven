@@ -14,7 +14,7 @@ exports.BattleScripts = {
 		move = zMove ? this.getZMoveCopy(move, pokemon) : baseMove;
 		if (!target && target !== false) target = this.resolveTarget(pokemon, move);
 
-		if (zMove && zMove.isShifted) move.priority = this.getMove(pokemon.moves[0]).priority;
+		if (move.isShifted) move.priority = this.getMove(pokemon.moves[0]).priority;
 
 		this.setActiveMove(move, pokemon, target);
 
@@ -84,7 +84,7 @@ exports.BattleScripts = {
 		let target = this.getMove(pokemon.moves[0]);
 		zMove = this.getMoveCopy(move.name);
 		let intendedBasePower = 1;
-		if (target.category !== 'Status') intendedBasePower = 0;
+		if (target.category !== 'Status') intendedBasePower = target.basePower;
 		if (zMove.category !== 'Status') zMove.basePower = intendedBasePower;
 		zMove.type = target.type;
 		zMove.priority = target.priority;
