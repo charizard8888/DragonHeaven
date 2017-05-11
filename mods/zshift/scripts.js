@@ -80,7 +80,7 @@ exports.BattleScripts = {
 	getZMoveCopy: function (move, pokemon) {
 		move = this.getMove(move);
 		let zMove;
-
+		if (!pokemon) return move;
 		let target = this.getMove(pokemon.moves[0]);
 		zMove = this.getMoveCopy(move.name);
 		let intendedBasePower = 1;
