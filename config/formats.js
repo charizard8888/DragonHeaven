@@ -3414,7 +3414,7 @@ exports.Formats = [
 			this.add('-anim', target, move.baseMove, source);
 		},
 		onModifyPriority: function (priority, pokemon, target, move) {
-			this.add(`html|Priority: ${priority.name || priority}, Pokemon: ${pokemon.name || pokemon}, Target: ${target.name || target}, Move: ${move.name || move}`);
+			this.add(`html|Priority: ${priority.name || priority}, Pokemon: ${pokemon.name || pokemon}, Target: ${(target ? target.name : target) || target}, Move: ${move.name || move}`);
 			if (move.isShifted) return this.getMove(pokemon.moves[0]).priority || priority;
 		},
 	},
