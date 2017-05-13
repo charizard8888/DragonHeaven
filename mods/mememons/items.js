@@ -32,7 +32,7 @@ exports.BattleItems = {
 	},
     "helixite": {
                     id: "helixite",
-                    name: "helixite",
+                    name: "Helixite",
                     spritenum: 608,
                     megaStone: "Omastar-Memega",
                     megaEvolves: "Omastar",
@@ -43,5 +43,19 @@ exports.BattleItems = {
                     num: -1100,
                     gen: 6,
                     desc: "If holder is a Farfecth'd, this item allows it to Memega Evolve in battle.",
+	},
+	 "stunfiskite": {
+                    id: "stunfiskite",
+                    name: "Stunfiskite",
+                    spritenum: 608,
+                    megaStone: "Whiscash-Memega",
+                    megaEvolves: "Whiscash",
+                    onTakeItem: function (item, source) {
+                     if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+                      return true;
+                    },
+                    num: -1100,
+                    gen: 6,
+                    desc: "If holder is a Whiscash, this item allows it to Memega Evolve in battle.",
 	},
 };
