@@ -30,13 +30,13 @@ const git = exports.github = require('githubhook')(gitConfig);
 
 let updates = {};
 let targetRooms = (Config.github.rooms && Config.github.rooms.length) ? Config.github.rooms : ['development'];
-targetRooms = targetRooms.map(toId);
+targetRooms = targetRooms.map(toId).map(Rooms);
 let gitBans = {};
+if (targetRooms[0].chatRoomData) targetRooms[0].chatRoomData.gitBans = gitBans;
 
 let sendReport = function (html) {
 	for (let curRoom of targetRooms) {
-		let room = Rooms(curRoom);
-		if (room) room.add(`|html|<div class="infobox">${html}</div>`).update();
+		if (curRoom) curRoom.add(`|html|<div class="infobox">${html}</div>`).update();
 	}
 };
 
@@ -58,9 +58,9 @@ git.on('push', (repo, ref, result) => {
 		let shortCommit = /.+/.exec(commitMessage)[0];
 		message = "";
 		message += `<font color='FF00FF'>${Chat.escapeHTML(repo)}</font>/`;
-		message += `<font color='800080'>${Chat.escapeHTML(branch)}</font> `;
-		message += `<a href="${Chat.escapeHTML(commit.url)}">`;
-		message += `<font color='606060'>${Chat.escapeHTML(commit.id.substring(0, 6))}</font></a> `;
+		message += Chat.html`<font color='800080'>${branch}</font> `;
+		message += Chat.html`<a href="${commit.url}">`;
+		message += Chat.html`<font color='606060'>${commit.id.substring(0, 6)}</font></a> `;
 		message += Chat.html`<font color='909090'>${commit.author.name}</font>: ${shortCommit}`;
 		if (commitMessage !== shortCommit) message += '&hellip;';
 		messages.push(message);
@@ -99,29 +99,25 @@ git.on('pull_request', function pullRequest(repo, ref, result) {
 git.listen();
 
 exports.commands = {
-	'gb': 'gitban',
 	gitban: function (target, room, user, connection, cmd) {
-		if (!targetRooms.some(curRoom => toId(room) === curRoom)) return this.sendReply(`|html|<div class="message-error">The command "/${cmd}" does not exist. To send a message starting with "/${cmd}", type "//${cmd}".</div>`);
+		if (!targetRooms.includes(toId(room))) return this.errorReply(`The command "/${cmd}" does not exist. To send a message starting with "/${cmd}", type "//${cmd}".`);
 		if (!this.can('ban', null, room)) return false;
 		if (!target) return this.parse('/help gitban');
 		target = target.trim();
-		if (gitBans[toId(target)]) return this.errorReply(`The Github Username '${target} already exists on the Github Alert Blacklist.'`);
+		if (gitBans[toId(target)]) return this.errorReply(`The GitHub Username '${target} already exists on the GitHub Alert Blacklist.'`);
 		gitBans[toId(target)] = 1;
-		this.addModCommand(`${target} was added to Github Alert Blacklist by ${user.name}.`);
-		this.sendReply(`The Github username '${target}' was successfully added to the Github Alert Blacklist.`);
+		this.privateModCommand(`(${target} was added to GitHub Alert Blacklist by ${user.name}.)`);
 	},
-	'gitbanhelp': ["/gitban <github username>: Makes the Github Plugin ignore the github username's alerts. Requires: @ # & ~"],
+	gitbanhelp: ["/gitban <github username>: Makes the GitHub Plugin ignore the github username's alerts. Requires: @ # & ~"],
 
-	'gub': 'gitunban',
 	gitunban: function (target, room, user, connection, cmd) {
-		if (!targetRooms.some(curRoom => toId(room) === curRoom)) return this.sendReply(`|html|<div class="message-error">The command "/${cmd}" does not exist. To send a message starting with "/${cmd}", type "//${cmd}".</div>`);
+		if (!targetRooms.includes(toId(room))) return this.errorReply(`The command "/${cmd}" does not exist. To send a message starting with "/${cmd}", type "//${cmd}".`);
 		if (!this.can('ban', null, room)) return false;
 		if (!target) return this.parse('/help gitunban');
 		target = target.trim();
-		if (!gitBans[toId(target)]) return this.errorReply(`The Github Username '${target} does not exist on the Github Alert Blacklist.'`);
+		if (!gitBans[toId(target)]) return this.errorReply(`The GitHub Username '${target} does not exist on the GitHub Alert Blacklist.'`);
 		delete gitBans[toId(target)];
-		this.addModCommand(`${target} was removed from the Github Alert Blacklist by ${user.name}.`);
-		this.sendReply(`The Github username '${target}' was successfully removed from the Github Alert Blacklist.`);
+		this.privateModCommand(`(${target} was removed from the GitHub Alert Blacklist by ${user.name}.)`);
 	},
-	'gitunbanhelp': ["/gitunban <github username>: Removes the Github Username from Github Alert Blacklist. Requires: @ # & ~"],
+	gitunbanhelp: ["/gitunban <github username>: Removes the GitHub Username from GitHub Alert Blacklist. Requires: @ # & ~"],
 };
