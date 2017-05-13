@@ -1720,7 +1720,7 @@ exports.BattleMovedex = {
 		},
 		target: "normal",
 		type: "Electric",
-		contestType: "Beautiful"
+		contestType: "Beautiful",
 	},
 	"scorchingbleedingblades": {
 		accuracy: true,
