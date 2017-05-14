@@ -834,8 +834,6 @@ Chat.loadCommands = function () {
 	// info always goes first so other plugins can shadow it
 	Object.assign(commands, require('./chat-plugins/info').commands);
 
-	// we do not want to crash the server by using require('./chat-plugins/github') during a hotpatch
-
 	for (let file of fs.readdirSync(path.resolve(__dirname, 'chat-plugins'))) {
 		if (file.substr(-3) !== '.js' || file === 'info.js' || file === 'github.js') continue;
 		Object.assign(commands, require('./chat-plugins/' + file).commands);
