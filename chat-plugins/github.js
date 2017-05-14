@@ -30,7 +30,10 @@ const git = exports.github = require('githubhook')(gitConfig);
 
 let updates = {};
 let targetRooms = (Config.github.rooms && Config.github.rooms.length) ? Config.github.rooms : ['development'];
-targetRooms = targetRooms.map(toId).map(Rooms);
+targetRooms = targetRooms.map(toId);
+for (let i = 0; i < targetRooms.length; i++) {
+	targetRooms[i] = Rooms(targetRooms[i]);
+}
 let gitBans = {};
 if (targetRooms[0].chatRoomData) targetRooms[0].chatRoomData.gitBans = gitBans;
 
