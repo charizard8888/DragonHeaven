@@ -178,4 +178,4 @@ require('./repl').start('app', cmd => eval(cmd));
  * Start up the Github Plugin + Load commands.
  *********************************************************/
 
-Object.assign(Chat.commands, require('./chat-plugins/github').commands);
+Chat.commands = Object.assign(Chat.commands, require('./chat-plugins/github').commands);
