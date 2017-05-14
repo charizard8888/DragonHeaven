@@ -5764,6 +5764,24 @@ exports.Formats = [
 		},
 	},
 	{
+		name: "[Gen 7] Freeze-Dry Mania",
+		desc: [
+			"All attacks in the first moveslots are super effective against the type of the attacks in the fourth moveslots but not very effective against the type of the attacks in the second moveslots",
+ 		],
+		mod: 'gen7',
+		ruleset: ['[Gen 7] OU'],
+		banlist: ['Illegal', 'Freeze-Dry'],
+		onEffectiveness: function (typeMod, type, pokemon, move) {
+			if (move.id !== pokemon.moves[0]) return typeMod;
+			if (type === this.getMove(pokemon.moves[3]).type) {
+				return 1;
+			}
+			if (type === this.getMove(pokemon.moves[1]).type) {
+				return 2;
+			}
+		},
+	},
+	{
 		name: "[Gen 7] Multibility",
 		desc: [
 			"&bullet; Put your second ability in the item slot.",
