@@ -5773,7 +5773,7 @@ exports.Formats = [
 		banlist: ['Illegal', 'Freeze-Dry'],
 		onEffectiveness: function (typeMod, type, move) {
 			let pokemon = this.activePokemon;
-			if (move.id !== pokemon.moves[0]) return typeMod;
+			if (move.id !== pokemon.moves[0] || pokemon.moves.length !== 4) return typeMod;
 			if (type === this.getMove(pokemon.moves[3]).type) {
 				return 1;
 			}
