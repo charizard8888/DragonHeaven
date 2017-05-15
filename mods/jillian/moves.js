@@ -1141,6 +1141,152 @@ exports.BattleMovedex = {
 		zMovePower: 160,
 		contestType: "Cool",
 	},
+	"warpingawaykick": {
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		desc: "Does a very fast kick like the Pokemon was warping away, usually goes first. Boosts the user's Speed by 1 stage",
+		shortDesc: "Usually goes first. +1 Speed for the user.",
+		id: "warpingawaykick",
+		isViable: true,
+		name: "Warping Away Kick",
+		pp: 10,
+		priority: 2,
+		flags: {protect: 1, mirror: 1, contact: 1},
+		self: {
+			boosts: {
+				spe: 1,
+			},
+		},
+		secondary: false,
+		target: "normal",
+		type: "Fighting",
+		zMovePower: 180,
+		contestType: "Tough",
+	},
+	"atkblast": {
+		accuracy: 100,
+		basePower: 0,
+		damageCallback: function (pokemon) {
+			let damage = pokemon.atk;
+			pokemon.faint();
+			return damage;
+		},
+		category: "Special",
+		desc: "Deals damage to the target equal to the user's current Attack. If this move is successful, the user faints.",
+		shortDesc: "Does damage equal to the user's Attack. User faints.",
+		id: "atkblast",
+		isViable: true,
+		name: "ATK Blast",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1},
+		selfdestruct: "ifHit",
+		secondary: false,
+		target: "normal",
+		type: "Fighting",
+		zMovePower: 180,
+		contestType: "Tough",
+	},
+	"defblast": {
+		num: 515,
+		accuracy: 100,
+		basePower: 0,
+		damageCallback: function (pokemon) {
+			let damage = pokemon.def;
+			pokemon.faint();
+			return damage;
+		},
+		category: "Special",
+		desc: "Deals damage to the target equal to the user's current Defense. If this move is successful, the user faints.",
+		shortDesc: "Does damage equal to the user's Defense. User faints.",
+		id: "defblast",
+		isViable: true,
+		name: "DEF Blast",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1},
+		selfdestruct: "ifHit",
+		secondary: false,
+		target: "normal",
+		type: "Fighting",
+		zMovePower: 180,
+		contestType: "Tough",
+	},
+	"spablast": {
+		accuracy: 100,
+		basePower: 0,
+		damageCallback: function (pokemon) {
+			let damage = pokemon.spa;
+			pokemon.faint();
+			return damage;
+		},
+		category: "Special",
+		desc: "Deals damage to the target equal to the user's current Special Attack. If this move is successful, the user faints.",
+		shortDesc: "Does damage equal to the user's Special Attack. User faints.",
+		id: "spablast",
+		isViable: true,
+		name: "SpA Blast",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1},
+		selfdestruct: "ifHit",
+		secondary: false,
+		target: "normal",
+		type: "Fighting",
+		zMovePower: 180,
+		contestType: "Tough",
+	},
+	"spdblast": {
+		num: 515,
+		accuracy: 100,
+		basePower: 0,
+		damageCallback: function (pokemon) {
+			let damage = pokemon.spd;
+			pokemon.faint();
+			return damage;
+		},
+		category: "Special",
+		desc: "Deals damage to the target equal to the user's current Special Defense. If this move is successful, the user faints.",
+		shortDesc: "Does damage equal to the user's Special Defense. User faints.",
+		id: "spdblast",
+		isViable: true,
+		name: "SpD Blast",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1},
+		selfdestruct: "ifHit",
+		secondary: false,
+		target: "normal",
+		type: "Fighting",
+		zMovePower: 180,
+		contestType: "Tough",
+	},
+	"speedblast": {
+		num: 515,
+		accuracy: 100,
+		basePower: 0,
+		damageCallback: function (pokemon) {
+			let damage = pokemon.spe;
+			pokemon.faint();
+			return damage;
+		},
+		category: "Special",
+		desc: "Deals damage to the target equal to the user's current Speed. If this move is successful, the user faints.",
+		shortDesc: "Does damage equal to the user's HP. User faints.",
+		id: "speedblast",
+		isViable: true,
+		name: "Speed Blast",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1},
+		selfdestruct: "ifHit",
+		secondary: false,
+		target: "normal",
+		type: "Fighting",
+		zMovePower: 180,
+		contestType: "Tough",
+	},
 	"rageofmothernature": {
 		accuracy: true,
 		basePower: 170,
