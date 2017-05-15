@@ -2885,7 +2885,7 @@ exports.Formats = [
 	},
 	{
 		name: "[Gen 7] Follow the Leader",
-		desc: ['&bullet; <a href="http://www.smogon.com/forums/threads/3603860/">Follow the Leader</a>: The first Pokemon provides the moves and abilities for all other Pokemon on the team.'],
+		desc: ['&bullet; <a href="https://www.smogon.com/forums/threads/3603860/">Follow the Leader</a>: The first Pokemon provides the moves and abilities for all other Pokemon on the team.'],
 		ruleset: ['[Gen 7] OU'],
 		banlist: ['Shedinja', 'Slaking', 'Regigigas', 'Imposter', 'Smeargle', 'Pure Power', 'Huge Power'],
 		validateSet: function (set, teamHas) {
