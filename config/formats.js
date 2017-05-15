@@ -2884,6 +2884,32 @@ exports.Formats = [
 		},
 	},
 	{
+		name: "[Gen 7] Follow the Leader",
+		desc: ['&bullet; <a href="http://www.smogon.com/forums/threads/3603860/">Follow the Leader</a>: The first Pokemon provides the moves and abilities for all other Pokemon on the team.'],
+		ruleset: ['[Gen 7] OU'],
+		banlist: ['Shedinja', 'Slaking', 'Regigigas', 'Imposter', 'Smeargle', 'Pure Power', 'Huge Power'],
+		validateSet: function (set, teamHas) {
+			let species = toId(set.species);
+			let template = this.tools.getTemplate(species);
+			if (!template.exists || template.isNonstandard) return ["" + set.species + " is not a real Pok\u00E9mon."];
+			if (template.battleOnly) template = this.tools.getTemplate(template.baseSpecies);
+			if (this.tools.getBanlistTable(this.format)[template.id] || template.tier in {'Uber': 1, 'Unreleased': 1} && template.species !== 'Aegislash') {
+				return ["" + template.species + " is banned by Follow The Leader."];
+			}
+
+			if (!teamHas.donorTemplate) teamHas.donorTemplate = template;
+			let name = set.name;
+			if (name === set.species) delete set.name;
+			set.species = teamHas.donorTemplate.species;
+			let problems = this.validateSet(set, teamHas, teamHas.donorTemplate);
+
+			set.species = template.species;
+			set.name = (name === set.species ? "" : name);
+
+			return problems;
+		},
+	},
+	{
 		name: "[Gen 7] Full Potential",
 		desc: ['&bullet; <a href="http://www.smogon.com/forums/threads/3596777/">Full Potential</a>: In this metagame, every Pokemon uses their highest raw stat as their attacking stat.'],
 		ruleset: ['[Gen 7] OU'],
