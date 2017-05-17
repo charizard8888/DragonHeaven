@@ -2798,33 +2798,33 @@ exports.Formats = [
 			for (let s = 0; s < this.sides.length; s++) {
 				let pokemons = this.sides[s].pokemon;
 				this.sides[s].chimera = {};
-				this.chimera.types = Object.assign([], pokemons[0].types);
-				this.chimera.species = pokemons[0].species;
+				this.sides[s].chimera.types = Object.assign([], pokemons[0].types);
+				this.sides[s].chimera.species = pokemons[0].species;
 				if (!pokemons[1]) continue;
-				this.chimera.item = pokemons[1].item;
+				this.sides[s].chimera.item = pokemons[1].item;
 				if (!pokemons[2]) continue;
-				this.chimera.ability = pokemons[2].ability;
-				this.chimera.item = pokemons[2].baseAbility;
+				this.sides[s].chimera.ability = pokemons[2].ability;
+				this.sides[s].chimera.item = pokemons[2].baseAbility;
 				if (!pokemons[3]) continue;
-				this.chimera.baseStats = pokemons[3].template.baseStats;
-				this.chimera.set = {
+				this.sides[s].chimera.baseStats = pokemons[3].template.baseStats;
+				this.sides[s].chimera.set = {
 					ivs: pokemons[3].set.ivs,
 					nature: pokemons[3].set.nature,
 					evs: pokemons[3].set.evs,
 					level: pokemons[3].set.level,
 				};
-				this.chimera.level = pokemons[3].level;
+				this.sides[s].chimera.level = pokemons[3].level;
 				if (!pokemons[4]) continue;
-				this.chimera.moves = this.chimera.baseMoves = [];
-				this.chimera.moveset = this.chimera.baseMoveset = [];
+				this.sides[s].chimera.moves = this.sides[s].chimera.baseMoves = [];
+				this.sides[s].chimera.moveset = this.sides[s].chimera.baseMoveset = [];
 				for (let i = 0; i < 2; i++) {
-					this.chimera.moves[i].push(pokemons[4].moves[i]);
-					this.chimera.moveset[i].push(pokemons[4].moveset[i]);
+					this.sides[s].chimera.moves[i].push(pokemons[4].moves[i]);
+					this.sides[s].chimera.moveset[i].push(pokemons[4].moveset[i]);
 				}
 				if (!pokemons[5]) continue;
 				for (let i = 2; i < 4; i++) {
-					this.chimera.moves[i].push(pokemons[5].moves[i]);
-					this.chimera.moveset[i].push(pokemons[5].moveset[i]);
+					this.sides[s].chimera.moves[i].push(pokemons[5].moves[i]);
+					this.sides[s].chimera.moveset[i].push(pokemons[5].moveset[i]);
 				}
 			}
 		},
