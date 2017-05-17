@@ -2825,7 +2825,7 @@ exports.Formats = [
 					this.sides[s].chimera.moves.push(pokemons[5].moves[i]);
 					this.sides[s].chimera.moveset.push(pokemons[5].moveset[i]);
 				}
-				this.sides[s],chimera.canMegaEvo = false;
+				this.sides[s].chimera.canMegaEvo = false;
 			}
 		},
 		onBeforeSwitchIn: function (pokemon) {
