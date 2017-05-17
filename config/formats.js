@@ -2800,6 +2800,7 @@ exports.Formats = [
 				this.sides[s].chimera = {};
 				this.sides[s].chimera.types = Object.assign([], pokemons[0].types);
 				this.sides[s].chimera.species = pokemons[0].species;
+				this.sides[s].chimera.baseSpecies = pokemons[0].baseSpecies;
 				if (!pokemons[1]) continue;
 				this.sides[s].chimera.item = pokemons[1].item;
 				if (!pokemons[2]) continue;
@@ -2828,14 +2829,13 @@ exports.Formats = [
 				}
 			}
 		},
-		onModifyTemplate: function (template, pokemon) {
-			if (!pokemon.side.chimera) return template;
-			let nTemplate = Object.assign(template, pokemon.side.chimera);
-			pokemon = Object.assign(pokemon, pokemon.side.chimera);
-			return nTemplate;
-		},
 		onAfterMega: function (pokemon) {
 			this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
+		},
+		onBeforeSwitchIn: function (pokemon) {
+			this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
+			pokemon.formeChange(Object.assign(pokemon.template, pokemon.side.chimera));
+			pokemon = Object.assign(pokemon, pokemon.side.chimera);
 		},
 		onSwitchIn: function (pokemon) {
 			this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
