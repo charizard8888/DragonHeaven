@@ -2785,7 +2785,7 @@ exports.Formats = [
 	{
 		name: "[Gen 7] Chimera 1v1",
 		desc: [
-			"&bullet; <a href=\"http://prntscr.com/f8wh52\">Chimera 1v1</a>",
+			"SOON<sup>TM</sup>",
 		],
 		mod: 'gen7',
 		ruleset: ['[Gen 7] 1v1', 'OHKO Clause','Evasion Clause','Species Clause','Endless Battle Clause'],
