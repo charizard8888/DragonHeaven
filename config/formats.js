@@ -2795,7 +2795,7 @@ exports.Formats = [
 			battle: 1,
 		},
 		onValidateSet: function (set) {
-			return [Object,keys(this).join(', ')];
+			return [Object.keys(this).join(', ')];
 		},
 		onBegin: function () {
 			for (let s = 0; s < this.sides.length; s++) {
