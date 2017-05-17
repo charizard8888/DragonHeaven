@@ -2840,6 +2840,7 @@ exports.Formats = [
 			this.add('-formechange', pokemon, pokemon.species);
 		},
 		onSwitchIn: function (pokemon) {
+			this.add('-formechange', pokemon, pokemon.species, '[silent]');
 			this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
 		},
 	},
