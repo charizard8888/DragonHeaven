@@ -2837,10 +2837,9 @@ exports.Formats = [
 			pokemon = Object.assign(pokemon, pokemon.side.chimera);
 			pokemon.baseStats = Object.assign({}, pokemon.side.chimera.bleh);
 			pokemon.stats = Object.assign({}, pokemon.side.chimera.bleh);
-			this.add('-formechange', pokemon, pokemon.species);
 		},
 		onSwitchIn: function (pokemon) {
-			this.add('-formechange', pokemon, pokemon.species, '[silent]');
+			this.add('-formechange', pokemon, pokemon.side.chimera.species, '[silent]');
 			this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
 		},
 	},
