@@ -2797,12 +2797,15 @@ exports.Formats = [
 		onBegin: function () {
 			for (let s = 0; s < this.sides.length; s++) {
 				let pokemons = this.sides[s].pokemon;
-				this.sides[s].chimera = Object.assign({}, pokemons[0].template);
+				this.sides[s].chimera = {};
+				this.sides[s].chimera.types = Object.assign([], pokemons[0].types);
+				this.sides[s].chimera.species = pokemons[0].species;
+				this.sides[s].chimera.baseSpecies = pokemons[0].baseSpecies;
 				if (!pokemons[1]) continue;
 				this.sides[s].chimera.item = pokemons[1].item;
 				if (!pokemons[2]) continue;
 				this.sides[s].chimera.ability = pokemons[2].ability;
-				this.sides[s].chimera.item = pokemons[2].baseAbility;
+				this.sides[s].chimera.baseAbility = pokemons[2].baseAbility;
 				if (!pokemons[3]) continue;
 				this.sides[s].chimera.bleh = pokemons[3].template.baseStats;
 				this.sides[s].chimera.level = pokemons[3].level;
