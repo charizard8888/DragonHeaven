@@ -2801,7 +2801,7 @@ exports.Formats = [
 				this.sides[s].chimera.types = Object.assign([], pokemons[0].types);
 				this.sides[s].chimera.species = pokemons[0].species;
 				this.sides[s].chimera.baseSpecies = pokemons[0].baseSpecies;
-				this.sides[s].chimera.set = pokemons[0].set;
+				this.sides[s].chimera.set = Object.assign({}, pokemons[0].set);
 				if (!pokemons[1]) continue;
 				this.sides[s].chimera.item = pokemons[1].item;
 				if (!pokemons[2]) continue;
@@ -2809,9 +2809,9 @@ exports.Formats = [
 				this.sides[s].chimera.baseAbility = pokemons[2].baseAbility;
 				if (!pokemons[3]) continue;
 				this.sides[s].chimera.bleh = Object.assign({}, pokemons[3].baseStats);
-				this.sides.chimera.set.evs = pokemons[3].set.evs;
-				this.sides.chimera.set.level = pokemons[3].set.level;
-				this.sides.chimera.set.ivs = pokemons[3].set.ivs;
+				this.sides[s].chimera.set.evs = pokemons[3].set.evs;
+				this.sides[s].chimera.set.level = pokemons[3].set.level;
+				this.sides[s].chimera.set.ivs = pokemons[3].set.ivs;
 				this.sides[s].chimera.level = pokemons[3].level;
 				if (!pokemons[4]) continue;
 				this.sides[s].chimera.moves = this.sides[s].chimera.baseMoves = [];
