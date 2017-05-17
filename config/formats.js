@@ -2827,11 +2827,11 @@ exports.Formats = [
 			this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
 		},
 		onBeforeSwitchIn: function (pokemon) {
-			pokemon.formeChange(Object.assign(pokemon.template, pokemon.side.chimera));
-			pokemon = Object.assign(pokemon, pokemon.side.chimera);
-			pokemon.baseStats = Object.assign({}, pokemon.side.chimera.bleh);
 			pokemon.baseTemplate = pokemon.template = Object.assign(pokemon.template, pokemon.side.chimera);
 			pokemon.baseTemplate.baseSpecies = pokemon.side.chimera.species;
+			pokemon.formeChange(pokemon.template);
+			pokemon = Object.assign(pokemon, pokemon.side.chimera);
+			pokemon.baseStats = Object.assign({}, pokemon.side.chimera.bleh);
 		},
 		onSwitchIn: function (pokemon) {
 			this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
