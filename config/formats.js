@@ -2807,7 +2807,7 @@ exports.Formats = [
 				this.sides[s].chimera.ability = pokemons[2].ability;
 				this.sides[s].chimera.baseAbility = pokemons[2].baseAbility;
 				if (!pokemons[3]) continue;
-				this.sides[s].chimera.bleh = pokemons[3].template.baseStats;
+				this.sides[s].chimera.bleh = Object.assign({}, pokemons[3].baseStats);
 				this.sides[s].chimera.level = pokemons[3].level;
 				if (!pokemons[4]) continue;
 				this.sides[s].chimera.moves = this.sides[s].chimera.baseMoves = [];
@@ -2830,7 +2830,7 @@ exports.Formats = [
 			pokemon.formeChange(Object.assign(pokemon.template, pokemon.side.chimera));
 			pokemon = Object.assign(pokemon, pokemon.side.chimera);
 			pokemon.baseStats = Object.assign({}, pokemon.side.chimera.bleh);
-			pokemon.baseTemplate = Object.assign(pokemon.template, pokemon.side.chimera);
+			pokemon.baseTemplate = pokemon.template = Object.assign(pokemon.template, pokemon.side.chimera);
 			pokemon.baseTemplate.baseSpecies = pokemon.side.chimera.species;
 		},
 		onSwitchIn: function (pokemon) {
