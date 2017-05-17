@@ -2783,6 +2783,65 @@ exports.Formats = [
 		},
 	},
 	{
+		name: "[Gen 7] Chimera 1v1",
+		desc: [
+			"&bullet; <a href=\"http://prntscr.com/f8wh52\">Chimera 1v1</a>",
+		],
+		mod: 'gen7',
+		ruleset: ['[Gen 7] 1v1', 'OHKO Clause','Evasion Clause','Species Clause','Endless Battle Clause'],
+		banlist: ['Shedinja','Smeargle','Pure Power','Huge Power','Moody','Focus Sash','Perish Song','Transform'],
+		teamLength: {
+			validate: [1, 6],
+			battle: 1,
+		},
+		onBegin: function () {
+			for (let s = 0; s < this.sides.length; s++) {
+				let pokemons = this.sides[s].pokemon;
+				this.sides[s].chimera = {};
+				this.chimera.types = Object.assign([], pokemons[0].types);
+				this.chimera.species = pokemons[0].species;
+				if (!pokemons[1]) continue;
+				this.chimera.item = pokemons[1].item;
+				if (!pokemons[2]) continue;
+				this.chimera.ability = pokemons[2].ability;
+				this.chimera.item = pokemons[2].baseAbility;
+				if (!pokemons[3]) continue;
+				this.chimera.baseStats = pokemons[3].template.baseStats;
+				this.chimera.set = {
+					ivs: pokemons[3].set.ivs,
+					nature: pokemons[3].set.nature,
+					evs: pokemons[3].set.evs,
+					level: pokemons[3].set.level,
+				};
+				this.chimera.level = pokemons[3].level,
+				if (!pokemons[4]) continue;
+				this.chimera.moves = this.chimera.baseMoves = [];
+				this.chimera.moveset = this.chimera.baseMoveset = [];
+				for (let i = 0; i < 2; i++) {
+					this.chimera.moves[i].push(pokemons[4].moves[i]);
+					this.chimera.moveset[i].push(pokemons[4].moveset[i]);
+				}
+				if (!pokemons[5]) continue;
+				for (let i = 2; i < 4; i++) {
+					this.chimera.moves[i].push(pokemons[5].moves[i]);
+					this.chimera.moveset[i].push(pokemons[5].moveset[i]);
+				}
+			}
+		},
+		onModifyTemplate: function (template, pokemon) {
+			if (!pokemon.side.chimera) return template;
+			let nTemplate = Object.assign(template, pokemon.side.chimera);
+			pokemon = Object.assign(pokemon, pokemon.side.chimera);
+			return nTemplate;
+		},
+		onAfterMega: function (pokemon) {
+			this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
+		},
+		onSwitchIn: function (pokemon) {
+			this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
+		},
+	},
+	{
 		name: "[Gen 7] Cross Evolution",
 		desc: [
 			"You can \"cross-evolve\" your Pok&eacute;mon by naming them after the intended Pok&eacute;mon.",
