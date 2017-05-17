@@ -2813,7 +2813,7 @@ exports.Formats = [
 					evs: pokemons[3].set.evs,
 					level: pokemons[3].set.level,
 				};
-				this.chimera.level = pokemons[3].level,
+				this.chimera.level = pokemons[3].level,;
 				if (!pokemons[4]) continue;
 				this.chimera.moves = this.chimera.baseMoves = [];
 				this.chimera.moveset = this.chimera.baseMoveset = [];
