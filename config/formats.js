@@ -2818,13 +2818,13 @@ exports.Formats = [
 				this.sides[s].chimera.moves = this.sides[s].chimera.baseMoves = [];
 				this.sides[s].chimera.moveset = this.sides[s].chimera.baseMoveset = [];
 				for (let i = 0; i < 2; i++) {
-					this.sides[s].chimera.moves[i].push(pokemons[4].moves[i]);
-					this.sides[s].chimera.moveset[i].push(pokemons[4].moveset[i]);
+					this.sides[s].chimera.moves.push(pokemons[4].moves[i]);
+					this.sides[s].chimera.moveset.push(pokemons[4].moveset[i]);
 				}
 				if (!pokemons[5]) continue;
 				for (let i = 2; i < 4; i++) {
-					this.sides[s].chimera.moves[i].push(pokemons[5].moves[i]);
-					this.sides[s].chimera.moveset[i].push(pokemons[5].moveset[i]);
+					this.sides[s].chimera.moves.push(pokemons[5].moves[i]);
+					this.sides[s].chimera.moveset.push(pokemons[5].moveset[i]);
 				}
 			}
 		},
