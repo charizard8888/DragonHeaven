@@ -2835,6 +2835,7 @@ exports.Formats = [
 			pokemon.formeChange(pokemon.template);
 			pokemon = Object.assign(pokemon, pokemon.side.chimera);
 			pokemon.baseStats = Object.assign({}, pokemon.side.chimera.bleh);
+			pokemon.stats = Object.assign({}, pokemon.side.chimera.bleh);
 		},
 		onSwitchIn: function (pokemon) {
 			this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
