@@ -2831,7 +2831,7 @@ exports.Formats = [
 		},
 		onBeforeSwitchIn: function (pokemon) {
 			pokemon.species = pokemon.side.chimera.species;
-			pokemon.baseTemplate = pokemon.template = Object.assign(pokemon.template, pokemon.side.chimera);
+			pokemon.baseTemplate = pokemon.template = Object.assign(this.getTemplate(pokemon.species), pokemon.side.chimera);
 			pokemon.formeChange(pokemon.template);
 			pokemon = Object.assign(pokemon, pokemon.side.chimera);
 			pokemon.baseStats = Object.assign({}, pokemon.side.chimera.bleh);
