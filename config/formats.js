@@ -2839,7 +2839,7 @@ exports.Formats = [
 			pokemon.stats = Object.assign({}, pokemon.side.chimera.bleh);
 		},
 		onSwitchIn: function (pokemon) {
-			this.add('-formechange', pokemon, pokemon.side.chimera.species);
+			pokemon.battle.add('-formechange', pokemon, pokemon.species);
 			this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
 		},
 	},
