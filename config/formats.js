@@ -2799,7 +2799,7 @@ exports.Formats = [
 				let pokemons = this.sides[s].pokemon;
 				this.sides[s].chimera = {};
 				this.sides[s].chimera.types = Object.assign([], pokemons[0].types);
-				this.sides[s].chimera.species = this.sides[s].chimera.baseSpecies = pokemons[0].baseSpecies;
+				this.sides[s].chimera.species = this.sides[s].chimera.baseSpecies = pokemons[0].species;
 				this.sides[s].chimera.set = Object.assign({}, pokemons[0].set);
 				this.sides[s].chimera.set.name = this.sides[s].chimera.set.name || pokemons[0].species;
 				if (!pokemons[1]) continue;
