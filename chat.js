@@ -838,8 +838,6 @@ Chat.loadCommands = function () {
 		if (file.substr(-3) !== '.js' || file === 'info.js' || file === 'github.js') continue;
 		Object.assign(commands, require('./chat-plugins/' + file).commands);
 	}
-	// aaaaand finally
-	Object.assign(commands, require('./chat-plugins/github.js').commands)
 };
 
 /**
