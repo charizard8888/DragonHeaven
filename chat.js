@@ -839,7 +839,7 @@ Chat.loadCommands = function () {
 		Object.assign(commands, require('./chat-plugins/' + file).commands);
 	}
 	// aaaaand finally
-	commands = Object.assign(commands, require('./chat-plugins/github').commands)
+	Object.assign(commands, require('./chat-plugins/github.js').commands)
 };
 
 /**
