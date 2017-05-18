@@ -2596,13 +2596,6 @@ exports.commands = {
 
 		try {
 			if (target === 'chat' || target === 'commands') {
-				let gitCommands = {};
-				if (Chat.commands.gitban) {
-					gitCommands = {
-						gitban: Chat.commands.gitban,
-						gitunban: Chat.commands.gitban,
-					};
-				}
 				if (Monitor.hotpatchLockChat) return this.errorReply("Hotpatch has been disabled for chat. (" + Monitor.hotpatchLockChat + ")");
 				const ProcessManagers = require('./process-manager').cache;
 				for (let PM of ProcessManagers.keys()) {
