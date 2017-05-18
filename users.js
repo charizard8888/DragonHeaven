@@ -373,7 +373,7 @@ class User {
 		this.s1 = '';
 		this.s2 = '';
 		this.s3 = '';
-
+		this.lastRoomMessages = {};
 		// initialize
 		Users.add(this);
 	}

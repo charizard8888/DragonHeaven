@@ -616,6 +616,7 @@ class CommandContext {
 			if (room) {
 				let normalized = message.trim();
 				user.lastMessage = message;
+				user.lastRoomMessages[room.id] = message;
 				user.lastMessageTime = Date.now();
 			}
 
