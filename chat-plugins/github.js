@@ -30,7 +30,9 @@ if (!Config.github) {
 let updates = {};
 let targetRooms = (Config.github.rooms && Config.github.rooms.length) ? Config.github.rooms : ['development'];
 targetRooms = targetRooms.map(toId);
-targetRooms = targetRooms.map(Rooms);
+for (let i = 0; i < targetRooms.length; i++) {
+	targetRooms[i] = Rooms(targetRooms[i]);
+}
 try {
 	git = exports.github = require('githubhook')(gitConfig);
 } catch (e) {
