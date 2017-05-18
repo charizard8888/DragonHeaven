@@ -13,7 +13,7 @@
 'use strict';
 
 let gitConfig = {};
-let git;
+const git = exports.github = require('githubhook')(gitConfig);
 
 if (!Config.github) {
 	return;
@@ -32,13 +32,6 @@ let targetRooms = (Config.github.rooms && Config.github.rooms.length) ? Config.g
 targetRooms = targetRooms.map(toId);
 for (let i = 0; i < targetRooms.length; i++) {
 	targetRooms[i] = Rooms(targetRooms[i]);
-}
-try {
-	git = exports.github = require('githubhook')(gitConfig);
-} catch (e) {
-	targetRooms.forEach(room => {
-		room.add('Okay so something crashed. Lets see what happens next lol xddxdxddx').update();
-	});
 }
 let gitBans = {};
 if (targetRooms[0].chatRoomData) targetRooms[0].chatRoomData.gitBans = gitBans;
