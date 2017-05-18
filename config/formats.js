@@ -3512,6 +3512,21 @@ exports.Formats = [
 		column: 3,
 	},
 	{
+		name: "[Gen 7] Prehistoric",
+		desc: [
+			"&bullet; Coded by flufi.",
+			"A format that takes place in prehistoric times.",
+			"Over 100 Pokemon receive new Primal forms, along with",
+			"every one of those Pokemon getting a new signature move.",
+			"",
+			"NOTE: This is a long-term project and probably won't be done until June/July.",
+		],
+		mod: "prehistoric",
+		
+		rulset: ['[Gen 7] Ubers'],
+		banlist: ['Blue Orb', 'Shadow Tag'],
+	},
+	{
 		name: "Ascension",
 		desc: [
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3546114/\">OU Metagame Discussion</a>",
@@ -6154,7 +6169,7 @@ exports.Formats = [
 			if (template.baseSpecies === item.megaEvolves || (template.baseSpecies === 'Groudon' && item.id === 'redorb') || (template.baseSpecies === 'Kyogre' && item.id === 'blueorb')) return;
 			if (template.evos.length) return ["" + template.species + " is not allowed to hold " + item.name + " because it's not fully evolved."];
 			let uberStones = ['beedrillite', 'blazikenite', 'gengarite', 'kangaskhanite', 'mawilite', 'medichamite'];
-			if (template.tier === 'Uber' || set.ability === 'Power Construct' || uberStones.includes(item.id)) return ["" + template.species + " is not allowed to hold " + item.name + "."];
+			if (template.tier === 'Uber' || template.species === 'Tapu Lele' || set.ability === 'Power Construct' || uberStones.includes(item.id)) return ["" + template.species + " is not allowed to hold " + item.name + "."];
 		},
 		onBegin: function () {
 			let allPokemon = this.p1.pokemon.concat(this.p2.pokemon);
