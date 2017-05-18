@@ -2608,6 +2608,7 @@ exports.commands = {
 				Chat.uncacheTree('./chat');
 				delete require.cache[require.resolve('./chat-commands')];
 				delete require.cache[require.resolve('./chat-plugins/info')];
+				delete require.cache[require.resolve('./chat-plugins/github')];
 				global.Chat = require('./chat');
 
 				let runningTournaments = Tournaments.tournaments;
