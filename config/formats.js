@@ -2806,12 +2806,9 @@ exports.Formats = [
 			chimera.species = chimera.baseSpecies = pokemons[0].species;
 			chimera.set = Object.assign({}, pokemons[0].set);
 			chimera.set.name = chimera.set.name || pokemons[0].species;
-			if (!pokemons[1]) continue;
 			chimera.item = pokemons[1].item;
-			if (!pokemons[2]) continue;
 			chimera.ability = pokemons[2].ability;
 			chimera.baseAbility = pokemons[2].baseAbility;
-			if (!pokemons[3]) continue;
 			chimera.bleh = Object.assign({}, pokemons[3].baseStats);
 			chimera.set.evs = pokemons[3].set.evs;
 			chimera.set.level = pokemons[3].set.level;
@@ -2819,7 +2816,6 @@ exports.Formats = [
 			chimera.level = pokemons[3].level;
 			chimera.set.hpType = chimera.hpType = pokemons[3].hpType;
 			chimera.hp = chimera.maxhp = pokemons[3].maxhp;
-			if (!pokemons[4]) continue;
 			chimera.moves = chimera.baseMoves = [];
 			chimera.moveset = chimera.baseMoveset = [];
 			for (let i = 0; i < 2; i++) {
@@ -2827,7 +2823,6 @@ exports.Formats = [
 				chimera.moves.push(pokemons[4].moves[i]);
 				chimera.moveset.push(pokemons[4].moveset[i]);
 			}
-			if (!pokemons[5]) continue;
 			for (let i = 2; i < 4; i++) {
 				if (!pokemons[5].moves[i]) continue;
 				chimera.moves.push(pokemons[5].moves[i]);
@@ -2848,6 +2843,9 @@ exports.Formats = [
 		},
 		onValidateTeam: function (team) {
 			if (team.length < 6) return ["You need to have 6 Pokemon on your team."];
+		},
+		onFaint: function (pokemon) {
+
 		},
 	},
 	{
