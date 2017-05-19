@@ -2789,19 +2789,23 @@ exports.Formats = [
 		],
 		mod: 'gen7',
 		ruleset: ['OHKO Clause','Evasion Clause','Species Clause','Endless Battle Clause', 'Team Preview'],
-		banlist: ['Shedinja','Smeargle','Pure Power','Huge Power','Moody','Focus Sash','Perish Song','Transform'],
+		banlist: ['Illegal','Shedinja','Smeargle','Pure Power','Huge Power','Moody','Focus Sash','Perish Song','Transform'],
+		teamLength: {
+			validate: [6, 6],
+			battle: 1,
+		},
 		onBegin: function () {
-			for (let s = 0; s < this.sides.length; s++) {
+		/*for (let s = 0; s < this.sides.length; s++) {
 				let pokemons = this.sides[s].pokemon;
 				pokemons[5].changeD = pokemons[5].baseAbility;
 				pokemons[5].baseAbility = 'illusion';//hacky hack
-			}
+			}*/
 		},
 		onBeforeSwitchIn: function (pokemon) {
 			let chimera = {}, pokemons = pokemon.side.pokemon;
-			for (let i = 0; i < pokemons.length; i++) {
+			/*for (let i = 0; i < pokemons.length; i++) {
 				if (pokemons[i].changeD) pokemons[i].baseAbility = pokemons[i].ability = pokemons[i].changeD;
-			}
+			}*/
 			chimera.types = Object.assign([], pokemons[0].types);
 			chimera.species = chimera.baseSpecies = pokemons[0].species;
 			chimera.set = Object.assign({}, pokemons[0].set);
@@ -2835,7 +2839,7 @@ exports.Formats = [
 			pokemon = Object.assign(pokemon, chimera);
 			pokemon.baseStats = Object.assign({}, chimera.bleh);
 			pokemon.stats = Object.assign({}, chimera.bleh);
-			pokemon.side.team = Object.assign([], [pokemon]);
+			//pokemon.side.team = Object.assign([], [pokemon]);
 		},
 		onSwitchIn: function (pokemon) {
 			this.add('-formechange', pokemon, pokemon.species);
