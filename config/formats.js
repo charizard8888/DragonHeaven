@@ -2790,55 +2790,57 @@ exports.Formats = [
 		mod: 'gen7',
 		ruleset: ['OHKO Clause','Evasion Clause','Species Clause','Endless Battle Clause'],
 		banlist: ['Shedinja','Smeargle','Pure Power','Huge Power','Moody','Focus Sash','Perish Song','Transform'],
-		teamLength: {
-			validate: [1, 6],
-			battle: 1,
-		},
 		onBegin: function () {
 			for (let s = 0; s < this.sides.length; s++) {
 				let pokemons = this.sides[s].pokemon;
-				this.sides[s].chimera = {};
-				this.sides[s].chimera.types = Object.assign([], pokemons[0].types);
-				this.sides[s].chimera.species = this.sides[s].chimera.baseSpecies = pokemons[0].species;
-				this.sides[s].chimera.set = Object.assign({}, pokemons[0].set);
-				this.sides[s].chimera.set.name = this.sides[s].chimera.set.name || pokemons[0].species;
-				if (!pokemons[1]) continue;
-				this.sides[s].chimera.item = pokemons[1].item;
-				if (!pokemons[2]) continue;
-				this.sides[s].chimera.ability = pokemons[2].ability;
-				this.sides[s].chimera.baseAbility = pokemons[2].baseAbility;
-				if (!pokemons[3]) continue;
-				this.sides[s].chimera.bleh = Object.assign({}, pokemons[3].baseStats);
-				this.sides[s].chimera.set.evs = pokemons[3].set.evs;
-				this.sides[s].chimera.set.level = pokemons[3].set.level;
-				this.sides[s].chimera.set.ivs = pokemons[3].set.ivs;
-				this.sides[s].chimera.level = pokemons[3].level;
-				this.sides[s].chimera.set.hpType = this.sides[s].chimera.hpType = pokemons[3].hpType;
-				this.sides[s].chimera.hp = this.sides[s].chimera.maxhp = pokemons[3].maxhp;
-				if (!pokemons[4]) continue;
-				this.sides[s].chimera.moves = this.sides[s].chimera.baseMoves = [];
-				this.sides[s].chimera.moveset = this.sides[s].chimera.baseMoveset = [];
-				for (let i = 0; i < 2; i++) {
-					if (!pokemons[4].moves[i]) continue;
-					this.sides[s].chimera.moves.push(pokemons[4].moves[i]);
-					this.sides[s].chimera.moveset.push(pokemons[4].moveset[i]);
-				}
-				if (!pokemons[5]) continue;
-				for (let i = 2; i < 4; i++) {
-					if (!pokemons[5].moves[i]) continue;
-					this.sides[s].chimera.moves.push(pokemons[5].moves[i]);
-					this.sides[s].chimera.moveset.push(pokemons[5].moveset[i]);
-				}
-				this.sides[s].chimera.canMegaEvo = false;
+				pokemons[5].changeD = pokemons[5].baseAbility;
+				pokemons[5].baseAbility = 'illusion';//hacky hack
 			}
 		},
 		onBeforeSwitchIn: function (pokemon) {
-			pokemon.species = pokemon.side.chimera.species;
-			pokemon.baseTemplate = pokemon.template = Object.assign(this.getTemplate(pokemon.species), pokemon.side.chimera);
+			let chimera = {}, pokemons = pokemon.side.pokemon;
+			for (let i = 0; i < pokemons.length; i++) {
+				if (pokemons[i].changeD) pokemons[i].baseAbility = pokemons[i].ability = pokemons[i].changeD;
+			}
+			chimera.types = Object.assign([], pokemons[0].types);
+			chimera.species = chimera.baseSpecies = pokemons[0].species;
+			chimera.set = Object.assign({}, pokemons[0].set);
+			chimera.set.name = chimera.set.name || pokemons[0].species;
+			if (!pokemons[1]) continue;
+			chimera.item = pokemons[1].item;
+			if (!pokemons[2]) continue;
+			chimera.ability = pokemons[2].ability;
+			chimera.baseAbility = pokemons[2].baseAbility;
+			if (!pokemons[3]) continue;
+			chimera.bleh = Object.assign({}, pokemons[3].baseStats);
+			chimera.set.evs = pokemons[3].set.evs;
+			chimera.set.level = pokemons[3].set.level;
+			chimera.set.ivs = pokemons[3].set.ivs;
+			chimera.level = pokemons[3].level;
+			chimera.set.hpType = chimera.hpType = pokemons[3].hpType;
+			chimera.hp = chimera.maxhp = pokemons[3].maxhp;
+			if (!pokemons[4]) continue;
+			chimera.moves = chimera.baseMoves = [];
+			chimera.moveset = chimera.baseMoveset = [];
+			for (let i = 0; i < 2; i++) {
+				if (!pokemons[4].moves[i]) continue;
+				chimera.moves.push(pokemons[4].moves[i]);
+				chimera.moveset.push(pokemons[4].moveset[i]);
+			}
+			if (!pokemons[5]) continue;
+			for (let i = 2; i < 4; i++) {
+				if (!pokemons[5].moves[i]) continue;
+				chimera.moves.push(pokemons[5].moves[i]);
+				chimera.moveset.push(pokemons[5].moveset[i]);
+			}
+			chimera.canMegaEvo = false;
+			pokemon.species = chimera.species;
+			pokemon.baseTemplate = pokemon.template = Object.assign(this.getTemplate(pokemon.species), chimera);
 			pokemon.formeChange(pokemon.template);
-			pokemon = Object.assign(pokemon, pokemon.side.chimera);
-			pokemon.baseStats = Object.assign({}, pokemon.side.chimera.bleh);
-			pokemon.stats = Object.assign({}, pokemon.side.chimera.bleh);
+			pokemon = Object.assign(pokemon, chimera);
+			pokemon.baseStats = Object.assign({}, chimera.bleh);
+			pokemon.stats = Object.assign({}, chimera.bleh);
+			pokemon.side.team = [pokemon];
 		},
 		onSwitchIn: function (pokemon) {
 			this.add('-formechange', pokemon, pokemon.species);
