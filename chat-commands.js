@@ -112,6 +112,16 @@ exports.commands = {
 		return target;
 	},
 
+	'!rickroll': true,
+	rr: 'rickroll',
+	rickroll: function (target, room, user) {
+		if (!target) return this.parse('/help rickroll');
+		target = this.canTalk(`/rickroll ${target}`);
+		if (!target) return;
+
+		return target;
+	},
+
 	'!battle': true,
 	'battle!': 'battle',
 	battle: function (target, room, user, connection, cmd) {
