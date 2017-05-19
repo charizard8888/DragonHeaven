@@ -1169,7 +1169,7 @@ class User {
 	joinRoom(room, connection) {
 		room = Rooms(room);
 		if (!this.shownNews) {
-			this.popup(`|html|<font size =7>WE ARE UNDER MAINTAINENCE. DRAGONHEAVEN WILL BE UNAVAILABLE FOR A WHILE. SORRY FOR INCONVINIENCE</font>`);
+			this.popup(`|html|<center><b><font size = 5 color = "red">WE ARE UNDER MAINTAINENCE.</font></b><br /></center><font size = 3>Dragon Heaven will be down for a while, since we're moving servers. Please check on later. For `);
 			this.parse('/logout');
 			//this.shownNews = true;
 		}

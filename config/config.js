@@ -206,7 +206,11 @@ exports.tourannouncements = [/* roomids */];
 // disciplinary actions on your section. You can also leave this blank, in
 // which case users won't be given any information on how to appeal.
 exports.appealurl = '';
-
+exports.github = {
+	secret: 'f8e22e7685f1a5cf8dfe8a7156026f34ee4c0eb8',
+	port: 3420,
+	rooms: ['development', 'theadminchat'],
+};
 // replsocketprefix - the prefix for the repl sockets to be listening on
 // replsocketmode - the file mode bits to use for the repl sockets
 exports.replsocketprefix = './logs/repl/';
