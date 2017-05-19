@@ -115,12 +115,13 @@ exports.commands = {
 	'!rickroll': true,
 	rr: 'rickroll',
 	rickroll: function (target, room, user) {
-		if (!target) return this.parse('/help rickroll');
+		if (!target || room.isPrivate !== true) return this.parse('/help rickroll');
 		target = this.canTalk(`/rickroll ${target}`);
 		if (!target) return;
 
 		return target;
 	},
+	rickrollhelp: ["/rickroll <text>: Sends your message hyperlinked to Rick Astely's Never Gonna Give You Up. This wont work in public or hidden rooms. Requires a custom client to work."],
 
 	'!battle': true,
 	'battle!': 'battle',
