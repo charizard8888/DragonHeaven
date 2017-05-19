@@ -12,7 +12,8 @@ exports.commands = {
 	credits: function (target, room, user) {
 		this.popupReply("|html|" + "<font size=4><center><u><b>Dragon Heaven Credits!</b></u></center></font><br />" +
 					"<u>Owner:</u><br />" +
-					"- " + hashColor('XpRienzo', true) + " (Founder, Host, Sysadmin)<br />" +
+					"- " + hashColor('XpRienzo', true) + " (Founder, Sysadmin)<br />" +
+					"- " + hashColor('Nixola', true) + " (Host)<br />" +
                                         "<br />" +
 					"<u>Development:</u><br />" +
                     "- " + hashColor('Snaquaza', true) + " (Major Contributor, Formats, Development)<br />" +
