@@ -2788,7 +2788,7 @@ exports.Formats = [
 			"SOON<sup>TM</sup>",
 		],
 		mod: 'gen7',
-		ruleset: ['[Gen 7] 1v1', 'OHKO Clause','Evasion Clause','Species Clause','Endless Battle Clause'],
+		ruleset: ['OHKO Clause','Evasion Clause','Species Clause','Endless Battle Clause'],
 		banlist: ['Shedinja','Smeargle','Pure Power','Huge Power','Moody','Focus Sash','Perish Song','Transform'],
 		teamLength: {
 			validate: [1, 6],
