@@ -1169,9 +1169,8 @@ class User {
 	joinRoom(room, connection) {
 		room = Rooms(room);
 		if (!this.shownNews) {
-			this.popup(`|html|<font size =7>WE ARE UNDER MAINTAINENCE. DRAGONHEAVEN WILL BE UNAVAILABLE FOR A WHILE. SORRY FOR INCONVINIENCE</font>`);
-			this.parse('/logout');
-			//this.shownNews = true;
+			this.popup(`|html|${Chat.news()}`);
+			this.shownNews = true;
 		}
 		if (!room) return false;
 		if (!this.can('bypassall')) {

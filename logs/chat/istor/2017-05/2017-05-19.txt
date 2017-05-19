@@ -51,3 +51,5 @@
 14:24:35 |raw|<div class="broadcast-blue"><b>WE ARE MOVING SERVERS SO DH WILL BE DOWN FOR A BIT. PLS WAIT</b></div>
 14:31:56 NEW CHATROOM: istor
 14:32:01 |raw|<div class="broadcast-red"><b>The server needs restart because of a crash.</b><br />No new battles can be started until the server is done restarting.</div>
+18:33:03 NEW CHATROOM: istor
+18:33:11 |raw|<div class="broadcast-red"><b>The server needs restart because of a crash.</b><br />No new battles can be started until the server is done restarting.</div>
