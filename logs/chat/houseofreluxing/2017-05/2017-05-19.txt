@@ -1,0 +1,46 @@
+00:12:47 |j|$smellslikememe
+00:25:56 |l|$smellslikememe
+00:41:29 |userstats|total:4|guests:0| :1|+:0|$:0|%:0|@:1|*:2|★:0|#:0|&:0|~:0|⚔:0
+01:06:12 |j|$smellslikememe
+01:10:44 |l|@EchoGaia
+01:37:12 |l|$smellslikememe
+01:41:29 |userstats|total:3|guests:0| :1|+:0|$:0|%:0|@:0|*:2|★:0|#:0|&:0|~:0|⚔:0
+02:19:04 |j|@EchoGaia
+02:19:19 |l|@EchoGaia
+02:41:29 |userstats|total:3|guests:0| :1|+:0|$:0|%:0|@:0|*:2|★:0|#:0|&:0|~:0|⚔:0
+02:49:04 |l| HiNoStop!Augh
+02:51:58 |j|$smellslikememe
+03:07:39 |l|$smellslikememe
+03:35:45 |j| Zard8888 AFK
+03:41:29 |userstats|total:3|guests:0| :1|+:0|$:0|%:0|@:0|*:2|★:0|#:0|&:0|~:0|⚔:0
+03:50:04 |l| Zard8888 AFK
+04:41:29 |userstats|total:2|guests:0| :0|+:0|$:0|%:0|@:0|*:2|★:0|#:0|&:0|~:0|⚔:0
+05:41:29 |userstats|total:2|guests:0| :0|+:0|$:0|%:0|@:0|*:2|★:0|#:0|&:0|~:0|⚔:0
+06:41:29 |userstats|total:2|guests:0| :0|+:0|$:0|%:0|@:0|*:2|★:0|#:0|&:0|~:0|⚔:0
+07:03:10 |j|@EchoGaia
+07:41:29 |userstats|total:3|guests:0| :0|+:0|$:0|%:0|@:1|*:2|★:0|#:0|&:0|~:0|⚔:0
+08:41:29 |userstats|total:3|guests:0| :0|+:0|$:0|%:0|@:1|*:2|★:0|#:0|&:0|~:0|⚔:0
+09:25:51 |l|@EchoGaia
+09:25:55 |j|@EchoGaia
+09:41:29 |userstats|total:3|guests:0| :0|+:0|$:0|%:0|@:1|*:2|★:0|#:0|&:0|~:0|⚔:0
+09:41:44 |j|#Bbgun999 😂
+09:41:44 |c|*BatterBotto|(✒️＋🍍)＋(🍎＋✒️)＝PPAP
+10:04:18 |l|@EchoGaia
+10:24:52 |l|#Bbgun999 😂
+10:41:29 |userstats|total:2|guests:0| :0|+:0|$:0|%:0|@:0|*:2|★:0|#:0|&:0|~:0|⚔:0
+10:56:59 |j|@EchoGaia
+11:03:15 |j|~Ransei
+11:28:45 |l|~Ransei
+11:41:29 |userstats|total:3|guests:0| :0|+:0|$:0|%:0|@:1|*:2|★:0|#:0|&:0|~:0|⚔:0
+12:05:03 |j| RazorSB360
+12:30:17 |l| RazorSB360
+12:41:29 |userstats|total:3|guests:0| :0|+:0|$:0|%:0|@:1|*:2|★:0|#:0|&:0|~:0|⚔:0
+13:41:17 |j| Zard8888 AFK
+13:41:29 |userstats|total:4|guests:0| :1|+:0|$:0|%:0|@:1|*:2|★:0|#:0|&:0|~:0|⚔:0
+13:42:23 |l| Zard8888 AFK
+14:21:27 |j| RazorSB360
+14:23:53 |raw|<div class="broadcast-red"><b>The server is restarting soon.</b><br />Please finish your battles quickly. No new battles can be started until the server resets in a few minutes.</div>
+14:24:10 |l|@EchoGaia
+14:24:35 |raw|<div class="broadcast-blue"><b>WE ARE MOVING SERVERS SO DH WILL BE DOWN FOR A BIT. PLS WAIT</b></div>
+14:31:56 NEW CHATROOM: houseofreluxing
+14:32:01 |raw|<div class="broadcast-red"><b>The server needs restart because of a crash.</b><br />No new battles can be started until the server is done restarting.</div>

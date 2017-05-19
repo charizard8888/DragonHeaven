@@ -1,0 +1,433 @@
+{
+  "leaderboard": {
+    "spookuaza": [
+      5,
+      51,
+      12,
+      1,
+      1,
+      2
+    ],
+    "classyz": [
+      0,
+      46,
+      11,
+      3,
+      2,
+      3
+    ],
+    "abysmalbot": [
+      0,
+      8,
+      4,
+      3,
+      5,
+      5
+    ],
+    "bbgun999": [
+      4,
+      37,
+      15,
+      2,
+      3,
+      1
+    ],
+    "ransei": [
+      0,
+      2,
+      2,
+      3,
+      6,
+      6
+    ],
+    "zapmaster2010": [
+      4,
+      35,
+      7,
+      2,
+      4,
+      4
+    ]
+  },
+  "ladder": [
+    [
+      "spookuaza"
+    ],
+    [
+      "bbgun999"
+    ],
+    [
+      "classyz"
+    ]
+  ],
+  "questions": [
+    {
+      "category": "pokemon",
+      "question": "Name the fastest pokemon",
+      "answers": [
+        "deoxysspeed"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "This pokemon is known as the Anteater Pokemon",
+      "answers": [
+        "heatmor"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "This pokemon is known as the Antenna Pokemon",
+      "answers": [
+        "dedenne"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "This pokemon is known as the Aqua Rabbit Pokemon",
+      "answers": [
+        "azumarill"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "Name the Owner of Dragon Heaven",
+      "answers": [
+        "xprienzo"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "Name charizard8888&apos;s signature move in DHSSB",
+      "answers": [
+        "ggm8"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "What is Digital Edge&apos;s signature move in DHSSB?",
+      "answers": [
+        "sacredhax"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "What is Ransei&apos;s signature move in DHSSB?",
+      "answers": [
+        "legendsambition"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "Name the owner of Dragon Rush Arena",
+      "answers": [
+        "charizard8888"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "Name the tournaments room of Dragon Heaven",
+      "answers": [
+        "dragonrusharena"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "Name the user who has been leader for the most number of days (he&apos;s still a leader)",
+      "answers": [
+        "pieddychomp"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "Name the crash guy",
+      "answers": [
+        "spandan"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "Name the user with the most number of Pull Requests in Dragon Heaven development",
+      "answers": [
+        "spandan"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "Name one of the two users who have added the most number of tiers in Dragon Heaven",
+      "answers": [
+        "spandan",
+        "snaq",
+        "snaquaza"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "Name the lead developer of Dragon Heaven",
+      "answers": [
+        "xprienzo"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "[insert username here]: Bleh",
+      "answers": [
+        "xprienzo"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "[insert username here]: ripperoni",
+      "answers": [
+        "flygonerz"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "[insert username here]: ok",
+      "answers": [
+        "classyz",
+        "kota"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "Who&apos;s former join phrase was 8888 xD?",
+      "answers": [
+        "charizard8888"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "Name the most OP battler of the tiers CH,BH,BH+,EIH,EIBH....",
+      "answers": [
+        "ransei"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "The custom color king!!",
+      "answers": [
+        "snaquaza",
+        "snaq"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "Name **the** former Dragon King of Dragon Heaven",
+      "answers": [
+        "thegodofhaxorus"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "[insert username here]: sup (they say that a lot of times",
+      "answers": [
+        "charizard8888",
+        "snaq",
+        "snaquaza",
+        "xprienzo"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "[insert username here]: bbl (they say that a lot of times",
+      "answers": [
+        "charizard8888",
+        "spandan",
+        "diarmuidodyna"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "[insert username here]: brb (they say that a lot of times",
+      "answers": [
+        "charizard8888"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "~~Name the user who broke custom colors~~",
+      "answers": [
+        "nou"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "What is Snaq&apos;s signature move in DHSSB?",
+      "answers": [
+        "partingshotspam"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "Name **the** Dragon Knight!!!",
+      "answers": [
+        "xprienzo"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "[insert username here]: eh, :I, kewl",
+      "answers": [
+        "loominite"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "What is Spandan&apos;s custom ability in DHSSB?",
+      "answers": [
+        "yomammajoke"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "Who owns Flareon Driod?",
+      "answers": [
+        "digitaledge"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "All your bases belong to.....?",
+      "answers": [
+        "classyz"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "Name the official artist of Dragon Heaven",
+      "answers": [
+        "diarmuidodyna"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "Name the boss roomintro coderz of Dragon Heaven",
+      "answers": [
+        "eternalmayhem",
+        "charizard8888"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "[insert username here]: yo (they say that most of the time)",
+      "answers": [
+        "xprienzo",
+        "ransei",
+        "pieddychomp"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "What is PI EddyChomp normally called in DH?",
+      "answers": [
+        "eddy",
+        "chomp",
+        "pi"
+      ],
+      "user": "pieddychomp"
+    },
+    {
+      "category": "pokemon",
+      "question": "Currently, which are Pokemon&apos;s two biggest rivals?",
+      "answers": [
+        "digemon",
+        "yokaiwatch"
+      ],
+      "user": "pieddychomp"
+    },
+    {
+      "category": "pokemon",
+      "question": "Name BBGun999&apos;s favorite pokemon&#x2f;god",
+      "answers": [
+        "goodra"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "Name the #1 owner of House of Reluxing",
+      "answers": [
+        "bbgun999"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "What evolves from its pre-evolution later than any other Pokémon?",
+      "answers": [
+        "hydreigon"
+      ],
+      "user": "abysmalbot"
+    },
+    {
+      "category": "pokemon",
+      "question": "calls him quad 8",
+      "answers": [
+        "bbgun999"
+      ],
+      "user": "bbgun999"
+    },
+    {
+      "category": "pokemon",
+      "question": "Extreme Speed was once a signature move of what Pokemon?",
+      "answers": [
+        "arcanine"
+      ],
+      "user": "abysmalbot"
+    },
+    {
+      "category": "pokemon",
+      "question": "Name Abyssal Bot&apos;s cousin",
+      "answers": [
+        "abysmalbot"
+      ],
+      "user": "charizard8888"
+    },
+    {
+      "category": "pokemon",
+      "question": "What is the only Gen I Pokemon that cannot be encountered in FireRed and LeafGreen?",
+      "answers": [
+        "mew"
+      ],
+      "user": "abysmalbot"
+    }
+  ],
+  "submissions": []
+}

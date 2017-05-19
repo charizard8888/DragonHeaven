@@ -1,0 +1,34 @@
+00:41:29 |userstats|total:2|guests:0| :0|+:1|$:0|%:0|@:0|*:1|★:0|#:0|&:0|~:0|⚔:0
+01:09:32 |l|+shwb
+01:41:29 |userstats|total:1|guests:0| :0|+:0|$:0|%:0|@:0|*:1|★:0|#:0|&:0|~:0|⚔:0
+02:41:29 |userstats|total:1|guests:0| :0|+:0|$:0|%:0|@:0|*:1|★:0|#:0|&:0|~:0|⚔:0
+03:41:29 |userstats|total:1|guests:0| :0|+:0|$:0|%:0|@:0|*:1|★:0|#:0|&:0|~:0|⚔:0
+04:41:29 |userstats|total:1|guests:0| :0|+:0|$:0|%:0|@:0|*:1|★:0|#:0|&:0|~:0|⚔:0
+05:41:29 |userstats|total:1|guests:0| :0|+:0|$:0|%:0|@:0|*:1|★:0|#:0|&:0|~:0|⚔:0
+06:41:29 |userstats|total:1|guests:0| :0|+:0|$:0|%:0|@:0|*:1|★:0|#:0|&:0|~:0|⚔:0
+07:41:29 |userstats|total:1|guests:0| :0|+:0|$:0|%:0|@:0|*:1|★:0|#:0|&:0|~:0|⚔:0
+08:41:29 |userstats|total:1|guests:0| :0|+:0|$:0|%:0|@:0|*:1|★:0|#:0|&:0|~:0|⚔:0
+09:14:33 |j|+shwb
+09:19:12 |j|+Scribblium
+09:41:29 |userstats|total:3|guests:0| :0|+:2|$:0|%:0|@:0|*:1|★:0|#:0|&:0|~:0|⚔:0
+10:41:29 |userstats|total:3|guests:0| :0|+:2|$:0|%:0|@:0|*:1|★:0|#:0|&:0|~:0|⚔:0
+11:41:29 |userstats|total:3|guests:0| :0|+:2|$:0|%:0|@:0|*:1|★:0|#:0|&:0|~:0|⚔:0
+12:05:03 |j|+RazorSB360
+12:16:57 |l|+shwb
+12:30:17 |l|+RazorSB360
+12:41:29 |userstats|total:2|guests:0| :0|+:1|$:0|%:0|@:0|*:1|★:0|#:0|&:0|~:0|⚔:0
+12:55:30 |l|+Scribblium
+12:55:44 |j|+Scribblium
+13:33:09 |j| Thinkerino
+13:33:10 |c|*OutrageousBoT|/log Thinkerino was promoted to Room Voice by OutrageousBoT.
+13:33:10 |n|+Thinkerino|thinkerino
+13:34:15 |c|+Thinkerino|yooo what the heck
+13:34:19 |c|+Thinkerino|Move Mastery ooks clean af
+13:41:29 |userstats|total:3|guests:0| :0|+:2|$:0|%:0|@:0|*:1|★:0|#:0|&:0|~:0|⚔:0
+13:51:40 |l|+Scribblium
+14:09:20 |l|+Thinkerino
+14:21:27 |j|+RazorSB360
+14:23:53 |raw|<div class="broadcast-red"><b>The server is restarting soon.</b><br />Please finish your battles quickly. No new battles can be started until the server resets in a few minutes.</div>
+14:24:35 |raw|<div class="broadcast-blue"><b>WE ARE MOVING SERVERS SO DH WILL BE DOWN FOR A BIT. PLS WAIT</b></div>
+14:31:56 NEW CHATROOM: animeandmanga
+14:32:01 |raw|<div class="broadcast-red"><b>The server needs restart because of a crash.</b><br />No new battles can be started until the server is done restarting.</div>
