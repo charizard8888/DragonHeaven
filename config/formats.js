@@ -2835,7 +2835,7 @@ exports.Formats = [
 			pokemon = Object.assign(pokemon, chimera);
 			pokemon.baseStats = Object.assign({}, chimera.bleh);
 			pokemon.stats = Object.assign({}, chimera.bleh);
-			pokemon.side.team = [pokemon];
+			pokemon.side.team = Object.assign([], [pokemon]);
 		},
 		onSwitchIn: function (pokemon) {
 			this.add('-formechange', pokemon, pokemon.species);
