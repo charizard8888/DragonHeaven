@@ -2842,6 +2842,14 @@ exports.Formats = [
 			this.add('-formechange', pokemon, pokemon.species);
 			this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
 		},
+		onValidateTeam: function (team) {
+			if (team.length < 6) return ["You need to have 6 Pokemon on your team for now."];
+			for (let i = 0; i < 6; i++) {
+				let set = team[i];
+				if (i === 4 && set.moves.length < 2) return [`You need to have atleast 2 moves on ${set.name || set.species} for now.`];
+				if (i === 5 && set.moves.length < 4) return [`You need to have atleast 4 moves on ${set.name || set.species} for now.`];
+			}
+		},
 	},
 	{
 		name: "[Gen 7] Cross Evolution",
