@@ -2819,11 +2819,13 @@ exports.Formats = [
 				this.sides[s].chimera.moves = this.sides[s].chimera.baseMoves = [];
 				this.sides[s].chimera.moveset = this.sides[s].chimera.baseMoveset = [];
 				for (let i = 0; i < 2; i++) {
+					if (!pokemons[4].moves[i]) continue;
 					this.sides[s].chimera.moves.push(pokemons[4].moves[i]);
 					this.sides[s].chimera.moveset.push(pokemons[4].moveset[i]);
 				}
 				if (!pokemons[5]) continue;
 				for (let i = 2; i < 4; i++) {
+					if (!pokemons[5].moves[i]) continue;
 					this.sides[s].chimera.moves.push(pokemons[5].moves[i]);
 					this.sides[s].chimera.moveset.push(pokemons[5].moveset[i]);
 				}
@@ -2843,12 +2845,7 @@ exports.Formats = [
 			this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
 		},
 		onValidateTeam: function (team) {
-			if (team.length < 6) return ["You need to have 6 Pokemon on your team for now."];
-			for (let i = 0; i < 6; i++) {
-				let set = team[i];
-				if (i === 4 && set.moves.length < 2) return [`You need to have atleast 2 moves on ${set.name || set.species} for now.`];
-				if (i === 5 && set.moves.length < 4) return [`You need to have atleast 4 moves on ${set.name || set.species} for now.`];
-			}
+			if (team.length < 6) return ["You need to have 6 Pokemon on your team."];
 		},
 	},
 	{
