@@ -94,7 +94,6 @@ if (Config.watchconfig) {
 
 global.Monitor = require('./monitor');
 
-global.uploadToHastebin = Chat.uploadToHastebin;
 global.Dex = require('./sim/dex');
 global.toId = Dex.getId;
 
@@ -107,6 +106,8 @@ global.Users = require('./users');
 global.Punishments = require('./punishments');
 
 global.Chat = require('./chat');
+
+global.uploadToHastebin = Chat.uploadToHastebin;
 
 global.Rooms = require('./rooms');
 
