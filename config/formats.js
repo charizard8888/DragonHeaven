@@ -2839,7 +2839,8 @@ exports.Formats = [
 			pokemon = Object.assign(pokemon, chimera);
 			pokemon.baseStats = Object.assign({}, chimera.bleh);
 			pokemon.stats = Object.assign({}, chimera.bleh);
-			pokemon.side.team = Object.assign([], [pokemon]);
+			pokemon.side.pokemon.slice(0, 1);
+			pokemon.side.pokemonLeft = 1;
 		},
 		onSwitchIn: function (pokemon) {
 			this.add('-formechange', pokemon, pokemon.species);
@@ -2847,9 +2848,6 @@ exports.Formats = [
 		},
 		onValidateTeam: function (team) {
 			if (team.length < 6) return ["You need to have 6 Pokemon on your team."];
-		},
-		onFaint: function (pokemon) {
-
 		},
 	},
 	{
