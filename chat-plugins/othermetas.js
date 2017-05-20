@@ -45,11 +45,11 @@ exports.commands = {
 		if (!this.runBroadcast()) return;
 		if (!target || !target.includes(',')) return this.parse('/help crossevo')
 		let pokes = target.split(",");
-		if (!Tools.data.Pokedex[toId(pokes[0])] || !Tools.data.Pokedex[toId(pokes[1])]) {
+		if (!Dex.data.Pokedex[toId(pokes[0])] || !Dex.data.Pokedex[toId(pokes[1])]) {
 			return this.errorReply('Error: Pokemon not found.')
 		}
-		let template = Object.assign({}, Tools.getTemplate(pokes[0])), crossTemplate = Object.assign({}, Tools.getTemplate(pokes[1]));
-		let prevo = Tools.getTemplate(crossTemplate.prevo);
+		let template = Object.assign({}, Dex.getTemplate(pokes[0])), crossTemplate = Object.assign({}, Dex.getTemplate(pokes[1]));
+		let prevo = Dex.getTemplate(crossTemplate.prevo);
 		let mixedTemplate = Object.assign({}, template);
 		if (!template.evos || !template.evos.length) {
 			return this.errorReply(`Error: ${template.species} does not evolve.`);
@@ -60,7 +60,7 @@ exports.commands = {
 		let setStage = 1, crossStage = 1;
 		if (template.prevo) {
 			setStage++;
-			if (Tools.data.Pokedex[template.prevo].prevo) {
+			if (Dex.data.Pokedex[template.prevo].prevo) {
 				setStage++;
 			}
 		}
@@ -76,14 +76,14 @@ exports.commands = {
 		mixedTemplate.abilities = Object.assign({}, crossTemplate.abilities);
 		mixedTemplate.baseStats = {};
 		for (let statName in template.baseStats) {
-			mixedTemplate.baseStats[statName] = (crossTemplate.baseStats[statName] - prevo.baseStats[statName]) + Tools.data.Pokedex[template.id].baseStats[statName];
+			mixedTemplate.baseStats[statName] = (crossTemplate.baseStats[statName] - prevo.baseStats[statName]) + Dex.data.Pokedex[template.id].baseStats[statName];
 		}
-		mixedTemplate.types = [Tools.data.Pokedex[template.id].types[0]];
-		if (Tools.data.Pokedex[template.id].types[1]) mixedTemplate.types.push(Tools.data.Pokedex[template.id].types[1]);
+		mixedTemplate.types = [Dex.data.Pokedex[template.id].types[0]];
+		if (Dex.data.Pokedex[template.id].types[1]) mixedTemplate.types.push(Dex.data.Pokedex[template.id].types[1]);
 		if (crossTemplate.types[0] !== prevo.types[0]) mixedTemplate.types[0] = crossTemplate.types[0];
 		if (crossTemplate.types[1] !== prevo.types[1]) mixedTemplate.types[1] = crossTemplate.types[1] || crossTemplate.types[0];
 		if (mixedTemplate.types[0] === mixedTemplate.types[1]) mixedTemplate.types.length = 1;
-		mixedTemplate.weightkg = crossTemplate.weightkg - prevo.weightkg + Tools.data.Pokedex[template.id].weightkg;
+		mixedTemplate.weightkg = crossTemplate.weightkg - prevo.weightkg + Dex.data.Pokedex[template.id].weightkg;
 		if (mixedTemplate.weightkg <= 0) {
 			mixedTemplate.weightkg = 0.1;
 		}
@@ -130,14 +130,14 @@ exports.commands = {
 		let sep = target.split('@');
 		let stone = toId(sep[1]);
 		let template = toId(sep[0]);
-		if (!Tools.data.Items[stone] || (Tools.data.Items[stone] && !Tools.data.Items[stone].megaEvolves && !Tools.data.Items[stone].onPrimal)) {
+		if (!Dex.data.Items[stone] || (Dex.data.Items[stone] && !Dex.data.Items[stone].megaEvolves && !Dex.data.Items[stone].onPrimal)) {
 			return this.errorReply(`Error: Mega Stone not found`);
 		}
-		if (!Tools.data.Pokedex[toId(template)]) {
+		if (!Dex.data.Pokedex[toId(template)]) {
 			return this.errorReply(`Error: Pokemon not found`);
 		}
-		template = Object.assign({}, Tools.getTemplate(template));
-		stone = Object.assign({}, Tools.getItem(stone));
+		template = Object.assign({}, Dex.getTemplate(template));
+		stone = Object.assign({}, Dex.getItem(stone));
 		if (template.isMega || (template.evos && Object.keys(template.evos).length > 0)) { // Mega Pokemon cannot be mega evolved
 			return this.errorReply(`You cannot mega evolve ${template.name} in Mix and Mega.`);
 		}
@@ -145,17 +145,17 @@ exports.commands = {
 		if (stone.id in bannedStones && template.name !== stone.megaEvolves) {
 			return this.errorReply(`You cannot use ${stone.name} on anything besides ${stone.megaEvolves} in Mix and Mega.`);
 		}
-		if (Tools.mod("mixandmega").getTemplate(sep[0]).tier === "Uber") { // Separate messages because there's a difference between being already mega evolved / NFE and being banned from mega evolving
+		if (Dex.mod("mixandmega").getTemplate(sep[0]).tier === "Uber") { // Separate messages because there's a difference between being already mega evolved / NFE and being banned from mega evolving
 			return this.errorReply(`${template.name} is banned from mega evolving in Mix and Mega.`);
 		}
-		let baseTemplate = Tools.getTemplate(stone.megaEvolves);
-		let megaTemplate = Tools.getTemplate(stone.megaStone);
+		let baseTemplate = Dex.getTemplate(stone.megaEvolves);
+		let megaTemplate = Dex.getTemplate(stone.megaStone);
 		if (stone.id === 'redorb') { // Orbs do not have 'Item.megaStone' or 'Item.megaEvolves' properties.
-			megaTemplate = Tools.getTemplate("Groudon-Primal");
-			baseTemplate = Tools.getTemplate("Groudon");
+			megaTemplate = Dex.getTemplate("Groudon-Primal");
+			baseTemplate = Dex.getTemplate("Groudon");
 		} else if (stone.id === 'blueorb') {
-			megaTemplate = Tools.getTemplate("Kyogre-Primal");
-			baseTemplate = Tools.getTemplate("Kyogre");
+			megaTemplate = Dex.getTemplate("Kyogre-Primal");
+			baseTemplate = Dex.getTemplate("Kyogre");
 		}
 		let deltas = {
 			baseStats: {},
@@ -181,7 +181,7 @@ exports.commands = {
 		}
 		mixedTemplate.baseStats = {};
 		for (let statName in template.baseStats) { // Add the changed stats and weight
-			mixedTemplate.baseStats[statName] = Tools.clampIntRange(Tools.data.Pokedex[template.id].baseStats[statName] + deltas.baseStats[statName], 1, 255);
+			mixedTemplate.baseStats[statName] = Dex.clampIntRange(Dex.data.Pokedex[template.id].baseStats[statName] + deltas.baseStats[statName], 1, 255);
 		}
 		mixedTemplate.weightkg = Math.round(Math.max(0.1, template.weightkg + deltas.weightkg) * 100) / 100;
 		mixedTemplate.tier = "MnM";
@@ -218,11 +218,11 @@ exports.commands = {
 	'350': '350cup',
 	'350cup': function (target, room, user) {
 		if (!this.runBroadcast()) return;
-		if (!Tools.data.Pokedex[toId(target)]) {
+		if (!Dex.data.Pokedex[toId(target)]) {
 			return this.errorReply("Error: Pokemon not found.");
 		}
 		let bst = 0;
-		let mixedTemplate = Object.assign({}, Tools.getTemplate(target));
+		let mixedTemplate = Object.assign({}, Dex.getTemplate(target));
 		for (let i in mixedTemplate.baseStats) {
 			bst += mixedTemplate.baseStats[i];
 		}
@@ -265,7 +265,7 @@ exports.commands = {
 	ts: 'tiershift',
 	tiershift: function (target, room, user) {
 		if (!this.runBroadcast()) return;
-		if (!Tools.data.Pokedex[toId(target)]) {
+		if (!Dex.data.Pokedex[toId(target)]) {
 			return this.errorReply("Error: Pokemon not found.");
 		}
 		let boosts = {
@@ -280,12 +280,12 @@ exports.commands = {
 			'LC Uber': 20,
 			'LC': 20,
 		};
-		let mixedTemplate = Object.assign({}, Tools.getTemplate(target));
+		let mixedTemplate = Object.assign({}, Dex.getTemplate(target));
 		let boost = boosts[mixedTemplate.tier];
 		if (!(mixedTemplate.tier in boosts)) boost = 0;
 		let newStats = {};
 		for (let statName in mixedTemplate.baseStats) {
-			newStats[statName] = Tools.clampIntRange(mixedTemplate.baseStats[statName] + boost, 1, 255);
+			newStats[statName] = Dex.clampIntRange(mixedTemplate.baseStats[statName] + boost, 1, 255);
 		}
 		mixedTemplate.baseStats = Object.assign({}, newStats);
 		mixedTemplate.tier = "TS";
@@ -324,8 +324,8 @@ exports.commands = {
         'natureswap': function(target, room, user) {
 		if (!this.runBroadcast()) return;
 		let arg=target,by=user;
-		let natures = Object.assign({}, Tools.data.Natures);
-		let pokemen = Object.assign({}, Tools.data.Pokedex);
+		let natures = Object.assign({}, Dex.data.Natures);
+		let pokemen = Object.assign({}, Dex.data.Pokedex);
                 let text = "";
                 if (arg == " " || arg == '') {
                         text += "Usage: <code>/ns &lt;Nature> &lt;Pokemon></code>";
@@ -371,10 +371,10 @@ exports.commands = {
 		let text = "";
 		let separated = target.split(",");
 		let name = toId(separated[0]), name2 = toId(separated[1]);
-		if (!Tools.data.Pokedex[name] || !Tools.data.Pokedex[name2]) {
+		if (!Dex.data.Pokedex[name] || !Dex.data.Pokedex[name2]) {
 			return this.errorReply("Error: Pokemon not found");;
 		}
-		let baseStats = {}, fusedTemplate = Object.assign({}, Tools.getTemplate(name)), template = Object.assign({}, Tools.getTemplate(name2));
+		let baseStats = {}, fusedTemplate = Object.assign({}, Dex.getTemplate(name)), template = Object.assign({}, Dex.getTemplate(name2));
 		Object.keys(fusedTemplate.baseStats).forEach(stat => {
 			baseStats[stat] = Math.floor((fusedTemplate.baseStats[stat] + template.baseStats[stat]) / 2);
 		});
@@ -382,9 +382,9 @@ exports.commands = {
 		fusedTemplate.types = [fusedTemplate.types[0]];
 		let type = (separated[2] && toId(separated[2]) === 'shiny' && template.types[1]) ? 1 : 0;
 		if(template.types[type] && template.types[type] !== fusedTemplate.types[0]) fusedTemplate.types.push(template.types[type]);
-		let weight = (Tools.data.Pokedex[fusedTemplate.id].weightkg + template.weightkg) / 2;
+		let weight = (Dex.data.Pokedex[fusedTemplate.id].weightkg + template.weightkg) / 2;
 		fusedTemplate.weightkg = weight;
-		fusedTemplate.abilities = Object.assign({'S': `<b>${template.abilities['0']}</b>`}, Tools.data.Pokedex[fusedTemplate.id].abilities);
+		fusedTemplate.abilities = Object.assign({'S': `<b>${template.abilities['0']}</b>`}, Dex.data.Pokedex[fusedTemplate.id].abilities);
 		this.sendReply(`|html|${Chat.getDataPokemonHTML(fusedTemplate)}`);
 		let details;
 		let weighthit = 20;
@@ -414,7 +414,7 @@ exports.commands = {
 	},
 	learnistor: function(target, room, user) {
 		if (!this.runBroadcast()) return;
-		let learnstor = Tools.mod('istor').data.Learnsets, movestor = Tools.mod('istor').data.Movedex, dexstor = Tools.mod('istor').data.Pokedex;
+		let learnstor = Dex.mod('istor').data.Learnsets, movestor = Dex.mod('istor').data.Movedex, dexstor = Dex.mod('istor').data.Pokedex;
 		if (!target || toId(target) === '') return this.sendReply("/learnistor: Shows the whether a Pokemon can learn a move, including Pokemon and Moves from istor.");
 		let targets = target.split(','), mon = targets[0], move = targets[1];
 		if (!mon || !dexstor[toId(mon)]) return this.errorReply("Error: Pokemon not found");
@@ -431,14 +431,14 @@ exports.commands = {
 	'bnb' : 'badnboosted',
 	badnboosted : function (target, room, user) {
 		if (!this.runBroadcast()) return;
-		if(!Tools.data.Pokedex[toId(target)]) {
+		if(!Dex.data.Pokedex[toId(target)]) {
 			return this.errorReply("Error: Pokemon not found.")
 		}
-		let template = Object.assign({}, Tools.getTemplate(target));
+		let template = Object.assign({}, Dex.getTemplate(target));
 		let newStats = Object.values(template.baseStats).map(function (stat) {
  			return (stat <= 70) ? (stat * 2) : stat;
  		});
-		this.sendReplyBox(`${Tools.data.Pokedex[toId(target)].species} in Bad 'n Boosted: <br /> ${newStats.join('/')}`);
+		this.sendReplyBox(`${Dex.data.Pokedex[toId(target)].species} in Bad 'n Boosted: <br /> ${newStats.join('/')}`);
 	},
 	badnboostedhelp: ["/bnb <pokemon> - Shows the base stats that a Pokemon would have in Bad 'n Boosted."],
 
