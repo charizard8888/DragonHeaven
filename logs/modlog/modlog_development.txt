@@ -498,3 +498,9 @@
 [2017-05-14T14:43:33.943Z] (development) (Snaquaza was removed from the GitHub Alert Blacklist by Spandan.)
 [2017-05-15T13:17:01.587Z] (development) spandan used "/a |html|<div class="chat chatmessage-ludicrousity"><small>[18:41:15] </small><strong style="color:hsl(286,53.0116304%,50.0116304%);"><small>$</small><span class="username" data-name="Ludicrousity">Ludicrousity</span>:</strong> <em>The Immortal is now following me :O</em></div>" in development
 [2017-05-17T17:04:34.598Z] (development) (charizard8888 notes: https://prnt.sc/f8wh52)
+[2017-05-19T17:24:44.804Z] (development) niXOla was appointed Room Owner by Spandan.
+[2017-05-19T17:25:52.844Z] (development) charizard8888 was promoted to Dragon Knight by Spandan.
+[2017-05-19T17:26:13.569Z] (development) (charizard8888 was demoted to Administrator by charizard8888.)
+[2017-05-19T17:27:51.044Z] (development) (charizard8888 was demoted to Administrator by charizard8888.)
+[2017-05-19T17:45:34.324Z] (development) (Spandan changed the staffintro.)
+[2017-05-20T06:59:54.810Z] (development) (Spandan changed the staffintro.)

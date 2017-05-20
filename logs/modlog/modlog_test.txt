@@ -382,3 +382,4 @@
 [2017-05-18T17:50:15.637Z] (test) spandan used "/a |html|<div class="chat chatmessage-spandan mine"><small>[23:16:27] </small><font color="#2D8F1E"><small>★</small><span class="username" data-name="Spandan">Spandan</span></font>:</strong> <em>test</em></div>" in test
 [2017-05-18T17:50:30.706Z] (test) spandan used "/a |html|<div class="chat chatmessage-spandan mine"><small>[23:16:27] </small><b><font color="#2D8F1E"><small>★</small><span class="username" data-name="Spandan">Spandan</span></font></b>:</strong> <em>test</em></div>" in test
 [2017-05-18T17:51:02.387Z] (test) spandan used "/a |html|<div class="chat chatmessage-spandan mine"><small>[23:16:27] </small><b><font color="#2D8F1E"><small>★</small><span class="username" data-name="Spandan">Spandan</span></font></b>:</strong> <em><a href="google.com">test</a></em></div>" in test
+[2017-05-19T17:25:34.125Z] (test) (xprienzo was demoted to Voice by Spandan.)

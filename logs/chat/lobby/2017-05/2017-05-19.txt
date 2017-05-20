@@ -1551,3 +1551,1095 @@
 14:32:01 |raw|<div class="broadcast-red"><b>The server needs restart because of a crash.</b><br />No new battles can be started until the server is done restarting.</div>
 18:33:03 NEW CHATROOM: lobby
 18:33:11 |raw|<div class="broadcast-red"><b>The server needs restart because of a crash.</b><br />No new battles can be started until the server is done restarting.</div>
+18:35:20 NEW CHATROOM: lobby
+18:35:35 |j| Spandan
+18:36:20 |j|@EchoGaia
+18:37:47 |l| Spandan
+18:37:57 |j| Spandan
+18:38:03 |c| Spandan|EchoGaia
+18:38:07 |c| Spandan|how is the new server
+18:38:22 |c|@EchoGaia|new?
+18:38:32 |raw|<div class="broadcast-blue"><b>Welcome to our new server!</b></div>
+18:38:36 |c| Spandan|Same name, new host
+18:38:53 |c|@EchoGaia|oh you are the new host?
+18:39:00 |c|@EchoGaia|yeah i heard xprienzo quit
+18:39:34 |c| Spandan|nope
+18:39:48 |c| Spandan|//auth
+18:39:49 |c| Spandan|click no credits
+18:40:09 |c| Spandan|o
+18:40:10 |c| Spandan|n*
+18:42:48 |l| Spandan
+18:43:14 |j| Spandan
+18:48:07 |c| Spandan|,
+18:48:32 |j| AOOOOOOM
+18:48:50 |j|+OriolesFan52
+18:50:27 |j| Thinkerino
+18:51:12 |c|+OriolesFan52|rip no bots
+18:52:39 |l| Thinkerino
+18:55:20 |j|%flufi
+18:55:31 |c|%flufi|Milotic Mega with Water Bubble
+18:55:33 |raw|<div class='chat'><small>%</small><button name='parseCommand' value='/user flufi' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#27A58A'>flufi:</font></b></button><em class='mine'>is here <img src="http://i.imgur.com/wp51rIg.png" title="feelsbn" width="50" height="50" /></em></div>
+18:56:09 |c|%flufi|Spandan the bots died lol
+18:56:15 |c| Spandan|they didnt die
+18:56:21 |c| Spandan|They cannot connect
+18:56:33 |c|%flufi|That's what I meant by died
+18:56:36 |j|$smellslikememe
+18:56:37 |c|%flufi|As in not here anymore
+18:57:00 |j|%charizard8888
+18:57:02 |c|$smellslikememe|o zard
+18:57:05 |c|$smellslikememe|o spandan
+18:57:08 |c|$smellslikememe|o OriolesFan52
+18:57:10 |c|$smellslikememe|o echo
+18:57:21 |c|%flufi|Love you too
+18:57:22 |c|$smellslikememe|!om mixandmegastonesunleashed
+18:57:22 |html|<div class="infobox">Mega Stones and Primal Orbs can be used on almost any fully evolved Pok&eacute;mon with no Mega Evolution limit.<br />&bullet; <a href="http://www.smogon.com/forums/threads/3601590">Mix and Mega Stones Unleashed</a></div>
+18:57:22 |raw|<div class='chat'><small>%</small><button name='parseCommand' value='/user flufi' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#27A58A'>flufi:</font></b></button><em class='mine'>&lt;3</em></div>
+18:57:23 |c| Spandan|/log nixola was promoted to Administrator by Spandan.
+18:57:30 |c|%charizard8888|Hoi
+18:57:34 |c|%charizard8888|lol Spandan
+18:57:36 |c|%charizard8888|smellslikememe*
+18:57:40 |c|$smellslikememe|o flufi just noticed you there
+18:58:28 |j|%Winona
+18:58:36 |c|%Winona|Heya
+18:58:40 |c|%flufi|hi
+18:58:51 |c|%flufi|ooh baby
+18:59:00 |c|%flufi|!mnm araquanid @ blue orb
+18:59:00 |raw|<div class="message"><ul class="utilichart"><li class="result"><span class="col numcol">MnM</span> <span class="col iconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1) no-repeat scroll -320px -1860px"></span></span> <span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/pokemon/araquanid" target="_blank">Araquanid</a></span> <span class="col typecol"><img src="https://play.pokemonshowdown.com/sprites/types/Water.png" alt="Water" height="14" width="32"><img src="https://play.pokemonshowdown.com/sprites/types/Bug.png" alt="Bug" height="14" width="32"></span> <span style="float:left;min-height:26px"><span class="col abilitycol">Primordial Sea</span><span class="col abilitycol"></span></span><span style="float:left;min-height:26px"><span class="col statcol"><em>HP</em><br />68</span> <span class="col statcol"><em>Atk</em><br />120</span> <span class="col statcol"><em>Def</em><br />92</span> <span class="col statcol"><em>SpA</em><br />80</span> <span class="col statcol"><em>SpD</em><br />152</span> <span class="col statcol"><em>Spe</em><br />42</span> <span class="col bstcol"><em>BST<br />554</em></span> </span></li><li style="clear:both"></li></ul></div>
+18:59:00 |raw|<font size="1"><font color="#686868">Dex#:</font> 752&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 7&nbsp;|&ThickSpace;<font color="#686868">Height:</font> 1.8 m&nbsp;|&ThickSpace;<font color="#686868">Weight:</font> 160 kg <em>(100 BP)</em>&nbsp;|&ThickSpace;<font color="#686868">Dex Colour:</font> Green&nbsp;|&ThickSpace;<font color="#686868">Egg Group(s):</font> Water 1, Bug&nbsp;|&ThickSpace;<font color="#686868">Does Not Evolve</font></font>
+18:59:06 |c|%flufi|Wait nvm
+18:59:09 |c|%flufi|loses water bubble
+18:59:15 |c|%Winona|Grats for the new host
+18:59:22 |c|%flufi|new host?
+18:59:32 |c|%Winona|Yup
+18:59:35 |c|%Winona|For Dragonheaven
+18:59:39 |c|%Winona|The new server
+18:59:41 |c|%flufi|What new host did it get
+18:59:58 |c|%flufi|!mnm golisopod @ blue orb
+18:59:58 |raw|<div class="message"><ul class="utilichart"><li class="result"><span class="col numcol">MnM</span> <span class="col iconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1) no-repeat scroll -0px -1920px"></span></span> <span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/pokemon/golisopod" target="_blank">Golisopod</a></span> <span class="col typecol"><img src="https://play.pokemonshowdown.com/sprites/types/Bug.png" alt="Bug" height="14" width="32"><img src="https://play.pokemonshowdown.com/sprites/types/Water.png" alt="Water" height="14" width="32"></span> <span style="float:left;min-height:26px"><span class="col abilitycol">Primordial Sea</span><span class="col abilitycol"></span></span><span style="float:left;min-height:26px"><span class="col statcol"><em>HP</em><br />75</span> <span class="col statcol"><em>Atk</em><br />175</span> <span class="col statcol"><em>Def</em><br />140</span> <span class="col statcol"><em>SpA</em><br />90</span> <span class="col statcol"><em>SpD</em><br />110</span> <span class="col statcol"><em>Spe</em><br />40</span> <span class="col bstcol"><em>BST<br />630</em></span> </span></li><li style="clear:both"></li></ul></div>
+18:59:58 |raw|<font size="1"><font color="#686868">Dex#:</font> 768&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 7&nbsp;|&ThickSpace;<font color="#686868">Height:</font> 2 m&nbsp;|&ThickSpace;<font color="#686868">Weight:</font> 186 kg <em>(100 BP)</em>&nbsp;|&ThickSpace;<font color="#686868">Dex Colour:</font> Gray&nbsp;|&ThickSpace;<font color="#686868">Egg Group(s):</font> Bug, Water 3&nbsp;|&ThickSpace;<font color="#686868">Does Not Evolve</font></font>
+19:00:09 |c|%flufi|175 attack, primordial sea to boost water power and good defenses
+19:00:16 |c|%flufi|Hm
+19:00:23 |c|%Winona|Awesome
+19:00:39 |c|%flufi|I should make Mix and Mega doubles kek
+19:00:40 |c|%Winona|Probably the best Pdon check rn
+19:00:44 |c|%flufi|So I can use that with a swift swimmer
+19:00:49 |c|%flufi|yup
+19:01:23 |c|%Winona|I remember back in mnm Gen 6
+19:01:33 |c|%Winona|!mnm Sudowoodo @ Banettite
+19:01:33 |raw|<div class="message"><ul class="utilichart"><li class="result"><span class="col numcol">MnM</span> <span class="col iconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1) no-repeat scroll -200px -450px"></span></span> <span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/pokemon/sudowoodo" target="_blank">Sudowoodo</a></span> <span class="col typecol"><img src="https://play.pokemonshowdown.com/sprites/types/Rock.png" alt="Rock" height="14" width="32"></span> <span style="float:left;min-height:26px"><span class="col abilitycol">Prankster</span><span class="col abilitycol"></span></span><span style="float:left;min-height:26px"><span class="col statcol"><em>HP</em><br />70</span> <span class="col statcol"><em>Atk</em><br />150</span> <span class="col statcol"><em>Def</em><br />125</span> <span class="col statcol"><em>SpA</em><br />40</span> <span class="col statcol"><em>SpD</em><br />85</span> <span class="col statcol"><em>Spe</em><br />40</span> <span class="col bstcol"><em>BST<br />510</em></span> </span></li><li style="clear:both"></li></ul></div>
+19:01:33 |raw|<font size="1"><font color="#686868">Dex#:</font> 185&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 2&nbsp;|&ThickSpace;<font color="#686868">Height:</font> 1.2 m&nbsp;|&ThickSpace;<font color="#686868">Weight:</font> 38.5 kg <em>(60 BP)</em>&nbsp;|&ThickSpace;<font color="#686868">Dex Colour:</font> Brown&nbsp;|&ThickSpace;<font color="#686868">Egg Group(s):</font> Mineral&nbsp;|&ThickSpace;<font color="#686868">Does Not Evolve</font></font>
+19:01:37 |c|%Winona|I used this
+19:01:45 |c|%flufi|kek
+19:01:46 |c|%Winona|And it was awesomee
+19:02:04 |c|%flufi|banettite is really nice
+19:02:07 |c|%Winona|Since it can have Stealth Rocks
+19:02:10 |c|%Winona|And Copycat
+19:02:12 |c|%flufi|I used to never have a team without some banettite user
+19:02:17 |c|%flufi|!dt copycat
+19:02:17 |raw|<ul class="utilichart"><li class="result"><a data-entry="move|Copycat"><span class="col movenamecol">Copycat</span> <span class="col typecol"><img src="//play.pokemonshowdown.com/sprites/types/Normal.png" alt="Normal" width="32" height="14"><img src="//play.pokemonshowdown.com/sprites/categories/Status.png" alt="Status" width="32" height="14"></span> <span class="col widelabelcol"><em>Accuracy</em><br>—</span> <span class="col pplabelcol"><em>PP</em><br>20</span> <span class="col movedesccol">Uses the last move used in the battle.</span> </a></li><li style="clear:both"></li></ul>
+|raw|<font size="1"><font color="#686868">Priority:</font> 0&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 4&nbsp;|&ThickSpace;<font color="#686868">Z-Effect:</font>  Accuracy +1&nbsp;|&ThickSpace;<font color="#686868">Target:</font> User</font>
+19:02:18 |c|%Winona|And Sturdy as a base ability is nice
+19:02:41 |c|%flufi|Nice
+19:02:46 |c|%flufi|Requires a lot of strategy to use though
+19:02:50 |c|%Winona|So it can act both as a hazard setter and revenge killer when needed
+19:02:52 |c|%Winona|Yup
+19:02:55 |c|%flufi|Cause you need to time Head Smash and Copycat corerctly
+19:03:00 |c|%flufi|correctly*
+19:03:19 |l|%flufi
+19:03:49 |c|%Winona|!learn gen6ou, sudowoodo, head smash
+19:03:49 |html|<div class="infobox">In Gen 6, Sudowoodo <span class="message-learn-cannotlearn">can't</span> learn Head Smash</div>
+19:04:01 |c|%Winona|I used Stone Edge instead :>
+19:09:03 |j| Jinxed Bliss
+19:09:33 |l| Jinxed Bliss
+19:09:52 |j| RPS Bot
+19:09:58 |l| RPS Bot
+19:11:53 |j| RPS Bot
+19:11:54 |l| RPS Bot
+19:12:03 |j| RPS Bot
+19:15:09 |l|$smellslikememe
+19:15:14 |j|$smellslikememe
+19:15:59 |l| AOOOOOOM
+19:16:11 |j|*BatterBotto
+19:16:13 |c| Spandan|/log RPS Bot was promoted to Bot by Spandan.
+19:16:13 |n|*RPS Bot|rpsbot
+19:16:18 |j|*OutrageousBoT
+19:16:18 |c|*BatterBotto|Hi OutrageousBoT!
+19:16:20 |l|*BatterBotto
+19:16:22 |j|*BatterBotto
+19:16:29 |c| Spandan|Oh wait
+19:16:30 |c| Spandan|Hi bots
+19:16:34 |j| Jinxed Bliss
+19:16:44 |c| Spandan|Oh hi Jinxed!
+19:16:48 |c|*OutrageousBoT|RAWR! *BatterBotto
+19:16:48 |c| Spandan|Welcome to dh
+19:16:50 |c| Jinxed Bliss|hey n_n
+19:17:00 |c|%Winona|Welcome to DH :3
+19:17:36 |c| Jinxed Bliss|thank you Winona n_n
+19:17:52 |c|%Winona|Spandan , i'm curious : what's the purpose of the RPS Bot ?
+19:18:15 |c| Spandan|I just brought it as a replacement but now that the bots are back
+19:18:22 |c|%Winona|Oh
+19:18:43 |c|%Winona|Nice idea, grats
+19:18:54 |raw|<div class='chat'><small>%</small><button name='parseCommand' value='/user Winona' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#8CA924'>Winona:</font></b></button><em class='mine'>So i guess we can say <img src="http://i.imgur.com/ljl6Sfd.png" title="feelsrip" width="50" height="50" /> to it ?</em></div>
+19:19:54 |l|+OriolesFan52
+19:20:05 |raw|<div class='chat'><small>$</small><button name='parseCommand' value='/user smellslikememe' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#2CA126'>smellslikememe:</font></b></button><em class='mine'><img src="https://cdn.rawgit.com/CreaturePhil/dem-feels/master/emotes/niglol.png" title="niglol" width="50" height="50" /></em></div>
+19:20:18 |j|+aCaSuAlMeMeLoRd
+19:20:24 |c|+aCaSuAlMeMeLoRd|o look it's back on
+19:20:27 |c|+aCaSuAlMeMeLoRd|hey guys
+19:20:32 |c|%charizard8888|Hoi
+19:20:38 |raw|<div class='chat'><small>$</small><button name='parseCommand' value='/user smellslikememe' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#2CA126'>smellslikememe:</font></b></button><em class='mine'><img src="https://cdn.rawgit.com/CreaturePhil/dem-feels/master/emotes/oshet.png" title="oshet" width="50" height="50" /></em></div>
+19:20:43 |c|%charizard8888|Teh bots will be back
+19:20:45 |c|%charizard8888|Soon^^TM^^
+19:21:04 |c|$smellslikememe|lolgin
+19:21:07 |l| Jinxed Bliss
+19:21:09 |c|$smellslikememe|aw it doesn't work backwords
+19:21:11 |c|+aCaSuAlMeMeLoRd|lol there's a RPS Bot now?
+19:21:25 |c|%Winona|Hoi
+19:21:34 |l|*RPS Bot
+19:21:35 |j|*RPS Bot
+19:21:51 |c|%charizard8888|+help
+19:21:56 |c|%charizard8888|+say test
+19:21:56 |c|*OutrageousBoT|test
+19:21:58 |c|%charizard8888|-say test
+19:21:58 |c|*BatterBotto|test
+19:22:00 |c|%charizard8888|O
+19:22:01 |c|+aCaSuAlMeMeLoRd|`heavy slam
+19:22:03 |c|%charizard8888|Kewl
+19:22:05 |l|*RPS Bot
+19:22:11 |c|+aCaSuAlMeMeLoRd|rib
+19:22:15 |c|$smellslikememe|lol rps bot keeps leaving and joining
+19:22:16 |c|$smellslikememe|wtf
+19:22:21 |c|+aCaSuAlMeMeLoRd|spadnan probably
+19:25:52 |n|%charizard8888|charizard8888
+19:26:13 |n|%charizard8888|charizard8888
+19:26:31 |raw|<div class="broadcast-blue"><b>We have a new server owner!</b></div>
+19:26:39 |raw|<div class='chat'><small>%</small><button name='parseCommand' value='/user charizard8888' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#AE830F'>charizard8888:</font></b></button><em class='mine'><img src="https://cdn.rawgit.com/CreaturePhil/dem-feels/master/emotes/oshet.png" title="oshet" width="50" height="50" /></em></div>
+19:26:42 |raw|<div class='chat'><small>+</small><button name='parseCommand' value='/user aCaSuAlMeMeLoRd' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#20738D'>aCaSuAlMeMeLoRd:</font></b></button><em class='mine'><img src="https://cdn.rawgit.com/CreaturePhil/dem-feels/master/emotes/oshet.png" title="oshet" width="50" height="50" /></em></div>
+19:26:48 |raw|<div class='chat'><small>%</small><button name='parseCommand' value='/user Winona' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#8CA924'>Winona:</font></b></button><em class='mine'><img src="https://cdn.rawgit.com/CreaturePhil/dem-feels/master/emotes/niglol.png" title="niglol" width="50" height="50" /></em></div>
+19:26:52 |c| Spandan|Guess his name
+19:26:52 |raw|<div class='chat'><small>%</small><button name='parseCommand' value='/user charizard8888' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#AE830F'>charizard8888:</font></b></button><em class='mine'><img src="https://cdn.rawgit.com/CreaturePhil/dem-feels/master/emotes/xaa.png" title="xaa" width="50" height="50" /></em></div>
+19:26:57 |c|+aCaSuAlMeMeLoRd|aCaSuAlMeMeLoRd
+19:27:01 |c|%Winona|Winona
+19:27:02 |c| Spandan|No
+19:27:16 |c|+aCaSuAlMeMeLoRd|uhhhh
+19:27:19 |c|+aCaSuAlMeMeLoRd|BatterBotto
+19:27:22 |c|%Winona|Nixola
+19:27:24 |c|%charizard8888|BatterBotto
+19:27:34 |raw|<div class="broadcast-blue"><b>It&apos;s the one and only CHARIZARD8888</b></div>
+19:27:38 |raw|<div class='chat'><small>$</small><button name='parseCommand' value='/user smellslikememe' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#2CA126'>smellslikememe:</font></b></button><em class='mine'><img src="https://cdn.rawgit.com/CreaturePhil/dem-feels/master/emotes/oshet.png" title="oshet" width="50" height="50" /></em></div>
+19:27:40 |raw|<div class='chat'><small>%</small><button name='parseCommand' value='/user charizard8888' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#AE830F'>charizard8888:</font></b></button><em class='mine'><img src="https://cdn.rawgit.com/CreaturePhil/dem-feels/master/emotes/oshet.png" title="oshet" width="50" height="50" /></em></div>
+19:27:40 |c|%Winona|GG BOI
+19:27:40 |c|+aCaSuAlMeMeLoRd|oo
+19:27:42 |c|$smellslikememe|it was all me
+19:27:45 |c|%charizard8888|Whos that Pokemon
+19:27:47 |c| Spandan|/log charizard8888 was promoted to Dragon Knight by Spandan.
+19:27:47 |n|%charizard8888|charizard8888
+19:27:51 |n|%charizard8888|charizard8888
+19:27:53 |raw|<div class='chat'><small>%</small><button name='parseCommand' value='/user Winona' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#8CA924'>Winona:</font></b></button><em class='mine'><img src="https://cdn.rawgit.com/CreaturePhil/dem-feels/master/emotes/feelshp.png" title="feelshp" width="50" height="50" /></em></div>
+19:27:56 |c|+aCaSuAlMeMeLoRd|dAMN
+19:27:57 |c|%charizard8888|/me flees
+19:27:57 |c|*OutrageousBoT|/me used Mean Look on %charizard8888
+19:29:18 |c|$smellslikememe|zard make me global admin pls
+19:29:23 |c|$smellslikememe|no nvm make me owner
+19:29:28 |c|$smellslikememe|:]
+19:29:41 |c|+aCaSuAlMeMeLoRd|make me a meme role :I
+19:29:49 |c|$smellslikememe|^
+19:29:55 |c| Spandan|Sure
+19:29:59 |raw|<div class='chat'><small>%</small><button name='parseCommand' value='/user charizard8888' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#AE830F'>charizard8888:</font></b></button><em class='mine'>Better meme <img src="https://cdn.rawgit.com/CreaturePhil/dem-feels/master/emotes/hmmface.png" title="hmmface" width="50" height="50" /></em></div>
+19:30:00 |c|$smellslikememe|just make a new auth called meme
+19:30:04 |c|$smellslikememe|and put me and aCaSuAlMeMeLoRd in there
+19:30:04 |c|%charizard8888|!pick smellslikememe,aCaSuAlMeMeLoRd
+19:30:04 |html|<div class="infobox"><em>We randomly picked:</em> smellslikememe</div>
+19:30:05 |c|%charizard8888|!pick smellslikememe,aCaSuAlMeMeLoRd
+19:30:05 |html|<div class="infobox"><em>We randomly picked:</em> smellslikememe</div>
+19:30:06 |c|%charizard8888|!pick smellslikememe,aCaSuAlMeMeLoRd
+19:30:06 |html|<div class="infobox"><em>We randomly picked:</em> aCaSuAlMeMeLoRd</div>
+19:30:08 |c|+aCaSuAlMeMeLoRd|darn
+19:30:09 |c|%charizard8888|Dem
+19:30:12 |raw|<div class='chat'><small>$</small><button name='parseCommand' value='/user smellslikememe' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#2CA126'>smellslikememe:</font></b></button><em class='mine'><img src="https://cdn.rawgit.com/CreaturePhil/dem-feels/master/emotes/oshet.png" title="oshet" width="50" height="50" /></em></div>
+19:30:14 |c|%charizard8888|Teh reel meme
+19:30:19 |raw|<div class='chat'><small>+</small><button name='parseCommand' value='/user aCaSuAlMeMeLoRd' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#20738D'>aCaSuAlMeMeLoRd:</font></b></button><em class='mine'><img src="https://cdn.rawgit.com/CreaturePhil/dem-feels/master/emotes/feelsbd.png" title="feelsbd" width="50" height="50" /></em></div>
+19:30:24 |c|%charizard8888|:[
+19:30:45 |c|%charizard8888|+8ball Is smellslikememe the real meme?
+19:30:45 |c|*OutrageousBoT|Better not tell you now.
+19:30:48 |c|%charizard8888|+8ball Is smellslikememe the real meme?
+19:30:48 |c|*OutrageousBoT|Better not tell you now.
+19:30:51 |c|%charizard8888|-8ball Is smellslikememe the real meme?
+19:30:51 |c|*BatterBotto|Outlook good.
+19:30:59 |c|%charizard8888|Dem
+19:31:09 |c|%charizard8888|-8ball And aCaSuAlMeMeLoRd y/n?
+19:31:10 |c|*BatterBotto|Outlook not so good.
+19:31:10 |c|$smellslikememe|im meme
+19:31:13 |c|%charizard8888|Dem Dem
+19:31:14 |c|+aCaSuAlMeMeLoRd|shit
+19:31:26 |c|~|aCaSuAlMeMeLoRd was promoted to Room Meme by Spandan.
+19:31:26 |c|%charizard8888|smellslikememe I thought you couldn't spell meme without me
+19:31:28 |c|$smellslikememe|bot knows what's up
+19:31:29 |c|$smellslikememe|OH YES
+19:31:53 |c|>aCaSuAlMeMeLoRd|+8ball am i a meme
+19:31:59 |c|>aCaSuAlMeMeLoRd|*OutrageousBoT: Without a doubt.
+19:32:01 |c|$smellslikememe|+8ball am i a mean
+19:32:01 |c|*OutrageousBoT|Better not tell you now.
+19:32:05 |c|$smellslikememe|+8ball am i a meme
+19:32:05 |c|*OutrageousBoT|It is certain.
+19:32:07 |c|$smellslikememe|EZ
+19:32:12 |c|%charizard8888|OutrageousBoT has AI
+19:32:22 |l| Spandan
+19:32:26 |c|>aCaSuAlMeMeLoRd|y do I have a > next to my name now
+19:32:27 |j| Spandan
+19:32:48 |c| Spandan|Because you're now a meme
+19:32:59 |c|%charizard8888|//quote mem
+19:33:01 |c|%charizard8888|e
+19:33:03 |c|$smellslikememe|rip me
+19:33:07 |c|$smellslikememe|im not a good enough meme
+19:33:14 |c|%charizard8888|Bad meme :[
+19:33:21 |c|$smellslikememe|*mad meme
+19:33:35 |c|>smellslikememe|NeedMoreRoomMemes
+19:33:36 |l|@EchoGaia
+19:33:36 |l|%charizard8888
+19:33:36 |l|%Winona
+19:33:36 |l|>smellslikememe
+19:33:36 |l|*OutrageousBoT
+19:33:36 |l|*BatterBotto
+19:33:36 |l|>aCaSuAlMeMeLoRd
+19:33:36 |l| Spandan
+19:33:37 |j| Spandan
+19:33:37 |j|>aCaSuAlMeMeLoRd
+19:33:37 |j|*BatterBotto
+19:33:37 |j|*OutrageousBoT
+19:33:37 |j|>smellslikememe
+19:33:37 |j|%Winona
+19:33:37 |j|%charizard8888
+19:33:37 |j|@EchoGaia
+19:33:37 |c|*BatterBotto|Hi OutrageousBoT!
+19:33:37 |c|*OutrageousBoT|RAWR! *BatterBotto
+19:33:44 |c| Spandan|Here u are
+19:33:46 |c|>smellslikememe|lol what
+19:33:48 |c|>smellslikememe|what happen
+19:33:53 |raw|<div class='chat'><small>%</small><button name='parseCommand' value='/user charizard8888' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#AE830F'>charizard8888:</font></b></button><em class='mine'><img src="https://cdn.rawgit.com/CreaturePhil/dem-feels/master/emotes/oshet.png" title="oshet" width="50" height="50" /> meme</em></div>
+19:33:55 |raw|<div class='chat'><small>></small><button name='parseCommand' value='/user smellslikememe' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#2CA126'>smellslikememe:</font></b></button><em class='mine'><img src="https://cdn.rawgit.com/CreaturePhil/dem-feels/master/emotes/oshet.png" title="oshet" width="50" height="50" /></em></div>
+19:34:23 |c|>smellslikememe|>
+19:34:30 |c|>smellslikememe|feelsgo=d
+19:34:31 |c|>smellslikememe|fuck
+19:34:33 |raw|<div class='chat'><small>></small><button name='parseCommand' value='/user smellslikememe' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#2CA126'>smellslikememe:</font></b></button><em class='mine'><img src="https://cdn.rawgit.com/CreaturePhil/dem-feels/master/emotes/feelsgd.png" title="feelsgd" width="50" height="50" /></em></div>
+19:35:02 |html|<button name = "send" value = "/credits"><font size = 7>THE NEW AND IMPROVED CREDITS BUTTON</font></button>
+19:35:20 |userstats|total:8|guests:0| :2|+:0|$:1|%:2|@:1|*:2|★:0|#:0|&:0|~:0|⚔:0
+19:35:41 |c|>smellslikememe|olol
+19:36:02 |c|>smellslikememe|i'll defy zard :]
+19:36:05 |raw|<div class='chat'><small>></small><button name='parseCommand' value='/user smellslikememe' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#2CA126'>smellslikememe:</font></b></button><em class='mine'><img src="https://cdn.rawgit.com/CreaturePhil/dem-feels/master/emotes/niglol.png" title="niglol" width="50" height="50" /></em></div>
+19:36:55 |c| Spandan|/log smellslikememe was warned by Spandan. (You could get banished to hell and friend in lard)
+19:36:55 |unlink|smellslikememe
+19:37:02 |c| Spandan|Fried*
+19:37:02 |c|>smellslikememe|o no
+19:37:40 |c|%charizard8888|-cc
+19:37:40 |c|*BatterBotto|Custom Commands: commandname| credits| idc| jk| punish| hi| hungry| bored| sniped| onixpected| mudkipz| pokepuns| learnfly| xD| plan
+19:37:44 |c|%charizard8888|Which meme?
+19:37:55 |c|>smellslikememe|-mudkipz
+19:38:01 |c|>smellslikememe|damnit bot
+19:38:04 |c|>aCaSuAlMeMeLoRd|-sniped
+19:38:07 |c|>aCaSuAlMeMeLoRd|pls
+19:38:17 |c|%charizard8888|-mudkipz
+19:38:18 |html|<div class="infobox"><img src="https://lh3.googleusercontent.com/-M1akQjWiApc/V_ciF5Hl9sI/AAAAAAAAAtE/LjsCMWJRxhEnvEl0OXF6UfsftlQSCPotACJoC/w530-h353-p-rw/So%2BI%2Bherd%2Bu%2Bliek%2Bmudkipz..png" width="530" height="353"></div>
+19:38:23 |c|>aCaSuAlMeMeLoRd|bad
+19:38:26 |c|%charizard8888|:[
+19:38:31 |c|%charizard8888|-pokepuns
+19:38:31 |html|<div class="infobox"><img src="https://lh3.googleusercontent.com/-u9cZFMkDECE/V_cj0WbhyCI/AAAAAAAAAt8/rrGUjdw6-RcU53sao8Y9kRAACHVYx0PcQCJoC/w530-h346-p-rw/Pokepuns%2Bare%2BSerperior.png" width="530" height="346"></div>
+19:38:46 |c|%charizard8888|r8 this one aCaSuAlMeMeLoRd smellslikememe
+19:39:06 |c|>aCaSuAlMeMeLoRd|hue
+19:39:06 |c|*OutrageousBoT|hue
+19:39:08 |c|>smellslikememe|can't see it
+19:39:09 |c|>smellslikememe|kek
+19:39:19 |c|%charizard8888|-jk
+19:39:19 |html|<div class="infobox"><img src="http://i.imgflip.com/7ki6m.gif" width="360" height="202"></div>
+19:39:21 |c|>aCaSuAlMeMeLoRd|ironic cause serperior is bad
+19:39:30 |raw|<div class='chat'><small>></small><button name='parseCommand' value='/user smellslikememe' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#2CA126'>smellslikememe:</font></b></button><em class='mine'><img src="https://cdn.rawgit.com/CreaturePhil/dem-feels/master/emotes/oshet.png" title="oshet" width="50" height="50" /></em></div>
+19:39:31 |j| Uselesscrab
+19:39:44 |raw|<div class='chat'><small>></small><button name='parseCommand' value='/user smellslikememe' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#2CA126'>smellslikememe:</font></b></button><em class='mine'><img src="https://cdn.rawgit.com/CreaturePhil/dem-feels/master/emotes/oshet.png" title="oshet" width="50" height="50" /> Uselesscrab</em></div>
+19:39:53 |c| Uselesscrab|anyone here have a chimera team
+19:39:56 |c|%charizard8888|Yeah
+19:40:04 |c| Uselesscrab|ok
+19:40:06 |c|>smellslikememe|chimera crashes for me
+19:40:16 |c|%charizard8888|Not a good one though
+19:40:23 |c|>aCaSuAlMeMeLoRd|smellslikememe that's because you don't have all 4 moves you your fifth and sixth mons
+19:40:23 |c| Uselesscrab|isn't it supposed to be ubers-based
+19:40:28 |c| Uselesscrab|why are my things bannd
+19:40:29 |c|>aCaSuAlMeMeLoRd|Uselesscrab it's 1v1 based
+19:40:31 |c| Uselesscrab|banned
+19:40:36 |c| Uselesscrab|ok
+19:41:00 |c|>aCaSuAlMeMeLoRd|Uselesscrab i'll challenge you
+19:41:01 |c| Uselesscrab|no i was right
+19:41:05 |c| Uselesscrab|it's definitely ubers 1v1 based
+19:41:11 |c| Uselesscrab|Bans: Shedinja, Smeargle, Pure Power, Huge Power, Moody, Focus Sash, Perish Song, Transform, All Species-Specific items*
+19:41:33 |c| Spandan|Chimera is a dank meta
+19:41:40 |l|%Winona
+19:41:49 |l| Spandan
+19:41:58 |c|>aCaSuAlMeMeLoRd|rib spadnan
+19:42:04 |c|>aCaSuAlMeMeLoRd|and winnoa
+19:42:15 |j| Spandan
+19:42:22 |c| Spandan|uh uh
+19:42:27 |c|>smellslikememe|lol winona
+19:42:34 |c| Uselesscrab|chimera is great
+19:42:35 |c| Uselesscrab|but
+19:42:43 |c| Uselesscrab|if someone could fix the banlist that would be much appreciated
+19:43:14 |c| Spandan|wait, banlist is broken?
+19:43:14 |c| Spandan|hmm
+19:43:28 |c|%charizard8888|Unban Ubers?
+19:43:44 |c| Uselesscrab|the submission says the following
+19:43:46 |c| Uselesscrab|Clauses: OHKO Clause, Evasion Clause, Species Clause, Endless Battle Clause
+19:43:46 |c| Uselesscrab|Bans: Shedinja, Smeargle, Pure Power, Huge Power, Moody, Focus Sash, Perish Song, Transform, All Species-Specific items*
+19:43:48 |c|>smellslikememe|lol adapt rhyperior
+19:43:53 |c| Spandan|sorry, i didnt know
+19:43:54 |c| Spandan|sec
+19:43:58 |c|>smellslikememe|with kartana's stats
+19:44:18 |c| Spandan|sec
+19:44:18 |c| Uselesscrab|kartana is amazing in this meta
+19:44:22 |c|>aCaSuAlMeMeLoRd|^
+19:44:24 |c|>aCaSuAlMeMeLoRd|and pheromosa
+19:44:39 |c|%charizard8888|Meme's Kartana wrecks my team dem
+19:44:44 |c|>smellslikememe|kek
+19:44:47 |c|>smellslikememe|meme.jpeg
+19:44:49 |j| RazorSB360
+19:45:02 |c| Uselesscrab|I actually made my team in a spreadsheet
+19:45:03 |c|%charizard8888|In the 4th slot obviously
+19:45:04 |c|@EchoGaia|oh yah that means thick club and light ball should be banned spandan
+19:45:09 |c| Uselesscrab|and outlined a bunch of other combinations
+19:45:22 |c| Uselesscrab|yes species specific also means eviolite btw
+19:45:27 |c|@EchoGaia|no
+19:45:29 |c| Uselesscrab|yes
+19:45:33 |c|>aCaSuAlMeMeLoRd|o
+19:45:40 |c|@EchoGaia|no eviolite isn't specific to a species
+19:45:48 |c| Uselesscrab|Q: Can I make use of in-battle forms, like Megas and Primals, or exclusive items, like Thick Club or Eviolite?
+19:45:49 |c| Uselesscrab|A: No. Because the Chimera is treated as a distinct form, all species-check items should fail to work. *If this can't easily be coded, they will all be banned instead. 
+19:45:57 |c|@EchoGaia|species specific items are thick club, light ball, stick, lucky punch
+19:45:59 |c| Uselesscrab|no
+19:46:06 |c| Uselesscrab|he specifically excludes eviolite
+19:46:11 |c| Uselesscrab|do you guys want me to send you the submission
+19:46:12 |c| Spandan|Uselesscrab am I allowed to add a screencap of the description of the meta on here?
+19:46:19 |c|>smellslikememe|o shit
+19:46:22 |c| Uselesscrab|I don't see why not
+19:46:24 |c| Spandan|okay
+19:46:27 |c| Uselesscrab|it would help address some of this confusion
+19:46:29 |c|@EchoGaia|uselesscrab you don't run the meta do you
+19:46:30 |c|%charizard8888|Wait I think Marowak Thick Club still work
+19:46:31 |c|>smellslikememe|it keeps giving me soon.tm
+19:46:47 |c|@EchoGaia|acasualmemelord is eviolite banned in your meta?
+19:46:54 |c| Uselesscrab|it's not his meta either
+19:46:56 |c| Uselesscrab|lol?
+19:47:05 |c|@EchoGaia|it is, he said it
+19:47:08 |c|>aCaSuAlMeMeLoRd|n
+19:47:09 |c| Uselesscrab|it's jajoken's
+19:47:29 |c| Spandan|damn my internet is soo slow rn
+19:47:31 |c| Uselesscrab|also feel free to ignore the part where i copied and pasted from the submission
+19:47:32 |c| Spandan|Uselesscrab btw, updated
+19:47:35 |c| Uselesscrab|and offered to send a screencap
+19:47:37 |c| Uselesscrab|thanks spandan
+19:47:37 |c| Spandan|ubers should be allowed now
+19:47:50 |c| Spandan|:)
+19:48:20 |c| Uselesscrab|kewl
+19:48:26 |c| Uselesscrab|i'll wait until people have adapted teams
+19:48:27 |c|%charizard8888|Dem there goes my team
+19:48:36 |c| Uselesscrab|i only actually have 2 ubers though
+19:48:42 |c|>aCaSuAlMeMeLoRd|wait no eviolite?
+19:49:05 |l|%charizard8888
+19:49:10 |j| Zard8888 Blaziken
+19:49:15 |c|>aCaSuAlMeMeLoRd|wot
+19:49:22 |l| Zard8888 Blaziken
+19:49:22 |j|%charizard8888
+19:49:41 |c| Uselesscrab|if spandan doesn't, im going to send screenshots of this entire post
+19:49:43 |c|%charizard8888|So basically any mon can be the second mon
+19:49:48 |l| Spandan
+19:49:50 |c|>aCaSuAlMeMeLoRd|does the > mean anything
+19:49:59 |j| Spandan
+19:50:08 |c|>smellslikememe|it memes means
+19:50:10 |c|>smellslikememe|oops
+19:50:20 |c|@EchoGaia|ubers allowed really uselesscrab
+19:50:35 |c|@EchoGaia|you imagine that means deoxys attack in the 4th spot spam?
+19:50:57 |c|@EchoGaia|i think the banlist should be the same as regular 1v1
+19:51:05 |c|%charizard8888|Powerful but frail
+19:51:05 |c| Spandan|!om gen7chi
+19:51:06 |html|<div class="infobox">&bullet; <a href="https://image.prntscr.com/image/a872872560444bce8d4dca0d3f4ed8de.png">Chimera 1v1</a></div>
+19:51:12 |c| Uselesscrab|deoxys-a is not significantly better than pheromosa
+19:51:30 |c| Uselesscrab|also
+19:51:35 |c| Uselesscrab|priority
+19:51:37 |c|@EchoGaia|yeah but considering they can use psychic surge
+19:51:43 |c| Spandan|/log Uselesscrab was promoted to Room Voice by Spandan.
+19:51:43 |n|+Uselesscrab|uselesscrab
+19:51:46 |c| Spandan|for theorymonning etc
+19:51:50 |c|+Uselesscrab|that is true
+19:51:53 |c|+Uselesscrab|thank you
+19:51:53 |c|@EchoGaia|deoxys a + psychic surge is banworthy
+19:51:54 |c| Spandan|ill be afk for a while brb
+19:52:02 |c|%charizard8888|Might test it
+19:52:08 |c|+Uselesscrab|it may well be
+19:52:35 |c|+Uselesscrab|not sure about the best typing for it
+19:52:54 |c|+Uselesscrab|but get tapu lele ability and maybe mewtwo moves (psycho boost?)
+19:53:04 |c|%charizard8888|Oh also the last two mons need to have 4 moves
+19:53:19 |c|+Uselesscrab|yeah so you can use them for multiple purposes
+19:53:25 |c|+Uselesscrab|and mix them around
+19:53:42 |c|%charizard8888|Only the first mon battles right?
+19:53:55 |c|+Uselesscrab|no, you reorder it at team preview
+19:54:02 |c|+Uselesscrab|that's what makes the meta cool
+19:54:08 |c|+Uselesscrab|you can have a bunch of different combos
+19:54:12 |c|>aCaSuAlMeMeLoRd|ew
+19:54:15 |c|%charizard8888|Hm weird when we played it only the first mon worked
+19:54:23 |c|%charizard8888|Even though you send any mon
+19:54:25 |c|+Uselesscrab|let me send another part of the thread
+19:55:00 |c|+Uselesscrab|http://i.imgur.com/NR2QW0t.png
+19:55:04 |c|+Uselesscrab|this is right after
+19:55:06 |c|+Uselesscrab|!om gen7chi
+19:55:06 |html|<div class="infobox">&bullet; <a href="https://image.prntscr.com/image/a872872560444bce8d4dca0d3f4ed8de.png">Chimera 1v1</a></div>
+19:55:11 |c|>smellslikememe|LOL my stall mons
+19:55:31 |c|%charizard8888|<<battle-gen7chimera1v1-34961>> Autosends the first mon
+19:55:52 |c| Spandan|[23:23:55] +Uselesscrab: no, you reorder it at team preview
+19:55:54 |c| Spandan|crap
+19:56:03 |c|+Uselesscrab|sripandan
+19:56:08 |c|%charizard8888|lolol
+19:56:15 |c|+Uselesscrab|check the screenshot i put above spandan
+19:56:17 |c|>smellslikememe|im running cele with gira stats and fur coat kek
+19:56:23 |l| RazorSB360
+19:56:32 |c| Spandan|why do i always tend to fuck up the important parts :(
+19:56:43 |c|%charizard8888|Gotta go bbl
+19:56:51 |l|%charizard8888
+19:57:06 |c|>aCaSuAlMeMeLoRd|rib
+19:59:01 |c|@EchoGaia|actually
+19:59:09 |c|>aCaSuAlMeMeLoRd|wat
+19:59:23 |c|@EchoGaia|is that even important that we send the 1st mon since it automatically transforms?
+19:59:27 |c|>aCaSuAlMeMeLoRd|nope
+19:59:42 |c|+Uselesscrab|wait
+19:59:44 |c|+Uselesscrab|but
+19:59:51 |c|+Uselesscrab|what if i have strategies with a bunch of different typings
+20:00:00 |c|>aCaSuAlMeMeLoRd|what you mean
+20:00:08 |c|@EchoGaia|make a different team for all of them?
+20:00:15 |c|+Uselesscrab|that's not how the meta is supposed to work though
+20:00:16 |c|@EchoGaia|simple
+20:00:22 |c|@EchoGaia|you know what
+20:00:36 |c|@EchoGaia|code it yourself if you think you know how it should be
+20:00:44 |j|&Zard8888
+20:00:49 |c|+Uselesscrab|lol
+20:00:50 |c|>smellslikememe|ozard
+20:00:53 |c|+Uselesscrab|i do know how it should be
+20:00:58 |c|+Uselesscrab|which one of us has read the thread
+20:01:01 |c|>smellslikememe|LOL
+20:01:10 |c|+Uselesscrab|im not trying to be obnoxious here but seriously
+20:01:33 |n|&Zard8888 - ⓢⓛⓟ|zard8888
+20:01:33 |n|&Zard8888 - ⓢⓛⓟ|zard8888
+20:01:44 |c|+Uselesscrab|trying to correct me on something where there is clearly asymmetrical information
+20:01:52 |n| Zard8888 - ⓢⓛⓟ|zard8888
+20:02:32 |c|+Uselesscrab|I did screw up by putting a red orb on my team though
+20:02:36 |c|+Uselesscrab|gotta fix that
+20:02:39 |c|>smellslikememe|redorb tefukc
+20:02:47 |c| Zard8888 - ⓢⓛⓟ|Ubers will be fun
+20:03:23 |c|+Uselesscrab|i had a pokemon that was
+20:03:50 |c|+Uselesscrab|groudon typing-red orb-(random dumb ability)-kartana-dd/v-create/sub/eq
+20:04:06 |c|+Uselesscrab|but i think i just have to deal with the random dumb ability
+20:04:12 |c|+Uselesscrab|and maybe use a groundium z
+20:04:14 |c|+Uselesscrab|or something
+20:04:55 |c| Zard8888 - ⓢⓛⓟ|I had Sturdy  (Donphan) on Chomp with Ground Z 
+20:05:08 |c|+Uselesscrab|oh yeah that's another problematic deo-a set, sturdy
+20:05:27 |c| Zard8888 - ⓢⓛⓟ|Memelord has already found some OP FEAR sets
+20:06:01 |c|+Uselesscrab|yeah im sure that could be irritating
+20:06:02 |c|>smellslikememe|i have stall lul
+20:06:04 |c|+Uselesscrab|at least shed is banned
+20:06:21 |c|+Uselesscrab|though imposter is usable which may be an oversight
+20:06:38 |c|+Uselesscrab|you can see it coming at least because of ditto
+20:06:46 |c|+Uselesscrab|and ditto is dead weight for the rest of the team
+20:06:52 |c|>smellslikememe|gira in the stat slot tho
+20:06:54 |c|>smellslikememe|with fur coat
+20:06:54 |c|+Uselesscrab|oh wait you know what
+20:07:03 |c|+Uselesscrab|you can't use ditto because transform is banned and it has no other moves
+20:07:09 |c|+Uselesscrab|so no imposter, in a weird way
+20:07:30 |c|+Uselesscrab|yeah fur coat is dumb but furfrou is not a great contributor in other ways
+20:07:39 |c|+Uselesscrab|it has like
+20:07:40 |c|+Uselesscrab|snarl
+20:07:50 |c|+Uselesscrab|cotton guard
+20:07:56 |c|>smellslikememe|LOL you can use megas as base mons
+20:08:11 |c|+Uselesscrab|that is definitely not intended behavior lol
+20:09:12 |c| Zard8888 - ⓢⓛⓟ|Hows Alolan Persian's movepool? 
+20:09:31 |c|>smellslikememe|its gay
+20:09:35 |c|>smellslikememe|like me
+20:09:48 |c| Zard8888 - ⓢⓛⓟ|!ms PersianAlola
+20:09:48 |html|<div class="infobox"><span style="color:#999999;">Matching moves found in learnset for</span> Persian-Alola:<br />Aerial Ace, Assurance, Attract, Bite, Captivate, Confide, Dark Pulse, Double Team, Dream Eater, Echoed Voice, and 57 more. <span style="color:#999999;">Redo the search with 'all' as a search parameter to show all results.</span></div>
+20:09:52 |c| Zard8888 - ⓢⓛⓟ|Dem
+20:10:01 |c|+Uselesscrab|i always forget about alolan persian
+20:10:18 |c|+Uselesscrab|switcheroo is always nice
+20:10:36 |c|+Uselesscrab|it depends on what the other pokemon on your team are but i would probably have its two move parcels be something like
+20:10:57 |c|+Uselesscrab|(play rough/switcheroo) and (charm/snarl)
+20:11:10 |c|+Uselesscrab|first for offensive choice users, second for defensive things
+20:11:44 |c| Zard8888 - ⓢⓛⓟ|Fur Coat with Zygarde-C's stat and a better typing hm
+20:11:45 |c|>smellslikememe|lol join my battle
+20:12:03 |c|+Uselesscrab|you can't start with zygarde-c stats
+20:12:19 |c|+Uselesscrab|i mean you can but you're not supposed to be able to
+20:12:29 |c|+Uselesscrab|if you are
+20:13:55 |j| Cyanbluesky
+20:14:00 |l| Cyanbluesky
+20:14:11 |c|>smellslikememe|mimikyu with mewtwo stats
+20:14:14 |c|>smellslikememe|pixilate
+20:14:28 |c|>smellslikememe|boomburst/fireblast/icebeam/moongeist
+20:14:35 |c|>smellslikememe|specs kek
+20:14:58 |c|+Uselesscrab|oof
+20:15:07 |c|+Uselesscrab|lunala is great in this 
+20:15:21 |c|+Uselesscrab|it can give shadow shield, (moongeist/moonblast), and decent stats
+20:15:25 |c|+Uselesscrab|I had it on a previous team
+20:16:31 |c|+Uselesscrab|does anyone want to battle
+20:16:32 |j| RazorSB360
+20:16:40 |c|+Uselesscrab|im going to make a bunch of different arrangements manually
+20:17:07 |c|>smellslikememe|yee sure
+20:17:29 |l| RazorSB360
+20:17:32 |j| RazorSB360
+20:19:09 |c|+Uselesscrab|i might have been better off just attacking with the band
+20:19:11 |c|+Uselesscrab|honestly
+20:19:38 |c|>smellslikememe|yeah
+20:19:47 |l| Spandan
+20:20:07 |c|+Uselesscrab|ok let me make some more combinations of the same pokemon
+20:20:08 |j| Spandan
+20:20:13 |c|+Uselesscrab|gotta bring them from the spreadsheet
+20:21:22 |c| Spandan|should work now
+20:21:51 |c| Spandan|>it switched
+20:21:52 |c| Spandan|fuck
+20:21:56 |c|+Uselesscrab|LOL
+20:22:00 |j|%flufi
+20:22:01 |c|*BatterBotto|!dt fluffy
+20:22:16 |l| Spandan
+20:22:17 |c|%flufi|Nice symbol smellslikememe / aCaSuAlMeMeLoRd
+20:22:21 |c|>smellslikememe|yee
+20:23:01 |c|>smellslikememe|im so ready rn
+20:23:21 |c|>smellslikememe|slaking tho lmao
+20:24:59 |j| Pokellame
+20:25:05 |l| Pokellame
+20:26:42 |l|>aCaSuAlMeMeLoRd
+20:26:45 |j| Spandan
+20:26:51 |c|>smellslikememe|holy crap it got messed up
+20:27:27 |c| Spandan|Yeah I'm fixing it rn
+20:32:17 |c| Spandan|>>
+20:32:28 |l| Spandan
+20:32:55 |j| Spandan
+20:33:50 |c|>smellslikememe|>>>>>
+20:35:20 |userstats|total:9|guests:0| :2|+:1|$:1|%:1|@:1|*:2|★:0|#:0|&:1|~:0|⚔:0
+20:36:16 |c| Spandan|Sorry guys if i take time, igot really slowinternet rn
+20:36:23 |c| Spandan|And its late
+20:38:19 |c|+Uselesscrab|no worries
+20:38:28 |c|+Uselesscrab|I also realized that my team has considerable flaws
+20:39:19 |c|+Uselesscrab|!learn rayquaza, roost
+20:39:19 |html|<div class="infobox">In Gen 7, Rayquaza <span class="message-learn-cannotlearn">can't</span> learn Roost</div>
+20:39:20 |c|+Uselesscrab|???
+20:39:33 |c|+Uselesscrab|i dont understand gamefreak
+20:39:41 |c| Zard8888 - ⓢⓛⓟ|It can't?  Lol
+20:40:03 |c| Zard8888 - ⓢⓛⓟ|How about Protean DeoA stats?
+20:40:12 |c|+Uselesscrab|oh yeah i tried to make a team like that
+20:40:23 |c| Zard8888 - ⓢⓛⓟ|Like the one Snaq made in Universal Ubers
+20:40:35 |c| Spandan|r[0]
+20:40:39 |c| Spandan|Woops
+20:40:51 |c|+Uselesscrab|this was as far as i got before getting bored http://i.imgur.com/amaCJ8V.png
+20:40:55 |c| Zard8888 - ⓢⓛⓟ|!dt Primal Deoxys-Attack,Universal Ubers 
+20:40:56 |raw|<div class="message"><ul class="utilichart"><li class="result"><span class="col numcol">Uber</span> <span class="col iconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1) no-repeat scroll -80px -960px"></span></span> <span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/pokemon/deoxysattackprimal" target="_blank">Deoxys-Attack Primal</a></span> <span class="col typecol"><img src="https://play.pokemonshowdown.com/sprites/types/Psychic.png" alt="Psychic" height="14" width="32"></span> <span style="float:left;min-height:26px"><span class="col abilitycol">Protean</span><span class="col abilitycol"></span></span><span style="float:left;min-height:26px"><span class="col statcol"><em>HP</em><br />70</span> <span class="col statcol"><em>Atk</em><br />260</span> <span class="col statcol"><em>Def</em><br />20</span> <span class="col statcol"><em>SpA</em><br />260</span> <span class="col statcol"><em>SpD</em><br />20</span> <span class="col statcol"><em>Spe</em><br />150</span> <span class="col bstcol"><em>BST<br />780</em></span> </span></li><li style="clear:both"></li></ul></div>
+|raw|<font size="1"><font color="#686868">Dex#:</font> 386&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 3&nbsp;|&ThickSpace;<font color="#686868">Height:</font> 1.7 m&nbsp;|&ThickSpace;<font color="#686868">Weight:</font> 60.8 kg <em>(80 BP)</em>&nbsp;|&ThickSpace;<font color="#686868">Dex Colour:</font> Red&nbsp;|&ThickSpace;<font color="#686868">Egg Group(s):</font> Undiscovered&nbsp;|&ThickSpace;<font color="#686868">Does Not Evolve</font></font>
+20:41:29 |l| RazorSB360
+20:41:58 |c| Zard8888 - ⓢⓛⓟ|Oh totally forgot Contrary 
+20:42:00 |c|+Uselesscrab|yeah
+20:42:12 |c|+Uselesscrab|though the contrary doesn't need to be scarf because imposter is impossible to get
+20:42:18 |c|+Uselesscrab|i guess it's still a good item
+20:42:31 |c| Zard8888 - ⓢⓛⓟ|Yeah
+20:42:55 |c|+Uselesscrab|well, i guess i'll keep working on this team
+20:43:35 |c| Zard8888 - ⓢⓛⓟ|Or if we can get Speed Boost from somewhere if not using any other ability then some Z 
+20:44:13 |c|+Uselesscrab|i was so annoyed by how the shadow shield worked out
+20:44:18 |c|+Uselesscrab|i wanted to have it be dragon/fire
+20:46:27 |c|+Uselesscrab|!ms lunala, water type
+20:46:27 |html|<div class="infobox"><span style="color:#999999;">Matching moves found in learnset for</span> Lunala:<br />No moves found.</div>
+20:46:31 |c|+Uselesscrab|!ms lunala, dark type
+20:46:31 |html|<div class="infobox"><span style="color:#999999;">Matching moves found in learnset for</span> Lunala:<br />Night Daze</div>
+20:46:33 |c|+Uselesscrab|oo
+20:46:34 |c| Zard8888 - ⓢⓛⓟ|O
+20:47:22 |c| Zard8888 - ⓢⓛⓟ|Thought that was exclusive to Zoroark 
+20:48:03 |c| Spandan|Rip
+20:48:14 |c| Spandan|I won't be able to fix it today
+20:48:15 |c|+Uselesscrab|i guess i have to do
+20:48:18 |c|+Uselesscrab|rip
+20:48:25 |c| Zard8888 - ⓢⓛⓟ|Dem
+20:48:28 |c| Spandan|Its really late for for me and my mom is forcing me to sleep
+20:48:43 |c| Spandan|I'll be on tommorow early morning though
+20:48:43 |c|>smellslikememe|show timestamp?
+20:48:49 |c| Spandan|Good night 
+20:48:53 |c|>smellslikememe|wat .-.
+20:49:01 |c|>smellslikememe|what time is it for you smellslikememe
+20:49:03 |c|>smellslikememe|*Spandan
+20:49:06 |c| Zard8888 - ⓢⓛⓟ|Lol
+20:49:11 |c|>smellslikememe|kek
+20:49:13 |c| Zard8888 - ⓢⓛⓟ|Knight
+20:49:18 |c| Spandan|[00:19:02] >smellslikememe: what time is it for you smellslikememe
+20:49:18 |c| Spandan|[00:19:04] >smellslikememe: *Spandan
+20:49:23 |c|>smellslikememe|o
+20:49:27 |c|>smellslikememe|lmfao
+20:49:31 |l| Spandan
+20:49:45 |c|>smellslikememe|>smellslikememe
+20:49:49 |c|+Uselesscrab|so i think im going to do
+20:49:55 |c|>smellslikememe|die?
+20:49:58 |c|+Uselesscrab|lol
+20:50:02 |c|>smellslikememe|kek
+20:50:04 |c|+Uselesscrab|i realized what i was saying didn't even work
+20:50:09 |c|+Uselesscrab|this shadow shield user is not working out
+20:50:11 |c|>smellslikememe|LOL
+20:50:17 |c| Zard8888 - ⓢⓛⓟ|lol
+20:50:22 |c|>smellslikememe|just run pixilate boomburst mimikyu
+20:50:25 |c|>smellslikememe|w/ mewtwo
+20:50:29 |c|>smellslikememe|and lunala/exploud
+20:50:31 |c|+Uselesscrab|tempting
+20:50:35 |c|+Uselesscrab|but
+20:50:47 |c| Zard8888 - ⓢⓛⓟ|Woah would Disguise work on others?
+20:50:49 |c|>smellslikememe|600 spa with 170 power stab :]
+20:50:49 |c|+Uselesscrab|no
+20:50:53 |c|+Uselesscrab|disguise is hardcoded
+20:51:21 |c|>smellslikememe|LOL the bot tho
+20:51:42 |c|>smellslikememe|swept by a s p e c i a l m i m i k yu
+20:51:53 |c|+Uselesscrab|that moment when you have to use extra sensory as your only stab move
+20:51:56 |c|+Uselesscrab|extrasensory*
+20:51:59 |c|>smellslikememe|wtf
+20:52:21 |c|+Uselesscrab|at least i have a psychium z
+20:53:23 |c|>smellslikememe|lol rip im not voied
+20:53:26 |c|>smellslikememe|*voiced
+20:53:38 |c| Zard8888 - ⓢⓛⓟ|Weird meme rank
+20:53:58 |c|+Uselesscrab|lol i may be running
+20:54:02 |c|+Uselesscrab|water shuriken lunala
+20:54:03 (smellslikememe was demoted to Voice by Zard8888 - ⓢⓛⓟ.)
+20:54:03 |n|>smellslikememe|smellslikememe
+20:54:12 |c|+Uselesscrab|with the stats of reshiram
+20:54:12 |c| Zard8888 - ⓢⓛⓟ|/log smellslikememe was promoted to Operator by Zard8888 - ⓢⓛⓟ.
+20:54:12 |n|>smellslikememe|smellslikememe
+20:54:24 |c|>smellslikememe|o lol
+20:55:06 |c|>smellslikememe|meme rank is too powerful for me
+20:55:07 |c| Zard8888 - ⓢⓛⓟ|Shuriken Lunala hm 
+20:55:11 |c|+Uselesscrab|i mean basically
+20:55:17 |c|+Uselesscrab|i have a contrary lunala with psycho boost
+20:55:25 |c| Zard8888 - ⓢⓛⓟ|Oh oh 
+20:55:26 |c|+Uselesscrab|and im trying to figure out what moves to give it from greninja and deoxys-a
+20:55:34 |c|>smellslikememe|why gren
+20:55:41 |c|+Uselesscrab|because i have it on my team for protean
+20:55:46 |c|+Uselesscrab|and i need to make it useful somehow
+20:55:48 |c|>smellslikememe|oh
+20:55:51 |c| Zard8888 - ⓢⓛⓟ|Just to pick off a weakened mon itll do the job
+20:58:53 |l|@EchoGaia
+20:59:15 |l|+Uselesscrab
+21:01:53 |j|#BBgun999
+21:02:20 |l|#BBgun999
+21:02:27 |j|>aCaSuAlMeMeLoRd
+21:02:37 |c|>aCaSuAlMeMeLoRd|ey
+21:05:21 |l|%flufi
+21:05:50 |c|>aCaSuAlMeMeLoRd|rib
+21:09:23 |j|@EchoGaia
+21:09:28 |c|>smellslikememe|o echo
+21:09:34 |c|@EchoGaia|suop
+21:09:35 |c|@EchoGaia|sup
+21:09:47 |j|$Pika Xreme
+21:10:05 |c|>smellslikememe|rek 
+21:10:26 |c|$Pika Xreme|hi
+21:11:51 |c|>smellslikememe|meme
+21:11:54 |c|>smellslikememe|>smellslikememe
+21:12:05 |c|$Pika Xreme|i noticed
+21:12:27 |c|>smellslikememe|lol i can do !dt in other rooms but not this one
+21:12:32 |c|>smellslikememe|room meme is a weird rank
+21:13:26 |c|$Pika Xreme|is meme a new rank?
+21:13:33 |j| shwb
+21:14:24 |c| Zard8888 - ⓢⓛⓟ|Sup shwb 
+21:16:01 |c|>smellslikememe|meme is only for memes
+21:16:27 |c|$Pika Xreme|i know that
+21:16:34 |c|$Pika Xreme|but is it a new rank? what can it do?
+21:16:40 |c|>smellslikememe|idk it's same as op
+21:16:41 |c| shwb|yo zard 
+21:17:05 |c| shwb|echogaia im assuming you have a thread now?
+21:17:25 |c|$Pika Xreme|I take it in situations you would get promoted the meme rank would be uprgraded or no???
+21:18:21 |c|>smellslikememe|not rly
+21:18:30 |c|>smellslikememe|it's the same as op
+21:18:45 |c|>smellslikememe|so unless you were a voice you wouldn't have technically had a promo
+21:18:55 |c|$Pika Xreme|huh
+21:19:06 |c|$Pika Xreme|is anyone else a meme?
+21:19:09 |c|$Pika Xreme|or just you?
+21:19:14 |c|@EchoGaia|not yet cause Jirachi's z move not working
+21:19:27 |c| shwb|oh damn :[
+21:19:32 |c|>smellslikememe|aCaSuAlMeMeLoRd is a meme too
+21:19:42 |c|>aCaSuAlMeMeLoRd|o
+21:19:43 |c|>aCaSuAlMeMeLoRd|ye
+21:19:48 |c|>smellslikememe|caN'T hAvE MEmES
+21:20:12 |c|@EchoGaia|!dt Super Helping Hand
+21:20:12 |html|<div class="message-error">No Pokémon, item, move, ability or nature named &apos;Super Helping Hand&apos; was found. (Check your spelling?)</div>
+21:20:26 |c|@EchoGaia|!dt Super Helping Hand, Jillian
+21:20:26 |raw|<ul class="utilichart"><li class="result"><a data-entry="move|Super Helping Hand"><span class="col movenamecol">Super Helping Hand</span> <span class="col typecol"><img src="//play.pokemonshowdown.com/sprites/types/Normal.png" alt="Normal" width="32" height="14"><img src="//play.pokemonshowdown.com/sprites/categories/Status.png" alt="Status" width="32" height="14"></span> <span class="col widelabelcol"><em>Accuracy</em><br>—</span> <span class="col pplabelcol"><em>PP</em><br>1</span> <span class="col movedesccol">Boosts the user stats by 2 stages each, then baton pass it away</span> </a></li><li style="clear:both"></li></ul>
+|raw|<font size="1"><font color="#686868">Priority:</font> 0&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 0&nbsp;|&ThickSpace;&#10003; Z-Move&nbsp;|&ThickSpace;<font color="#686868">Z-Crystal:</font> Jirachium Z&nbsp;|&ThickSpace;<font color="#686868">User:</font> Jirachi&nbsp;|&ThickSpace;<font color="#686868">Required Move:</font> Helping Hand&nbsp;|&ThickSpace;<font color="#686868">Target:</font> User</font>
+21:20:40 |c| shwb|wow lmao
+21:20:40 |c|@EchoGaia|the baton pass away thing doesn't passes the boosts
+21:20:45 |c|$Pika Xreme|extra dank
+21:21:21 |c|$Pika Xreme|ok but really
+21:21:21 |c|@EchoGaia|yeah but it requires running a useless move (well it's like running happy hour XD)
+21:21:43 |c|$Pika Xreme|that's evoboost+pass in one move
+21:21:43 |c| shwb|wow that's lame :[
+21:21:48 |c|$Pika Xreme|on an actually decent mon
+21:22:35 |c|$Pika Xreme|what possessed you to think that was a good idea
+21:23:01 |c|@EchoGaia|well
+21:23:13 |c|@EchoGaia|!dt Into the void, Jillian
+21:23:13 |raw|<ul class="utilichart"><li class="result"><a data-entry="move|Into the Void"><span class="col movenamecol">Into the Void</span> <span class="col typecol"><img src="//play.pokemonshowdown.com/sprites/types/Dark.png" alt="Dark" width="32" height="14"><img src="//play.pokemonshowdown.com/sprites/categories/Special.png" alt="Special" width="32" height="14"></span> <span class="col labelcol"><em>Power</em><br>210</span> <span class="col widelabelcol"><em>Accuracy</em><br>—</span> <span class="col pplabelcol"><em>PP</em><br>1</span> <span class="col movedesccol">Lowers the opponent's stat stages by 3</span> </a></li><li style="clear:both"></li></ul>
+|raw|<font size="1"><font color="#686868">Priority:</font> 0&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 0&nbsp;|&ThickSpace;&#10003; Secondary effect&nbsp;|&ThickSpace;&#10003; Bypasses Protect&nbsp;|&ThickSpace;&#10003; Z-Move&nbsp;|&ThickSpace;<font color="#686868">Z-Crystal:</font> Guzzlordium Z&nbsp;|&ThickSpace;<font color="#686868">User:</font> Guzzlord&nbsp;|&ThickSpace;<font color="#686868">Required Move:</font> Dark Pulse&nbsp;|&ThickSpace;<font color="#686868">Target:</font> One Adjacent Pokémon</font>
+21:23:17 |c|@EchoGaia|what about this
+21:23:40 |c|$Pika Xreme|Not a great idea, but at least that one is negated by switching
+21:23:52 |c|@EchoGaia|true
+21:24:17 |c|@EchoGaia|/me adds a trapping effect
+21:24:20 |c|@EchoGaia|jk
+21:24:23 |c| shwb|zmoves in jillian look busted
+21:24:27 |c|$Pika Xreme|^
+21:24:27 |c| shwb|jilian*
+21:24:28 |c|@EchoGaia|they are
+21:24:38 |c|@EchoGaia|well not all of them
+21:24:42 |c| shwb|that's why i want to play it
+21:24:42 |c|$Pika Xreme|does raichu get anything
+21:24:44 |c|@EchoGaia|but most are
+21:24:49 |c|@EchoGaia|a new ability
+21:24:56 |c|@EchoGaia|alola raichu does
+21:25:03 |c|@EchoGaia|!dt Alola-Raichu, Jillian
+21:25:03 |html|<div class="message-error">No Pokémon, item, move, ability or nature named &apos;Alola-Raichu, Jillian&apos; was found. (Check your spelling?)</div>
+21:25:04 |c|$Pika Xreme|!dt raichu, jillian
+21:25:04 |raw|<div class="message"><ul class="utilichart"><li class="result"><span class="col numcol">New</span> <span class="col iconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1) no-repeat scroll -80px -60px"></span></span> <span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/pokemon/raichu" target="_blank">Raichu</a></span> <span class="col typecol"><img src="https://play.pokemonshowdown.com/sprites/types/Electric.png" alt="Electric" height="14" width="32"></span> <span style="float:left;min-height:26px"><span class="col abilitycol">Static</span><span class="col abilitycol"><em>Lightning Rod</em></span></span><span style="float:left;min-height:26px"><span class="col statcol"><em>HP</em><br />60</span> <span class="col statcol"><em>Atk</em><br />90</span> <span class="col statcol"><em>Def</em><br />55</span> <span class="col statcol"><em>SpA</em><br />90</span> <span class="col statcol"><em>SpD</em><br />80</span> <span class="col statcol"><em>Spe</em><br />110</span> <span class="col bstcol"><em>BST<br />485</em></span> </span></li><li style="clear:both"></li></ul></div>
+|raw|<font size="1"><font color="#686868">Dex#:</font> 26&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 1&nbsp;|&ThickSpace;<font color="#686868">Height:</font> 0.8 m&nbsp;|&ThickSpace;<font color="#686868">Weight:</font> 30 kg <em>(60 BP)</em>&nbsp;|&ThickSpace;<font color="#686868">Dex Colour:</font> Yellow&nbsp;|&ThickSpace;<font color="#686868">Egg Group(s):</font> Field, Fairy&nbsp;|&ThickSpace;<font color="#686868">Does Not Evolve</font></font>
+21:25:11 |c|$Pika Xreme|but not normal raichoon
+21:25:11 |c|@EchoGaia|!dt Raichu-Alola, Jillian
+21:25:11 |raw|<div class="message"><ul class="utilichart"><li class="result"><span class="col numcol">New</span> <span class="col iconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1) no-repeat scroll -40px -2310px"></span></span> <span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/pokemon/raichualola" target="_blank">Raichu-Alola</a></span> <span class="col typecol"><img src="https://play.pokemonshowdown.com/sprites/types/Electric.png" alt="Electric" height="14" width="32"><img src="https://play.pokemonshowdown.com/sprites/types/Psychic.png" alt="Psychic" height="14" width="32"></span> <span style="float:left;min-height:26px"><span class="col abilitycol">Surge Surfer</span><span class="col abilitycol"><em>Miracle Dash</em></span></span><span style="float:left;min-height:26px"><span class="col statcol"><em>HP</em><br />60</span> <span class="col statcol"><em>Atk</em><br />85</span> <span class="col statcol"><em>Def</em><br />50</span> <span class="col statcol"><em>SpA</em><br />95</span> <span class="col statcol"><em>SpD</em><br />85</span> <span class="col statcol"><em>Spe</em><br />110</span> <span class="col bstcol"><em>BST<br />485</em></span> </span></li><li style="clear:both"></li></ul></div>
+|raw|<font size="1"><font color="#686868">Dex#:</font> 26&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 7&nbsp;|&ThickSpace;<font color="#686868">Height:</font> 0.7 m&nbsp;|&ThickSpace;<font color="#686868">Weight:</font> 21 kg <em>(40 BP)</em>&nbsp;|&ThickSpace;<font color="#686868">Dex Colour:</font> Brown&nbsp;|&ThickSpace;<font color="#686868">Egg Group(s):</font> Field, Fairy&nbsp;|&ThickSpace;<font color="#686868">Does Not Evolve</font></font>
+21:25:19 |c| shwb|miricale dash?
+21:25:27 |c|@EchoGaia|!dt Miracle Dash, Jillian
+21:25:27 |raw|<ul class="utilichart"><li class="result"><a data-entry="ability|Miracle Dash"><span class="col namecol">Miracle Dash</span> <span class="col abilitydesccol">If Psychic Terrain is active, this Pokemon's Speed is doubled.</span> </a></li><li style="clear:both"></li></ul>
+|raw|<font size="1"></font>
+21:25:32 |c| shwb|ooook
+21:25:34 |c| shwb|ok
+21:25:35 |c| shwb|ok
+21:25:55 |c|@EchoGaia|!dt Ledian-Jillian, Jillian
+21:25:55 |raw|<div class="message"><ul class="utilichart"><li class="result"><span class="col numcol">New</span> <span class="col iconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1) no-repeat scroll -400px -390px"></span></span> <span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/pokemon/ledianjillian" target="_blank">Ledian-Jillian</a></span> <span class="col typecol"><img src="https://play.pokemonshowdown.com/sprites/types/Bug.png" alt="Bug" height="14" width="32"><img src="https://play.pokemonshowdown.com/sprites/types/Fighting.png" alt="Fighting" height="14" width="32"></span> <span style="float:left;min-height:26px"><span class="col twoabilitycol">Huge Power<br />Technician</span><span class="col abilitycol"><em>Iron Fist</em></span></span><span style="float:left;min-height:26px"><span class="col statcol"><em>HP</em><br />55</span> <span class="col statcol"><em>Atk</em><br />63</span> <span class="col statcol"><em>Def</em><br />50</span> <span class="col statcol"><em>SpA</em><br />47</span> <span class="col statcol"><em>SpD</em><br />90</span> <span class="col statcol"><em>Spe</em><br />105</span> <span class="col bstcol"><em>BST<br />410</em></span> </span></li><li style="clear:both"></li></ul></div>
+|raw|<font size="1"><font color="#686868">Dex#:</font> 166&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 2&nbsp;|&ThickSpace;<font color="#686868">Height:</font> 1.4 m&nbsp;|&ThickSpace;<font color="#686868">Weight:</font> 35.6 kg <em>(60 BP)</em>&nbsp;|&ThickSpace;<font color="#686868">Dex Colour:</font> Blue&nbsp;|&ThickSpace;<font color="#686868">Egg Group(s):</font> Bug&nbsp;|&ThickSpace;<font color="#686868">Does Not Evolve</font></font>
+21:25:59 |c| shwb|once again...
+21:26:02 |c| shwb|b u s t e d
+21:26:11 |c| shwb|i like that
+21:26:15 |c|@EchoGaia|XD
+21:26:26 |c|$Pika Xreme|jillian
+21:26:28 |c|$Pika Xreme|more like
+21:26:29 |c|$Pika Xreme|broken
+21:26:34 |c|@EchoGaia|!dt Clefable-Jillian, Jillian
+21:26:34 |raw|<div class="message"><ul class="utilichart"><li class="result"><span class="col numcol">UU</span> <span class="col iconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1) no-repeat scroll -0px -90px"></span></span> <span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/pokemon/clefablejillian" target="_blank">Clefable-Jillian</a></span> <span class="col typecol"><img src="https://play.pokemonshowdown.com/sprites/types/Fairy.png" alt="Fairy" height="14" width="32"><img src="https://play.pokemonshowdown.com/sprites/types/Steel.png" alt="Steel" height="14" width="32"></span> <span style="float:left;min-height:26px"><span class="col twoabilitycol">Iron Barbs<br />Magic Bounce</span><span class="col abilitycol"><em>Unaware</em></span></span><span style="float:left;min-height:26px"><span class="col statcol"><em>HP</em><br />95</span> <span class="col statcol"><em>Atk</em><br />50</span> <span class="col statcol"><em>Def</em><br />83</span> <span class="col statcol"><em>SpA</em><br />95</span> <span class="col statcol"><em>SpD</em><br />110</span> <span class="col statcol"><em>Spe</em><br />50</span> <span class="col bstcol"><em>BST<br />483</em></span> </span></li><li style="clear:both"></li></ul></div>
+|raw|<font size="1"><font color="#686868">Dex#:</font> 36&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 1&nbsp;|&ThickSpace;<font color="#686868">Height:</font> 1.3 m&nbsp;|&ThickSpace;<font color="#686868">Weight:</font> 40 kg <em>(60 BP)</em>&nbsp;|&ThickSpace;<font color="#686868">Dex Colour:</font> Pink&nbsp;|&ThickSpace;<font color="#686868">Egg Group(s):</font> Fairy&nbsp;|&ThickSpace;<font color="#686868">Does Not Evolve</font></font>
+21:26:37 |c|>aCaSuAlMeMeLoRd|where's all the jillian list
+21:26:38 |c| shwb|i'm glad you didn't give it like 100 atk.
+21:26:40 |c| shwb|plus hp
+21:26:40 |c|$Pika Xreme|!dt ledian, jillian
+21:26:40 |raw|<div class="message"><ul class="utilichart"><li class="result"><span class="col numcol">New</span> <span class="col iconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1) no-repeat scroll -400px -390px"></span></span> <span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/pokemon/ledian" target="_blank">Ledian</a></span> <span class="col typecol"><img src="https://play.pokemonshowdown.com/sprites/types/Bug.png" alt="Bug" height="14" width="32"><img src="https://play.pokemonshowdown.com/sprites/types/Flying.png" alt="Flying" height="14" width="32"></span> <span style="float:left;min-height:26px"><span class="col twoabilitycol">Swarm<br />Early Bird</span><span class="col abilitycol"><em>Iron Fist</em></span></span><span style="float:left;min-height:26px"><span class="col statcol"><em>HP</em><br />55</span> <span class="col statcol"><em>Atk</em><br />35</span> <span class="col statcol"><em>Def</em><br />50</span> <span class="col statcol"><em>SpA</em><br />55</span> <span class="col statcol"><em>SpD</em><br />110</span> <span class="col statcol"><em>Spe</em><br />85</span> <span class="col bstcol"><em>BST<br />390</em></span> </span></li><li style="clear:both"></li></ul></div>
+|raw|<font size="1"><font color="#686868">Dex#:</font> 166&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 2&nbsp;|&ThickSpace;<font color="#686868">Height:</font> 1.4 m&nbsp;|&ThickSpace;<font color="#686868">Weight:</font> 35.6 kg <em>(60 BP)</em>&nbsp;|&ThickSpace;<font color="#686868">Dex Colour:</font> Red&nbsp;|&ThickSpace;<font color="#686868">Egg Group(s):</font> Bug&nbsp;|&ThickSpace;<font color="#686868">Does Not Evolve</font></font>
+21:26:47 |c|$Pika Xreme|...
+21:26:58 |c|$Pika Xreme|you made its bst higher in addition to adding huge power
+21:26:59 |c|$Pika Xreme|what
+21:27:06 |c|@EchoGaia|+20 only
+21:27:22 |c|>aCaSuAlMeMeLoRd|EchoGaia where can i find all the jillian mons
+21:27:34 |c| shwb|in the butt.
+21:27:43 |c|>aCaSuAlMeMeLoRd|o
+21:27:45 |c| shwb|yh
+21:28:18 |c|$Pika Xreme|remove 10 from each attack imo
+21:28:20 |c|@EchoGaia|wait a minute
+21:28:25 |c|@EchoGaia|i'm nerfing super helping hand
+21:28:54 |c|>aCaSuAlMeMeLoRd|rib
+21:29:09 |c|$Pika Xreme|what's the planned change to super help hand
+21:33:15 |j| Doug_Dimmadong
+21:33:25 |c| shwb|lol dimmadong
+21:33:35 |c| shwb|i feel it
+21:33:43 |n|@flurbel|dougdimmadong
+21:33:46 |c|@flurbel|hey
+21:33:51 |c|@flurbel|that's my alt
+21:33:58 |c| shwb|is it rlly
+21:34:00 |c| shwb|it's funny
+21:34:00 |c|@flurbel|doug dimmadong
+21:34:08 |c|@flurbel|brother of doug dimmadome
+21:34:14 |c|@flurbel|leader of dimmadome dome
+21:34:16 |c| shwb|only true og's know the joke
+21:34:22 |c|@flurbel|excatly
+21:34:41 |c| shwb|i actually might watch fairly odd parents rn.
+21:34:45 |c|@flurbel|lol
+21:34:49 |c|@flurbel|please do
+21:34:52 |raw|<div class='chat'><small>@</small><button name='parseCommand' value='/user flurbel' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#4A7826'>flurbel:</font></b></button><em class='mine'><img src="https://cdn.rawgit.com/CreaturePhil/dem-feels/master/emotes/xaa.png" title="xaa" width="50" height="50" /></em></div>
+21:34:54 |c| shwb|LOL
+21:35:12 |c| shwb|an episode specifically with doug dimmadome in it
+21:35:20 |userstats|total:9|guests:0| :2|+:0|$:2|%:0|@:2|*:2|★:0|#:0|&:1|~:0|⚔:0
+21:35:24 |c|@flurbel|LOL
+21:35:27 |c|@flurbel|he is a legende
+21:35:33 |c|@flurbel|legend*
+21:35:55 |c| shwb|google search: fairly odd parents episodes with doug dimmadome in it
+21:36:09 |c|$Pika Xreme|no
+21:36:14 |c| shwb|yh
+21:36:14 |c|@EchoGaia|https://github.com/XpRienzo/DragonHeaven/blob/master/mods/jillian/pokedex.js
+21:36:21 |c|@EchoGaia|pokedex of Jillian
+21:36:28 |c|@EchoGaia|including megas and regional forms
+21:36:37 |c|@EchoGaia|btw Jirachi's z move is nerfed
+21:36:42 |c|@flurbel|do you remember that episode of spongebob with the pizza's
+21:36:58 |c|@flurbel|and that guys went crazy because he had no drink 
+21:37:04 |c|@flurbel|for with it's pizza
+21:37:07 |c|@EchoGaia|boosts stats by 2 stages, it also heals half hp, but the user is trapped for the rest of the battle
+21:37:07 |c| shwb|punchilate
+21:37:16 |c|@flurbel|o nice
+21:37:18 |c| shwb|that looks fuego my fren
+21:37:23 |c|@flurbel|and rayray?
+21:37:31 |c|@EchoGaia|i didnt nerf it for now
+21:37:34 |raw|<div class='chat'><small>@</small><button name='parseCommand' value='/user flurbel' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#4A7826'>flurbel:</font></b></button><em class='mine'><img src="https://cdn.rawgit.com/CreaturePhil/dem-feels/master/emotes/oshet.png" title="oshet" width="50" height="50" /></em></div>
+21:37:45 |c|@EchoGaia|i can add a trapping effect too
+21:37:54 |c| shwb|did you give every type and ate?
+21:37:56 |c| shwb|lol
+21:39:18 |c|@EchoGaia|no
+21:39:26 |c|@EchoGaia|only created two more ates
+21:39:35 |c|@EchoGaia|but there's one more in eevee'd
+21:39:54 |c|$Pika Xreme|a completely different mod lol
+21:40:08 |c|$Pika Xreme|but anyway what is the change to super help hand
+21:40:20 |c|@EchoGaia|it traps user, but heals too
+21:40:28 |c|@EchoGaia|the main nerf is the trap
+21:40:31 |c|$Pika Xreme|...
+21:40:38 |c|$Pika Xreme|......
+21:40:51 |c|$Pika Xreme|i would have just halved the stat boosts
+21:40:57 |c|@EchoGaia|lol
+21:41:25 |c| shwb|chimeco mega looking like a little gardevoir
+21:41:34 |c|@EchoGaia|rayquaza's mega z move traps it too
+21:41:41 |c|@EchoGaia|rayquaza i mean
+21:42:05 |c|@EchoGaia|faster tho
+21:42:06 |c|$Pika Xreme|oh, cute, chimecho has a mega
+21:42:08 |c|@EchoGaia|ye
+21:42:41 |c| shwb|that'll be the first mon i use
+21:42:44 |c|$Pika Xreme|that's a very big speed increase for something that was slow in thte first place
+21:42:59 |c| shwb|dude ur on ass
+21:43:06 |c|@EchoGaia|pika
+21:43:10 |c|@EchoGaia|remember beedrill?
+21:43:19 |c| shwb|LOL
+21:43:25 |c|@EchoGaia|!dt beedrill
+21:43:25 |raw|<div class="message"><ul class="utilichart"><li class="result"><span class="col numcol">New</span> <span class="col iconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1) no-repeat scroll -120px -30px"></span></span> <span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/pokemon/beedrill" target="_blank">Beedrill</a></span> <span class="col typecol"><img src="https://play.pokemonshowdown.com/sprites/types/Bug.png" alt="Bug" height="14" width="32"><img src="https://play.pokemonshowdown.com/sprites/types/Poison.png" alt="Poison" height="14" width="32"></span> <span style="float:left;min-height:26px"><span class="col abilitycol">Swarm</span><span class="col abilitycol"><em>Sniper</em></span></span><span style="float:left;min-height:26px"><span class="col statcol"><em>HP</em><br />65</span> <span class="col statcol"><em>Atk</em><br />90</span> <span class="col statcol"><em>Def</em><br />40</span> <span class="col statcol"><em>SpA</em><br />45</span> <span class="col statcol"><em>SpD</em><br />80</span> <span class="col statcol"><em>Spe</em><br />75</span> <span class="col bstcol"><em>BST<br />395</em></span> </span></li><li style="clear:both"></li></ul></div>
+|raw|<font size="1"><font color="#686868">Dex#:</font> 15&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 1&nbsp;|&ThickSpace;<font color="#686868">Height:</font> 1 m&nbsp;|&ThickSpace;<font color="#686868">Weight:</font> 29.5 kg <em>(60 BP)</em>&nbsp;|&ThickSpace;<font color="#686868">Dex Colour:</font> Yellow&nbsp;|&ThickSpace;<font color="#686868">Egg Group(s):</font> Bug&nbsp;|&ThickSpace;<font color="#686868">Does Not Evolve</font></font>
+21:43:29 |c|@EchoGaia|!dt beedrill mega
+21:43:29 |raw|<div class="message"><ul class="utilichart"><li class="result"><span class="col numcol">OU</span> <span class="col iconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1) no-repeat scroll -160px -2430px"></span></span> <span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/pokemon/beedrillmega" target="_blank">Beedrill-Mega</a></span> <span class="col typecol"><img src="https://play.pokemonshowdown.com/sprites/types/Bug.png" alt="Bug" height="14" width="32"><img src="https://play.pokemonshowdown.com/sprites/types/Poison.png" alt="Poison" height="14" width="32"></span> <span style="float:left;min-height:26px"><span class="col abilitycol">Adaptability</span><span class="col abilitycol"></span></span><span style="float:left;min-height:26px"><span class="col statcol"><em>HP</em><br />65</span> <span class="col statcol"><em>Atk</em><br />150</span> <span class="col statcol"><em>Def</em><br />40</span> <span class="col statcol"><em>SpA</em><br />15</span> <span class="col statcol"><em>SpD</em><br />80</span> <span class="col statcol"><em>Spe</em><br />145</span> <span class="col bstcol"><em>BST<br />495</em></span> </span></li><li style="clear:both"></li></ul></div>
+|raw|<font size="1"><font color="#686868">Dex#:</font> 15&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 6&nbsp;|&ThickSpace;<font color="#686868">Height:</font> 1.4 m&nbsp;|&ThickSpace;<font color="#686868">Weight:</font> 40.5 kg <em>(60 BP)</em>&nbsp;|&ThickSpace;<font color="#686868">Dex Colour:</font> Yellow&nbsp;|&ThickSpace;<font color="#686868">Egg Group(s):</font> Bug&nbsp;|&ThickSpace;<font color="#686868">Does Not Evolve</font></font>
+21:43:30 |c|$Pika Xreme|speed was one of beedrill's higher stats
+21:43:32 |c|@EchoGaia|+70 speed
+21:43:35 |l|>aCaSuAlMeMeLoRd
+21:43:40 |j|>aCaSuAlMeMeLoRd
+21:43:42 |c|$Pika Xreme|things are relative
+21:43:45 |c|@EchoGaia|!dt chimecho
+21:43:45 |raw|<div class="message"><ul class="utilichart"><li class="result"><span class="col numcol">New</span> <span class="col iconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1) no-repeat scroll -400px -870px"></span></span> <span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/pokemon/chimecho" target="_blank">Chimecho</a></span> <span class="col typecol"><img src="https://play.pokemonshowdown.com/sprites/types/Psychic.png" alt="Psychic" height="14" width="32"></span> <span style="float:left;min-height:26px"><span class="col abilitycol">Levitate</span><span class="col abilitycol"></span></span><span style="float:left;min-height:26px"><span class="col statcol"><em>HP</em><br />75</span> <span class="col statcol"><em>Atk</em><br />50</span> <span class="col statcol"><em>Def</em><br />80</span> <span class="col statcol"><em>SpA</em><br />95</span> <span class="col statcol"><em>SpD</em><br />90</span> <span class="col statcol"><em>Spe</em><br />65</span> <span class="col bstcol"><em>BST<br />455</em></span> </span></li><li style="clear:both"></li></ul></div>
+|raw|<font size="1"><font color="#686868">Dex#:</font> 358&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 3&nbsp;|&ThickSpace;<font color="#686868">Height:</font> 0.6 m&nbsp;|&ThickSpace;<font color="#686868">Weight:</font> 1 kg <em>(20 BP)</em>&nbsp;|&ThickSpace;<font color="#686868">Dex Colour:</font> Blue&nbsp;|&ThickSpace;<font color="#686868">Egg Group(s):</font> Amorphous&nbsp;|&ThickSpace;<font color="#686868">Does Not Evolve</font></font>
+21:43:51 |c|@EchoGaia|well
+21:43:58 |c|@EchoGaia|!dt Chimecho-Mega, Jillian
+21:43:58 |raw|<div class="message"><ul class="utilichart"><li class="result"><span class="col numcol">New</span> <span class="col iconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1) no-repeat scroll -400px -870px"></span></span> <span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/pokemon/chimechomega" target="_blank">Chimecho-Mega</a></span> <span class="col typecol"><img src="https://play.pokemonshowdown.com/sprites/types/Psychic.png" alt="Psychic" height="14" width="32"><img src="https://play.pokemonshowdown.com/sprites/types/Fairy.png" alt="Fairy" height="14" width="32"></span> <span style="float:left;min-height:26px"><span class="col abilitycol">Pixilate</span><span class="col abilitycol"></span></span><span style="float:left;min-height:26px"><span class="col statcol"><em>HP</em><br />75</span> <span class="col statcol"><em>Atk</em><br />50</span> <span class="col statcol"><em>Def</em><br />80</span> <span class="col statcol"><em>SpA</em><br />145</span> <span class="col statcol"><em>SpD</em><br />90</span> <span class="col statcol"><em>Spe</em><br />115</span> <span class="col bstcol"><em>BST<br />555</em></span> </span></li><li style="clear:both"></li></ul></div>
+|raw|<font size="1"><font color="#686868">Dex#:</font> 358&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 6&nbsp;|&ThickSpace;<font color="#686868">Height:</font> undefined m&nbsp;|&ThickSpace;<font color="#686868">Weight:</font> undefined kg <em>(20 BP)</em>&nbsp;|&ThickSpace;Egg Group(s)&nbsp;|&ThickSpace;<font color="#686868">Does Not Evolve</font></font>
+21:44:06 |c|@EchoGaia|the increase is less tho
+21:44:11 |c|$Pika Xreme|speed is chimecho's second lowest stat
+21:44:22 |c|@EchoGaia|it's mega is a deep change
+21:44:25 |c| shwb|same thing with diancie
+21:44:31 |c|@EchoGaia|!dt diancie
+21:44:31 |raw|<div class="message"><ul class="utilichart"><li class="result"><span class="col numcol">New</span> <span class="col iconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1) no-repeat scroll -440px -1770px"></span></span> <span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/pokemon/diancie" target="_blank">Diancie</a></span> <span class="col typecol"><img src="https://play.pokemonshowdown.com/sprites/types/Rock.png" alt="Rock" height="14" width="32"><img src="https://play.pokemonshowdown.com/sprites/types/Fairy.png" alt="Fairy" height="14" width="32"></span> <span style="float:left;min-height:26px"><span class="col abilitycol">Clear Body</span><span class="col abilitycol"></span></span><span style="float:left;min-height:26px"><span class="col statcol"><em>HP</em><br />50</span> <span class="col statcol"><em>Atk</em><br />100</span> <span class="col statcol"><em>Def</em><br />150</span> <span class="col statcol"><em>SpA</em><br />100</span> <span class="col statcol"><em>SpD</em><br />150</span> <span class="col statcol"><em>Spe</em><br />50</span> <span class="col bstcol"><em>BST<br />600</em></span> </span></li><li style="clear:both"></li></ul></div>
+|raw|<font size="1"><font color="#686868">Dex#:</font> 719&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 6&nbsp;|&ThickSpace;<font color="#686868">Height:</font> 0.7 m&nbsp;|&ThickSpace;<font color="#686868">Weight:</font> 8.8 kg <em>(20 BP)</em>&nbsp;|&ThickSpace;<font color="#686868">Dex Colour:</font> Pink&nbsp;|&ThickSpace;<font color="#686868">Egg Group(s):</font> Undiscovered&nbsp;|&ThickSpace;<font color="#686868">Does Not Evolve</font></font>
+21:44:34 |c|@EchoGaia|yeah 
+21:44:51 |c|@EchoGaia|diancie's speed was its lowest stat tied with HP
+21:44:57 |c|$Pika Xreme|why does its mega need to be a deep change? is there a particular reason?
+21:45:16 |c| shwb|so people will actually use it.
+21:45:21 |c|@EchoGaia|did GF made a reason for boosting Diancie's Speed upon mega evolving?
+21:45:28 |c|@flurbel|yeah
+21:45:30 |c|@EchoGaia|when it was its lowest stat?
+21:45:42 |c|@flurbel|it becomes more beautiful
+21:45:45 |c| shwb|^
+21:45:49 |c|@flurbel|and beautiful stands for speed
+21:45:52 |c|@flurbel|simple math
+21:45:56 |c| shwb|who doens't like to see chimeco killing shit.
+21:46:02 |c|@flurbel|or even better
+21:46:05 |c|@flurbel|chingling
+21:46:10 |c|@flurbel|:O
+21:46:14 |c| shwb|oh god no
+21:46:15 |c|$Pika Xreme|I'd prefer it being bulk tbh
+21:46:50 |c| shwb|damn no dunsparce mega?
+21:46:57 |c|$Pika Xreme|o shet
+21:46:59 |c|$Pika Xreme|mistake
+21:47:15 |c|$Pika Xreme|we all know that dunsparce was game freak's best idea
+21:47:24 |c|@flurbel|apart from delcatty
+21:47:25 |c| shwb|hahaa
+21:47:28 |c|$Pika Xreme|real talk dunsparce's movepool is kinda amazing right?
+21:47:32 |c| shwb|it really is
+21:47:38 |c|@flurbel|dusparce that kid that is like eh
+21:47:42 |c|@flurbel|dunsparce
+21:48:16 |c|$Pika Xreme|even without a great ability all dunsparce really needs is statpower
+21:48:46 |l|>aCaSuAlMeMeLoRd
+21:49:05 |j|>aCaSuAlMeMeLoRd
+21:49:10 |c| shwb|i could see it being really bulky
+21:49:33 |c| shwb|why does it get roost.....
+21:49:36 |c|$Pika Xreme|HP is its highest stat
+21:49:38 |c|$Pika Xreme|it has wings
+21:49:41 |c|$Pika Xreme|ergo, roost
+21:49:59 |c| shwb|smallest fking wings i've seen like damn
+21:50:08 |c|$Pika Xreme|roost also complements its stat spread well
+21:50:11 |c| shwb|yeah
+21:50:27 |c| shwb|it gets cm and coil
+21:50:37 |c|$Pika Xreme|honestly the arrangement of its stats is solid
+21:50:47 |c| shwb|and rocks
+21:50:47 |c| shwb|lol
+21:50:53 |c|$Pika Xreme|it just needs a little more oomph behind it
+21:51:04 |c| shwb|yeah i'm trying to think of a good second typing for it
+21:51:08 |c|@flurbel|dragon
+21:51:10 |c|$Pika Xreme|ghost
+21:51:11 |c| shwb|yh
+21:51:14 |c|@flurbel|eh maybe 2 obvious
+21:51:19 |c|@flurbel|maybe ground
+21:51:22 |c|@flurbel|or flying
+21:51:23 |c|$Pika Xreme|still ghost
+21:51:26 |c|@flurbel|yeah
+21:51:28 |c|@flurbel|also good
+21:51:29 |c|$Pika Xreme|ew normal/flying
+21:51:59 |c| shwb|normal/ghost would be cool
+21:52:18 |c|$Pika Xreme|although tbh it doesn't need-need a second typing
+21:52:43 |c| shwb|yeah just needs to be a bit stronger like you said
+21:53:07 |c|$Pika Xreme|normal/ghost would make it great, but all it needs to be viable is raw strength
+21:53:08 |c| shwb|even like 110atk is good
+21:53:18 |c| shwb|because of coild
+21:53:21 |c| shwb|coil*
+21:53:31 |c| shwb|it get glare too
+21:53:40 |c| shwb|this mon may be a jesus
+21:53:43 |c| shwb|in the flesh
+21:55:02 |c|$Pika Xreme|130/110/100/80/90/45 or something?
+21:55:23 |j| Thinkerino
+21:56:08 |c|@EchoGaia|i mean in eevee'd there's good dunsparce evos
+21:56:13 |c|@EchoGaia|!dt Landisparce, Eevee'd
+21:56:14 |raw|<div class="message"><ul class="utilichart"><li class="result"><span class="col numcol">Illegal</span> <span class="col iconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1) no-repeat scroll -0px -0px"></span></span> <span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/pokemon/landisparce" target="_blank">Landisparce</a></span> <span class="col typecol"><img src="https://play.pokemonshowdown.com/sprites/types/Normal.png" alt="Normal" height="14" width="32"><img src="https://play.pokemonshowdown.com/sprites/types/Ground.png" alt="Ground" height="14" width="32"></span> <span style="float:left;min-height:26px"><span class="col twoabilitycol">Sand Rush<br />Sand Force</span><span class="col abilitycol"><em>Hidden Soul</em></span></span><span style="float:left;min-height:26px"><span class="col statcol"><em>HP</em><br />105</span> <span class="col statcol"><em>Atk</em><br />126</span> <span class="col statcol"><em>Def</em><br />75</span> <span class="col statcol"><em>SpA</em><br />69</span> <span class="col statcol"><em>SpD</em><br />100</span> <span class="col statcol"><em>Spe</em><br />90</span> <span class="col bstcol"><em>BST<br />565</em></span> </span></li><li style="clear:both"></li></ul></div>
+|raw|<font size="1"><font color="#686868">Dex#:</font> 9024&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 7&nbsp;|&ThickSpace;<font color="#686868">Height:</font> undefined m&nbsp;|&ThickSpace;<font color="#686868">Weight:</font> undefined kg <em>(20 BP)</em>&nbsp;|&ThickSpace;Egg Group(s)&nbsp;|&ThickSpace;<font color="#686868">Does Not Evolve</font></font>
+21:56:35 |c|@EchoGaia|!dt Allsparce, Eevee'd
+21:56:35 |raw|<div class="message"><ul class="utilichart"><li class="result"><span class="col numcol">Illegal</span> <span class="col iconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1) no-repeat scroll -0px -0px"></span></span> <span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/pokemon/allsparce" target="_blank">Allsparce</a></span> <span class="col typecol"><img src="https://play.pokemonshowdown.com/sprites/types/Normal.png" alt="Normal" height="14" width="32"></span> <span style="float:left;min-height:26px"><span class="col abilitycol">Protean</span><span class="col abilitycol"><em>Adaptability</em></span></span><span style="float:left;min-height:26px"><span class="col statcol"><em>HP</em><br />110</span> <span class="col statcol"><em>Atk</em><br />95</span> <span class="col statcol"><em>Def</em><br />100</span> <span class="col statcol"><em>SpA</em><br />75</span> <span class="col statcol"><em>SpD</em><br />100</span> <span class="col statcol"><em>Spe</em><br />85</span> <span class="col bstcol"><em>BST<br />565</em></span> </span></li><li style="clear:both"></li></ul></div>
+|raw|<font size="1"><font color="#686868">Dex#:</font> 9022&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 7&nbsp;|&ThickSpace;<font color="#686868">Height:</font> undefined m&nbsp;|&ThickSpace;<font color="#686868">Weight:</font> undefined kg <em>(20 BP)</em>&nbsp;|&ThickSpace;Egg Group(s)&nbsp;|&ThickSpace;<font color="#686868">Does Not Evolve</font></font>
+21:56:58 |c|$Pika Xreme|!dt dunsoul, eevee'd
+21:56:58 |raw|<div class="message"><ul class="utilichart"><li class="result"><span class="col numcol">Illegal</span> <span class="col iconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1) no-repeat scroll -0px -0px"></span></span> <span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/pokemon/dunsoul" target="_blank">Dunsoul</a></span> <span class="col typecol"><img src="https://play.pokemonshowdown.com/sprites/types/Normal.png" alt="Normal" height="14" width="32"><img src="https://play.pokemonshowdown.com/sprites/types/Ghost.png" alt="Ghost" height="14" width="32"></span> <span style="float:left;min-height:26px"><span class="col twoabilitycol">Serene Grace<br />Cursed Body</span><span class="col abilitycol"><em>Rattled</em></span></span><span style="float:left;min-height:26px"><span class="col statcol"><em>HP</em><br />150</span> <span class="col statcol"><em>Atk</em><br />95</span> <span class="col statcol"><em>Def</em><br />85</span> <span class="col statcol"><em>SpA</em><br />80</span> <span class="col statcol"><em>SpD</em><br />95</span> <span class="col statcol"><em>Spe</em><br />60</span> <span class="col bstcol"><em>BST<br />565</em></span> </span></li><li style="clear:both"></li></ul></div>
+|raw|<font size="1"><font color="#686868">Dex#:</font> 9023&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 7&nbsp;|&ThickSpace;<font color="#686868">Height:</font> undefined m&nbsp;|&ThickSpace;<font color="#686868">Weight:</font> undefined kg <em>(20 BP)</em>&nbsp;|&ThickSpace;Egg Group(s)&nbsp;|&ThickSpace;<font color="#686868">Does Not Evolve</font></font>
+21:57:03 |c|$Pika Xreme|i made that one
+21:57:06 |c|@EchoGaia|ye
+21:57:08 |c|@EchoGaia|5 votes
+21:57:15 |c|@flurbel|imagine allsparce in pokebilities
+21:57:16 |c|@flurbel|yeez
+21:57:18 |c|@EchoGaia|ye
+21:57:27 |c|$Pika Xreme|nightmare fuel y'y
+21:57:31 |c|$Pika Xreme|*y/y
+21:57:33 |c|@EchoGaia|Hidden Soul is a special stamina
+21:57:39 |c| shwb|what about 110 across the board bar spe for dunsparce
+21:57:41 |c|@EchoGaia|i mean stamina for special defense
+21:58:56 |c|$Pika Xreme|i think dunsoul has the highest hp for the dunsparce evos? lemme check
+21:59:58 |c|$Pika Xreme|nope dunsparkle is higher
+22:00:24 |c|$Pika Xreme|!dt dunsparkle, eeveed
+22:00:24 |raw|<div class="message"><ul class="utilichart"><li class="result"><span class="col numcol">Illegal</span> <span class="col iconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1) no-repeat scroll -0px -0px"></span></span> <span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/pokemon/dunsparkle" target="_blank">Dunsparkle</a></span> <span class="col typecol"><img src="https://play.pokemonshowdown.com/sprites/types/Normal.png" alt="Normal" height="14" width="32"><img src="https://play.pokemonshowdown.com/sprites/types/Fairy.png" alt="Fairy" height="14" width="32"></span> <span style="float:left;min-height:26px"><span class="col twoabilitycol">Dazzling<br />Regenerator</span><span class="col abilitycol"><em>Wonder Skin</em></span></span><span style="float:left;min-height:26px"><span class="col statcol"><em>HP</em><br />160</span> <span class="col statcol"><em>Atk</em><br />100</span> <span class="col statcol"><em>Def</em><br />90</span> <span class="col statcol"><em>SpA</em><br />65</span> <span class="col statcol"><em>SpD</em><br />90</span> <span class="col statcol"><em>Spe</em><br />60</span> <span class="col bstcol"><em>BST<br />565</em></span> </span></li><li style="clear:both"></li></ul></div>
+|raw|<font size="1"><font color="#686868">Dex#:</font> 9026&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 7&nbsp;|&ThickSpace;<font color="#686868">Height:</font> undefined m&nbsp;|&ThickSpace;<font color="#686868">Weight:</font> undefined kg <em>(20 BP)</em>&nbsp;|&ThickSpace;Egg Group(s)&nbsp;|&ThickSpace;<font color="#686868">Does Not Evolve</font></font>
+22:00:43 |l| Zard8888 - ⓢⓛⓟ
+22:00:50 |c|$Pika Xreme|dude how are you supposed to kill that
+22:01:32 |n| MaveAdder|thinkerino
+22:01:55 |c| shwb|yeah regen is annoying
+22:02:52 |c|@EchoGaia|you kill that with a strong poison type move
+22:03:03 |c|$Pika Xreme|more like
+22:03:05 |c|@EchoGaia|too bad venomgoo wasn't chosen
+22:03:10 |c|$Pika Xreme|seventy strong poison type moves
+22:03:12 |c|@EchoGaia|venomgoo was able to oneshot this
+22:03:18 |l| MaveAdder
+22:03:21 |j| MaveAdder
+22:03:23 |c|$Pika Xreme|how strong was it?
+22:03:38 |c|@EchoGaia|110 atk poison type adapt with Gunk Shot
+22:03:54 |c|>aCaSuAlMeMeLoRd|y is chimera 1v1 now 6v6
+22:04:02 |c|@EchoGaia|meh
+22:04:22 |c|$Pika Xreme|calcs
+22:04:58 |c|$Pika Xreme|i really, really hope nihilego can beat it
+22:05:16 |j|#BBgun999
+22:06:16 |c|$Pika Xreme|!dt megaton punch, jillian
+22:06:16 |raw|<ul class="utilichart"><li class="result"><a data-entry="move|Megaton Punch"><span class="col movenamecol">Megaton Punch</span> <span class="col typecol"><img src="//play.pokemonshowdown.com/sprites/types/Fighting.png" alt="Fighting" width="32" height="14"><img src="//play.pokemonshowdown.com/sprites/categories/Physical.png" alt="Physical" width="32" height="14"></span> <span class="col labelcol"><em>Power</em><br>130</span> <span class="col widelabelcol"><em>Accuracy</em><br>85%</span> <span class="col pplabelcol"><em>PP</em><br>10</span> <span class="col movedesccol">30% chance paralyze the target</span> </a></li><li style="clear:both"></li></ul>
+|raw|<font size="1"><font color="#686868">Priority:</font> 0&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 0&nbsp;|&ThickSpace;&#10003; Secondary effect&nbsp;|&ThickSpace;&#10003; Contact&nbsp;|&ThickSpace;&#10003; Punch&nbsp;|&ThickSpace;<font color="#686868">Z-Power:</font> 210&nbsp;|&ThickSpace;<font color="#686868">Target:</font> One Adjacent Pokémon</font>
+22:06:22 |c|$Pika Xreme|but can it crack the planet in half?
+22:06:25 |c|#BBgun999|Lol. Flurb and echo have the same avatar
+22:06:49 |l|#BBgun999
+22:07:45 |c|$Pika Xreme|echogaia why is iceberg a water i am confuse
+22:08:03 |c| MaveAdder|echo,our meta is a so cool
+22:08:40 |c|$Pika Xreme|is it a global warming joke
+22:09:07 |c| shwb|yo ninjask looks clean
+22:09:26 |c| shwb|leadership was a cool idea echo
+22:10:18 |c|@EchoGaia|thanks
+22:10:31 |c|$Pika Xreme|that IS pretty dank
+22:10:32 |c|@EchoGaia|!dt Leadership, Jillian
+22:10:32 |raw|<ul class="utilichart"><li class="result"><a data-entry="ability|Leadership"><span class="col namecol">Leadership</span> <span class="col abilitydesccol">This Pokemon's attacks get a x1.3 power boost if it moves first in the turn</span> </a></li><li style="clear:both"></li></ul>
+|raw|<font size="1"></font>
+22:10:41 |c|@EchoGaia|Reverse analytic
+22:11:33 |c|$Pika Xreme|what's supposed to get prayer of heaven?
+22:12:18 |c|@EchoGaia|!dt Heavenmaster, Jillian
+22:12:18 |raw|<div class="message"><ul class="utilichart"><li class="result"><span class="col numcol">Illegal</span> <span class="col iconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1) no-repeat scroll -0px -0px"></span></span> <span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/pokemon/heavenmaster" target="_blank">Heavenmaster</a></span> <span class="col typecol"><img src="https://play.pokemonshowdown.com/sprites/types/Fairy.png" alt="Fairy" height="14" width="32"><img src="https://play.pokemonshowdown.com/sprites/types/Grass.png" alt="Grass" height="14" width="32"></span> <span style="float:left;min-height:26px"><span class="col abilitycol">Gates of Heaven</span><span class="col abilitycol"></span></span><span style="float:left;min-height:26px"><span class="col statcol"><em>HP</em><br />117</span> <span class="col statcol"><em>Atk</em><br />123</span> <span class="col statcol"><em>Def</em><br />107</span> <span class="col statcol"><em>SpA</em><br />131</span> <span class="col statcol"><em>SpD</em><br />98</span> <span class="col statcol"><em>Spe</em><br />104</span> <span class="col bstcol"><em>BST<br />680</em></span> </span></li><li style="clear:both"></li></ul></div>
+|raw|<font size="1"><font color="#686868">Dex#:</font> 1000065&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 7&nbsp;|&ThickSpace;<font color="#686868">Height:</font> undefined m&nbsp;|&ThickSpace;<font color="#686868">Weight:</font> undefined kg <em>(20 BP)</em>&nbsp;|&ThickSpace;Egg Group(s)&nbsp;|&ThickSpace;<font color="#686868">Evolution:</font> Does Not Evolve (undefined)</font>
+22:12:24 |c|@EchoGaia|its signature move
+22:12:32 |c|$Pika Xreme|oh
+22:12:32 |c|@EchoGaia|of course Ubers
+22:12:34 |c|$Pika Xreme|an uber
+22:12:35 |c|@EchoGaia|yes
+22:12:51 |c|$Pika Xreme|wELP XERNEAS BUHBYE
+22:12:57 |c|@EchoGaia|^^
+22:13:02 |c|$Pika Xreme|WE GOT THE COOL KID IN TOWN NOW
+22:13:23 |c|@EchoGaia|!dt Hellmaster, Jillian
+22:13:23 |raw|<div class="message"><ul class="utilichart"><li class="result"><span class="col numcol">Illegal</span> <span class="col iconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1) no-repeat scroll -0px -0px"></span></span> <span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/pokemon/hellmaster" target="_blank">Hellmaster</a></span> <span class="col typecol"><img src="https://play.pokemonshowdown.com/sprites/types/Ghost.png" alt="Ghost" height="14" width="32"><img src="https://play.pokemonshowdown.com/sprites/types/Dark.png" alt="Dark" height="14" width="32"></span> <span style="float:left;min-height:26px"><span class="col abilitycol">Gates of Hell</span><span class="col abilitycol"></span></span><span style="float:left;min-height:26px"><span class="col statcol"><em>HP</em><br />117</span> <span class="col statcol"><em>Atk</em><br />131</span> <span class="col statcol"><em>Def</em><br />98</span> <span class="col statcol"><em>SpA</em><br />123</span> <span class="col statcol"><em>SpD</em><br />107</span> <span class="col statcol"><em>Spe</em><br />104</span> <span class="col bstcol"><em>BST<br />680</em></span> </span></li><li style="clear:both"></li></ul></div>
+|raw|<font size="1"><font color="#686868">Dex#:</font> 1000064&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 7&nbsp;|&ThickSpace;<font color="#686868">Height:</font> undefined m&nbsp;|&ThickSpace;<font color="#686868">Weight:</font> undefined kg <em>(20 BP)</em>&nbsp;|&ThickSpace;Egg Group(s)&nbsp;|&ThickSpace;<font color="#686868">Evolution:</font> Does Not Evolve (undefined)</font>
+22:13:27 |c|@EchoGaia|its counterpart
+22:13:54 |c|$Pika Xreme|haha it halves its health on switchin
+22:15:26 |c|$Pika Xreme|heavenmaster wins every time imo
+22:16:05 |c|>aCaSuAlMeMeLoRd|EchoGaia how do you find all the pokemon in jillain
+22:16:08 |c|>aCaSuAlMeMeLoRd|jillian
+22:17:06 |c|$Pika Xreme|with hax
+22:18:32 |j| Arkaes
+22:18:33 |l| Arkaes
+22:23:24 |l| MaveAdder
+22:23:49 |j| MaveAdder
+22:24:13 |l|>smellslikememe
+22:31:31 |c|$Pika Xreme|how to kill chat 101
+22:33:42 |j| PRimal Savage
+22:33:48 |n| Primal Savage|primalsavage
+22:34:42 |c|$Pika Xreme|echogaia what's with all the poop
+22:35:20 |userstats|total:9|guests:0| :4|+:0|$:1|%:0|@:2|*:2|★:0|#:0|&:0|~:0|⚔:0
+22:35:53 |l|$Pika Xreme
+22:42:47 |l|>aCaSuAlMeMeLoRd
+22:43:59 |j|>aCaSuAlMeMeLoRd
+22:47:48 |c| Primal Savage|rawr
+22:48:08 |l|@EchoGaia
+23:03:45 |l| MaveAdder
+23:05:46 |j| MaveAdder
+23:21:22 |j|@EchoGaia
+23:23:54 |l| MaveAdder
+23:29:18 |j| IT 1 1
+23:29:27 |l| IT 1 1
+23:29:31 |l|>aCaSuAlMeMeLoRd
+23:35:20 |userstats|total:6|guests:0| :2|+:0|$:0|%:0|@:2|*:2|★:0|#:0|&:0|~:0|⚔:0
+23:41:25 |j| Phat Albert
+23:43:46 |c|@EchoGaia|flurbel
+23:43:52 |c|@EchoGaia|you still have your Jillian team?
+23:45:01 |l| Phat Albert
+23:45:30 |j|$Ludicrousity
+23:45:31 |c|*BatterBotto|Bow before me foolish mortals
+23:45:33 |c|@flurbel|yes
+23:45:34 |raw|<div class='chat'><small>$</small><button name='parseCommand' value='/user Ludicrousity' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#A43CC3'>Ludicrousity:</font></b></button><em class='mine'><img src="https://cdn.rawgit.com/CreaturePhil/dem-feels/master/emotes/xaa.png" title="xaa" width="50" height="50" /></em></div>
+23:45:37 |c|@flurbel|i think so
+23:45:39 |c|@flurbel|hey ludi
+23:45:39 |c|$Ludicrousity|Bow before me
+23:45:48 |c|@flurbel|i just posted my scyther suggestion
+23:45:59 |c|$Ludicrousity|That could be my entrance quote in DH SSB
+23:46:13 |c|$Ludicrousity|"Bow Down Foolish Mortals"
+23:46:35 |c|$Ludicrousity|Scafada
+23:46:37 |c|@flurbel|/me doesnt bow
+23:46:38 |c|$Ludicrousity|k
+23:46:43 |c|@flurbel|click the link
+23:46:46 |raw|<div class='chat'><small>@</small><button name='parseCommand' value='/user flurbel' style='background:none;border:0;padding:0 5px 0 0;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;cursor:pointer'><b><font color='#4A7826'>flurbel:</font></b></button><em class='mine'><img src="https://cdn.rawgit.com/CreaturePhil/dem-feels/master/emotes/xaa.png" title="xaa" width="50" height="50" /></em></div>
+23:46:58 |c|$Ludicrousity|wtf
+23:47:09 |c|$Ludicrousity|why?
+23:48:03 |c|@flurbel|read the justifaction
+23:49:12 |j|+Uselesscrab
+23:49:24 |l|@flurbel
+23:49:29 |j|@flurbel
+23:49:55 |c|@flurbel|!dt marabunta, jillian
+23:49:55 |raw|<ul class="utilichart"><li class="result"><a data-entry="move|Marabunta"><span class="col movenamecol">Marabunta</span> <span class="col typecol"><img src="//play.pokemonshowdown.com/sprites/types/Bug.png" alt="Bug" width="32" height="14"><img src="//play.pokemonshowdown.com/sprites/categories/Status.png" alt="Status" width="32" height="14"></span> <span class="col widelabelcol"><em>Accuracy</em><br>—</span> <span class="col pplabelcol"><em>PP</em><br>20</span> <span class="col movedesccol">Switch-in, -1 eva, damage Bug weakness</span> </a></li><li style="clear:both"></li></ul>
+|raw|<font size="1"><font color="#686868">Priority:</font> 0&nbsp;|&ThickSpace;<font color="#686868">Gen:</font> 0&nbsp;|&ThickSpace;&#10003; Bypasses Protect&nbsp;|&ThickSpace;&#10003; Bounceable&nbsp;|&ThickSpace;<font color="#686868">Z-Effect:</font>  Evasiveness +1&nbsp;|&ThickSpace;<font color="#686868">Target:</font> Opposing Side</font>
+23:51:42 |j|#BBgun999
+23:52:17 |c|#BBgun999|I swear I don't get informed by new staff members
+23:52:37 |c|@flurbel|-inform
+23:52:43 |c|@flurbel|+inform
+23:52:52 |c|#BBgun999|Also ludi, i used dragon balls to make me immortal
+23:54:03 |j|>aCaSuAlMeMeLoRd
+23:54:19 |c|#BBgun999|Lol. Wahts that symbol?
+23:54:24 |c|#BBgun999|+q
+23:54:24 |c|*OutrageousBoT|AbysmalBot: mew and ditto weigh the same tho AbysmalBot: ditto is probably a melted mew
+23:54:27 |c|>aCaSuAlMeMeLoRd|i used dragon balls to make me immortal
+23:54:48 |c|#BBgun999|Do i win then?
+23:56:12 |l|#BBgun999
+23:56:46 |c|>aCaSuAlMeMeLoRd|hey again Uselesscrab
+23:56:54 |c|+Uselesscrab|hi
+23:57:08 |c|>aCaSuAlMeMeLoRd|you want to play chimera 1v1?

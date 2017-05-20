@@ -63,3 +63,44 @@
 14:32:01 |raw|<div class="broadcast-red"><b>The server needs restart because of a crash.</b><br />No new battles can be started until the server is done restarting.</div>
 18:33:03 NEW CHATROOM: upperstaff
 18:33:11 |raw|<div class="broadcast-red"><b>The server needs restart because of a crash.</b><br />No new battles can be started until the server is done restarting.</div>
+18:35:20 NEW CHATROOM: upperstaff
+18:35:35 |j|@Spandan
+18:37:47 |l|@Spandan
+18:37:57 |j|@Spandan
+18:38:32 |raw|<div class="broadcast-blue"><b>Welcome to our new server!</b></div>
+18:42:48 |l|@Spandan
+18:43:14 |j|@Spandan
+18:57:00 |j|#charizard8888
+19:23:59 |c|#charizard8888|shwb for Global Voice y/y?
+19:24:19 |c|@Spandan|No
+19:24:22 |c|@Spandan|Who is that again 
+19:24:33 |c|#charizard8888|He's shwb
+19:25:52 |n|#charizard8888|charizard8888
+19:26:13 |n|#charizard8888|charizard8888
+19:26:31 |raw|<div class="broadcast-blue"><b>We have a new server owner!</b></div>
+19:27:47 |n|#charizard8888|charizard8888
+19:27:51 |n|#charizard8888|charizard8888
+19:35:20 |userstats|total:2|guests:0| :0|+:0|$:0|%:0|@:1|*:0|★:0|#:1|&:0|~:0|⚔:0
+19:41:49 |l|@Spandan
+19:42:15 |j|@Spandan
+19:49:05 |l|#charizard8888
+19:49:22 |j|#charizard8888
+19:49:48 |l|@Spandan
+19:49:59 |j|@Spandan
+19:56:51 |l|#charizard8888
+20:00:44 |j| Zard8888
+20:01:33 |n| Zard8888 - ⓢⓛⓟ|zard8888
+20:01:33 |n| Zard8888 - ⓢⓛⓟ|zard8888
+20:01:52 |n| Zard8888 - ⓢⓛⓟ|zard8888
+20:19:47 |l|@Spandan
+20:20:08 |j|@Spandan
+20:22:16 |l|@Spandan
+20:26:45 |j|@Spandan
+20:32:28 |l|@Spandan
+20:32:55 |j|@Spandan
+20:35:20 |userstats|total:2|guests:0| :0|+:0|$:0|%:0|@:1|*:0|★:0|#:0|&:1|~:0|⚔:0
+20:49:31 |l|@Spandan
+21:35:20 |userstats|total:1|guests:0| :0|+:0|$:0|%:0|@:0|*:0|★:0|#:0|&:1|~:0|⚔:0
+22:00:43 |l| Zard8888 - ⓢⓛⓟ
+22:35:20 |userstats|total:0|guests:0| :0|+:0|$:0|%:0|@:0|*:0|★:0|#:0|&:0|~:0|⚔:0
+23:35:20 |userstats|total:0|guests:0| :0|+:0|$:0|%:0|@:0|*:0|★:0|#:0|&:0|~:0|⚔:0

@@ -100,3 +100,4 @@ Bug reports are stored here.
 [2017-05-17 at 17:09:53] EchoGaia reported: ' In Chimera 1v1, while having Zard in the 1st place and buzzwole in the second place holding Charizardite X, Zard cannot mega evolve despite holding the stone. https://hastebin.com/sonuyitole.diff'
 [2017-05-18 at 11:17:03] Finny ♥ reported: 'Parasect resisted fire blast in regular random battle'
 [2017-05-18 at 16:34:00] Ludicrousity reported: 'Using a mon with an unreleased ability stops it from using any other mons ability in the same slot. eg: Litten cannot use Chansey's Healer because Intimidate is unreleased on litten'
+[2017-05-20 at 00:59:20] smellslikememe reported: 'chimera 1v1 switching regenerates your hp http://replay.pokemonshowdown.com/dragonheaven-gen7chimera1v1-35039'

@@ -4913,3 +4913,17 @@
 [2017-05-19T12:11:57.837Z] (lobby) (LudicrousBot's ac account: ludicrousity)
 [2017-05-19T12:12:12.375Z] (lobby) LudicrousBot was unmuted by Flurbel.
 [2017-05-19T14:24:35.524Z] (lobby) Spandan globally declared (chat level) WE ARE MOVING SERVERS SO DH WILL BE DOWN FOR A BIT. PLS WAIT
+[2017-05-19T16:38:32.268Z] (lobby) Spandan globally declared (chat level) Welcome to our new server!
+[2017-05-19T16:57:23.342Z] (lobby) nixola was promoted to Administrator by Spandan.
+[2017-05-19T17:16:13.044Z] (lobby) RPS Bot was promoted to Bot by Spandan.
+[2017-05-19T17:26:31.568Z] (lobby) Spandan globally declared (chat level) We have a new server owner!
+[2017-05-19T17:27:34.025Z] (lobby) Spandan declared It's the one and only CHARIZARD8888
+[2017-05-19T17:27:47.022Z] (lobby) charizard8888 was promoted to Dragon Knight by Spandan.
+[2017-05-19T17:31:26.241Z] (lobby) spandan used "/a |c|~|aCaSuAlMeMeLoRd was promoted to Room Meme by Spandan." in lobby
+[2017-05-19T17:35:02.702Z] (lobby) spandan used "/a |html|<button name = "send" value = "/credits"><font size = 7>THE NEW AND IMPROVED CREDITS BUTTON</font></button>" in lobby
+[2017-05-19T17:36:55.242Z] (lobby) smellslikememe was warned by Spandan. (You could get banished to hell and friend in lard)
+[2017-05-19T17:51:43.764Z] (lobby) Uselesscrab was promoted to Room Voice by Spandan.
+[2017-05-19T18:54:03.650Z] (lobby) (smellslikememe was demoted to Voice by Zard8888 - ⓢⓛⓟ.)
+[2017-05-19T18:54:12.977Z] (lobby) smellslikememe was promoted to Operator by Zard8888 - ⓢⓛⓟ.
+[2017-05-20T05:23:53.700Z] (lobby) XpRienzo was promoted to Dragon Knight by XpRienzo.
+[2017-05-20T07:25:22.668Z] (lobby) (charizard8888 was demoted to Room regular user by Spandan.)

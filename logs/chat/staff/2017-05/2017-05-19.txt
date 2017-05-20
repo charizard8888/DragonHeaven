@@ -94,3 +94,69 @@
 18:33:03 NEW CHATROOM: staff
 18:33:11 |raw|<div class="broadcast-red"><b>The server needs to restart because of a crash:</b> TypeError: this.parse is not a function<br />    at User.joinRoom (&#x2f;home&#x2f;spandan&#x2f;DH&#x2f;users.js:1173:9)<br />Please restart the server.</div>
 18:33:11 |raw|<div class="broadcast-red">You will not be able to start new battles until the server restarts.</div>
+18:35:20 NEW CHATROOM: staff
+18:35:35 |j|+Spandan
+18:36:20 |j|+EchoGaia
+18:37:47 |l|+Spandan
+18:37:57 |j|+Spandan
+18:38:32 |raw|<div class="broadcast-blue"><b>Welcome to our new server!</b></div>
+18:42:48 |l|+Spandan
+18:43:14 |j|+Spandan
+18:55:20 |j|%flufi
+18:57:00 |j|#charizard8888
+18:58:28 |j|%Winona
+19:03:19 |l|%flufi
+19:16:11 |j|*BatterBotto
+19:16:17 |j|*OutrageousBoT
+19:16:20 |l|*BatterBotto
+19:16:22 |j|*BatterBotto
+19:25:52 |n|#charizard8888|charizard8888
+19:26:13 |n|#charizard8888|charizard8888
+19:26:31 |raw|<div class="broadcast-blue"><b>We have a new server owner!</b></div>
+19:27:47 |n|#charizard8888|charizard8888
+19:27:51 |n|#charizard8888|charizard8888
+19:35:20 |userstats|total:6|guests:0| :0|+:2|$:0|%:1|@:0|*:2|★:0|#:1|&:0|~:0|⚔:0
+19:41:40 |l|%Winona
+19:41:49 |l|+Spandan
+19:42:15 |j|+Spandan
+19:42:15 |c|*BatterBotto|http://spo.ink/Spandan
+19:49:05 |l|#charizard8888
+19:49:22 |j|#charizard8888
+19:49:48 |l|+Spandan
+19:49:59 |j|+Spandan
+19:49:59 |c|*BatterBotto|http://spo.ink/Spandan
+19:56:51 |l|#charizard8888
+20:00:44 |j| Zard8888
+20:01:33 |n| Zard8888 - ⓢⓛⓟ|zard8888
+20:01:33 |n| Zard8888 - ⓢⓛⓟ|zard8888
+20:01:52 |n| Zard8888 - ⓢⓛⓟ|zard8888
+20:19:47 |l|+Spandan
+20:20:08 |j|+Spandan
+20:20:08 |c|*BatterBotto|http://spo.ink/Spandan
+20:22:00 |j|%flufi
+20:22:16 |l|+Spandan
+20:26:45 |j|+Spandan
+20:26:45 |c|*BatterBotto|http://spo.ink/Spandan
+20:32:28 |l|+Spandan
+20:32:55 |j|+Spandan
+20:32:55 |c|*BatterBotto|http://spo.ink/Spandan
+20:35:20 |userstats|total:6|guests:0| :0|+:2|$:0|%:1|@:0|*:2|★:0|#:0|&:1|~:0|⚔:0
+20:49:31 |l|+Spandan
+20:58:53 |l|+EchoGaia
+21:01:53 |j|%BBgun999
+21:02:20 |l|%BBgun999
+21:05:21 |l|%flufi
+21:09:23 |j|+EchoGaia
+21:33:43 |j|+flurbel
+21:35:20 |userstats|total:5|guests:0| :0|+:2|$:0|%:0|@:0|*:2|★:0|#:0|&:1|~:0|⚔:0
+22:00:43 |l| Zard8888 - ⓢⓛⓟ
+22:05:16 |j|%BBgun999
+22:06:49 |l|%BBgun999
+22:35:20 |userstats|total:4|guests:0| :0|+:2|$:0|%:0|@:0|*:2|★:0|#:0|&:0|~:0|⚔:0
+22:48:08 |l|+EchoGaia
+23:21:22 |j|+EchoGaia
+23:35:20 |userstats|total:4|guests:0| :0|+:2|$:0|%:0|@:0|*:2|★:0|#:0|&:0|~:0|⚔:0
+23:49:24 |l|+flurbel
+23:49:29 |j|+flurbel
+23:51:42 |j|%BBgun999
+23:56:12 |l|%BBgun999
