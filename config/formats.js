@@ -2390,7 +2390,7 @@ exports.Formats = [
 		validateSet: function(set, teamHas) {
 			let problems = this.validateSet(set, teamHas) || [];
 			set.moves.forEach(move => {
-				if (this.tools.data.Movedex[toId(move)].isZ) {
+				if (Dex.getMove(move).isZ) {
 					problems.push((set.name || set.species) + " has a Crystal Free Z-Move, which is banned by Balanced Hackmons.");
 				}
 			});
@@ -2873,16 +2873,16 @@ exports.Formats = [
 			}
 		},
 		validateSet: function (set, teamHas) {
-			let crossTemplate = this.tools.getTemplate(set.name);
+			let crossTemplate = Dex.getTemplate(set.name);
 			if (!crossTemplate.exists || crossTemplate.isNonstandard) return this.validateSet(set, teamHas);
-			let template = this.tools.getTemplate(set.species);
+			let template = Dex.getTemplate(set.species);
 			if (!template.exists) return [`The Pokemon ${set.species} does not exist.`];
 			if (!template.evos.length) return [`${template.species} cannot cross evolve because it doesn't evolve.`];
 			if (template.species === 'Sneasel') return [`Sneasel as a base Pokemon is banned.`];
 			let crossBans = {'shedinja': 1, 'solgaleo': 1, 'lunala': 1};
 			if (crossTemplate.id in crossBans) return [`${template.species} cannot cross evolve into ${crossTemplate.species} because it is banned.`];
 			if (crossTemplate.battleOnly || !crossTemplate.prevo) return [`${template.species} cannot cross evolve into ${crossTemplate.species} because it isn't an evolution.`];
-			let crossPrevoTemplate = this.tools.getTemplate(crossTemplate.prevo);
+			let crossPrevoTemplate = Dex.getTemplate(crossTemplate.prevo);
 			if (!crossPrevoTemplate.prevo !== !template.prevo) return [`${template.species} cannot cross into ${crossTemplate.species} because they are not consecutive evolutionary stages.`];
 
 			// Make sure no stat is too high/low to cross evolve to
@@ -2905,7 +2905,7 @@ exports.Formats = [
 
 			let mixedTemplate = Object.assign({}, template);
 			// Ability test
-			let ability = this.tools.getAbility(set.ability);
+			let ability = Dex.getAbility(set.ability);
 			let abilityBans = {'hugepower': 1, 'purepower': 1, 'shadowtag': 1};
 			if (!(ability.id in abilityBans)) mixedTemplate.abilities = crossTemplate.abilities;
 
@@ -2959,10 +2959,10 @@ exports.Formats = [
 		mod: 'gen7',
 		validateSet: function (set, teamHas) {
 			let species = toId(set.species);
-			let template = this.tools.getTemplate(species);
+			let template = Dex.getTemplate(species);
 			if (!template.exists || template.isNonstandard) return ["" + set.species + " is not a real Pok\u00E9mon."];
-			if (template.battleOnly) template = this.tools.getTemplate(template.baseSpecies);
-			if (this.tools.getBanlistTable(this.format)[template.id] || template.tier in {'Uber': 1, 'Unreleased': 1} && template.species !== 'Aegislash') {
+			if (template.battleOnly) template = Dex.getTemplate(template.baseSpecies);
+			if (Dex.getBanlistTable(this.format)[template.id] || template.tier in {'Uber': 1, 'Unreleased': 1} && template.species !== 'Aegislash') {
 				return ["" + template.species + " is banned by Follow The Leader."];
 			}
 
@@ -3056,19 +3056,19 @@ exports.Formats = [
 		noChangeForme: true,
 		noChangeAbility: true,
 		getEvoFamily: function (species) {
-			let template = Tools.getTemplate(species);
+			let template = Dex.getTemplate(species);
 			while (template.prevo) {
-				template = Tools.getTemplate(template.prevo);
+				template = Dex.getTemplate(template.prevo);
 			}
 			return template.speciesid;
 		},
 		validateSet: function (set, teamHas) {
 			if (!this.format.abilityMap) {
 				let abilityMap = Object.create(null);
-				for (let speciesid in this.tools.data.Pokedex) {
-					let pokemon = this.tools.data.Pokedex[speciesid];
+				for (let speciesid in Dex.data.Pokedex) {
+					let pokemon = Dex.data.Pokedex[speciesid];
 					if (pokemon.num < 1 || pokemon.species in this.format.banlistTable || this.format.bannedDonors.includes(pokemon.species)) continue;
-					if (this.tools.data.FormatsData[speciesid].requiredItem || this.tools.data.FormatsData[speciesid].requiredMove) continue;
+					if (Dex.data.FormatsData[speciesid].requiredItem || Dex.data.FormatsData[speciesid].requiredMove) continue;
 					for (let key in pokemon.abilities) {
 						let abilityId = toId(pokemon.abilities[key]);
 						if (abilityMap[abilityId]) {
@@ -3082,13 +3082,13 @@ exports.Formats = [
 			}
 
 			this.format.noChangeForme = false;
-			let problems = this.tools.getFormat('Pokemon').onChangeSet.call(this.tools, set, this.format) || [];
+			let problems = Dex.getFormat('Pokemon').onChangeSet.call(Dex, set, this.format) || [];
 			this.format.noChangeForme = true;
 
 			if (problems.length) return problems;
 
 			let species = toId(set.species);
-			let template = this.tools.getTemplate(species);
+			let template = Dex.getTemplate(species);
 			if (!template.exists) return [`The Pokemon "${set.species}" does not exist.`];
 			if (template.isUnreleased) return [`${template.species} is unreleased.`];
 			if (template.tier === 'Uber' || template.species in this.format.banlistTable) return [`${template.species} is banned.`];
@@ -3096,14 +3096,14 @@ exports.Formats = [
 			let name = set.name;
 
 			let abilityId = toId(set.ability);
-			if (!abilityId || !(abilityId in this.tools.data.Abilities)) return [`${name} needs to have a valid ability.`];
+			if (!abilityId || !(abilityId in Dex.data.Abilities)) return [`${name} needs to have a valid ability.`];
 			let pokemonWithAbility = this.format.abilityMap[abilityId];
 			if (!pokemonWithAbility) return [`"${set.ability}" is not available on a legal Pokemon.`];
 
 			let canonicalSource = ''; // Specific for the basic implementation of Donor Clause (see onValidateTeam).
 			let validSources = set.abilitySources = []; // evolutionary families
 			for (let i = 0; i < pokemonWithAbility.length; i++) {
-				let donorTemplate = this.tools.getTemplate(pokemonWithAbility[i]);
+				let donorTemplate = Dex.getTemplate(pokemonWithAbility[i]);
 				let evoFamily = this.format.getEvoFamily(donorTemplate);
 
 				if (validSources.indexOf(evoFamily) >= 0) continue;
@@ -3126,7 +3126,7 @@ exports.Formats = [
 				return [`${template.species}'s set is illegal.`];
 			}
 			if (!validSources.length) {
-				problems.unshift(`${template.species} has an illegal set with an ability from ${this.tools.getTemplate(pokemonWithAbility[0]).name}.`);
+				problems.unshift(`${template.species} has an illegal set with an ability from ${Dex.getTemplate(pokemonWithAbility[0]).name}.`);
 				return problems;
 			}
 
@@ -3474,8 +3474,8 @@ exports.Formats = [
 		banlist: ['Slaking', 'Regigigas', 'Nature Power'],
 		validateSet: function(set, teamHas) {
 			if (!this.validateSet(set, teamHas).length) return [];
-			let ability = this.tools.getAbility(set.ability);
-			let template = this.tools.getTemplate(set.species);
+			let ability = Dex.getAbility(set.ability);
+			let template = Dex.getTemplate(set.species);
 			if (!set.moves.includes(ability.id) && !set.moves.includes(ability.name) && !this.checkLearnset(ability.id, template, {
 					set: set
 				})) {
@@ -3602,8 +3602,8 @@ exports.Formats = [
 		mod: 'gen7',
 		validateSet: function(set, teamHas) {
 			if (!this.validateSet(set, teamHas).length) return [];
-			let ability = this.tools.getAbility(set.ability);
-			let template = this.tools.getTemplate(set.species);
+			let ability = Dex.getAbility(set.ability);
+			let template = Dex.getTemplate(set.species);
 			let movemasters = {
 				adaptability: [],
 				angerpoint: ["Frost Breath", "Storm Throw"],
@@ -3711,19 +3711,19 @@ exports.Formats = [
 				waterveil: ["Beak Blast", "Blaze Kick", "Blue Flare", "Ember", "Fire Blast", "Fire Fang", "Fire Punch", "Flamethrower", "Flame Wheel", "Flare Blitz", "Fling", "Heat Wave", "Ice Burn", "Inferno", "Lava Plume", "Sacred Fire", "Scald", "Searing Shot", "Steam Eruption", "Tri Attack", "Will-O-Wisp"],
 				whitesmoke: ["Aurora Beam", "Baby-Doll Eyes", "Growl", "Lunge", "Noble Roar", "Parting Shot", "Play Nice", "Play Rough", "Strength Sap", "Tearful Look", "Tickle", "Trop Kick", "Venom Drench", "Charm", "Feather Dance", "King's Shield", "Memento", "Crunch", "Crush Claw", "Fire Lash", "Iron Tail", "Leer", "Liquidation", "Razor Shell", "Rock Smash", "Shadow Bone", "Tail Whip", "Tickle", "Screech", "Confide", "Mist Ball", "Moonblast", "Mystical Fire", "Noble Roar", "Parting Shot", "Snarl", "Struggle Bug", "Tearful Look", "Venom Drench", "Captivate", "Eerie Impulse", "Memento", "Acid", "Bug Buzz", "Earth Power", "Energy Ball", "Flash Cannon", "Focus Blast", "Luster Purge", "Shadow Ball", "Acid Spray", "Fake Tears", "Metal Sound", "Seed Flare", "Bubble", "Bubble Beam", "Bulldoze", "Constrict", "Electroweb", "Glaciate", "Icy Wind", "Low Sweep", "Mud Shot", "Rock Tomb", "Sticky Web", "Toxic Thread", "Venom Drench", "Cotton Spore", "Scary Face", "String Shot", "Defog", "Sweet Scent", "Flash", "Kinesis", "Leaf Tornado", "Mirror Shot", "Mud Bomb", "Mud-Slap", "Muddy Water", "Night Daze", "Octazooka", "Sand Attack", "Smokescreen"],
 			};
-			let allMoves = this.tools.data.Movedex;
+			let allMoves = Dex.data.Movedex;
 			for (let i in allMoves) {
 				let move = allMoves[i];
 				if (template.types.includes(move.type)) {
 					movemasters.adaptability.push(move.id);
 				}
-				if (this.tools.getImmunity(move, template) && this.tools.getEffectiveness(move, template) > 0) {
+				if (Dex.getImmunity(move, template) && Dex.getEffectiveness(move, template) > 0) {
 					movemasters.anticipation.push(move.id);
 					movemasters.solidrock.push(move.id);
 					movemasters.filter.push(move.id);
 					movemasters.prismarmor.push(move.id);
 				}
-				if (this.tools.getEffectiveness(move, template) < 1) {
+				if (Dex.getEffectiveness(move, template) < 1) {
 					movemasters.tintedlens.push(move.id);
 				}
 				if (move.basePower <= 60) {
@@ -4502,10 +4502,10 @@ exports.Formats = [
 		],
 		validateSet: function(set, teamHas) {
 			let species = toId(set.species);
-			let template = this.tools.getTemplate(species);
+			let template = Dex.getTemplate(species);
 			if (!template.exists || template.isNonstandard) return ["" + set.species + " is not a real Pok\u00E9mon."];
-			if (template.battleOnly) template = this.tools.getTemplate(template.baseSpecies);
-			if (this.tools.getBanlistTable(this.format)[template.id] || template.tier in {
+			if (template.battleOnly) template = Dex.getTemplate(template.baseSpecies);
+			if (Dex.getBanlistTable(this.format)[template.id] || template.tier in {
 					'Uber': 1,
 					'Unreleased': 1
 				} && template.species !== 'Aegislash') {
@@ -5842,13 +5842,13 @@ exports.Formats = [
 		mod: 'dualwielding',
 		validateSet: function(set, teamHas) {
 			let ability = set.ability;
-			if (!this.tools.data.Items[toId(ability)]) return [`${set.name || set.species}  has an invalid item.`];
+			if (!Dex.data.Items[toId(ability)]) return [`${set.name || set.species}  has an invalid item.`];
 			let problems = this.validateSet(set, teamHas) || [];
-			let item2 = this.tools.getItem(toId(ability));
+			let item2 = Dex.getItem(toId(ability));
 			let bans = {};
 			if (bans[toId(item2.id)]) problems.push(set.species + "'s item " + item2.name + " is banned by Dual Wielding.");
 			if (item2.id === toId(set.item)) problems.push(`You cannot have two of ${item2.name} on the same Pokemon.`);
-			if (item2.id.includes('choice') && toId(set.item).includes('choice')) problems.push(`You cannot have ${item2.name} and ${this.tools.getItem(set.item).name} on the same Pokemon.`);
+			if (item2.id.includes('choice') && toId(set.item).includes('choice')) problems.push(`You cannot have ${item2.name} and ${Dex.getItem(set.item).name} on the same Pokemon.`);
 			set.ability = ability;
 			return problems;
 		},
@@ -5932,11 +5932,11 @@ exports.Formats = [
 		},
 		validateSet: function(set, teamHas) {
 			let item = set.item;
-			if (this.tools.getAbility(toId(item)))
+			if (Dex.getAbility(toId(item)))
 			{
 				set.item = '';
 				let problems = this.validateSet(set, teamHas) || [];
-				let abilitwo = this.tools.getAbility(toId(item));
+				let abilitwo = Dex.getAbility(toId(item));
 				let bans = {
 					'arenatrap': true,
 					'contrary': true,
@@ -6017,11 +6017,11 @@ exports.Formats = [
 		},
 		validateSet: function(set, teamHas) {
 			let item = set.item;
-			if (this.tools.getAbility(toId(item)))
+			if (Dex.getAbility(toId(item)))
 			{
 				set.item = '';
 				let problems = this.validateSet(set, teamHas) || [];
-				let abilitwo = this.tools.getAbility(toId(item));
+				let abilitwo = Dex.getAbility(toId(item));
 				let bans = {
 					'arenatrap': true,
 					'contrary': true,
@@ -7175,7 +7175,7 @@ exports.Formats = [
 		validateSet: function(set, teamHas) {
 			let problems = this.validateSet(set, teamHas) || [];
 			set.moves.forEach(move => {
-				if (this.tools.data.Movedex[toId(move)].isZ) {
+				if (Dex.data.Movedex[toId(move)].isZ) {
 					problems.push((set.name || set.species) + " has a Crystal Free Z-Move, which is banned by Balanced Hackmons.");
 				}
 			});
