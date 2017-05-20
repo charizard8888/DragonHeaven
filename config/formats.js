@@ -2788,8 +2788,8 @@ exports.Formats = [
 			"&bullet; <a href=\"https://image.prntscr.com/image/a872872560444bce8d4dca0d3f4ed8de.png\">Chimera 1v1</a>",
 		],
 		mod: 'gen7',
-		ruleset: ['OHKO Clause','Evasion Clause','Species Clause','Endless Battle Clause', 'Team Preview'],
-		banlist: ['Illegal','Shedinja','Smeargle','Pure Power','Huge Power','Moody','Focus Sash','Perish Song','Transform'],
+		ruleset: ['Pokemon', 'Standard', 'OHKO Clause','Evasion Clause','Species Clause','Endless Battle Clause', 'Team Preview'],
+		banlist: ['Shedinja','Smeargle','Pure Power','Huge Power','Moody','Focus Sash','Perish Song','Transform'],
 		/*teamLength: {
 			validate: [6, 6],
 			battle: 1,
