@@ -6085,7 +6085,7 @@ exports.Formats = [
 		column: 3,
 	},
 	{
-		name: "[Gen 7] Test Format".
+		name: "[Gen 7] Test Format",
 		desc: ["This format is for testing stuff."],
 		ruleset: "[Gen 7] OU",
 		team: 'random',
