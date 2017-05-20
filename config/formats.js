@@ -6091,7 +6091,7 @@ exports.Formats = [
 		team: 'random',
 		mod: 'gen7',
 		fullOrder: 6,
-	}.
+	},
 	{
 		name: "[Gen 7] Mix and Mega (Unreleased Stones)",
 		desc: [
