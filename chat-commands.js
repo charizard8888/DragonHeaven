@@ -2955,7 +2955,8 @@ exports.commands = {
 		connection.sendTo(room, "updating...");
 
 		let exec = require('child_process').exec;
-		exec(`git fetch && git rebase --autostash FETCH_HEAD`, (error, stdout, stderr) => {
+		//exec(`git fetch && git rebase --autostash FETCH_HEAD`, (error, stdout, stderr) => {
+		exec(`git pull origin master`, (error, stdout, stderr) => {
 			for (let s of ("" + stdout + stderr).split("\n")) {
 				connection.sendTo(room, s);
 				logQueue.push(s);
