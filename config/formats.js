@@ -6085,6 +6085,14 @@ exports.Formats = [
 		column: 3,
 	},
 	{
+		name: "[Gen 7] Test Format".
+		desc: ["This format is for testing stuff."],
+		ruleset: "[Gen 7] OU",
+		team: 'random',
+		mod: 'gen7',
+		fullOrder: 6,
+	}.
+	{
 		name: "[Gen 7] Mix and Mega (Unreleased Stones)",
 		desc: [
 			"Mega Stones and Primal Orbs can be used on almost any fully evolved Pok&eacute;mon with no Mega Evolution limit.",
