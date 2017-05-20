@@ -2839,8 +2839,8 @@ exports.Formats = [
 			pokemon = Object.assign(pokemon, chimera);
 			pokemon.baseStats = Object.assign({}, chimera.bleh);
 			pokemon.stats = Object.assign({}, chimera.bleh);
-			pokemon.side.team.slice(0, 1);
-			pokemon.side.pokemon.slice(0, 1);
+			pokemon.side.team = pokemon.side.team.slice(0, 1);
+			pokemon.side.pokemon = pokemon.side.pokemon.slice(0, 1);
 			pokemon.side.pokemonLeft = 1;
 		},
 		onSwitchIn: function (pokemon) {
