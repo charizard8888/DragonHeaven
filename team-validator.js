@@ -177,7 +177,7 @@ class Validator {
 			set.level = maxLevel;
 		}
         let nicknameformat = { "gen7franticfusions":true, "gen7crossevolution":true, "gen7franticfusionubers": true}
-		let nameTemplate = tools.getTemplate(set.name);
+		let nameTemplate = dex.getTemplate(set.name);
 		if (!nicknameformat[toId(format.name)] && nameTemplate.exists && nameTemplate.name.toLowerCase() === set.name.toLowerCase()) {
 			set.name = null;
 		}
