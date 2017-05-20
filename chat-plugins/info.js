@@ -372,7 +372,7 @@ exports.commands = {
 		let showDetails = (cmd === 'dt' || cmd === 'details');
 		if (newTargets && newTargets.length) {
 			for (let i = 0; i < newTargets.length; ++i) {
-				if (!newTargets[i].exactMatch && !i) {
+				if (newTargets[i].isInexact && !i) {
 					buffer = `No Pok\u00e9mon, item, move, ability or nature named '${sep[0]}' was found${Dex.gen > mod.gen ? ` in Gen ${mod.gen}` : ""}. Showing the data of '${newTargets[0].name}' instead.\n`;
 				}
 				if (newTargets[i].searchType === 'nature') {
