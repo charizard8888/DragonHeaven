@@ -2844,7 +2844,6 @@ exports.Formats = [
 			pokemon.side.pokemonLeft = 1;
 		},
 		onSwitchIn: function (pokemon) {
-			this.add('-formechange', pokemon, pokemon.species);
 			this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
 		},
 		onValidateTeam: function (team) {
