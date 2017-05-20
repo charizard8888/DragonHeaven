@@ -1372,12 +1372,8 @@ exports.commands = {
 			if (exactMatch && sectionId !== exactMatch) continue;
 			buf.push(Chat.html`<th style="border:1px solid gray" colspan="2">${sections[sectionId].name}</th>`);
 			for (let i = 0; i < sections[sectionId].formats.length; i++) {
-<<<<<<< HEAD
-				let format = Tools.getFormat(sections[sectionId].formats[i]);
-				let formatId = toId(format.name);
-=======
 				let format = Dex.getFormat(sections[sectionId].formats[i]);
->>>>>>> b54dfaa80ad685add1108cc328e71b2441ab37aa
+				let formatId = toId(format.name);
 				let nameHTML = Chat.escapeHTML(format.name);
 				let descHTML = format.desc ? `${format.desc.join("<br />")}${Tools.data.Formats[format.id].suspect ? `<br />Currently Suspecting: <u>${Tools.data.Formats[formatId].suspect}</u>` : ""}` : "&mdash;";
 				buf.push(`<tr><td style="border:1px solid gray">${nameHTML}</td><td style="border: 1px solid gray; margin-left:10px">${descHTML}</td></tr>`);
