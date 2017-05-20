@@ -6087,7 +6087,7 @@ exports.Formats = [
 	{
 		name: "[Gen 7] Test Format",
 		desc: ["This format is for testing stuff."],
-		ruleset: "[Gen 7] OU",
+		ruleset: ["[Gen 7] OU"],
 		team: 'random',
 		mod: 'gen7',
 		fullOrder: 6,
