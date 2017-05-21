@@ -1375,7 +1375,7 @@ exports.commands = {
 				let format = Dex.getFormat(sections[sectionId].formats[i]);
 				let formatId = toId(format.name);
 				let nameHTML = Chat.escapeHTML(format.name);
-				let descHTML = format.desc ? `${format.desc.join("<br />")}${Tools.data.Formats[format.id].suspect ? `<br />Currently Suspecting: <u>${Tools.data.Formats[formatId].suspect}</u>` : ""}` : "&mdash;";
+				let descHTML = format.desc ? `${format.desc.join("<br />")}${Dex.data.Formats[format.id].suspect ? `<br />Currently Suspecting: <u>${Dex.data.Formats[formatId].suspect}</u>` : ""}` : "&mdash;";
 				buf.push(`<tr><td style="border:1px solid gray">${nameHTML}</td><td style="border: 1px solid gray; margin-left:10px">${descHTML}</td></tr>`);
 			}
 		}
