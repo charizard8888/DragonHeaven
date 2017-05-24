@@ -3051,7 +3051,7 @@ exports.Formats = [
 
 		mod: 'gen7',
 		ruleset: ['Pokemon', 'Standard', 'Team Preview'],
-		banlist: ['Uber', 'Hoopa-Unbound', 'Kartana', 'Kyurem-Black', 'Regigigas', 'Shedinja', 'Slaking', 'Arena Trap', 'Imposter', 'Huge Power', 'Pure Power', 'Speed Boost', 'Water Bubble', 'Assist', 'Baton Pass', 'Chatter'],
+		banlist: ['Uber', 'Gyaradosite', 'Mega Gyarados', 'Hoopa-Unbound', 'Kartana', 'Kyurem-Black', 'Regigigas', 'Shedinja', 'Slaking', 'Arena Trap', 'Imposter', 'Huge Power', 'Pure Power', 'Speed Boost', 'Water Bubble', 'Assist', 'Baton Pass', 'Chatter'],
 		bannedDonors: ['Smeargle', 'Hoopa-Unbound', 'Kartana', 'Kyurem-Black', 'Regigigas', 'Shedinja', 'Slaking'],
 		noChangeForme: true,
 		noChangeAbility: true,
