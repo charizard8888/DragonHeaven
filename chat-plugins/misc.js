@@ -297,7 +297,7 @@ distor: function (target, room, user, connection, cmd) {
 					"- " + hashColor('XpRienzo', true) + " (Founder, Sysadmin)<br />" +
 										"<br />" +
 					"<u>Development:</u><br />" +
-					"- " + hashColor('charizard8888', true) + " (Roomintros, HTML, CSS, Development" +
+					"- " + hashColor('charizard8888', true) + " (Roomintros, HTML, CSS, Development)<br/>" +
 					"- " + hashColor('Nixola', true) + " (Host)<br />" +
 					"- " + hashColor('Snaquaza', true) + " (Major Contributor, Formats, Development)<br />" +
 					"<br />" +
