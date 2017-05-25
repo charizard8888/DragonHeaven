@@ -3249,7 +3249,7 @@ exports.Formats = [
 	},
 	{
 		name: "[Gen 7] Metagamiate",
-		desc: ["&bullet; Every Pokemon has a -ate ability matching its primary type or secondary type if shiny."],
+		desc: ["&bullet;<a href = \"http://www.smogon.com/forums/threads/3604808/\">Metagamiate</a>: Every Pokemon has a -ate ability matching its primary type or secondary type if shiny."],
 		mod: 'gen7',
 		ruleset: ['[Gen 7] OU'],
 		banlist: ['Dragonite', 'Kyurem-Black'],
