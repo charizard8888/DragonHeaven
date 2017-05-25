@@ -294,13 +294,13 @@ distor: function (target, room, user, connection, cmd) {
 		this.popupReply("|html|" + "<font size=4><center><u><b>Dragon Heaven Credits!</b></u></center></font><br />" +
 					"<u>Owner:</u><br />" +
 					"- " + hashColor('Spandan', true) + " (Development)<br />" +
+					"- " + hashColor('Snaquaza', true) + " (Sysadmin, Policy, Formats, Development)<br />" +
+					"<br />" +
 					"- " + hashColor('XpRienzo', true) + " (Founder, Sysadmin)<br />" +
 										"<br />" +
 					"<u>Development:</u><br />" +
 					"- " + hashColor('charizard8888', true) + " (Roomintros, HTML, CSS, Development)<br/>" +
 					"- " + hashColor('Nixola', true) + " (Host)<br />" +
-					"- " + hashColor('Snaquaza', true) + " (Major Contributor, Formats, Development)<br />" +
-					"<br />" +
 					"<u>Contributors:</u><br />" +
 					"- " + hashColor('ClassyZ', true) + " (DHSSB, Development)<br />" +
 					"- " + hashColor('Eternal Mayhem', true) + " (Roomintro's)<br />" +
