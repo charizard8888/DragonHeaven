@@ -373,12 +373,13 @@ exports.BattleAbilities = {
 			  	if (move.type === 'Ghost') {
 			  	return move.infiltrates = true;
 				}
+			},
 			  	if (move.type === 'Ghost') {
 			  	this.debug('Reaper Slice boost');
 				return this.chainModify([0x14CD, 0x1000]);
 			  	}
-		  	}
-		},
+		  	},
+		
 		id: "reaperslice",
 		name: "Reaper Slice",
 		rating: 3,
