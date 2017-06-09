@@ -372,8 +372,7 @@ exports.BattleAbilities = {
 		  	onModifyMove: function (move) {
 			  	if (move.type === 'Ghost') {
 			  	return move.infiltrates = true;
-				}
-			},
+			}
 			  	if (move.type === 'Ghost') {
 			  	this.debug('Reaper Slice boost');
 				return this.chainModify([0x14CD, 0x1000]);
