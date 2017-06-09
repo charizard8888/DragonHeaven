@@ -29,7 +29,7 @@ exports.BattleStatuses = {
                 return false;
             }
         },
-    }
+    
     deathknell: {
         duration: 5,
         durationCallback: function (target, source) {
