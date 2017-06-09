@@ -3,7 +3,7 @@
 exports.BattlePokedex = {
 
 swampamar:{
-  num:-62,
+  num:900000,
   species:"Swampamar",
   types:["Dark","Water"],
   genderRatio:{M:0.5,F:0.5},
