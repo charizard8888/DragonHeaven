@@ -33,10 +33,10 @@ exports.BattleScripts = {
 				evs: {hp: 252, atk:252, spd: 252, def: 252, spe: 252},
 				nature:'Adamant',
 			},
-			'Zygardeorder' : { /* Eyy will edit it soon */
+			'Zygardeorder' : {
 				species: 'Zygarde-10%', ability: 'Rawr', item: 'Leftovers', gender: 'M',
 				moves: ['thousandarrows', 'spectralthief', 'uturn'],
-				signaturMove: "Rawrr",
+				signaturMove: "Soon TM",
 				evs: {hp: 252, atk:252, spd: 252, def: 252, spe: 252},
 				nature:'Jolly',
 			},
