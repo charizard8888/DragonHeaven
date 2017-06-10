@@ -5,6 +5,20 @@ exports.BattleScripts = {
 		let team = [];
 		let variant = (this.random(2) === 1);
 		let sets = {
+			'Pika Xreme' : {
+				species: 'Raichu', ability: 'Xreme Bulk', item: 'Leftovers', gender: 'M', shiny:true,
+				moves: ['volttackle', 'woodhammer', 'icehammer'],
+				signaturMove: "Healing Area",
+				evs: {hp: 252, atk:252, spd: 252, def: 252, spe: 252},
+				nature:'Adamant',
+			},
+			'Ludicrousity' : {
+				species: 'Umbreon', ability: 'Moonlight Guard', item: 'Leftovers', gender: 'M', shiny:true,
+				moves: ['spikyshield', 'toxic', 'rest'],
+				signaturMove: "Corrupt Aura",
+				evs: {hp: 252, spd: 252, spa: 4},
+				nature:'Calm',
+			},
 			'EchoGaia' : {
 				species: 'Landorus-Therian', ability: 'Extreme Intimidate', item: 'Leftovers', gender: 'M',
 				moves: ['precipiceblades', 'stoneedge', 'uturn'],
