@@ -5,6 +5,12 @@ exports.BattleScripts = {
 		let team = [];
 		let variant = (this.random(2) === 1);
 		let sets = {
+			'shwb' : {
+				species: 'Lucario-Mega', ability: 'Brute Force', item: 'Leftovers', gender: 'M', shiny:true,
+				moves: ['highjumpkick', 'meteormash', 'extremespeed'],
+				signaturMove: "Build Up",evs: {hp: 252, atk:252, spd: 252, def: 252, spe: 252},
+				nature:'Jolly',
+			},
 			'Pika Xreme' : {
 				species: 'Raichu', ability: 'Xreme Bulk', item: 'Leftovers', gender: 'M', shiny:true,
 				moves: ['volttackle', 'woodhammer', 'icehammer'],
