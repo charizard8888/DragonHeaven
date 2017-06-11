@@ -1,6 +1,25 @@
 "use strict";
 
 exports.BattleMovedex = {
+		"healingarea": {
+		shortDesc: "Recover, Wish and Grassy Terrain in one move",
+		accuracy: true,
+		category: "Status",
+		id: "healingarea",
+		name: "Healing Area",
+		pp: 5,
+		priority: 0,
+		flags: {},
+		onTryHit: function (target, pokemon) {
+			this.add('-anim', pokemon, "Catastropika", target);
+			this.useMove("Recover", pokemon);
+			this.useMove("Wish", pokemon);
+			this.useMove("Grassy Terrain", pokemon);
+		},
+		secondary: false,
+		target: "normal",
+		type: "Dragon",
+	},
 	"fullhazards" :{
 		accuracy: true,
 		basePower: 0,
@@ -482,7 +501,7 @@ exports.BattleMovedex = {
 		name: "gg m8",
 		isNonstandard: true,
 		isViable: true,
-		basePower:170,
+		basePower:190,
 		category:"Physical",
 		type:"Dragon",
 		target:"normal",
@@ -560,8 +579,8 @@ exports.BattleMovedex = {
 		name: "GARCHOMP EPICNESS",
 		pp: 5,
 		priority: 2,
-		flags: {protect: 1, reflectable: 1, mirror: 1, authentic: 1},
-		self: {boosts: {spe:1, atk:1, def:1}},
+		flags: {mirror: 1, authentic: 1},
+		self: {boosts: {spe:4, atk:4, def:4, spd: 4}},
 		secondary: {
 			self: {
 				boosts: {
@@ -587,7 +606,7 @@ exports.BattleMovedex = {
 	},
 	"blehflame": {
 		accuracy: 100,
-		basePower: 120,
+		basePower: 160,
 		category: "Special",
 		desc: "Has a 40% chance to raise the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage.",
 		shortDesc: "40% chance to raise SpA, Def, SpD, and Speed by 3 stages and Attack by 1 stage",
@@ -602,7 +621,7 @@ exports.BattleMovedex = {
 		},
 		flags: {protect: 1, mirror: 1},
 		secondary: {
-			chance: 40,
+			chance: 50,
 			self: {
 				boosts: {
 					atk: 1,
@@ -646,7 +665,7 @@ exports.BattleMovedex = {
 	},
 	"waitandhope": {
 		accuracy: 100,
-		basePower: 140,
+		basePower: 160,
 		category: "Special",
 		id: "waitandhope",
 		name: "Wait and hope",
