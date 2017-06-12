@@ -2,10 +2,10 @@
 
 exports.BattleMovedex = {
 	"healingarea": {
-		shortDesc: "Recover, Wish and Grassy Terrain in one move",
 		accuracy: true,
 		category: "Status",
 		id: "healingarea",
+		shortDesc: "Recover, Wish and Grassy Terrain in one move",
 		isViable: true,
 		name: "Healing Area",
 		pp: 5,
@@ -54,31 +54,6 @@ exports.BattleMovedex = {
 		type: "Ground",
 		zMoveBoost: {evasion: 1},
 		contestType: "Clever",
-	},
-	"soontm": {
-		accuracy: 80,
-		basePower: 140,
-		category: "Physical",
-		desc: "Can hit Ghost Types.",
-		shortDesc: "Can hit Ghost Types.",
-		id: "soontm",
-		isViable: true,
-		name: "Soon TM",
-		pp: 5,
-		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, gravity: 1},
-		onPrepareHit: function (target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "High Jump Kick", target);
-		},
-		onEffectiveness: function (typeMod, type) {
-			if (type === 'Ghost') return 0;
-		},
-		secondary: false,
-		target: "normal",
-		type: "Fighting",
-		zMovePower: 195,
-		contestType: "Cool",
 	},
 	"corruptaura": {
 		accuracy: 80,
