@@ -53,7 +53,7 @@ exports.BattleAliases = {
 	"tmd": "[Gen 7] Trademarked",
 	"trademarked": "[Gen 7] Trademarked",
 	"mnmbh": "Mix and Mega Balanced Hackmons",
-	"dhssb": "Dragon Heaven Super Staff Bros [Beta]",
+	"dhssb": "[Gen 7] Dragon Heaven Super Staff Bros",
 	"ssb": "[Main] Super Staff Bros Melee",
 	"zshift": "[Gen 7] Z-Shift",
 	"zmoveseverywhere": "[Gen 7] Z-Moves Everywhere",
