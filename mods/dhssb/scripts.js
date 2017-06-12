@@ -41,7 +41,12 @@ exports.BattleScripts = {
 				signaturMove: "Knee of Justice",evs: {hp: 252, atk:252, spd: 252, def: 252, spe: 252},
 				nature:'Adamant',
 			},
-			
+			'Zygardeorder' : {
+				species: 'Zygarde-10%', ability: 'Rawr', item: 'Leftovers', gender: 'M',
+				moves: ['thousandarrows', 'spectralthief', 'uturn'],
+				signaturMove: "Soon TM",evs: {hp: 252, atk:252, spd: 252, def: 252, spe: 252},
+				nature:'Jolly',
+			},
 			'Flurbel' : {
 				species: 'Lillipup', ability: 'Contrary Plus Plus', item: 'Eviolite', gender: 'M',
 				moves: ['vcreate', 'superpower', 'dragonascent'],
