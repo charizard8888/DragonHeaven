@@ -1,7 +1,7 @@
 "use strict";
 
 exports.BattleMovedex = {
-		"healingarea": {
+	"healingarea": {
 		shortDesc: "Recover, Wish and Grassy Terrain in one move",
 		accuracy: true,
 		category: "Status",
@@ -106,7 +106,6 @@ exports.BattleMovedex = {
 		contestType: "Cool",
 	},
 	"thenetherlandsfirst": {
-		num: 245,
 		accuracy: 100,
 		basePower: 150,
 		category: "Physical",
