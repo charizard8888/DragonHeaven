@@ -501,7 +501,7 @@ exports.BattleAbilities = {
 			}
 		},
 		onUpdate: function(pokemon) {
-			if (pokemon.status === 'brn' || pokemon.status === 'frz' || pokemon.status === 'psn' || pokemon.status === 'tox' || pokemon.status === 'par' && target.hp = minhp) {
+			if (pokemon.status === 'brn' || pokemon.status === 'frz' || pokemon.status === 'psn' || pokemon.status === 'tox' || pokemon.status === 'par' && target.hp === target.maxhp ) {
 				this.add('-activate', pokemon, 'ability: Water Veil');
 				pokemon.cureStatus();
 			}
