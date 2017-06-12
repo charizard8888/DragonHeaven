@@ -2,10 +2,10 @@
 
 exports.BattleMovedex = {
 	"healingarea": {
-		shortDesc: "Recover, Wish and Grassy Terrain in one move",
 		accuracy: true,
 		category: "Status",
 		id: "healingarea",
+		shortDesc: "Recover, Wish and Grassy Terrain in one move",
 		isViable: true,
 		name: "Healing Area",
 		pp: 5,
