@@ -453,4 +453,15 @@ exports.commands = {
 		this.sendReplyBox(`${buf}</div>`);
 	},
 	istorlisthelp: ["/istorlist - Shows the list of Istor Pokemon."],
+	felist: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Fusion Evolution Pokemon</h2></center>`;
+		let feDex = require('../mods/fusionevolution/pokedex.js').BattlePokedex;
+		if (!feDex) return this.errorReply("Error Fetching Istor Data.");
+		Object.values(feDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.species}, Fusion Evolution" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	felisthelp: ["/felist - Shows the list of Pokemon in Fusion Evolution."],
 };
