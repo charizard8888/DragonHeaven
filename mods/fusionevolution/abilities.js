@@ -507,7 +507,7 @@ exports.BattleAbilities = {
 			}
 		},
 		onImmunity: function(type, pokemon) {
-			if (type === 'brn' || type === 'frz' || type === 'psn' || type === 'tox' || type === 'par' && target.hp = minhp) return false;
+			if (type === 'brn' || type === 'frz' || type === 'psn' || type === 'tox' || type === 'par' && target.hp === target.maxhp) return false;
 		},
 		id: "pristine",
 		name: "Pristine",
