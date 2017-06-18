@@ -1022,7 +1022,7 @@ exports.BattleAbilities = {
 			let oldAbility = source.setAbility('levitate', source, 'levitate', true);
 			if (oldAbility) {
 				this.add('-activate', target, 'ability: Levitate', oldAbility, '[of] ' + source);
-			}
+			},
 		},
 		id: "synchofloat",
 		name: "Synchofloat",
