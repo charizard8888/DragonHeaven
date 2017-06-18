@@ -741,7 +741,7 @@ exports.BattleAbilities = {
 				this.add('-start', target, 'ability: Flash Fire');
 			},
 			onModifyMove: function(move) {
-				if (!move || !move.type === 'Fire']) return;
+				if (!move || !move.type === 'Fire') return;
 				if (!move.secondaries) {
 					move.secondaries = [];
 				}
