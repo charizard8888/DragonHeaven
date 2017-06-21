@@ -177,26 +177,16 @@ exports.commands = {
 		if (mixedTemplate.types[0] === deltas.type) { // Add any type gains
 			mixedTemplate.types = [deltas.type];
 		} else if (deltas.type) {
-			mixedTemplate.types = [mixedTemplate.types[0], deltas.type];
+==== BASE ====
+			types = [types[0], deltas.type];
 		}
-		mixedTemplate.baseStats = {};
-		for (let statName in template.baseStats) { // Add the changed stats and weight
-			mixedTemplate.baseStats[statName] = Dex.clampIntRange(Dex.data.Pokedex[template.id].baseStats[statName] + deltas.baseStats[statName], 1, 255);
+		for (let statName in baseStats) { // Add the changed stats and weight
+			baseStats[statName] = Dex.clampIntRange(baseStats[statName] + deltas.baseStats[statName], 1, 255);
 		}
-		mixedTemplate.weightkg = Math.round(Math.max(0.1, template.weightkg + deltas.weightkg) * 100) / 100;
-		mixedTemplate.tier = "MnM";
-		let details;
-		let weighthit = 20;
-		if (mixedTemplate.weightkg >= 200) {
-			weighthit = 120;
-		} else if (mixedTemplate.weightkg >= 100) {
-			weighthit = 100;
-		} else if (mixedTemplate.weightkg >= 50) {
-			weighthit = 80;
-		} else if (mixedTemplate.weightkg >= 25) {
-			weighthit = 60;
-		} else if (mixedTemplate.weightkg >= 10) {
-			weighthit = 40;
+		let weightkg = Math.round(Math.max(0.1, template.weightkg + deltas.weightkg) * 100) / 100;
+		let type = '<span class="col typecol">';
+		for (let i = 0; i < types.length; i++) { // HTML for some nice type images.
+			type = `${type}<img src="https://play.pokemonshowdown.com/sprites/types/${types[i]}.png" alt="${types[i]}" height="14" width="32">`;
 		}
 		details = {
 			"Dex#": mixedTemplate.num,
@@ -209,9 +199,9 @@ exports.commands = {
 		details['<font color="#686868">Does Not Evolve</font>'] = "";
 		this.sendReply(`|raw|${Chat.getDataPokemonHTML(mixedTemplate)}`);
 		this.sendReply('|raw|<font size="1">' + Object.keys(details).map(detail => {
-				if (details[detail] === '') return detail;
-				return '<font color="#686868">' + detail + ':</font> ' + details[detail];
-			}).join("&nbsp;|&ThickSpace;") + '</font>');
+			if (details[detail] === '') return detail;
+			return '<font color="#686868">' + detail + ':</font> ' + details[detail];
+		}).join("&nbsp;|&ThickSpace;") + '</font>');
 	},
 	mixandmegahelp: ["/mnm <pokemon> @ <mega stone> - Shows the Mix and Mega evolved Pokemon's type and stats."],
 
@@ -222,43 +212,16 @@ exports.commands = {
 			return this.errorReply("Error: Pokemon not found.");
 		}
 		let bst = 0;
-		let mixedTemplate = Object.assign({}, Dex.getTemplate(target));
-		for (let i in mixedTemplate.baseStats) {
-			bst += mixedTemplate.baseStats[i];
+		let pokeobj = Object.assign({}, Dex.getTemplate(target));
+		for (let i in pokeobj.baseStats) {
+			bst += pokeobj.baseStats[i];
 		}
 		let newStats = {};
 		for (let i in mixedTemplate.baseStats) {
 			newStats[i] = mixedTemplate.baseStats[i] * (bst <= 350 ? 2 : 1);
 		}
-		mixedTemplate.baseStats = Object.assign({}, newStats);
-		mixedTemplate.tier = "350Cup";
-		let details;
-		let weighthit = 20;
-		if (mixedTemplate.weightkg >= 200) {
-			weighthit = 120;
-		} else if (mixedTemplate.weightkg >= 100) {
-			weighthit = 100;
-		} else if (mixedTemplate.weightkg >= 50) {
-			weighthit = 80;
-		} else if (mixedTemplate.weightkg >= 25) {
-			weighthit = 60;
-		} else if (mixedTemplate.weightkg >= 10) {
-			weighthit = 40;
-		}
-		details = {
-			"Dex#": mixedTemplate.num,
-			"Gen": mixedTemplate.gen,
-			"Height": mixedTemplate.heightm + " m",
-			"Weight": mixedTemplate.weightkg + " kg <em>(" + weighthit + " BP)</em>",
-			"Dex Colour": mixedTemplate.color,
-		};
-		if (mixedTemplate.eggGroups) details["Egg Group(s)"] = mixedTemplate.eggGroups.join(", ");
-		details['<font color="#686868">Does Not Evolve</font>'] = "";
-		this.sendReply(`|raw|${Chat.getDataPokemonHTML(mixedTemplate)}`);
-		this.sendReply('|raw|<font size="1">' + Object.keys(details).map(detail => {
-				if (details[detail] === '') return detail;
-				return '<font color="#686868">' + detail + ':</font> ' + details[detail];
-			}).join("&nbsp;|&ThickSpace;") + '</font>');
+		pokeobj.baseStats = Object.assign({}, newStats);
+		this.sendReply(`|html|${Chat.getDataPokemonHTML(pokeobj)}`);
 	},
 	'350cuphelp': ["/350 OR /350cup <pokemon> - Shows the base stats that a Pokemon would have in 350 Cup."],
 
@@ -287,35 +250,8 @@ exports.commands = {
 		for (let statName in mixedTemplate.baseStats) {
 			newStats[statName] = Dex.clampIntRange(mixedTemplate.baseStats[statName] + boost, 1, 255);
 		}
-		mixedTemplate.baseStats = Object.assign({}, newStats);
-		mixedTemplate.tier = "TS";
-		let details;
-		let weighthit = 20;
-		if (mixedTemplate.weightkg >= 200) {
-			weighthit = 120;
-		} else if (mixedTemplate.weightkg >= 100) {
-			weighthit = 100;
-		} else if (mixedTemplate.weightkg >= 50) {
-			weighthit = 80;
-		} else if (mixedTemplate.weightkg >= 25) {
-			weighthit = 60;
-		} else if (mixedTemplate.weightkg >= 10) {
-			weighthit = 40;
-		}
-		details = {
-			"Dex#": mixedTemplate.num,
-			"Gen": mixedTemplate.gen,
-			"Height": mixedTemplate.heightm + " m",
-			"Weight": mixedTemplate.weightkg + " kg <em>(" + weighthit + " BP)</em>",
-			"Dex Colour": mixedTemplate.color,
-		};
-		if (mixedTemplate.eggGroups) details["Egg Group(s)"] = mixedTemplate.eggGroups.join(", ");
-		details['<font color="#686868">Does Not Evolve</font>'] = "";
-		this.sendReply(`|raw|${Chat.getDataPokemonHTML(mixedTemplate)}`);
-		this.sendReply('|raw|<font size="1">' + Object.keys(details).map(detail => {
-				if (details[detail] === '') return detail;
-				return '<font color="#686868">' + detail + ':</font> ' + details[detail];
-			}).join("&nbsp;|&ThickSpace;") + '</font>');
+		template.baseStats = Object.assign({}, newStats);
+		this.sendReply(`|raw|${Chat.getDataPokemonHTML(template)}`);
 	},
 	'tiershifthelp': ["/ts OR /tiershift <pokemon> - Shows the base stats that a Pokemon would have in Tier Shift."],
 

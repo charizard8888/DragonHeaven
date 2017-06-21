@@ -34,7 +34,6 @@ $ cd Showdown-Boilerplate && npm install
 $ node app.js
 ```
 
-<<<<<<< HEAD
 ## Maintainers
 =======
 Detailed installation instructions
@@ -163,17 +162,25 @@ Retired Staff
 
 Major Contributors
 
+- Bär Halberkamp [bumbadadabum] - Development
 - Kevin Lau [Ascriptmaster] - Development, Art (battle animations)
 - Konrad Borowski [xfix] - Development
 - Quinton Lee [sirDonovan] - Development
->>>>>>> b54dfaa80ad685add1108cc328e71b2441ab37aa
 
-This boilerplate is brought to you and maintained by the following people:
+Contributors
 
-[![Philip La](https://avatars3.githubusercontent.com/u/5875574?s=117)](http://creaturephil.github.io) | [![jd](https://avatars1.githubusercontent.com/u/2987451?s=117)](https://github.com/jd4564) | [![Fender](https://avatars2.githubusercontent.com/u/8406186?s=117)](https://github.com/TheFenderStory)
-:---:|:---:|:---:|:---:|:---:
-[Philip La](http://creaturephil.github.io) | [jd](https://github.com/jd4564) | [Fender](https://github.com/TheFenderStory)
+- Andrew Goodsell [Zracknel] - Art (battle weather backdrops)
+- Avery Zimmer [Lyren, SolarisFox] - Development
+- Ben Davies [Morfent] - Development
+- Ben Frengley [TalkTakesTime] - Development
+- Cody Thompson [Rising_Dusk] - Development
+- Ian Clail [Layell] - Art (battle graphics, sprites)
+- Jeremy Piemonte [panpawn] - Development
+- Neil Rashbrook [urkerab] - Development
+- Robin Vandenbrande [Quinella] - Development
+- [Ridaz] - Art (battle animations)
+- Tobias Mann [asgdf] - Development
 
-## License
+Special thanks
 
-[MIT](LICENSE)
+- See http://pokemonshowdown.com/credits

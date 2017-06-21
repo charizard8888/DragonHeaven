@@ -4,7 +4,6 @@ exports.BattleItems = {
 	"abomasite": {
 		id: "abomasite",
 		name: "Abomasite",
-		isUnreleased: true,
 		spritenum: 575,
 		megaStone: "Abomasnow-Mega",
 		megaEvolves: "Abomasnow",
@@ -510,7 +509,6 @@ exports.BattleItems = {
 	"blazikenite": {
 		id: "blazikenite",
 		name: "Blazikenite",
-		isUnreleased: true,
 		spritenum: 584,
 		megaStone: "Blaziken-Mega",
 		megaEvolves: "Blaziken",
@@ -1118,7 +1116,7 @@ exports.BattleItems = {
 	},
 	"deepseascale": {
 		id: "deepseascale",
-		name: "DeepSeaScale",
+		name: "Deep Sea Scale",
 		spritenum: 93,
 		fling: {
 			basePower: 30,
@@ -1135,7 +1133,7 @@ exports.BattleItems = {
 	},
 	"deepseatooth": {
 		id: "deepseatooth",
-		name: "DeepSeaTooth",
+		name: "Deep Sea Tooth",
 		spritenum: 94,
 		fling: {
 			basePower: 90,
@@ -3139,7 +3137,6 @@ exports.BattleItems = {
 	"manectite": {
 		id: "manectite",
 		name: "Manectite",
-		isUnreleased: true,
 		spritenum: 596,
 		megaStone: "Manectric-Mega",
 		megaEvolves: "Manectric",
@@ -4720,7 +4717,6 @@ exports.BattleItems = {
 	"sceptilite": {
 		id: "sceptilite",
 		name: "Sceptilite",
-		isUnreleased: true,
 		spritenum: 613,
 		megaStone: "Sceptile-Mega",
 		megaEvolves: "Sceptile",
@@ -5299,7 +5295,6 @@ exports.BattleItems = {
 	"swampertite": {
 		id: "swampertite",
 		name: "Swampertite",
-		isUnreleased: true,
 		spritenum: 612,
 		megaStone: "Swampert-Mega",
 		megaEvolves: "Swampert",
@@ -5455,7 +5450,6 @@ exports.BattleItems = {
 	"tyranitarite": {
 		id: "tyranitarite",
 		name: "Tyranitarite",
-		isUnreleased: true,
 		spritenum: 607,
 		megaStone: "Tyranitar-Mega",
 		megaEvolves: "Tyranitar",
@@ -5640,6 +5634,7 @@ exports.BattleItems = {
 				}
 				if (activate) {
 					pokemon.setBoost(boosts);
+					this.add('-clearnegativeboost', pokemon, '[silent]');
 				}
 			},
 		},
