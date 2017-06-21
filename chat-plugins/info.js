@@ -90,7 +90,7 @@ exports.commands = {
 				if (targetAlt.group === '~' && user.group !== '~') continue;
 
 				buf += Chat.html`<br />Alt: <span class="username">${targetAlt.name}</span>`;
-				if (!targetAlt.connected) buf += ` <em style=\"color:gray\">(offline)</em>`;
+				if (!targetAlt.connected) buf += ` <em style="color:gray">(offline)</em>`;
 				prevNames = Object.keys(targetAlt.prevNames).join(", ");
 				if (prevNames) buf += `<br />Previous names: ${prevNames}`;
 			}
@@ -128,7 +128,16 @@ exports.commands = {
 		}
 		if ((user.can('ip', targetUser) || user === targetUser)) {
 			let ips = Object.keys(targetUser.ips);
-			ips = ips.map(ip => ip + (Punishments.sharedIps.has(ip) ? ' (shared)' : ''));
+			ips = ips.map(ip => {
+				if (Punishments.sharedIps.has(ip)) {
+					let sharedStr = 'shared';
+					if (Punishments.sharedIps.get(ip)) {
+						sharedStr += `: ${Punishments.sharedIps.get(ip)}`;
+					}
+					return ip + ` (${sharedStr})`;
+				}
+				return ip;
+			});
 			buf += `<br /> IP${Chat.plural(ips)}: ${ips.join(", ")}`;
 			if (user.group !== ' ' && targetUser.latestHost) {
 				buf += Chat.html`<br />Host: ${targetUser.latestHost}`;
@@ -349,33 +358,35 @@ exports.commands = {
 
 		let buffer = '';
 		let sep = target.split(',');
-		let targetId = toId(sep[0]);
+		target = sep[0];
+		let targetId = toId(target);
 		if (!targetId) return this.parse('/help data');
 		let targetNum = parseInt(targetId);
 		if (!isNaN(targetNum)) {
 			for (let p in Dex.data.Pokedex) {
 				let pokemon = Dex.getTemplate(p);
 				if (pokemon.num === targetNum) {
-					sep[0] = pokemon.species;
+					target = pokemon.species;
 					targetId = pokemon.id;
 					break;
 				}
 			}
 		}
-		let mod = Dex.mod('gen7');
+		let mod = Dex;
 		if (sep[1] && toId(sep[1]) in Dex.dexes) {
 			mod = Dex.mod(toId(sep[1]));
 		} else if (sep[1] && Dex.getFormat(sep[1]).mod) {
 			mod = Dex.mod(Dex.getFormat(sep[1]).mod);
 		}
-		let newTargets = mod.dataSearch(sep[0]);
+		let newTargets = mod.dataSearch(target);
 		let showDetails = (cmd === 'dt' || cmd === 'details');
 		if (newTargets && newTargets.length) {
 			for (let i = 0; i < newTargets.length; ++i) {
 				if (newTargets[i].isInexact && !i) {
-					buffer = `No Pok\u00e9mon, item, move, ability or nature named '${sep[0]}' was found${Dex.gen > mod.gen ? ` in Gen ${mod.gen}` : ""}. Showing the data of '${newTargets[0].name}' instead.\n`;
+					buffer = `No Pok\u00e9mon, item, move, ability or nature named '${target}' was found${Dex.gen > mod.gen ? ` in Gen ${mod.gen}` : ""}. Showing the data of '${newTargets[0].name}' instead.\n`;
 				}
-				if (newTargets[i].searchType === 'nature') {
+				switch (newTargets[i].searchType) {
+				case 'nature':
 					let nature = Dex.getNature(newTargets[i].name);
 					buffer += "" + nature.name + " nature: ";
 					if (nature.plus) {
@@ -385,24 +396,28 @@ exports.commands = {
 						buffer += "No effect.";
 					}
 					return this.sendReply(buffer);
-				} else {
-					let sType = newTargets[i].searchType.charAt(0).toUpperCase() + newTargets[i].searchType.substring(1, newTargets[i].searchType.length);
-					if (Chat[`getData${sType}HTML`]) {
-						let template = mod["get" + (sType === "Pokemon" ? "Template" : sType)](newTargets[i].name);
-						if (sType === "Pokemon") {
-							if (mod.gen === 1) {
-								template.baseStats["spc"] = template.baseStats.spa;
-							}
-							if (mod.gen < 3) delete template.abilities;
-						}
-						buffer += `|raw|${Chat[`getData${sType}HTML`](template)}\n`;
-					} else {
-						buffer += '|c|~|/data-' + newTargets[i].searchType + ' ' + newTargets[i].name + '\n';
-					}
+				case 'pokemon':
+					let template = mod.getTemplate(newTargets[i].name);
+					buffer += `|raw|${Chat.getDataPokemonHTML(template, mod.gen)}\n`;
+					break;
+				case 'item':
+					let item = mod.getItem(newTargets[i].name);
+					buffer += `|raw|${Chat.getDataItemHTML(item)}\n`;
+					break;
+				case 'move':
+					let move = mod.getMove(newTargets[i].name);
+					buffer += `|raw|${Chat.getDataMoveHTML(move)}\n`;
+					break;
+				case 'ability':
+					let ability = mod.getAbility(newTargets[i].name);
+					buffer += `|raw|${Chat.getDataAbilityHTML(ability)}\n`;
+					break;
+				default:
+					throw new Error(`Unrecognized searchType`);
 				}
 			}
 		} else {
-			return this.errorReply("No Pok\u00e9mon, item, move, ability or nature named '" + target + "' was found. (Check your spelling?)");
+			return this.errorReply(`No Pok\u00e9mon, item, move, ability or nature named '${target}' was found${Dex.gen > mod.gen ? ` in Gen ${mod.gen}` : ""}. (Check your spelling?)`);
 		}
 
 		if (showDetails) {
@@ -568,7 +583,7 @@ exports.commands = {
 		if (!target) return this.parse('/help weakness');
 		if (!this.runBroadcast()) return;
 		target = target.trim();
-		let targets = target.split(/ ?[,\/ ] ?/);
+		let targets = target.split(/ ?[,/ ] ?/);
 
 		let pokemon = Dex.getTemplate(target);
 		let type1 = Dex.getType(targets[0]);
@@ -1476,15 +1491,21 @@ exports.commands = {
 			return;
 		}
 		if (!room) {
-			this.errorReply("This is not a room you can set the rules of.");
+			return this.errorReply("This is not a room you can set the rules of.");
 		}
 		if (!this.can('editroom', null, room)) return;
 		if (target.length > 100) {
 			return this.errorReply("Error: Room rules link is too long (must be under 100 characters). You can use a URL shortener to shorten the link.");
 		}
 
-		room.rulesLink = target.trim();
-		this.privateModCommand(`(${user.name} changed the room rules link to: ${target})`);
+		if (target === 'delete' || target === 'remove') {
+			if (!room.rulesLink) return this.errorReply("This room does not have rules set to remove.");
+			delete room.rulesLink;
+			this.privateModCommand(`(${user.name} has removed the room rules link.)`);
+		} else {
+			room.rulesLink = target.trim();
+			this.privateModCommand(`(${user.name} changed the room rules link to: ${target})`);
+		}
 
 		if (room.chatRoomData) {
 			room.chatRoomData.rulesLink = room.rulesLink;
@@ -1493,7 +1514,8 @@ exports.commands = {
 	},
 	ruleshelp: ["/rules - Show links to room rules and global rules.",
 		"!rules - Show everyone links to room rules and global rules. Requires: + % @ * # & ~",
-		"/rules [url] - Change the room rules URL. Requires: # & ~"],
+		"/rules [url] - Change the room rules URL. Requires: # & ~",
+		"/rules remove - Removes a room rules URL. Requires: # & ~"],
 
 	'!faq': true,
 	faq: function (target, room, user) {
@@ -1599,6 +1621,8 @@ exports.commands = {
 				formatId = 'bh';
 			} else if (formatId === 'battlespotsingles') {
 				formatId = 'battle_spot_singles';
+			} else if (formatId === 'ubers') {
+				formatId = 'uber';
 			} else if (formatId.includes('vgc')) {
 				formatId = 'vgc' + formatId.slice(-2);
 				formatName = 'VGC20' + formatId.slice(-2);
@@ -1650,6 +1674,8 @@ exports.commands = {
 				formatId = 'bh';
 			} else if (formatId === 'battlespotsingles') {
 				formatId = 'battle_spot_singles';
+			} else if (formatId === 'ubers') {
+				formatId = 'uber';
 			} else if (formatId.includes('vgc')) {
 				formatId = 'vgc' + formatId.slice(-2);
 				formatName = 'VGC20' + formatId.slice(-2);
@@ -1672,6 +1698,8 @@ exports.commands = {
 	'!veekun': true,
 	veekun: function (target, broadcast, user) {
 		if (!this.runBroadcast()) return;
+
+		if (!target) return this.parse('/help veekun');
 
 		let baseLink = 'http://veekun.com/dex/';
 
@@ -1767,7 +1795,7 @@ exports.commands = {
 	'!dice': true,
 	roll: 'dice',
 	dice: function (target, room, user) {
-		if (!target || target.match(/[^d\d\s\-\+HL]/i)) return this.parse('/help dice');
+		if (!target || target.match(/[^\d\sdHL+-]/i)) return this.parse('/help dice');
 		if (!this.runBroadcast()) return;
 
 		// ~30 is widely regarded as the sample size required for sum to be a Gaussian distribution.
@@ -1784,7 +1812,7 @@ exports.commands = {
 		let offset = 0;
 		let removeOutlier = 0;
 
-		let modifierData = target.match(/[\-\+]/);
+		let modifierData = target.match(/[+-]/);
 		if (modifierData) {
 			switch (target.slice(modifierData.index).trim().toLowerCase()) {
 			case '-l':
