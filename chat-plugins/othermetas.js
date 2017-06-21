@@ -177,16 +177,26 @@ exports.commands = {
 		if (mixedTemplate.types[0] === deltas.type) { // Add any type gains
 			mixedTemplate.types = [deltas.type];
 		} else if (deltas.type) {
-==== BASE ====
-			types = [types[0], deltas.type];
+			mixedTemplate.types = [mixedTemplate.types[0], deltas.type];
 		}
-		for (let statName in baseStats) { // Add the changed stats and weight
-			baseStats[statName] = Dex.clampIntRange(baseStats[statName] + deltas.baseStats[statName], 1, 255);
+		mixedTemplate.baseStats = {};
+		for (let statName in template.baseStats) { // Add the changed stats and weight
+			mixedTemplate.baseStats[statName] = Dex.clampIntRange(Dex.data.Pokedex[template.id].baseStats[statName] + deltas.baseStats[statName], 1, 255);
 		}
-		let weightkg = Math.round(Math.max(0.1, template.weightkg + deltas.weightkg) * 100) / 100;
-		let type = '<span class="col typecol">';
-		for (let i = 0; i < types.length; i++) { // HTML for some nice type images.
-			type = `${type}<img src="https://play.pokemonshowdown.com/sprites/types/${types[i]}.png" alt="${types[i]}" height="14" width="32">`;
+		mixedTemplate.weightkg = Math.round(Math.max(0.1, template.weightkg + deltas.weightkg) * 100) / 100;
+		mixedTemplate.tier = "MnM";
+		let details;
+		let weighthit = 20;
+		if (mixedTemplate.weightkg >= 200) {
+			weighthit = 120;
+		} else if (mixedTemplate.weightkg >= 100) {
+			weighthit = 100;
+		} else if (mixedTemplate.weightkg >= 50) {
+			weighthit = 80;
+		} else if (mixedTemplate.weightkg >= 25) {
+			weighthit = 60;
+		} else if (mixedTemplate.weightkg >= 10) {
+			weighthit = 40;
 		}
 		details = {
 			"Dex#": mixedTemplate.num,
@@ -217,8 +227,8 @@ exports.commands = {
 			bst += pokeobj.baseStats[i];
 		}
 		let newStats = {};
-		for (let i in mixedTemplate.baseStats) {
-			newStats[i] = mixedTemplate.baseStats[i] * (bst <= 350 ? 2 : 1);
+		for (let i in pokeobj.baseStats) {
+			newStats[i] = pokeobj.baseStats[i] * (bst <= 350 ? 2 : 1);
 		}
 		pokeobj.baseStats = Object.assign({}, newStats);
 		this.sendReply(`|html|${Chat.getDataPokemonHTML(pokeobj)}`);
@@ -243,12 +253,12 @@ exports.commands = {
 			'LC Uber': 20,
 			'LC': 20,
 		};
-		let mixedTemplate = Object.assign({}, Dex.getTemplate(target));
-		let boost = boosts[mixedTemplate.tier];
-		if (!(mixedTemplate.tier in boosts)) boost = 0;
-		let newStats = {};
-		for (let statName in mixedTemplate.baseStats) {
-			newStats[statName] = Dex.clampIntRange(mixedTemplate.baseStats[statName] + boost, 1, 255);
+		let template = Object.assign({}, Dex.getTemplate(target));
+		if (!(template.tier in boosts)) return this.sendReplyBox(`${template.species} in Tier Shift: <br /> ${Object.values(template.baseStats).join('/')}`);
+		let boost = boosts[template.tier];
+		let newStats = Object.assign({}, template.baseStats);
+		for (let statName in template.baseStats) {
+			newStats[statName] = Dex.clampIntRange(newStats[statName] + boost, 1, 255);
 		}
 		template.baseStats = Object.assign({}, newStats);
 		this.sendReply(`|raw|${Chat.getDataPokemonHTML(template)}`);

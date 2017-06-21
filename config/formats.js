@@ -2139,23 +2139,6 @@ exports.Formats = [
 		section: "SM Singles",
 	},
 	{
-		name: "[Gen 7] Random Battle",
-		desc: ["Randomized teams of level-balanced Pok&eacute;mon with sets that are generated to be competitively viable."],
-
-		mod: 'gen7',
-		team: 'random',
-		ruleset: ['PotD', 'Pokemon', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod'],
-	},
-	{
-		name: "[Gen 7] Unrated Random Battle",
-
-		mod: 'gen7',
-		team: 'random',
-		challengeShow: false,
-		rated: false,
-		ruleset: ['PotD', 'Pokemon', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod'],
-	},
-	{
 		name: "[Gen 7] OU",
 		desc: [
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3592140/\">OU Metagame Discussion</a>",
@@ -2441,16 +2424,6 @@ exports.Formats = [
 		column: 2,
 	},
 	{
-		name: "[Gen 7] Anything Goes",
-		desc: [
-			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3523229/\">Anything Goes</a>",
-			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3548945/\">AG Resources</a>",
-		],
-		mod: 'gen7',
-		ruleset: ['Pokemon', 'Endless Battle Clause', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod'],
-		banlist: ['Illegal', 'Unreleased'],
-	},
-	{
 		name: "[Gen 7] Balanced Hackmons",
 		desc: [
 			"Anything that can be hacked in-game and is usable in local battles is allowed.",
@@ -2701,7 +2674,7 @@ exports.Formats = [
 		],
 		mod: 'gen7',
 		gameType: 'doubles',
-		
+
 		teamLength: {
 			validate: [2, 4],
 			battle: 2,
@@ -3522,7 +3495,7 @@ exports.Formats = [
 		    "All Pokemon have their stats, barring HP, scaled to give them a BST of around 600.",
 		    "&bullet; <a href=\"https://docs.google.com/spreadsheets/d/1JW-YTOUgg6AtF47Pmea1mOvCgszl-CGsWgratnvuLE8/edit#gid=1841107233\">Spreadsheet of all stats</a>",
 		],
-       
+
 		mod: 'gen7',
 		ruleset: ['[Gen 7] Anything Goes', 'Species Clause'],
 		banlist: ['Eviolite'],
@@ -3602,7 +3575,7 @@ exports.Formats = [
 			"NOTE: This is a long-term project and probably won't be done until June/July.",
 		],
 		mod: "prehistoric",
-		
+
 		rulset: ['[Gen 7] Ubers'],
 		banlist: ['Blue Orb', 'Shadow Tag'],
 	},
@@ -7625,7 +7598,7 @@ exports.Formats = [
  			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3587523/\">1v1</a>",
  			"<b>Banned Pokemon for UU 1v1:</b> Gyaradosite, Kyurem-Black, Charizardite X, Tapu Koko, Donphan, Mimikyu, Aegislash, Magnezone, Charizardite Y, Porygon-Z, Metagrossite, Tapu Lele, Jirachi, Durant, Golem, Dragonite, Venusaurite, Celesteela, Crustle, Kartana, Greninja, Snorlax",
  		],
- 
+
  		mod: 'gen7',
  		teamLength: {
  			validate: [1, 3],
