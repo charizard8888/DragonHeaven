@@ -1222,7 +1222,7 @@ Chat.uploadToHastebin = function (toUpload, callback) {
 	});
 	req.write(toUpload);
 	req.end();
-
+};
 /**
  * Takes an array and turns it into a sentence string by adding commas and the word 'and' at the end
  *
