@@ -62,9 +62,8 @@ exports.BattleScripts = {
 			break;
 		case 'team': {
 			decision.side.pokemon.splice(decision.index, 0, decision.pokemon);
-			if (decision.side.showOnce) {
-				decision.side.showOnce = false;
-				decision.side.pokemon[5].baseAbility = 'illusion';
+			if (decision.choice) {
+				decision.choice.count = 6;
 			}
 			decision.pokemon.position = decision.index;
 			// we return here because the update event would crash since there are no active pokemon yet
