@@ -1210,7 +1210,7 @@ exports.BattleAbilities = {
 				this.add('-start', target, 'ability: Flash Fire');
 			},
 			onModifyAtkPriority: 5,
-			onModifyAtk: function(atk, target attacker, defender, move) {
+			onModifyAtk: function(atk, target, attacker, defender, move) {
 				if (move.type === 'Fire' || target && target.volatiles['confusion']) {
 					this.debug('Flash Fire boost');
 					return this.chainModify(2);
