@@ -1,7 +1,7 @@
 {
   "name": "pokemon-showdown",
   "preferGlobal": true,
-  "description": "The server for the Pok\u00e9mon Showdown battle simulator",
+  "description": "The server for the Pokémon Showdown battle simulator",
   "version": "0.11.0",
   "dependencies": {
     "dem-feels": "^1.8.1",
@@ -29,8 +29,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "eslint --rulesdir=dev-tools/eslint --cache *.js chat-plugins/ config/ data/ dev-tools/ mods/ tournaments/ test/ && mocha",
-    "lint": "eslint --rulesdir=dev-tools/eslint --cache ."
+    "lint": "eslint --rulesdir=dev-tools/eslint --cache .",
+    "test": "eslint --rulesdir=dev-tools/eslint --cache *.js chat-plugins/ config/ data/ dev-tools/ mods/ sim/ tournaments/ test/ && mocha"
   },
   "bin": "./pokemon-showdown",
   "homepage": "http://pokemonshowdown.com",
