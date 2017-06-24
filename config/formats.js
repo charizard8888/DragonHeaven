@@ -2845,7 +2845,7 @@ exports.Formats = [
 		onBeforeSwitchIn: function (pokemon) {
 			let chimera = {}, pokemons = pokemon.side.pokemon;
 			for (let i = 0; i < pokemons.length; i++) {
-				if (pokemons[i].changeD) pokemons[i].baseAbility = pokemons[i].ability = pokemons[i].baseBaseAbility;
+				if (pokemons[i].baseBaseAbility) pokemons[i].baseAbility = pokemons[i].ability = pokemons[i].baseBaseAbility;
 			}
 			chimera.types = Object.assign([], pokemons[0].types);
 			chimera.species = chimera.baseSpecies = pokemons[0].species;
