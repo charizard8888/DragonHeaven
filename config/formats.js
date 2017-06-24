@@ -3634,10 +3634,12 @@ exports.Formats = [
   		onModifyTemplate: function (template, pokemon, source) {
   			//This hack is for something important: The Pokemon's Sprite.
   			if (!template.base) return template;
-  			template.species = template.baseSpecies = template.base;
+  			let temp = Objcet.assign({}, template);
+  			temp.species = temp.baseSpecies = template.base;
 			pokemon.name = template.species;
 			pokemon.fullname = `${pokemon.side.id}: ${pokemon.name}`;
 			pokemon.id = pokemon.fullname;
+			return temp;
   		},
   	},
 	{
