@@ -2838,7 +2838,7 @@ exports.Formats = [
 		banlist: ['Shedinja','Smeargle','Pure Power','Huge Power','Moody','Focus Sash','Perish Song','Transform'],
 		onBegin: function () {
 			for (let s = 0; s < this.sides.length; s++) {
-				sides[s].pokemon[5].baseBaseAbility = sides.pokemon[5].baseAbility;
+				sides[s].pokemon[5].baseBaseAbility = sides[s].pokemon[5].baseAbility;
 				sides[s].pokemon[5].baseAbility = 'illusion';
 			}
 		},
