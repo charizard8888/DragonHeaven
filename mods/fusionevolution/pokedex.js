@@ -25,6 +25,7 @@ exports.BattlePokedex = {
         weightkg: 75.5,
         color: "Blue",
         eggGroups: ["Water 2"],
+        base: 'Swampert',
     },
     swampamarmega: {
         num: 62,
@@ -48,6 +49,7 @@ exports.BattlePokedex = {
         weightkg: 75.5,
         color: "Blue",
         eggGroups: ["Water 2"],
+        base: 'Swampert-Mega',
     },
     gyarotic: {
         num: 63,
@@ -72,6 +74,7 @@ exports.BattlePokedex = {
         weightkg: 75.5,
         color: "Blue",
         eggGroups: ["Water 2"],
+        base: 'Gyarados',
     },
 
     gyaroticmega: {
@@ -96,6 +99,7 @@ exports.BattlePokedex = {
         weightkg: 75.5,
         color: "Blue",
         eggGroups: ["Water 2"],
+        base: 'Gyarotic-Mega'
     },
 
     azuninja: {
