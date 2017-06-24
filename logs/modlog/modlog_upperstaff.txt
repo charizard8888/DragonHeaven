@@ -232,3 +232,9 @@
 [2017-05-14T18:21:58.472Z] (upperstaff) charizard8888 is requested to change the news to something new
 [2017-05-15T13:07:57.754Z] (upperstaff) (A poll was started by Spandan.)
 [2017-05-15T17:49:57.610Z] (upperstaff) (smellslikememe was demoted to regular user by Spandan.)
+[2017-05-24T08:25:14.010Z] (upperstaff) (A poll was started by Spandan.)
+[2017-05-24T08:25:58.818Z] (upperstaff) (The poll was ended by Spandan.)
+[2017-05-26T10:51:18.861Z] (upperstaff) ,charizard8888 is requested to change the news to something new
+[2017-06-08T09:55:38.136Z] (upperstaff) clodofcloddiness used "/a help" in upperstaff
+[2017-06-08T09:56:03.778Z] (upperstaff) charizard8888 used "/a Test" in upperstaff
+[2017-06-14T16:01:09.291Z] (upperstaff) Spandan declared Attention all Upper staff (hope this helps you)

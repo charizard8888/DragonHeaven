@@ -504,3 +504,12 @@
 [2017-05-19T17:27:51.044Z] (development) (charizard8888 was demoted to Administrator by charizard8888.)
 [2017-05-19T17:45:34.324Z] (development) (Spandan changed the staffintro.)
 [2017-05-20T06:59:54.810Z] (development) (Spandan changed the staffintro.)
+[2017-05-20T08:15:34.750Z] (development) Spandan globally declared (chat level) HUGE UPDATE COMING: THings might crash
+[2017-06-05T16:25:02.632Z] (development) (Spandan changed the staffintro.)
+[2017-06-09T11:28:10.015Z] (development) (charizard8888 changed the staffintro.)
+[2017-06-09T11:28:15.883Z] (development) (charizard8888 changed the staffintro.)
+[2017-06-09T11:32:11.982Z] (development) (charizard8888 changed the staffintro.)
+[2017-06-10T10:07:03.749Z] (development) The Pokémon of the Day was changed to Umbreon by charizard8888.
+[2017-06-11T18:21:57.709Z] (development) EchoGaia was promoted to Room Driver by charizard8888.
+[2017-06-11T18:22:05.760Z] (development) Ludicrousity was promoted to Room Driver by charizard8888.
+[2017-06-12T10:58:05.616Z] (development) (charizard8888 was demoted to Room regular user by charizard8888.)

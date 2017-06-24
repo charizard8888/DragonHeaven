@@ -603,3 +603,9 @@
 [2017-05-02T11:42:08.131Z] (staff) (A poll was started by charizard8888.)
 [2017-05-02T11:44:58.172Z] (staff) (The poll was ended by flufi (◕‿◕).)
 [2017-05-10T11:59:58.373Z] (staff) spandan used "/a |html|<div class="message-error">The command "/sdbfn,sdbfg" does not exist. To send a message starting with "/sdbfn,sdbfg", type "//sdbfn,sdbfg".</div>" in staff
+[2017-05-30T17:17:00.504Z] (staff) (Spandan changed the roomintro.)
+[2017-05-30T17:17:35.733Z] (staff) (Spandan changed the roomintro.)
+[2017-05-30T17:19:06.600Z] (staff) (Spandan changed the roomintro.)
+[2017-05-30T17:21:22.485Z] (staff) (Spandan changed the staffintro.)
+[2017-06-05T16:22:27.966Z] (staff) Nixola☺ was appointed Room Owner by Spandan.
+[2017-06-18T12:46:50.539Z] (staff) BBgun999 was promoted to Room Moderator by BBgun999.

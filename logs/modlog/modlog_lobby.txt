@@ -4927,3 +4927,158 @@
 [2017-05-19T18:54:12.977Z] (lobby) smellslikememe was promoted to Operator by Zard8888 - ⓢⓛⓟ.
 [2017-05-20T05:23:53.700Z] (lobby) XpRienzo was promoted to Dragon Knight by XpRienzo.
 [2017-05-20T07:25:22.668Z] (lobby) (charizard8888 was demoted to Room regular user by Spandan.)
+[2017-05-20T14:01:24.645Z] (lobby) Spandan declared since zard is owner now he can do whatever the fuck he wants xdxxdxdxrdd
+[2017-05-20T16:15:01.303Z] (lobby) charizard8888 was promoted to Administrator by charizard8888.
+[2017-05-20T19:28:21.487Z] (lobby) smellslikememe was promoted to Room Operator by BBgun999.
+[2017-05-20T19:28:46.812Z] (lobby) aCaSuAlMeMeLoRd was promoted to Room Operator by BBgun999.
+[2017-05-20T19:31:56.912Z] (lobby) flufi was redirected to room Other Metas by Zyg-Ten%.
+[2017-05-20T19:42:59.875Z] (lobby) Primal Savage was muted by BBgun999 for 7 minutes. (lol)
+[2017-05-20T19:43:08.501Z] (lobby) Primal Savage was unmuted by BBgun999.
+[2017-05-20T19:44:48.177Z] (lobby) (flufi created a tournament in gen7ouunrestricted format.)
+[2017-05-20T19:48:33.973Z] (lobby) flufi was kicked from the room by BBgun999.
+[2017-05-20T19:48:46.180Z] (lobby) flufi was kicked from the room by Zyg-Ten%.
+[2017-05-20T19:50:39.743Z] (lobby) Primal Savage was promoted to Room Bot by BBgun999.
+[2017-05-20T19:50:57.132Z] (lobby) (Primal Savage was demoted to Room regular user by BBgun999.)
+[2017-05-20T19:52:32.314Z] (lobby) Primal Savage was promoted to Room Driver by BBgun999.
+[2017-05-20T19:52:53.078Z] (lobby) (Primal Savage was demoted to Room regular user by BBgun999.)
+[2017-05-20T22:50:31.442Z] (lobby) (BBgun999 forcibly ended a tournament.)
+[2017-05-21T04:08:55.762Z] (lobby) AltLivesMatter was muted by smellslikememe for 7 minutes. (no they don't)
+[2017-05-21T04:14:43.023Z] (lobby) AltLivesMatter was warned by smellslikememe. (bad meme >:()
+[2017-05-21T04:16:26.260Z] (lobby) AltLivesMatter was muted by smellslikememe for 7 minutes.
+[2017-05-21T04:18:09.902Z] (lobby) AltLivesMatter was warned by smellslikememe. (your existence disgusts me)
+[2017-05-21T04:19:09.064Z] (lobby) AltLivesMatter was warned by smellslikememe. (5. The First Amendment does not apply to PS, since PS is not a government organization. 6. Moderators have discretion to punish any behaviour they deem inappropriate, whether or not it's on this list.)
+[2017-05-21T04:19:44.549Z] (lobby) AltLivesMatter was warned by smellslikememe. (bad alt)
+[2017-05-21T04:21:18.581Z] (lobby) AltLivesMatter was warned by smellslikememe. (wew)
+[2017-05-21T04:21:52.020Z] (lobby) AltLivesMatter was warned by smellslikememe. (bc he's my alt)
+[2017-05-21T04:22:20.449Z] (lobby) AltLivesMatter was warned by smellslikememe. (bc he's my alt)
+[2017-05-21T04:22:21.964Z] (lobby) AltLivesMatter was warned by smellslikememe. (bc he's my alt)
+[2017-05-21T04:22:44.518Z] (lobby) AltLivesMatter was warned by smellslikememe. (ey baus)
+[2017-05-21T05:06:06.557Z] (lobby) smellslikememe was muted by BBgun999 for 1 hour. (don't be starting fake warnings)
+[2017-05-22T07:37:25.089Z] (lobby) parivard☎☀️ was globally banned by OutrageousBoT. (Blacklisted user) (42.111.104.116)
+[2017-05-23T11:57:50.246Z] (lobby) Beekay1976 was globally banned by OutrageousBoT. (Blacklisted user) (122.168.208.44)
+[2017-05-24T08:25:02.264Z] (lobby) Alpha shivam was appointed Room Owner by charizard8888.
+[2017-05-24T14:36:56.427Z] (lobby) (Alpha shivam created a tournament in gen7chimera1v1 format.)
+[2017-05-24T14:37:02.853Z] (lobby) (The tournament was set to disallow scouting by Alpha shivam)
+[2017-05-24T14:37:12.594Z] (lobby) (The tournament auto disqualify timer was set to 1.5 by Alpha shivam)
+[2017-05-24T15:08:42.968Z] (lobby) (Alpha shivam was disqualified from the tournament by EchoGaia)
+[2017-05-24T16:18:48.947Z] (lobby) Kaipixelleap was locked from talking by Spandan. (Proxy. Tell me when you disable it) (216.10.225.101)
+[2017-05-24T16:22:52.435Z] (lobby) Kaipixelleap was globally banned by OutrageousBoT. (Blacklisted user) (216.10.225.101)
+[2017-05-24T16:22:53.108Z] (lobby) (OutrageousBoT notes: kaipixelleap was added to the blacklist by  Spandan.)
+[2017-05-24T16:27:59.287Z] (lobby) aCaSuAlMeMeLoRd was promoted to Voice by Spandan.
+[2017-05-25T04:27:33.211Z] (lobby) (Ludicrousity was demoted to Room regular user by charizard8888.)
+[2017-05-25T04:27:40.995Z] (lobby) Ludicrousity was promoted to Operator by charizard8888.
+[2017-05-25T04:27:50.440Z] (lobby) shwb was promoted to Room Voice by charizard8888.
+[2017-05-25T04:27:55.673Z] (lobby) UncleFlacco was promoted to Voice by charizard8888.
+[2017-05-25T04:28:00.656Z] (lobby) (UncleFlacco was demoted to Room regular user by charizard8888.)
+[2017-05-25T04:49:37.811Z] (lobby) (Alpha shivam created a tournament in gen7chimera1v1 format.)
+[2017-05-25T12:14:14.381Z] (lobby) Beekay1976 was globally banned by Spandan. (/warn Beekay1976, dont troll here again or else you'll be locked) (122.168.210.160)
+[2017-05-25T12:14:26.813Z] (lobby) spandan used "/a |l|beekay1976" in lobby
+[2017-05-25T15:20:42.739Z] (lobby) (BatterBotto created a tournament in gen7randompartnersincrime format.)
+[2017-05-25T15:20:45.108Z] (lobby) (The tournament auto disqualify timer was set to 3 by BatterBotto)
+[2017-05-26T20:14:02.344Z] (lobby) Siivagunnerphobic was warned by Pika Xreme. (are you saying snow halation is a bad thing)
+[2017-05-26T20:14:49.189Z] (lobby) Pika Xreme was warned by Winona. (Nah, just too good for me)
+[2017-05-27T10:22:42.578Z] (lobby) (OutrageousBoT notes: outrageousbot was added to the blacklist by  charizard8888.)
+[2017-05-28T13:12:44.473Z] (lobby) renato2004 was warned by Pika Xreme. (no)
+[2017-05-28T13:23:03.674Z] (lobby) renato2004 was muted by EchoGaia for 7 minutes.
+[2017-05-28T13:23:09.968Z] (lobby) renato2004 was unmuted by EchoGaia.
+[2017-05-28T13:23:15.479Z] (lobby) renato2004 was muted by Winona for 7 minutes.
+[2017-05-28T13:23:21.279Z] (lobby) renato2004 was unmuted by Winona.
+[2017-05-28T13:30:53.588Z] (lobby) renato2004 was promoted to Room Voice by EchoGaia.
+[2017-05-28T13:46:42.251Z] (lobby) (EchoGaia created a tournament in gen7followtheleader format.)
+[2017-05-28T13:58:09.229Z] (lobby) Winona was banned from tournaments by Winona.
+[2017-05-28T13:58:13.620Z] (lobby) Winona was unbanned from tournaments by Winona.
+[2017-05-28T14:00:23.095Z] (lobby) BatterBotto was banned from tournaments by Winona.
+[2017-05-28T14:00:28.305Z] (lobby) BatterBotto was unbanned from tournaments by Winona.
+[2017-05-28T14:37:01.117Z] (lobby) (A poll was started by Winona.)
+[2017-05-28T14:39:14.050Z] (lobby) (The poll was ended by Winona.)
+[2017-05-28T14:46:11.409Z] (lobby) (EchoGaia created a tournament in gen7franticfusionsubers format.)
+[2017-05-28T14:53:21.403Z] (lobby) (BatterBotto was disqualified from the tournament by EchoGaia)
+[2017-05-28T14:55:23.358Z] (lobby) (EchoGaia forcibly ended a tournament.)
+[2017-05-28T14:56:23.561Z] (lobby) (EchoGaia created a tournament in gen7franticfusions format.)
+[2017-05-28T15:05:39.598Z] (lobby) focussash was banned from tournaments by EchoGaia.
+[2017-05-28T15:06:21.566Z] (lobby) haxx was banned from tournaments by Winona.
+[2017-05-28T15:06:59.024Z] (lobby) haxx was unbanned from tournaments by Winona.
+[2017-05-28T15:07:37.253Z] (lobby) (BatterBotto was disqualified from the tournament by EchoGaia)
+[2017-05-28T15:23:05.134Z] (lobby) (Winona created a tournament in gen7franticfusions format.)
+[2017-05-28T15:23:25.554Z] (lobby) (Winona forcibly ended a tournament.)
+[2017-05-28T15:23:44.100Z] (lobby) (Winona created a tournament in gen7franticfusions format.)
+[2017-05-28T15:28:36.297Z] (lobby) (BatterBotto was disqualified from the tournament by EchoGaia)
+[2017-05-29T12:09:04.340Z] (lobby) (charizard8888 was demoted to Room Driver by charizard8888.)
+[2017-05-29T12:09:14.499Z] (lobby) charizard8888 was warned by BatterBotto.
+[2017-05-29T12:09:14.800Z] (lobby) charizard8888 was muted by BatterBotto for 7 minutes.
+[2017-05-29T12:09:15.105Z] (lobby) charizard8888 was muted by BatterBotto for 1 hour.
+[2017-05-29T12:09:15.407Z] (lobby) charizard8888 was kicked from the room by BatterBotto.
+[2017-05-29T12:09:15.709Z] (lobby) charizard8888 was unmuted by BatterBotto.
+[2017-05-30T01:35:17.658Z] (lobby) saltydogman was warned by Pika Xreme. (Asexual, actually)
+[2017-05-30T01:36:51.691Z] (lobby) EagleX2505 was warned by Pika Xreme. (not sure what pax is but you're certainly not being polite)
+[2017-05-30T01:38:04.161Z] (lobby) EagleX2505 was muted by Pika Xreme for 7 minutes. (Okay, first off, I've only fully watched one anime, and second off, you're being a jerk, and third off, I'm not the server coder)
+[2017-05-30T12:52:43.424Z] (lobby) (A poll was started by Winona.)
+[2017-05-30T14:48:05.498Z] (lobby) (The poll was ended by Winona.)
+[2017-05-30T17:09:22.734Z] (lobby) spandan used "/a |l| Spandan" in lobby
+[2017-05-30T17:10:12.256Z] (lobby) spandan used "/a |l| Spandan" in lobby
+[2017-05-30T17:14:33.087Z] (lobby) spandan used "/a |l| Spandan" in lobby
+[2017-05-30T17:20:27.081Z] (lobby) spandan used "/a |html|<center><b>Announcement</b></center><br/>&nbsp;&nbsp;&nbsp;&nbsp;Hi guys! Its <b><font color = "#d64374">Spandan</font></b> here. I'm changing the roomintro to tell you guys something of really little significance.<br/>&nbsp;&nbsp;&nbsp;&nbsp;I wont say I'm quitting PS!; since those are rather short lived (lmao), but I want to take a break. I don't know when would I be back; I don't know whether I'll even touch a computer again. I've found interest in life, and I've been quite busy with it lately. I'm gonna have my 12th grade classes in school from June; and that is the sole reason I have to make this decision. <br/>&nbsp;&nbsp;&nbsp;&nbsp;First of all, I wanna say sorry from all the troubles that you guys are gonna go through; I know y'all relied on me for most of the code stuff for the server, and now that I'm leaving, you'll lack a person to fix bugs, etc. I wanted to prepare you guys before leaving, teach you how to do stuff, so that you could manage the server on your own. I told y'all that I am not gonna be there for you always, you would have to learn things yourself. And that time is here. Many of you have contributed to server code, created pet mods, made alterations, and I want you to do more. I want y'all to make the server a great place to hang out in general. I'm gonna ask XpRienzo to give charizard8888 push access to the server's GitHub Repo, so that he can merge your pulls from now on.<br/>&nbsp;&nbsp;&nbsp;&nbsp;I really had a great time with you guys. By contributing to the server's code, I learnt about a lot of things. I hope you too. I am going to miss you guys.<br/>&nbsp;&nbsp;&nbsp;&nbsp;THIS IS NOT GOODBYE. I may or may not come back; I may be dead after this; I may earn a good grade in 12th. I do not know. I wish you guys success.<br/>&nbsp;&nbsp;&nbsp;&nbsp;Please dont burn the server down and defy the great god charizard8888 while im gone,<br/><ul>-<b><font color = "#d64374">Spandan</font></b>, ex admin</ul>" in lobby
+[2017-05-30T17:23:22.608Z] (lobby) aCaSuAlMeMeLoRd was promoted to Operator by Spandan.
+[2017-05-30T17:23:26.867Z] (lobby) aCaSuAlMeMeLoRd was promoted to Room Driver by Spandan.
+[2017-05-30T17:23:42.574Z] (lobby) (Spandan was demoted to Voice by Spandan.)
+[2017-05-30T17:24:39.112Z] (lobby) Spandan was warned by aCaSuAlMeMeLoRd. (come back soon)
+[2017-05-30T19:24:46.195Z] (lobby) auth impersonation was warned by aCasualMemeLord. (meme)
+[2017-05-31T08:07:57.474Z] (lobby) (Zard8888 was demoted to regular user by charizard8888.)
+[2017-05-31T10:47:33.576Z] (lobby) (OutrageousBoT created a tournament in gen7dualwielding format.)
+[2017-05-31T10:48:35.709Z] (lobby) (charizard8888 forcibly ended a tournament.)
+[2017-05-31T10:50:31.113Z] (lobby) (OutrageousBoT created a tournament in gen7chimera1v1 format.)
+[2017-06-01T03:39:44.694Z] (lobby) DarkFlamesKing33 was globally banned by OutrageousBoT. (Blacklisted user) (73.234.28.53)
+[2017-06-02T06:55:18.235Z] (lobby) Retroman000 was promoted to Room Voice by Godzamber.
+[2017-06-02T06:55:24.784Z] (lobby) (Retroman000 was demoted to Room regular user by Godzamber.)
+[2017-06-03T09:04:52.328Z] (lobby) Jai shri krishna! was globally banned by OutrageousBoT. (Blacklisted user) (42.111.98.0)
+[2017-06-03T14:37:34.612Z] (lobby) Pika Xreme was kicked from the room by BBgun999.
+[2017-06-05T15:59:14.270Z] (lobby) charizard8888 was warned by BatterBotto. (git gud)
+[2017-06-05T15:59:14.572Z] (lobby) charizard8888 was muted by BatterBotto for 7 minutes. (git gud)
+[2017-06-05T15:59:14.877Z] (lobby) charizard8888 was muted by BatterBotto for 1 hour. (git gud)
+[2017-06-05T15:59:15.179Z] (lobby) charizard8888 was kicked from the room by BatterBotto.
+[2017-06-05T15:59:15.480Z] (lobby) charizard8888 was unmuted by BatterBotto.
+[2017-06-06T07:26:41.075Z] (lobby) (Godzamber was demoted to regular user by Clod of Cloddiness.)
+[2017-06-06T07:26:49.604Z] (lobby) amblood was promoted to Moderator by Clod of Cloddiness.
+[2017-06-06T14:12:42.943Z] (lobby) (A poll was started by Winona.)
+[2017-06-06T14:35:00.745Z] (lobby) (The poll was ended by Spandan.)
+[2017-06-06T14:35:20.357Z] (lobby) (A poll was started by Spandan.)
+[2017-06-06T14:35:24.523Z] (lobby) (The poll was ended by Spandan.)
+[2017-06-06T14:35:31.255Z] (lobby) (A poll was started by Spandan.)
+[2017-06-06T14:35:34.232Z] (lobby) (The poll was ended by Spandan.)
+[2017-06-06T14:35:37.688Z] (lobby) (A poll was started by Spandan.)
+[2017-06-08T09:53:41.230Z] (lobby) (charizard8888 notes: Would /a help?)
+[2017-06-08T09:53:54.869Z] (lobby) charizard8888 used "/a" in lobby
+[2017-06-08T09:54:33.009Z] (lobby) clodofcloddiness used "/a" in lobby
+[2017-06-08T09:56:05.230Z] (lobby) clodofcloddiness used "/a |leave|jaishrikrishna" in lobby
+[2017-06-09T13:35:49.152Z] (lobby) Pot2Nutellaジ✘ was promoted to Operator by charizard8888.
+[2017-06-09T13:39:50.745Z] (lobby) OutrageousBoT was kicked from the room by charizard8888.
+[2017-06-09T15:33:57.098Z] (lobby) (The poll was ended by charizard8888.)
+[2017-06-09T15:35:45.463Z] (lobby) (A poll was started by charizard8888.)
+[2017-06-10T16:52:03.811Z] (lobby) charizard8888 declared FREE BUCKS FOR ALL OF EM WHO WERE ON AT THAT TIME, CLAIM YOUR REWARD HERE!
+[2017-06-12T18:23:35.709Z] (lobby) (charizard8888 notes: inb4 feelsgd)
+[2017-06-12T18:36:55.746Z] (lobby) (charizard8888 created a tournament in gen7randomquantumbility format.)
+[2017-06-12T18:37:25.453Z] (lobby) (charizard8888 forcibly ended a tournament.)
+[2017-06-12T18:37:43.953Z] (lobby) (charizard8888 created a tournament in gen7randomquantumbility format.)
+[2017-06-12T18:38:34.732Z] (lobby) (The tournament auto start timer was set to 2 by charizard8888)
+[2017-06-13T14:03:46.318Z] (lobby) Kaipixelleap was globally banned by OutrageousBoT. (Blacklisted user) (208.88.168.201)
+[2017-06-15T08:17:30.422Z] (lobby) DarkFlamesKing33 was globally banned by OutrageousBoT. (Blacklisted user) (73.234.28.53)
+[2017-06-16T22:27:58.295Z] (lobby) (BBgun999 was demoted to Room regular user by BBgun999.)
+[2017-06-16T23:40:06.048Z] (lobby) (BBgun999 was demoted to Room Moderator by BBgun999.)
+[2017-06-17T12:29:07.889Z] (lobby) gglol123 was globally banned by BBgun999. (disrespecting our server and advertising main) (105.157.74.159)
+[2017-06-17T20:51:23.573Z] (lobby) (BBgun999 was demoted to Room regular user by BBgun999.)
+[2017-06-18T12:44:52.758Z] (lobby) ggdaca was promoted to Room Operator by BBgun999.
+[2017-06-18T12:45:34.796Z] (lobby) (BBgun999 was demoted to Room Bot by BBgun999.)
+[2017-06-18T12:45:59.410Z] (lobby) (BBgun999 was demoted to Room regular user by BBgun999.)
+[2017-06-18T13:09:06.174Z] (lobby) Zyg-Ten% was promoted to Leader by charizard8888.
+[2017-06-18T17:38:45.119Z] (lobby) (charizard8888 notes: Saving this here best thing ever: https://www.youtube.com/watch?v=ue-CBOrLnb0)
+[2017-06-18T17:51:38.153Z] (lobby) (A poll was started by charizard8888.)
+[2017-06-19T11:46:24.151Z] (lobby) Ebhainia was promoted to Driver by Charizard8888.
+[2017-06-19T11:50:28.632Z] (lobby) The Pokémon of the Day was changed to Slaking by Charizard8888.
+[2017-06-19T11:52:36.992Z] (lobby) The Pokémon of the Day was changed to Slaking by Charizard8888.
+[2017-06-21T09:11:10.642Z] (lobby) (Spandan changed the staffintro.)
+[2017-06-21T09:12:22.416Z] (lobby) (Spandan changed the staffintro.)
+[2017-06-21T13:18:00.912Z] (lobby) XpRienzo ☑◡☑ globally declared Brace your asses
+[2017-06-22T15:38:56.881Z] (lobby) BatterBotto was promoted to Leader by charizard8888.
+[2017-06-22T15:39:22.742Z] (lobby) (BatterBotto was demoted to Bot by charizard8888.)
+[2017-06-24T04:42:45.838Z] (lobby) (Spandan added a roomevent titled "test".)
+[2017-06-24T04:44:51.212Z] (lobby) (Spandan removed a roomevent titled "test".)

@@ -1801,3 +1801,17 @@
 [2017-05-17T10:25:20.537Z] (battle-gen7followtheleader-34183) charizard8888 declared gO!
 [2017-05-19T07:02:52.096Z] (battle-gen7chimera1v1-34833) charizard8888 forced a tie.
 [2017-05-19T07:03:37.699Z] (battle-gen7chimera1v1-34834) charizard8888 forced a tie.
+[2017-05-20T10:08:02.664Z] (battle-gen7ou-35142) Zard8888 was promoted to Room Bot by Zard8888.
+[2017-05-20T10:08:03.804Z] (battle-gen7ou-35142) Zard8888 declared Now
+[2017-05-20T10:08:31.444Z] (battle-gen7ou-35142) Zard8888 declared Now
+[2017-05-20T10:08:50.094Z] (battle-gen7ou-35142) Zard8888 declared Now
+[2017-05-20T10:09:09.141Z] (battle-gen7ou-35142) Zard8888 declared Now
+[2017-05-20T10:09:27.027Z] (battle-gen7ou-35142) Zard8888 declared Now
+[2017-05-20T10:10:20.830Z] (battle-gen7ou-35142) Zard8888 declared Wew NOW!
+[2017-05-20T10:12:09.424Z] (battle-gen7ou-35142) Zard8888 forced a win for acasualmemelord.
+[2017-06-10T04:41:46.326Z] (battle-gen7mixandmegastonesunleashed-37608) Ransei set modjoin to +.
+[2017-06-10T04:41:46.328Z] (battle-gen7mixandmegastonesunleashed-37608) Ransei made this room hidden.
+[2017-06-11T17:17:44.738Z] (battle-gen7dragonheavensuperstaffbros-37802) charizard8888 forced a win for charizard8888.
+[2017-06-11T17:18:02.195Z] (battle-gen7dragonheavensuperstaffbros-37803) charizard8888 forced a win for charizard8888.
+[2017-06-11T17:18:44.820Z] (battle-gen7dragonheavensuperstaffbros-37805) The Pokémon of the Day was changed to Lucario by charizard8888.
+[2017-06-19T11:52:53.815Z] (battle-gen7randomquantumbility-38596) Ebhainia was kicked from the room by Charizard8888.

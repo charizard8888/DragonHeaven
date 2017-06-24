@@ -57,7 +57,7 @@ exports.commands = {
 				}
 				let today = fs.readFileSync(`logs/chat/${room.id}/today.txt`).toString().split('\n').map(parseLog);
 				try {
-                                        Tools.uploadToHastebin(today.join('\n'), function (r, link) {
+                                        uploadToHastebin(today.join('\n'), function (r, link) {
                                                 link = "https://hastebin.com/raw/"+link.split('/')[link.split('/').length-1];
                                                 if (r) this.sendReplyBox(`<a href="${link}">Today's Roomlog</a>`);
                                                 else return this.sendReplyBox("Hastebin is probably rekt; Please try again later.");
@@ -100,7 +100,7 @@ exports.commands = {
 				this.sendReply('|uhtmlchange|roomlog' + user.userid + '|<b><font color = "red" size=4>Uploading to hastebin........</font></b>');
 				data = data.map(parseLog).join('\n');
 				try {
-					Tools.uploadToHastebin(data, function (r, link) {
+					uploadToHastebin(data, function (r, link) {
 						link = "https://hastebin.com/raw/"+link.split('/')[link.split('/').length-1];
 						if (r) return this.sendReply(`|uhtmlchange|roomlog${user.userid}|<font size = 4 color = "green"><a href="${link}">Click here - Roomlog for ${date}</a></font><br /><div style="margin-top: 7px ; padding-left: 12px"><button value="/roomlog month,${date.substring(0,7)}" name="send" title="Go Back to the date menu"><small>(Back)</small></button></div>`);
 						else this.sendReplyBox("An Error Occured.");

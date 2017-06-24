@@ -88,6 +88,10 @@ const formattingResolvers = [
 			case 'youtube':
 				query += " site:youtube.com";
 				querystr = `yt: ${query}`;
+				break;
+			case 'pokemon':
+			case 'item':
+				return `<psicon title="${query}" ${opt}="${query}" />`;
 			}
 		}
 
@@ -131,7 +135,7 @@ class PatternTester {
 	register(...elems) {
 		for (let elem of elems) {
 			this.elements.push(elem);
-			if (/^[^ \^\$\?\|\(\)\[\]]+ $/.test(elem)) {
+			if (/^[^ ^$?|()[\]]+ $/.test(elem)) {
 				this.fastElements.add(this.fastNormalize(elem));
 			}
 		}
@@ -371,7 +375,7 @@ class CommandContext {
 				message: this.message,
 			});
 			Rooms.global.reportCrash(err);
-			this.sendReply(`|html|<div class="broadcast-red"><b>Pokemon Showdown crashed!</b><br />Don't worry, we\'re working on fixing it.</div>`);
+			this.sendReply(`|html|<div class="broadcast-red"><b>Pokemon Showdown crashed!</b><br />Don't worry, we're working on fixing it.</div>`);
 		}
 		if (result === undefined) result = false;
 
@@ -423,6 +427,10 @@ class CommandContext {
 			return false;
 		}
 		return true;
+	}
+	checkGameFilter() {
+		if (!this.room || !this.room.game || !this.room.game.onChatMessage) return false;
+		return this.room.game.onChatMessage(this.message);
 	}
 	pmTransform(message) {
 		let prefix = `|pm|${this.user.getIdentity()}|${this.pmTarget.getIdentity()}|`;
@@ -685,6 +693,12 @@ class CommandContext {
 				return false;
 			}
 
+			let gameFilter = this.checkGameFilter();
+			if (gameFilter && !user.can('bypassall')) {
+				this.errorReply(gameFilter);
+				return false;
+			}
+
 			if (room) {
 				let normalized = message.trim();
 				user.lastMessage = message;
@@ -704,7 +718,7 @@ class CommandContext {
 		if (uri.startsWith('//')) return uri;
 		if (uri.startsWith('data:')) return uri;
 		if (!uri.startsWith('http://')) {
-			if (/^[a-z]+\:\/\//.test(uri) || isRelative) {
+			if (/^[a-z]+:\/\//.test(uri) || isRelative) {
 				return this.errorReply("URIs must begin with 'https://' or 'http://' or 'data:'");
 			}
 		} else {
@@ -757,7 +771,7 @@ class CommandContext {
 				this.errorReply('All images must have a width and height attribute');
 				return false;
 			}
-			let srcMatch = /src\s*\=\s*"?([^ "]+)(\s*")?/i.exec(match[0]);
+			let srcMatch = /src\s*=\s*"?([^ "]+)(\s*")?/i.exec(match[0]);
 			if (srcMatch) {
 				let uri = this.canEmbedURI(srcMatch[1], true);
 				if (!uri) return false;
@@ -766,7 +780,7 @@ class CommandContext {
 				images.lastIndex = match.index + 11;
 			}
 		}
-		if ((this.room.isPersonal || this.room.isPrivate === true) && !this.user.can('lock') && html.replace(/\s*style\s*=\s*\"?[^\"]*\"\s*>/g, '>').match(/<button[^>]/)) {
+		if ((this.room.isPersonal || this.room.isPrivate === true) && !this.user.can('lock') && html.replace(/\s*style\s*=\s*"?[^"]*"\s*>/g, '>').match(/<button[^>]/)) {
 			this.errorReply('You do not have permission to use scripted buttons in HTML.');
 			this.errorReply('If you just want to link to a room, you can do this: <a href="/roomid"><button>button contents</button></a>');
 			return false;
@@ -924,6 +938,17 @@ Chat.escapeHTML = function (str) {
 };
 
 /**
+ * Strips HTML from a string.
+ *
+ * @param {string} html
+ * @return {string}
+ */
+Chat.stripHTML = function (html) {
+	if (!html) return '';
+	return html.replace(/<[^>]*>/g, '');
+};
+
+/**
  * Template string tag function for escaping HTML
  *
  * @param  {string[]} strings
@@ -1012,19 +1037,11 @@ Chat.toDurationString = function (number, options) {
 	return parts.slice(positiveIndex).reverse().map((value, index) => value ? value + " " + unitNames[index] + (value > 1 ? "s" : "") : "").reverse().slice(0, precision).join(" ").trim();
 };
 
-Chat.getDataPokemonHTML = function (template) {
-	if (typeof template === 'string') template = Object.assign({}, Tools.getTemplate(template));
+Chat.getDataPokemonHTML = function (template, gen = 7) {
+	if (typeof template === 'string') template = Object.assign({}, Dex.getTemplate(template));
 	let buf = '<li class="result">';
 	buf += '<span class="col numcol">' + (template.tier) + '</span> ';
-	let num = 0;
-	if (template.spritenum) {
-		num = template.spritenum;
-	} else if (template.num < 802 && template.num > 0) {
-		num = template.num;
-	}
-	let top = Math.floor(num / 12) * 30;
-	let left = (num % 12) * 40;
-	buf += `<span class="col iconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1) no-repeat scroll -${left}px -${top}px"></span></span> `;
+	buf += `<span class="col iconcol"><psicon pokemon="${template.id}"/></span> `;
 	buf += '<span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/pokemon/' + template.id + '" target="_blank">' + template.species + '</a></span> ';
 	buf += '<span class="col typecol">';
 	if (template.types) {
@@ -1033,14 +1050,14 @@ Chat.getDataPokemonHTML = function (template) {
 		}
 	}
 	buf += '</span> ';
-	if (template.abilities) {
+	if (gen >= 3) {
 		buf += '<span style="float:left;min-height:26px">';
 		if (template.abilities['1']) {
 			buf += '<span class="col twoabilitycol">' + template.abilities['0'] + '<br />' + template.abilities['1'] + '</span>';
 		} else {
 			buf += '<span class="col abilitycol">' + template.abilities['0'] + '</span>';
 		}
-		if (template.abilities && template.abilities['S']) {
+		if (template.abilities['S']) {
 			buf += '<span class="col twoabilitycol' + (template.unreleasedHidden ? ' unreleasedhacol' : '') + '"><em>' + template.abilities['H'] + '<br />' + template.abilities['S'] + '</em></span>';
 		} else if (template.abilities['H']) {
 			buf += '<span class="col abilitycol' + (template.unreleasedHidden ? ' unreleasedhacol' : '') + '"><em>' + template.abilities['H'] + '</em></span>';
@@ -1057,9 +1074,9 @@ Chat.getDataPokemonHTML = function (template) {
 	buf += '<span class="col statcol"><em>HP</em><br />' + template.baseStats.hp + '</span> ';
 	buf += '<span class="col statcol"><em>Atk</em><br />' + template.baseStats.atk + '</span> ';
 	buf += '<span class="col statcol"><em>Def</em><br />' + template.baseStats.def + '</span> ';
-	if (template.baseStats.spc) {
-		buf += '<span class="col statcol"><em>Spc</em><br />' + template.baseStats.spc + '</span> ';
-		bst -= template.baseStats.spa + template.baseStats.spd;
+	if (gen <= 1) {
+		bst -= template.baseStats.spd;
+		buf += '<span class="col statcol"><em>Spc</em><br />' + template.baseStats.spa + '</span> ';
 	} else {
 		buf += '<span class="col statcol"><em>SpA</em><br />' + template.baseStats.spa + '</span> ';
 		buf += '<span class="col statcol"><em>SpD</em><br />' + template.baseStats.spd + '</span> ';
@@ -1072,7 +1089,7 @@ Chat.getDataPokemonHTML = function (template) {
 };
 
 Chat.getDataMoveHTML = function (move) {
-	if (typeof move === 'string') move = Object.assign({}, Tools.getMove(move));
+	if (typeof move === 'string') move = Object.assign({}, Dex.getMove(move));
 	let buf = `<ul class="utilichart"><li class="result">`;
 	buf += `<a data-entry="move|${move.name}"><span class="col movenamecol">${move.name}</span> `;
 	buf += `<span class="col typecol"><img src="//play.pokemonshowdown.com/sprites/types/${move.type}.png" alt="${move.type}" width="32" height="14">`;
@@ -1086,7 +1103,7 @@ Chat.getDataMoveHTML = function (move) {
 };
 
 Chat.getDataAbilityHTML = function (ability) {
-	if (typeof ability === 'string') ability = Object.assign({}, Tools.getAbility(ability));
+	if (typeof ability === 'string') ability = Object.assign({}, Dex.getAbility(ability));
 	let buf = `<ul class="utilichart"><li class="result">`;
 	buf += `<a data-entry="ability|${ability.name}"><span class="col namecol">${ability.name}</span> `;
 	buf += `<span class="col abilitydesccol">${ability.shortDesc || ability.desc}</span> `;
@@ -1095,116 +1112,10 @@ Chat.getDataAbilityHTML = function (ability) {
 };
 
 Chat.getDataItemHTML = function (item) {
-	if (typeof item === 'string') item = Object.assign({}, Tools.getItem(item));
-	let top = Math.floor(item.spritenum / 16) * 24;
-	let left = (item.spritenum % 16) * 24;
+	if (typeof item === 'string') item = Object.assign({}, Dex.getItem(item));
 	let buf = `<ul class="utilichart"><li class="result">`;
-	buf += `<a data-entry="item|${item.name}"><span class="col itemiconcol"><span style="background:transparent url(https://play.pokemonshowdown.com/sprites/itemicons-sheet.png) no-repeat scroll -${left}px -${top}px"></span></span> <span class="col namecol">${item.name}</span> `;
+	buf += `<a data-entry="item|${item.name}"><span class="col itemiconcol"><psicon item="${item.id}"></span> <span class="col namecol">${item.name}</span> `;
 	buf += `<span class="col itemdesccol">${item.shortDesc || item.desc}</span> `;
 	buf += `</a></li><li style="clear:both"></li></ul>`;
 	return buf;
-};
-
-Chat.news = function () {
-	if (!Chat.ServerNews) {
-		let news = fs.readFileSync("./logs/news.txt").toString().split("\n----------\n");
-		Chat.ServerNews = news[news.length-1];
-	}
-	return Chat.ServerNews.replace(/\n/g, '');
-};
-
-/**
- * Takes a string and converts it to HTML by replacing standard chat formatting with the appropriate HTML tags.
- *
- * @param  {string} str
- * @return {string}
- */
-Chat.parseText = function (str) {
-	str = Chat.escapeHTML(str).replace(/&#x2f;/g, '/').replace(linkRegex, uri => `<a href=${uri.replace(/^([a-z]*[^a-z:])/g, 'http://$1')}>${uri}</a>`);
-
-	// Primarily a test for a new way of parsing chat formatting. Will be moved to Chat once it's sufficiently finished and polished.
-	let output = [''];
-	let stack = [];
-
-	let parse = true;
-
-	let i = 0;
-	mainLoop: while (i < str.length) {
-		let token = str[i];
-
-		// Hardcoded parsing
-		if (parse && token === '`' && str.substr(i, 2) === '``') {
-			stack.push('``');
-			output.push('');
-			parse = false;
-			i += 2;
-			continue;
-		}
-
-		for (let f = 0; f < formattingResolvers.length; f++) {
-			let start = formattingResolvers[f].token;
-			let end = formattingResolvers[f].endToken || start;
-
-			if (stack.length && end.startsWith(token) && str.substr(i, end.length) === end && output[stack.length].replace(token, '').length) {
-				for (let j = stack.length - 1; j >= 0; j--) {
-					if (stack[j] === start) {
-						parse = true;
-
-						while (stack.length > j + 1) {
-							output[stack.length - 1] += stack.pop() + output.pop();
-						}
-
-						let str = output.pop();
-						let outstr = formattingResolvers[f].resolver(str.trim());
-						if (!outstr) outstr = `${start}${str}${end}`;
-						output[stack.length - 1] += outstr;
-						i += end.length;
-						stack.pop();
-						continue mainLoop;
-					}
-				}
-			}
-
-			if (parse && start.startsWith(token) && str.substr(i, start.length) === start) {
-				stack.push(start);
-				output.push('');
-				i += start.length;
-				continue mainLoop;
-			}
-		}
-
-		output[stack.length] += token;
-		i++;
-	}
-
-	while (stack.length) {
-		output[stack.length - 1] += stack.pop() + output.pop();
-	}
-
-	let result = output[0];
-
-	return result;
-};
-
-Chat.uploadToHastebin = function (toUpload, callback) {
-	var reqOpts = {
-		hostname: "hastebin.com",
-		method: "POST",
-		path: '/documents'
-	};
-	var req = require('https').request(reqOpts, function (res) {
-		res.on('data', function (chunk) {
-			try {
-				var linkStr = "hastebin.com/" + JSON.parse(chunk.toString())['key'];
-				if (typeof callback === "function") callback(true, linkStr);
-			} catch (e) {
-				if (typeof callback === "function") callback(false, e);
-			}
-		});
-	});
-	req.on('error', function (e) {
-		if (typeof callback === "function") callback(false, e);
-	});
-	req.write(toUpload);
-	req.end();
 };

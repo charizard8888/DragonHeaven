@@ -518,3 +518,12 @@
 [2017-05-18T13:53:50.296Z] (groupchat-icone-gamesmania) (ic>O<ne changed the roomintro.)
 [2017-05-18T13:53:57.777Z] (groupchat-icone-gamesmania) (ic>O<ne changed the roomintro.)
 [2017-05-18T13:54:10.016Z] (groupchat-icone-gamesmania) (ic>O<ne changed the roomintro.)
+[2017-06-08T09:58:05.166Z] (groupchat-clodofcloddiness-90693545) clodofcloddiness used "/a |leave|clodofcloddiness" in groupchat-clodofcloddiness-90693545
+[2017-06-08T09:58:39.225Z] (groupchat-clodofcloddiness-90693545) clodofcloddiness used "/a |j|nixola" in groupchat-clodofcloddiness-90693545
+[2017-06-08T09:58:46.290Z] (groupchat-clodofcloddiness-90693545) clodofcloddiness used "/a |l|nixola" in groupchat-clodofcloddiness-90693545
+[2017-06-08T09:58:51.205Z] (groupchat-clodofcloddiness-90693545) clodofcloddiness used "/a |j|&nixola" in groupchat-clodofcloddiness-90693545
+[2017-06-08T09:59:05.825Z] (groupchat-clodofcloddiness-90693545) clodofcloddiness used "/a |l|charizard8888" in groupchat-clodofcloddiness-90693545
+[2017-06-08T09:59:15.435Z] (groupchat-clodofcloddiness-90693545) clodofcloddiness used "/a |l|&nixola" in groupchat-clodofcloddiness-90693545
+[2017-06-19T02:15:20.811Z] (groupchat-smellslikememe-memes) (smellslikememe ( changed the roomintro.)
+[2017-06-22T07:34:58.232Z] (groupchat-charizard8888-testo) (ebhainia was demoted to Driver by charizard8888.)
+[2017-06-22T07:35:17.211Z] (groupchat-charizard8888-testo) ludicrousity was promoted to Operator by charizard8888.

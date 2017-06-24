@@ -97,3 +97,12 @@
 [2017-04-20T09:54:13.508Z] (theadminchat) (scarfwynaut was demoted to Voice by Spandan.)
 [2017-05-03T15:31:07.551Z] (theadminchat) flufi (◕‿◕) -  was kicked from the room by Spandan.
 [2017-05-04T18:21:17.724Z] (theadminchat) Snaq ( was promoted to Administrator by Spandan.
+[2017-05-20T08:35:30.998Z] (theadminchat) (nixola was demoted to Leader by Spandan.)
+[2017-05-31T11:51:14.628Z] (theadminchat) nixola was promoted to Administrator by XpRienzo.
+[2017-05-31T11:54:50.641Z] (theadminchat) clodofclodiness was promoted to Administrator by XpRienzo.
+[2017-05-31T11:55:05.112Z] (theadminchat) (clodofclodiness was demoted to regular user by XpRienzo.)
+[2017-05-31T11:55:11.586Z] (theadminchat) clodofcloddiness was promoted to Administrator by XpRienzo.
+[2017-06-19T09:15:02.522Z] (theadminchat) spandan used "/a |html|<psicon pokemon="meloetta" class="pixelated" style="opacity:0.4" />" in theadminchat
+[2017-06-19T09:15:09.748Z] (theadminchat) spandan used "/a |html|<psicon pokemon="meloetta" class="pixelated"/>" in theadminchat
+[2017-06-19T09:15:18.315Z] (theadminchat) spandan used "/a |html|<psicon pokemon="meloetta"/>" in theadminchat
+[2017-06-19T09:16:13.288Z] (theadminchat) spandan used "/a |html|<psicon pokemon="meloetta">" in theadminchat
