@@ -278,7 +278,7 @@ exports.commands = {
 			brock: 154,
 			misty: 155,
 			ltsurge: 156,
-			erica: 157,
+			erika: 157,
 			janine: 158,
 			sabrina: 159,
 			blaine: 160,
@@ -1537,7 +1537,7 @@ exports.commands = {
 		});
 
 		let proof = '';
-		let userReason = '';
+		let userReason = target;
 		let targetLowercase = target.toLowerCase();
 		if (target && (targetLowercase.includes('spoiler:') || targetLowercase.includes('spoilers:'))) {
 			let proofIndex = (targetLowercase.includes('spoilers:') ? targetLowercase.indexOf('spoilers:') : targetLowercase.indexOf('spoiler:'));
@@ -1619,7 +1619,7 @@ exports.commands = {
 		});
 
 		let proof = '';
-		let userReason = '';
+		let userReason = target;
 		let targetLowercase = target.toLowerCase();
 		if (target && (targetLowercase.includes('spoiler:') || targetLowercase.includes('spoilers:'))) {
 			let proofIndex = (targetLowercase.includes('spoilers:') ? targetLowercase.indexOf('spoilers:') : targetLowercase.indexOf('spoiler:'));
@@ -1729,7 +1729,7 @@ exports.commands = {
 		});
 
 		let proof = '';
-		let userReason = '';
+		let userReason = target;
 		let targetLowercase = target.toLowerCase();
 		if (target && (targetLowercase.includes('spoiler:') || targetLowercase.includes('spoilers:'))) {
 			let proofIndex = (targetLowercase.includes('spoilers:') ? targetLowercase.indexOf('spoilers:') : targetLowercase.indexOf('spoiler:'));

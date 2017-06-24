@@ -358,11 +358,12 @@ exports.commands = {
 
 		let buffer = '';
 		let sep = target.split(',');
-		target = sep[0];
+		if (sep.length !== 2) sep = [target];
+		target = sep[0].trim();
 		let targetId = toId(target);
 		if (!targetId) return this.parse('/help data');
 		let targetNum = parseInt(targetId);
-		if (!isNaN(targetNum)) {
+		if (!isNaN(targetNum) && '' + targetNum === target) {
 			for (let p in Dex.data.Pokedex) {
 				let pokemon = Dex.getTemplate(p);
 				if (pokemon.num === targetNum) {
@@ -1470,10 +1471,10 @@ exports.commands = {
 		});
 
 		const ProcessManager = require('../process-manager');
-		ProcessManager.cache.forEach((processManager, execFile) => {
+		ProcessManager.cache.forEach((execFile, processManager) => {
 			let i = 0;
 			processManager.processes.forEach(process => {
-				buf += `<strong>${process.process.pid}</strong> - ${path.baseName(execFile)} ${i++}<br />`;
+				buf += `<strong>${process.process.pid}</strong> - ${path.basename(execFile)} ${i++}<br />`;
 			});
 		});
 
