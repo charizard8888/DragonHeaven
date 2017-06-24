@@ -2554,7 +2554,6 @@ exports.commands = {
 				Chat.uncacheTree('./tournaments');
 				global.Tournaments = require('./tournaments');
 				Tournaments.tournaments = runningTournaments;
-				Object.assign(Chat.commands, require('./chat-plugins/github.js').commands);
 
 				return this.sendReply("Chat commands have been hot-patched.");
 			} else if (target === 'tournaments') {

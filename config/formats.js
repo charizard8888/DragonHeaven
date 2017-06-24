@@ -2833,25 +2833,19 @@ exports.Formats = [
 		desc: [
 			"&bullet; <a href=\"https://image.prntscr.com/image/a872872560444bce8d4dca0d3f4ed8de.png\">Chimera 1v1</a>",
 		],
-		mod: 'gen7',
+		mod: 'chimera1v1',
 		ruleset: ['Pokemon', 'Standard', 'OHKO Clause','Evasion Clause','Species Clause','Endless Battle Clause', 'Team Preview'],
 		banlist: ['Shedinja','Smeargle','Pure Power','Huge Power','Moody','Focus Sash','Perish Song','Transform'],
-		/*teamLength: {
-			validate: [6, 6],
-			battle: 1,
-		},*/
 		onBegin: function () {
 			for (let s = 0; s < this.sides.length; s++) {
-				let pokemons = this.sides[s].pokemon;
-				pokemons[5].changeD = pokemons[5].baseAbility;
-				pokemons[5].baseAbility = 'illusion';//hacky hack
+				sides[s].showOnce = true;
 			}
 		},
 		onBeforeSwitchIn: function (pokemon) {
 			let chimera = {}, pokemons = pokemon.side.pokemon;
-			for (let i = 0; i < pokemons.length; i++) {
+			/*for (let i = 0; i < pokemons.length; i++) {
 				if (pokemons[i].changeD) pokemons[i].baseAbility = pokemons[i].ability = pokemons[i].changeD;
-			}
+			}*/
 			chimera.types = Object.assign([], pokemons[0].types);
 			chimera.species = chimera.baseSpecies = pokemons[0].species;
 			chimera.set = Object.assign({}, pokemons[0].set);
@@ -2859,7 +2853,7 @@ exports.Formats = [
 			chimera.item = pokemons[1].item;
 			chimera.ability = pokemons[2].ability;
 			chimera.baseAbility = pokemons[2].baseAbility;
-			chimera.bleh = Object.assign({}, pokemons[3].baseStats);
+			chimera.BSTBak = Object.assign({}, pokemons[3].baseStats);
 			chimera.set.evs = pokemons[3].set.evs;
 			chimera.set.level = pokemons[3].set.level;
 			chimera.set.ivs = pokemons[3].set.ivs;
@@ -2883,14 +2877,11 @@ exports.Formats = [
 			pokemon.baseTemplate = pokemon.template = Object.assign(this.getTemplate(pokemon.species), chimera);
 			pokemon.formeChange(pokemon.template);
 			pokemon = Object.assign(pokemon, chimera);
-			pokemon.baseStats = Object.assign({}, chimera.bleh);
-			pokemon.stats = Object.assign({}, chimera.bleh);
+			pokemon.baseStats = Object.assign({}, chimera.BSTBak);
+			pokemon.stats = Object.assign({}, chimera.BSTBak);
 			pokemon.side.team = pokemon.side.team.slice(0, 1);
 			pokemon.side.pokemon = pokemon.side.pokemon.slice(0, 1);
 			pokemon.side.pokemonLeft = 1;
-		},
-		onSwitchIn: function (pokemon) {
-			this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
 		},
 		onValidateTeam: function (team) {
 			if (team.length < 6) return ["You need to have 6 Pokemon on your team."];
