@@ -3631,6 +3631,14 @@ exports.Formats = [
   		      ],
   		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
   		mod: 'fusionevolution',
+  		onModifyTemplate: function (template, pokemon, source) {
+  			//This hack is for something important: The Pokemon's Sprite.
+  			if (!template.base) return template;
+  			template.species = template.baseSpecies = template.base;
+			pokemon.name = template.species;
+			pokemon.fullname = `${pokemon.side.id}: ${pokemon.name}`;
+			pokemon.id = pokemon.fullname;
+  		},
   	},
 	{
 		name: "[Gen 7] Move Mastery",
