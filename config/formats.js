@@ -2831,16 +2831,16 @@ exports.Formats = [
 	{
 		name: "[Gen 7] Chimera 1v1",
 		desc: [
-			"&bullet; <a href=\"https://image.prntscr.com/image/a872872560444bce8d4dca0d3f4ed8de.png\">Chimera 1v1</a>",
+			"&bullet; <a href=\"http://www.smogon.com/forums/threads/3607451/\">Chimera 1v1</a>: The six Pokemon in your team are fused",
 		],
 		mod: 'chimera1v1',
 		ruleset: ['Pokemon', 'Standard', 'OHKO Clause','Evasion Clause','Species Clause','Endless Battle Clause', 'Team Preview'],
 		banlist: ['Shedinja','Smeargle','Pure Power','Huge Power','Moody','Focus Sash','Perish Song','Transform'],
-		onBegin: function () {
+		/*onBegin: function () {
 			for (let s = 0; s < this.sides.length; s++) {
 				sides[s].showOnce = true;
 			}
-		},
+		},*/
 		onBeforeSwitchIn: function (pokemon) {
 			let chimera = {}, pokemons = pokemon.side.pokemon;
 			/*for (let i = 0; i < pokemons.length; i++) {
