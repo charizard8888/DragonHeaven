@@ -6048,8 +6048,8 @@ exports.Formats = [
 			for (let i = 0; i < slot.length; i++) {
 				ab1 = ab1 + slot.charAt(i);
 				if (Dex.getAbility(ab1).exists) {
-					ab2 = slot.substring(i);
-					if (!Dex.getAbility(ab2).exists) return [ab1, ab2];
+					ab2 = slot.substring(i + 1);
+					if (Dex.getAbility(ab2).exists) return [ab1, ab2];
 				}
 			}
 			return ab1;
