@@ -6103,12 +6103,12 @@ exports.Formats = [
 		onValidateTeam: function(team, format) {
 			let abilityTable = {};
 			for (let i = 0; i < team.length; i++) {
-				let abilities = format.getAbilities(team[i].ability), ability = this.getAbility(abilities[0]);
+				let abilities = format.getAbilities(team[i].ability), ability = this.getAbility(Array.isArray(abilities) ? abilities[0] : abilities);
 				if (!abilityTable[ability.id]) abilityTable[ability.id] = 0;
 				if (++abilityTable[ability.id] > 2) {
 					return ["You are limited to two of each ability by Ability Clause.", "(You have more than two of " + ability.name + " or " + this.getAbility(toId(team[i].item)).name + " [Item])"];
 				}
-				if (!abilities[1]) continue;
+				if (!Array.isArray(abilities)) continue;
 				ability = this.getAbility(abilities[1]);
 				if (!ability) continue;
 				if (!abilityTable[ability]) abilityTable[ability] = 0;
