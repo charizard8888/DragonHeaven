@@ -6110,7 +6110,7 @@ exports.Formats = [
 				}
 				if (!Array.isArray(abilities)) continue;
 				ability = this.getAbility(abilities[1]);
-				if (!ability) continue;
+				if (!ability.exists) continue;
 				if (!abilityTable[ability.id]) abilityTable[ability.id] = 0;
 				if (++abilityTable[ability.id] > 2) {
 					return ["You are limited to two of each ability by Ability Clause.", "(You have more than two of " + ability.name + ")"];
