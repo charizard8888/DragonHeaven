@@ -397,7 +397,7 @@ exports.commands = {
 		let feDex = require('../mods/fusionevolution/pokedex.js').BattlePokedex;
 		if (!feDex) return this.errorReply("Error Fetching Istor Data.");
 		Object.values(feDex).forEach(mon => {
-			buf += `<button name="send" value="/dt ${mon.species}, Fusion Evolution" style="background:none;border:none;">${mon.species}</button><br>`;
+			buf += `<button name="send" value="/dt ${mon.species}, FE" style="background:none;border:none;">${mon.species}</button><br>`;
 		});
 		this.sendReplyBox(`${buf}</div>`);
 	},
