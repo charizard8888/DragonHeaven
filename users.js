@@ -1193,10 +1193,10 @@ class User {
 	}
 	joinRoom(room, connection) {
 		room = Rooms(room);
-		/*if (!this.shownNews) {
+		if (!this.shownNews) {
 			this.popup(`|html|${Chat.news()}`);
 			this.shownNews = true;
-		}*/
+		}
 		if (!room) return false;
 		if (!this.can('bypassall')) {
 			// check if user has permission to join

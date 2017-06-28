@@ -5082,3 +5082,16 @@
 [2017-06-22T15:39:22.742Z] (lobby) (BatterBotto was demoted to Bot by charizard8888.)
 [2017-06-24T04:42:45.838Z] (lobby) (Spandan added a roomevent titled "test".)
 [2017-06-24T04:44:51.212Z] (lobby) (Spandan removed a roomevent titled "test".)
+[2017-06-24T10:51:24.005Z] (lobby) Spandan declared: Who wanna Chimera 1v1
+[2017-06-24T10:57:42.021Z] (lobby) (BatterBotto created a tournament in gen7chimera1v1 format.)
+[2017-06-24T10:57:45.166Z] (lobby) (The tournament auto disqualify timer was set to 3 by BatterBotto)
+[2017-06-24T10:57:50.613Z] (lobby) (charizard8888 forcibly ended a tournament.)
+[2017-06-24T10:58:02.577Z] (lobby) (charizard8888 created a tournament in gen7chimera1v1 format.)
+[2017-06-25T15:48:40.752Z] (lobby) UncleFlacco was promoted to Voice by Zyg-Ten%.
+[2017-06-25T15:56:16.036Z] (lobby) Ludicrousity was promoted to Driver by Spandan.
+[2017-06-25T19:23:28.388Z] (lobby) (ludicrousity was forced to choose a new name by Zard8888 - Ⓦⓘⓝⓞⓝⓐ: Capitalise the L in your name)
+[2017-06-25T19:27:58.503Z] (lobby) Ludicrousity was warned by BatterBotto. (Its ya boi, Guzma*)
+[2017-06-25T19:27:58.805Z] (lobby) Ludicrousity was muted by BatterBotto for 7 minutes. (Its ya boi, Guzma*)
+[2017-06-25T19:27:59.110Z] (lobby) Ludicrousity was muted by BatterBotto for 1 hour. (Its ya boi, Guzma*)
+[2017-06-25T19:27:59.413Z] (lobby) Ludicrousity was kicked from the room by BatterBotto.
+[2017-06-25T19:27:59.714Z] (lobby) Ludicrousity was unmuted by BatterBotto.

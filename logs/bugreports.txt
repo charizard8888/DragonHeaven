@@ -125,3 +125,7 @@ Bug reports are stored here.
 [2017-06-16 at 23:37:25] Ludicrousity reported: 'aCAsuALmeMEloRF dhssb https://hastebin.com/lisilobuqi'
 [2017-06-19 at 12:15:07] Ludicrousity reported: 'graphical bug https://i.gyazo.com/41987a9bee694e1bc362ee55fec7f278.png'
 [2017-06-22 at 03:55:29] IT 1 1 reported: 'Hello I tried to play my opponent for the Mix and Mega Stones Unleashed tournament and even when we sent challenges, the other person could not see them so we were unable to play. This was not limited to just us two (we got a third party and it didn't work for them either) and it was also unable to connect to ladder (that was our next move, we tried to find each other on the ladder seeing how nobody else was online) so we figured this was a bug, and hopefully you can fix this so we can finish our finals! Thanks, IT11'
+[2017-06-25 at 18:14:23] charizard8888 reported: 'Spandan fix Dual Wielding'
+[2017-06-27 at 21:24:43] LorisMasta17 reported: 'in Multibility 2.0 my Mega Charizard X started the battle in mega form'
+[2017-06-27 at 21:37:12] LorisMasta17 reported: 'in multibility 2.0 my mega manectric had intimidate and electric surge prior to mega evolving, and desolate wouldnt work on mega camerupt'
+[2017-06-28 at 00:38:03] LorisMasta17 reported: 'whenever i am trying to play multibility 2.0 is "crashes the validator"'

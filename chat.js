@@ -1119,3 +1119,11 @@ Chat.getDataItemHTML = function (item) {
 	buf += `</a></li><li style="clear:both"></li></ul>`;
 	return buf;
 };
+
+Chat.news = function () {
+	if (Chat.ServerNews) return Chat.ServerNews;
+	let allNews = fs.readFileSync('logs/news.txt').toString().split('\n----------\n');
+	Chat.ServerNews = allNews[allNews.length - 1];
+	return Chat.ServerNews;
+};
+

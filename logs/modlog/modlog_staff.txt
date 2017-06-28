@@ -609,3 +609,5 @@
 [2017-05-30T17:21:22.485Z] (staff) (Spandan changed the staffintro.)
 [2017-06-05T16:22:27.966Z] (staff) Nixola☺ was appointed Room Owner by Spandan.
 [2017-06-18T12:46:50.539Z] (staff) BBgun999 was promoted to Room Moderator by BBgun999.
+[2017-06-25T15:58:31.362Z] (staff) Ludicrousity was promoted to Room Voice by Spandan.
+[2017-06-25T15:58:36.947Z] (staff) Zyg-Ten% was promoted to Room Moderator by Spandan.

@@ -431,3 +431,6 @@
 [2017-06-20T10:53:37.036Z] (test) (charizard8888 created a tournament in gen72v2doubles format.)
 [2017-06-20T10:54:23.028Z] (test) (charizard8888 forcibly ended a tournament.)
 [2017-06-20T18:55:13.156Z] (test) (charizard8888 notes: https://pastebin.com/Lt4ZqKkm)
+[2017-06-25T10:32:14.525Z] (test) charizard8888 used "/a |c|Winona/show" in test
+[2017-06-25T10:32:21.519Z] (test) charizard8888 used "/a |c|Winona|/show" in test
+[2017-06-27T21:19:07.366Z] (test) (scarfWynaut set modchat to false)
