@@ -2990,6 +2990,25 @@ exports.Formats = [
 		},
 	},
 	{
+		name: "[Gen 7] Dual Wielding",
+		desc: ["&bullet; A Pokemon can hold two items, the second item in the Ability Slot."],
+		ruleset: ['[Gen 7] OU'],
+		banlist: ['Ignore Illegal Abilities', 'Fling', 'Regigigas', 'Slaking'],
+		mod: 'dualwielding',
+		validateSet: function(set, teamHas) {
+			let ability = set.ability;
+			if (!Dex.data.Items[toId(ability)]) return [`${set.name || set.species}  has an invalid item.`];
+			let problems = this.validateSet(set, teamHas) || [];
+			let item2 = Dex.getItem(toId(ability));
+			let bans = {};
+			if (bans[toId(item2.id)]) problems.push(set.species + "'s item " + item2.name + " is banned by Dual Wielding.");
+			if (item2.id === toId(set.item)) problems.push(`You cannot have two of ${item2.name} on the same Pokemon.`);
+			if (item2.id.includes('choice') && toId(set.item).includes('choice')) problems.push(`You cannot have ${item2.name} and ${Dex.getItem(set.item).name} on the same Pokemon.`);
+			set.ability = ability;
+			return problems;
+		},
+	},
+	{
 		name: "[Gen 7] Follow the Leader",
 		desc: ['&bullet; <a href="https://www.smogon.com/forums/threads/3603860/">Follow the Leader</a>: The first Pokemon provides the moves and abilities for all other Pokemon on the team.'],
 		ruleset: ['[Gen 7] OU'],
@@ -3525,6 +3544,12 @@ exports.Formats = [
 			return this.validateSet(set, teamHas, template);
 		},
 
+	},
+	{
+		name: "[Gen 7] Ultimate Z",
+		desc: ["&bullet; Ultimate Z (or UZ for short) allows you to use any type of Z-Crystal on any move and as many times per battle as desired. The Z-Move becomes the type of the Z-Crystal used."],
+		ruleset: ['[Gen 7] OU'],
+		mod: 'ultimatez',
 	},
 	{
 		name: "[Gen 7] Z-Shift",
@@ -5881,25 +5906,6 @@ exports.Formats = [
 		mod: 'consolationprize',
 		ruleset: ['[Gen 7] OU'],
 		banlist: ['Mew', 'Celebi', 'Jirachi', 'Manaphy', 'Shaymin', 'Victini', 'Metagrossite'],
-	},
-	{
-		name: "[Gen 7] Dual Wielding",
-		desc: ["&bullet; A Pokemon can hold two items, the second item in the Ability Slot."],
-		ruleset: ['[Gen 7] OU'],
-		banlist: ['Ignore Illegal Abilities', 'Fling', 'Regigigas', 'Slaking'],
-		mod: 'dualwielding',
-		validateSet: function(set, teamHas) {
-			let ability = set.ability;
-			if (!Dex.data.Items[toId(ability)]) return [`${set.name || set.species}  has an invalid item.`];
-			let problems = this.validateSet(set, teamHas) || [];
-			let item2 = Dex.getItem(toId(ability));
-			let bans = {};
-			if (bans[toId(item2.id)]) problems.push(set.species + "'s item " + item2.name + " is banned by Dual Wielding.");
-			if (item2.id === toId(set.item)) problems.push(`You cannot have two of ${item2.name} on the same Pokemon.`);
-			if (item2.id.includes('choice') && toId(set.item).includes('choice')) problems.push(`You cannot have ${item2.name} and ${Dex.getItem(set.item).name} on the same Pokemon.`);
-			set.ability = ability;
-			return problems;
-		},
 	},
 	{
 		name: "[Gen 7] Crippled",
