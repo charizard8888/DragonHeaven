@@ -6498,7 +6498,7 @@ exports.Formats = [
 		section: "ORAS Singles",
 	},
 	{
-		name: "OU",
+		name: "[Gen 6] OU",
 		desc: [
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3573990/\">OU Metagame Discussion</a>",
 			"&bullet; <a href=\"https://www.smogon.com/dex/xy/tags/ou/\">OU Banlist</a>",
@@ -6509,7 +6509,7 @@ exports.Formats = [
 		banlist: ['Uber', 'Shadow Tag', 'Soul Dew'],
 	},
 	{
-		name: "Ubers",
+		name: "[Gen 6] Ubers",
 		desc: [
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3522911/\">Ubers Metagame Discussion</a>",
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3535106/\">Ubers Viability Ranking</a>",
@@ -6518,51 +6518,51 @@ exports.Formats = [
 		ruleset: ['Pokemon', 'Standard', 'Swagger Clause', 'Team Preview', 'Mega Rayquaza Clause'],
 	},
 	{
-		name: "UU",
+		name: "[Gen 6] UU",
 		desc: [
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3582473/\">np: UU Stage 7.3</a>",
 			"&bullet; <a href=\"https://www.smogon.com/dex/xy/tags/uu/\">UU Banlist</a>",
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3555277/\">UU Viability Ranking</a>",
 		],
 
-		ruleset: ['OU'],
+		ruleset: ['[Gen 6] OU'],
 		banlist: ['OU', 'BL', 'Drizzle', 'Drought', 'Baton Pass'],
 	},
 	{
-		name: "RU",
+		name: "[Gen 6] RU",
 		desc: [
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3583022/\">np: RU Stage 19</a>",
 			"&bullet; <a href=\"https://www.smogon.com/dex/xy/tags/ru/\">RU Banlist</a>",
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3558546/\">RU Viability Ranking</a>",
 		],
 
-		ruleset: ['UU'],
+		ruleset: ['[Gen 6] UU'],
 		banlist: ['UU', 'BL2'],
 	},
 	{
-		name: "NU",
+		name: "[Gen 6] NU",
 		desc: [
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3576747/\">np: NU Stage 15</a>",
 			"&bullet; <a href=\"https://www.smogon.com/dex/xy/tags/nu/\">NU Banlist</a>",
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3555650/\">NU Viability Ranking</a>",
 		],
 
-		ruleset: ['RU'],
+		ruleset: ['[Gen 6] RU'],
 		banlist: ['RU', 'BL3'],
 	},
 	{
-		name: "PU",
+		name: "[Gen 6] PU",
 		desc: [
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3586575/\">np: PU Stage 10</a>",
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3528743/\">PU Viability Ranking</a>",
 		],
 
-		ruleset: ['NU'],
+		ruleset: ['[Gen 6] NU'],
 		banlist: ['NU', 'BL4', 'Chatter'],
 		unbanlist: ['Baton Pass'],
 	},
 	{
-		name: "LC",
+		name: "[Gen 6] LC",
 		desc: [
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3505710/\">LC Metagame Discussion</a>",
 			"&bullet; <a href=\"https://www.smogon.com/dex/xy/formats/lc/\">LC Banlist</a>",
@@ -6574,7 +6574,7 @@ exports.Formats = [
 		banlist: ['LC Uber', 'Gligar', 'Misdreavus', 'Scyther', 'Sneasel', 'Tangela', 'Dragon Rage', 'Sonic Boom', 'Swagger'],
 	},
 	{
-		name: "Anything Goes",
+		name: "[Gen 6] Anything Goes",
 		desc: [
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3523229/\">Anything Goes Discussion</a>",
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3548945/\">Anything Goes Resources</a>",
@@ -6584,7 +6584,7 @@ exports.Formats = [
 		banlist: ['Illegal', 'Unreleased'],
 	},
 	{
-		name: "CAP",
+		name: "[Gen 6] CAP",
 		desc: [
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3537407/\">CAP Metagame Discussion</a>",
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3545628/\">CAP Viability Ranking</a>",
@@ -6592,10 +6592,10 @@ exports.Formats = [
 		],
 
 		searchShow: false,
-		ruleset: ['OU', 'Allow CAP'],
+		ruleset: ['[Gen 6] OU', 'Allow CAP'],
 	},
 	{
-		name: "Battle Spot Singles",
+		name: "[Gen 6] Battle Spot Singles",
 		desc: [
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3527960/\">Battle Spot Singles Discussion</a>",
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3554616/\">Battle Spot Singles Viability Ranking</a>",
@@ -6610,7 +6610,7 @@ exports.Formats = [
 		requirePentagon: true,
 	},
 	{
-		name: "Inverse Battle",
+		name: "[Gen 6] Inverse Battle",
 		desc: ["The effectiveness of attacks is inverted."],
 
 		searchShow: false,
@@ -6638,7 +6638,7 @@ exports.Formats = [
 		ruleset: ['PotD', 'Pokemon', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod'],
 	},
 	{
-		name: "Custom Game",
+		name: "[Gen 6] Custom Game",
 
 
 		canUseRandomTeam: true,
@@ -6656,7 +6656,7 @@ exports.Formats = [
 		section: "ORAS Doubles/Triples",
 	},
 	{
-		name: "Doubles OU",
+		name: "[Gen 6] Doubles OU",
 		desc: [
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3580680/\">np: Doubles OU Stage 5</a>",
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3498688/\">Doubles OU Banlist</a>",
@@ -6672,7 +6672,7 @@ exports.Formats = [
 		],
 	},
 	{
-		name: "Doubles Ubers",
+		name: "[Gen 6] Doubles Ubers",
 		desc: ["&bullet; <a href=\"https://www.smogon.com/forums/threads/3542746/\">Doubles Ubers</a>"],
 
 		gameType: 'doubles',
@@ -6680,11 +6680,11 @@ exports.Formats = [
 		banlist: ['Illegal', 'Unreleased', 'Dark Void'],
 	},
 	{
-		name: "Doubles UU",
+		name: "[Gen 6] Doubles UU",
 		desc: ["&bullet; <a href=\"https://www.smogon.com/forums/threads/3542755/\">Doubles UU</a>"],
 
 		gameType: 'doubles',
-		ruleset: ['Doubles OU'],
+		ruleset: ['[Gen 6] Doubles OU'],
 		banlist: [
 			'Aegislash', 'Amoonguss', 'Arcanine', 'Azumarill', 'Bisharp', 'Breloom', 'Charizard-Mega-Y', 'Charizardite Y',
 			'Conkeldurr', 'Cresselia', 'Diancie-Mega', 'Diancite', 'Ferrothorn', 'Garchomp', 'Gardevoir-Mega', 'Gardevoirite',
@@ -6695,7 +6695,7 @@ exports.Formats = [
 		],
 	},
 	{
-		name: "VGC 2016",
+		name: "[Gen 6] VGC 2016",
 		desc: [
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3558332/\">VGC 2016 Rules</a>",
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3580592/\">VGC 2016 Viability Ranking</a>",
@@ -6724,7 +6724,7 @@ exports.Formats = [
 		},
 	},
 	{
-		name: "Battle Spot Doubles",
+		name: "[Gen 6] Battle Spot Doubles",
 		desc: [
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3560820/\">Battle Spot Doubles Metagame Discussion</a>",
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3560824/\">Battle Spot Doubles Viability Ranking</a>",
@@ -6748,7 +6748,7 @@ exports.Formats = [
 		ruleset: ['PotD', 'Pokemon', 'HP Percentage Mod', 'Cancel Mod'],
 	},
 	{
-		name: "Doubles Custom Game",
+		name: "[Gen 6] Doubles Custom Game",
 
 		gameType: 'doubles',
 
@@ -6760,7 +6760,7 @@ exports.Formats = [
 		ruleset: ['Team Preview', 'Cancel Mod'],
 	},
 	{
-		name: "Battle Spot Triples",
+		name: "[Gen 6] Battle Spot Triples",
 		desc: [
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3533914/\">Battle Spot Triples Metagame Discussion</a>",
 			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3549201/\">Battle Spot Triples Viability Ranking</a>",
@@ -6775,7 +6775,7 @@ exports.Formats = [
 		requirePentagon: true,
 	},
 	{
-		name: "Triples Custom Game",
+		name: "[Gen 6] Triples Custom Game",
 
 		gameType: 'triples',
 
