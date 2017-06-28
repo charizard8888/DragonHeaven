@@ -110,16 +110,6 @@ const formattingResolvers = [
 	}},
 ];
 
-const MAX_MESSAGE_LENGTH = 300;
-
-const BROADCAST_COOLDOWN = 20 * 1000;
-const MESSAGE_COOLDOWN = 5 * 60 * 1000;
-
-const MAX_PARSE_RECURSION = 10;
-
-const VALID_COMMAND_TOKENS = '/!';
-const BROADCAST_TOKEN = '!';
-
 const fs = require('fs');
 const path = require('path');
 const parseEmoticons = require('./chat-plugins/emoticons').parseEmoticons;
