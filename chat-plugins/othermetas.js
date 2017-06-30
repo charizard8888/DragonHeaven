@@ -398,8 +398,8 @@ exports.commands = {
 	felist: function (target, room, user) {
 		if (!this.runBroadcast()) return;
 		let buf = `<div class=infobox-limited><center><h2>List Of Fusion Evolution Pokemon</h2></center>`;
-		let feDex = require('../mods/fusionevolution/pokedex.js').BattlePokedex;
-		if (!feDex) return this.errorReply("Error Fetching Istor Data.");
+		let feDex = require('../mods/fe/pokedex.js').BattlePokedex;
+		if (!feDex) return this.errorReply("Error Fetching FE Data.");
 		Object.values(feDex).forEach(mon => {
 			buf += `<button name="send" value="/dt ${mon.species}, FE" style="background:none;border:none;">${mon.species}</button><br>`;
 		});
