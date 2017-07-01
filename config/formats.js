@@ -3304,24 +3304,40 @@ exports.Formats = [
 		ruleset: ['[Gen 7] OU'],
 		banlist: [],
 	},
-	{
+{
 		name: "[Gen 7] Metagamiate",
-		desc: ["&bullet;<a href = \"http://www.smogon.com/forums/threads/3604808/\">Metagamiate</a>: Every Pokemon has a -ate ability matching its primary type or secondary type if shiny."],
+		desc: ["&bullet; <a href=\"https://www.smogon.com/forums/threads/3604808/\">Metagamiate</a>"],
+		section: "idk be creative man",
+		
 		mod: 'gen7',
 		ruleset: ['[Gen 7] OU'],
 		banlist: ['Dragonite', 'Kyurem-Black'],
 		onModifyMovePriority: -1,
-		onModifyMove: function(move, pokemon) {
-			if (move.type !== 'Normal' || move.id === 'hiddenpower' || pokemon.hasAbility(['aerilate', 'galvanize', 'pixilate', 'refrigerate']) || move.isZ) return;
-			let types = pokemon.getTypes();
-			let type = types.length < 2 || !pokemon.set.shiny ? types[0] : types[1];
-			move.type = type;
-			move.isMetagamiate = true;
+		onModifyMove: function (move, pokemon) {
+			if (move.type === 'Normal' && !move.isZ && move.id !== 'hiddenpower' && !pokemon.hasAbility(['aerilate', 'galvanize', 'normalize', 'pixilate', 'refrigerate'])) {
+				let types = pokemon.getTypes();
+				let type = types.length < 2 || !pokemon.set.shiny ? types[0] : types[1];
+				move.type = type;
+				move.isMetagamiate = true;
+			}
 		},
 		onBasePowerPriority: 8,
-		onBasePower: function(basePower, attacker, defender, move) {
+		onBasePower: function (basePower, attacker, defender, move) {
 			if (!move.isMetagamiate) return;
-			return this.chainModify([0x14CD, 0x1000]);
+			return this.chainModify([0x1333, 0x1000]);
+		},
+		validateSet: function (set, teamHas) {
+			let trueTemplate = this.dex.getTemplate(set.species)
+			let forgedTemplate = Object.assign({}, this.dex.getTemplate(set.species));
+			if (forgedTemplate.eventPokemon) {
+				let ep = []; //Avoid format crosstalk by using an empty array as a base
+				for (let i = 0; i < forgedTemplate.eventPokemon.length; i++) {
+					ep.push(Object.assign({}, forgedTemplate.eventPokemon[i])); //Avoid format crosstalk by using Object.assign
+					ep[i].shiny = 1;
+				}
+				forgedTemplate.eventPokemon = ep;
+			}
+			return this.validateSet(set, teamHas, forgedTemplate);
 		},
 	},
 	{
