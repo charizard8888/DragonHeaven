@@ -3839,7 +3839,7 @@ exports.BattleScripts = {
 		for (let i = 0, l = setList.length; i < l; i++) {
 			let curSet = setList[i];
 			let itemData = this.getItem(curSet.item);
-			//if (teamData.megaCount > 0 && itemData.megaStone) continue; // reject 2+ mega stones
+			if (teamData.megaCount > 0 && itemData.megaStone) continue; // reject 2+ mega stones
 			if (itemsMax[itemData.id] && teamData.has[itemData.id] >= itemsMax[itemData.id]) continue;
 
 			let abilityData = this.getAbility(curSet.ability);
@@ -3903,11 +3903,12 @@ exports.BattleScripts = {
 		// The teams generated depend on the tier choice in such a way that
 		// no exploitable information is leaked from rolling the tier in getTeam(p1).
 		let availableTiers = ['BH'];
-		const chosenTier = availableTiers;
+		if (!this.factoryTier) this.factoryTier = availableTiers[this.random(availableTiers.length)];
+		const chosenTier = this.factoryTier;
 
 		let pokemon = [];
 
-		let pokemonPool = Object.keys(this.randomFactorySets[chosenTier]);
+		let pokemonPool = Object.keys(this.randomOMFactorySets[chosenTier]);
 
 		let teamData = {typeCount: {}, typeComboCount: {}, baseFormes: {}, megaCount: 0, has: {}, forceResult: forceResult, weaknesses: {}, resistances: {}};
 		let requiredMoveFamilies = {'hazardSet': 1, 'hazardClear':1};
@@ -3931,8 +3932,8 @@ exports.BattleScripts = {
 			// Limit to one of each species (Species Clause)
 			if (teamData.baseFormes[template.baseSpecies]) continue;
 
-			// Limit the number of Megas to one, unless the format is Balanced Hackmons
-			if (chosenTier !== 'BH' && teamData.megaCount >= 1 && speciesFlags.megaOnly) continue;
+			// Limit the number of Megas to one
+			if (teamData.megaCount >= 1 && speciesFlags.megaOnly) continue;
 
 			// Limit 2 of any type
 			let types = template.types;
