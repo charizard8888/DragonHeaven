@@ -2995,7 +2995,7 @@ exports.Formats = [
 			}
 		},
 	},
-		{
+			{
 		name: "[Gen 7] Dual Wielding",
 		desc: ["&bullet; A Pokemon can hold two items, the second item in the Ability Slot."],
 		ruleset: ['[Gen 7] OU'],
@@ -3003,13 +3003,13 @@ exports.Formats = [
 		mod: 'dualwielding',
 		validateSet: function(set, teamHas) {
 			let ability = set.ability;
-			if (!this.tools.data.Items[toId(ability)]) return [`${set.name || set.species}  has an invalid item.`];
+			if (!Dex.data.Items[toId(ability)]) return [`${set.name || set.species}  has an invalid item.`];
 			let problems = this.validateSet(set, teamHas) || [];
-			let item2 = this.tools.getItem(toId(ability));
+			let item2 = Dex.getItem(toId(ability));
 			let bans = {};
 			if (bans[toId(item2.id)]) problems.push(set.species + "'s item " + item2.name + " is banned by Dual Wielding.");
 			if (item2.id === toId(set.item)) problems.push(`You cannot have two of ${item2.name} on the same Pokemon.`);
-			if (item2.id.includes('choice') && toId(set.item).includes('choice')) problems.push(`You cannot have ${item2.name} and ${this.tools.getItem(set.item).name} on the same Pokemon.`);
+			if (item2.id.includes('choice') && toId(set.item).includes('choice')) problems.push(`You cannot have ${item2.name} and ${Dex.getItem(set.item).name} on the same Pokemon.`);
 			set.ability = ability;
 			return problems;
 		},
