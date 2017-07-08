@@ -3313,8 +3313,6 @@ exports.Formats = [
 {
 		name: "[Gen 7] Metagamiate",
 		desc: ["&bullet; <a href=\"https://www.smogon.com/forums/threads/3604808/\">Metagamiate</a>"],
-		section: "idk be creative man",
-		
 		mod: 'gen7',
 		ruleset: ['[Gen 7] OU'],
 		banlist: ['Dragonite', 'Kyurem-Black'],
