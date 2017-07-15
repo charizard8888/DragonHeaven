@@ -3633,8 +3633,8 @@ exports.Formats = [
 		name: "[Gen 7] Choonmons δ",
 		desc: ["Choonmons is a pet mod created by Choon. Yup.<br>&bullet; <a href=\"http://www.smogon.com/forums/threads/3546063/\">Choonmons Thread</a>"],
 		mod: 'choonmons',
-		ruleset: ['Illegal', 'Unreleased','Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
-		banlist: ['Uber', 'Soul Dew', 'Lucarionite', 'Mawilite', 'Salamencite'],
+		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+		banlist: ['Uber', 'Soul Dew', 'Lucarionite', 'Mawilite', 'Salamencite', 'Illegal', 'Unreleased'],
 
 		onSwitchIn: function(pokemon) {
 			let changed = {
@@ -3667,8 +3667,9 @@ exports.Formats = [
   		name: "[Gen 7] Eevee'd",
   		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/eeveed-current-slate-sliggoo-and-sunkern-submissions.3602933/>Eeveed</a>",
 		      ],
-  		ruleset: ['Illegal', 'Unreleased','Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
-  		mod: 'eeveed',
+  		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+  		banlist: ['Unreleased', 'Illegal'],
+		mod: 'eeveed',
   	},
 	{
   		name: "[Gen 7] Fusion Evolution",
@@ -3676,7 +3677,8 @@ exports.Formats = [
   		       "&bullet; <a href=http://www.smogon.com/forums/threads/fusion-moves-fusion-evolution-companion-project.3564805/>Fusion Moves</a>",
   		      ],
   		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
-  		mod: 'fe',
+  		banlist: ['Unreleased', 'Illegal'],
+		mod: 'fe',
   		onModifyTemplate: function (template, pokemon, source) {
   			//This hack is for something important: The Pokemon's Sprite.
   			if (!template.base) return template;
@@ -3841,8 +3843,9 @@ exports.Formats = [
   		name: "[Gen 7] OptiMons",
   		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/.3609208/>OptiMons</a>",
 		      ],
-  		ruleset: ['Illegal', 'Unreleased', 'Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
-  		mod: 'mememons',
+  		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+  		banlist: ['Unreleased', 'Illegal'],
+		mod: 'opti',
   	},
 	{
   		name: "[Gen 7] Mememons",
@@ -3858,6 +3861,7 @@ exports.Formats = [
 		       "&bullet; Use /dgen (Pokemon/Item/Ability/Move) for more info",
 		      ],
 		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+		banlist: ['Unreleased', 'Illegal'],
 		mod: 'thefirstnewgen',
 	},
 	{
@@ -3865,6 +3869,7 @@ exports.Formats = [
 		desc: ["&bullet; A custom region",
 		      ],
 		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+		banlist: ['Unreleased', 'Illegal'],
 		mod: 'jillian',
 	},
 	{
@@ -3878,6 +3883,7 @@ exports.Formats = [
 		name: "[Gen 7] Z-Moves Everywhere",
 		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/z-moves-everywhere-slate-4-ninetales-torkoal-groudon-submissions-phase-extended.3592186/>Z-Moves Everywhere</a>"],
 		ruleset: ['[Gen 7] Ubers'],
+		banlist: ['Unreleased', 'Illegal'],
 		mod: 'zmoveseverywhere',
 	},
 	{
