@@ -3664,7 +3664,7 @@ exports.Formats = [
 		},
 	},
 		{
-		name: "[Gen 7] BH Battle Factory",
+		name: "[Gen 7] Choonmons Factory",
 
 		mod: 'gen7',
 		team: 'randomChoonmonsFactory',
