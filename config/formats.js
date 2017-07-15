@@ -3633,7 +3633,7 @@ exports.Formats = [
 		name: "[Gen 7] Choonmons δ",
 		desc: ["Choonmons is a pet mod created by Choon. Yup.<br>&bullet; <a href=\"http://www.smogon.com/forums/threads/3546063/\">Choonmons Thread</a>"],
 		mod: 'choonmons',
-		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+		ruleset: ['Illegal', 'Unreleased','Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
 		banlist: ['Uber', 'Soul Dew', 'Lucarionite', 'Mawilite', 'Salamencite'],
 
 		onSwitchIn: function(pokemon) {
@@ -3667,7 +3667,7 @@ exports.Formats = [
   		name: "[Gen 7] Eevee'd",
   		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/eeveed-current-slate-sliggoo-and-sunkern-submissions.3602933/>Eeveed</a>",
 		      ],
-  		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+  		ruleset: ['Illegal', 'Unreleased','Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
   		mod: 'eeveed',
   	},
 	{
@@ -3841,7 +3841,7 @@ exports.Formats = [
   		name: "[Gen 7] OptiMons",
   		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/.3609208/>OptiMons</a>",
 		      ],
-  		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+  		ruleset: ['Illegal', 'Unreleased', 'Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
   		mod: 'mememons',
   	},
 	{
