@@ -3568,7 +3568,7 @@ exports.Formats = [
 	},
 	{
 		name: "[Gen 7] Ultimate Z",
-		desc: ["&bullet; Ultimate Z (or UZ for short) allows you to use any type of Z-Crystal on any move and as many times per battle as desired. The Z-Move becomes the type of the Z-Crystal used."],
+		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/3609393/\">Ultimate Z</a> (or UZ for short) allows you to use any type of Z-Crystal on any move and as many times per battle as desired. The Z-Move becomes the type of the Z-Crystal used."],
 		ruleset: ['[Gen 7] OU'],
 		mod: 'ultimatez',
 	},
