@@ -3663,6 +3663,13 @@ exports.Formats = [
 			if (pokemon.baseTemplate.actualSpecies) this.add('-end', pokemon, pokemon.baseTemplate.actualSpecies, '[silent]');
 		},
 	},
+		{
+		name: "[Gen 7] BH Battle Factory",
+
+		mod: 'gen7',
+		team: 'randomChoonmonsFactory',
+		ruleset: ['Pokemon', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod'],
+	},
 	{
   		name: "[Gen 7] Eevee'd",
   		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/eeveed-current-slate-sliggoo-and-sunkern-submissions.3602933/>Eeveed</a>",
