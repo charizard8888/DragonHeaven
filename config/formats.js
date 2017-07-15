@@ -3838,11 +3838,18 @@ exports.Formats = [
 		}
 	},
 	{
+  		name: "[Gen 7] OptiMons",
+  		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/.3609208/>OptiMons</a>",
+		      ],
+  		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+  		mod: 'mememons',
+  	},
+	{
   		name: "[Gen 7] Mememons",
   		desc: ["&bullet; <a href=https://pastebin.com/3MpyAJ4x>Mememons</a><br>Brought to you by smellslikememe",
 		      ],
   		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
-  		mod: 'mememons',
+  		mod: 'opti',
   	},
 	{
 		name: "[Gen 7] Pokemon: The New First Generation",
