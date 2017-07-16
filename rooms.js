@@ -369,7 +369,6 @@ class GlobalRoom {
 				await FS(`${filename}.0`).write('' + lastBattle);
 				await FS(`${filename}.0`).rename(filename);
 				writing = false;
-				lastBattle = null;
 				filename = null;
 				if (lastBattle < this.lastBattle) {
 					setImmediate(() => this.writeNumRooms());
@@ -431,6 +430,8 @@ class GlobalRoom {
 			if (format.searchShow) displayCode |= 2;
 			if (format.challengeShow) displayCode |= 4;
 			if (format.tournamentShow) displayCode |= 8;
+			const level = format.maxLevel || format.maxForcedLevel || format.forcedLevel;
+			if (level === 50) displayCode |= 16;
 			this.formatList += ',' + displayCode.toString(16);
 		}
 		return this.formatList;
@@ -786,12 +787,13 @@ class GlobalRoom {
 }
 
 class BattleRoom extends Room {
-	constructor(roomid, format, p1, p2, options) {
+	constructor(roomid, formatid, p1, p2, options) {
 		super(roomid, "" + p1.name + " vs. " + p2.name);
 		this.modchat = (Config.battlemodchat || false);
 		this.modjoin = false;
 		this.slowchat = false;
 		this.filterStretching = false;
+		this.filterEmojis = false;
 		this.filterCaps = false;
 		this.reportJoins = Config.reportbattlejoins;
 
@@ -802,13 +804,12 @@ class BattleRoom extends Room {
 		this.expireTimer = null;
 		this.active = false;
 
-		format = '' + (format || '');
+		formatid = '' + (formatid || '');
+		let format = Dex.getFormat(formatid);
 
-		this.format = format;
+		this.format = format.id;
 		this.auth = Object.create(null);
 		//console.log("NEW BATTLE");
-
-		let formatid = toId(format);
 
 		// Sometimes we might allow BattleRooms to have no options
 		if (!options) {
@@ -816,7 +817,7 @@ class BattleRoom extends Room {
 		}
 
 		let rated;
-		if (options.rated && Dex.getFormat(formatid).rated !== false) {
+		if (options.rated && format.rated !== false) {
 			rated = options.rated;
 		} else {
 			rated = false;
@@ -832,7 +833,7 @@ class BattleRoom extends Room {
 		this.p2 = p2 || null;
 
 		this.rated = rated;
-		this.battle = new Rooms.RoomBattle(this, format, rated);
+		this.battle = new Rooms.RoomBattle(this, formatid, rated);
 		this.game = this.battle;
 
 		this.sideTicksLeft = [21, 21];
@@ -946,7 +947,6 @@ class BattleRoom extends Room {
 		}
 	}
 	async logBattle(p1score, p1rating, p2rating) {
-		if (this.battle.supplementaryBanlist) return;
 		let logData = this.battle.logData;
 		if (!logData) return;
 		this.battle.logData = null; // deallocate to save space
@@ -980,7 +980,7 @@ class BattleRoom extends Room {
 		const tier = this.format.toLowerCase().replace(/[^a-z0-9]+/g, '');
 		const logpath = `logs/${logfolder}/${tier}/${logsubfolder}/`;
 		await FS(logpath).mkdirp();
-		await FS(logpath + '/' + this.id + '.log.json').write(JSON.stringify(logData));
+		await FS(logpath + this.id + '.log.json').write(JSON.stringify(logData));
 		//console.log(JSON.stringify(logData));
 	}
 	tryExpire() {
@@ -1125,11 +1125,13 @@ class ChatRoom extends Room {
 		if (!this.modchat) this.modchat = (Config.chatmodchat || false);
 		if (!this.modjoin) this.modjoin = false;
 		if (!this.filterStretching) this.filterStretching = false;
+		if (!this.filterEmojis) this.filterEmojis = false;
 		if (!this.filterCaps) this.filterCaps = false;
 
 		this.type = 'chat';
 
-		if (Config.logchat && !roomid.includes("spam")) {
+		this.rollLogTimer = null;
+		if (Config.logchat) {
 			this.rollLogFile(true);
 			this.logEntry = function (entry, date) {
 				const timestamp = Chat.toTimestamp(new Date()).split(' ')[1] + ' ';
@@ -1179,7 +1181,8 @@ class ChatRoom extends Room {
 		// This could cause problems if the previous rollLogFile from an
 		// hour ago isn't done yet. But if that's the case, we have bigger
 		// problems anyway.
-		if (!sync) setTimeout(() => this.rollLogFile(), nextHour - currentTime);
+		if (this.rollLogTimer) clearTimeout(this.rollLogTimer);
+		this.rollLogTimer = setTimeout(() => this.rollLogFile(), nextHour - currentTime);
 
 		if (relpath + filename === this.logFilename) return;
 
@@ -1205,6 +1208,8 @@ class ChatRoom extends Room {
 	destroyLog(finalCallback) {
 		this.destroyingLog = true;
 		if (this.logFile) {
+			clearTimeout(this.rollLogTimer);
+			this.rollLogTimer = null;
 			this.logEntry = function () { };
 			this.logFile.end(finalCallback);
 		} else {
@@ -1393,12 +1398,16 @@ class ChatRoom extends Room {
 		// Clear any active timers for the room
 		if (this.muteTimer) {
 			clearTimeout(this.muteTimer);
+			this.muteTimer = null;
 		}
-		this.muteTimer = null;
 		if (this.expireTimer) {
 			clearTimeout(this.expireTimer);
+			this.expireTimer = null;
 		}
-		this.expireTimer = null;
+		if (this.rollLogTimer) {
+			clearTimeout(this.rollLogTimer);
+			this.rollLogTimer = null;
+		}
 		if (this.reportJoinsInterval) {
 			clearInterval(this.reportJoinsInterval);
 		}

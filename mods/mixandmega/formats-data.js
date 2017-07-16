@@ -33,7 +33,7 @@ exports.BattleFormatsData = {
 		inherit: true,
 		tier: "OU",
 	},
-	pheromosa: {
+	marshadow: {
 		inherit: true,
 		tier: "OU",
 	},

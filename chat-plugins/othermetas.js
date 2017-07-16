@@ -138,13 +138,31 @@ exports.commands = {
 			stone = Dex.getItem(sep[1]);
 		}
 		let template = Object.assign({}, Dex.getTemplate(sep[0]));
-		if (!stone.megaEvolves && !stone.onPrimal) return this.errorReply(`Error: Mega Stone not found`);
-		if (!template.exists) return this.errorReply(`Error: Pokemon not found`);
+		if (!stone.megaEvolves && !stone.onPrimal) return this.errorReply(`Error: Mega Stone not found.`);
+		if (!template.exists) return this.errorReply(`Error: Pokemon not found.`);
 		if (template.isMega || (template.evos && Object.keys(template.evos).length > 0)) { // Mega Pokemon cannot be mega evolved
-			return this.errorReply(`You cannot mega evolve ${template.name} in Mix and Mega.`);
+			this.errorReply(`Warning: You cannot mega evolve non-fully evolved Pokemon and Mega Pokemon in Mix and Mega.`);
 		}
-		if (Dex.mod("mixandmega").getTemplate(sep[0]).tier === "Uber") { // Separate messages because there's a difference between being already mega evolved / NFE and being banned from mega evolving
-			return this.errorReply(`${template.name} is banned from mega evolving in Mix and Mega.`);
+		let bannedStones = {'beedrillite':1, 'blazikenite':1, 'gengarite':1, 'kangaskhanite':1, 'mawilite':1, 'medichamite':1};
+		if (stone.id in bannedStones && template.name !== stone.megaEvolves) {
+			this.errorReply(`Warning: ${stone.name} is restricted to ${stone.megaEvolves} in Mix and Mega; therefore, ${template.name} cannot use ${stone.name} in actual play.`);
+		}
+		if (Dex.mod("mixandmega").getTemplate(sep[0]).tier === "Uber" && !template.isMega) { // Separate messages because there's a difference between being already mega evolved / NFE and being banned from mega evolving
+			this.errorReply(`Warning: ${template.name} is banned from mega evolving with a non-native mega stone in Mix and Mega and therefore cannot use ${toId(sep[1]) === 'dragonascent' ? 'Dragon Ascent' : stone.name} in actual play.`);
+		}
+		if (stone.isUnreleased) {
+			this.errorReply(`Warning: ${stone.name} is unreleased and is not usable in current Mix and Mega.`);
+		}
+		let dragonAscentUsers = {'smeargle':1, 'rayquaza':1, 'rayquazamega':1};
+		if (toId(sep[1]) === 'dragonascent' && !(toId(sep[0]) in dragonAscentUsers)) {
+			this.errorReply(`Warning: Only Pokemon with access to Dragon Ascent can mega evolve with Mega Rayquaza's traits; therefore, ${template.name} cannot mega evolve with Dragon Ascent.`);
+		}
+		// Fake Pokemon and Mega Stones
+		if (template.isNonstandard) {
+			this.errorReply(`Warning: ${template.name} is not a real Pokemon and is therefore not usable in Mix and Mega.`);
+		}
+		if (toId(sep[1]) === 'crucibellite') {
+			this.errorReply(`Warning: Crucibellite is a fake mega stone created by the CAP Project and is restricted to the CAP Crucibelle.`);
 		}
 		let baseTemplate = Dex.getTemplate(stone.megaEvolves);
 		let megaTemplate = Dex.getTemplate(stone.megaStone);
