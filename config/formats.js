@@ -3001,7 +3001,7 @@ exports.Formats = [
 		ruleset: ['[Gen 7] OU'],
 		banlist: ['Ignore Illegal Abilities', 'Fling', 'Regigigas', 'Slaking'],
 		mod: 'dualwielding',
-		validateSet: function(set, teamHas) {
+		onValidateSet: function(set) {
 			let ability = set.ability;
 			if (!Dex.data.Items[toId(ability)]) return [`${set.name || set.species}  has an invalid item.`];
 			let problems = this.validateSet(set, teamHas) || [];
