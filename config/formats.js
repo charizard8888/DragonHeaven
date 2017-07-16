@@ -2995,7 +2995,7 @@ exports.Formats = [
 			}
 		},
 	},
-			{
+	{
 		name: "[Gen 7] Dual Wielding",
 		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/3608611\">Dual Wielding</a>: A Pokemon can hold two items, the second item in the Ability Slot."],
 		ruleset: ['[Gen 7] OU', 'Ignore Illegal Abilities'],
@@ -3685,13 +3685,13 @@ exports.Formats = [
 			if (pokemon.baseTemplate.actualSpecies) this.add('-end', pokemon, pokemon.baseTemplate.actualSpecies, '[silent]');
 		},
 	},
-		{
+	/*{	THis needs a "randomCHOONMONSFactory function in mods/choonmons/scripts.js"
 		name: "[Gen 7] Choonmons Factory",
 
-		mod: 'gen7',
-		team: 'randomCHOONMOMSFactory',
+		mod: 'choonmons',
+		team: 'randomCHOONMONSFactory',
 		ruleset: ['Pokemon', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod'],
-	},
+	},*/
 	{
   		name: "[Gen 7] Eevee'd",
   		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/eeveed-current-slate-sliggoo-and-sunkern-submissions.3602933/>Eeveed</a>",
