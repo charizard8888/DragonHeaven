@@ -2997,7 +2997,7 @@ exports.Formats = [
 	},
 			{
 		name: "[Gen 7] Dual Wielding",
-		desc: ["&bullet; A Pokemon can hold two items, the second item in the Ability Slot."],
+		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/3608611\">Dual Wielding</a>: A Pokemon can hold two items, the second item in the Ability Slot."],
 		ruleset: ['[Gen 7] OU', 'Ignore Illegal Abilities'],
 		banlist: ['Fling', 'Regigigas', 'Slaking'],
 		mod: 'dualwielding',
