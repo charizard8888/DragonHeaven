@@ -3007,6 +3007,28 @@ exports.Formats = [
 			let problems = [];
 			let item2 = Dex.getItem(toId(ability));
 			let bans = {};
+			if (!item2.exists) {
+				let abilit = Dex.getAbility(ability);
+				let template = Dex.getTemplate(set.species);
+				if (!abilit.name) {
+					problems.push(`${name} needs to have an ability.`);
+				} else if (!Object.values(template.abilities).includes(abilit.name)) {
+					problems.push(`${name} can't have ${set.ability}.`);
+				}
+				if (abilit.name === template.abilities['H']) {
+					isHidden = true;
+
+					if (template.unreleasedHidden && this.format.banlistTable['Unreleased']) {
+						problems.push(`${name}'s hidden ability is unreleased.`);
+					} else if (set.species.endsWith('Orange') || set.species.endsWith('White') && abilit.name === 'Symbiosis') {
+						problems.push(`${name}'s hidden ability is unreleased for the Orange and White forms.`);
+					}
+					if (template.maleOnlyHidden) {
+						set.gender = 'M';
+						lsetData.sources = ['5D'];
+					}
+				}
+			}
 			if (bans[toId(item2.id)]) problems.push(set.species + "'s item " + item2.name + " is banned by Dual Wielding.");
 			if (item2.id === toId(set.item)) problems.push(`You cannot have two of ${item2.name} on the same Pokemon.`);
 			if (item2.id.includes('choice') && toId(set.item).includes('choice')) problems.push(`You cannot have ${item2.name} and ${Dex.getItem(set.item).name} on the same Pokemon.`);
