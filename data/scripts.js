@@ -1280,7 +1280,7 @@ exports.BattleScripts = {
 		};
 		// Moves that shouldn't be the only STAB moves:
 		let NoStab = {
-			aquajet:1, bounce:1, explosion:1, fakeout:1, flamecharge:1, iceshard:1, pursuit:1, quickattack:1, skyattack:1,
+			aquajet:1, bounce:1, explosion:1, fakeout:1, flamecharge:1, fly:1, iceshard:1, pursuit:1, quickattack:1, skyattack:1,
 			chargebeam:1, clearsmog:1, eruption:1, vacuumwave:1, waterspout:1,
 		};
 
@@ -1704,6 +1704,9 @@ exports.BattleScripts = {
 				case 'airslash': case 'oblivionwing':
 					if (hasMove['acrobatics'] || hasMove['bravebird'] || hasMove['hurricane']) rejected = true;
 					break;
+				case 'fly':
+					if (teamDetails.zMove || counter.setupType !== 'Physical') rejected = true;
+					break;
 				case 'hex':
 					if (!hasMove['willowisp']) rejected = true;
 					break;
@@ -2060,6 +2063,8 @@ exports.BattleScripts = {
 				rejectAbility = counter['damage'] >= counter.damagingMoves.length;
 			} else if (ability === 'Torrent') {
 				rejectAbility = !counter['Water'];
+			} else if (ability === 'Triage') {
+				rejectAbility = !counter['recovery'] && !counter['drain'];
 			} else if (ability === 'Unburden') {
 				rejectAbility = !counter.setupType && !hasMove['acrobatics'];
 			}
@@ -2088,6 +2093,9 @@ exports.BattleScripts = {
 			}
 			if (abilities.includes('Swift Swim') && hasMove['raindance']) {
 				ability = 'Swift Swim';
+			}
+			if (abilities.includes('Triage') && hasMove['drainingkiss']) {
+				ability = 'Triage';
 			}
 			if (abilities.includes('Unburden') && hasMove['acrobatics']) {
 				ability = 'Unburden';
@@ -2179,6 +2187,8 @@ exports.BattleScripts = {
 			item = 'Assault Vest';
 		} else if (hasMove['conversion']) {
 			item = 'Normalium Z';
+		} else if (!teamDetails.zMove && (hasMove['fly'] || hasMove['bounce'] && counter.setupType)) {
+			item = 'Flyinium Z';
 		} else if (hasMove['geomancy']) {
 			item = 'Power Herb';
 		} else if (hasMove['switcheroo'] || hasMove['trick']) {
@@ -3610,7 +3620,7 @@ exports.BattleScripts = {
 			'swiftswim': 'raindance',
 			'sandrush': 'sandstorm', 'sandveil': 'sandstorm',
 		};
-		let weatherAbilitiesSet = {'drizzle':1, 'sandstream':1};
+		let weatherAbilitiesSet = {'drizzle':1, 'drought':1, 'snowwarning':1, 'sandstream':1};
 
 		// Build a pool of eligible sets, given the team partners
 		// Also keep track of sets with moves the team requires
@@ -3663,7 +3673,7 @@ exports.BattleScripts = {
 		}
 
 		return {
-			name: setData.set.name || template.baseSpecies,
+			name: setData.set.nickname || setData.set.name || template.baseSpecies,
 			species: setData.set.species,
 			gender: setData.set.gender || template.gender || (this.random(2) ? 'M' : 'F'),
 			item: setData.set.item || '',
@@ -3691,12 +3701,11 @@ exports.BattleScripts = {
 		let teamData = {typeCount: {}, typeComboCount: {}, baseFormes: {}, megaCount: 0, zCount: 0, has: {}, forceResult: forceResult, weaknesses: {}, resistances: {}};
 		let requiredMoveFamilies = {};
 		let requiredMoves = {};
-		let weatherAbilitiesSet = {'drizzle': 'raindance', 'sandstream': 'sandstorm'};
+		let weatherAbilitiesSet = {'drizzle': 'raindance', 'drought': 'sunnyday', 'snowwarning': 'hail', 'sandstream': 'sandstorm'};
 		let resistanceAbilities = {
-			'dryskin': ['Water'], 'waterabsorb': ['Water'], 'stormdrain': ['Water'],
-			'flashfire': ['Fire'], 'heatproof': ['Fire'],
-			'lightningrod': ['Electric'], 'motordrive': ['Electric'], 'voltabsorb': ['Electric'],
-			'sapsipper': ['Grass'],
+			'waterabsorb': ['Water'],
+			'flashfire': ['Fire'],
+			'lightningrod': ['Electric'], 'voltabsorb': ['Electric'],
 			'thickfat': ['Ice', 'Fire'],
 			'levitate': ['Ground'],
 		};

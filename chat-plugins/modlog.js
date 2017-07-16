@@ -7,7 +7,7 @@ const execFileSync = require('child_process').execFileSync;
 
 const MAX_PROCESSES = 1;
 const RESULTS_MAX_LENGTH = 100;
-const LOG_PATH = '../logs/modlog/';
+const LOG_PATH = 'logs/modlog/';
 
 class ModlogManager extends ProcessManager {
 	onMessageUpstream(message) {
@@ -72,17 +72,20 @@ const PM = exports.PM = new ModlogManager({
 	isChatBased: true,
 });
 
-if (!process.send) {
-	PM.spawn();
-}
-
 if (process.send && module === process.mainModule) {
 	global.Config = require('../config/config');
+	process.on('uncaughtException', err => {
+		if (Config.crashguard) {
+			require('../crashlogger')(err, 'A modlog child process');
+		}
+	});
 	global.Dex = require('../sim/dex');
 	global.toId = Dex.getId;
 	process.on('message', message => PM.onMessageDownstream(message));
 	process.on('disconnect', () => process.exit());
 	require('../repl').start('modlog', cmd => eval(cmd));
+} else {
+	PM.spawn();
 }
 
 class SortedLimitedLengthList {
@@ -120,7 +123,7 @@ class SortedLimitedLengthList {
 function checkRipgrepAvailability() {
 	if (Config.ripgrepmodlog === undefined) {
 		try {
-			execFileSync('rg', ['--version'], {cwd: path.normalize(`${__dirname}/${LOG_PATH}`)});
+			execFileSync('rg', ['--version'], {cwd: path.normalize(`${__dirname}/../`)});
 			Config.ripgrepmodlog = true;
 		} catch (error) {
 			Config.ripgrepmodlog = false;
@@ -144,6 +147,7 @@ async function runModlog(rooms, searchString, exactSearch, maxLines) {
 			fileNameList.push(`modlog_${rooms[i]}.txt`);
 		}
 	}
+	fileNameList = fileNameList.map(filename => `${LOG_PATH}${filename}`);
 
 	let regexString;
 	if (!searchString) {
@@ -161,7 +165,6 @@ async function runModlog(rooms, searchString, exactSearch, maxLines) {
 		if (checkAllRooms) fileNameList = [LOG_PATH];
 		runRipgrepModlog(fileNameList, regexString, results);
 	} else {
-		fileNameList = fileNameList.map(filename => `${LOG_PATH}${filename}`);
 		const searchStringRegex = new RegExp(regexString, 'i');
 		for (let i = 0; i < fileNameList.length; i++) {
 			await checkRoomModlog(fileNameList[i], searchStringRegex, results);
@@ -185,7 +188,7 @@ async function checkRoomModlog(path, regex, results) {
 function runRipgrepModlog(paths, regexString, results) {
 	let stdout;
 	try {
-		stdout = execFileSync('rg', ['-i', '-e', regexString, '--no-filename', '--no-line-number', ...paths], {cwd: path.normalize(`${__dirname}/${LOG_PATH}`)});
+		stdout = execFileSync('rg', ['-i', '-e', regexString, '--no-filename', '--no-line-number', ...paths], {cwd: path.normalize(`${__dirname}/../`)});
 	} catch (error) {
 		return results;
 	}
@@ -263,7 +266,7 @@ exports.commands = {
 		let targetRoom = Rooms.search(roomId);
 		// if a room alias was used, replace alias with actual id
 		if (targetRoom) roomId = targetRoom.id;
-		if (roomId.startsWith('battle-') || roomId.startsWith('groupchat-')) this.errorReply("Battles and groupchats don't have individual modlogs.");
+		if (roomId.startsWith('battle-') || roomId.startsWith('groupchat-')) return this.errorReply("Battles and groupchats don't have individual modlogs.");
 
 		// permission checking
 		if (roomId === 'all' || roomId === 'public') {
@@ -301,7 +304,7 @@ exports.commands = {
 		}
 
 		PM.send(roomIdList.join(','), searchString, exactSearch, lines).then(response => {
-			connection.popup(prettifyResults(response, roomId, searchString, exactSearch, addModlogLinks, hideIps));
+			connection.popup(`|modal|${prettifyResults(response, roomId, searchString, exactSearch, addModlogLinks, hideIps)}`);
 			if (cmd === 'timedmodlog') this.sendReply(`The modlog query took ${Date.now() - startTime} ms to complete.`);
 		});
 	},

@@ -62,7 +62,7 @@ class Effect {
 	constructor(data, moreData = null) {
 		/**
 		 * ID. This will be a lowercase version of the name with all the
-		 * alphanumeric characters removed. So, for instance, "Mr. Mime"
+		 * non-alphanumeric characters removed. So, for instance, "Mr. Mime"
 		 * becomes "mrmime", and "Basculin-Blue-Striped" becomes
 		 * "basculinbluestriped".
 		 * @type {string}
@@ -159,9 +159,9 @@ class Format extends Effect {
 		this.unbanlist = this.unbanlist || [];
 		/**
 		 * List of ruleset and banlist changes in a custom format.
-		 * @type {string[]}
+		 * @type {?string[]}
 		 */
-		this.supplementaryBanlist = this.supplementaryBanlist || [];
+		this.customBanlist = this.customBanlist || null;
 		/**
 		 * Table of rule names and banned effects.
 		 * @type {?{[mod: string]: string | boolean}}
