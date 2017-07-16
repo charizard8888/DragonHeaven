@@ -3631,7 +3631,7 @@ exports.Formats = [
 	},
 	{
 		name: "[Gen 7] Choonmons δ",
-		desc: ["Choonmons is a pet mod created by Choon. Yup.<br>&bullet; <a href=\"http://www.smogon.com/forums/threads/3546063/\">Choonmons Thread</a>"],
+		desc: ["Choonmons is a pet mod created by Choon. Yup.<br>&bullet; <a href=\"http://www.smogon.com/forums/threads/3546063/\">Choonmons</a>"],
 		mod: 'choonmons',
 		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
 		banlist: ['Uber', 'Soul Dew', 'Lucarionite', 'Mawilite', 'Salamencite', 'Illegal', 'Unreleased'],
@@ -3667,7 +3667,7 @@ exports.Formats = [
 		name: "[Gen 7] Choonmons Factory",
 
 		mod: 'gen7',
-		team: 'randomChoonmonsFactory',
+		team: 'randomCHOONMOMSFactory',
 		ruleset: ['Pokemon', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod'],
 	},
 	{
