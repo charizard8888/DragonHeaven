@@ -3897,7 +3897,7 @@ exports.Formats = [
 		desc: ["&bullet; A custom region",
 		      ],
 		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
-		banlist: ['Unreleased', 'Illegal'],
+		banlist: [],
 		mod: 'jillian',
 	},
 	{
