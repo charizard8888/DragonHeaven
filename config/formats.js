@@ -2619,9 +2619,11 @@ exports.Formats = [
 	},
 	{
 		name: "[Gen 7] Tier Shift",
-		onBegin: function() {
-			let allPokemon = this.p1.pokemon.concat(this.p2.pokemon);
-			let boosts = {
+		ruleset: ['[Gen 7] OU'],
+		onModifyTemplate: function (template, pokemon) {
+			if (pokemon.tierShifted) return;
+			let tierShift = Object.assign({}, template);
+			const boosts = {
 				'UU': 5,
 				'BL2': 5,
 				'RU': 10,
@@ -2633,26 +2635,20 @@ exports.Formats = [
 				'LC Uber': 20,
 				'LC': 20,
 			};
-			for (let i = 0, len = allPokemon.length; i < len; i++) {
-				let pokemon = allPokemon[i];
-				let template = pokemon.baseTemplate;
-				let tier = template.tier;
-				if (pokemon.set.item) {
-					let item = this.getItem(pokemon.set.item);
-					if (item.megaEvolves === template.species) tier = this.getTemplate(item.megaStone).tier;
-				}
-				if (tier.charAt(0) === '(') tier = tier.slice(1, -1);
-				let boost = (tier in boosts) ? boosts[tier] : 0;
-				let baseStats = {};
-				for (let statName in template.baseStats) {
-					baseStats[statName] = this.clampIntRange(template.baseStats[statName] + boost, 1, 255);
-				}
-				pokemon.hp = pokemon.maxhp = Math.floor(Math.floor(2 * template.baseStats['hp'] + pokemon.set.ivs['hp'] + Math.floor(pokemon.set.evs['hp'] >> 2) + 100) * pokemon.level / 100 + 10);
-				pokemon.template = template;
-				pokemon.formeChange(template);
+			let tier = template.tier;
+			if (pokemon.set.item) {
+				let item = this.getItem(pokemon.set.item);
+				if (item.megaEvolves === template.species) tier = this.getTemplate(item.megaStone).tier;
 			}
+			if (tier.charAt(0) === '(') tier = tier.slice(1, -1);
+			let boost = (tier in boosts) ? boosts[tier] : 0;
+			let baseStats = {};
+			for (let statName in template.baseStats) {
+				baseStats[statName] = this.clampIntRange(template.baseStats[statName] + boost, 1, 255);
+			}
+			pokemon.tierShifted = true;
+			return Object.assign(tierShift, baseStats);
 		},
-		ruleset: ['[Gen 7] OU'],
 	},
 	{
 		name: "[Gen 7] Inverse",
