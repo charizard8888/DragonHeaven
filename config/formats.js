@@ -2623,7 +2623,7 @@ exports.Formats = [
 		desc: ['<a href="http://www.smogon.com/forums/threads/3610073/">Tier Shift</a>: Pokemon get a +10 boost to each stat per tier below OU they are in. UU gets +10, RU +20, NU +30, and PU +40.'],
 		mod: 'gen7',
 		onModifyTemplate: function (template, pokemon) {
-			if (pokemon.tierShifted) return;
+			if (pokemon.tierShifted) return template;
 			let tierShift = Object.assign({}, template);
 			const boosts = {
 				'UU': 5,
@@ -2644,12 +2644,11 @@ exports.Formats = [
 			}
 			if (tier.charAt(0) === '(') tier = tier.slice(1, -1);
 			let boost = (tier in boosts) ? boosts[tier] : 0;
-			let baseStats = {};
 			for (let statName in template.baseStats) {
-				baseStats[statName] = this.clampIntRange(template.baseStats[statName] + boost, 1, 255);
+				tierShift.baseStats[statName] = this.clampIntRange(template.baseStats[statName] + boost, 1, 255);
 			}
 			pokemon.tierShifted = true;
-			return Object.assign(tierShift, baseStats);
+			return tierShift;
 		},
 	},
 	{
