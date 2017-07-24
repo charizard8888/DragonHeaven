@@ -3886,7 +3886,7 @@ exports.Formats = [
 		       "&bullet; Use /dgen (Pokemon/Item/Ability/Move) for more info",
 		      ],
 		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
-		banlist: ['Unreleased', 'Illegal'],
+		banlist: [],
 		mod: 'thefirstnewgen',
 	},
 	{
