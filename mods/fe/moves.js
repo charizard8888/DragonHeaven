@@ -4200,7 +4200,7 @@ exports.BattleMovedex = {
                         this.add('-activate', pokemon, 'move: Richteruption', move.magnitude);
                 },
                 secondary: {
-                        chance: (4 = move.magnitude) * 10,
+                        chance: (4 - move.magnitude) * 10,
                         status: 'brn',
                 },
                 target: "normal",
