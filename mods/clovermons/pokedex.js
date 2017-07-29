@@ -24,11 +24,4 @@ exports.BattlePokedex = {
 		prevo: "tubi",
 	},
 	
-  fungarai: {
-		num: 8003,
-		species: "Fungarai",
-		types: ["Grass", "Ground"],
-		baseStats: {hp: 70, atk: 125, def: 55, spa: 100, spd: 70, spe: 110},
-		abilities: {0: "Overgrow", H: "Moxie"},
-		prevo: "shruber",
-	},
+};
