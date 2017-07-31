@@ -3691,9 +3691,8 @@ exports.Formats = [
 	},*/
 	{
 		name: "[Gen 7] Clovermons",
-		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/pokemon-the-new-first-gen-submissions-for-new-pokemon-over.3578653/>Pokemon: The New First Generation</a>",
-		       "&bullet; <a href=https://docs.google.com/spreadsheets/d/1RT8-Ntryi_SvlD_AwBCPWTso7bFZNpAGX4F7wuHBPQY/edit>Pokemon: The New First Gen Spreadhseet</a>",
-		       "&bullet; Use /dgen (Pokemon/Item/Ability/Move) for more info",
+		desc: ["&bullet; <a href=http://pgenvp.wikia.com/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number>Clovermons</a>",
+		       "&bullet; <a href=http://pgenvp.wikia.com/wiki/Category:Moves>Moves</a><br>Brought to you by <font color=#0715b2>Zapmaster2010</font>,"
 		      ],
 		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
 		banlist: [],
