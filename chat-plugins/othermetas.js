@@ -449,5 +449,5 @@ exports.commands = {
 		});
 		this.sendReplyBox(`${buf}</div>`);
 	},
-	clovermons: ["/clovermons - Shows the list of Clovermons."],
+	clovermonshelp: ["/clovermons - Shows the list of Clovermons."],
 };
