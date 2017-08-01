@@ -26,7 +26,7 @@ exports.BattlePokedex = {
   rectreem: {
                  num: 3003,
                  species: "Rectreem",
-                 types: ["Grass", Ground"],
+                 types: ["Grass", "Ground"],
                  baseStats: {hp: 90, atk: 120, def: 95, spa:70, spd: 70, spe: 80},
                  abilities: {0: "Overgrow"},
                  prevo: "analgae",
@@ -44,7 +44,7 @@ exports.BattlePokedex = {
   iguallah: {
                  num: 3005,
                  species: "Iguallah",
-                 types: ["Fire, Dark"],
+                 types: ["Fire", "Dark"],
                  baseStats: {hp: 65, atk: 75, def: 55, spa: 85, spd: 50, spe: 75},
                  abilities: {0: "Blaze"},
                  evos: ["lizakbar"],
@@ -54,7 +54,7 @@ exports.BattlePokedex = {
   lizakbar: {
                  num: 3006,
                  species: "Lizakbar",
-                 types: ["Fire, Dark"],
+                 types: ["Fire", "Dark"],
                  baseStats: {hp: 85, atk: 90, def: 65, spa: 120, spd: 65, spe: 100},
                  abilities: {0: "Blaze"},
                  prevo: "iguallah",
@@ -72,7 +72,7 @@ exports.BattlePokedex = {
   hosajack: { 
                  num: 3008,
                  species: "Hosajack",
-                 types: ["Water, Poison"],
+                 types: ["Water", "Poison"],
                  baseStats: {hp: 85, atk: 55, def: 60, spa: 64, spd: 77, spe: 64},
                  abilities: {0: "Torrent"},
                  evos: ["condoom"],
@@ -82,7 +82,7 @@ exports.BattlePokedex = {
    condoom: {
                  num: 3009,
                  species: "Condoom",
-                 types: ["Water, Poison"],
+                 types: ["Water", "Poison"],
                  baseStats: {hp: 120, atk: 60, def: 85, spa: 85, spd: 100, spe: 75},
                  abilities: {0: "Torrent"},
                  prevo: "hosajack",
@@ -109,7 +109,7 @@ exports.BattlePokedex = {
    kengeon: {
                  num: 3012,
                  species: "Kengeon",
-                 types: ["Normal, Flying"],
+                 types: ["Normal", "Flying"],
                  baseStats: {hp: 37, atk: 53, def: 45, spa: 36, spd: 48, spe: 55},
                  abilities: {0: "Early Bird, Shed skin"},
                  evos: ["frieden"],
@@ -118,9 +118,9 @@ exports.BattlePokedex = {
    frieden: {
                  num: 3013,
                  species: "Frieden",
-                 types: ["Normal, Flying"],
+                 types: ["Normal", "Flying"],
                  baseStats: {hp: 58, atk: 65, def: 59, spa: 55, spd: 65, spe: 65},
-                 abilities: {0: "Gale Wings, Rough Skin"},
+                 abilities: {0: "Gale Wings", "Rough Skin"},
                  evos: ["corooster"],
                  prevo: "kengeon",
          },
@@ -128,9 +128,9 @@ exports.BattlePokedex = {
  corooster: {
                  num: 3014,
                  species: "Corooster",
-                 types: ["Normal, Flying"],
+                 types: ["Normal", "Flying"],
                  baseStats: {hp: 77, atk: 87, def: 77, spa: 67, spd: 77, spe: 87},
-                 abilities: {0: "Gale Wings, Rough Skin"},
+                 abilities: {0: "Gale Wings", "Rough Skin"},
                  prevo: "frieden",
          },
  
@@ -139,7 +139,7 @@ exports.BattlePokedex = {
                  species: "Curicrawl",
                  types: ["Bug"],
                  baseStats: {hp: 60, atk: 65, def: 60, spa: 10, spd: 20, spe: 20},
-                 abilities: {0: "Shield Dust, Prankster"},
+                 abilities: {0: "Shield Dust", "Prankster"},
                  evos: ["gutsicoon"],
          },
  
@@ -156,9 +156,9 @@ exports.BattlePokedex = {
   gutsifly: {
                  num: 3017,
                  species: "Gutsifly",
-                 types: ["Bug, Flying"],
+                 types: ["Bug", "Flying"],
                  baseStats: {hp: 105, atk: 100, def: 110, spa: 25, spd: 40, spe: 30},
-                 abilities: {0: "Shield Dust, Prankster"},
+                 abilities: {0: "Shield Dust", "Prankster"},
                  prevo: "gutsicoon",
          },
  
@@ -167,16 +167,16 @@ exports.BattlePokedex = {
                  species: "Larvades",
                  types: ["Bug"],
                  baseStats: {hp: 35, atk: 30, def: 35, spa: 55, spd: 50, spe: 55},
-                 abilities: {0: "Compound Eyes, Shield Dust},
+                 abilities: {0: "Compound Eyes", "Shield Dust"},
                  evos: ["proboskito"],
          },
  
 proboskito: {
                  num: 3019,
                  species: "Proboskito",
-                 types: ["Bug, Electric"],
+                 types: ["Bug", "Electric"],
                  baseStats: {hp: 55, atk: 85, def: 40, spa: 85, spd: 55, spe: 125},
-                 abilities: {0: "Compound Eyes, Static},
+                 abilities: {0: "Compound Eyes", "Static"},
                  evos: ["venowatt"],
                  prevo: "larvades",
          },
@@ -185,15 +185,15 @@ proboskito: {
                  species: "Clovour",
                  types: ["Grass"],
                  baseStats: {hp: 60, atk: 60, def: 52, spa: 20, spd: 52, spe: 71},
-                 abilities: {0: "Sap Sipper, Natural Cure},
-                 evos: ["chanolour, kuuroba"],
+                 abilities: {0: "Sap Sipper", "Natural Cure"},
+                 evos: ["chanolour", "kuuroba"],
          },
 chanolour: {
                  num: 3021,
                  species: "Chanolour",
-                 types: ["Grass, Steel"],
+                 types: ["Grass","Steel"],
                  baseStats: {hp: 90, atk: 120, def: 85, spa: 40, spd: 85, spe: 110},
-                 abilities: {0: "Sap Sipper, Natural Cure},
+                 abilities: {0: "Sap Sipper", "Natural Cure"},
                  prevo: "clovour",
          },	
 };
