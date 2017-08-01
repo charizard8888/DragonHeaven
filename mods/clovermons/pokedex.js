@@ -23,6 +23,7 @@ exports.BattlePokedex = {
                  evos: ["rectreem"],
                  prevo: "grasshole",
           },
+	
   rectreem: {
                  num: 3003,
                  species: "Rectreem",
