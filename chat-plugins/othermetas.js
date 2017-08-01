@@ -439,4 +439,15 @@ exports.commands = {
 		this.sendReplyBox(`${buf}</div>`);
 	},
 	jillianlisthelp: ["/jillianlist - Shows the list of Pokemon in Jillian."],
+	clovermons: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Clovermons</h2></center>`;
+		let jillianDex = require('../mods/clovermons/pokedex.js').BattlePokedex;
+		if (!jillianDex) return this.errorReply("Error Fetching Istor Data.");
+		Object.values(jillianDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.species}, Clovermons" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	clovermons: ["/clovermons - Shows the list of Clovermons."],
 };
