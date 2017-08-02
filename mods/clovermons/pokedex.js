@@ -23,12 +23,13 @@ exports.BattlePokedex = {
                  evos: ["rectreem"],
                  prevo: "grasshole",
           },
+	
   rectreem: {
                  num: 3003,
                  species: "Rectreem",
                  types: ["Grass", "Ground"],
                  baseStats: {hp: 90, atk: 120, def: 95, spa:70, spd: 70, spe: 80},
-                 abilities: {0: "Overgrow"},
+                 abilities: {0: "Overgrow", H:"Pressure"},
                  prevo: "analgae",
          },
  
