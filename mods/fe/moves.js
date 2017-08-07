@@ -24,7 +24,7 @@ exports.BattleMovedex = {
                 zMovePower: 140,
                 contestType: "Tough",
         },
-        "boilingpoint": {
+     /*   "boilingpoint": {
                 accuracy: 100,
                 basePower: 80,
                 basePowerCallback: function (pokemon, target, move) {
@@ -1930,5 +1930,5 @@ exports.BattleMovedex = {
                 type: "Psychic",
                 zMovePower: 190,
                 contestType: "Clever",
-        },
+        },*/
 };
