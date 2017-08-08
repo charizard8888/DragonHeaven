@@ -7777,8 +7777,8 @@ exports.Formats = [
  		ruleset: ['Pokemon', 'Species Clause', 'Nickname Clause', 'Moody Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Swagger Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview'],
  		banlist: [
  			'Illegal', 'Unreleased', 'Arceus', 'Blaziken', 'Darkrai', 'Deoxys-Base', 'Deoxys-Attack', 'Dialga', 'Giratina', 'Groudon', 'Ho-Oh', 'Kyogre',
- 			'Kyurem-White', 'Lugia', 'Lunala', 'Mewtwo', 'Palkia', 'Rayquaza', 'Reshiram', 'Shaymin-Sky', 'Solgaleo', 'Xerneas', 'Yveltal', 'Zekrom',
- 			'Gyaradosite' , 'Kyurem-Black' , 'Charizardite X' , ' Tapu Koko' , 'Donphan' , 'Mimikyu' , 'Aegislash' , 'Magnezone' , 'Charizardite Y' , 'Porygon-Z' , 'Metagrossite' , 'Tapu Lele' , 'Jirachi' , 'Durant' , 'Golem' , 'Dragonite' , 'Venusaurite' , 'Celesteela' , 'Crustle' , 'Kartana' , 'Greninja' , 'Snorlax',
+ 			'Kyurem-White', 'Lugia', 'Lunala', 'Marshadow', 'Mewtwo', 'Palkia', 'Rayquaza', 'Reshiram', 'Shaymin-Sky', 'Solgaleo', 'Xerneas', 'Yveltal', 'Zekrom',
+ 			'Gyaradosite', 'Kyurem-Black', 'Tapu Koko', 'Charizardite X', 'Magnezone', 'Charizardite Y', 'Metagrossite', 'Mawilite', 'Lopunnite', 'Tapu Lele', 'Donphan', 'Aegislash', 'Mimikyu', 'Magearna', 'Landorus-Therian', 'Dragonite', 'Venusaurite', 'Genesect', 'Celesteela', 'Golem', 'Tapu Fini',
  			'Power Construct', 'Perish Song', 'Focus Sash', 'Kangaskhanite', 'Salamencite', 'Chansey + Charm + Seismic Toss',
  		],
  	},
