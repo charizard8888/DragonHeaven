@@ -3,7 +3,7 @@
 exports.BattlePokedex = {
 
     swampamar: {
-        num: 900000,
+        num: 7000000061,
         species: "Swampamar",
         types: ["Dark", "Water"],
         genderRatio: {
@@ -28,7 +28,7 @@ exports.BattlePokedex = {
         base: 'Swampert',
     },
     swampamarmega: {
-        num: 62,
+        num: 7000000062,
         species: "Swampamar-Mega",
         baseSpecies: "Swampamar",
         forme: "Mega",
@@ -52,7 +52,7 @@ exports.BattlePokedex = {
         base: 'Swampert-Mega',
     },
     gyarotic: {
-        num: 63,
+        num: 7000000063,
         species: "Gyarotic",
         types: ["Water"],
         genderRatio: {
@@ -78,7 +78,7 @@ exports.BattlePokedex = {
     },
 
     gyaroticmega: {
-        num: 63,
+        num: 7000000063,
         species: "Gyarotic-Mega",
         baseSpecies: "Gyarotic",
         forme: "Mega",
@@ -103,7 +103,7 @@ exports.BattlePokedex = {
     },
 
     azuninja: {
-        num: 64,
+        num: 7000000064,
         species: "Azuninja",
         types: ["Water"],
         genderRatio: {
@@ -128,7 +128,7 @@ exports.BattlePokedex = {
     },
 
     chandeform: {
-        num: 65,
+        num: 7000000065,
         species: "Chandeform",
         types: ["Ghost", "Normal"],
         genderRatio: {
@@ -153,7 +153,7 @@ exports.BattlePokedex = {
     },
 
     mismatross: {
-        num: 66,
+        num: 7000000066,
         species: "Chandeform",
         types: ["Electric", "Ghost"],
         genderRatio: {
@@ -178,7 +178,7 @@ exports.BattlePokedex = {
     },
 
     haxardos: {
-        num: 67,
+        num: 7000000067,
         species: "Chandeform",
         types: ["Dragon", "Rock"],
         genderRatio: {
@@ -203,7 +203,7 @@ exports.BattlePokedex = {
     },
 
     pangleye: {
-        num: 68,
+        num: 7000000068,
         species: "Pangleye",
         types: ["Fighting", "Dark"],
         genderRatio: {
@@ -228,7 +228,7 @@ exports.BattlePokedex = {
     },
 
     pangleyemega: {
-        num: 68,
+        num: 7000000068,
         species: "Pangleye-Mega",
         baseSpecies: "Pangleye-",
         forme: "Mega",
@@ -252,7 +252,7 @@ exports.BattlePokedex = {
     },
 
     garchados: {
-        num: 69,
+        num: 7000000069,
         species: "Garchados",
         types: ["Ground", "Water"],
         genderRatio: {
@@ -277,7 +277,7 @@ exports.BattlePokedex = {
     },
 
     garchadosmegax: {
-        num: 69,
+        num: 7000000069,
         species: "Garchados-Mega-X",
         baseSpecies: "Garchados",
         forme: "Mega",
@@ -301,7 +301,7 @@ exports.BattlePokedex = {
     },
 
     garchadosmegay: {
-        num: 69,
+        num: 7000000069,
         species: "Garchados-Mega-Y",
         baseSpecies: "Garchados",
         forme: "Mega",
@@ -325,7 +325,7 @@ exports.BattlePokedex = {
     },
 
     wailcatty: {
-        num: 70,
+        num: 7000000070,
         species: "Wailcatty",
         types: ["Ground", "Water"],
         genderRatio: {
@@ -350,7 +350,7 @@ exports.BattlePokedex = {
     },
 
     gargatr: {
-        num: 71,
+        num: 7000000071,
         species: "Gargatr",
         types: ["Dragon", "Water"],
         genderRatio: {
@@ -375,7 +375,7 @@ exports.BattlePokedex = {
     },
 
     gargatrmega: {
-        num: 71,
+        num: 7000000071,
         species: "Gargatr-Mega",
         baseSpecies: "Gargatr",
         forme: "Mega",
@@ -399,7 +399,7 @@ exports.BattlePokedex = {
     },
 
     dragon: {
-        num: 72,
+        num: 7000000072,
         species: "Dragon",
         types: ["Dark", "Poison"],
         genderRatio: {
@@ -424,7 +424,7 @@ exports.BattlePokedex = {
     },
 
     hawlusharp: {
-        num: 73,
+        num: 7000000073,
         species: "Hawlusharp",
         types: ["Fighting", "Dark"],
         genderRatio: {
@@ -449,7 +449,7 @@ exports.BattlePokedex = {
     },
 
     cofagreelix: {
-        num: 74,
+        num: 7000000074,
         species: "Cofagreelix",
         types: ["Steel", "Ghost"],
         genderRatio: {
@@ -474,7 +474,7 @@ exports.BattlePokedex = {
     },
 
     cofagreelixmega: {
-        num: 74,
+        num: 7000000074,
         species: "Cofagreelix-Mega",
         baseSpecies: "Cofagreelix",
         forme: "Mega",
@@ -498,7 +498,7 @@ exports.BattlePokedex = {
     },
 
     joltlord: {
-        num: 75,
+        num: 7000000075,
         species: "Joltlord",
         types: ["Electric", "Water"],
         genderRatio: {
@@ -523,7 +523,7 @@ exports.BattlePokedex = {
     },
 
     vespicor: {
-        num: 76,
+        num: 7000000076,
         species: "Vespicor",
         types: ["Dark", "Poison"],
         genderRatio: {
@@ -548,7 +548,7 @@ exports.BattlePokedex = {
     },
 
     aggrodos: {
-        num: 77,
+        num: 7000000077,
         species: "Aggrodos",
         types: ["Water", "Steel"],
         genderRatio: {
@@ -573,7 +573,7 @@ exports.BattlePokedex = {
     },
 
     aggrodosmegax: {
-        num: 77,
+        num: 7000000077,
         species: "Aggrodos-Mega-X",
         baseSpecies: "Aggrodos",
         forme: "Mega",
@@ -597,7 +597,7 @@ exports.BattlePokedex = {
     },
 
     aggrodosmegay: {
-        num: 77,
+        num: 7000000077,
         species: "Aggrodos-Mega-Y",
         baseSpecies: "Aggrodos",
         forme: "Mega",
@@ -621,7 +621,7 @@ exports.BattlePokedex = {
     },
 
     zorcanine: {
-        num: 78,
+        num: 7000000078,
         species: "Dragon",
         types: ["Fire", "Dark"],
         genderRatio: {
@@ -646,7 +646,7 @@ exports.BattlePokedex = {
     },
 
     archedactyl: {
-        num: 79,
+        num: 7000000079,
         species: "Archedactyl",
         types: ["Rock", "Flying"],
         genderRatio: {
@@ -671,7 +671,7 @@ exports.BattlePokedex = {
     },
 
     archedactylmega: {
-        num: 79,
+        num: 7000000079,
         species: "Archedactyl-Mega",
         baseSpecies: "Archedactyl",
         forme: "Mega",
@@ -695,7 +695,7 @@ exports.BattlePokedex = {
     },
 
     chesdon: {
-        num: 80,
+        num: 7000000080,
         species: "Dragon",
         types: ["Dark", "Poison"],
         genderRatio: {
@@ -720,7 +720,7 @@ exports.BattlePokedex = {
     },
 
     mamodrill: {
-        num: 81,
+        num: 7000000081,
         species: "Mamodrill",
         types: ["Ground", "Ice"],
         genderRatio: {
@@ -745,7 +745,7 @@ exports.BattlePokedex = {
     },
 
     heliodra: {
-        num: 82,
+        num: 7000000082,
         species: "Dragon",
         types: ["Dragon", "Electric"],
         genderRatio: {
@@ -770,7 +770,7 @@ exports.BattlePokedex = {
     },
 
     scyscor: {
-        num: 83,
+        num: 7000000083,
         species: "Scyscor",
         types: ["Bug", "Ground"],
         genderRatio: {
@@ -795,7 +795,7 @@ exports.BattlePokedex = {
     },
 
     joltry: {
-        num: 84,
+        num: 7000000084,
         species: "Joltry",
         types: ["Grass", "Electric"],
         genderRatio: {
@@ -820,7 +820,7 @@ exports.BattlePokedex = {
     },
 
     azumaloom: {
-        num: 85,
+        num: 7000000085,
         species: "Azumaloom",
         types: ["Water", "Grass"],
         genderRatio: {
@@ -845,7 +845,7 @@ exports.BattlePokedex = {
     },
 
     sawkape: {
-        num: 86,
+        num: 7000000086,
         species: "Sawkape",
         types: ["Fire", "Fighting"],
         genderRatio: {
@@ -870,7 +870,7 @@ exports.BattlePokedex = {
     },
 
     weasol: {
-        num: 86,
+        num: 7000000086,
         species: "Weasol",
         types: ["Dark", "Ice"],
         genderRatio: {
@@ -895,7 +895,7 @@ exports.BattlePokedex = {
     },
 
     weasolmega: {
-        num: 86,
+        num: 7000000086,
         species: "Weasol-Mega",
         baseSpecies: "Weasol",
         forme: "Mega",
@@ -919,7 +919,7 @@ exports.BattlePokedex = {
     },
 
     tyranichomp: {
-        num: 87,
+        num: 7000000087,
         species: "Tyranichomp",
         types: ["Rock", "Dragon"],
         genderRatio: {
@@ -944,7 +944,7 @@ exports.BattlePokedex = {
     },
 
     tyranichompmegax: {
-        num: 87,
+        num: 7000000087,
         species: "Tyranichomp-Mega-X",
         baseSpecies: "Tyranichomp",
         forme: "Mega",
@@ -968,7 +968,7 @@ exports.BattlePokedex = {
     },
 
     tyranichompmegay: {
-        num: 87,
+        num: 7000000087,
         species: "Tyranichomp-Mega-Y",
         baseSpecies: "Tyranichomp",
         forme: "Mega",
@@ -992,7 +992,7 @@ exports.BattlePokedex = {
     },
 
     railie: {
-        num: 88,
+        num: 7000000088,
         species: "Railie",
         types: ["Ice", "Electric"],
         genderRatio: {
@@ -1017,7 +1017,7 @@ exports.BattlePokedex = {
     },
 
     railiemega: {
-        num: 88,
+        num: 7000000088,
         species: "Railie-Mega",
         baseSpecies: "Railie",
         forme: "Mega",
@@ -1041,7 +1041,7 @@ exports.BattlePokedex = {
     },
 
     charatos: {
-        num: 89,
+        num: 7000000089,
         species: "Charatos",
         types: ["Fire", "Water"],
         genderRatio: {
@@ -1066,7 +1066,7 @@ exports.BattlePokedex = {
     },
 
     charatosmegay: {
-        num: 89,
+        num: 7000000089,
         species: "Charatos-Mega-Y",
         baseSpecies: "Charatos",
         forme: "Mega",
@@ -1090,7 +1090,7 @@ exports.BattlePokedex = {
     },
 
     charatosmegax: {
-        num: 89,
+        num: 7000000089,
         species: "Charatos-Mega-X",
         baseSpecies: "Charatos",
         forme: "Mega",
@@ -1114,7 +1114,7 @@ exports.BattlePokedex = {
     },
 
     charatosmegaz: {
-        num: 89,
+        num: 7000000089,
         species: "Charatos-Mega-Z",
         baseSpecies: "Charatos",
         forme: "Mega",
@@ -1138,7 +1138,7 @@ exports.BattlePokedex = {
     },
 
     aggrosaur: {
-        num: 90,
+        num: 7000000090,
         species: "Aggrosaur",
         types: ["Grass", "Steel"],
         genderRatio: {
@@ -1163,7 +1163,7 @@ exports.BattlePokedex = {
     },
 
     aggrosaurmegax: {
-        num: 90,
+        num: 7000000090,
         species: "Aggrosaur-Mega-X",
         baseSpecies: "Aggrosaur",
         forme: "Mega",
@@ -1187,7 +1187,7 @@ exports.BattlePokedex = {
     },
 
     aggrosaurmegay: {
-        num: 90,
+        num: 7000000090,
         species: "Aggrosaur-Mega-Y",
         baseSpecies: "Aggrosaur",
         forme: "Mega",
@@ -1211,7 +1211,7 @@ exports.BattlePokedex = {
     },
 
     blastinja: {
-        num: 91,
+        num: 7000000091,
         species: "Blastinja",
         types: ["Water", "Dark"],
         genderRatio: {
@@ -1236,7 +1236,7 @@ exports.BattlePokedex = {
     },
 
     blastinjamega: {
-        num: 91,
+        num: 7000000091,
         species: "Blastinja-Mega",
         baseSpecies: "Blastinja",
         forme: "Mega",
@@ -1260,7 +1260,7 @@ exports.BattlePokedex = {
     },
 
     skaria: {
-        num: 92,
+        num: 7000000092,
         species: "Skaria",
         types: ["Steel", "Dragon"],
         genderRatio: {
@@ -1285,7 +1285,7 @@ exports.BattlePokedex = {
     },
 
     skariamega: {
-        num: 92,
+        num: 7000000092,
         species: "Skaria-Mega",
         baseSpecies: "Skaria",
         forme: "Mega",
@@ -1309,7 +1309,7 @@ exports.BattlePokedex = {
     },
 
     magmozam: {
-        num: 93,
+        num: 7000000093,
         species: "Magmozam",
         types: ["Fire", "Psychic"],
         genderRatio: {
@@ -1334,7 +1334,7 @@ exports.BattlePokedex = {
     },
 
     magmozammega: {
-        num: 93,
+        num: 7000000093,
         species: "Magmozam-Mega",
         baseSpecies: "Magmozam",
         forme: "Mega",
@@ -1358,7 +1358,7 @@ exports.BattlePokedex = {
     },
 
     glakiss: {
-        num: 93,
+        num: 7000000093,
         species: "Glakiss",
         types: ["Fairy", "Ice"],
         genderRatio: {
@@ -1383,7 +1383,7 @@ exports.BattlePokedex = {
     },
 
     glakissmega: {
-        num: 93,
+        num: 7000000093,
         species: "Glakiss-Mega",
         baseSpecies: "Glakiss",
         forme: "Mega",
@@ -1407,7 +1407,7 @@ exports.BattlePokedex = {
     },
 
     sharpedos: {
-        num: 94,
+        num: 7000000094,
         species: "Sharpedos",
         types: ["Water"],
         genderRatio: {
@@ -1432,7 +1432,7 @@ exports.BattlePokedex = {
     },
 
     sharpedosmegax: {
-        num: 94,
+        num: 7000000094,
         species: "Sharpedos-Mega-X",
         baseSpecies: "Sharpedos",
         forme: "Mega",
@@ -1456,7 +1456,7 @@ exports.BattlePokedex = {
     },
 
     sharpedosmegay: {
-        num: 94,
+        num: 7000000094,
         species: "Sharpedos-Mega-Y",
         baseSpecies: "Sharpedos",
         forme: "Mega",
@@ -1480,7 +1480,7 @@ exports.BattlePokedex = {
     },
 
     vapornine: {
-        num: 95,
+        num: 7000000095,
         species: "Vapornine",
         types: ["Water", "Fire"],
         genderRatio: {
@@ -1505,7 +1505,7 @@ exports.BattlePokedex = {
     },
 
     pidgetot: {
-        num: 96,
+        num: 7000000096,
         species: "Pidgetot",
         types: ["Normal", "Flying"],
         genderRatio: {
@@ -1530,7 +1530,7 @@ exports.BattlePokedex = {
     },
 
     pidgetotmega: {
-        num: 96,
+        num: 7000000096,
         species: "Pidgetot-Mega",
         baseSpecies: "Pidgetot",
         forme: "Mega",
@@ -1553,7 +1553,7 @@ exports.BattlePokedex = {
         eggGroups: ["Flying"],
     },
     blasterain: {
-        num: 128,
+        num: 70000000128,
         species: "Blasterain",
         types: ["Water", "Bug"],
         genderRatio: {
@@ -1578,7 +1578,7 @@ exports.BattlePokedex = {
         otherFormes: ["blasterainmega"],
     },
     blasterainmega: {
-        num: 128,
+        num: 70000000128,
         species: "Blasterain-Mega",
         baseSpecies: "Blasterain",
         forme: "Mega",
@@ -1605,7 +1605,7 @@ exports.BattlePokedex = {
         eggGroups: ["Water1"],
     },
     entaria: {
-        num: 129,
+        num: 70000000129,
         species: "Entaria",
         types: ["Fire", "Dragon"],
         genderRatio: {
@@ -1630,7 +1630,7 @@ exports.BattlePokedex = {
         otherFormes: ["entariamega"],
     },
     entariamega: {
-        num: 129,
+        num: 70000000129,
         species: "Entaria-Mega",
         baseSpecies: "Entaria",
         forme: "Mega",
@@ -1657,7 +1657,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     krookz: {
-        num: 130,
+        num: 70000000130,
         species: "Krook-Z",
         types: ["Normal", "Ground"],
         genderRatio: {
@@ -1681,7 +1681,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     mampharos: {
-        num: 131,
+        num: 70000000131,
         species: "Mampharos",
         types: ["Electric"],
         genderRatio: {
@@ -1706,7 +1706,7 @@ exports.BattlePokedex = {
         otherFormes: ["mampharosmegam", "mampharosmegaa"],
     },
     mampharosmegam: {
-        num: 131,
+        num: 70000000131,
         species: "Mampharos-Mega-M",
         baseSpecies: "Mampharos",
         forme: "Mega-M",
@@ -1733,7 +1733,7 @@ exports.BattlePokedex = {
         eggGroups: ["Field"],
     },
     mampharosmegaa: {
-        num: 131,
+        num: 70000000131,
         species: "Mampharos-Mega-A",
         baseSpecies: "Mampharos",
         forme: "Mega-A",
@@ -1760,7 +1760,7 @@ exports.BattlePokedex = {
         eggGroups: ["Field"],
     },
     leafadon: {
-        num: 132,
+        num: 70000000132,
         species: "Leafadon",
         types: ["Grass", "Ground"],
         genderRatio: {
@@ -1784,7 +1784,7 @@ exports.BattlePokedex = {
         eggGroups: ["Field"],
     },
     shot: {
-        num: 133,
+        num: 70000000133,
         species: "Shot",
         types: ["Grass", "Flying"],
         genderRatio: {
@@ -1809,7 +1809,7 @@ exports.BattlePokedex = {
         otherFormes: ["shotmega"],
     },
     shotmega: {
-        num: 133,
+        num: 70000000133,
         species: "Shot-Mega",
         baseSpecies: "Shot",
         forme: "Mega",
@@ -1836,7 +1836,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     houdini: {
-        num: 134,
+        num: 70000000134,
         species: "Houdini",
         types: ["Ghost", "Normal"],
         genderRatio: {
@@ -1861,7 +1861,7 @@ exports.BattlePokedex = {
         otherFormes: ["houdinimega"],
     },
     houdinimega: {
-        num: 134,
+        num: 70000000134,
         species: "Houdini-Mega",
         baseSpecies: "Houdini",
         forme: "Mega",
@@ -1888,7 +1888,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     pidgetran: {
-        num: 135,
+        num: 70000000135,
         species: "Pidgetran",
         types: ["Fire", "Flying"],
         genderRatio: {
@@ -1913,7 +1913,7 @@ exports.BattlePokedex = {
         otherFormes: ["pidgetranmega"],
     },
     pidgetranmega: {
-        num: 135,
+        num: 70000000135,
         species: "Pidgetran-Mega",
         baseSpecies: "Pidgetran",
         forme: "Mega",
@@ -1940,7 +1940,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     manatar: {
-        num: 135,
+        num: 70000000135,
         species: "Manatar",
         types: ["Water", "Dark"],
         genderRatio: {
@@ -1965,7 +1965,7 @@ exports.BattlePokedex = {
         otherFormes: ["manatarmega"],
     },
     manatarmega: {
-        num: 136,
+        num: 70000000136,
         species: "Manatar-Mega",
         baseSpecies: "Manatar",
         forme: "Mega",
@@ -1992,7 +1992,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     aurortoise: {
-        num: 137,
+        num: 70000000137,
         species: "Aurortoise",
         types: ["Water", "Ice"],
         genderRatio: {
@@ -2017,7 +2017,7 @@ exports.BattlePokedex = {
         otherFormes: ["aurortoisemega"],
     },
     aurortoisemega: {
-        num: 137,
+        num: 70000000137,
         species: "Aurortoise-Mega",
         baseSpecies: "Aurortoise",
         forme: "Mega",
@@ -2044,7 +2044,7 @@ exports.BattlePokedex = {
         eggGroups: ["Monster"],
     },
     metsir: {
-        num: 138,
+        num: 70000000138,
         species: "Metsir",
         types: ["Steel", "Bug"],
         genderRatio: {
@@ -2069,7 +2069,7 @@ exports.BattlePokedex = {
         otherFormes: ["metsirmegam", "metsirmegap"],
     },
     metsirmegam: {
-        num: 138,
+        num: 70000000138,
         species: "Mestir-Mega-M",
         baseSpecies: "Metsir",
         forme: "Mega-M",
@@ -2096,7 +2096,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     metsirmegap: {
-        num: 138,
+        num: 70000000138,
         species: "Metsir-Mega-P",
         baseSpecies: "Metsir",
         forme: "Mega-P",
@@ -2123,7 +2123,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     fablesteel: {
-        num: 139,
+        num: 70000000139,
         species: "Fablesteel",
         types: ["Fairy", "Steel"],
         genderRatio: {
@@ -2147,7 +2147,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     bastioking: {
-        num: 140,
+        num: 70000000140,
         species: "Bastioking",
         types: ["Water", "Steel"],
         genderRatio: {
@@ -2171,7 +2171,7 @@ exports.BattlePokedex = {
         eggGroup: ["Monster"],
     },
     loppeye: {
-        num: 141,
+        num: 70000000141,
         species: "Loppeye",
         types: ["Ghost", "Norma"],
         genderRatio: {
@@ -2196,7 +2196,7 @@ exports.BattlePokedex = {
         otherFormes: ["loppeyemegax", "loppeyemegay"],
     },
     loppeyemegax: {
-        num: 141,
+        num: 70000000141,
         species: "Loppeye-Mega-X",
         baseSpecies: "Loppeye",
         forme: "Mega-X",
@@ -2223,7 +2223,7 @@ exports.BattlePokedex = {
         eggGroups: ["Human-Like"],
     },
     loppeyemegay: {
-        num: 141,
+        num: 70000000141,
         species: "Loppeye-Mega-Y",
         baseSpecies: "Loppeye",
         forme: "Mega-Y",
@@ -2250,7 +2250,7 @@ exports.BattlePokedex = {
         eggGroups: ["Human-Like"],
     },
     houndlion: {
-        num: 142,
+        num: 70000000142,
         species: "Houndlion",
         types: ["Dark", "Steel"],
         genderRatio: {
@@ -2275,7 +2275,7 @@ exports.BattlePokedex = {
         otherFormes: ["houndlionmega"],
     },
     houndlionmega: {
-        num: 142,
+        num: 70000000142,
         species: "Houndlion-Mega",
         baseSpecies: "Houndlion",
         forme: "Mega",
@@ -2302,7 +2302,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     aegilene: {
-        num: 143,
+        num: 70000000143,
         species: "Aegilene",
         types: ["Bug", "Steel"],
         genderRatio: {
@@ -2327,7 +2327,7 @@ exports.BattlePokedex = {
         otherFormes: ["aegileneblade"],
     },
     aegileneblade: {
-        num: 143,
+        num: 70000000143,
         species: "Aegilene-Blade",
         baseSpecies: "Aegilene",
         forme: "Blade",
@@ -2354,7 +2354,7 @@ exports.BattlePokedex = {
         eggGroup: ["Undiscovered"],
     },
     sablemimez: {
-        num: 144,
+        num: 70000000144,
         species: "Sablemimez",
         types: ["Ghost", "Fairy"],
         genderRatio: {
@@ -2379,7 +2379,7 @@ exports.BattlePokedex = {
         otherFormes: ["sablemimezmega"],
     },
     sablemimezmega: {
-        num: 144,
+        num: 70000000144,
         species: "Sablemimez-Mega",
         baseSpecies: "Sablemimez",
         forme: "Mega",
@@ -2406,7 +2406,7 @@ exports.BattlePokedex = {
         eggGroups: ["Human-Like"],
     },
     casting: {
-        num: 145,
+        num: 70000000145,
         species: "Casting",
         types: ["Poison", "Normal"],
         genderRatio: {
@@ -2430,7 +2430,7 @@ exports.BattlePokedex = {
         eggGroup: ["Amorphous"],
     },
     castingsunny: {
-        num: 145,
+        num: 70000000145,
         species: "Casting-Sunny",
         types: ["Poison", "Fire"],
         genderRatio: {
@@ -2454,7 +2454,7 @@ exports.BattlePokedex = {
         eggGroup: ["Amorphous"],
     },
     castingrainy: {
-        num: 145,
+        num: 70000000145,
         species: "Casting-Rainy",
         types: ["Poison", "Water"],
         genderRatio: {
@@ -2478,7 +2478,7 @@ exports.BattlePokedex = {
         eggGroup: ["Amorphous"],
     },
     castingicy: {
-        num: 145,
+        num: 70000000145,
         species: "Casting-Icy",
         types: ["Poison", "Ice"],
         genderRatio: {
@@ -2502,7 +2502,7 @@ exports.BattlePokedex = {
         eggGroup: ["Amorphous"],
     },
     swank: {
-        num: 146,
+        num: 70000000146,
         species: "Swank",
         types: ["Water", "Steel"],
         genderRatio: {
@@ -2527,7 +2527,7 @@ exports.BattlePokedex = {
         otherFormes: ["swankmega"],
     },
     swankmega: {
-        num: 146,
+        num: 70000000146,
         species: "Swankz-Mega",
         baseSpecies: "Swank",
         forme: "Mega",
@@ -2554,7 +2554,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     lucharma: {
-        num: 147,
+        num: 70000000147,
         species: "Lucharma",
         types: ["Fighting", "Flying"],
         genderRatio: {
@@ -2578,7 +2578,7 @@ exports.BattlePokedex = {
         eggGroup: ["Human-Like"],
     },
     mana: {
-        num: 148,
+        num: 70000000148,
         species: "Mana",
         types: ["Ghost", "Electric"],
         genderRatio: {
@@ -2603,7 +2603,7 @@ exports.BattlePokedex = {
         otherFormes: ["manamega"],
     },
     manamega: {
-        num: 148,
+        num: 70000000148,
         species: "Mana-Mega",
         baseSpecies: "Mana",
         forme: "Mega",
@@ -2630,7 +2630,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     harem: {
-        num: 149,
+        num: 70000000149,
         species: "Harem",
         types: ["Dragon", "Ice"],
         genderRatio: {
@@ -2654,7 +2654,7 @@ exports.BattlePokedex = {
         eggGroup: ["Undiscovered"],
     },
     mismagivoir: {
-        num: 150,
+        num: 70000000150,
         species: "Mismagivoir",
         types: ["Ghost", "Fairy"],
         genderRatio: {
@@ -2679,7 +2679,7 @@ exports.BattlePokedex = {
         otherFormes: ["mismagivoirmega"],
     },
     mismagivoirmega: {
-        num: 150,
+        num: 70000000150,
         species: "Mismagivoir-Mega",
         baseSpecies: "Mismagivoir",
         forme: "Mega",
@@ -2706,7 +2706,7 @@ exports.BattlePokedex = {
         eggGroups: ["Amorphous"],
     },
     herasir: {
-        num: 151,
+        num: 70000000151,
         species: "Herasir",
         types: ["Fighting", "Bug"],
         genderRatio: {
@@ -2731,7 +2731,7 @@ exports.BattlePokedex = {
         otherFormes: ["herasirmegap", "herasirmegam"],
     },
     herasirmegah: {
-        num: 151,
+        num: 70000000151,
         species: "Herasir-Mega-H",
         baseSpecies: "Herasir",
         forme: "Mega-H",
@@ -2758,7 +2758,7 @@ exports.BattlePokedex = {
         eggGroups: ["Bug"],
     },
     herasirmegap: {
-        num: 151,
+        num: 70000000151,
         species: "Herasir-Mega-P",
         baseSpecies: "Herasir",
         forme: "Mega-P",
@@ -2785,7 +2785,7 @@ exports.BattlePokedex = {
         eggGroups: ["Bug"],
     },
     banegross: {
-        num: 152,
+        num: 70000000152,
         species: "Banegross",
         types: ["Steel", "Ghost"],
         genderRatio: {
@@ -2810,7 +2810,7 @@ exports.BattlePokedex = {
         otherFormes: ["banegrossmegax", "banegrossmegay"],
     },
     banegrossmegax: {
-        num: 152,
+        num: 70000000152,
         species: "Banegross-Mega-X",
         baseSpecies: "Banegross",
         forme: "Mega-X",
@@ -2837,7 +2837,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     banegrossmegay: {
-        num: 152,
+        num: 70000000152,
         species: "Banegross-Mega-Y",
         baseSpecies: "Banegross",
         forme: "Mega-Y",
@@ -2864,7 +2864,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     moltie: {
-        num: 153,
+        num: 70000000153,
         species: "Moltie",
         types: ["Fairy", "Fire"],
         genderRatio: {
@@ -2888,7 +2888,7 @@ exports.BattlePokedex = {
         eggGroup: ["Undiscovered"],
     },
     grenheatja: {
-        num: 154,
+        num: 70000000154,
         species: "Grenheatja",
         types: ["Water", "Fire"],
         genderRatio: {
@@ -2912,7 +2912,7 @@ exports.BattlePokedex = {
         eggGroup: ["Undiscovered"],
     },
     dartios: {
-        num: 155,
+        num: 70000000155,
         species: "Dartios",
         types: ["Fire", "Dragon"],
         genderRatio: {
@@ -2937,7 +2937,7 @@ exports.BattlePokedex = {
         otherFormes: ["dartiosmega"],
     },
     dartiosmega: {
-        num: 155,
+        num: 70000000155,
         species: "Dartios-Mega",
         baseSpecies: "Dartios",
         forme: "Mega",
@@ -2964,7 +2964,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     metabat: {
-        num: 156,
+        num: 70000000156,
         species: "Metabat",
         types: ["Steel", "Flying"],
         genderRatio: {
@@ -2989,7 +2989,7 @@ exports.BattlePokedex = {
         otherFormes: ["metabatmega"],
     },
     metabatmega: {
-        num: 156,
+        num: 70000000156,
         species: "Metabat-Mega",
         baseSpecies: "Metabat",
         forme: "Mega",
@@ -3016,7 +3016,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     jellivoir: {
-        num: 157,
+        num: 70000000157,
         species: "Jellivoir",
         types: ["Ghost", "Fairy"],
         genderRatio: {
@@ -3041,7 +3041,7 @@ exports.BattlePokedex = {
         otherFormes: ["jellivoirmega"],
     },
     jellivoirmega: {
-        num: 157,
+        num: 70000000157,
         species: "Jellivoir-Mega",
         baseSpecies: "Jellivoir",
         forme: "Mega",
@@ -3068,7 +3068,7 @@ exports.BattlePokedex = {
         eggGroups: ["Amorphous"],
     },
     suirizion: {
-        num: 158,
+        num: 70000000158,
         species: "Suirizion",
         types: ["Grass", "Water"],
         genderRatio: {
@@ -3092,7 +3092,7 @@ exports.BattlePokedex = {
         eggGroup: ["Undiscovered"],
     },
     yangarde: {
-        num: 159,
+        num: 70000000159,
         species: "Yangarde",
         types: ["Dragon", "Bug"],
         genderRatio: {
@@ -3116,7 +3116,7 @@ exports.BattlePokedex = {
         eggGroup: ["Undiscovered"],
     },
     maladuck: {
-        num: 160,
+        num: 70000000160,
         species: "Maladuck",
         types: ["Water", "Dark"],
         genderRatio: {
@@ -3140,7 +3140,7 @@ exports.BattlePokedex = {
         eggGroup: ["Water 1"],
     },
     hitmonklang: {
-        num: 161,
+        num: 70000000161,
         species: "Hitmonklang",
         types: ["Steel", "Fighitng"],
         genderRatio: {
@@ -3164,7 +3164,7 @@ exports.BattlePokedex = {
         eggGroup: ["Undiscovered"],
     },
     hazard: {
-        num: 162,
+        num: 70000000162,
         species: "Hazard",
         types: ["Fire", "Dragon"],
         genderRatio: {
@@ -3189,7 +3189,7 @@ exports.BattlePokedex = {
         otherFormes: ["hazardmegax", "hazardmegay"],
     },
     hazardmegax: {
-        num: 162,
+        num: 70000000162,
         species: "Hazard-Mega-X",
         baseSpecies: "Hazard",
         forme: "Mega-X",
@@ -3216,7 +3216,7 @@ exports.BattlePokedex = {
         eggGroups: ["Monster", "Dragon"],
     },
     hazardmegay: {
-        num: 162,
+        num: 70000000162,
         species: "Hazard-Mega-Y",
         baseSpecies: "Hazard",
         forme: "Mega-Y",
@@ -3243,7 +3243,7 @@ exports.BattlePokedex = {
         eggGroups: ["Monster", "Dragon"],
     },
     ferroslash: {
-        num: 163,
+        num: 70000000163,
         species: "Ferroslash",
         types: ["Grass", "Steel"],
         genderRatio: {
@@ -3268,7 +3268,7 @@ exports.BattlePokedex = {
         otherFormes: ["ferroslashblade"],
     },
     ferroslashblade: {
-        num: 163,
+        num: 70000000163,
         species: "Ferroslash-Blade",
         baseSpecies: "Ferroslash",
         forme: "Blade",
@@ -3295,7 +3295,7 @@ exports.BattlePokedex = {
         eggGroup: ["Mineral"],
     },
     shaymizard: {
-        num: 164,
+        num: 70000000164,
         species: "Shaymizard",
         types: ["Fire", "Grass"],
         genderRatio: {
@@ -3320,7 +3320,7 @@ exports.BattlePokedex = {
         otherFormes: ["shaymizardmegax", "shaymizardmegay"],
     },
     shaymizardmegax: {
-        num: 164,
+        num: 70000000164,
         species: "Shaymizard-Mega-X",
         baseSpecies: "Shaymizard",
         forme: "Mega-X",
@@ -3347,7 +3347,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     shaymizardmegay: {
-        num: 164,
+        num: 70000000164,
         species: "Shaymizard-Mega-Y",
         baseSpecies: "Shaymizard",
         forme: "Mega-Y",
@@ -3374,7 +3374,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     hitachi: {
-        num: 165,
+        num: 70000000165,
         species: "Hitachi",
         types: ["Steel", "Fire"],
         genderRatio: {
@@ -3398,7 +3398,7 @@ exports.BattlePokedex = {
         eggGroup: ["Undiscovered"],
     },
     eek: {
-        num: 166,
+        num: 70000000166,
         species: "Eek",
         types: ["Poison", "Electric"],
         genderRatio: {
@@ -3422,7 +3422,7 @@ exports.BattlePokedex = {
         eggGroup: ["Amorphous"],
     },
     starchamp: {
-        num: 167,
+        num: 70000000167,
         species: "Starchamp",
         types: ["Water", "Fighitng"],
         genderRatio: {
@@ -3446,7 +3446,7 @@ exports.BattlePokedex = {
         eggGroup: ["Undiscovered"],
     },
     porylure: {
-        num: 168,
+        num: 70000000168,
         species: "Porylure",
         types: ["Normal", "Ghost"],
         genderRatio: {
@@ -3470,7 +3470,7 @@ exports.BattlePokedex = {
         eggGroup: ["Undiscovered"],
     },
     pidgemie: {
-        num: 169,
+        num: 70000000169,
         species: "Pidgemie",
         types: ["Water", "Normal"],
         genderRatio: {
@@ -3495,7 +3495,7 @@ exports.BattlePokedex = {
         otherFormes: ["pidgemiemega"],
     },
     pidgemiemega: {
-        num: 169,
+        num: 70000000169,
         species: "Pidgemie-Mega",
         baseSpecies: "Pidgemie",
         forme: "Mega",
@@ -3522,7 +3522,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     klazor: {
-        num: 170,
+        num: 70000000170,
         species: "Klazor",
         types: ["Bug", "Steel"],
         genderRatio: {
@@ -3547,7 +3547,7 @@ exports.BattlePokedex = {
         otherFormes: ["klazormega"],
     },
     klazormega: {
-        num: 170,
+        num: 70000000170,
         species: "Klazor-Mega",
         baseSpecies: "Klazor",
         forme: "Mega",
@@ -3574,7 +3574,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     gorecanion: {
-        num: 171,
+        num: 70000000171,
         species: "Gorecanion",
         types: ["Water", "Fire"],
         genderRatio: {
@@ -3598,7 +3598,7 @@ exports.BattlePokedex = {
         eggGroup: ["Undiscovered"],
     },
     perwearalola: {
-        num: 172,
+        num: 70000000172,
         species: "Perwear-Alola",
         types: ["Dark", "Fighting"],
         genderRatio: {
@@ -3622,7 +3622,7 @@ exports.BattlePokedex = {
         eggGroups: ["Field"],
     },
     crematoria: {
-        num: -173,
+        num: 70000000-173,
         species: "Crematoria",
         types: ["Flying", "Psychic"],
         genderRatio: {
@@ -3646,7 +3646,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     cremetoriamegax: {
-        num: 173,
+        num: 70000000173,
         species: "Crematoria-Mega X",
         baseSpecies: "Crematoria",
         forme: "Mega",
@@ -3674,7 +3674,7 @@ exports.BattlePokedex = {
     },
 
     crematoriamegay: {
-        num: -173,
+        num: 70000000-173,
         species: "Crematoria-Mega Y",
         baseSpecies: "Crematoria",
         forme: "Mega",
@@ -3702,7 +3702,7 @@ exports.BattlePokedex = {
     },
 
     crematoriasematary: {
-        num: -174,
+        num: 70000000-174,
         species: "Crematoria-Sematary",
         types: ["Flying", "Fighting"],
         genderRatio: {
@@ -3727,7 +3727,7 @@ exports.BattlePokedex = {
     },
 
     crematoriasematarymegax: {
-        num: -174,
+        num: 70000000-174,
         species: "Crematoria-Sematary Mega X",
         baseSpecies: "Crematoria-Sematary",
         forme: "Mega",
@@ -3755,7 +3755,7 @@ exports.BattlePokedex = {
     },
 
     crematoriasematarymegay: {
-        num: -175,
+        num: 70000000-175,
         species: "Crematoria-Sematary-Mega Y",
         baseSpecies: "Crematoria-Sematary",
         forme: "Mega",
@@ -3782,7 +3782,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     golisotop: {
-        num: -176,
+        num: 70000000-176,
         species: "Golisotops",
         types: ["Bug", "Water"],
         genderRatio: {
@@ -3807,7 +3807,7 @@ exports.BattlePokedex = {
     },
 
     lycanpae: {
-        num: -177,
+        num: 70000000-177,
         species: "Lycanape",
         types: ["Rock", "Fighting"],
         genderRatio: {
@@ -3831,7 +3831,7 @@ exports.BattlePokedex = {
         eggGroups: ["Field"],
     },
     pherothron: {
-        num: -178,
+        num: 70000000-178,
         species: "Pherothorn",
         types: ["Bug", "Steel"],
         genderRatio: {
@@ -3855,7 +3855,7 @@ exports.BattlePokedex = {
         eggGroups: ["Undiscovered"],
     },
     slampa: {
-        num: -179,
+        num: 70000000-179,
         species: "Slampa",
         types: ["Water", "Dragon"],
         genderRatio: {
@@ -3879,7 +3879,7 @@ exports.BattlePokedex = {
         eggGroups: ["Monster"],
     },
     slampamega: {
-        num: 179,
+        num: 70000000179,
         species: "Slampa-Mega",
         baseSpecies: "Slampa",
         forme: "Mega",
@@ -3906,3 +3906,4 @@ exports.BattlePokedex = {
         eggGroups: ["Monster", ],
     },
 };
+
