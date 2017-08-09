@@ -4025,7 +4025,7 @@ exports.BattleMovedex = {
                 zMovePower: 160,
                 contestType: "Clever",
         },
-        "dragonscage": {
+       /* "dragonscage": {
                 accuracy: 100,
                 basePower: 80,
                 category: "Special",
@@ -4069,7 +4069,7 @@ exports.BattleMovedex = {
                 type: "Dragon",
                 zMovePower: 170,
                 contestType: "Clever",
-        },
+        },*/
         "coaststones": {
                 accuracy: 100,
                 basePower: 70,
