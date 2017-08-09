@@ -4165,7 +4165,7 @@ exports.BattleMovedex = {
                 zMoveBoost: {def: 1},
                 contestType: "Clever",
         },
-        "richteruption": {
+       /* "richteruption": {
                 accuracy: 95,
                 basePower: 110,
                 category: "Special",
@@ -4207,7 +4207,7 @@ exports.BattleMovedex = {
                 type: "Ground",
                 zMovePower: 185,
                 contestType: "Tough",
-        },
+        },*/
         "viralcore": {
                 accuracy: 100,
                 basePower: 100,
