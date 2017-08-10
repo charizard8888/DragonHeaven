@@ -28,7 +28,7 @@ exports.BattlePokedex = {
         base: 'Swampert',
     },
     swampamarmega: {
-        num: 7000000062,
+        num: 7000000061,
         species: "Swampamar-Mega",
         baseSpecies: "Swampamar",
         forme: "Mega",
