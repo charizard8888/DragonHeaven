@@ -442,6 +442,127 @@ exports.BattleItems = {
 		},
 		desc: "If holder is a Shuckle, this item allows it to Mega Evolve in battle.",
 	},
+	"torterrite": {
+		id: "torterrite",
+		name: "Torterrite",
+		megaStone: "Torterra-Mega",
+		megaEvolves: "Torterra",
+		onTakeItem: function(item, source) {
+			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+			return true;
+		},
+		desc: "If holder is a Torterra, this item allows it to Mega Evolve in battle.",
+	},
+	"infernapite": {
+		id: "infernapite",
+		name: "Infernapite",
+		megaStone: "Infernape-Mega",
+		megaEvolves: "Infernape",
+		onTakeItem: function(item, source) {
+			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+			return true;
+		},
+		desc: "If holder is a Infernape, this item allows it to Mega Evolve in battle.",
+	},
+	"empoleonite": {
+		id: "empoleonite",
+		name: "Empoleonite",
+		megaStone: "Empoleon-Mega",
+		megaEvolves: "Empoleon",
+		onTakeItem: function(item, source) {
+			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+			return true;
+		},
+		desc: "If holder is a Empoleon, this item allows it to Mega Evolve in battle.",
+	},
+	"serperrite": {
+		id: "serperrite",
+		name: "Serperrite",
+		megaStone: "Serperior-Mega",
+		megaEvolves: "Serperior",
+		onTakeItem: function(item, source) {
+			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+			return true;
+		},
+		desc: "If holder is a Serperior, this item allows it to Mega Evolve in battle.",
+	},
+	"emboarite": {
+		id: "emboarite",
+		name: "Emboarite",
+		megaStone: "Emboar-Mega",
+		megaEvolves: "Emboar",
+		onTakeItem: function(item, source) {
+			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+			return true;
+		},
+		desc: "If holder is a Emboar, this item allows it to Mega Evolve in battle.",
+	},
+	"samurrite": {
+		id: "samurrite",
+		name: "Samurrite",
+		megaStone: "Samurott-Mega",
+		megaEvolves: "Samurott",
+		onTakeItem: function(item, source) {
+			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+			return true;
+		},
+		desc: "If holder is a Samurott, this item allows it to Mega Evolve in battle.",
+	},
+	"chesnaughtite": {
+		id: "chesnaughtite",
+		name: "Chesnaughtite",
+		megaStone: "Chesnaught-Mega",
+		megaEvolves: "Chesnaught",
+		onTakeItem: function(item, source) {
+			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+			return true;
+		},
+		desc: "If holder is a Chesnaught, this item allows it to Mega Evolve in battle.",
+	},
+	"delphoxite": {
+		id: "delphoxite",
+		name: "Delphoxite",
+		megaStone: "Delphox-Mega",
+		megaEvolves: "Delphox",
+		onTakeItem: function(item, source) {
+			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+			return true;
+		},
+		desc: "If holder is a Delphox, this item allows it to Mega Evolve in battle.",
+	},
+	"deciduite": {
+		id: "deciduite",
+		name: "Deciduite",
+		megaStone: "Decidueye-Mega",
+		megaEvolves: "Decidueye",
+		onTakeItem: function(item, source) {
+			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+			return true;
+		},
+		desc: "If holder is a Decidueye, this item allows it to Mega Evolve in battle.",
+	},
+	"incinerorite": {
+		id: "incinerorite",
+		name: "Incinerorite",
+		megaStone: "Incineroar-Mega",
+		megaEvolves: "Incineroar",
+		onTakeItem: function(item, source) {
+			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+			return true;
+		},
+		desc: "If holder is a Incineroar, this item allows it to Mega Evolve in battle.",
+	},
+	"primarinite": {
+		id: "primarinite",
+		name: "Primarinite",
+		megaStone: "Primarina-Mega",
+		megaEvolves: "Primarina",
+		onTakeItem: function(item, source) {
+			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+			return true;
+		},
+		desc: "If holder is a Primarina, this item allows it to Mega Evolve in battle.",
+	},
 	"trickystone": {
 		id: "trickystone",
 		name: "Tricky Stone",
