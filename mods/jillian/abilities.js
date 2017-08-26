@@ -22,20 +22,6 @@ exports.BattleAbilities = {
 		name: "Punchilate",
 		rating: 4,
 	},
-		"crystalblaze": {
-		desc: "This Pokemon's Fire type moves ignore resistances and immunities",
-		shortDesc: "Fire moves ignore resists and immunities",
-		onModifyMove: function (move) {
-			if (move.type === 'Fire') {
-                          onEffectiveness: function (typeMod, type) {
-                        	if (type === (['Water', 'Rock', 'Dragon', 'Fire'])) return 0;
-			  }
-			}
-		},
-		id: "crystalblaze",
-		name: "Crystal Blaze",
-		rating: 4,
-	},
 	"landinate": {
 		desc: "This Pokemon's Normal-type moves become Ground-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
 		shortDesc: "This Pokemon's Normal-type moves become Ground type and have 1.2x power.",
