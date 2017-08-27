@@ -87,6 +87,7 @@ exports.BattleAliases = {
 	"gen6inverse": "Inverse Battle",
 	"bf": "[Gen 6] Battle Factory",
 	"gen6inverse": "[Gen 6] Inverse Battle",
+	"gen72v2doubles": "[Gen 7] 2v2 Doubles",
 
 	// mega evos
 	"maero": "Aerodactyl-Mega",
