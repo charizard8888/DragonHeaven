@@ -314,7 +314,7 @@ weightkg: 148.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-/*{
+railie: {
 num: 750027,
 species: "Railie",
 types: ["Ice","Electric"],
@@ -326,7 +326,7 @@ weightkg: 143.25,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+charatos: {
 num: 750028,
 species: "Charatos",
 types: ["Fire","Water"],
@@ -338,7 +338,7 @@ weightkg: 162.75,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+aggrosaur: {
 num: 750029,
 species: "Aggrosaur",
 types: ["Grass","Steel"],
@@ -350,7 +350,7 @@ weightkg: 230,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+blastninja: {
 num: 750030,
 species: "Blastinja",
 types: ["Water","Dark"],
@@ -362,7 +362,7 @@ weightkg: 62.75,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+skaria: {
 num: 750031,
 species: "Skaria",
 types: ["Steel","Dragon"],
@@ -374,7 +374,7 @@ weightkg: 35.55,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+magmozam: {
 num: 750032,
 species: "Magmozam",
 types: ["Fire","Psychic"],
@@ -386,7 +386,7 @@ weightkg: 58,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+glakiss: {
 num: 750033,
 species: "Glakiss",
 types: ["Fairy","Ice"],
@@ -398,7 +398,7 @@ weightkg: 147.25,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+sharpedos: {
 num: 750034,
 species: "Sharpedos",
 types: ["Water"],
@@ -410,7 +410,7 @@ weightkg: 161.9,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+vapornine: {
 num: 750035,
 species: "Vapornine",
 types: ["Water","Fire"],
@@ -422,7 +422,7 @@ weightkg: 92,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+pidgetot: {
 num: 750036,
 species: "Pidgetot",
 types: ["Normal","Flying"],
@@ -434,7 +434,7 @@ weightkg: 20.7,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+goracanion: {
 num: 750037,
 species: "Goracanion",
 types: ["Fire","Water"],
@@ -446,7 +446,7 @@ weightkg: 108.8,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+klazor: {
 num: 750038,
 species: "Klazor",
 types: ["Bug","Steel"],
@@ -458,7 +458,7 @@ weightkg: 84.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+pidgemie: {
 num: 750039,
 species: "Pidgemie",
 types: ["Water","Normal"],
@@ -470,7 +470,7 @@ weightkg: 59.75,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+eek: {
 num: 750040,
 species: "Eek",
 types: ["Electric","Poison"],
@@ -482,7 +482,7 @@ weightkg: 55.25,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+hitachi: {
 num: 750041,
 species: "Hitachi",
 types: ["Fire","Steel"],
@@ -494,7 +494,7 @@ weightkg: 215.55,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+shaynizard: {
 num: 750042,
 species: "Shaymizard",
 types: ["Fire","Grass"],
@@ -506,7 +506,7 @@ weightkg: 46.3,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+ferroslashshield: {
 num: 750043,
 species: "Ferroslash-Shield",
 types: ["Steel","Grass"],
@@ -518,7 +518,7 @@ weightkg: 81.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+hazard: {
 num: 750044,
 species: "Hazard",
 types: ["Fire","Dragon"],
@@ -530,7 +530,7 @@ weightkg: 98,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+hitmonklang: {
 num: 750045,
 species: "Hitmonklang",
 types: ["Steel","Fighting"],
@@ -542,7 +542,7 @@ weightkg: 64.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+maladuck: {
 num: 750046,
 species: "Maladuck",
 types: ["Water","Dark"],
@@ -554,7 +554,7 @@ weightkg: 61.8,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+yangarde: {
 num: 750047,
 species: "Yangarde",
 types: ["Dragon","Bug"],
@@ -566,7 +566,7 @@ weightkg: 178.25,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+suirizion: {
 num: 750048,
 species: "Suirizion",
 types: ["Grass","Water"],
@@ -578,7 +578,7 @@ weightkg: 193.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+jellivoir: {
 num: 750049,
 species: "Jellivoir",
 types: ["Ghost","Fairy"],
@@ -590,7 +590,7 @@ weightkg: 91.7,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+metabat: {
 num: 750050,
 species: "Metabat",
 types: ["Steel","Flying"],
@@ -602,7 +602,7 @@ weightkg: 312.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+dartios: {
 num: 750051,
 species: "Dartios",
 types: ["Fire","Dragon"],
@@ -614,7 +614,7 @@ weightkg: 76.45,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+grenheatja: {
 num: 750052,
 species: "Grenheatja",
 types: ["Water","Fire"],
@@ -626,7 +626,7 @@ weightkg: 235,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+moltie: {
 num: 750053,
 species: "Moltie",
 types: ["Fairy","Fire"],
@@ -638,7 +638,7 @@ weightkg: 34.4,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+banegross: {
 num: 750054,
 species: "Banegross",
 types: ["Ghost","Steel"],
@@ -650,7 +650,7 @@ weightkg: 281.25,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+herasir: {
 num: 750055,
 species: "Herasir",
 types: ["Fighting","Bug"],
@@ -662,7 +662,7 @@ weightkg: 54.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+mismagivoir: {
 num: 750056,
 species: "Mismagivoir",
 types: ["Fairy","Ghost"],
@@ -674,7 +674,7 @@ weightkg: 26.4,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+harem: {
 num: 750057,
 species: "Harem",
 types: ["Dragon","Ice"],
@@ -686,7 +686,7 @@ weightkg: 215.25,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+mana: {
 num: 750058,
 species: "Mana",
 types: ["Ghost","Electric"],
@@ -698,7 +698,7 @@ weightkg: 24.6,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+lucharma: {
 num: 750059,
 species: "Lucharma",
 types: ["Fighting","Flying"],
@@ -710,7 +710,7 @@ weightkg: 137.65,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+swank: {
 num: 750060,
 species: "Swank",
 types: ["Water","Steel"],
@@ -722,7 +722,7 @@ weightkg: 81.45,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+casting: {
 num: 750061,
 species: "Casting",
 types: ["Poison","Normal"],
@@ -734,7 +734,7 @@ weightkg: 5.15,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+/*{
 num: 750062,
 species: "Sablemimez",
 types: ["Ghost","Fairy"],
