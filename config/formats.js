@@ -3915,6 +3915,14 @@ exports.Formats = [
 		banlist: [],
 		mod: 'megasforall',
 	},
+	{
+		name: "[Gen 7] Sylvemons",
+		desc: ["&bullet; Mons",
+		      ],
+		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+		banlist: [],
+		mod: 'sylvemons',
+	},
 
 	{
 		name: "Universal Ubers",
