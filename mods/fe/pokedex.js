@@ -962,7 +962,7 @@ weightkg: 34.95,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-/* {
+blisskiss: {
 num: 750081,
 species: "Blisskiss",
 types: ["Normal","Fairy"],
@@ -974,7 +974,7 @@ weightkg: 42.4,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+toxisharp: {
 num: 750082,
 species: "Toxisharp",
 types: ["Dark","Poison"],
@@ -986,7 +986,7 @@ weightkg: 57.2,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+darmega: {
 num: 750083,
 species: "Darmega",
 types: ["Dark","Bug"],
@@ -998,7 +998,7 @@ weightkg: 51,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+lagi: {
 num: 750084,
 species: "Lag-I",
 types: ["Ground","Ice"],
@@ -1010,7 +1010,7 @@ weightkg: 162.25,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+heatloom: {
 num: 750085,
 species: "Heatloom",
 types: ["Steel","Grass"],
@@ -1022,7 +1022,7 @@ weightkg: 234.6,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+golislashdefense: {
 num: 750086,
 species: "Golislash-Defense",
 types: ["Ghost","Steel"],
@@ -1034,7 +1034,7 @@ weightkg: 191.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+hooporus: {
 num: 750087,
 species: "Hooporus",
 types: ["Ghost","Dragon"],
@@ -1046,7 +1046,7 @@ weightkg: 57.25,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+lopunnini: {
 num: 750088,
 species: "Lopunnini",
 types: ["Fire","Normal"],
@@ -1058,7 +1058,7 @@ weightkg: 18.65,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+volcagon: {
 num: 750089,
 species: "Volcagon",
 types: ["Fire","Ground"],
@@ -1070,7 +1070,7 @@ weightkg: 64,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+enterrak: {
 num: 750090,
 species: "Enterrak",
 types: ["Fire","Fighting"],
@@ -1082,7 +1082,7 @@ weightkg: 229,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+aeroraptor: {
 num: 750091,
 species: "Aeroraptor",
 types: ["Normal","Flying"],
@@ -1094,7 +1094,7 @@ weightkg: 41.95,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+sans: {
 num: 750092,
 species: "Sans",
 types: ["Normal","Ground"],
@@ -1106,7 +1106,7 @@ weightkg: 80,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+lucasol: {
 num: 750093,
 species: "Lucasol",
 types: ["Fighting","Dark"],
@@ -1118,7 +1118,7 @@ weightkg: 50.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+sceptilusaur: {
 num: 750094,
 species: "Sceptilusaur",
 types: ["Poison","Grass"],
@@ -1130,7 +1130,7 @@ weightkg: 76.1,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+houndectric: {
 num: 750095,
 species: "Houndectric",
 types: ["Electric","Dark"],
@@ -1142,7 +1142,7 @@ weightkg: 37.6,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+/*{
 num: 750096,
 species: "Exdoom",
 types: ["Normal","Fire"],
