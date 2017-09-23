@@ -962,7 +962,7 @@ weightkg: 34.95,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+/* {
 num: 750081,
 species: "Blisskiss",
 types: ["Normal","Fairy"],
