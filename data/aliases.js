@@ -782,4 +782,5 @@ exports.BattleAliases = {
 	"zygardeorder": "zygarde",
 	"scarfwynaut": "wynaut",
 	"winona": "dunsparce",
+	"zapmaster2010": "scrafty",
 };
