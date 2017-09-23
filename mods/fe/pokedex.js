@@ -734,7 +734,7 @@ weightkg: 5.15,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-/*{
+sablemimez: {
 num: 750062,
 species: "Sablemimez",
 types: ["Ghost","Fairy"],
@@ -746,7 +746,7 @@ weightkg: 32.75,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+aegilineshield: {
 num: 750063,
 species: "Aegiline-Shield",
 types: ["Steel","Bug"],
@@ -758,7 +758,7 @@ weightkg: 67.75,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+houndlion: {
 num: 750064,
 species: "Houndlion",
 types: ["Dark","Steel"],
@@ -770,7 +770,7 @@ weightkg: 142.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+loppeye: {
 num: 750065,
 species: "Loppeye",
 types: ["Ghost","Normal"],
@@ -782,7 +782,7 @@ weightkg: 22.15,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+bastioking: {
 num: 750066,
 species: "Bastioking",
 types: ["Water","Steel"],
@@ -794,7 +794,7 @@ weightkg: 114.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+peatran: {
 num: 750067,
 species: "Peatran",
 types: ["Fire","Flying"],
@@ -806,7 +806,7 @@ weightkg: 234.75,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+manatar: {
 num: 750068,
 species: "Manatar",
 types: ["Water","Dark"],
@@ -818,7 +818,7 @@ weightkg: 101.7,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+aurortoise: {
 num: 750069,
 species: "Aurortoise",
 types: ["Water","Ice"],
@@ -830,7 +830,7 @@ weightkg: 155.25,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+metsir: {
 num: 750070,
 species: "Metsir",
 types: ["Steel","Bug"],
@@ -842,7 +842,7 @@ weightkg: 302.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+fablesteel: {
 num: 750071,
 species: "Fablesteel",
 types: ["Fairy","Steel"],
@@ -854,7 +854,7 @@ weightkg: 122.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+houdini: {
 num: 750072,
 species: "Houdini",
 types: ["Ghost","Normal"],
@@ -866,7 +866,7 @@ weightkg: 20,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+shot: {
 num: 750073,
 species: "Shot",
 types: ["Grass","Flying"],
@@ -878,7 +878,7 @@ weightkg: 22.35,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+leafadon: {
 num: 750074,
 species: "Leafadon",
 types: ["Grass","Ground"],
@@ -890,7 +890,7 @@ weightkg: 162.75,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+mampharos: {
 num: 750075,
 species: "Mampharos",
 types: ["Electric"],
@@ -902,7 +902,7 @@ weightkg: 50.85,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+krookz: {
 num: 750076,
 species: "Krook-Z",
 types: ["Ground","Normal"],
@@ -914,7 +914,7 @@ weightkg: 65.15,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+entaria: {
 num: 750077,
 species: "Entaria",
 types: ["Fire","Dragon"],
@@ -926,7 +926,7 @@ weightkg: 109.3,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+blasterain: {
 num: 750078,
 species: "Blasterain",
 types: ["Water","Bug"],
@@ -938,7 +938,7 @@ weightkg: 44.55,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+dianbro: {
 num: 750079,
 species: "Dianbro",
 types: ["Water","Fairy"],
@@ -950,7 +950,7 @@ weightkg: 43.65,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+chatotorus: {
 num: 750080,
 species: "Chatotorus",
 types: ["Normal","Flying"],
