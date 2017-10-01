@@ -26,7 +26,7 @@ exports.BattleMovedex = {
 		type: "Flying",
 		zMovePower: 100,
 		contestType: "Cool",
-	},
+	},/*
 	"incinerate": {
 		num: 510,
 		accuracy: 100,
@@ -53,7 +53,7 @@ exports.BattleMovedex = {
 		type: "Fire",
 		zMovePower: 120,
 		contestType: "Tough",
-	},
+	},*/
 	"judgment": {
 		num: 449,
 		accuracy: 100,
@@ -82,7 +82,7 @@ exports.BattleMovedex = {
 		type: "Normal",
 		zMovePower: 180,
 		contestType: "Beautiful",
-	},
+	},/*
 	"knockoff": {
 		num: 282,
 		accuracy: 100,
@@ -100,8 +100,12 @@ exports.BattleMovedex = {
 		onBasePower: function (basePower, source, target, move) {
 			let item = target.getItem(), item2 = target.getAbility();
 			if (!this.singleEvent('TakeItem', item, {id: item.id, 'target': target}, target, source, move, item) && !this.singleEvent('TakeItem', item2, {id: item2.id, 'target': target}, target, source, move, item2)) return;
+			let boost = 1;
+			[item, item2].forEach (i => {
+				if (i.id) boost *= 1.5;
+			});
 			if (item2.id || item.id) {
-				return this.chainModify(1.5);
+				return this.chainModify(boost);
 			}
 		},
 		onAfterHit: function (target, source) {
@@ -121,7 +125,7 @@ exports.BattleMovedex = {
 		type: "Dark",
 		zMovePower: 120,
 		contestType: "Clever",
-	},
+	},*/
 	"recycle": {
 		num: 278,
 		accuracy: true,
