@@ -74,6 +74,36 @@ exports.BattleMovedex = {
 			return false;
 		},
 	},
+	"trick": {
+		inherit: true,
+		onHit: function (target, source, move) {
+			let yourItem = target.takeItem(source, 1);
+			let myItem = source.takeItem(source, 1);
+			if (target.item || source.item || (!yourItem && !myItem)) {
+				if (yourItem) target.item = yourItem.id;
+				if (myItem) source.item = myItem.id;
+				return false;
+			}
+			if ((myItem && !this.singleEvent('TakeItem', myItem, source.itemData, target, source, move, myItem)) || (yourItem && !this.singleEvent('TakeItem', yourItem, target.itemData, source, target, move, yourItem))) {
+				if (yourItem) target.item = yourItem.id;
+				if (myItem) source.item = myItem.id;
+				return false;
+			}
+			this.add('-activate', source, 'move: Trick', '[of] ' + target);
+			if (myItem) {
+				target.setItem(myItem);
+				this.add('-item', target, myItem, '[from] move: Trick');
+			} else {
+				this.add('-enditem', target, yourItem, '[silent]', '[from] move: Trick');
+			}
+			if (yourItem) {
+				source.setItem(yourItem);
+				this.add('-item', source, yourItem, '[from] move: Trick');
+			} else {
+				this.add('-enditem', source, myItem, '[silent]', '[from] move: Trick');
+			}
+		},
+	},
 	"worryseed": {
 		inherit: true,
 		onTryHit: function (pokemon) {

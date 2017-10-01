@@ -437,9 +437,10 @@ exports.BattleScripts = {
 			}
 			return false;
 		},
-		takeItem: function (source) {
+		takeItem: function (source, number) {
+			if (!number) number = 1;
 			if (!this.isActive) return false;
-			if (!this.item) {
+			if (!this.item || number === 2) {
 				if(!this.ability) return false;
 				if (!source) source = this;
 				let item = this.battle.getItem(this.ability);
@@ -460,6 +461,8 @@ exports.BattleScripts = {
 		},
 		setItem: function (item, source, effect) {
 			if (!this.hp || !this.isActive) return false;
+			let number = 1;
+			if (item.number) number = item.number;
 			item = this.battle.getItem(item);
 
 			let effectid;
@@ -468,7 +471,7 @@ exports.BattleScripts = {
 				this.isStale = 2;
 				this.isStaleSource = 'getleppa';
 			}
-			if(effect && effect.item2) {
+			if(effect && (effect.item2 || number === 2)) {
 				this.lastItem2 = this.ability;
 				this.ability = this.baseAbility = item.id;
 				if (item.id) {
