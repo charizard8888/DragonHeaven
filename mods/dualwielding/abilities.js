@@ -24,4 +24,12 @@ exports.BattleAbilities = {
 			}
 		},
 	},
+	"ironball": {
+		inherit: true,
+		onEffectiveness: function (typeMod, target, type, move) {
+			if (target.volatiles['ingrain'] || target.volatiles['smackdown'] || this.getPseudoWeather('gravity')) return;
+			if (move.type === 'Ground' && target.hasType('Flying')) return 0;
+		},
+		// airborneness negation implemented in sim/pokemon.js:Pokemon#isGrounded
+	},
 };
