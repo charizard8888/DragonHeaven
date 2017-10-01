@@ -2,9 +2,7 @@
 
 exports.BattleMovedex = {
 	"acrobatics": {
-		num: 512,
-		accuracy: 100,
-		basePower: 55,
+		inherit: true,
 		basePowerCallback: function (pokemon, target, move) {
 			if (!pokemon.item && !pokemon.ability) {
 				this.debug("Power doubled for no item");
@@ -12,20 +10,6 @@ exports.BattleMovedex = {
 			}
 			return move.basePower;
 		},
-		category: "Physical",
-		desc: "Power doubles if the user has no held item.",
-		shortDesc: "Power doubles if the user has no held item.",
-		id: "acrobatics",
-		isViable: true,
-		name: "Acrobatics",
-		pp: 15,
-		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, distance: 1},
-		secondary: false,
-		target: "any",
-		type: "Flying",
-		zMovePower: 100,
-		contestType: "Cool",
 	},/*
 	"incinerate": {
 		num: 510,
@@ -55,33 +39,15 @@ exports.BattleMovedex = {
 		contestType: "Tough",
 	},*/
 	"judgment": {
-		num: 449,
-		accuracy: 100,
-		basePower: 100,
-		category: "Special",
-		desc: "This move's type depends on the user's held Plate.",
-		shortDesc: "Type varies based on the held Plate.",
-		id: "judgment",
-		isViable: true,
-		name: "Judgment",
-		pp: 10,
-		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		inherit: true,
 		onModifyMove: function (move, pokemon) {
 			const item = pokemon.getItem(), item2 = pokemon.getAbility();
 			if (item.id && item.onPlate && !item.zMove) {
 				move.type = item.onPlate;
-				return;
-			}
-			if (item2.id && item2.onPlate && !item2.zMove) {
+			} else if (item2.id && item2.onPlate && !item2.zMove) {
 				move.type = item2.onPlate;
 			}
 		},
-		secondary: false,
-		target: "normal",
-		type: "Normal",
-		zMovePower: 180,
-		contestType: "Beautiful",
 	},/*
 	"knockoff": {
 		num: 282,
@@ -127,17 +93,7 @@ exports.BattleMovedex = {
 		contestType: "Clever",
 	},*/
 	"recycle": {
-		num: 278,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		desc: "The user regains the item it last used, if it is not holding an item. Fails if the user was not holding an item, if the item was a popped Air Balloon, if the item was picked up by a Pokemon with the Ability Pickup, or if the item was lost to Bug Bite, Covet, Incinerate, Knock Off, Pluck, or Thief. Items thrown with Fling can be regained.",
-		shortDesc: "Restores the item the user last used.",
-		id: "recycle",
-		name: "Recycle",
-		pp: 10,
-		priority: 0,
-		flags: {snatch: 1},
+		inherit: true,
 		onHit: function (pokemon) {
 			if ((pokemon.item || !pokemon.lastItem) && (pokemon.ability || !pokemon.lastItem2)) return false;
 			pokemon.setItem(pokemon.lastItem);
@@ -145,10 +101,17 @@ exports.BattleMovedex = {
 			pokemon.setItem(pokemon.lastItem2, pokemon, {item2: true});
 			this.add('-item', pokemon, pokemon.getAbility(), '[from] move: Recycle');
 		},
-		secondary: false,
-		target: "self",
-		type: "Normal",
-		zMoveBoost: {spe: 2},
-		contestType: "Clever",
+	},
+	"skillswap": {
+		inherit: true,
+		onTryHit: function (target, source) {
+			return false;
+		},
+	},
+	"worryseed": {
+		inherit: true,
+		onTryHit: function (pokemon) {
+			return false;
+		},
 	},
 };
