@@ -344,7 +344,7 @@ exports.BattleScripts = {
 					this.battle.runEvent('EatItem', this, null, null, item);
 
 					this.lastItem2 = this.ability;
-					this.ability = '';
+					this.ability = this.baseAbility = '';
 					this.usedItemThisTurn = true;
 					this.ateBerry = true;
 					this.battle.runEvent('AfterUseItem', this, null, null, item);
@@ -400,7 +400,7 @@ exports.BattleScripts = {
 					this.battle.singleEvent('Use', item, {id: item.id, target: this}, this, source, sourceEffect);
 
 					this.lastItem2 = this.ability;
-					this.ability = '';
+					this.ability = this.baseAbility = '';
 					this.usedItemThisTurn = true;
 					this.battle.runEvent('AfterUseItem', this, null, null, item);
 					return true;
@@ -437,14 +437,15 @@ exports.BattleScripts = {
 			}
 			return false;
 		},
-		takeItem: function (source) {
+		takeItem: function (source, number) {
+			if (!number) number = 1;
 			if (!this.isActive) return false;
-			if (!this.item) {
+			if (!this.item || number === 2) {
 				if(!this.ability) return false;
 				if (!source) source = this;
 				let item = this.battle.getItem(this.ability);
 				if (this.battle.runEvent('TakeItem', this, source, null, item)) {
-					this.ability = '';
+					this.ability = this.baseAbility = '';
 					return item;
 				}
 				return false;
@@ -460,6 +461,8 @@ exports.BattleScripts = {
 		},
 		setItem: function (item, source, effect) {
 			if (!this.hp || !this.isActive) return false;
+			let number = 1;
+			if (item.number) number = item.number;
 			item = this.battle.getItem(item);
 
 			let effectid;
@@ -468,9 +471,9 @@ exports.BattleScripts = {
 				this.isStale = 2;
 				this.isStaleSource = 'getleppa';
 			}
-			if(effect && effect.item2) {
-				this.lastItem = this.ability;
-				this.ability = item.id;
+			if(effect && (effect.item2 || number === 2)) {
+				this.lastItem2 = this.ability;
+				this.ability = this.baseAbility = item.id;
 				if (item.id) {
 					this.battle.singleEvent('Start', item, {id: item.id, target: this}, this, source, effect);
 				}

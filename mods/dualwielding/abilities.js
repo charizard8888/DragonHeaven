@@ -10,7 +10,7 @@ exports.BattleAbilities = {
 			this.debug('effect: ' + effect.id);
 			if (effect.effectType === 'Move' && effect.id !== 'confused') {
 				this.add('-enditem', target, 'Air Balloon');
-				target.ability = '';
+				target.ability = target.baseAbility = '';
 				target.lastItem2 = 'airballoon';
 				this.runEvent('AfterUseItem', target, null, null, 'airballoon');
 			}
@@ -19,17 +19,9 @@ exports.BattleAbilities = {
 			this.debug('effect: ' + effect.id);
 			if (effect.effectType === 'Move' && effect.id !== 'confused') {
 				this.add('-enditem', target, 'Air Balloon');
-				target.ability = ''
+				target.ability = target.baseAbility = ''
 				target.lastItem2 = 'airballoon';
 			}
 		},
-	},
-	"ironball": {
-		inherit: true,
-		onEffectiveness: function (typeMod, target, type, move) {
-			if (target.volatiles['ingrain'] || target.volatiles['smackdown'] || this.getPseudoWeather('gravity')) return;
-			if (move.type === 'Ground' && target.hasType('Flying')) return 0;
-		},
-		// airborneness negation implemented in sim/pokemon.js:Pokemon#isGrounded
 	},
 };
