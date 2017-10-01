@@ -45,8 +45,6 @@
 
 'use strict';
 
-const FS = require('./fs');
-
 // Check for version and dependencies
 try {
 	// I've gotten enough reports by people who don't use the launch
@@ -61,6 +59,8 @@ try {
 	throw new Error("Dependencies are unmet; run node pokemon-showdown before launching Pokemon Showdown again.");
 }
 
+const FS = require('./fs');
+
 /*********************************************************
  * Load configuration
  *********************************************************/
@@ -74,6 +74,8 @@ try {
 
 global.Config = require('./config/config');
 
+global.Monitor = require('./monitor');
+
 if (Config.watchconfig) {
 	let configPath = require.resolve('./config/config');
 	FS(configPath).onModify(() => {
@@ -81,9 +83,9 @@ if (Config.watchconfig) {
 			delete require.cache[configPath];
 			global.Config = require('./config/config');
 			if (global.Users) Users.cacheGroupData();
-			console.log('Reloaded config/config.js');
+			Monitor.notice('Reloaded config/config.js');
 		} catch (e) {
-			console.error(`Error reloading config/config.js: ${e.stack}`);
+			Monitor.adminlog(`Error reloading config/config.js: ${e.stack}`);
 		}
 	});
 }
@@ -91,8 +93,6 @@ if (Config.watchconfig) {
 /*********************************************************
  * Set up most of our globals
  *********************************************************/
-
-global.Monitor = require('./monitor');
 
 global.Dex = require('./sim/dex');
 global.toId = Dex.getId;
