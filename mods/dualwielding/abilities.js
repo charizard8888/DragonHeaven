@@ -10,7 +10,7 @@ exports.BattleAbilities = {
 			this.debug('effect: ' + effect.id);
 			if (effect.effectType === 'Move' && effect.id !== 'confused') {
 				this.add('-enditem', target, 'Air Balloon');
-				target.ability = '';
+				target.ability = target.baseAbility = '';
 				target.lastItem2 = 'airballoon';
 				this.runEvent('AfterUseItem', target, null, null, 'airballoon');
 			}
@@ -19,7 +19,7 @@ exports.BattleAbilities = {
 			this.debug('effect: ' + effect.id);
 			if (effect.effectType === 'Move' && effect.id !== 'confused') {
 				this.add('-enditem', target, 'Air Balloon');
-				target.ability = ''
+				target.ability = target.baseAbility = ''
 				target.lastItem2 = 'airballoon';
 			}
 		},
