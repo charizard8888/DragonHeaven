@@ -344,7 +344,7 @@ exports.BattleScripts = {
 					this.battle.runEvent('EatItem', this, null, null, item);
 
 					this.lastItem2 = this.ability;
-					this.ability = target.baseAbility = '';
+					this.ability = this.baseAbility = '';
 					this.usedItemThisTurn = true;
 					this.ateBerry = true;
 					this.battle.runEvent('AfterUseItem', this, null, null, item);
@@ -400,7 +400,7 @@ exports.BattleScripts = {
 					this.battle.singleEvent('Use', item, {id: item.id, target: this}, this, source, sourceEffect);
 
 					this.lastItem2 = this.ability;
-					this.ability = target.baseAbility = '';
+					this.ability = this.baseAbility = '';
 					this.usedItemThisTurn = true;
 					this.battle.runEvent('AfterUseItem', this, null, null, item);
 					return true;
@@ -445,7 +445,7 @@ exports.BattleScripts = {
 				if (!source) source = this;
 				let item = this.battle.getItem(this.ability);
 				if (this.battle.runEvent('TakeItem', this, source, null, item)) {
-					this.ability = target.baseAbility = '';
+					this.ability = this.baseAbility = '';
 					return item;
 				}
 				return false;
