@@ -225,7 +225,7 @@ exports.BattleScripts = {
 			if (this.ignoringItem()) return false;
 			let ownItem = this.item;
 			if (!Array.isArray(item)) {
-				return ownItem === toId(item) || ownItem === toId(this.ability);
+				return ownItem === toId(item) || item === toId(this.ability);
 			}
 			return item.map(toId).includes(ownItem) || item.map(toId).includes(toId(this.ability));
 		},
