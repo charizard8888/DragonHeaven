@@ -3886,7 +3886,7 @@ exports.Formats = [
   		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/nerfmons.3609844/>Nerfmons</a>",
 		      ],
   		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
-  		mod: 'nefmons',
+  		mod: 'nerfmons',
   	},
 	{
   		name: "[Gen 7] OptiMons",
