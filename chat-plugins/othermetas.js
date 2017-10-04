@@ -428,6 +428,28 @@ exports.commands = {
 		this.sendReplyBox(`${buf}</div>`);
 	},
 	felisthelp: ["/felist - Shows the list of Pokemon in Fusion Evolution."],
+	nerfmons: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Nerfed Pokemon</h2></center>`;
+		let feDex = require('../mods/nerfmons/pokedex.js').BattlePokedex;
+		if (!feDex) return this.errorReply("Error Fetching Nerf Data.");
+		Object.values(feDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.species}, nerfmons" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	nerfmonshelp: ["/nerfmons - Shows the list of Nerfed Pokemon."],
+	optimons: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Optimized Pokemon</h2></center>`;
+		let feDex = require('../mods/opti/pokedex.js').BattlePokedex;
+		if (!feDex) return this.errorReply("Error Fetching Opti Data.");
+		Object.values(feDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.species}, opti" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	optimonshelp: ["/optimons - Shows the list of Optimized."],
 	jillianlist: function (target, room, user) {
 		if (!this.runBroadcast()) return;
 		let buf = `<div class=infobox-limited><center><h2>List Of Jillian Pokemon</h2></center>`;
