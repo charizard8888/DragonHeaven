@@ -29,7 +29,7 @@ Ratings and how they work:
 'use strict';
 
 exports.BattleAbilities = {
-"delphoxbond": {
+/*"delphoxbond": {
 		desc: "If this Pokemon is a Delphox, it transforms into Merylin-Delphox after knocking out a Pokemon. As Merylin-Delphox, its Mystical Fire instead of lowering targets SpA by one stage, lowers its SpD by one stage.",
 		shortDesc: "After KOing a Pokemon: becomes Merylin-Delphox, Mystical Fire lowers the target's SpD by 1 stage.",
 		onSourceFaint: function (target, source, effect) {
@@ -48,13 +48,15 @@ exports.BattleAbilities = {
 			chance: 100,
 			boosts: {
 				spd: -1,
-			},
-		},
+			}
+			}
+			}
+			}
 		id: "delphoxbond",
 		name: "Delphox Bond",
 		rating: 3,
 		num: 210,
-	},
+	},*/
   "chesnaughtbond": {
 		desc: "If this Pokemon is a Delphox, it transforms into Merilyn-Delphox after knocking out a Pokemon. As Merilyn-Delphox, its Mystical Fire instead of lowering targets SpA by one stage, lowers its SpD by one stage.",
 		shortDesc: "After KOing a Pokemon: becomes Merilyn-Delphox, Mystical Fire lowers the target's SpD by 1 stage.",
