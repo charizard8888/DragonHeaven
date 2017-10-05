@@ -1,4 +1,4 @@
-/*
+/* In the TO DO LIST
 Ratings and how they work:
 -2: Extremely detrimental
 	  The sort of ability that relegates Pokemon with Uber-level BSTs into NU.
@@ -24,12 +24,11 @@ Ratings and how they work:
  5: Essential
 	  The sort of ability that defines metagames.
 	ex. Desolate Land, Shadow Tag
-*/
 
 'use strict';
 
 exports.BattleAbilities = {
-/*"delphoxbond": {
+delphoxbond": {
 		desc: "If this Pokemon is a Delphox, it transforms into Merylin-Delphox after knocking out a Pokemon. As Merylin-Delphox, its Mystical Fire instead of lowering targets SpA by one stage, lowers its SpD by one stage.",
 		shortDesc: "After KOing a Pokemon: becomes Merylin-Delphox, Mystical Fire lowers the target's SpD by 1 stage.",
 		onSourceFaint: function (target, source, effect) {
@@ -56,7 +55,7 @@ exports.BattleAbilities = {
 		name: "Delphox Bond",
 		rating: 3,
 		num: 210,
-	},*/
+	},
   "chesnaughtbond": {
 		desc: "If this Pokemon is a Delphox, it transforms into Merilyn-Delphox after knocking out a Pokemon. As Merilyn-Delphox, its Mystical Fire instead of lowering targets SpA by one stage, lowers its SpD by one stage.",
 		shortDesc: "After KOing a Pokemon: becomes Merilyn-Delphox, Mystical Fire lowers the target's SpD by 1 stage.",
@@ -102,4 +101,4 @@ exports.BattleAbilities = {
 		rating: 3,
 		num: 210,
 	},
-  };
+  };*/

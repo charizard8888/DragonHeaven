@@ -3898,6 +3898,14 @@ exports.Formats = [
 		mod: 'opti',
   	},
 	{
+  		name: "[Gen 7] Type Optimisation",
+  		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/type-optimisation-slate-11-submissions-ghost-ghost-psychic-ghost-normal.3602766/>Type Optimisation</a>",
+		      ],
+  		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+  		banlist: ['Unreleased', 'Illegal'],
+		mod: 'typeoptimisation',
+  	},
+	{
   		name: "[Gen 7] Battle Ready!",
   		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/battle-ready.3613715/>Battle Ready!</a>",
 		      ],
