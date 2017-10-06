@@ -1430,7 +1430,7 @@ weightkg: 57.55,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-/*{
+Thundini: {
 num: 7500120,
 species: "Thundini",
 types: ["Electric","Fire"],
@@ -1442,7 +1442,7 @@ weightkg: 32.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+/* {
 num: 7500121,
 species: "Clawdra",
 types: ["Water","Dragon"],
