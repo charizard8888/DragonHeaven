@@ -1142,7 +1142,7 @@ weightkg: 37.6,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-/*{
+exdoom: {
 num: 750096,
 species: "Exdoom",
 types: ["Normal","Fire"],
@@ -1154,7 +1154,7 @@ weightkg: 59.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+gyaramence: {
 num: 750097,
 species: "Gyaramence",
 types: ["Water","Dragon"],
@@ -1166,7 +1166,7 @@ weightkg: 168.8,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+thunderblast: {
 num: 750098,
 species: "Thunderblast",
 types: ["Water","Electric"],
@@ -1178,7 +1178,7 @@ weightkg: 73.25,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+snoopa: {
 num: 750099,
 species: "Snoopa",
 types: ["Ghost","Normal"],
@@ -1190,7 +1190,7 @@ weightkg: 234.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+empoleking: {
 num: 7500100,
 species: "Empoleking",
 types: ["Water","Steel"],
@@ -1202,7 +1202,7 @@ weightkg: 82,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+heathorn: {
 num: 7500101,
 species: "Heathorn",
 types: ["Grass","Steel"],
@@ -1214,7 +1214,7 @@ weightkg: 270,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+galvantulys: {
 num: 7500102,
 species: "Galvantulys",
 types: ["Electric","Psychic"],
@@ -1226,7 +1226,7 @@ weightkg: 37.55,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+hazygon: {
 num: 7500103,
 species: "Hazygon",
 types: ["Psychic","Dragon"],
@@ -1238,7 +1238,7 @@ weightkg: 80.15,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+jellie: {
 num: 7500104,
 species: "Jellie",
 types: ["Ghost","Fairy"],
@@ -1250,7 +1250,7 @@ weightkg: 71.9,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+zaggron: {
 num: 7500105,
 species: "Zaggron",
 types: ["Flying","Steel"],
@@ -1262,7 +1262,7 @@ weightkg: 206.3,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+malaras: {
 num: 7500106,
 species: "Malaras",
 types: ["Dark","Ice"],
@@ -1274,7 +1274,7 @@ weightkg: 133.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+umbord: {
 num: 7500107,
 species: "Umbord",
 types: ["Water","Dark"],
@@ -1286,7 +1286,7 @@ weightkg: 212.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+eruption: {
 num: 7500108,
 species: "Eruption",
 types: ["Fire","Water"],
@@ -1298,7 +1298,7 @@ weightkg: 207.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+porygardezy: {
 num: 7500109,
 species: "Porygarde-Zy",
 types: ["Normal","Dragon"],
@@ -1310,7 +1310,7 @@ weightkg: 169.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+raptorus: {
 num: 7500110,
 species: "Raptorus",
 types: ["Ground","Flying"],
@@ -1322,7 +1322,7 @@ weightkg: 46.45,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+sickle: {
 num: 7500111,
 species: "Sickle",
 types: ["Bug","Steel"],
@@ -1334,7 +1334,7 @@ weightkg: 69.25,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+koulion: {
 num: 7500112,
 species: "Koulion",
 types: ["Electric","Steel"],
@@ -1346,7 +1346,7 @@ weightkg: 214,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+dongoro: {
 num: 7500113,
 species: "Dongoro",
 types: ["Ground","Dark"],
@@ -1358,7 +1358,7 @@ weightkg: 128,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+darkchomp: {
 num: 7500114,
 species: "Darkchomp",
 types: ["Dark","Dragon"],
@@ -1370,7 +1370,7 @@ weightkg: 72.75,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+jelluk: {
 num: 7500115,
 species: "Jelluk",
 types: ["Poison","Water"],
@@ -1382,7 +1382,7 @@ weightkg: 82.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+crustlecross: {
 num: 7500116,
 species: "Crustlecross",
 types: ["Rock","Fighting"],
@@ -1394,7 +1394,7 @@ weightkg: 127,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+wigglyman: {
 num: 7500117,
 species: "Wigglyman",
 types: ["Water","Fairy"],
@@ -1406,7 +1406,7 @@ weightkg: 6.7,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+magnetic: {
 num: 7500118,
 species: "Magnetic",
 types: ["Water","Electric"],
@@ -1418,7 +1418,7 @@ weightkg: 171,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+zorogonz: {
 num: 7500119,
 species: "Zorogon-Z",
 types: ["Normal","Dark"],
@@ -1430,7 +1430,7 @@ weightkg: 57.55,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+/*{
 num: 7500120,
 species: "Thundini",
 types: ["Electric","Fire"],
