@@ -68,9 +68,31 @@ lycanroc: {
 		baseStats: {hp: 115, atk: 145, def: 80, spa: 55, spd: 80, spe: 95},
 		abilities: {0: "No Guard", 1: "Refrigerate", H: "Swift Swim"},
 	},
-	/*froslass: {Fighting/Electric Primeape
-Stats: 90 (+25) / 135 (+30) / 80 (+20) / 60 / 80 (+10) / 125 (+30) (570)
-Abilities: Reckless, Motor Drive, Defiant
+	primeape: {
+		inherit: true,
+		types: ["Fighting", "Electric"],
+		baseStats: {hp: 90, atk: 135, def: 80, spa: 60, spd: 80, spe: 125},
+		abilities: {0: "Reckless", 1: "Motor Drive", H: "Defiant"},
+	},
+	kriketurne: {
+		inherit: true,
+		types: ["Bug"],
+		baseStats: {hp: 112, atk: 125, def: 99, spa: 55, spd: 99, spe: 80},
+		abilities: {0: "Swarm", 1: "Technician", H: "Prankster"},
+	},
+	crustle: {
+		inherit: true,
+		types: ["Bug", "Ground"],
+		baseStats: {hp: 70, atk: 120, def: 125, spa: 65, spd: 75, spe: 75},
+		abilities: {0: "Sturdy", 1: "Sand Force", H: "Water Compaction"},
+	},
+	flygon: {
+		inherit: true,
+		types: ["Bug", "Dragon"],
+		baseStats: {hp: 101, atk: 67, def: 71, spa: 129, spd: 71, spe: 131},
+		abilities: {0: "Sheer Force", 1: "Sand Force", H: "Levitate"},
+	},
+	/*froslass: {
 		inherit: true,
 		types: ["Ice", "Poison"],
 		baseStats: {hp: 66, atk: 71, def: 66, spa: 142, spd: 106, spe: 116},
@@ -81,30 +103,6 @@ Abilities: Reckless, Motor Drive, Defiant
 		types: ["Ice", "Poison"],
 		baseStats: {hp: 66, atk: 71, def: 66, spa: 142, spd: 106, spe: 116},
 		abilities: {0: "Corrosion", 1: "Snow Cloak", H: "Snow Warning"},
-	},
-	froslass: {
-		inherit: true,
-		types: ["Ice", "Poison"],
-		baseStats: {hp: 66, atk: 71, def: 66, spa: 142, spd: 106, spe: 116},
-		abilities: {0: "Corrosion", 1: "Snow Cloak", H: "Snow Warning"},
-	},
-	froslass: {
-		inherit: true,
-		types: ["Ice", "Poison"],
-		baseStats: {hp: 66, atk: 71, def: 66, spa: 142, spd: 106, spe: 116},
-		abilities: {0: "Corrosion", 1: "Snow Cloak", H: "Snow Warning"},
-	},
-	froslass: {
-		inherit: true,
-		types: ["Ice", "Poison"],
-		baseStats: {hp: 66, atk: 71, def: 66, spa: 142, spd: 106, spe: 116},
-		abilities: {0: "Corrosion", 1: "Snow Cloak", H: "Snow Warning"},
-	},
-	froslass: {
-		inherit: true,
-		types: ["Ice", "Poison"],
-		baseStats: {hp: 66, atk: 71, def: 66, spa: 142, spd: 106, spe: 116},
-		abilities: {0: "Corrosion", 1: "Snow Cloak", H: "Snow Warning"},
-	},
-	*/
+	},*/
+	
   };
