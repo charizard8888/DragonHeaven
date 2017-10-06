@@ -1430,7 +1430,7 @@ weightkg: 57.55,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-Thundini: {
+thundini: {
 num: 7500120,
 species: "Thundini",
 types: ["Electric","Fire"],
@@ -1442,7 +1442,7 @@ weightkg: 32.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-/* {
+clawdra: {
 num: 7500121,
 species: "Clawdra",
 types: ["Water","Dragon"],
@@ -1454,7 +1454,7 @@ weightkg: 93.65,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+shaymode: {
 num: 7500122,
 species: "Shaymode",
 types: ["Grass","Electric"],
@@ -1466,7 +1466,7 @@ weightkg: 34.35,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+armortran: {
 num: 7500123,
 species: "Armortran",
 types: ["Steel","Flying"],
@@ -1478,7 +1478,7 @@ weightkg: 240.25,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+gonzap: {
 num: 7500124,
 species: "Gonzap",
 types: ["Dragon","Electric"],
@@ -1490,7 +1490,7 @@ weightkg: 106.3,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+bouffanine: {
 num: 7500125,
 species: "Bouffanine",
 types: ["Normal","Fire"],
@@ -1502,7 +1502,7 @@ weightkg: 124.8,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+dedsteel: {
 num: 7500126,
 species: "Dedsteel",
 types: ["Steel","Fairy"],
@@ -1514,7 +1514,7 @@ weightkg: 103.6,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+avaizard: {
 num: 7500127,
 species: "Avaizard",
 types: ["Ice","Fire"],
@@ -1526,7 +1526,7 @@ weightkg: 297.75,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+/*{
 num: 7500128,
 species: "Cargolure",
 types: ["Ghost","Fire"],
