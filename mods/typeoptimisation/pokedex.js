@@ -92,83 +92,88 @@ lycanroc: {
 		baseStats: {hp: 95, atk: 130, def: 65, spa: 60, spd: 65, spe: 110},
 		abilities: {0: "Chlorophyll", H: "Tough Claws"},
 	},
-	/*froslass: {
+	dedenne: {
 		inherit: true,
-		types: ["Ice", "Poison"],
-		baseStats: {hp: 66, atk: 71, def: 66, spa: 142, spd: 106, spe: 116},
-		abilities: {0: "Corrosion", 1: "Snow Cloak", H: "Snow Warning"},
+		types: ["Grass", "Electric"],
+		baseStats: {hp: 87, atk: 117, def: 77, spa: 81, spd: 87, spe: 121},
+		abilities: {0: "Harvest", 1: "Cheek Pouch", H: "Sap Sipper"},
 	},
-	froslass: {
+	bellossom: {
 		inherit: true,
-		types: ["Ice", "Poison"],
-		baseStats: {hp: 66, atk: 71, def: 66, spa: 142, spd: 106, spe: 116},
-		abilities: {0: "Corrosion", 1: "Snow Cloak", H: "Snow Warning"},
+		types: ["Grass", "Fire"],
+		baseStats: {hp: 100, atk: 70, def: 110, spa: 130, spd: 110, spe: 50},
+		abilities: {0: "Chlorophyll", 1: "Drought", H: "Natural Care"},
 	},
-	froslass: {
+	electrode: {
 		inherit: true,
-		types: ["Ice", "Poison"],
-		baseStats: {hp: 66, atk: 71, def: 66, spa: 142, spd: 106, spe: 116},
-		abilities: {0: "Corrosion", 1: "Snow Cloak", H: "Snow Warning"},
+		types: ["Electric"],
+		baseStats: {hp: 70, atk: 50, def: 70, spa: 110, spd: 100, spe: 170},
+		abilities: {0: "Aftermath", 1: "Soundproof", H: "No Guard"},
 	},
-	froslass: {
+	luxray: {
 		inherit: true,
-		types: ["Ice", "Poison"],
-		baseStats: {hp: 66, atk: 71, def: 66, spa: 142, spd: 106, spe: 116},
-		abilities: {0: "Corrosion", 1: "Snow Cloak", H: "Snow Warning"},
+		types: ["Ice", "Electric"],
+		baseStats: {hp: 70, atk: 120, def: 70, spa: 120, spd: 70, spe: 120},
+		abilities: {0: "Slush Rush", 1: "Intimidate", H: "Guts"},
 	},
-	froslass: {
+	arbok: {
 		inherit: true,
-		types: ["Ice", "Poison"],
-		baseStats: {hp: 66, atk: 71, def: 66, spa: 142, spd: 106, spe: 116},
-		abilities: {0: "Corrosion", 1: "Snow Cloak", H: "Snow Warning"},
+		types: ["Electric", "Poison"],
+		baseStats: {hp: 80, atk: 125, def: 8, spa: 65, spd: 104, spe: 115},
+		abilities: {0: "Intimidate", 1: "Shed Skin", H: "Strong Jaw"},
 	},
-	froslass: {
+	arcanine: {
 		inherit: true,
-		types: ["Ice", "Poison"],
-		baseStats: {hp: 66, atk: 71, def: 66, spa: 142, spd: 106, spe: 116},
-		abilities: {0: "Corrosion", 1: "Snow Cloak", H: "Snow Warning"},
+		types: ["Fire"],
+		baseStats: {hp: 100, atk: 120, def: 80, spa: 75, spd: 90, spe: 105},
+		abilities: {0: "Fur Coat", 1: "Reckless", H: "Justified"},
 	},
-	froslass: {
+	magmortar: {
 		inherit: true,
-		types: ["Ice", "Poison"],
-		baseStats: {hp: 66, atk: 71, def: 66, spa: 142, spd: 106, spe: 116},
-		abilities: {0: "Corrosion", 1: "Snow Cloak", H: "Snow Warning"},
+		types: ["Fire", "Dragon"],
+		baseStats: {hp: 75, atk: 95, def: 67, spa: 125, spd: 95, spe: 93},
+		abilities: {0: "Flame Body", H: "Mega Launcher"},
 	},
-	froslass: {
+	volcanion: {
 		inherit: true,
-		types: ["Ice", "Poison"],
-		baseStats: {hp: 66, atk: 71, def: 66, spa: 142, spd: 106, spe: 116},
-		abilities: {0: "Corrosion", 1: "Snow Cloak", H: "Snow Warning"},
+		types: ["Fire", "Ice"],
+		baseStats: {hp: 96, atk: 75, def: 108, spa: 135, spd: 72, spe: 84},
+		abilities: {0: "No Guard"},
 	},
-	froslass: {
+	zoroark: {
 		inherit: true,
-		types: ["Ice", "Poison"],
-		baseStats: {hp: 66, atk: 71, def: 66, spa: 142, spd: 106, spe: 116},
-		abilities: {0: "Corrosion", 1: "Snow Cloak", H: "Snow Warning"},
+		types: ["Dark"],
+		baseStats: {hp: 70, atk: 105, def: 70, spa: 125, spd: 70, spe: 130},
+		abilities: {0: "Illuison", 1: "Dazzling", H: "Prankster"},
 	},
-	froslass: {
+	incineroar: {
 		inherit: true,
-		types: ["Ice", "Poison"],
-		baseStats: {hp: 66, atk: 71, def: 66, spa: 142, spd: 106, spe: 116},
-		abilities: {0: "Corrosion", 1: "Snow Cloak", H: "Snow Warning"},
+		types: ["Dark", "Fire"],
+		baseStats: {hp: 115, atk: 135, def: 100, spa: 60, spd: 110, spe: 60},
+		abilities: {0: "Blaze", H: "Intimidate"},
 	},
-	froslass: {
+	accelgor: {
 		inherit: true,
-		types: ["Ice", "Poison"],
-		baseStats: {hp: 66, atk: 71, def: 66, spa: 142, spd: 106, spe: 116},
-		abilities: {0: "Corrosion", 1: "Snow Cloak", H: "Snow Warning"},
+		types: ["Dark", "Bug"],
+		baseStats: {hp: 55, atk: 111, def: 50, spa: 133, spd: 50, spe: 166},
+		abilities: {0: "Sheer Force", 1: "Technician", H: "Dazzling"},
 	},
-	froslass: {
+	kangaskhan: {
 		inherit: true,
-		types: ["Ice", "Poison"],
-		baseStats: {hp: 66, atk: 71, def: 66, spa: 142, spd: 106, spe: 116},
-		abilities: {0: "Corrosion", 1: "Snow Cloak", H: "Snow Warning"},
+		types: ["Ground"],
+		baseStats: {hp: 115, atk: 120, def: 95, spa: 40, spd: 95, spe: 105},
+		abilities: {0: "Mold Breaker", 1: "Defiant", H: "Friend Guard"},
 	},
-	froslass: {
+	rampardos: {
 		inherit: true,
-		types: ["Ice", "Poison"],
-		baseStats: {hp: 66, atk: 71, def: 66, spa: 142, spd: 106, spe: 116},
-		abilities: {0: "Corrosion", 1: "Snow Cloak", H: "Snow Warning"},
-	},*/
+		types: ["Ground", "Rock"],
+		baseStats: {hp: 97, atk: 165, def: 60, spa: 64, spd: 60, spe: 109},
+	},
+	lycanrocmidnight: {
+		inherit: true,
+		types: ["Ground", "Fighting"],
+		baseStats: {hp: 95, atk: 130, def: 75, spa: 85, spd: 80, spe: 105},
+		abilities: {0: "Technician", 1: "Strong Jaw", H: "No Guard"},
+	},
 	
   };
