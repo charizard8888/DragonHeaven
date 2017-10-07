@@ -461,6 +461,28 @@ exports.commands = {
 		this.sendReplyBox(`${buf}</div>`);
 	},
 	jillianlisthelp: ["/jillianlist - Shows the list of Pokemon in Jillian."],
+	eternalmons: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Type Optimisation Pokemon</h2></center>`;
+		let jillianDex = require('../mods/eternal/pokedex.js').BattlePokedex;
+		if (!jillianDex) return this.errorReply("Error Fetching Istor Data.");
+		Object.values(jillianDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.species}, Eternal" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	eternalmonsthelp: ["/eternalmons - Shows the list of Pokemon in Type Optimisation."],
+	typeopt: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Jillian Pokemon</h2></center>`;
+		let jillianDex = require('../mods/typeoptimisation/pokedex.js').BattlePokedex;
+		if (!jillianDex) return this.errorReply("Error Fetching Istor Data.");
+		Object.values(jillianDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.species}, typeoptimisation" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	typeopthelp: ["/typeopt - Shows the list of Pokemon in Type Optimisation."],
 	clovermons: function (target, room, user) {
 		if (!this.runBroadcast()) return;
 		let buf = `<div class=infobox-limited><center><h2>List Of Clovermons</h2></center>`;
