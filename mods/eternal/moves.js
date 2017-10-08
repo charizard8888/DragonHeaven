@@ -43,7 +43,6 @@ exports.BattleMovedex = {
                 protect: 1,
                 mirror: 1
             },
-        },
         critRatio: 0,
         secondary: false,
         target: "allAdjacent",
@@ -64,21 +63,21 @@ exports.BattleMovedex = {
         flags: {
             protect: 1,
             mirror: 1
-        },
     },
     critRatio: 0,
     secondary: {
         chance: 40,
-        boosts: {
-            accuracy: -1,
-        },
+                        boosts: {
+                        accuracy: -1,
+        
+    }
     },
     target: "normal",
     type: "Water",
     zMovePower: 180
-},
-"gigavoltimpact":
-num: 20003,
+    },
+"gigavoltimpact": {
+    num: 20003,
     accuracy: 100,
     basePower: 100,
     category: "Physical",
@@ -100,7 +99,7 @@ num: 20003,
     zMovePower: 180
 },
 "darkcrowdive": {
-    num: 20005
+    num: 20005,
     accuracy: 95,
     basePower: 150,
     category: "Physical",
