@@ -7793,9 +7793,8 @@ exports.Formats = [
  		desc: [
  			"Bring three Pok&eacute;mon to Team Preview and choose one to battle.",
  			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3587523/\">1v1</a>",
- 			"<b>Banned Pokemon for UU 1v1:</b> Gyaradosite, Kyurem-Black, Charizardite X, Tapu Koko, Donphan, Mimikyu, Aegislash, Magnezone, Charizardite Y, Porygon-Z, Metagrossite, Tapu Lele, Jirachi, Durant, Golem, Dragonite, Venusaurite, Celesteela, Crustle, Kartana, Greninja, Snorlax",
+ 			"<b>Banned Pokemon for UU 1v1:</b> Kyurem-Black, Charizardite X, Gyaradosite, Tapu Koko, Charizardite Y, Metagrossite, Lopunnite, Mimikyu, Dragonite, Greninja, Mawilite, Venusaurite, Tapu Lele, Donphan, Snorlax, Blazikenite, Porygon-Z, Landorus-Therian, Garchomp, Magearna, Primarina",
  		],
-
  		mod: 'gen7',
  		teamLength: {
  			validate: [1, 3],
@@ -7807,7 +7806,7 @@ exports.Formats = [
 			'Kyurem-White', 'Lugia', 'Lunala', 'Marshadow', 'Mewtwo', 'Palkia', 'Rayquaza', 'Reshiram', 'Shaymin-Sky', 'Solgaleo', 'Xerneas', 'Yveltal', 'Zekrom',
 			'Power Construct', 'Perish Song', 'Focus Sash', 'Kangaskhanite', 'Salamencite', 'Chansey + Charm + Seismic Toss', 'Chansey + Charm + Psywave',
 			'Flash', 'Kinesis', 'Leaf Tornado', 'Mirror Shot', 'Mud Bomb', 'Mud-Slap', 'Muddy Water', 'Night Daze', 'Octazooka', 'Sand Attack', 'Smokescreen',
- 			'Gyaradosite', 'Kyurem-Black', 'Tapu Koko', 'Charizardite X', 'Magnezone', 'Charizardite Y', 'Metagrossite', 'Mawilite', 'Lopunnite', 'Tapu Lele', 'Donphan', 'Aegislash', 'Mimikyu', 'Magearna', 'Landorus-Therian', 'Dragonite', 'Venusaurite', 'Genesect', 'Celesteela', 'Golem', 'Tapu Fini',
+ 			'Kyurem-Black', 'Charizardite X', 'Charizardite Y', 'Gyaradosite', 'Tapu Koko', 'Metagrossite', 'Lopunnite', 'Mimikyu', 'Dragonite', 'Greninja', 'Mawilite', 'Venusaurite', 'Tapu Lele', 'Donphan', 'Snorlax', 'Blazikenite', 'Porgon-Z', 'Landorus-Theiran', 'Garchomp', 'Magearna', 'Primarina',
  		],
  	},
 ];
