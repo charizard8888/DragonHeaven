@@ -7504,24 +7504,26 @@ exports.Formats = [
 		}
 	},
 	{
-		name: "[Gen 6] 1v1",
-		section: "1v1 Other Metas",
-		mod: 'gen6',
-		ruleset: ['Pokemon', 'Moody Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Swagger Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview 1v1'],
-		banlist: ['Illegal', 'Unreleased', 'Arceus', 'Blaziken', 'Darkrai', 'Deoxys', 'Deoxys-Attack', 'Dialga', 'Giratina', 'Giratina-Origin',
-			'Groudon', 'Ho-Oh', 'Kyogre', 'Kyurem-White', 'Lugia', 'Mewtwo', 'Palkia', 'Rayquaza', 'Reshiram', 'Shaymin-Sky',
-			'Xerneas', 'Yveltal', 'Zekrom', 'Focus Sash', 'Kangaskhanite', 'Soul Dew'
-		],
-		validateTeam: function (team, format) {
-			if (team.length > 3) return ['You may only bring up to three Pokémon.'];
-		},
-		onBegin: function () {
-			this.p1.pokemon = this.p1.pokemon.slice(0, 1);
-			this.p1.pokemonLeft = this.p1.pokemon.length;
-			this.p2.pokemon = this.p2.pokemon.slice(0, 1);
-			this.p2.pokemonLeft = this.p2.pokemon.length;
-		}
-	},
+        name: "[Gen 6] 1v1",
+        desc: [
+            "Bring three Pok&eacute;mon to Team Preview and choose one to battle.",
+            "&bullet; <a href=\"http://www.smogon.com/forums/threads/oras-1v1-3v3-team-preview.3496773/\">ORAS 1v1</a>",
+            "&bullet; <a href=\"http://www.smogon.com/forums/threads/1v1-resources-thread.3536109/\">ORAS 1v1 Resources</a>"
+        ],
+ 
+        mod: 'gen6',
+        teamLength: {
+            validate: [1, 3],
+            battle: 1,
+        },
+        ruleset: ['Pokemon', 'Nickname Clause', 'Moody Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Swagger Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview'],
+        banlist: [
+            'Illegal', 'Unreleased', 'Arceus', Blaziken, 'Darkrai', 'Deoxys-Base', 'Deoxys-Attack', 'Dialga', 'Giratina', 'Groudon', 'Ho-Oh', 'Kyogre',
+            'Kyurem-White', 'Lugia', 'Mewtwo', 'Palkia', 'Rayquaza', 'Reshiram', 'Shaymin-Sky', 'Xerneas', 'Yveltal', 'Zekrom',
+            'Perish Song', 'Focus Sash', 'Kangaskhanite', 'Salamencite', 'Chansey + Charm + Seismic Toss',
+            'Flash', 'Kinesis', 'Leaf Tornado', 'Mirror Shot', 'Mud Bomb', 'Mud-Slap', 'Muddy Water', 'Night Daze', 'Octazooka', 'Sand Attack', 'Smokescreen'
+        ],
+    },
 	{
 		name: "[Gen 7] 1v1 Megamons",
 		mod: 'gen7',
