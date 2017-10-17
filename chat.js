@@ -1012,6 +1012,89 @@ Chat.loadPlugins = function () {
 		}
 	}
 };
+/**
+ * Takes a string and converts it to HTML by replacing standard chat formatting with the appropriate HTML tags.
+ *
+ * @param  {string} str
+ * @return {string}
+ */
+Chat.parseText = function (str) {
+	str = Chat.escapeHTML(str).replace(/&#x2f;/g, '/').replace(linkRegex, uri => `<a href=${uri.replace(/^([a-z]*[^a-z:])/g, 'http://$1')}>${uri}</a>`);
+
+	let output = [''];
+	let stack = [];
+
+	let parse = true;
+
+	let i = 0;
+	mainLoop: while (i < str.length) {
+		let token = str[i];
+
+		// Hardcoded parsing
+		if (parse && token === '`' && str.substr(i, 2) === '``') {
+			stack.push('``');
+			output.push('');
+			parse = false;
+			i += 2;
+			continue;
+		}
+
+		for (const formattingResolver of formattingResolvers) {
+			let start = formattingResolver.token;
+			let end = formattingResolver.endToken || start;
+
+			if (stack.length && end.startsWith(token) && str.substr(i, end.length) === end && output[stack.length].replace(token, '').length) {
+				for (let j = stack.length - 1; j >= 0; j--) {
+					if (stack[j] === start) {
+						parse = true;
+
+						while (stack.length > j + 1) {
+							output[stack.length - 1] += stack.pop() + output.pop();
+						}
+
+						let str = output.pop();
+						let outstr = formattingResolver.resolver(str.trim());
+						if (!outstr) outstr = `${start}${str}${end}`;
+						output[stack.length - 1] += outstr;
+						i += end.length;
+						stack.pop();
+						continue mainLoop;
+					}
+				}
+			}
+
+			if (parse && start.startsWith(token) && str.substr(i, start.length) === start) {
+				stack.push(start);
+				output.push('');
+				i += start.length;
+				continue mainLoop;
+			}
+		}
+
+		output[stack.length] += token;
+		i++;
+	}
+
+	while (stack.length) {
+		output[stack.length - 1] += stack.pop() + output.pop();
+	}
+
+	let result = output[0];
+
+	return result;
+};
+
+/**
+ * Takes an array and turns it into a sentence string by adding commas and the word 'and' at the end
+ *
+ * @param  {array} array
+ * @return {string}
+ */
+Chat.toListString = function (array) {
+	if (!array.length) return '';
+	if (array.length === 1) return array[0];
+	return `${array.slice(0, -1).join(", ")} and ${array.slice(-1)}`;
+};
 
 /**
  * Escapes HTML in a string.
