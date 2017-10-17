@@ -107,4 +107,17 @@ tapulele: {
 		eggGroups: ["Monster", "Dragon"],
 		otherFormes: ["garchompmega"],
 	},
+	 buzzwole: {
+		 inherite: true,
+		 types: ["Bug"],
+		 baseStats: {hp: 97, atk: 113, def: 113, spa: 53, spd: 53, spe: 79},
+	 },
+	 kartana: {
+		 inherite: true,
+		 baseStats: {hp: 59, atk: 131, def: 109, spa: 59, spd: 31, spe: 97},
+	 },
+	  nihilego: {
+		 inherite: true,
+		 baseStats: {hp: 83, atk: 53, def: 47, spa: 107, spd: 113, spe: 97},
+	 },
   };
