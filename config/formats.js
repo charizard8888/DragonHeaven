@@ -7525,20 +7525,23 @@ exports.Formats = [
         ],
     },
 		{
-		name: "[Gen 5] 1v1",
-		desc: [
-			"BW 1v1 here",
-		],
-		mod: 'gen5',
-		teamLength: {
-			battle: 1
-		},
-		ruleset: ['Pokemon', 'Moody Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Swagger Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod'],
-		banlist: ['Illegal', 'Unreleased', 'Arceus', 'Blaziken', 'Darkrai', 'Deoxys', 'Deoxys-Attack', 'Dialga', 'Giratina', 'Giratina-Origin',
-			'Groudon', 'Ho-Oh', 'Kyogre', 'Kyurem-White', 'Lugia', 'Mewtwo', 'Palkia', 'Rayquaza', 'Reshiram', 'Shaymin-Sky',
-			'Xerneas', 'Yveltal', 'Zekrom', 'Focus Sash', 'Kangaskhanite', 'Soul Dew', 'Perish Song'
-		]
-	},
+        name: "[Gen 5] 1v1",
+        desc: [
+            "Bring one Pok&eacute;mon and battle with it.",
+            "&bullet; <a href=\"http://www.smogon.com/forums/threads/gen-v-1-vs-1-metagame.3483807/\">BW 1v1</a>"
+        ],
+ 
+        mod: 'gen5',
+        teamLength: {
+            validate: [1, 1],
+            battle: 1,
+        },
+        ruleset: ['Pokemon', 'Nickname Clause', 'Moody Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Swagger Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod'],
+        banlist: [
+            'Illegal', 'Unreleased', 'Arceus', 'Blaziken', 'Darkra', 'Deoxys-A', 'Deoxys', 'Dialga', 'Giratina', 'Giritina-O', 'Groudon', 'Ho-Oh', 'Kyurem-W', 'Lugia', 'Mewtwo', 'Palkia', 'Rayquaza', 'Reshiram', 'Shaymin-S', 'Zekrom'
+            'Perish Song', 'Chansey + Charm + Seismic Toss'
+        ],
+    },
 	{
 		name: "[Gen 7] 1v1 Megamons",
 		mod: 'gen7',
