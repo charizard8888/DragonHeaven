@@ -7525,9 +7525,9 @@ exports.Formats = [
         ],
     },
 		{
-		name: "1v1",
+		name: "[Gen 5] 1v1",
 		desc: [
-			"BW 1v1",
+			"BW 1v1 here",
 		],
 		mod: 'gen5',
 		teamLength: {
