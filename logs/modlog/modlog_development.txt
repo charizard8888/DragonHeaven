@@ -513,3 +513,8 @@
 [2017-06-11T18:21:57.709Z] (development) EchoGaia was promoted to Room Driver by charizard8888.
 [2017-06-11T18:22:05.760Z] (development) Ludicrousity was promoted to Room Driver by charizard8888.
 [2017-06-12T10:58:05.616Z] (development) (charizard8888 was demoted to Room regular user by charizard8888.)
+[2017-07-18T17:26:36.665Z] (development) Tsar dragon - ⒶⓌⒶⓎ was warned by Spandan. (([21:15:48] Tsar dragon: first) >If you are not room staff, Don't talk unless its regarding development for the Github Repo.)
+[2017-08-12T03:51:39.150Z] (development) echogaia was promoted to Leader by charizard8888.
+[2017-10-04T10:38:38.401Z] (development) (charizard8888 changed the roomintro.)
+[2017-10-15T10:52:33.677Z] (development) (Spandan changed the staffintro.)
+[2017-10-15T10:52:42.628Z] (development) (Spandan changed the staffintro.)

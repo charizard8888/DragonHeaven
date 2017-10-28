@@ -527,3 +527,35 @@
 [2017-06-19T02:15:20.811Z] (groupchat-smellslikememe-memes) (smellslikememe ( changed the roomintro.)
 [2017-06-22T07:34:58.232Z] (groupchat-charizard8888-testo) (ebhainia was demoted to Driver by charizard8888.)
 [2017-06-22T07:35:17.211Z] (groupchat-charizard8888-testo) ludicrousity was promoted to Operator by charizard8888.
+[2017-07-09T05:17:35.765Z] (groupchat-icone-theedges) (icone changed the roomintro.)
+[2017-07-15T09:11:50.059Z] (groupchat-icone-theedges) (icone changed the roomintro.)
+[2017-07-16T07:12:34.055Z] (groupchat-charizard8888-t) (charizard8888 changed the roomintro.)
+[2017-07-16T07:14:00.853Z] (groupchat-charizard8888-t) (charizard8888 changed the roomintro.)
+[2017-07-16T07:18:14.764Z] (groupchat-charizard8888-t) (charizard8888 changed the roomintro.)
+[2017-07-16T07:18:57.327Z] (groupchat-charizard8888-t) (charizard8888 changed the roomintro.)
+[2017-07-16T07:19:39.226Z] (groupchat-charizard8888-t) (charizard8888 changed the roomintro.)
+[2017-07-19T09:24:55.235Z] (groupchat-charizard8888-98482203) charizard8888 used "/a |j| Kaneki San" in groupchat-charizard8888-98482203
+[2017-07-19T09:24:57.140Z] (groupchat-charizard8888-98482203) charizard8888 used "/a |j| Kaneki Sann" in groupchat-charizard8888-98482203
+[2017-07-24T00:35:07.057Z] (groupchat-ransei-5627568) Amblood was promoted to Room Moderator by Ransei.
+[2017-08-02T10:50:07.464Z] (groupchat-charizard8888-44242660) (charizard8888 changed the staffintro.)
+[2017-08-02T11:03:38.513Z] (groupchat-charizard8888-79931872) (charizard8888 changed the staffintro.)
+[2017-08-02T11:03:49.032Z] (groupchat-charizard8888-79931872) (charizard8888 changed the staffintro.)
+[2017-08-02T11:04:35.514Z] (groupchat-charizard8888-79931872) (charizard8888 changed the staffintro.)
+[2017-08-02T11:07:37.756Z] (groupchat-charizard8888-79931872) (charizard8888 changed the staffintro.)
+[2017-08-02T11:11:40.360Z] (groupchat-charizard8888-79931872) (charizard8888 added a roomevent titled "Monthly Championship".)
+[2017-08-02T11:13:35.518Z] (groupchat-charizard8888-79931872) (charizard8888 added a roomevent titled "1v1 OMs".)
+[2017-08-02T11:15:39.160Z] (groupchat-charizard8888-79931872) (charizard8888 added a roomevent titled "Suspect Test".)
+[2017-08-05T11:21:25.212Z] (groupchat-charizard8888-70919786) pieddychomp was promoted to Driver by charizard8888.
+[2017-08-12T03:52:26.176Z] (groupchat-charizard8888-99913398) (classyz was demoted to Moderator by charizard8888.)
+[2017-08-12T03:52:44.595Z] (groupchat-charizard8888-99913398) (zard8888 was demoted to Driver by charizard8888.)
+[2017-08-12T03:53:30.007Z] (groupchat-charizard8888-99913398) smellslikememe was promoted to Driver by charizard8888.
+[2017-08-12T03:53:40.289Z] (groupchat-charizard8888-99913398) pikaxreme was promoted to Driver by charizard8888.
+[2017-09-26T09:05:24.507Z] (groupchat-charizard8888-2720601) (charizard8888 changed the roomintro.)
+[2017-10-17T03:47:55.984Z] (groupchat-smellslikememe-bad) (A poll was started by smellslikememe.)
+[2017-10-17T03:48:01.731Z] (groupchat-smellslikememe-bad) (The poll was ended by smellslikememe.)
+[2017-10-17T03:53:36.826Z] (groupchat-smellslikememe-bad) (A poll was started by smellslikememe.)
+[2017-10-17T03:53:46.982Z] (groupchat-smellslikememe-bad) (The poll was ended by smellslikememe.)
+[2017-10-17T03:54:03.488Z] (groupchat-smellslikememe-bad) (A poll was started by smellslikememe.)
+[2017-10-24T11:11:12.649Z] (groupchat-phoenixscythe-69845348) (Phoenix Scythe™ changed the roomintro.)
+[2017-10-24T11:11:18.474Z] (groupchat-phoenixscythe-69845348) (Phoenix Scythe™ changed the staffintro.)
+[2017-10-24T11:59:25.450Z] (groupchat-phoenixscythe-54667453) HulkOnSteroids was promoted to Room Moderator by Phoenix Scythe™.

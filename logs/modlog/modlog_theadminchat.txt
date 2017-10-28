@@ -106,3 +106,7 @@
 [2017-06-19T09:15:09.748Z] (theadminchat) spandan used "/a |html|<psicon pokemon="meloetta" class="pixelated"/>" in theadminchat
 [2017-06-19T09:15:18.315Z] (theadminchat) spandan used "/a |html|<psicon pokemon="meloetta"/>" in theadminchat
 [2017-06-19T09:16:13.288Z] (theadminchat) spandan used "/a |html|<psicon pokemon="meloetta">" in theadminchat
+[2017-08-10T14:57:00.471Z] (theadminchat) Flurbel was promoted to Leader by Snaquaza.
+[2017-08-10T14:57:14.280Z] (theadminchat) zapmaster2010 was promoted to Leader by Snaquaza.
+[2017-08-10T14:57:23.573Z] (theadminchat) alphashivam was promoted to Leader by Snaquaza.
+[2017-08-10T14:57:35.538Z] (theadminchat) ludicrousity was promoted to Moderator by Snaquaza.

@@ -1818,3 +1818,28 @@
 [2017-06-25T17:03:23.160Z] (battle-gen7multibility20-38907) Spandan forced a tie.
 [2017-06-28T10:03:48.671Z] (battle-gen7chimera1v1-39470) (A poll was started by charizard8888.)
 [2017-06-28T10:03:59.863Z] (battle-gen7chimera1v1-39470) (The poll was ended by charizard8888.)
+[2017-07-16T07:32:27.359Z] (battle-gen7dualwielding-41494) Spandan forced a tie.
+[2017-07-16T07:37:09.103Z] (battle-gen7dualwielding-41495) Spandan forced a win for wishes.
+[2017-07-20T14:23:40.396Z] (battle-gen7randompartnersincrime-42207) Snaquaza forced a win for snaquaza.
+[2017-07-22T09:47:47.541Z] (battle-gen72v2doubles-42659) charizard8888 forced a tie.
+[2017-08-05T17:16:34.322Z] (battle-gen7fusionevolution-44068) charizard8888 forced a win for charizard8888.
+[2017-08-23T09:57:42.264Z] (battle-gen7megasforall-45722) Zapmaster2010 forced a win for acasualmemelord.
+[2017-08-26T14:14:11.876Z] (battle-gen7dualwielding-45778) charizard8888 forced a win for batterbotto.
+[2017-09-04T10:36:13.946Z] (battle-gen7dualwielding-46749) (A poll was started by charizard8888.)
+[2017-09-04T10:36:35.461Z] (battle-gen7dualwielding-46749) (The poll was ended by charizard8888.)
+[2017-09-24T07:46:17.002Z] (battle-gen71v1-47330) TheGreatSpoondini forced a tie.
+[2017-09-24T07:46:56.214Z] (battle-gen71v1-47332) TheGreatSpoondini forced a win for thegreatspoondini.
+[2017-09-24T07:47:17.876Z] (battle-gen71v1-47334) TheGreatSpoondini forced a win for thegreatspoondini.
+[2017-09-24T21:16:06.791Z] (battle-gen7dragonheavensuperstaffbros-47368) TheGreatSpoondini) forced a win for thegreatspoondini.
+[2017-09-24T21:17:42.629Z] (battle-gen7dragonheavensuperstaffbros-47369) TheGreatSpoondini) forced a tie.
+[2017-09-24T21:34:53.394Z] (battle-gen7doublescustomgame-47371) Ludicrousity forced a win for smellslikememe.
+[2017-09-24T21:35:18.293Z] (battle-gen7doublescustomgame-47371) (TheGreatSpoondini set modchat to @)
+[2017-09-26T05:12:32.025Z] (battle-gen7randombattle-47396) TheGreatSpoondini forced a win for uraveragesavage.
+[2017-09-30T17:21:04.127Z] (battle-gen7chimera1v1-47560) TheGreatSpoondini forced a win for thegreatspoondini.
+[2017-10-01T04:11:52.260Z] (battle-gen7chimera1v1-47572) (A poll was started by charizard8888.)
+[2017-10-01T04:12:13.930Z] (battle-gen7chimera1v1-47572) (The poll was ended by charizard8888.)
+[2017-10-01T04:20:09.567Z] (battle-gen7rockpapershedinja-47574) charizard8888 -  forced a win for charizard8888.
+[2017-10-01T17:47:43.698Z] (battle-gen7dualwielding-47699) Spandan forced a tie.
+[2017-10-08T11:53:50.702Z] (battle-gen7eternalpokemon-47785) charizard8888 forced a tie.
+[2017-10-08T12:05:15.684Z] (battle-gen7eternalpokemon-47786) charizard8888 forced a tie.
+[2017-10-13T10:28:19.408Z] (battle-gen7chimera1v1-47802) charizard8888 declared: NOTHING

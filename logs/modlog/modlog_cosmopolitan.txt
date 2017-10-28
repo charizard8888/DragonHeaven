@@ -68,3 +68,5 @@
 [2017-04-14T14:34:52.518Z] (cosmopolitan) (BatterBotto changed the roomintro.)
 [2017-04-14T14:53:06.537Z] (cosmopolitan) (I con E changed the roomintro.)
 [2017-04-14T14:53:47.509Z] (cosmopolitan) (I con E changed the roomintro.)
+[2017-08-18T10:48:07.363Z] (cosmopolitan) (wInoNA was demoted to Room Voice by wInoNA.)
+[2017-08-18T10:50:34.808Z] (cosmopolitan) (wInoNA was demoted to Room regular user by wInoNA.)

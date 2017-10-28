@@ -434,3 +434,47 @@
 [2017-06-25T10:32:14.525Z] (test) charizard8888 used "/a |c|Winona/show" in test
 [2017-06-25T10:32:21.519Z] (test) charizard8888 used "/a |c|Winona|/show" in test
 [2017-06-27T21:19:07.366Z] (test) (scarfWynaut set modchat to false)
+[2017-07-01T08:51:21.371Z] (test) (charizard8888 added a roomevent titled "Monthly Championship".)
+[2017-07-01T08:51:23.437Z] (test) (charizard8888 removed a roomevent titled "Monthly Championship".)
+[2017-07-01T08:52:48.792Z] (test) (charizard8888 added a roomevent titled "<a href="http://www.smogon.com/forums/threads/.3587523/page-15#post-7366623">Monthly Championship</a>".)
+[2017-07-01T08:53:17.429Z] (test) (charizard8888 added a roomevent titled "Monthly Championship".)
+[2017-07-01T08:53:41.736Z] (test) (charizard8888 removed a roomevent titled "<a href="http://www.smogon.com/forums/threads/.3587523/page-15#post-7366623">Monthly Championship</a>".)
+[2017-07-01T08:54:51.971Z] (test) (charizard8888 removed a roomevent titled "Monthly Championship".)
+[2017-07-01T08:54:54.641Z] (test) (charizard8888 added a roomevent titled "Monthly Championship".)
+[2017-07-01T08:56:04.771Z] (test) (charizard8888 changed the staffintro.)
+[2017-07-01T08:56:11.418Z] (test) (charizard8888 deleted the staffintro.)
+[2017-07-07T12:02:47.807Z] (test) (charizard8888 changed the staffintro.)
+[2017-07-19T07:24:24.066Z] (test) (Snaquaza changed the roomintro.)
+[2017-07-25T10:02:42.002Z] (test) (charizard8888 added a FAQ for 'sus')
+[2017-07-26T10:12:22.989Z] (test) (charizard8888 deleted the roomintro.)
+[2017-07-26T10:12:50.113Z] (test) (charizard8888 changed the staffintro.)
+[2017-07-26T17:27:55.832Z] (test) spandan used "/a |c| Aurora|The gun is gone" in test
+[2017-07-26T17:28:09.243Z] (test) spandan used "/a |c| Aurora|And so am I" in test
+[2017-07-26T17:28:21.071Z] (test) spandan used "/a |c| Aurora|And here i go" in test
+[2017-07-26T17:28:29.028Z] (test) spandan used "/a |L| Aurora|" in test
+[2017-07-26T17:28:41.802Z] (test) spandan used "/a |l| Aurora" in test
+[2017-07-26T17:30:38.162Z] (test) spandan used "/a |c| Aurora" in test
+[2017-07-26T17:30:47.507Z] (test) spandan used "/a |c| Aurora|the gun is gone" in test
+[2017-07-26T17:31:01.896Z] (test) spandan used "/a |c| Aurora|and so am i" in test
+[2017-07-26T17:31:11.027Z] (test) spandan used "/a |c| Aurora|and here i go" in test
+[2017-07-26T17:31:27.936Z] (test) spandan used "/a |l| Aurora|" in test
+[2017-07-28T10:42:05.021Z] (test) harry the ditto was promoted to Driver by charizard8888.
+[2017-08-02T10:37:36.061Z] (test) (charizard8888 created a tournament in gen71v1 format.)
+[2017-08-02T10:37:42.654Z] (test) (charizard8888 set the tournament's banlist to Rule:[Gen 7] Sketchmons.)
+[2017-08-02T10:37:57.558Z] (test) (charizard8888 set the tournament's banlist to !Lucarionite.)
+[2017-08-02T10:38:23.137Z] (test) (charizard8888 set the tournament's banlist to Rule:[Gen 7] Sketchmons.)
+[2017-08-02T10:38:39.461Z] (test) (charizard8888 set the tournament's banlist to Rule:[Gen 7] Sketchmons, !Lucarionite.)
+[2017-08-02T10:40:04.799Z] (test) charizard8888 used "/a |j|UnleashOurPassion" in test
+[2017-08-02T10:44:31.444Z] (test) (charizard8888 set the tournament's banlist to Rule:[Gen 7] Almost Any Ability.)
+[2017-08-02T12:08:25.903Z] (test) (charizard8888 forcibly ended a tournament.)
+[2017-08-16T20:34:06.815Z] (test) (Snaquaza changed the roomintro.)
+[2017-09-10T15:17:49.193Z] (test) snaquaza used "/a" in test
+[2017-09-10T15:17:55.056Z] (test) snaquaza used "/a This is a VT" in test
+[2017-09-24T20:15:46.207Z] (test) (Snaquaza changed the roomintro.)
+[2017-09-24T20:16:05.265Z] (test) (Snaquaza changed the roomintro.)
+[2017-09-24T20:16:11.158Z] (test) (Snaquaza changed the roomintro.)
+[2017-09-24T20:16:20.728Z] (test) (Snaquaza changed the roomintro.)
+[2017-09-24T20:21:07.471Z] (test) (Snaquaza changed the roomintro.)
+[2017-10-20T13:29:01.241Z] (test) (Snaquaza changed the roomintro.)
+[2017-10-20T13:29:57.612Z] (test) (Snaquaza changed the roomintro.)
+[2017-10-20T13:30:05.812Z] (test) (Snaquaza changed the roomintro.)

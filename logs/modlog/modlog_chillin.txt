@@ -723,3 +723,14 @@
 [2017-06-14T10:03:57.700Z] (chillin) OutrageousBoT was appointed Room Owner by charizard8888.
 [2017-06-14T10:04:06.131Z] (chillin) (OutrageousBoT was demoted to Room regular user by charizard8888.)
 [2017-06-16T21:15:50.645Z] (chillin) BBgun999 was promoted to Leader by Ransei.
+[2017-07-01T14:02:46.420Z] (chillin) BatterBotto was promoted to Room Bot by abd1710.
+[2017-09-26T02:56:29.633Z] (chillin) (A poll was started by smellslikememe.)
+[2017-10-15T08:38:15.359Z] (chillin) (flareondriod was demoted to Room regular user by abd1710.)
+[2017-10-15T08:50:00.996Z] (chillin) (abd1710 changed the roomintro.)
+[2017-10-15T08:51:14.480Z] (chillin) (abd1710 changed the roomintro.)
+[2017-10-15T08:53:24.011Z] (chillin) (abd1710 changed the roomintro.)
+[2017-10-15T11:36:44.374Z] (chillin) invento was promoted to Room Voice by iCone.
+[2017-10-18T06:24:46.819Z] (chillin) (charizard8888 changed the roomintro.)
+[2017-10-18T06:25:01.208Z] (chillin) (charizard8888 changed the roomintro.)
+[2017-10-24T11:58:54.669Z] (chillin) HulkOnSteroids was muted by Phoenix Scythe™ for 7 minutes.
+[2017-10-24T11:58:57.926Z] (chillin) HulkOnSteroids was unmuted by Phoenix Scythe™.
