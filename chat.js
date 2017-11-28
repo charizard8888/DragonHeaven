@@ -1322,3 +1322,25 @@ Chat.news = function () {
 
 Chat.formatText = require('./chat-formatter').formatText;
 Chat.linkRegex = require('./chat-formatter').linkRegex;
+Chat.uploadToHastebin = function (toUpload, callback) {
+	let reqOpts = {
+		hostname: "hastebin.com",
+		method: "POST",
+		path: '/documents'
+	};
+	let req = require('https').request(reqOpts, function (res) {
+		res.on('data', function (chunk) {
+			try {
+				let linkStr = "hastebin.com/" + JSON.parse(chunk.toString())['key'];
+				if (typeof callback === "function") callback(true, linkStr);
+			} catch (e) {
+				if (typeof callback === "function") callback(false, e);
+			}
+		});
+	});
+	req.on('error', function (e) {
+		if (typeof callback === "function") callback(false, e);
+	});
+	req.write(toUpload);
+	req.end();
+};
