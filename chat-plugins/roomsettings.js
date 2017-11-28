@@ -285,11 +285,7 @@ exports.commands = {
 			if (!this.can('makeroom')) return;
 		}
 		if (room.tour && !room.tour.modjoin) return this.errorReply(`You can't do this in tournaments where modjoin is prohibited.`);
-<<<<<<< HEAD
-		if (target === 'player') target = '\u2606';
-=======
 		if (target === 'player') target = Users.PLAYER_SYMBOL;
->>>>>>> 3cd34bc8e0b676cc6c5476bce93fc1500a588d26
 		if (this.meansNo(target)) {
 			if (!room.modjoin) return this.errorReply(`Modjoin is already turned off in this room.`);
 			delete room.modjoin;
