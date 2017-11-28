@@ -2995,44 +2995,24 @@ exports.Formats = [
 	},
 	{
 		name: "[Gen 7] Dual Wielding",
-		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/3608611\">Dual Wielding</a>: A Pokemon can hold two items, the second item in the Ability Slot."],
-		ruleset: ['[Gen 7] OU', 'Ignore Illegal Abilities'],
-		banlist: ['Fling', 'Regigigas', 'Slaking'],
-		mod: 'dualwielding',
-		onValidateSet: function(set, teamHas) {
-			let ability = set.ability;
-			if (!Dex.data.Items[toId(ability)]) return [`${set.name || set.species} has an invalid item.`];
-			let problems = [];
-			let item2 = Dex.getItem(toId(ability));
-			let bans = {};
-			if (!item2.exists) {
-				let abilit = Dex.getAbility(ability);
-				let template = Dex.getTemplate(set.species);
-				if (!abilit.name) {
-					problems.push(`${name} needs to have an ability.`);
-				} else if (!Object.values(template.abilities).includes(abilit.name)) {
-					problems.push(`${name} can't have ${set.ability}.`);
-				}
-				if (abilit.name === template.abilities['H']) {
-					isHidden = true;
+		desc: [
+			"Pok&eacute;mon can forgo their Ability in order to use a second item.",
+			"&bullet; <a href=\"http://www.smogon.com/forums/threads/3608611//\">Dual Wielding</a>",
+		],
 
-					if (template.unreleasedHidden && this.format.banlistTable['Unreleased']) {
-						problems.push(`${name}'s hidden ability is unreleased.`);
-					} else if (set.species.endsWith('Orange') || set.species.endsWith('White') && abilit.name === 'Symbiosis') {
-						problems.push(`${name}'s hidden ability is unreleased for the Orange and White forms.`);
-					}
-					if (template.maleOnlyHidden) {
-						set.gender = 'M';
-						lsetData.sources = ['5D'];
-					}
-				}
-			}
-			if (bans[toId(item2.id)]) problems.push(set.species + "'s item " + item2.name + " is banned by Dual Wielding.");
-			if (item2.id === toId(set.item)) problems.push(`You cannot have two of ${item2.name} on the same Pokemon.`);
-			if (item2.id.includes('choice') && toId(set.item).includes('choice')) problems.push(`You cannot have ${item2.name} and ${Dex.getItem(set.item).name} on the same Pokemon.`);
-			set.ability = ability;
+		mod: 'dualwielding',
+		ruleset: ['[Gen 7] OU'],
+		banlist: ['Regigigas', 'Slaking'],
+		validateSet: function (set, teamHas) {
+			let dual = this.dex.getItem(set.ability);
+			if (!dual.exists) return this.validateSet(set, teamHas);
+			let item = this.dex.getItem(set.item);
+			let validator = new this.constructor(Dex.getFormat(this.format.id, ['Ignore Illegal Abilities']));
+			let problems = validator.validateSet(Object.assign({}, set, {ability: ''}), teamHas) || validator.validateSet(Object.assign({}, set, {ability: '', item: set.ability}, teamHas)) || [];
+			if (dual.id === item.id) problems.push(`You cannot have two of the same item on a Pokemon. (${set.name || set.species} has two of ${item.name})`);
+			if (item.isChoice && dual.isChoice) problems.push(`You cannot have two choice items on a Pokemon. (${set.name || set.species} has ${item.name} and ${dual.name})`);
 			return problems;
-		},
+	  },
 	},
 	{
 		name: "[Gen 7] Follow the Leader",
@@ -3063,11 +3043,14 @@ exports.Formats = [
 	},
 	{
 		name: "[Gen 7] Full Potential",
-		desc: ['&bullet; <a href="http://www.smogon.com/forums/threads/3596777/">Full Potential</a>: In this metagame, every Pokemon uses their highest raw stat as their attacking stat.'],
-		ruleset: ['[Gen 7] OU'],
-		//team: 'random',
+		desc: [
+			"Moves use the Pok&eacute;mon's highest effective stat, barring HP, for damage calculation.",
+			"&bullet; <a href=\"http://www.smogon.com/forums/threads/3596777/\">Full Potential</a>",
+		],
+
 		mod: 'fullpotential',
-		banlist: ['Pheromosa', 'Shuckle', 'Speed Boost', 'Swampertite'],
+		ruleset: ['[Gen 7] OU', 'Item Clause'],
+		banlist: ['Raichu-Alola', 'Shuckle', 'Tapu Koko', 'Chlorophyll', 'Sand Rush', 'Slush Rush', 'Speed Boost', 'Swift Swim', 'Unburden', 'Swampertite'],
 	},
 	{
 		name: "[Gen 7] Godly Gift",
