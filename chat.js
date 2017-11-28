@@ -1315,7 +1315,7 @@ Chat.getDataItemHTML = function (item) {
 
 Chat.news = function () {
 	if (Chat.ServerNews) return Chat.ServerNews;
-	let allNews = FS.readSync('logs/news.txt').toString().split('\n----------\n');
+	let allNews = FS('logs/news.txt').readSync().toString().split('\n----------\n');
 	Chat.ServerNews = allNews[allNews.length - 1];
 	return Chat.ServerNews;
 };
