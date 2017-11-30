@@ -57,7 +57,7 @@ exports.Formats = [
 		ruleset: ['Pokemon', 'HP Percentage Mod', 'Cancel Mod'],
 	},
 	{
-		name: "[Gen 7] Shared Power",
+		name: "[Gen 7] Shared Power (Random)",
 		desc: ["&bullet; All Pokemon on your team have all the abilities of your team."],
 		mod: 'pokebilities',
 		ruleset: ["[Gen 7] OU"],
