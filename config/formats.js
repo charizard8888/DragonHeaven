@@ -3546,6 +3546,51 @@ exports.Formats = [
 		},
 	},
 	{
+		name: "[Gen 7] Shared Power",
+		desc: ["&bullet; All Pokemon on your team have all the abilities of your team."],
+		mod: 'pokebilities',
+		ruleset: ["[Gen 7] OU"],
+		onSwitchInPriority: 1,
+		onBegin: function() {
+			let statusability = {
+				"aerilate": true,
+				"aurabreak": true,
+				"flashfire": true,
+				"parentalbond": true,
+				"pixilate": true,
+				"refrigerate": true,
+				"sheerforce": true,
+				"slowstart": true,
+				"truant": true,
+				"unburden": true,
+				"zenmode": true
+			};
+			for (let p = 0; p < this.sides.length; p++) {
+				for (let i = 0; i < this.sides[p].pokemon.length; i++) {
+					let pokemon = this.sides[p].pokemon[i];
+					this.sides[p].pokemon[i].innates = [];
+					let bans = this.data.Formats.gen7ou.banlist;
+					bans.push("Battle Bond");
+					for (let a in this.sides[p].pokemon) {
+						if (bans.includes(this.sides[p].pokemon[a].baseAbility)) continue;
+						if (this.sides[p].pokemon[a].baseAbility === pokemon.ability) continue;
+						if (statusability[this.sides[p].pokemon[a].baseAbility]) {
+							this.sides[p].pokemon[i].innates.push("other" + this.sides[p].pokemon[a].baseAbility);
+						} else {
+							this.sides[p].pokemon[i].innates.push(this.sides[p].pokemon[a].baseAbility);
+						}
+					}
+				}
+			}
+		},
+		onSwitchIn: function(pokemon) {
+			for (let i = 0; i < pokemon.innates.length; i++) {
+				if (!pokemon.volatiles[pokemon.innates[i]])
+					pokemon.addVolatile(pokemon.innates[i]);
+			}
+		},
+	},
+	{
 		name: "[Gen 7] Trademarked",
 		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/trademarked.3572949/\">Trademarked</a>"],
 		column: 1,
