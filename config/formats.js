@@ -6018,6 +6018,10 @@ exports.Formats = [
 			for (let i in addedMoves) {
 				addedMoves[i] = Object.assign({}, addedMoves[i]);
 				addedMoves[i].pp = addedMoves[i].maxpp;
+				/*addmoves[i].disabled = false;
+				addmoves[i].disabledSource = '';
+				addmoves[i].used = false;*/
+
 			}
 			pokemon.moveset = pokemon.baseMoveset.concat(addedMoves);
 		},
@@ -6060,9 +6064,9 @@ exports.Formats = [
 					ally.addVolatile(ally.innate);
 				}
 			}
-			/*[ally, pokemon].forEach((mon => {
+			[ally, pokemon].forEach((mon => {
 				this.runEvent("DisableMove", mon);
-			}).bind(this));*/
+			}).bind(this));
 		},
 		onSwitchOut: function (pokemon) {
 			if (pokemon.innate) {
