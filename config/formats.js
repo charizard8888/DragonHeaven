@@ -6018,9 +6018,9 @@ exports.Formats = [
 			for (let i in addedMoves) {
 				addedMoves[i] = Object.assign({}, addedMoves[i]);
 				addedMoves[i].pp = addedMoves[i].maxpp;
-				addmoves[i].disabled = false;
-				addmoves[i].disabledSource = '';
-				addmoves[i].used = false;
+				addedMoves[i].disabled = false;
+				addedMoves[i].disabledSource = '';
+				addedMoves[i].used = false;
 
 			}
 			pokemon.moveset = pokemon.baseMoveset.concat(addedMoves);
