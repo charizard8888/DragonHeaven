@@ -6025,7 +6025,7 @@ exports.Formats = [
 			this.eachEvent('ResetMoveset');
 		},
 		onResetMoveset: function (pokemon) {
-			pokemon.moveset.length = pokemon.originalBaseMoveset.length;
+			pokemon.moveset.length = pokemon.baseMoveset;
 		},
 		onSwitchInPriority: 2,
 		onSwitchIn: function (pokemon) {
