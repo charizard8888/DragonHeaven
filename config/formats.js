@@ -6010,26 +6010,22 @@ exports.Formats = [
 		gameType: 'doubles',
 		ruleset: ['[Gen 7] Doubles OU'],
 		banlist: ['Huge Power', 'Imposter', 'Parental Bond', 'Pure Power', 'Wonder Guard', 'Kangaskhanite', 'Mawilite', 'Medichamite', 'Mimic', 'Sketch', 'Transform'],
-		onDisableMovePriority: -1,
-		onDisableMove: function (pokemon) {
-			let ally = pokemon.side.active.find(ally => ally && ally !== pokemon && !ally.fainted);
-			if (!ally) ally = {baseMoveset: []};
-			let addedMoves = ally.baseMoveset || [];
-			for (let i in addedMoves) {
-				addedMoves[i] = Object.assign({}, addedMoves[i]);
-				addedMoves[i].pp = addedMoves[i].maxpp;
-				addedMoves[i].disabled = false;
-				addedMoves[i].disabledSource = '';
-				addedMoves[i].used = false;
-
+		onBegin: function () {
+			for (let k = 0; k < this.sides.length; k++) {
+				for (let i = 0; i < this.sides[k].pokemon.length; i++) {
+					let pokemon = this.sides[k].pokemon[i];
+					pokemon.originalBaseMoveset = [];
+					for (let j = 0; j < pokemon.baseMoveset.length; j++) {
+						pokemon.originalBaseMoveset.push(Object.assign({}, pokemon.baseMoveset[j]));
+					}
+				}
 			}
-			pokemon.moveset = pokemon.baseMoveset.concat(addedMoves);
 		},
 		onResidual: function () {
 			this.eachEvent('ResetMoveset');
 		},
 		onResetMoveset: function (pokemon) {
-			pokemon.moveset = pokemon.baseMoveset;
+			pokemon.moveset.length = pokemon.originalBaseMoveset.length;
 		},
 		onSwitchInPriority: 2,
 		onSwitchIn: function (pokemon) {
@@ -6052,7 +6048,18 @@ exports.Formats = [
 				}
 			}
 			let ally = pokemon.side.active.find(ally => ally && ally !== pokemon && !ally.fainted);
-			if (ally && ally.ability !== pokemon.ability) {
+			if (!ally) return;
+			let addedMoves = [];
+			for (let i in pokemon.originalBaseMoveset) {
+				addedMoves[i] = Object.assign({}, pokemon.originalBaseMoveset[i]);
+			}
+			ally.moveset = ally.baseMoveset.concat(addedMoves);
+			addedMoves = [];
+			for (let i in ally.originalBaseMoveset) {
+				addedMoves[i] = Object.assign({}, ally.originalBaseMoveset[i]);
+			}
+			pokemon.moveset = pokemon.baseMoveset.concat(addedMoves);
+			if (ally.ability !== pokemon.ability) {
 				if (!pokemon.innate) {
 					pokemon.innate = 'ability' + ally.ability;
 					delete pokemon.volatiles[pokemon.innate];
