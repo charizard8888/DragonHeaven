@@ -6021,12 +6021,6 @@ exports.Formats = [
 				}
 			}
 		},
-		onResidual: function () {
-			this.eachEvent('ResetMoveset');
-		},
-		onResetMoveset: function (pokemon) {
-			pokemon.moveset = pokemon.baseMoveset;
-		},
 		onSwitchInPriority: 2,
 		onSwitchIn: function (pokemon) {
 			if (this.p1.active.every(ally => ally && !ally.fainted)) {
@@ -6080,22 +6074,26 @@ exports.Formats = [
 				pokemon.removeVolatile(pokemon.innate);
 				delete pokemon.innate;
 			}
+			pokemon.moveset.length = pokemon.originalBaseMoveset.length;
 			let ally = pokemon.side.active.find(ally => ally && ally !== pokemon && !ally.fainted);
 			if (ally && ally.innate) {
 				ally.removeVolatile(ally.innate);
 				delete ally.innate;
 			}
+			ally.moveset.length = ally.originalBaseMoveset.length;
 		},
 		onFaint: function (pokemon) {
 			if (pokemon.innate) {
 				pokemon.removeVolatile(pokemon.innate);
 				delete pokemon.innate;
 			}
+			pokemon.moveset.length = pokemon.originalBaseMoveset.length;
 			let ally = pokemon.side.active.find(ally => ally && ally !== pokemon && !ally.fainted);
 			if (ally && ally.innate) {
 				ally.removeVolatile(ally.innate);
 				delete ally.innate;
 			}
+			ally.moveset.length = ally.originalBaseMoveset.length;
 		},
 	},
 	{
