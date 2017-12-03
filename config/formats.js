@@ -3523,6 +3523,103 @@ exports.Formats = [
 		}
 	},
 	{
+		name: "[Gen 7] Partners in Crime",
+		desc: [
+			"Doubles-based metagame where both active ally Pok&eacute;mon share abilities and moves.",
+			"&bullet; <a href=\"http://www.smogon.com/forums/threads/3618488/\">Partners in Crime</a>",
+		],
+
+		mod: 'pic',
+		gameType: 'doubles',
+		ruleset: ['[Gen 7] Doubles OU'],
+		banlist: ['Huge Power', 'Imposter', 'Parental Bond', 'Pure Power', 'Wonder Guard', 'Kangaskhanite', 'Mawilite', 'Medichamite', 'Mimic', 'Sketch', 'Transform'],
+		onBegin: function () {
+			for (let k = 0; k < this.sides.length; k++) {
+				for (let i = 0; i < this.sides[k].pokemon.length; i++) {
+					let pokemon = this.sides[k].pokemon[i];
+					pokemon.originalBaseMoveset = [];
+					for (let j = 0; j < pokemon.baseMoveset.length; j++) {
+						pokemon.originalBaseMoveset.push(Object.assign({}, pokemon.baseMoveset[j]));
+					}
+				}
+			}
+		},
+		onSwitchInPriority: 2,
+		onSwitchIn: function (pokemon) {
+			if (this.p1.active.every(ally => ally && !ally.fainted)) {
+				let p1a = this.p1.active[0], p1b = this.p1.active[1];
+				if (p1a.ability !== p1b.ability) {
+					let p1a_innate = 'ability' + p1b.ability;
+					p1a.volatiles[p1a_innate] = {id: p1a_innate, target: p1a};
+					let p1b_innate = 'ability' + p1a.ability;
+					p1b.volatiles[p1b_innate] = {id: p1b_innate, target: p1b};
+				}
+			}
+			if (this.p2.active.every(ally => ally && !ally.fainted)) {
+				let p2a = this.p2.active[0], p2b = this.p2.active[1];
+				if (p2a.ability !== p2b.ability) {
+					let p2a_innate = 'ability' + p2b.ability;
+					p2a.volatiles[p2a_innate] = {id: p2a_innate, target: p2a};
+					let p2b_innate = 'ability' + p2a.ability;
+					p2b.volatiles[p2b_innate] = {id: p2b_innate, target: p2b};
+				}
+			}
+			let ally = pokemon.side.active.find(ally => ally && ally !== pokemon && !ally.fainted);
+			if (!ally) return;
+			let addedMoves = [];
+			for (let i in pokemon.originalBaseMoveset) {
+				addedMoves[i] = Object.assign({}, pokemon.originalBaseMoveset[i]);
+			}
+			ally.moveset = ally.baseMoveset.concat(addedMoves);
+			addedMoves = [];
+			for (let i in ally.originalBaseMoveset) {
+				addedMoves[i] = Object.assign({}, ally.originalBaseMoveset[i]);
+			}
+			pokemon.moveset = pokemon.baseMoveset.concat(addedMoves);
+			if (ally.ability !== pokemon.ability) {
+				if (!pokemon.innate) {
+					pokemon.innate = 'ability' + ally.ability;
+					delete pokemon.volatiles[pokemon.innate];
+					pokemon.addVolatile(pokemon.innate);
+				}
+				if (!ally.innate) {
+					ally.innate = 'ability' + pokemon.ability;
+					delete ally.volatiles[ally.innate];
+					ally.addVolatile(ally.innate);
+				}
+			}
+			[ally, pokemon].forEach((mon => {
+				this.runEvent("DisableMove", mon);
+			}).bind(this));
+		},
+		onSwitchOut: function (pokemon) {
+			if (pokemon.innate) {
+				pokemon.removeVolatile(pokemon.innate);
+				delete pokemon.innate;
+			}
+			pokemon.moveset.length = pokemon.originalBaseMoveset.length;
+			let ally = pokemon.side.active.find(ally => ally && ally !== pokemon && !ally.fainted);
+			if (ally && ally.innate) {
+				ally.removeVolatile(ally.innate);
+				delete ally.innate;
+			}
+			ally.moveset.length = ally.originalBaseMoveset.length;
+		},
+		onFaint: function (pokemon) {
+			if (pokemon.innate) {
+				pokemon.removeVolatile(pokemon.innate);
+				delete pokemon.innate;
+			}
+			pokemon.moveset.length = pokemon.originalBaseMoveset.length;
+			let ally = pokemon.side.active.find(ally => ally && ally !== pokemon && !ally.fainted);
+			if (ally && ally.innate) {
+				ally.removeVolatile(ally.innate);
+				delete ally.innate;
+			}
+			ally.moveset.length = ally.originalBaseMoveset.length;
+		},
+	},
+	{
 		name: "[Gen 7] Pokebilities",
 		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/3588652/\">Pokebilities</a>: A Pokemon has all of its abilities active at the same time."],
 		mod: 'pokebilities',
@@ -5997,103 +6094,6 @@ exports.Formats = [
 			if (!pokemon.side.foe.active[0]) return;
 			pokemon.side.foe.active[0].removeVolatile(pokemon.side.foe.active[0].sec);
 			delete pokemon.side.foe.active[0].sec;
-		},
-	},
-	{
-		name: "[Gen 7] Partners in Crime",
-		desc: [
-			"Doubles-based metagame where both active ally Pok&eacute;mon share abilities and moves.",
-			"&bullet; <a href=\"http://www.smogon.com/forums/threads/3618488/\">Partners in Crime</a>",
-		],
-
-		mod: 'pic',
-		gameType: 'doubles',
-		ruleset: ['[Gen 7] Doubles OU'],
-		banlist: ['Huge Power', 'Imposter', 'Parental Bond', 'Pure Power', 'Wonder Guard', 'Kangaskhanite', 'Mawilite', 'Medichamite', 'Mimic', 'Sketch', 'Transform'],
-		onBegin: function () {
-			for (let k = 0; k < this.sides.length; k++) {
-				for (let i = 0; i < this.sides[k].pokemon.length; i++) {
-					let pokemon = this.sides[k].pokemon[i];
-					pokemon.originalBaseMoveset = [];
-					for (let j = 0; j < pokemon.baseMoveset.length; j++) {
-						pokemon.originalBaseMoveset.push(Object.assign({}, pokemon.baseMoveset[j]));
-					}
-				}
-			}
-		},
-		onSwitchInPriority: 2,
-		onSwitchIn: function (pokemon) {
-			if (this.p1.active.every(ally => ally && !ally.fainted)) {
-				let p1a = this.p1.active[0], p1b = this.p1.active[1];
-				if (p1a.ability !== p1b.ability) {
-					let p1a_innate = 'ability' + p1b.ability;
-					p1a.volatiles[p1a_innate] = {id: p1a_innate, target: p1a};
-					let p1b_innate = 'ability' + p1a.ability;
-					p1b.volatiles[p1b_innate] = {id: p1b_innate, target: p1b};
-				}
-			}
-			if (this.p2.active.every(ally => ally && !ally.fainted)) {
-				let p2a = this.p2.active[0], p2b = this.p2.active[1];
-				if (p2a.ability !== p2b.ability) {
-					let p2a_innate = 'ability' + p2b.ability;
-					p2a.volatiles[p2a_innate] = {id: p2a_innate, target: p2a};
-					let p2b_innate = 'ability' + p2a.ability;
-					p2b.volatiles[p2b_innate] = {id: p2b_innate, target: p2b};
-				}
-			}
-			let ally = pokemon.side.active.find(ally => ally && ally !== pokemon && !ally.fainted);
-			if (!ally) return;
-			let addedMoves = [];
-			for (let i in pokemon.originalBaseMoveset) {
-				addedMoves[i] = Object.assign({}, pokemon.originalBaseMoveset[i]);
-			}
-			ally.moveset = ally.baseMoveset.concat(addedMoves);
-			addedMoves = [];
-			for (let i in ally.originalBaseMoveset) {
-				addedMoves[i] = Object.assign({}, ally.originalBaseMoveset[i]);
-			}
-			pokemon.moveset = pokemon.baseMoveset.concat(addedMoves);
-			if (ally.ability !== pokemon.ability) {
-				if (!pokemon.innate) {
-					pokemon.innate = 'ability' + ally.ability;
-					delete pokemon.volatiles[pokemon.innate];
-					pokemon.addVolatile(pokemon.innate);
-				}
-				if (!ally.innate) {
-					ally.innate = 'ability' + pokemon.ability;
-					delete ally.volatiles[ally.innate];
-					ally.addVolatile(ally.innate);
-				}
-			}
-			[ally, pokemon].forEach((mon => {
-				this.runEvent("DisableMove", mon);
-			}).bind(this));
-		},
-		onSwitchOut: function (pokemon) {
-			if (pokemon.innate) {
-				pokemon.removeVolatile(pokemon.innate);
-				delete pokemon.innate;
-			}
-			pokemon.moveset.length = pokemon.originalBaseMoveset.length;
-			let ally = pokemon.side.active.find(ally => ally && ally !== pokemon && !ally.fainted);
-			if (ally && ally.innate) {
-				ally.removeVolatile(ally.innate);
-				delete ally.innate;
-			}
-			ally.moveset.length = ally.originalBaseMoveset.length;
-		},
-		onFaint: function (pokemon) {
-			if (pokemon.innate) {
-				pokemon.removeVolatile(pokemon.innate);
-				delete pokemon.innate;
-			}
-			pokemon.moveset.length = pokemon.originalBaseMoveset.length;
-			let ally = pokemon.side.active.find(ally => ally && ally !== pokemon && !ally.fainted);
-			if (ally && ally.innate) {
-				ally.removeVolatile(ally.innate);
-				delete ally.innate;
-			}
-			ally.moveset.length = ally.originalBaseMoveset.length;
 		},
 	},
 	{
