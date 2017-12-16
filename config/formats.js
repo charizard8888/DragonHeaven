@@ -1860,89 +1860,73 @@ exports.Formats = [
 	},
 	{
 		name: "[Gen 7] Random Partners in Crime",
-		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/partners-in-crime.3559988/\">Partners in Crime</a>"],
-		mod: 'franticfusions',
-		team: 'random',
+		desc: [
+			"Doubles-based metagame where both active ally Pok&eacute;mon share abilities and moves.",
+			"&bullet; <a href=\"http://www.smogon.com/forums/threads/3618488/\">Partners in Crime</a>",
+		],
+
+		mod: 'pic',
 		gameType: 'doubles',
-		ruleset: ['[Gen 7] Random Doubles Battle'],
-		onBegin: function () {
-			this.statusability = {
-				"aerilate": true,
-				"aurabreak": true,
-				"flashfire": true,
-				"galvanize": true,
-				"normalize": true,
-				"parentalbond": true,
-				"pixilate": true,
-				"refrigerate": true,
-				"sheerforce": true,
-				"slowstart": true,
-				"truant": true,
-				"unburden": true,
-				"zenmode": true,
-			};
-			for (let k = 0; k < this.sides.length; k++) {
-				for (let i = 0; i < this.sides[k].pokemon.length; i++) {
-					let pokemon = this.sides[k].pokemon[i];
-					pokemon.oms = [];
-					pokemon.obms = [];
-					pokemon.om = Object.assign({}, pokemon.moves);
-					pokemon.obm = Object.assign({}, pokemon.baseMoves);
-					for (let j = 0; j < pokemon.baseMoveset.length; j++) {
-						pokemon.obms.push(Object.assign({}, pokemon.baseMoveset[j]));
-						pokemon.oms.push(Object.assign({}, pokemon.moveset[j]));
-					}
+		team: 'random',
+		ruleset: ['[Gen 7] Doubles OU', 'Sleep Clause Mod'],
+
+		banlist: ['Huge Power', 'Imposter', 'Parental Bond', 'Pure Power', 'Wonder Guard', 'Kangaskhanite', 'Mawilite', 'Medichamite', 'Mimic', 'Sketch', 'Transform'],
+		onDisableMovePriority: -1,
+		onSwitchInPriority: 2,
+		onSwitchIn: function (pokemon) {
+			if (this.p1.active.every(ally => ally && !ally.fainted)) {
+				let p1a = this.p1.active[0], p1b = this.p1.active[1];
+				if (p1a.ability !== p1b.ability) {
+					let p1a_innate = 'ability' + p1b.ability;
+					p1a.volatiles[p1a_innate] = {id: p1a_innate, target: p1a};
+					let p1b_innate = 'ability' + p1a.ability;
+					p1b.volatiles[p1b_innate] = {id: p1b_innate, target: p1b};
+				}
+			}
+			if (this.p2.active.every(ally => ally && !ally.fainted)) {
+				let p2a = this.p2.active[0], p2b = this.p2.active[1];
+				if (p2a.ability !== p2b.ability) {
+					let p2a_innate = 'ability' + p2b.ability;
+					p2a.volatiles[p2a_innate] = {id: p2a_innate, target: p2a};
+					let p2b_innate = 'ability' + p2a.ability;
+					p2b.volatiles[p2b_innate] = {id: p2b_innate, target: p2b};
+				}
+			}
+			let ally = pokemon.side.active.find(ally => ally && ally !== pokemon && !ally.fainted);
+			if (ally && ally.ability !== pokemon.ability) {
+				if (!pokemon.innate) {
+					pokemon.innate = 'ability' + ally.ability;
+					delete pokemon.volatiles[pokemon.innate];
+					pokemon.addVolatile(pokemon.innate);
+				}
+				if (!ally.innate) {
+					ally.innate = 'ability' + pokemon.ability;
+					delete ally.volatiles[ally.innate];
+					ally.addVolatile(ally.innate);
 				}
 			}
 		},
-		onSwitchInPriority: 1,
-		onSwitchIn: function (pokemon) {
-			let partner = pokemon.side.active[1 ^ pokemon.position];
-			if (!partner) return;
-			let sec = this.statusability[pokemon.ability] ? ("other" + pokemon.ability) : pokemon.ability;
-			partner.sec = sec;
-			partner.addVolatile(sec);
-			sec = this.statusability[partner.ability] ? ("other" + partner.ability) : partner.ability;
-			pokemon.sec = sec;
-			pokemon.addVolatile(sec);
-			pokemon.baseMoveset.length = pokemon.moveset.length = pokemon.baseMoves.length = pokemon.moves.length = pokemon.obms.length;
-			partner.baseMoveset.length = partner.moveset.length = partner.baseMoves.length = partner.moves.length = partner.obms.length;
-			for (let i = pokemon.obms.length; i < pokemon.obms.length + partner.obms.length; i++) {
-				pokemon.baseMoveset[i] = Object.assign({}, partner.obms[i - partner.obms.length]);
-				pokemon.moveset[i] = Object.assign({}, partner.oms[i - partner.oms.length]);
-				pokemon.moves[i] = partner.om[i - partner.om.length];
-				pokemon.baseMoves[i] = partner.obm[i - partner.obm.length];
-			}
-			for (let i = partner.obms.length; i < pokemon.obms.length + partner.obms.length; i++) {
-				partner.baseMoveset[i] = Object.assign({}, pokemon.obms[i - pokemon.obms.length]);
-				partner.moveset[i] = Object.assign({}, pokemon.oms[i - pokemon.oms.length]);
-				partner.moves[i] = pokemon.om[i - pokemon.om.length];
-				partner.baseMoves[i] = pokemon.obm[i - pokemon.obm.length];
-			}
-			[partner, pokemon].forEach((mon => {
-				this.runEvent("DisableMove", mon);
-			}).bind(this));
-		},
-		onAfterMega: function (pokemon) {
-			let partner = pokemon.side.active[1 ^ pokemon.position];
-			if (!partner) return;
-			let sec = this.statusability[pokemon.ability] ? ("other" + pokemon.ability) : pokemon.ability;
-			partner.sec = sec;
-			partner.addVolatile(sec);
-		},
 		onSwitchOut: function (pokemon) {
-			let partner = pokemon.side.active[1 ^ pokemon.position];
-			if (!partner) return;
-			partner.removeVolatile(pokemon.side.active[1].sec);
-			delete partner.sec;
-			partner.baseMoveset.length = partner.moveset.length = partner.baseMoves.length = partner.moves.length = partner.obms.length;
+			if (pokemon.innate) {
+				pokemon.removeVolatile(pokemon.innate);
+				delete pokemon.innate;
+			}
+			let ally = pokemon.side.active.find(ally => ally && ally !== pokemon && !ally.fainted);
+			if (ally && ally.innate) {
+				ally.removeVolatile(ally.innate);
+				delete ally.innate;
+			}
 		},
 		onFaint: function (pokemon) {
-			let partner = pokemon.side.active[1 ^ pokemon.position];
-			if (!partner) return;
-			partner.removeVolatile(pokemon.side.active[1].sec);
-			delete partner.sec;
-			partner.baseMoveset.length = partner.moveset.length = partner.baseMoves.length = partner.moves.length = partner.obms.length;
+			if (pokemon.innate) {
+				pokemon.removeVolatile(pokemon.innate);
+				delete pokemon.innate;
+			}
+			let ally = pokemon.side.active.find(ally => ally && ally !== pokemon && !ally.fainted);
+			if (ally && ally.innate) {
+				ally.removeVolatile(ally.innate);
+				delete ally.innate;
+			}
 		},
 	},
 	{
@@ -3531,19 +3515,9 @@ exports.Formats = [
 
 		mod: 'pic',
 		gameType: 'doubles',
-		ruleset: ['[Gen 7] Doubles OU'],
+		ruleset: ['[Gen 7] Doubles OU', 'Sleep Clause Mod'],
 		banlist: ['Huge Power', 'Imposter', 'Parental Bond', 'Pure Power', 'Wonder Guard', 'Kangaskhanite', 'Mawilite', 'Medichamite', 'Mimic', 'Sketch', 'Transform'],
-		onBegin: function () {
-			for (let k = 0; k < this.sides.length; k++) {
-				for (let i = 0; i < this.sides[k].pokemon.length; i++) {
-					let pokemon = this.sides[k].pokemon[i];
-					pokemon.originalBaseMoveset = [];
-					for (let j = 0; j < pokemon.baseMoveset.length; j++) {
-						pokemon.originalBaseMoveset.push(Object.assign({}, pokemon.baseMoveset[j]));
-					}
-				}
-			}
-		},
+		onDisableMovePriority: -1,
 		onSwitchInPriority: 2,
 		onSwitchIn: function (pokemon) {
 			if (this.p1.active.every(ally => ally && !ally.fainted)) {
@@ -3565,18 +3539,7 @@ exports.Formats = [
 				}
 			}
 			let ally = pokemon.side.active.find(ally => ally && ally !== pokemon && !ally.fainted);
-			if (!ally) return;
-			let addedMoves = [];
-			for (let i in pokemon.originalBaseMoveset) {
-				addedMoves[i] = Object.assign({}, pokemon.originalBaseMoveset[i]);
-			}
-			ally.moveset = ally.baseMoveset.concat(addedMoves);
-			addedMoves = [];
-			for (let i in ally.originalBaseMoveset) {
-				addedMoves[i] = Object.assign({}, ally.originalBaseMoveset[i]);
-			}
-			pokemon.moveset = pokemon.baseMoveset.concat(addedMoves);
-			if (ally.ability !== pokemon.ability) {
+			if (ally && ally.ability !== pokemon.ability) {
 				if (!pokemon.innate) {
 					pokemon.innate = 'ability' + ally.ability;
 					delete pokemon.volatiles[pokemon.innate];
@@ -3588,35 +3551,28 @@ exports.Formats = [
 					ally.addVolatile(ally.innate);
 				}
 			}
-			[ally, pokemon].forEach((mon => {
-				this.runEvent("DisableMove", mon);
-			}).bind(this));
 		},
 		onSwitchOut: function (pokemon) {
 			if (pokemon.innate) {
 				pokemon.removeVolatile(pokemon.innate);
 				delete pokemon.innate;
 			}
-			pokemon.moveset.length = pokemon.originalBaseMoveset.length;
 			let ally = pokemon.side.active.find(ally => ally && ally !== pokemon && !ally.fainted);
 			if (ally && ally.innate) {
 				ally.removeVolatile(ally.innate);
 				delete ally.innate;
 			}
-			ally.moveset.length = ally.originalBaseMoveset.length;
 		},
 		onFaint: function (pokemon) {
 			if (pokemon.innate) {
 				pokemon.removeVolatile(pokemon.innate);
 				delete pokemon.innate;
 			}
-			pokemon.moveset.length = pokemon.originalBaseMoveset.length;
 			let ally = pokemon.side.active.find(ally => ally && ally !== pokemon && !ally.fainted);
 			if (ally && ally.innate) {
 				ally.removeVolatile(ally.innate);
 				delete ally.innate;
 			}
-			ally.moveset.length = ally.originalBaseMoveset.length;
 		},
 	},
 	{
