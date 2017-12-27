@@ -117,12 +117,12 @@ exports.Formats = [
 
 			let allPokemon = this.p1.pokemon.concat(this.p2.pokemon);
 			for (let i = 0, len = allPokemon.length; i < len; i++) {
-				let pokemon = allPokemon[i];
+				let pokemon = allPokemon[i];		
 				let last = pokemon.moves.length - 1;
 				if (pokemon.moves[last]) {
 					pokemon.moves[last] = toId(pokemon.set.signatureMove);
-					pokemon.moveset[last].move = pokemon.set.signatureMove;
-					pokemon.baseMoveset[last].move = pokemon.set.signatureMove;
+					pokemon.moveSlots[last].move = pokemon.set.signatureMove;
+					pokemon.baseMoveSlots[last].move = pokemon.set.signatureMove;
 				}
 				let name = toId(pokemon.illusion ? pokemon.illusion.name : pokemon.name);
 				if (name == "thetruefalcon")
@@ -133,19 +133,19 @@ exports.Formats = [
 				{
 					pokemon.types = ["Dragon"];
 				}
-				for (let j = 0; j < pokemon.moveset.length; j++) {
-					let moveData = pokemon.moveset[j];
+				for (let j = 0; j < pokemon.moveSlots.length; j++) {
+					let moveData = pokemon.moveSlots[j];
 					if (globalRenamedMoves[moveData.id]) {
 						pokemon.moves[j] = toId(pokemon.set.signatureMove);
 						moveData.move = globalRenamedMoves[moveData.id];
-						pokemon.baseMoveset[j].move = globalRenamedMoves[moveData.id];
+						pokemon.baseMoveSlots[j].move = globalRenamedMoves[moveData.id];
 					}
 
 					let customRenamedSet = customRenamedMoves[toId(pokemon.name)];
 					if (customRenamedSet && customRenamedSet[moveData.id]) {
 						pokemon.moves[j] = toId(pokemon.set.signatureMove);
 						moveData.move = customRenamedSet[moveData.id];
-						pokemon.baseMoveset[j].move = customRenamedSet[moveData.id];
+						pokemon.baseMoveSlots[j].move = customRenamedSet[moveData.id];
 					}
 				}
 			}
@@ -196,22 +196,22 @@ exports.Formats = [
 				let last = pokemon.moves.length - 1;
 				if (pokemon.moves[last]) {
 					pokemon.moves[last] = toId(pokemon.set.signatureMove);
-					pokemon.moveset[last].move = pokemon.set.signatureMove;
-					pokemon.baseMoveset[last].move = pokemon.set.signatureMove;
+					pokemon.moveSlots[last].move = pokemon.set.signatureMove;
+					pokemon.baseMoveSlots[last].move = pokemon.set.signatureMove;
 				}
-				for (let j = 0; j < pokemon.moveset.length; j++) {
-					let moveData = pokemon.moveset[j];
+				for (let j = 0; j < pokemon.moveSlots.length; j++) {
+					let moveData = pokemon.moveSlots[j];
 					if (globalRenamedMoves[moveData.id]) {
 						pokemon.moves[j] = toId(pokemon.set.signatureMove);
 						moveData.move = globalRenamedMoves[moveData.id];
-						pokemon.baseMoveset[j].move = globalRenamedMoves[moveData.id];
+						pokemon.baseMoveSlots[j].move = globalRenamedMoves[moveData.id];
 					}
 
 					let customRenamedSet = customRenamedMoves[toId(pokemon.name)];
 					if (customRenamedSet && customRenamedSet[moveData.id]) {
 						pokemon.moves[j] = toId(pokemon.set.signatureMove);
 						moveData.move = customRenamedSet[moveData.id];
-						pokemon.baseMoveset[j].move = customRenamedSet[moveData.id];
+						pokemon.baseMoveSlots[j].move = customRenamedSet[moveData.id];
 					}
 				}
 			}
