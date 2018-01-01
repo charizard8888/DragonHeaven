@@ -1118,14 +1118,6 @@ exports.BattlePokedex = {
 		abilities: {0: "Sand Veil", H: "Sand Force"},
 		prevo: "sandslash",
 		},
-	   diglandlash: {
-		num: 100133,
-		species: "Diglandlash",
-		types: ["Ground", "Steel"],
-		baseStats: {hp: 85, atk: 120, def: 115, spa: 55, spd: 75, spe: 80},
-		abilities: {0: "Sand Veil", H: "Sand Force"},
-		prevo: "sandslash",
-		},
 	   toxinomoth: {
 		num: 100134,
 		species: "Toxinomoth",
@@ -1134,7 +1126,7 @@ exports.BattlePokedex = {
 		abilities: {0: "Shield Dust", 1: "Tinted Lens", H: "Wonder Skin"},
 		prevo: "venomoth",
 		},
-	   rumbpidash: {
+	   rumblepidash: {
 		num: 100135,
 		species: "Rumblepidash",
 		types: ["Fire", "Fighting"],
@@ -1158,7 +1150,7 @@ exports.BattlePokedex = {
 		abilities: {0: "Levitate"},
 		prevo: "weezing",
 		},
-	   scottpras: {
+	   scottprass: {
 		num: 100137,
 		species: "Scottprass",
 		types: ["Water", "Ice"],
@@ -1234,7 +1226,7 @@ exports.BattlePokedex = {
 		num: 100147,
 		species: "Ultimence",
 		types: ["Dragon", "Fighting"],
-		baseStats: {hp: 95, atk: 155, def: 80, spa: 80, spd: 101, spe: 115},
+		baseStats: {hp: 95, atk: 145, def: 80, spa: 70, spd: 95, spe: 115},
 		abilities: {0: "Intimidate", H: "Iron Fist"},
 		prevo: "shelgon",
 		},
