@@ -912,14 +912,11 @@ class CommandContext {
 
 			if (room) {
 				let normalized = message.trim();
-<<<<<<< HEAD
-=======
 				if (!user.can('bypassall') && (room.id === 'lobby' || room.id === 'help') && (normalized === user.lastMessage) &&
 						((Date.now() - user.lastMessageTime) < MESSAGE_COOLDOWN)) {
 					this.errorReply("You can't send the same message again so soon.");
 					return false;
 				}
->>>>>>> 68ca4d5b0f40961e8ecc3ce50eeaf98ee2c11b6e
 				user.lastMessage = message;
 				user.lastMessageTime = Date.now();
 			}
