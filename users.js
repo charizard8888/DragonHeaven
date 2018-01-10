@@ -179,7 +179,7 @@ function findUsers(userids, ips, options) {
 /*********************************************************
  * User groups
  *********************************************************/
-let usergroups = Users.usergroups = Object.create(null);
+let usergroups = Object.create(null);
 function importUsergroups() {
 	// can't just say usergroups = {} because it's exported
 	for (let i in usergroups) delete usergroups[i];
