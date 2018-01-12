@@ -3765,7 +3765,7 @@ exports.Formats = [
 
 		mod: 'gen7',
 		ruleset: ['[Gen 7] Ubers', 'Ignore STAB Moves'],
-		banlist: ['King\'s Rock', 'Razor Fang'],
+		banlist: ['Arceus', 'King\'s Rock', 'Razor Fang'],
 		noLearn: ['Acupressure', 'Belly Drum', 'Chatter', 'Geomancy', 'Lovely Kiss', 'Shell Smash', 'Shift Gear', 'Thousand Arrows'],
 	},
 	{
