@@ -3760,7 +3760,7 @@ exports.Formats = [
 		desc: [
 			"Pok&eacute;mon can use any move of their typing, in addition to the moves they can normally learn.",
 			"&bullet; <a href=\"http://www.smogon.com/forums/threads/3587949/\">STABmons</a>",
-			"&bullet; <a href=http://www.smogon.com/forums/threads/ubers-stabmons-tour.3625366/>Ubers Tour</a>",
+			"&bullet; <a href=http://www.smogon.com/forums/threads/ubers-stabmons-tour.3625366/>STABmons Ubers Tour</a>",
 		],
 
 		mod: 'gen7',
