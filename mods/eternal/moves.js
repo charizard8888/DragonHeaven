@@ -81,4 +81,43 @@ exports.BattleMovedex = {
 		zMovePower: 200,
 		contestType: "Beautiful",
 	},
+	"evolutionblast": { /* Evolution Blast (Special, 15 BP, 10 PP, 100 Acc, Hits 8 times. Changes type after each hit (Water -> Electric -> Fire -> Psychic -> Dark -> Grass -> Ice -> Fairy))
+Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigavolt Havoc...) */
+		accuracy: 100,
+		basePower: 15,
+		category: "Special",
+		id: "evolutionblast",
+		isViable: true,
+		name: "Evolution Blast",
+		pp: 10,
+		priority: 0,
+		flags: {},
+		onPrepareHit: function(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Extreme Speed", target);
+		},
+		multihit: 8,
+		target: "normal",
+		type: "Ice",
+		zMovePower: 25,
+	},
+	"darkcrowdive": {
+		num: 413,
+		accuracy: 95,
+		basePower: 150,
+		category: "Physical",
+		desc: "No additional effect.",
+		shortDesc: "No additional effect.",
+		id: "darkcrowdive",
+		isViable: true,
+		name: "Dark Crow Dive",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, distance: 1},
+		secondary: false,
+		target: "normal",
+		type: "Flying", /* Double check the move type */
+		zMovePower: 200,
+		contestType: "Cool",
+	},
 };
