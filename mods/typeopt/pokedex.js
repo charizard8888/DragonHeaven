@@ -177,9 +177,9 @@ lycanroc: {
 	},
 	cofagrigus: {
 		inherit: true,
-		types: ["Ground", "Fighting"],
-		baseStats: {hp: 95, atk: 130, def: 75, spa: 85, spd: 80, spe: 105},
-		abilities: {0: "Technician", 1: "Strong Jaw", H: "No Guard"},
+		types: ["Ghost"],
+		baseStats: {hp: 100, atk: 50, def: 130, spa: 110, spd: 130, spe: 50},
+		abilities: {0: "Mummy", H: "Magic Guard"},
 	},
 	girafarig: {
 		inherit: true,
