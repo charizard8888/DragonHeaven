@@ -589,14 +589,25 @@ exports.commands = {
 typeopt: function (target, room, user) {
 		if (!this.runBroadcast()) return;
 		let buf = `<div class=infobox-limited><center><h2>List Of Type Optimisation Pokemon</h2></center>`;
-		let jillianDex = require('../mods/typeoptimisation/pokedex.js').BattlePokedex;
+		let jillianDex = require('../mods/typeopt/pokedex.js').BattlePokedex;
 		if (!jillianDex) return this.errorReply("Error Fetching Istor Data.");
 		Object.values(jillianDex).forEach(mon => {
-			buf += `<button name="send" value="/dt ${mon.species}, Typeoptimisation" style="background:none;border:none;">${mon.species}</button><br>`;
+			buf += `<button name="send" value="/dt ${mon.species}, Typeopt" style="background:none;border:none;">${mon.species}</button><br>`;
 		});
 		this.sendReplyBox(`${buf}</div>`);
 	},
-	eternalmonsthelp: ["/eternalmons - Shows the list of Pokemon in Type Optimisation Pokemon."],
+typeopthelp: ["/eternalmons - Shows the list of Pokemon in Type Optimisation Pokemon."],
+	usv: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Ultra Space Variants Pokemon</h2></center>`;
+		let jillianDex = require('../mods/usv/pokedex.js').BattlePokedex;
+		if (!jillianDex) return this.errorReply("Error Fetching Istor Data.");
+		Object.values(jillianDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.species}, Usv" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	usvhelp: ["/eternalmons - Shows the list of Pokemon in Ultra Space Variant."],
 	clovermons: function (target, room, user) {
 		if (!this.runBroadcast()) return;
 		let buf = `<div class=infobox-limited><center><h2>List Of Clovermons</h2></center>`;
