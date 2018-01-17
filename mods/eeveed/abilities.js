@@ -73,4 +73,39 @@ exports.BattleAbilities = {
 		name: "Lucky",
 		rating: 3.5,
 	},
+		"unbreakable": {
+		shortDesc: "This Pokemon is immune to punch-based moves.",
+		onTryHit: function (target, source, move) {
+			if (move.flags['punch']) {
+				this.add('-immune', target, '[msg]', '[from] ability: Unbreakable');
+				return null;
+			}
+		},
+		onAllyTryHitSide: function (target, source, move) {
+			if (move.flags['punch']) {
+				this.add('-immune', this.effectData.target, '[msg]', '[from] ability: Unbreakable');
+			}
+		},
+		id: "unbreakable",
+		name: "Unbreakable",
+		rating: 2,
+	},
+		"reaperslice": { /* Make the 1.2 somehow 1.3 + Add the infiltrating effect*/
+		desc: "Ghost type moves can bypass Subsitutes, they have also x1.3 power",
+		shortDesc: "Ghost type moves can bypass Subsitutes, they have also x1.3 power",
+		onModifyMovePriority: -1,
+		onModifyMove: function (move, pokemon) {
+			if (move.type === 'Normal' && !['judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'weatherball'].includes(move.id) && !(move.isZ && move.category !== 'Status')) {
+				move.type = 'Ghost';
+				move.refrigerateBoosted = true;
+			}
+		},
+		onBasePowerPriority: 8,
+		onBasePower: function (basePower, pokemon, target, move) {
+			if (move.refrigerateBoosted) return this.chainModify([0x1333, 0x1000]);
+		},
+		id: "reaperslice",
+		name: "Reaper Slice",
+		rating: 4,
+	},
 };        
