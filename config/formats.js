@@ -4109,7 +4109,7 @@ exports.Formats = [
 		      ],
   		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
   		banlist: ['Unreleased', 'Illegal'],
-		mod: 'typeoptimisation',
+		mod: 'typeopt',
   	},
 	{
   		name: "[Gen 7] Eternal Pokemon",
