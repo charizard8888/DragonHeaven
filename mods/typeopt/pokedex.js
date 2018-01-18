@@ -661,7 +661,7 @@ exports.BattlePokedex = {
             H: "Power of Alchemy"
         },
     },
-    muhsarana: {
+    musharna: {
         inherit: true,
         types: ["Poison", "Psychic"],
         baseStats: {
