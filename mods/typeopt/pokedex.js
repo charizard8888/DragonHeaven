@@ -74,7 +74,7 @@ lycanroc: {
 		baseStats: {hp: 90, atk: 135, def: 80, spa: 60, spd: 80, spe: 125},
 		abilities: {0: "Reckless", 1: "Motor Drive", H: "Defiant"},
 	},
-	kriketurne: {
+	kriketune: {
 		inherit: true,
 		types: ["Bug"],
 		baseStats: {hp: 112, atk: 125, def: 99, spa: 55, spd: 99, spe: 80},
