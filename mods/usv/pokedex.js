@@ -8,9 +8,9 @@ exports.BattlePokedex = {
 	
   gumshoosub: {
 		num: 735,
-		species: "Gumshoos-Ultra Beast",
+		species: "Gumshoos-UB",
 		baseSpecies: "Gumshoos",
-		forme: "Ultra Beast",
+		forme: "Ultrabeast",
 		formeLetter: "UB",
 		types: ["Normal"],
 		baseStats: {hp: 211, atk: 107, def: 97, spa: 17, spd: 67, spe: 71},
@@ -18,29 +18,19 @@ exports.BattlePokedex = {
 	},
   raticateub: {
 		num: 20,
-		species: "Raticate-Ultra Beast",
+		species: "Raticate-UB",
 		baseSpecies: "Raticate",
-		forme: "Ultra Beast",
+		forme: "Ultrabeast",
 		formeLetter: "UB",
 		types: ["Normal", "Dragon"],
 		baseStats: {hp: 181, atk: 97, def: 83, spa: 87, spd: 83, spe: 39},
 		abilities: {0: "Hustle", 1: "Strong Jaw", H: "Thick Fat"},
 	},
-/*	wishiwashiub: {
-		num: 746,
-		species: "Wishiwashi-Ultra Beast",
-		baseSpecies: "Wishiwashi",
-		forme: "Ultra Beast",
-		formeLetter: "UB",
-		types: ["Psychic", "Bug"],
-		baseStats: {hp: 45, atk: 140, def: 130, spa: 140, spd: 135, spe: 30},
-		abilities: {0: "Schooling", H:"Telepathy"},Stardust Cluster (Wishishashi will be in its Cluster Forme when it is above 1/4 HP and will go back to Star Forme when it is at or below 1/4 HP. Basically Schooling.)  New Stats: Star Forme: 31 / 13 / 19 / 97 / 61 / 149 [BST 370] Cluster Forme: 151 / 61 / 109 / 139 / 103 / 7 [BST 570] */
-	
 	salazzleub: {
 		num: 758,
-		species: "Salazzle-Ultra Beast",
+		species: "Salazzle-UB",
 		baseSpecies: "Salazzle",
-		forme: "Ultra Beast",
+		forme: "Ultrabeast",
 		formeLetter: "UB",
 		types: ["Ice"],
 		baseStats: {hp: 97, atk: 89, def: 43, spa: 101, spd: 137, spe: 89},
