@@ -316,7 +316,7 @@ distor: function (target, room, user, connection, cmd) {
     if (!this.runBroadcast()) return;
     if (!target) return this.parse('/formchelp');
     if (!target) target = 'help';
-    let separated = target.split("|");
+    let separated = target.split("/");
 	 let target1 = (("" + separated[0]).trim());
     let target2 = (("" + separated[1]).trim());
     let target3 = (("" + separated[2]).trim());
@@ -338,10 +338,10 @@ distor: function (target, room, user, connection, cmd) {
     let target19 = (("" + separated[13]));
     let target20 = (("" + separated[14]));
     let target21 = (("" + separated[15]));
-    this.sendReplyBox('<button name="receive" value="|html|&#39;'+target1+'&#39; : {<br>species: &#39;'+target2+'&#39;, ability: &#39;'+target3+'&#39;, item: &#39;'+target4+'&#39;, gender: &#39;'+target5+'&#39;,<br>moves: [&#39;'+target6+'&#39;, &#39;'+target7+'&#39;, &#39;'+target8+'&#39;],<br>signatureMove: &quot;'+target9+'&quot;,evs: {<b>'+target10+'</b>}, nature: &#39;'+target11+'&#39;,<br>},<br><br><div style=&quot;border: solid 4px #0bb1b7;&quot;>Ability Description: '+target16+'<br>Signature Move Description:'+target17+' <br>Entry Phrase:'+target19+'<br>Signature Move Phrase:'+target20+'<br>Faint Phrase: '+target21+'<br><a href=https://github.com/XpRienzo/DragonHeaven/blob/master/mods/dhssb/scripts.js>Scripts </a><a href=https://github.com/XpRienzo/DragonHeaven/blob/master/mods/dhssb/moves.js>Moves</a><a href=https://github.com/XpRienzo/DragonHeaven/blob/master/mods/dhssb/abilities.js> Abilities </a></div>">Code</button><br><button name="receive" value="|html|###  '+target1+' <br><br>!['+target1+'](http://www.smogon.com/dex/media/sprites/xy/'+target12+'.gif)<br><br>Ability: '+target3+'<br><br>EVs: '+target10+'<br><br>'+target11+' Nature<br><br>-'+target13+'<br><br>-'+target14+'<br><br>-'+target15+'<br><br>- '+target9+'<br><br>'+target3+':'+target16+'<br><br>'+target9+':'+target17+'<br><br><a href=https://github.com/XpRienzo/DragonHeaven/blob/master/mods/dhssb/README.md>Readme.md</a>">Code for README.md</button>');
+    this.sendReplyBox('<button name="receive" value="|html|'+target1+' : {<br>num: &#39;'+target2+'&#39;, <br> species: &quot;'+target3+'&quot;, <br> baseSpecies: &quot;'+target4+'&quot;, <br> forme: &quot;'+target5+'&quot;,<br>formeLetter: &quot;'+target6+'&quot;, <br>types:[&quot;'+target7+'&quot;], <br> baseStats: {hp: '+target8+', atk: '+target9'+, def: '+target10+', spa: '+target11+' spd: '+target11+', spe: '+target12+', <br> abilities: {'+target13+'}, <br>weightkg: '+target14+', <br> } <br>},">Code</button>');
 
 	},
 	formchelp:function (target, room, user, connection, cmd) {
-	this.sendReplyBox('/formec Wait for it');
+	this.sendReplyBox('/formec Wait for it | Name | Num | Species | BaseSpecies ');
 },
 };
