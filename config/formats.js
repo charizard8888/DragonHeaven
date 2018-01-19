@@ -4119,7 +4119,7 @@ exports.Formats = [
 		mod: 'eternal',
   	},
 		{
-  		name: "[Gen 7] Aloa Formes",
+  		name: "[Gen 7] Alola Formes",
   		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/alola-formes-v3.3617314/>Alola Formes</a>",
 		      ],
   		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
