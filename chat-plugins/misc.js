@@ -312,7 +312,7 @@ distor: function (target, room, user, connection, cmd) {
 					"- Current staff team<br />" +
 					"- Our regular users<br />");
 	},
-	formc: function (target, room, user, connection, cmd) {
+	/* formc: function (target, room, user, connection, cmd) {
     if (!this.runBroadcast()) return;
     if (!target) return this.parse('/formchelp');
     if (!target) target = 'help';
@@ -337,5 +337,5 @@ distor: function (target, room, user, connection, cmd) {
 	},
 	formchelp:function (target, room, user, connection, cmd) {
 	this.sendReplyBox('/formec Wait for it | Name | Num | Species | BaseSpecies ');
-},
+},*/
 };
