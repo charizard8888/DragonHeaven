@@ -73,7 +73,7 @@ exports.BattlePokedex = {
         abilities: {0: "Adaptability"},
 		  weightkg: 50.5,	  
     },
-	  /*   nidoranfalola: {
+	   nidoranfalola: {
         num: 18,
         species: "Nidoran-F-Alola",
         baseSpecies: "Nidoran-F",
@@ -81,17 +81,17 @@ exports.BattlePokedex = {
         forme: "Alola",
         formeLetter: "A",
         types: ["Grass"],
-        baseStats: { FROM HERE
-            hp: 80,
-            atk: 80,
-            def: 75,
-            spa: 83,
-            spd: 70,
-            spe: 91
+        baseStats: { 
+            hp: 35,
+            atk: 57,
+            def: 32,
+            spa: 60,
+            spd: 30,
+            spe: 61
         },
-        abilities: {0: "Cursed Body", 1: "Overcoat", H: "Serene Grace"},
+        abilities: {0: "Chlorophyll", 1: "Leaf Guard", H: "Sheer Force"},
     },
-	     pidgeotalola: {
+	    /* pidgeotalola: {
         num: 18,
         species: "Pidgeot-Alola",
         baseSpecies: "Pidgeot",
