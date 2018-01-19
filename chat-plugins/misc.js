@@ -299,12 +299,14 @@ distor: function (target, room, user, connection, cmd) {
 					"- " + hashColor('XpRienzo', true) + " (Founder, Sysadmin)<br />" +
 										"<br />" +
 					"<u>Development:</u><br />" +
-					"- " + hashColor('charizard8888', true) + " (Roomintros, HTML, CSS, Development)<br/>" +
+					"- " + hashColor('charizard8888', true) + " (Development, Roomintros, HTML, CSS)<br/>" +
 					"- " + hashColor('Nixola', true) + " (Host)<br />" +
+					"<br />" +
 					"<u>Contributors:</u><br />" +
 					"- " + hashColor('ClassyZ', true) + " (DHSSB, Development)<br />" +
-					"- " + hashColor('Eternal Mayhem', true) + " (Roomintro's)<br />" +
+					"- " + hashColor('Eternal Mayhem', true) + " (Roomintros)<br />" +
 					"- " + hashColor('LightiumZ', true) + " (Development)<br />" +
+					"- " + hashColor('Ludicrousity', true) + " (Development)<br />" +
 					"<br />" +
 					"<u>Special Thanks:</u><br />" +
 					"- Current staff team<br />" +
