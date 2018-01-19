@@ -312,30 +312,4 @@ distor: function (target, room, user, connection, cmd) {
 					"- Current staff team<br />" +
 					"- Our regular users<br />");
 	},
-	/* formc: function (target, room, user, connection, cmd) {
-    if (!this.runBroadcast()) return;
-    if (!target) return this.parse('/formchelp');
-    if (!target) target = 'help';
-    let separated = target.split("/");
-	 let target1 = (("" + separated[0]).trim());
-    let target2 = (("" + separated[1]).trim());
-    let target3 = (("" + separated[2]).trim());
-    let target4 = (("" + separated[3]).trim());
-    let target5 = (("" + separated[4]).trim());
-    let target6 = (("" + separated[5]).trim());
-    let target7 = (("" + separated[6]).trim());
-    let target8 = (("" + separated[7]).trim());
-    let target9 = (("" + separated[8]).trim());
-    let target10 = (("" + separated[9]).trim());
-    let target11 = (("" + separated[10]).trim());
-    let target12 = (("" + separated[11]).trim());
-    let target13 = (("" + separated[12]).trim());
-    let target14 = (("" + separated[13]).trim());
-    let target15 = (("" + separated[14]).trim());
-    this.sendReplyBox('<button name="receive" value="|html|'+target1+' : {<br>num: '+target2+', <br> species: &quot;'+target3+'&quot;, <br> baseSpecies: &quot;'+target4+'&quot;, <br> forme: &quot;'+target5+'&quot;,<br>formeLetter: &quot;'+target6+'&quot;, <br>types:[&quot;'+target7+'&quot;], <br> baseStats: {hp: '+target8+', atk: '+target9'+, def: '+target10+', spa: '+target11+' spd: '+target12+', spe: '+target13+',} <br> abilities: {'+target14+'}, <br>weightkg: '+target15+', <br> } <br>},<br>">Code</button>');
-
-	},
-	formchelp:function (target, room, user, connection, cmd) {
-	this.sendReplyBox('/formec Wait for it | Name | Num | Species | BaseSpecies ');
-},*/
 };
