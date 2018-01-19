@@ -332,7 +332,7 @@ distor: function (target, room, user, connection, cmd) {
     let target13 = (("" + separated[12]).trim());
     let target14 = (("" + separated[13]).trim());
     let target15 = (("" + separated[14]).trim());
-    this.sendReplyBox('<button name="receive" value="|html|'+target1+' : {<br>num: &#39;'+target2+'&#39;, <br> species: &quot;'+target3+'&quot;, <br> baseSpecies: &quot;'+target4+'&quot;, <br> forme: &quot;'+target5+'&quot;,<br>formeLetter: &quot;'+target6+'&quot;, <br>types:[&quot;'+target7+'&quot;], <br> baseStats: {hp: '+target8+', atk: '+target9'+, def: '+target10+', spa: '+target11+' spd: '+target12+', spe: '+target13+', <br> abilities: {'+target14+'}, <br>weightkg: '+target15+', <br> } <br>},">Code</button>');
+    this.sendReplyBox('<button name="receive" value="|html|'+target1+' : {<br>num: '+target2+', <br> species: &quot;'+target3+'&quot;, <br> baseSpecies: &quot;'+target4+'&quot;, <br> forme: &quot;'+target5+'&quot;,<br>formeLetter: &quot;'+target6+'&quot;, <br>types:[&quot;'+target7+'&quot;], <br> baseStats: {hp: '+target8+', atk: '+target9'+, def: '+target10+', spa: '+target11+' spd: '+target12+', spe: '+target13+',} <br> abilities: {'+target14+'}, <br>weightkg: '+target15+', <br> } <br>},<br>">Code</button>');
 
 	},
 	formchelp:function (target, room, user, connection, cmd) {
