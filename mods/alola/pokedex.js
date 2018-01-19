@@ -19,7 +19,7 @@ exports.BattlePokedex = {
         abilities: {0: "Cursed Body", 1: "Overcoat", H: "Serene Grace"},
     },
         pidgeottoalola: {
-        num: 16,
+        num: 17,
         species: "Pidgeotto-Alola",
         baseSpecies: "Pidgeotto",
         forme: "Alola",
@@ -36,7 +36,7 @@ exports.BattlePokedex = {
         abilities: {0: "Cursed Body", 1: "Overcoat", H: "Serene Grace"},
     },
      pidgeotalola: {
-        num: 16,
+        num: 18,
         species: "Pidgeot-Alola",
         baseSpecies: "Pidgeot",
         forme: "Alola",
@@ -51,5 +51,22 @@ exports.BattlePokedex = {
             spe: 91
         },
         abilities: {0: "Cursed Body", 1: "Overcoat", H: "Serene Grace"},
+    },
+	     pidgeotalolamega: {
+        num: 18,
+        species: "Pidgeot-Alola-Mega",
+        baseSpecies: "Pidgeot",
+        forme: "Alola-Mega",
+        formeLetter: "AM",
+        types: ["Ground", "Ghost"],
+        baseStats: {
+            hp: 80,
+            atk: 120,
+            def: 80,
+            spa: 120,
+            spd: 80,
+            spe: 51
+        },
+        abilities: {0: "Adaptability"},
     },
     };
