@@ -322,23 +322,17 @@ distor: function (target, room, user, connection, cmd) {
     let target3 = (("" + separated[2]).trim());
     let target4 = (("" + separated[3]).trim());
     let target5 = (("" + separated[4]).trim());
-    let target6 = (("" + separated[5]).trim()).toLowerCase();
-    let target7 = (("" + separated[6]).trim()).toLowerCase();
-    let target8 = (("" + separated[7]).trim()).toLowerCase();
+    let target6 = (("" + separated[5]).trim());
+    let target7 = (("" + separated[6]).trim());
+    let target8 = (("" + separated[7]).trim());
     let target9 = (("" + separated[8]).trim());
-    let target10 = (("" + separated[9]).trim()).toLowerCase();
+    let target10 = (("" + separated[9]).trim());
     let target11 = (("" + separated[10]).trim());
-    let target12 = (("" + separated[1]).trim()).toLowerCase();
-    let target13 = (("" + separated[5]).trim());
-    let target14 = (("" + separated[6]).trim());
-    let target15 = (("" + separated[7]).trim());
-    let target16 = (("" + separated[11]).trim()).toLowerCase();
-    let target17 = (("" + separated[12]).trim()).toLowerCase();
-    let target18 = (("" + separated[12]));
-    let target19 = (("" + separated[13]));
-    let target20 = (("" + separated[14]));
-    let target21 = (("" + separated[15]));
-    this.sendReplyBox('<button name="receive" value="|html|'+target1+' : {<br>num: &#39;'+target2+'&#39;, <br> species: &quot;'+target3+'&quot;, <br> baseSpecies: &quot;'+target4+'&quot;, <br> forme: &quot;'+target5+'&quot;,<br>formeLetter: &quot;'+target6+'&quot;, <br>types:[&quot;'+target7+'&quot;], <br> baseStats: {hp: '+target8+', atk: '+target9'+, def: '+target10+', spa: '+target11+' spd: '+target11+', spe: '+target12+', <br> abilities: {'+target13+'}, <br>weightkg: '+target14+', <br> } <br>},">Code</button>');
+    let target12 = (("" + separated[11]).trim());
+    let target13 = (("" + separated[12]).trim());
+    let target14 = (("" + separated[13]).trim());
+    let target15 = (("" + separated[14]).trim());
+    this.sendReplyBox('<button name="receive" value="|html|'+target1+' : {<br>num: &#39;'+target2+'&#39;, <br> species: &quot;'+target3+'&quot;, <br> baseSpecies: &quot;'+target4+'&quot;, <br> forme: &quot;'+target5+'&quot;,<br>formeLetter: &quot;'+target6+'&quot;, <br>types:[&quot;'+target7+'&quot;], <br> baseStats: {hp: '+target8+', atk: '+target9'+, def: '+target10+', spa: '+target11+' spd: '+target12+', spe: '+target13+', <br> abilities: {'+target14+'}, <br>weightkg: '+target15+', <br> } <br>},">Code</button>');
 
 	},
 	formchelp:function (target, room, user, connection, cmd) {
