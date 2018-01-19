@@ -4118,12 +4118,12 @@ exports.Formats = [
   		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
 		mod: 'eternal',
   	},
-	{
-  		name: "[Gen 7] Battle Ready!",
-  		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/battle-ready.3613715/>Battle Ready!</a>",
+		{
+  		name: "[Gen 7] Aloa Formes",
+  		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/alola-formes-v3.3617314/>Alola Formes</a>",
 		      ],
   		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
-		mod: 'battleready',
+		mod: 'alola',
   	},
 	{
 		name: "[Gen 7] Pokemon: The New First Generation",
