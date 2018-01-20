@@ -344,4 +344,22 @@
 	        abilities: {0: "Blaze", 1: "Technician", H: "Guts"},
 	        prevo: "Scyther"
    },
+	 allunix: {
+			num: 9030,
+			species: "Allunix",
+			types: ["Electric", "Ground"], 
+			baseStats:{hp: 85, atk: 45, def: 190, spa: 75, spd: 85, spe: 30},
+			abilities: {0: "Rock Head", 1: "Sturdy", H: "Sheer Force"}, 
+			/*weightkg: undefined, */
+		   prevo: "Onix"
+	 },
+	 	coffilix: {
+			num: 9031,
+			species: "Coffilix",
+			types: ["Ground", "Ghost"], 
+			baseStats:{hp: 75, atk: 30, def: 200, spa: 85, spd: 65, spe: 55},
+			abilities: {0: "Mummyu", H: "Rough Skin"}, 
+			/*weightkg: undefined, */
+			prevo: "Onix"
+	 },
 };
