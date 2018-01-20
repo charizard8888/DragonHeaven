@@ -332,7 +332,7 @@ formc: function (target, room, user, connection, cmd) {
     let target13 = (("" + separated[12]).trim());
     let target14 = (("" + separated[13]).trim());
     let target15 = (("" + separated[14]));
-    this.sendReplyBox('<center><button name="receive" value="|html|'+target1+' : {<br>num: '+target2+',<br> species: &quot;'+target3+'&quot;,<br> baseSpecies: &quot;'+target4+'&quot;,<br> forme: &quot;'+target5+'&quot;,<br>formeLetter: &quot;'+target6+'&quot;, <br> types: [<b>&quot;'+target7+'&quot;</b>], <br>baseStats:{hp: '+target8+', atk: '+target9+', def: '+target10+', spa: '+target11+', spd: '+target12+', spe: '+target13+'},<br>abilities: {<b>'+target14+'</b>}, <br> weightkg: '+target15+', <br> };" style="background-color:black;color:aqua;font-size:36px;border: 6px solid aqua;">Generate</button></center><br><marquee direction="left"><img src="http://www.pokestadium.com/assets/img/sprites/misc/icons/charizard-mega-x.png" width="40" height="30"></marquee>');
+    this.sendReplyBox('<center><button name="receive" value="|html|'+target1+' : {<br>num: '+target2+',<br> species: &quot;'+target3+'&quot;,<br> baseSpecies: &quot;'+target4+'&quot;,<br> forme: &quot;'+target5+'&quot;,<br>formeLetter: &quot;'+target6+'&quot;, <br> types: [<b>&quot;'+target7+'&quot;</b>], <br>baseStats:{hp: '+target8+', atk: '+target9+', def: '+target10+', spa: '+target11+', spd: '+target12+', spe: '+target13+'},<br>abilities: {<b>'+target14+'</b>}, <br> weightkg: '+target15+', <br> }," style="background-color:black;color:aqua;font-size:36px;border: 6px solid aqua;">Generate</button></center><br><marquee direction="left"><img src="http://www.pokestadium.com/assets/img/sprites/misc/icons/charizard-mega-x.png" width="40" height="30"></marquee>');
 
 	},
 	formchelp:function (target, room, user, connection, cmd) {
@@ -359,7 +359,7 @@ monc: function (target, room, user, connection, cmd) {
     let target13 = (("" + separated[12]).trim());
     let target14 = (("" + separated[13]).trim());
     let target15 = (("" + separated[14]));
-    this.sendReplyBox('<center><button name="receive" value="|html|'+target1+' : {<br>num: '+target2+',<br> species: &quot;'+target3+'&quot;,<br> types: [<b>&quot;'+target4+'&quot;</b>], <br>baseStats:{hp: '+target5+', atk: '+target6+', def: '+target7+', spa: '+target8+', spd: '+target9+', spe: '+target10+'},<br>abilities: {<b>'+target11+'</b>}, <br> weightkg: '+target12+', <br> };" style="background-color:black;color:aqua;font-size:36px;border: 6px solid aqua;">Generate</button></center><br><marquee direction="left"><img src="http://www.pokestadium.com/assets/img/sprites/misc/icons/charizard-mega-x.png" width="40" height="30"></marquee>');
+    this.sendReplyBox('<center><button name="receive" value="|html|'+target1+' : {<br>num: '+target2+',<br> species: &quot;'+target3+'&quot;,<br> types: [<b>&quot;'+target4+'&quot;</b>], <br>baseStats:{hp: '+target5+', atk: '+target6+', def: '+target7+', spa: '+target8+', spd: '+target9+', spe: '+target10+'},<br>abilities: {<b>'+target11+'</b>}, <br> weightkg: '+target12+', <br> }," style="background-color:black;color:aqua;font-size:36px;border: 6px solid aqua;">Generate</button></center><br><marquee direction="left"><img src="http://www.pokestadium.com/assets/img/sprites/misc/icons/charizard-mega-x.png" width="40" height="30"></marquee>');
 
 	},
 monchelp:function (target, room, user, connection, cmd) {
