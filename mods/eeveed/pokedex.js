@@ -290,7 +290,8 @@
 	        types: ["Electric","Flying"],
 	        baseStats: {hp: 130, atk: 95, def: 80, spa: 80, spd: 100, spe: 80},
 	        abilities: {0: "Serene Grace", 1: "Sheer Force", H: "Static"},
-	        prevo: "Dunsparce"
+	        prevo: "Dunsparce",
+	  		  weightkg: 52.6,
   },  
   scyther: {
 		num: 123,
@@ -344,9 +345,9 @@
 	        abilities: {0: "Blaze", 1: "Technician", H: "Guts"},
 	        prevo: "Scyther"
    },
-	 allunix: {
-			num: 9030,
-			species: "Allunix",
+	 alunix: {
+			num: 9034,
+			species: "Alunix",
 			types: ["Electric", "Ground"], 
 			baseStats:{hp: 85, atk: 45, def: 190, spa: 75, spd: 85, spe: 30},
 			abilities: {0: "Rock Head", 1: "Sturdy", H: "Sheer Force"}, 
@@ -354,11 +355,38 @@
 		   prevo: "Onix"
 	 },
 	 	coffilix: {
-			num: 9031,
+			num: 9035,
 			species: "Coffilix",
 			types: ["Ground", "Ghost"], 
 			baseStats:{hp: 75, atk: 30, def: 200, spa: 85, spd: 65, spe: 55},
-			abilities: {0: "Mummyu", H: "Rough Skin"}, 
+			abilities: {0: "Mummy", H: "Rough Skin"}, 
+			/*weightkg: undefined, */
+			prevo: "Onix"
+	 },
+	 	 	crystix: {
+			num: 9036,
+			species: "Crystix",
+			types: ["Ice", "Dragon"], 
+			baseStats:{hp: 100, atk: 110, def: 120, spa: 40, spd: 120, spe: 20},
+			abilities: {0: "Crystal Reflection"}, 
+			/*weightkg: undefined, */
+			prevo: "Onix"
+	 },
+	 	 gemelix: {
+			num: 9037,
+			species: "Gemelix",
+			types: ["Ground", "Fairy"], 
+			baseStats:{hp: 85, atk: 75, def: 65, spa: 30, spd: 200, spe: 55},
+			abilities: {0: "Multiscale", H: "Clear Body"},  
+			/*weightkg: undefined, */
+			prevo: "Onix"
+	 },
+	 	scarix: {
+			num: 9038,
+			species: "Scarix",
+			types: ["Rock", "Fighting"], 
+			baseStats:{hp: 70, atk: 120, def: 110, spa: 30, spd: 70, spe: 110},
+			abilities: {0: "No Guard", 1: "Moxe", H: "Rough Skin"},  
 			/*weightkg: undefined, */
 			prevo: "Onix"
 	 },
