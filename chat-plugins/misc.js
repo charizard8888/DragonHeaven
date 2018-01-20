@@ -312,4 +312,30 @@ distor: function (target, room, user, connection, cmd) {
 					"- Current staff team<br />" +
 					"- Our regular users<br />");
 	},
+	formc: function (target, room, user, connection, cmd) {
+    if (!this.runBroadcast()) return;
+    if (!target) return this.parse('/formchelp');
+    if (!target) target = 'help';
+    let separated = target.split("/");
+	 let target1 = (("" + separated[0]).trim()).toLowerCase();
+    let target2 = (("" + separated[1]).trim());
+    let target3 = (("" + separated[2]).trim());
+    let target4 = (("" + separated[3]).trim());
+    let target5 = (("" + separated[4]).trim());
+    let target6 = (("" + separated[5]).trim());
+    let target7 = (("" + separated[6]).trim());
+    let target8 = (("" + separated[7]).trim());
+    let target9 = (("" + separated[8]).trim());
+    let target10 = (("" + separated[9]).trim());
+    let target11 = (("" + separated[10]).trim());
+    let target12 = (("" + separated[11]).trim());
+    let target13 = (("" + separated[12]).trim());
+    let target14 = (("" + separated[13]).trim());
+    let target15 = (("" + separated[14]));
+    this.sendReplyBox('<center><button name="receive" value="|html|'+target1+' : {<br>num: '+target2+',<br> species: &quot;'+target3+'&quot;,<br> baseSpecies: &quot;'+target4+'&quot;,<br> forme: &quot;'+target5+'&quot;,<br>formeLetter: &quot;'+target6+'&quot;, <br> types: [<b>&quot;'+target7+'&quot;</b>], <br>baseStats:{hp: '+target8+', atk: '+target9+', def: '+target10+', spa: '+target11+', spd: '+target12+', spe: '+target13+'},<br>abilities: {<b>'+target14+'</b>}, <br> weightkg: '+target15+', <br> };" style="background-color:black;color:aqua;font-size:36px;border: 6px solid aqua;">Generate</button></center><br><marquee direction="left"><img src="http://www.pokestadium.com/assets/img/sprites/misc/icons/charizard-mega-x.png" width="40" height="30"></marquee>');
+
+	},
+	formchelp:function (target, room, user, connection, cmd) {
+	this.sendReplyBox('/formc name, Dex Num, Name, Base, Forme, Forme Letter, Types, HP, Atk, Def, SpA, SpD, Spe, Abilities, Weight <br> <b>name:</b> For the first name add no hypens so it should be like charizardmegax <br> <b>Dex Num</b> is the Dex Number <br><b>Name:</b> Now type the name as you want it to be seen in battle like Charizard-Mega-X <br> <b>Base:</b> is for the base forme which in this case is Charizard <br> <b>Forme:</b> Eternal / Alola in this case it is Mega <br> <b>Forme Letter:</b> M for Mega, E for Eternal, A for Alola <br> <b>Types:</b> If the mon is a monotyped Pokemon like Dugtrio - Ground then just type that in and move on but if it is dual typed like Megazard X type in Fire, Dragon and after getting the output make add &quot; after Fire and before Dragon (Dont do this before or the command show broken result) | It should look like this &quot;Fire&quot;, &quot;Dragon&quot; | Two of the quote marks would be already there <br> Then come the stats HP, Atk, Def, SpA, SpD, Spe <br><b>Abilties:</b> This is complex <br>Use / (Forwards Slash) as separator <br><br><b>Example:</b><br>/formc charizardmegax/6/Charizard-Mega-X/Charizard/Mega/M/Dragon, Fire/78/130/111/130/85/100/0: Tough Claws/110.5 <br><br>Hit Generate and we&#39;re good!<br>Contact <b><font color=#FFA000>charizard8888</font></b> or <b><font color=#AC33D1>Ludicrousity</font></b> for more info!');
+},
 };
