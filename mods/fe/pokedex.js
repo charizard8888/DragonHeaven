@@ -2042,7 +2042,7 @@ weightkg: 79.8,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-/*{
+odelay: {
 num: 7500171,
 species: "Odelay",
 types: ["Water","Rock"],
@@ -2054,7 +2054,7 @@ weightkg: 96.45,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+thundercast: {
 num: 7500172,
 species: "Thundercast",
 types: ["Electric","Normal"],
@@ -2066,7 +2066,7 @@ weightkg: 30.9,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+sceptetteeternal: {
 num: 7500173,
 species: "Sceptette-Eternal",
 types: ["Fairy","Grass"],
@@ -2078,7 +2078,7 @@ weightkg: 26.55,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+raillink: {
 num: 7500174,
 species: "Rail Link",
 types: ["Normal","Water"],
@@ -2090,7 +2090,7 @@ weightkg: 264.25,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+agrippa: {
 num: 7500175,
 species: "Agrippa",
 types: ["Fighting","Steel"],
@@ -2102,7 +2102,7 @@ weightkg: 103,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+basculinbasculin: {
 num: 7500176,
 species: "Basculin-Basculin",
 types: ["Water"],
@@ -2114,7 +2114,7 @@ weightkg: 18,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+mewelli: {
 num: 7500177,
 species: "Mewelli",
 types: ["Water","Psychic"],
@@ -2126,7 +2126,7 @@ weightkg: 69.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+bael: {
 num: 7500178,
 species: "Bael",
 types: ["Ghost","Dragon"],
@@ -2138,7 +2138,7 @@ weightkg: 158.75,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+simigoat: {
 num: 7500179,
 species: "Simigoat",
 types: ["Fire","Grass"],
@@ -2150,7 +2150,7 @@ weightkg: 59.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+miltrank: {
 num: 7500180,
 species: "Miltrank",
 types: ["Normal","Steel"],
@@ -2162,7 +2162,7 @@ weightkg: 252.75,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+furfraught: {
 num: 7500181,
 species: "Furfraught",
 types: ["Normal","Fighting"],
@@ -2174,7 +2174,7 @@ weightkg: 59,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+tyranking: {
 num: 7500182,
 species: "Tyranking",
 types: ["Rock","Poison"],
@@ -2186,7 +2186,7 @@ weightkg: 132,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+supermuk: {
 num: 7500183,
 species: "Supermuk",
 types: ["Ghost","Poison"],
@@ -2198,7 +2198,7 @@ weightkg: 34.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+mentor: {
 num: 7500184,
 species: "Mentor",
 types: ["Ghost","Steel"],
@@ -2210,7 +2210,7 @@ weightkg: 328.3,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+elektra: {
 num: 7500185,
 species: "Elektra",
 types: ["Psychic","Electric"],
@@ -2222,7 +2222,7 @@ weightkg: 57.3,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+escagon: {
 num: 7500186,
 species: "Escagon",
 types: ["Dragon","Steel"],
@@ -2234,7 +2234,7 @@ weightkg: 57.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+golmanitan: {
 num: 7500187,
 species: "Golmanitan",
 types: ["Ground","Fire"],
@@ -2246,7 +2246,7 @@ weightkg: 211.45,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+sunflorrim: {
 num: 7500188,
 species: "Sunflorrim",
 types: ["Grass"],
@@ -2258,7 +2258,7 @@ weightkg: 8.9,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+unconventional: {
 num: 7500189,
 species: "Unconventional",
 types: ["Fire","Rock"],
@@ -2270,7 +2270,7 @@ weightkg: 181.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+ambiccino: {
 num: 7500190,
 species: "Ambiccino",
 types: ["Normal"],
@@ -2282,7 +2282,7 @@ weightkg: 13.9,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+parp: {
 num: 7500191,
 species: "Parp",
 types: ["Normal","Dark"],
@@ -2294,7 +2294,7 @@ weightkg: 34.75,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+zyflare: {
 num: 7500192,
 species: "Zyflare",
 types: ["Fire","Dragon"],
@@ -2306,7 +2306,7 @@ weightkg: 165,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+probs: {
 num: 7500193,
 species: "Probs",
 types: ["Dragon","Steel"],
@@ -2318,7 +2318,7 @@ weightkg: 190,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+hentai: {
 num: 7500194,
 species: "Hentai",
 types: ["Poison","Fire"],
@@ -2330,7 +2330,7 @@ weightkg: 242.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+tornastar: {
 num: 7500195,
 species: "Tornastar",
 types: ["Flying","Water"],
@@ -2342,7 +2342,7 @@ weightkg: 49,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+magmovire: {
 num: 7500196,
 species: "Magmovire",
 types: ["Fire","Electric"],
@@ -2354,7 +2354,7 @@ weightkg: 103.3,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+volgon: {
 num: 7500197,
 species: "Volgon",
 types: ["Ground","Electric"],
@@ -2366,7 +2366,7 @@ weightkg: 63.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+tapuloom: {
 num: 7500198,
 species: "Tapu Loom",
 types: ["Grass","Fighting"],
@@ -2378,7 +2378,7 @@ weightkg: 42.35,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+lucashadow: {
 num: 7500199,
 species: "Lucashadow",
 types: ["Fighting","Ghost"],
@@ -2390,7 +2390,7 @@ weightkg: 38.1,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+cradilego: {
 num: 7500200,
 species: "Cradilego",
 types: ["Poison","Grass"],
@@ -2402,7 +2402,7 @@ weightkg: 57.95,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+astrolithclear: {
 num: 7500201,
 species: "Astrolith-Clear",
 types: ["Rock","Normal"],
@@ -2414,7 +2414,7 @@ weightkg: 20.4,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+kyraurem: {
 num: 7500202,
 species: "Kyraurem",
 types: ["Rock","Ice"],
@@ -2426,7 +2426,7 @@ weightkg: 263.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+hetrarna: {
 num: 7500203,
 species: "Hetrarna",
 types: ["Fire","Fairy"],
@@ -2438,7 +2438,7 @@ weightkg: 255.25,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+xurkivoir: {
 num: 7500204,
 species: "Xurkivoir",
 types: ["Electric","Fairy"],
@@ -2450,7 +2450,7 @@ weightkg: 74.2,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+vikarona: {
 num: 7500205,
 species: "Vikarona",
 types: ["Electric","Fire"],
@@ -2462,7 +2462,7 @@ weightkg: 45.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+mudgoat: {
 num: 7500206,
 species: "Mudgoat",
 types: ["Grass","Ground"],
@@ -2474,7 +2474,7 @@ weightkg: 505.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+theridel: {
 num: 7500207,
 species: "Theridel",
 types: ["Ghost","Ground"],
@@ -2486,7 +2486,7 @@ weightkg: 51.15,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+shrek: {
 num: 7500208,
 species: "Shrek",
 types: ["Grass","Flying"],
@@ -2498,7 +2498,7 @@ weightkg: 21.25,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+vitality: {
 num: 7500209,
 species: "Vitality",
 types: ["Normal","Fire"],
@@ -2510,7 +2510,7 @@ weightkg: 52.25,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+necromega: {
 num: 7500210,
 species: "Necromega",
 types: ["Flying","Psychic"],
@@ -2522,7 +2522,7 @@ weightkg: 140.75,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+malaquanid: {
 num: 7500211,
 species: "Malaquanid",
 types: ["Dark","Bug"],
@@ -2534,7 +2534,7 @@ weightkg: 64.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+scrapunny: {
 num: 7500212,
 species: "Scrapunny",
 types: ["Normal","Dark"],
@@ -2546,7 +2546,7 @@ weightkg: 31.65,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+bezog: {
 num: 7500213,
 species: "Bezong",
 types: ["Normal","Psychic"],
@@ -2558,7 +2558,7 @@ weightkg: 161,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+valcro: {
 num: 7500214,
 species: "Valcro",
 types: ["Normal","Flying"],
@@ -2570,7 +2570,7 @@ weightkg: 87.75,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+smelly: {
 num: 7500215,
 species: "Smelly",
 types: ["Normal"],
@@ -2582,7 +2582,7 @@ weightkg: 79.25,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+tapumeme: {
 num: 7500216,
 species: "Tapu Meme",
 types: ["Psychic","Fairy"],
@@ -2594,7 +2594,7 @@ weightkg: 12.55,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+comcott: {
 num: 7500217,
 species: "Comcott",
 types: ["Fairy","Grass"],
@@ -2606,7 +2606,7 @@ weightkg: 3.45,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+minislashmeteor: {
 num: 7500218,
 species: "Minislash-Meteor",
 types: ["Rock","Ghost"],
@@ -2618,7 +2618,7 @@ weightkg: 46.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+crematoria: {
 num: 7500219,
 species: "Crematoria",
 types: ["Flying","Psychic"],
@@ -2630,7 +2630,7 @@ weightkg: 48.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+pherrothorn: {
 num: 7500220,
 species: "Pherothorn",
 types: ["Bug","Steel"],
@@ -2642,7 +2642,7 @@ weightkg: 67.5,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+archking: {
 num: 7500221,
 species: "Archking",
 types: ["Water","Flying"],
@@ -2654,7 +2654,7 @@ weightkg: 46,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+slampa: {
 num: 7500222,
 species: "Slampa",
 types: ["Water","Dragon"],
@@ -2666,7 +2666,7 @@ weightkg: 131.75,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+decidactyl: {
 num: 7500223,
 species: "Decidactyl",
 types: ["Ghost","Flying"],
@@ -2678,7 +2678,7 @@ weightkg: 47.8,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+lycanape: {
 num: 7500224,
 species: "Lycanape",
 types: ["Rock","Fighting"],
@@ -2690,7 +2690,7 @@ weightkg: 40,
 color: "Black",
 eggGroups: ["Undiscovered"],
 },
-{
+golisoptops: {
 num: 7500225,
 species: "Golisotops",
 types: ["Bug","Water"],
@@ -2701,6 +2701,6 @@ heightm: 1.655,
 weightkg: 74.25,
 color: "Black",
 eggGroups: ["Undiscovered"],
-}*/
+}
 
 };
