@@ -5549,13 +5549,39 @@ exports.BattleMovedex = {
         heal: [1, 2],
         secondary: false,
         target: "self",
-        type: "Normal",
+        type: "normal",
         zMoveEffect: {
             spd: 1
         },
         contestType: "Clever",
     },
-
+/* Trap Door */
+		"fluxflush": {
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		desc: "Has a 30% chance of raising the user's Defense and Special Defense by one stage.",
+		shortDesc: "30% chance of raising the user's Defense and Special Defense by one stage.",
+		id: "fluxflush",
+		isViable: true,
+		name: "Flux Flush",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
+		secondary: {
+			chance: 30,
+			self: {
+				boosts: {
+					def: 1,
+					spd: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Water",
+		zMovePower: 160,
+		contestType: "Cool",
+	},
 
 
 };
