@@ -619,4 +619,15 @@ typeopthelp: ["/eternalmons - Shows the list of Pokemon in Type Optimisation Pok
 		this.sendReplyBox(`${buf}</div>`);
 	},
 	clovermonshelp: ["/clovermons - Shows the list of Clovermons."],
+		eeveed: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Eeeved Pokemon</h2></center>`;
+		let jillianDex = require('../mods/eeveed/pokedex.js').BattlePokedex;
+		if (!jillianDex) return this.errorReply("Error Fetching Istor Data.");
+		Object.values(jillianDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.species}, eeveed" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	eeveedhelp: ["/eeveed - Shows the list of Pokemon in Eeevee'd."],
 };
