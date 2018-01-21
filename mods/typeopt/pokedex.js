@@ -829,4 +829,21 @@ exports.BattlePokedex = {
             H: "Dazzling"
         },
     },
+	    flygon: {
+        inherit: true,
+        types: ["Bug", "Dragon"],
+        baseStats: {
+            hp: 101,
+            atk: 67,
+            def: 71,
+            spa: 129,
+            spd: 71,
+            spe: 131
+        },
+        abilities: {
+            0: "Sheer Force",
+            1: "Sand Force",
+            H: "Levitate"
+        },
+    },
 };
