@@ -1512,4 +1512,38 @@ exports.BattleAbilities = {
 		rating: 3,
 		num: 254
 	},
+	"slownsteady": {
+		shortDesc: "This Pokemon takes 1/2 damage from attacks if it moves last.",
+		onSourceModifyDamage: function (damage, source, target, move) {
+			if (target.lastDamage > 0 && pokemon.lastAttackedBy && pokemon.lastAttackedBy.thisTurn && pokemon.lastAttackedBy.pokemon === target) {
+				this.debug('Stall neutralize');
+				return this.chainModify(0.5);
+			}
+		},
+		id: "slownsteady",
+		name: "Slow n Steady",
+		rating: 3,
+	},
+	/* Error Macro*/
+		"justifiedfire": {
+		shortDesc: "Raises user's Special Attack when hit with a Fire-type attack. Grants immunity to Fire.",
+		onAfterDamage: function (damage, target, source, effect) {
+			if (effect && effect.type === 'Dark') {
+				this.boost({spa: 1});
+			}
+		},
+		onTryHit: function (target, source, move) {
+			if (target !== source && move.type === 'Fire') {
+				move.accuracy = true;
+				if (!target.addVolatile('flashfire')) {
+					this.add('-immune', target, '[msg]', '[from] ability: Flash Fire');
+				}
+				return null;
+			}
+		},
+		id: "justifiedfire",
+		name: "Justified Fire",
+		rating: 2,
+		num: 154,
+	},
 };
