@@ -1512,19 +1512,8 @@ exports.BattleAbilities = {
 		rating: 3,
 		num: 254
 	},
-	"slownsteady": {
-		shortDesc: "This Pokemon takes 1/2 damage from attacks if it moves last.",
-		onSourceModifyDamage: function (damage, source, target, move) {
-			if (target.lastDamage > 0 && pokemon.lastAttackedBy && pokemon.lastAttackedBy.thisTurn && pokemon.lastAttackedBy.pokemon === target) {
-				this.debug('Filter neutralize');
-				return this.chainModify(0.5);
-			}
-		},
-		id: "slownsteady",
-		name: "Slow n Steady",
-		rating: 3,
-	},
-	/* Error Macro*/
+	// Slow and Steady
+	// Error Marco
 		"justifiedfire": {
 		shortDesc: "Raises user's Special Attack when hit with a Fire-type attack. Grants immunity to Fire.",
 		onTryHit: function (target, source, move) {
