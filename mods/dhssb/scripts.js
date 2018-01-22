@@ -5,6 +5,12 @@ exports.BattleScripts = {
 		let team = [];
 		let variant = (this.random(2) === 1);
 		let sets = {
+			'Reviloja 753' : {
+				species: 'Sylveon', ability: 'Girl Power', item: 'Leftovers', gender: 'F', 
+				moves: ['earthpower', 'recover', 'psyshock'],
+				signatureMove: "Girly Girl",evs: {spa: 160, spd: 96, spe: 252},
+				nature:'Modest',
+			},
 			'Uncle Flacco' : {
 				species: 'Shuckle', ability: 'Juice Drink', item: 'Binding Band', gender: 'M', 
 				moves: ['defendorder', 'shoreup', 'stickyweb'],
