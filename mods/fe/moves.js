@@ -5585,7 +5585,7 @@ exports.BattleMovedex = {
         id: "hotbath",
         isViable: true,
         name: "Hot Bath",
-        pp: 10,
+        pp: 16,
         priority: 0,
         flags: {
             snatch: 1,
@@ -5611,7 +5611,7 @@ exports.BattleMovedex = {
 		id: "fluxflush",
 		isViable: true,
 		name: "Flux Flush",
-		pp: 10,
+		pp: 32,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
 		secondary: {
@@ -5628,6 +5628,87 @@ exports.BattleMovedex = {
 		zMovePower: 160,
 		contestType: "Cool",
 	},
-
+// Foul Mimicry
+		"pursuit": {
+		accuracy: 100,
+		basePower: 100,
+		basePowerCallback: function (pokemon, target, move) {
+			if (target.beingCalledBack) {
+				this.debug('Pursuit damage boost');
+				return move.basePower * 2;
+			}
+			return move.basePower;
+		},
+		category: "Special",
+		desc: "If an adjacent foe switches out this turn, this move hits that Pokemon before it leaves the field, even if it was not the original target. If the user moves after a foe using Parting Shot, U-turn, or Volt Switch, but not Baton Pass, it will hit that foe before it leaves the field. Power doubles and no accuracy check is done if the user hits a foe switching out, and the user's turn is over; if a foe faints from this, the replacement Pokemon does not become active until the end of the turn.",
+		shortDesc: "Power doubles if a foe is switching out.",
+		id: "switchflare",
+		isViable: true,
+		name: "Switch Flare",
+		pp: 16,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		beforeTurnCallback: function (pokemon, target) {
+			target.side.addSideCondition('pursuit', pokemon);
+			if (!target.side.sideConditions['pursuit'].sources) {
+				target.side.sideConditions['pursuit'].sources = [];
+			}
+			target.side.sideConditions['pursuit'].sources.push(pokemon);
+		},
+		onModifyMove: function (move, source, target) {
+			if (target && target.beingCalledBack) move.accuracy = true;
+		},
+		onTryHit: function (target, pokemon) {
+			target.side.removeSideCondition('pursuit');
+		},
+		effect: {
+			duration: 1,
+			onBeforeSwitchOut: function (pokemon) {
+				this.debug('Pursuit start');
+				let alreadyAdded = false;
+				for (const source of this.effectData.sources) {
+					if (!this.cancelMove(source)) continue;
+					if (!alreadyAdded) {
+						this.add('-activate', pokemon, 'move: Pursuit');
+						alreadyAdded = true;
+					}
+					if (source.canMegaEvo || source.canUltraBurst) {
+						for (const [actionIndex, action] of this.queue.entries()) {
+							if (action.pokemon === source && action.choice === 'megaEvo') {
+								this.runMegaEvo(source);
+								this.queue.splice(actionIndex, 1);
+								break;
+							}
+						}
+					}
+					this.runMove('pursuit', source, this.getTargetLoc(pokemon, source));
+				}
+			},
+		},
+		secondary: false,
+		target: "normal",
+		type: "Fire",
+		zMovePower: 200,
+		contestType: "Clever",
+	},
+		"crabpulse": {
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		desc: "Has a higher chance for a critical hit.",
+		shortDesc: "High critical hit ratio.",
+		id: "crabpulse",
+		isViable: true,
+		name: "Crab Pulse",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, pulse: 1, mirror: 1},
+		critRatio: 2,
+		secondary: false,
+		target: "normal",
+		type: "Water",
+		zMovePower: 200,
+		contestType: "Tough",
+	},
 
 };
