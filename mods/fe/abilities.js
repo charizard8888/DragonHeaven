@@ -1516,7 +1516,7 @@ exports.BattleAbilities = {
 		shortDesc: "This Pokemon takes 1/2 damage from attacks if it moves last.",
 		onSourceModifyDamage: function (damage, source, target, move) {
 			if (target.lastDamage > 0 && pokemon.lastAttackedBy && pokemon.lastAttackedBy.thisTurn && pokemon.lastAttackedBy.pokemon === target) {
-				this.debug('Stall neutralize');
+				this.debug('Filter neutralize');
 				return this.chainModify(0.5);
 			}
 		},
@@ -1527,18 +1527,18 @@ exports.BattleAbilities = {
 	/* Error Macro*/
 		"justifiedfire": {
 		shortDesc: "Raises user's Special Attack when hit with a Fire-type attack. Grants immunity to Fire.",
-		onAfterDamage: function (damage, target, source, effect) {
-			if (effect && effect.type === 'Dark') {
-				this.boost({spa: 1});
-			}
-		},
 		onTryHit: function (target, source, move) {
 			if (target !== source && move.type === 'Fire') {
 				move.accuracy = true;
 				if (!target.addVolatile('flashfire')) {
-					this.add('-immune', target, '[msg]', '[from] ability: Flash Fire');
+					this.add('-immune', target, '[msg]', '[from] ability: Justified FIre');
 				}
 				return null;
+			}
+		},
+			onAfterDamage: function (damage, target, source, effect) {
+			if (effect && effect.type === 'Dark') {
+				this.boost({spa: 1});
 			}
 		},
 		id: "justifiedfire",
