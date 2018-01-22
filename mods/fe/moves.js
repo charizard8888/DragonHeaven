@@ -1,6 +1,52 @@
 'use strict';
 
 exports.BattleMovedex = {
+		
+	"hyperspacefury": { /* Hyperspace for all */
+		num: 621,
+		accuracy: true,
+		basePower: 100,
+		category: "Physical",
+		desc: "Lowers the user's Defense by 1 stage. If this move is successful, it breaks through the target's Baneful Bunker, Detect, King's Shield, Protect, or Spiky Shield for this turn, allowing other Pokemon to attack the target normally. If the target's side is protected by Crafty Shield, Mat Block, Quick Guard, or Wide Guard, that protection is also broken for this turn and other Pokemon may attack the target's side normally.",
+		shortDesc: "Lowers user's Def by 1; breaks protection.",
+		id: "hyperspacefury",
+		isViable: true,
+		name: "Hyperspace Fury",
+		pp: 5,
+		priority: 0,
+		flags: {mirror: 1, authentic: 1},
+		breaksProtect: true,
+		self: {
+			boosts: {
+				def: -1,
+			},
+		},
+		secondary: false,
+		target: "normal",
+		type: "Dark",
+		zMovePower: 180,
+		contestType: "Tough",
+	},
+	"darkvoid": { /* Dark Void for all */
+		num: 464,
+		accuracy: 50,
+		basePower: 0,
+		category: "Status",
+		desc: "Causes the target to fall asleep.",
+		shortDesc: "Puts the foe(s) to sleep.",
+		id: "darkvoid",
+		isViable: true,
+		name: "Dark Void",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1},
+		status: 'slp',
+		secondary: false,
+		target: "allAdjacentFoes",
+		type: "Dark",
+		zMoveEffect: 'clearnegativeboost',
+		contestType: "Clever",
+	},
     "scorchingwater": {
         accuracy: 100,
         basePower: 70,
