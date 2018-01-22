@@ -527,7 +527,7 @@ exports.BattleMovedex = {
 		name: "gg m8",
 		isNonstandard: true,
 		isViable: true,
-		basePower:190,
+		basePower:200,
 		category:"Physical",
 		type:"Dragon",
 		target:"normal",
@@ -539,15 +539,16 @@ exports.BattleMovedex = {
 				},
 			},
 		},
-                recoil : [2, 5],
+                drain : [3, 4],
 		onHit: function (target, source) {
 			if (this.random(2) === 1) target.trySetStatus('brn', source);
 		},
 		onPrepareHit: function (target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Tail Glow", source);
+			this.add('-anim', source, "Beak Blast", source);
 			this.add('-anim', source, "V-Create", target);
-			this.add("c|&charizard8888|gg m8");
+			this.add("c|&charizard8888|gg m8!");
 		},
 	},
 	sacredhax: {
@@ -1048,5 +1049,34 @@ exports.BattleMovedex = {
 	"hypnosis": {
 		inherit: true,
 		accuracy: 45,
+	},
+	girlygirl: {
+		shortDesc: "120 BP Special Normal-type move with 16 PP and 95% accuracy. It's a sound move and raises the user's speed sharply.",
+		accuracy:100,
+		pp:15,
+		id: "girlygirl",
+		name: "Girly Girl",
+		isNonstandard: true,
+		isViable: true,
+		basePower:120,
+		category:"Special",
+		type:"Normal",
+		target:"normal",
+		secondary:{
+			chance:100,
+			self: {
+				boosts: {
+					spe: 2,
+				},
+			},
+		},
+		onHit: function (target, source) {
+			if (this.random(2) === 1) target.trySetStatus('brn', source);
+		},
+		onPrepareHit: function (target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Boomburst", target);
+			this.add("c|%Reviloja753|!");
+		},
 	},
 };
