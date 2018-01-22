@@ -1520,13 +1520,13 @@ exports.BattleAbilities = {
 			if (target !== source && move.type === 'Fire') {
 				move.accuracy = true;
 				if (!target.addVolatile('flashfire')) {
-					this.add('-immune', target, '[msg]', '[from] ability: Justified FIre');
+					this.add('-immune', target, '[msg]', '[from] ability: Justified Fire');
 				}
 				return null;
 			}
 		},
 			onAfterDamage: function (damage, target, source, effect) {
-			if (effect && effect.type === 'Dark') {
+			if (effect && effect.type === 'Fire') {
 				this.boost({spa: 1});
 			}
 		},
