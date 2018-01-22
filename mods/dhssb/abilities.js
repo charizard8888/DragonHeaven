@@ -36,7 +36,7 @@ exports.BattleAbilities = {
 		},
 		
 	},
-	"zarpdem": {
+	"zapdem": {
 		name:"Zap Dem",
 		id:"zapdem",
 		shortDesc: "Mega evolves Zap, boosts Attack by 2 stages and Def & SpD by 4 stages",
@@ -634,6 +634,34 @@ exports.BattleAbilities = {
 		},
 		id: "slowchat",
 		name: "Slowchat",
+	},
+		"girlpower": {
+		shortDesc: "+1 Def on switch in + Fairy Aura + Pixilate",
+		onStart: function (pokemon) {
+			this.add('-ability', pokemon, 'Static Boost');
+			this.boost({def:1});
+		},
+		onStart: function (pokemon) {
+			this.add('-ability', pokemon, 'Fairy Aura');
+		},
+		onAnyBasePower: function (basePower, source, target, move) {
+			if (target === source || move.category === 'Status' || move.type !== 'Fairy' || move.auraBoost) return;
+			move.auraBoost = move.hasAuraBreak ? 0x0C00 : 0x1547;
+			return this.chainModify([move.auraBoost, 0x1000]);
+		},
+		isUnbreakable: true,
+		onModifyMove: function (move, pokemon) {
+			if (move.type === 'Normal' && !['judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'weatherball'].includes(move.id) && !(move.isZ && move.category !== 'Status')) {
+				move.type = 'Fairy';
+				move.pixilateBoosted = true;
+			}
+		},
+		onBasePowerPriority: 8,
+		onBasePower: function (basePower, pokemon, target, move) {
+			if (move.pixilateBoosted) return this.chainModify([0x1333, 0x1000]);
+		},
+		id:'girlpower',
+		name:'Girl Power',
 	},
 
 };
