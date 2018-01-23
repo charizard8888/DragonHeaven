@@ -2,6 +2,17 @@
 
 exports.BattleItems = {
 
+	"aerodakoite": {
+		id: "aerodakoite",
+		name: "Aerodakoite",
+		megaStone: "Aero Dako-Mega",
+		megaEvolves: "Aero Dako",
+		onTakeItem: function (item, source) {
+			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+			return true;
+		},
+		desc: "If held by an Aero Dako, this item allows it to Mega Evolve in battle.",
+	},
 "swampamarite": {
 		id: "swampamarite",
 		name: "Swampamarite",
