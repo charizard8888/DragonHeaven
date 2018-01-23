@@ -6041,4 +6041,190 @@ exports.BattlePokedex = {
          abilities: {0: "Regenerator"},
         
     },
+	   melon: {
+        num: 7500243,
+        species: "Melon",
+        types: ["Fairy", "Paychic"], 
+        baseStats: {
+            hp: 97,
+            atk: 71,
+            def: 71,
+            spa: 139,
+            spd: 149,
+            spe: 75
+        },
+         abilities: {0: "Pixie Grace"},
+      },
+    
+    melonpirouette: {
+        num: 7500243,
+        species: "Melon-Pirouette",
+        baseSpecies: "Pokemon",
+        forme: "Pirouette",
+        formeLetter: "P",
+        types: ["Fairy", "Fighting"], 
+        baseStats: {
+            hp: 97,
+            atk: 139,
+            def: 75,
+            spa: 71,
+            spd: 71,
+            spe: 149
+        },
+        abilities: {0: "Pixie Grace"},
+        },
+    
+     kyutomwhite: {
+        num: 7500244,
+        species: "Kyutom-White",
+        types: ["Ice", "Electric"], 
+        baseStats: {
+            hp: 87,
+            atk: 95,
+            def: 93,
+            spa: 132,
+            spd: 93,
+            spe: 108
+        },
+         abilities: {0: "Turborise"},
+        },
+    
+     xernemite: {
+        num: 7500245,
+        species: "Xernemite",
+        types: ["Steel", "Fairy"], 
+        baseStats: {
+            hp: 90,
+            atk: 83,
+            def: 92,
+            spa: 113,
+            spd: 86,
+            spe: 82
+        },
+         abilities: {0: "Pixie Lure"},
+       },
+    
+     cherron: {
+        num: 7500246,
+        species: "Cherron",
+        types: ["Grass", "Ground"],
+        baseStats: {
+            hp: 105,
+            atk: 125,
+            def: 105,
+            spa: 93,
+            spd: 84,
+            spe: 87
+        },
+         abilities: {0: "Flower Power"},
+        },
+        
+        cherronprimal: {
+        num: 7500246,
+        species: "Cherron-Primal",
+        baseSpecies: "Cherron",
+        forme: "Primal",
+        formeLetter: "P",
+        types: ["Grass", "Fire"], 
+        baseStats: {
+            hp: 105,
+            atk: 155,
+            def: 125,
+            spa: 143,
+            spd: 84,
+            spe: 87
+        },
+        abilities: {0: "A1"},
+    },
+    
+     dialcatty: {
+        num: 7500247,
+        species: "Dialcatty",
+        types: ["Steel", "Normal"], 
+        baseStats: {
+            hp: 85,
+            atk: 107,
+            def: 92,
+            spa: 107,
+            spd: 77,
+            spe: 110
+        },
+         abilities: {0: "Normalized Enemy"},
+        },
+    
+     lunatic: {
+        num: 7500248,
+        species: "Lunatic",
+        types: ["Fairy", "Ghost"], 
+        baseStats: {
+            hp: 118,
+            atk: 79,
+            def: 90,
+            spa: 120,
+            spd: 110,
+            spe: 63
+        },
+         abilities: {0: "Fungal Shield"},
+        },
+    
+     granho: {
+        num: 7500249,
+        species: "Gran-Ho",
+        types: ["Fairy", "Fire"],
+        baseStats: {
+            hp: 100,
+            atk: 140,
+            def: 100,
+            spa: 85,
+            spd: 110,
+            spe: 69
+        },
+         abilities: {0: "Pressurate"},
+        },
+    
+     lies: {
+        num: 7500250,
+        species: "Lies",
+        types: ["Fairy", "Dark"], 
+        baseStats: {
+            hp: 115,
+            atk: 109,
+            def: 72,
+            spa: 109,
+            spd: 74,
+            spe: 122
+        },
+         abilities: {0: "Mana Potion"},
+        },
+    
+     viva: {
+        num: 7500251,
+        species: "Viva",
+        types: ["Steel", "Flying"],
+        baseStats: {
+            hp: 110,
+            atk: 86,
+            def: 88,
+            spa: 120,
+            spd: 90,
+            spe: 91
+        },
+         abilities: {0: "Piercing Gaze"},
+        },
+    
+     girutukumuka: {
+        num: 7500252,
+        species: "Girutukumuka",
+        types: ["Water", "Ghost"], 
+        baseStats: {
+            hp: 122,
+            atk: 90,
+            def: 130,
+            spa: 65,
+            spd: 130,
+            spe: 47
+        },
+         abilities: {0: "Pressured Innards"},
+        },
+
 };
