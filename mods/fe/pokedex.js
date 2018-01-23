@@ -26,6 +26,29 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	swampamarmega: {
+        num: 75001,
+        species: "Swampamar-Mega",
+        baseSpecies: "Swampamar",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Dark", "Water"],
+        baseStats: {
+            hp: 103,
+            atk: 151,
+            def: 119,
+            spa: 96,
+            spd: 112,
+            spe: 86
+        },
+        abilities: {
+            0: "Swift Swim"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Blue",
+        eggGroups: ["Water 2"],
+    },
     gyarotic: {
         num: 75002,
         species: "Gyarotic",
