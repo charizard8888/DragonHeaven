@@ -1512,8 +1512,8 @@ exports.BattleAbilities = {
 		rating: 3,
 		num: 254
 	},
-	// Slow and Steady
-	// Error Marco
+	// Slow and Steady: This Pokemon takes 1/2 damage from attacks if it moves last.
+	// Error Marco: Physical moves hit off of special attack, and vice versa for special attacks. Stance change forms remain.
 		"justifiedfire": {
 		shortDesc: "Raises user's Special Attack when hit with a Fire-type attack. Grants immunity to Fire.",
 		onTryHit: function (target, source, move) {
@@ -1535,7 +1535,7 @@ exports.BattleAbilities = {
 		rating: 2,
 		num: 154,
 	},
-	// Late Bloomer
+	// Late Bloomer: Late Bloomer: Has a 30% chance of infatuating the opponent at the end of its turn if it moves last.
 	"sturdytempo": {
 		desc: "Sturdy + Own Tempo.",
 		shortDesc: "Sturdy + Own Tempo",
@@ -1569,4 +1569,38 @@ exports.BattleAbilities = {
 		id: "sturdytempo",
 		name: "Sturdy Tempo",
 	},
+	// Tangled Flames: This pokemon's fire attacks are boosted 2x when confused. Fire Immunity.
+	
+	"hydrostream": {
+		shortDesc: "On switch-in, this Pokemon summons Rain Dance.",
+		onStart: function (source) {
+			for (let i = 0; i < this.queue.length; i++) {
+				if (this.queue[i].choice === 'runPrimal' && this.queue[i].pokemon === source && source.template.speciesid === 'kyogre') return;
+				if (this.queue[i].choice !== 'runSwitch' && this.queue[i].choice !== 'runPrimal') break;
+			}
+			this.setWeather('raindance');
+		},
+		id: "hydrostream",
+		name: "Hydro Stream",
+	},
+	"hydrate": {
+		desc: "This Pokemon's Normal-type moves become Water-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Water type and have 1.2x power.",
+		onModifyMovePriority: -1,
+		onModifyMove: function (move, pokemon) {
+			if (move.type === 'Normal' && !['judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'weatherball'].includes(move.id) && !(move.isZ && move.category !== 'Status')) {
+				move.type = 'Water';
+				move.refrigerateBoosted = true;
+			}
+		},
+		onBasePowerPriority: 8,
+		onBasePower: function (basePower, pokemon, target, move) {
+			if (move.refrigerateBoosted) return this.chainModify([0x1333, 0x1000]);
+		},
+		id: "hydrate",
+		name: "Hydrate",
+		rating: 4,
+		num: 174,
+	},
+   // Breaker: This pokemon's attacks aren't hindered by stat boosts, drops or abilities.
 };
