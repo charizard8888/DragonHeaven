@@ -1535,4 +1535,38 @@ exports.BattleAbilities = {
 		rating: 2,
 		num: 154,
 	},
+	// Late Bloomer
+	"sturdytempo": {
+		desc: "Sturdy + Own Tempo.",
+		shortDesc: "Sturdy + Own Tempo",
+		onTryHit: function (pokemon, target, move) {
+			if (move.ohko) {
+				this.add('-immune', pokemon, '[msg]', '[from] ability: Sturdy Tempo');
+				return null;
+			}
+		},
+		onDamagePriority: -100,
+		onDamage: function (damage, target, source, effect) {
+			if (target.hp === target.maxhp && damage >= target.hp && effect && effect.effectType === 'Move') {
+				this.add('-ability', target, 'Sturdy');
+				return target.hp - 1;
+			}
+		},
+		onUpdate: function (pokemon) {
+			if (pokemon.volatiles['confusion']) {
+				this.add('-activate', pokemon, 'ability: Sturdy Tempo');
+				pokemon.removeVolatile('confusion');
+			}
+		},
+		onTryAddVolatile: function (status, pokemon) {
+			if (status.id === 'confusion') return null;
+		},
+		onHit: function (target, source, move) {
+			if (move && move.volatileStatus === 'confusion') {
+				this.add('-immune', target, 'confusion', '[from] ability: Sturdy Tempo');
+			}
+		},
+		id: "sturdytempo",
+		name: "Sturdy Tempo",
+	},
 };
