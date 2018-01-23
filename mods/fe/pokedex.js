@@ -73,6 +73,29 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	    gyaroticmega: {
+        num: 75002,
+        species: "Gyarotic-Mega",
+        baseSpecies: "Gyarotic",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Water", "Dark"],
+        baseStats: {
+            hp: 105,
+            atk: 132,
+            def: 119,
+            spa: 100,
+            spd: 152,
+            spe: 91
+        },
+        abilities: {
+            0: "Mold Breaker"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Blue",
+        eggGroups: ["Water 2"],
+    },
     azurninja: {
         num: 75003,
         species: "Azuninja",
@@ -193,6 +216,29 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	 pangleyemega: {
+        num: 75007,
+        species: "Pangleye-Mega",
+        baseSpecies: "Pangleye-",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Fighting", "Dark"],
+        baseStats: {
+            hp: 82,
+            atk: 119,
+            def: 136,
+            spa: 97,
+            spd: 128,
+            spe: 34
+        },
+        abilities: {
+            0: "Magic Bounce"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Human-Like"],
+    },
     garchados: {
         num: 75008,
         species: "Garchados",
@@ -216,6 +262,52 @@ exports.BattlePokedex = {
         weightkg: 165,
         color: "Black",
         eggGroups: ["Undiscovered"],
+    },
+	garchadosmegax: {
+        num: 75008,
+        species: "Garchados-Mega-X",
+        baseSpecies: "Garchados",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Ground", "Water"],
+        baseStats: {
+            hp: 111,
+            atk: 177,
+            def: 117,
+            spa: 120,
+            spd: 112,
+            spe: 91
+        },
+        abilities: {
+            0: "Sand Force"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Dragon"],
+    },
+	garchadosmegay: {
+        num: 75008,
+        species: "Garchados-Mega-Y",
+        baseSpecies: "Garchados",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Ground", "Dark"],
+        baseStats: {
+            hp: 111,
+            atk: 167,
+            def: 127,
+            spa: 90,
+            spd: 132,
+            spe: 101
+        },
+        abilities: {
+            0: "Mold Breaker"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Dragon"],
     },
     wailcatty: {
         num: 75009,
@@ -264,6 +356,29 @@ exports.BattlePokedex = {
         weightkg: 91.9,
         color: "Black",
         eggGroups: ["Undiscovered"],
+    },
+	gargatrmega: {
+        num: 750010,
+        species: "Gargatr-Mega",
+        baseSpecies: "Gargatr",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Dragon", "Water"],
+        baseStats: {
+            hp: 106,
+            atk: 167,
+            def: 127,
+            spa: 129,
+            spd: 104,
+            spe: 90
+        },
+        abilities: {
+            0: "Sand Force"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Dragon"],
     },
     dragon: {
         num: 750011,
@@ -337,6 +452,29 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	cofagreelixmega: {
+        num: 750013,
+        species: "Cofagreelix-Mega",
+        baseSpecies: "Cofagreelix",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Steel", "Ghost"],
+        baseStats: {
+            hp: 76,
+            atk: 117,
+            def: 212,
+            spa: 85,
+            spd: 125,
+            spe: 40
+        },
+        abilities: {
+            0: "Sand Force"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Mineral"],
+    },
     joltlord: {
         num: 750014,
         species: "Joltlord",
@@ -385,6 +523,77 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	aggrodos: {
+        num: 758888,
+        species: "Aggrodos",
+        types: ["Water", "Steel"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 92,
+            atk: 127,
+            def: 139,
+            spa: 70,
+            spd: 90,
+            spe: 75
+        },
+        abilities: {
+            0: "FEAR"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Monster"],
+    },
+
+    aggrodosmegax: {
+        num: 758888,
+        species: "Aggrodos-Mega-X",
+        baseSpecies: "Aggrodos",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Water", "Dark"],
+        baseStats: {
+            hp: 92,
+            atk: 157,
+            def: 169,
+            spa: 80,
+            spd: 120,
+            spe: 75
+        },
+        abilities: {
+            0: "Mold Breaker"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Monster"],
+    },
+	 aggrodosmegay: {
+        num: 758888,
+        species: "Aggrodos-Mega-Y",
+        baseSpecies: "Aggrodos",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Water", "Steel"],
+        baseStats: {
+            hp: 92,
+            atk: 157,
+            def: 189,
+            spa: 70,
+            spd: 110,
+            spe: 75
+        },
+        abilities: {
+            0: "Filter"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Monster"],
+    },
     zorcanine: {
         num: 750016,
         species: "Zorcanine",
@@ -432,6 +641,29 @@ exports.BattlePokedex = {
         weightkg: 45.5,
         color: "Black",
         eggGroups: ["Undiscovered"],
+    },
+	archedactylmega: {
+        num: 750017,
+        species: "Archedactyl-Mega",
+        baseSpecies: "Archedactyl",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Rock", "Flying"],
+        baseStats: {
+            hp: 87,
+            atk: 162,
+            def: 95,
+            spa: 106,
+            spd: 100,
+            spe: 150
+        },
+        abilities: {
+            0: "Tough Claws"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Flying"],
     },
     chesdon: {
         num: 750018,
@@ -625,6 +857,29 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	weasolmega: {
+        num: 750025,
+        species: "Weasol-Mega",
+        baseSpecies: "Weasol",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Dark", "Ice"],
+        baseStats: {
+            hp: 82,
+            atk: 160,
+            def: 77,
+            spa: 115,
+            spd: 87,
+            spe: 155
+        },
+        abilities: {
+            0: "Magic Bounce"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Field"],
+    },
     tyranichomp: {
         num: 750026,
         species: "Tyranichomp",
@@ -648,6 +903,76 @@ exports.BattlePokedex = {
         weightkg: 148.5,
         color: "Black",
         eggGroups: ["Undiscovered"],
+    },
+	tyranichompmegax: {
+        num: 750026,
+        species: "Tyranichomp-Mega-X",
+        baseSpecies: "Tyranichomp",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Rock", "Dragon"],
+        baseStats: {
+            hp: 114,
+            atk: 172,
+            def: 152,
+            spa: 97,
+            spd: 122,
+            spe: 101
+        },
+        abilities: {
+            0: "Sand Stream"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Monster"],
+    },
+	 tyranichompmegax: {
+        num: 750026,
+        species: "Tyranichomp-Mega-X",
+        baseSpecies: "Tyranichomp",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Rock", "Dragon"],
+        baseStats: {
+            hp: 114,
+            atk: 172,
+            def: 152,
+            spa: 97,
+            spd: 122,
+            spe: 101
+        },
+        abilities: {
+            0: "Sand Stream"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Monster"],
+    },
+
+    tyranichompmegay: {
+        num: 750026,
+        species: "Tyranichomp-Mega-Y",
+        baseSpecies: "Tyranichomp",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Rock", "Dragon"],
+        baseStats: {
+            hp: 114,
+            atk: 182,
+            def: 132,
+            spa: 137,
+            spd: 112,
+            spe: 81
+        },
+        abilities: {
+            0: "Sand Force"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Monster"],
     },
     railie: {
         num: 750027,
@@ -673,6 +998,29 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	railiemega: {
+        num: 750027,
+        species: "Railie-Mega",
+        baseSpecies: "Railie",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Ice", "Electric"],
+        baseStats: {
+            hp: 80,
+            atk: 135,
+            def: 77,
+            spa: 135,
+            spd: 90,
+            spe: 125
+        },
+        abilities: {
+            0: "Refigerate"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Fairy"],
+    },
     charatos: {
         num: 750028,
         species: "Charatos",
@@ -696,6 +1044,77 @@ exports.BattlePokedex = {
         weightkg: 162.75,
         color: "Black",
         eggGroups: ["Undiscovered"],
+    },
+	 charatosmegay: {
+        num: 750028,
+        species: "Charatos-Mega-Y",
+        baseSpecies: "Charatos",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Fire", "Water"],
+        baseStats: {
+            hp: 97,
+            atk: 135,
+            def: 89,
+            spa: 145,
+            spd: 133,
+            spe: 101
+        },
+        abilities: {
+            0: "Drought"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Dragon"],
+    },
+
+    charatosmegax: {
+        num: 750028,
+        species: "Charatos-Mega-X",
+        baseSpecies: "Charatos",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Fire", "Dragon"],
+        baseStats: {
+            hp: 97,
+            atk: 161,
+            def: 122,
+            spa: 116,
+            spd: 103,
+            spe: 101
+        },
+        abilities: {
+            0: "Tough Claws"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Dragon"],
+    },
+
+    charatosmegaz: {
+        num: 750028,
+        species: "Charatos-Mega-Z",
+        baseSpecies: "Charatos",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Fire", "Dark"],
+        baseStats: {
+            hp: 97,
+            atk: 145,
+            def: 119,
+            spa: 105,
+            spd: 133,
+            spe: 101
+        },
+        abilities: {
+            0: "Mold Breaker"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Dragon"],
     },
     aggrosaur: {
         num: 750029,
@@ -721,6 +1140,53 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	aggrosaurmegax: {
+        num: 750029,
+        species: "Aggrosaur-Mega-X",
+        baseSpecies: "Aggrosaur",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Grass", "Steel"],
+        baseStats: {
+            hp: 85,
+            atk: 124,
+            def: 181,
+            spa: 112,
+            spd: 110,
+            spe: 75
+        },
+        abilities: {
+            0: "Thick Fat"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Monster"],
+    },
+
+    aggrosaurmegay: {
+        num: 750029,
+        species: "Aggrosaur-Mega-Y",
+        baseSpecies: "Aggrosaur",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Grass", "Steel"],
+        baseStats: {
+            hp: 85,
+            atk: 136,
+            def: 191,
+            spa: 90,
+            spd: 110,
+            spe: 75
+        },
+        abilities: {
+            0: "Filter"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Monster"],
+    },
     blastninja: {
         num: 750030,
         species: "Blastinja",
@@ -745,6 +1211,30 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	blastinjamega: {
+        num: 750030,
+        species: "Blastinja-Mega",
+        baseSpecies: "Blastinja",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Water", "Dark"],
+        baseStats: {
+            hp: 90,
+            atk: 124,
+            def: 118,
+            spa: 159,
+            spd: 113,
+            spe: 115
+        },
+        abilities: {
+            0: "Mega Launcher"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Blue",
+        eggGroups: ["Water 1"],
+    },
+
     skaria: {
         num: 750031,
         species: "Skaria",
@@ -768,6 +1258,29 @@ exports.BattlePokedex = {
         weightkg: 35.55,
         color: "Black",
         eggGroups: ["Undiscovered"],
+    },
+	skariamega: {
+        num: 750031,
+        species: "Skaria-Mega",
+        baseSpecies: "Skaria",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Steel", "Fairy"],
+        baseStats: {
+            hp: 80,
+            atk: 125,
+            def: 145,
+            spa: 105,
+            spd: 97,
+            spe: 85
+        },
+        abilities: {
+            0: "Pixilate"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Flying"],
     },
     magmozam: {
         num: 750032,
@@ -793,6 +1306,29 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	magmozammega: {
+        num: 750032,
+        species: "Magmozam-Mega",
+        baseSpecies: "Magmozam",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Fire", "Psychic"],
+        baseStats: {
+            hp: 75,
+            atk: 82,
+            def: 86,
+            spa: 180,
+            spd: 105,
+            spe: 141
+        },
+        abilities: {
+            0: "Trace"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Human-Like"],
+    },
     glakiss: {
         num: 750033,
         species: "Glakiss",
@@ -817,6 +1353,29 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	glakissmega: {
+        num: 750033,
+        species: "Glakiss-Mega",
+        baseSpecies: "Glakiss",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Fairy", "Ice"],
+        baseStats: {
+            hp: 92,
+            atk: 115,
+            def: 97,
+            spa: 150,
+            spd: 107,
+            spe: 110
+        },
+        abilities: {
+            0: "Refigerate"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Fairy"],
+    },
     sharpedos: {
         num: 750034,
         species: "Sharpedos",
@@ -840,6 +1399,53 @@ exports.BattlePokedex = {
         weightkg: 161.9,
         color: "Black",
         eggGroups: ["Undiscovered"],
+    },
+	sharpedosmegax: {
+        num: 750034,
+        species: "Sharpedos-Mega-X",
+        baseSpecies: "Sharpedos",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Water"],
+        baseStats: {
+            hp: 92,
+            atk: 152,
+            def: 99,
+            spa: 102,
+            spd: 105,
+            spe: 108
+        },
+        abilities: {
+            0: "Strong Jaw"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Water 1"],
+    },
+
+    sharpedosmegay: {
+        num: 750034,
+        species: "Sharpedos-Mega-Y",
+        baseSpecies: "Sharpedos",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Water", "Dark"],
+        baseStats: {
+            hp: 92,
+            atk: 162,
+            def: 99,
+            spa: 97,
+            spd: 110,
+            spe: 98
+        },
+        abilities: {
+            0: "Mold Breaker"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Water 1"],
     },
     vapornine: {
         num: 750035,
@@ -888,6 +1494,29 @@ exports.BattlePokedex = {
         weightkg: 20.7,
         color: "Black",
         eggGroups: ["Undiscovered"],
+    },
+	pidgetotmega: {
+        num: 750036,
+        species: "Pidgetot-Mega",
+        baseSpecies: "Pidgetot",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Normal", "Flying"],
+        baseStats: {
+            hp: 89,
+            atk: 82,
+            def: 75,
+            spa: 156,
+            spd: 76,
+            spe: 126
+        },
+        abilities: {
+            0: "No Guard"
+        },
+        heightm: 2,
+        weightkg: 75.5,
+        color: "Brown",
+        eggGroups: ["Flying"],
     },
     goracanion: {
         num: 750037,
@@ -1825,6 +2454,60 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	mampharosmegam: {
+        num: 750075,
+        species: "Mampharos-Mega-M",
+        baseSpecies: "Mampharos",
+        forme: "Mega-M",
+        formeLetter: "M",
+        types: ["Electric"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 95,
+            atk: 90,
+            def: 107,
+            spa: 155,
+            spd: 110,
+            spe: 125
+        },
+        abilities: {
+            0: "Intimidate"
+        },
+        heightm: 1.4,
+        weightkg: 61.5,
+        color: "Yellow",
+        eggGroups: ["Field"],
+    },
+    mampharosmegaa: {
+        num: 750075,
+        species: "Mampharos-Mega-A",
+        baseSpecies: "Mampharos",
+        forme: "Mega-A",
+        formeLetter: "M",
+        types: ["Electric", "Dragon"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 95,
+            atk: 110,
+            def: 107,
+            spa: 175,
+            spd: 110,
+            spe: 85
+        },
+        abilities: {
+            0: "Mold Breaker"
+        },
+        heightm: 1.4,
+        weightkg: 61.5,
+        color: "Yellow",
+        eggGroups: ["Field"],
+    },
     krookz: {
         num: 750076,
         species: "Krook-Z",
@@ -1873,6 +2556,33 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	entariamega: {
+        num: 750077,
+        species: "Entaria-Mega",
+        baseSpecies: "Entaria",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Fire", "Fairy"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 95,
+            atk: 150,
+            def: 120,
+            spa: 120,
+            spd: 90,
+            spe: 100
+        },
+        abilities: {
+            0: "Pixilate"
+        },
+        heightm: 2.1,
+        weightkg: 198.0,
+        color: "Red",
+        eggGroups: ["Undiscovered"],
+    },
     blasterain: {
         num: 750078,
         species: "Blasterain",
@@ -1896,6 +2606,33 @@ exports.BattlePokedex = {
         weightkg: 44.55,
         color: "Black",
         eggGroups: ["Undiscovered"],
+    },
+	blasterainmega: {
+        num: 750078,
+        species: "Blasterain-Mega",
+        baseSpecies: "Blasterain",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Water", "Bug"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 84,
+            atk: 101,
+            def: 111,
+            spa: 142,
+            spd: 113,
+            spe: 79
+        },
+        abilities: {
+            0: "Mega Launcher"
+        },
+        heightm: 1.6,
+        weightkg: 111.1,
+        color: "Blue",
+        eggGroups: ["Water1"],
     },
     dianbro: {
         num: 750079,
