@@ -5403,7 +5403,7 @@ exports.BattlePokedex = {
             spe: 97
         },
          abilities: {0: "Fluffy Fur"},
-        weightkg: ,
+        
     },
     
      mudape: {
@@ -5419,7 +5419,7 @@ exports.BattlePokedex = {
             spe: 75
         },
          abilities: {0: "Champion's Spirit"},
-        weightkg: ,
+        
     },
      
      kira: {
@@ -5435,7 +5435,7 @@ exports.BattlePokedex = {
             spe: 101
         },
          abilities: {0: "Beast's Focus"},
-        weightkg: ,
+        
     },
     
      exelegoalola: {
@@ -5451,7 +5451,7 @@ exports.BattlePokedex = {
             spe: 95
         },
          abilities: {0: "Frisky Beast"},
-        weightkg: ,
+        
     },
     
      joltarina : {
@@ -5467,7 +5467,7 @@ exports.BattlePokedex = {
             spe: 105
         },
          abilities: {0: "Volt Torrent"},
-        weightkg: ,
+        
     },
     
      dhelchamp: {
@@ -5483,7 +5483,7 @@ exports.BattlePokedex = {
             spe: 47
         },
          abilities: {0: "Ancient Mariner"},
-        weightkg: ,
+        
     },
     
      mimian: {
@@ -5499,7 +5499,7 @@ exports.BattlePokedex = {
             spe: 110
         },
          abilities: {0: "Monkey See Monkey Do"},
-        weightkg: ,
+        
     },
     
      aerodako: {
@@ -5515,7 +5515,7 @@ exports.BattlePokedex = {
             spe: 150
         },
          abilities: {0: "Rocky Surge"},
-        weightkg: ,
+        
     }, 
     
     aerodakomega: {
@@ -5534,7 +5534,7 @@ exports.BattlePokedex = {
             spe: 170
         },
         abilities: {0: "Tough Claws"},
-        weightkg: ,
+        
     },
     
      tapujojo: {
@@ -5550,7 +5550,7 @@ exports.BattlePokedex = {
             spe: 132
         },
          abilities: {0: "Supercharge Surge"},
-        weightkg: ,
+        
     },
     
      magicarticgear: {
@@ -5566,7 +5566,7 @@ exports.BattlePokedex = {
             spe: 75
         },
          abilities: {0: "Broken Heart"},
-        weightkg: ,
+        
     },
     
      necroltres: {
@@ -5582,7 +5582,7 @@ exports.BattlePokedex = {
             spe: 91
         },
          abilities: {0: "Diamond Armor"},
-        weightkg: ,
+        
     },
     
      kartanbull: {
@@ -5598,7 +5598,7 @@ exports.BattlePokedex = {
             spe: 97
         },
          abilities: {0: "Subdue"},
-        weightkg: ,
+        
     },
     
      venustoise: {
@@ -5614,7 +5614,7 @@ exports.BattlePokedex = {
             spe: 89
         },
          abilities: {0: "Sun Bath"},
-        weightkg: ,
+        
     },
     
      venustoisemegag: {
@@ -5633,7 +5633,7 @@ exports.BattlePokedex = {
             spe: 89
         },
         abilities: {0: "Thick Fat"},
-        weightkg: ,
+        
     },
     
      venustoisemegab: {
@@ -5652,7 +5652,7 @@ exports.BattlePokedex = {
             spe: 89
         },
         abilities: {0: "Mega Launcher"},
-        weightkg: ,
+        
     },
     
      kingkek: {
@@ -5668,7 +5668,7 @@ exports.BattlePokedex = {
             spe: 80
         },
          abilities: {0: "Lazy Camo"},
-        weightkg: ,
+        
     },
     
      sigillow: {
@@ -5684,7 +5684,7 @@ exports.BattlePokedex = {
             spe: 121
         },
          abilities: {0: "Overwhelming"},
-        weightkg: ,
+        
     },
 	    covally: {
         num: 7500241,
@@ -5699,7 +5699,7 @@ exports.BattlePokedex = {
             spe: 100
         },
          abilities: {0: "Triage System"},
-        weightkg: ,
+        
     },
     
      covallyfire: {
@@ -5718,7 +5718,7 @@ exports.BattlePokedex = {
             spe: 100
         },
         abilities: {0: "Triage System"},
-        weightkg: ,
+        
     },
     
       covallywater: {
@@ -5737,7 +5737,7 @@ exports.BattlePokedex = {
             spe: 100
         },
         abilities: {0: "Triage System"},
-        weightkg: ,
+        
     },
     
       covallyelectric: {
@@ -5756,7 +5756,7 @@ exports.BattlePokedex = {
             spe: 100
         },
         abilities: {0: "Triage System"},
-        weightkg: ,
+        
     },
     
     covallygrass: {
@@ -5775,7 +5775,7 @@ exports.BattlePokedex = {
             spe: 100
         },
         abilities: {0: "Triage System"},
-        weightkg: ,
+        
     },
     
     covallyice: {
@@ -5794,7 +5794,7 @@ exports.BattlePokedex = {
             spe: 100
         },
         abilities: {0: "Triage System"},
-        weightkg: ,
+        
     },
     
     covallyfighting: {
@@ -5813,7 +5813,7 @@ exports.BattlePokedex = {
             spe: 100
         },
         abilities: {0: "Triage System"},
-        weightkg: ,
+        
     },
     
     covallypoison: {
@@ -5832,7 +5832,7 @@ exports.BattlePokedex = {
             spe: 100
         },
         abilities: {0: "Triage System"},
-        weightkg: ,
+        
     },
             
       covallyground: {
@@ -5851,7 +5851,7 @@ exports.BattlePokedex = {
             spe: 100
         },
         abilities: {0: "Triage System"},
-        weightkg: ,
+        
     },
     
     covallyflying: {
@@ -5870,7 +5870,7 @@ exports.BattlePokedex = {
             spe: 100
         },
         abilities: {0: "Triage System"},
-        weightkg: ,
+        
     },
     
     covallypsychic: {
@@ -5889,7 +5889,7 @@ exports.BattlePokedex = {
             spe: 100
         },
         abilities: {0: "Triage System"},
-        weightkg: ,
+        
     },
     
     
@@ -5909,7 +5909,7 @@ exports.BattlePokedex = {
             spe: 100
         },
         abilities: {0: "Triage System"},
-        weightkg: ,
+        
     },
     
     covallyrock: {
@@ -5928,7 +5928,7 @@ exports.BattlePokedex = {
             spe: 100
         },
         abilities: {0: "Triage System"},
-        weightkg: ,
+        
     },
     
     covallyghost: {
@@ -5947,7 +5947,7 @@ exports.BattlePokedex = {
             spe: 100
         },
         abilities: {0: "Triage System"},
-        weightkg: ,
+        
     },
     
     covallydragon: {
@@ -5966,7 +5966,7 @@ exports.BattlePokedex = {
             spe: 100
         },
         abilities: {0: "Triage System"},
-        weightkg: ,
+        
     },
     
     covallydark: {
@@ -5985,7 +5985,7 @@ exports.BattlePokedex = {
             spe: 100
         },
         abilities: {0: "Triage System"},
-        weightkg: ,
+        
     },
     
     covallysteel: {
@@ -6004,7 +6004,7 @@ exports.BattlePokedex = {
             spe: 100
         },
         abilities: {0: "Triage System"},
-        weightkg: ,
+        
     },
     
     covallyfairy: {
@@ -6023,7 +6023,7 @@ exports.BattlePokedex = {
             spe: 100
         },
         abilities: {0: "Triage System"},
-        weightkg: ,
+        
     },
     
      toxamola: {
@@ -6039,6 +6039,6 @@ exports.BattlePokedex = {
             spe: 65
         },
          abilities: {0: "Regenerator"},
-        weightkg: ,
+        
     },
 };
