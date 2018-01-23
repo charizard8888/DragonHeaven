@@ -5390,5 +5390,300 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-
+    pewearalola: {
+        num: 7500226,
+        species: "Perwear-Alola",
+        types: ["Fighting", "Dark"], 
+        baseStats: {
+            hp: 102,
+            atk: 102,
+            def: 80,
+            spa: 75,
+            spd: 72,
+            spe: 97
+        },
+         abilities: {0: "Fluffy Fur"},
+        weightkg: ,
+    },
+    
+     mudape: {
+        num: 7500227,
+        species: "Mudape",
+        types: ["Fighting", "Ground"],
+        baseStats: {
+            hp: 92,
+            atk: 125,
+            def: 90,
+            spa: 67,
+            spd: 87,
+            spe: 75
+        },
+         abilities: {0: "Champion's Spirit"},
+        weightkg: ,
+    },
+     
+     kira: {
+        num: 7500228,
+        species: "Kira",
+        types: ["Dragon", "Steel"],
+        baseStats: {
+            hp: 75,
+            atk: 173,
+            def: 132,
+            spa: 79,
+            spd: 65,
+            spe: 101
+        },
+         abilities: {0: "Beast's Focus"},
+        weightkg: ,
+    },
+    
+     exelegoalola: {
+        num: 7500229,
+        species: "Exelego-Alola",
+        types: ["Rock", "Dragon"],
+        baseStats: {
+            hp: 105,
+            atk: 83,
+            def: 71,
+            spa: 131,
+            spd: 113,
+            spe: 95
+        },
+         abilities: {0: "Frisky Beast"},
+        weightkg: ,
+    },
+    
+     joltarina : {
+        num: 7500230,
+        species: "Joltarina",
+        types: ["Water", "Electric"],
+        baseStats: {
+            hp: 82,
+            atk: 79,
+            def: 77,
+            spa: 128,
+            spd: 115,
+            spe: 105
+        },
+         abilities: {0: "Volt Torrent"},
+        weightkg: ,
+    },
+    
+     dhelchamp: {
+        num: 7500231,
+        species: "Dhelchamp",
+        types: ["Grass", "Fighting"],
+        baseStats: {
+            hp: 100,
+            atk: 147,
+            def: 90,
+            spa: 75,
+            spd: 100,
+            spe: 47
+        },
+         abilities: {0: "Ancient Mariner"},
+        weightkg: ,
+    },
+    
+     mimian: {
+        num: 7500232,
+        species: "Mimian",
+        types: ["Psychic", "Fighting"],
+        baseStats: {
+            hp: 100,
+            atk: 115,
+            def: 95,
+            spa: 70,
+            spd: 95,
+            spe: 110
+        },
+         abilities: {0: "Monkey See Monkey Do"},
+        weightkg: ,
+    },
+    
+     aerodako: {
+        num: 7500233,
+        species: "Aero Dako",
+        types: ["Rock", "Electric"],
+        baseStats: {
+            hp: 75,
+            atk: 130,
+            def: 75,
+            spa: 77,
+            spd: 75,
+            spe: 150
+        },
+         abilities: {0: "Rocky Surge"},
+        weightkg: ,
+    }, 
+    
+    aerodakomega: {
+        num: 7500233,
+        species: "Aero Dako-Mega",
+        baseSpecies: "Aero Dako",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Rock", "Electric"], 
+        baseStats: {
+            hp: 75,
+            atk: 160,
+            def: 95,
+            spa: 87,
+            spd: 95,
+            spe: 170
+        },
+        abilities: {0: "Tough Claws"},
+        weightkg: ,
+    },
+    
+     tapujojo: {
+        num: 7500234,
+        species: "Tapu Jojo",
+        types: ["Ice", "Electric"], 
+        baseStats: {
+            hp: 67,
+            atk: 82,
+            def: 60,
+            spa: 125,
+            spd: 85,
+            spe: 132
+        },
+         abilities: {0: "Supercharge Surge"},
+        weightkg: ,
+    },
+    
+     magicarticgear: {
+        num: 7500235,
+        species: "Magic Artic Gear",
+        types: ["Steel", "Flying"], 
+        baseStats: {
+            hp: 105,
+            atk: 90,
+            def: 127,
+            spa: 112,
+            spd: 120,
+            spe: 75
+        },
+         abilities: {0: "Broken Heart"},
+        weightkg: ,
+    },
+    
+     necroltres: {
+        num: 7500236,
+        species: "Necroltres",
+        types: ["Psychic", "Fire"],
+        baseStats: {
+            hp: 113,
+            atk: 103,
+            def: 100,
+            spa: 126,
+            spd: 95,
+            spe: 91
+        },
+         abilities: {0: "Diamond Armor"},
+        weightkg: ,
+    },
+    
+     kartanbull: {
+        num: 7500237,
+        species: "Kartanbull",
+        types: ["Steel", "Fairy"], 
+        baseStats: {
+            hp: 85,
+            atk: 151,
+            def: 113,
+            spa: 60,
+            spd: 46,
+            spe: 97
+        },
+         abilities: {0: "Subdue"},
+        weightkg: ,
+    },
+    
+     venustoise: {
+        num: 7500238,
+        species: "Venustoise",
+        types: ["Water", "Poison"], 
+        baseStats: {
+            hp: 89,
+            atk: 92,
+            def: 101,
+            spa: 102,
+            spd: 112,
+            spe: 89
+        },
+         abilities: {0: "Sun Bath"},
+        weightkg: ,
+    },
+    
+     venustoisemegag: {
+        num: 7500238,
+        species: "Venustoise-Mega G",
+        baseSpecies: "Venustoise",
+        forme: "Mega",
+        formeLetter: "G",
+        types: ["Water", "Poison"],
+        baseStats: {
+            hp: 89,
+            atk: 110,
+            def: 141,
+            spa: 124,
+            spd: 132,
+            spe: 89
+        },
+        abilities: {0: "Thick Fat"},
+        weightkg: ,
+    },
+    
+     venustoisemegab: {
+        num: 7500238,
+        species: "Venustoise-Mega B",
+        baseSpecies: "Venustoise",
+        forme: "Mega",
+        formeLetter: "B",
+        types: ["Water", "Poison"],
+        baseStats: {
+            hp: 89,
+            atk: 112,
+            def: 121,
+            spa: 152,
+            spd: 122,
+            spe: 89
+        },
+        abilities: {0: "Mega Launcher"},
+        weightkg: ,
+    },
+    
+     kingkek: {
+        num: 7500239,
+        species: "King Kek",
+        types: ["Normal"],
+        baseStats: {
+            hp: 115,
+            atk: 135,
+            def: 95,
+            spa: 72,
+            spd: 102,
+            spe: 80
+        },
+         abilities: {0: "Lazy Camo"},
+        weightkg: ,
+    },
+    
+     sigillow: {
+        num: 7500240,
+        species: "Sigillow",
+        types: ["Normal", "Psychic"], 
+        baseStats: {
+            hp: 76,
+            atk: 81,
+            def: 80,
+            spa: 99,
+            spd: 75,
+            spe: 121
+        },
+         abilities: {0: "Overwhelming"},
+        weightkg: ,
+    },
 };
