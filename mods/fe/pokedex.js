@@ -1854,6 +1854,33 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	metabatmega: {
+        num: 750050,
+        species: "Metabat-Mega",
+        baseSpecies: "Metabat",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Steel", "Flying"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 82,
+            atk: 142,
+            def: 135,
+            spa: 92,
+            spd: 105,
+            spe: 150
+        },
+        abilities: {
+            0: "Tough Claws"
+        },
+        heightm: 2.0,
+        weightkg: 90.0,
+        color: "Purple",
+        eggGroups: ["Undiscovered"],
+    },
     dartios: {
         num: 750051,
         species: "Dartios",
@@ -1876,6 +1903,33 @@ exports.BattlePokedex = {
         heightm: 1.655,
         weightkg: 76.45,
         color: "Black",
+        eggGroups: ["Undiscovered"],
+    },
+	dartiosmega: {
+        num: 750051,
+        species: "Dartios-Mega",
+        baseSpecies: "Dartios",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Fire", "Dragon"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 100,
+            atk: 170,
+            def: 90,
+            spa: 110,
+            spd: 95,
+            spe: 133
+        },
+        abilities: {
+            0: "Levitate"
+        },
+        heightm: 2.0,
+        weightkg: 80.0,
+        color: "Red",
         eggGroups: ["Undiscovered"],
     },
     grenheatja: {
@@ -1950,6 +2004,60 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	banegrossmegax: {
+        num: 750054,
+        species: "Banegross-Mega-X",
+        baseSpecies: "Banegross",
+        forme: "Mega-X",
+        formeLetter: "M",
+        types: ["Steel", "Ghost"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 72,
+            atk: 145,
+            def: 117,
+            spa: 99,
+            spd: 106,
+            spe: 127
+        },
+        abilities: {
+            0: "Tough Claws"
+        },
+        heightm: 1.6,
+        weightkg: 550.0,
+        color: "Blue",
+        eggGroups: ["Undiscovered"],
+    },
+    banegrossmegay: {
+        num: 750054,
+        species: "Banegross-Mega-Y",
+        baseSpecies: "Banegross",
+        forme: "Mega-Y",
+        formeLetter: "M",
+        types: ["Steel", "Ghost"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 72,
+            atk: 185,
+            def: 107,
+            spa: 99,
+            spd: 106,
+            spe: 97
+        },
+        abilities: {
+            0: "Prankster"
+        },
+        heightm: 1.6,
+        weightkg: 550.0,
+        color: "Blue",
+        eggGroups: ["Undiscovered"],
+    },
     herasir: {
         num: 750055,
         species: "Herasir",
@@ -1974,6 +2082,60 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	herasirmegah: {
+        num: 750055,
+        species: "Herasir-Mega-H",
+        baseSpecies: "Herasir",
+        forme: "Mega-H",
+        formeLetter: "M",
+        types: ["Fighting", "Bug"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 82,
+            atk: 195,
+            def: 137,
+            spa: 57,
+            spd: 102,
+            spe: 85
+        },
+        abilities: {
+            0: "Skill Link"
+        },
+        heightm: 1.6,
+        weightkg: 70.0,
+        color: "Blue",
+        eggGroups: ["Bug"],
+    },
+    herasirmegap: {
+        num: 750055,
+        species: "Herasir-Mega-P",
+        baseSpecies: "Herasir",
+        forme: "Mega-P",
+        formeLetter: "M",
+        types: ["Fighting", "Bug"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 82,
+            atk: 155,
+            def: 117,
+            spa: 67,
+            spd: 102,
+            spe: 115
+        },
+        abilities: {
+            0: "Aerilate"
+        },
+        heightm: 1.6,
+        weightkg: 60.0,
+        color: "Blue",
+        eggGroups: ["Bug"],
+    },
     mismagivoir: {
         num: 750056,
         species: "Mismagivoir",
@@ -1997,6 +2159,33 @@ exports.BattlePokedex = {
         weightkg: 26.4,
         color: "Black",
         eggGroups: ["Undiscovered"],
+    },
+	mismagivoirmega: {
+        num: 750056,
+        species: "Mismagivoir-Mega",
+        baseSpecies: "Mismagivoir",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Ghost", "Fairy"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 74,
+            atk: 92,
+            def: 92,
+            spa: 165,
+            spd: 140,
+            spe: 122
+        },
+        abilities: {
+            0: "Pixilate"
+        },
+        heightm: 1.6,
+        weightkg: 90.0,
+        color: "Pink",
+        eggGroups: ["Amorphous"],
     },
     harem: {
         num: 750057,
@@ -2044,6 +2233,33 @@ exports.BattlePokedex = {
         heightm: 1.005,
         weightkg: 24.6,
         color: "Black",
+        eggGroups: ["Undiscovered"],
+    },
+	manamega: {
+        num: 750058,
+        species: "Mana-Mega",
+        baseSpecies: "Mana",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Ghost", "Electric"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 75,
+            atk: 92,
+            def: 100,
+            spa: 157,
+            spd: 115,
+            spe: 137
+        },
+        abilities: {
+            0: "Intimidate"
+        },
+        heightm: 1.5,
+        weightkg: 90.0,
+        color: "Pink",
         eggGroups: ["Undiscovered"],
     },
     lucharma: {
@@ -2094,6 +2310,33 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	swankmega: {
+        num: 750060,
+        species: "Swankz-Mega",
+        baseSpecies: "Swank",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Water", "Steel"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 85,
+            atk: 165,
+            def: 125,
+            spa: 90,
+            spd: 110,
+            spe: 91
+        },
+        abilities: {
+            0: "Swift Swim"
+        },
+        heightm: 1.5,
+        weightkg: 90.0,
+        color: "Blue",
+        eggGroups: ["Undiscovered"],
+    },
     casting: {
         num: 750061,
         species: "Casting",
@@ -2141,6 +2384,33 @@ exports.BattlePokedex = {
         weightkg: 32.75,
         color: "Black",
         eggGroups: ["Undiscovered"],
+    },
+	sablemimezmega: {
+        num: 750062,
+        species: "Sablemimez-Mega",
+        baseSpecies: "Sablemimez",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Ghost", "Fairy"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 55,
+            atk: 80,
+            def: 130,
+            spa: 112,
+            spd: 152,
+            spe: 50
+        },
+        abilities: {
+            0: "Magic Bounce"
+        },
+        heightm: 1.6,
+        weightkg: 60.0,
+        color: "Pink",
+        eggGroups: ["Human-Like"],
     },
     aegilineshield: {
         num: 750063,
@@ -2190,6 +2460,33 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	houndlionmega: {
+        num: 750064,
+        species: "Houndlion-Mega",
+        baseSpecies: "Houndlion",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Dark", "Steel"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 83,
+            atk: 90,
+            def: 138,
+            spa: 150,
+            spd: 86,
+            spe: 132
+        },
+        abilities: {
+            0: "Solar Power"
+        },
+        heightm: 2.1,
+        weightkg: 250,
+        color: "Black",
+        eggGroups: ["Undiscovered"],
+    },
     loppeye: {
         num: 750065,
         species: "Loppeye",
@@ -2214,7 +2511,62 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-    bastioking: {
+    
+	loppeyemegax: {
+        num: 750065,
+        species: "Loppeye-Mega-X",
+        baseSpecies: "Loppeye",
+        forme: "Mega-X",
+        formeLetter: "M",
+        types: ["Ghost", "Normal"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 67,
+            atk: 95,
+            def: 139,
+            spa: 89,
+            spd: 141,
+            spe: 57
+        },
+        abilities: {
+            0: "Magic Bounce"
+        },
+        heightm: 1.6,
+        weightkg: 60.0,
+        color: "Brown",
+        eggGroups: ["Human-Like"],
+    },
+    loppeyemegay: {
+        num: 750065,
+        species: "Loppeye-Mega-Y",
+        baseSpecies: "Loppeye",
+        forme: "Mega-Y",
+        formeLetter: "M",
+        types: ["Ghost", "Fighting"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 67,
+            atk: 145,
+            def: 99,
+            spa: 69,
+            spd: 91,
+            spe: 117
+        },
+        abilities: {
+            0: "Scrappy"
+        },
+        heightm: 1.6,
+        weightkg: 60.0,
+        color: "Brown",
+        eggGroups: ["Human-Like"],
+    },
+	bastioking: {
         num: 750066,
         species: "Bastioking",
         types: ["Water", "Steel"],
@@ -2286,6 +2638,33 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	manatarmega: {
+        num: 750068,
+        species: "Manatar-Mega",
+        baseSpecies: "Manatar",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Water", "Dark"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 100,
+            atk: 147,
+            def: 145,
+            spa: 117,
+            spd: 120,
+            spe: 110
+        },
+        abilities: {
+            0: "Sand Stream"
+        },
+        heightm: 2.0,
+        weightkg: 202.0,
+        color: "Blue",
+        eggGroups: ["Undiscovered"],
+    },
     aurortoise: {
         num: 750069,
         species: "Aurortoise",
@@ -2310,6 +2689,33 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	aurortoisemega: {
+        num: 750069,
+        species: "Aurortoise-Mega",
+        baseSpecies: "Aurortoise",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Water", "Ice"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 111,
+            atk: 110,
+            def: 116,
+            spa: 152,
+            spd: 118,
+            spe: 78
+        },
+        abilities: {
+            0: "Mega Launcher"
+        },
+        heightm: 1.6,
+        weightkg: 85.5,
+        color: "Blue",
+        eggGroups: ["Monster"],
+    },
     metsir: {
         num: 750070,
         species: "Metsir",
@@ -2332,6 +2738,60 @@ exports.BattlePokedex = {
         heightm: 1.55,
         weightkg: 302.5,
         color: "Black",
+        eggGroups: ["Undiscovered"],
+    },
+	metsirmegam: {
+        num: 750070,
+        species: "Mestir-Mega-M",
+        baseSpecies: "Metsir",
+        forme: "Mega-M",
+        formeLetter: "M",
+        types: ["Steel", "Bug"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 72,
+            atk: 160,
+            def: 135,
+            spa: 95,
+            spd: 100,
+            spe: 137
+        },
+        abilities: {
+            0: "Tough Claws"
+        },
+        heightm: 1.6,
+        weightkg: 550.0,
+        color: "Brown",
+        eggGroups: ["Undiscovered"],
+    },
+    metsirmegap: {
+        num: 750070,
+        species: "Metsir-Mega-P",
+        baseSpecies: "Metsir",
+        forme: "Mega-P",
+        formeLetter: "M",
+        types: ["Steel", "Bug"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 72,
+            atk: 180,
+            def: 135,
+            spa: 85,
+            spd: 90,
+            spe: 117
+        },
+        abilities: {
+            0: "Aerilate"
+        },
+        heightm: 1.6,
+        weightkg: 550.0,
+        color: "Brown",
         eggGroups: ["Undiscovered"],
     },
     fablesteel: {
@@ -2382,6 +2842,33 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	houdinimega: {
+        num: 750072,
+        species: "Houdini-Mega",
+        baseSpecies: "Houdini",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Ghost", "Fairy"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 106,
+            atk: 85,
+            def: 133,
+            spa: 130,
+            spd: 148,
+            spe: 60
+        },
+        abilities: {
+            0: "Healer"
+        },
+        heightm: 1.1,
+        weightkg: 31.0,
+        color: "Red",
+        eggGroups: ["Undiscovered"],
+    },
     shot: {
         num: 750073,
         species: "Shot",
@@ -2404,6 +2891,33 @@ exports.BattlePokedex = {
         heightm: 0.955,
         weightkg: 22.35,
         color: "Black",
+        eggGroups: ["Undiscovered"],
+    },
+	shotmega: {
+        num: 750073,
+        species: "Shot-Mega",
+        baseSpecies: "Shot",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Grass", "Flying"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 103,
+            atk: 100,
+            def: 80,
+            spa: 170,
+            spd: 85,
+            spe: 140
+        },
+        abilities: {
+            0: "No Guard"
+        },
+        heightm: 1.5,
+        weightkg: 39.5,
+        color: "Green",
         eggGroups: ["Undiscovered"],
     },
     leafadon: {
@@ -2580,6 +3094,58 @@ exports.BattlePokedex = {
         },
         heightm: 2.1,
         weightkg: 198.0,
+        color: "Red",
+        eggGroups: ["Undiscovered"],
+    },
+	pidgetran: {
+        num: 758889,
+        species: "Pidgetran",
+        types: ["Fire", "Flying"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 87,
+            atk: 85,
+            def: 90,
+            spa: 120,
+            spd: 88,
+            spe: 109
+        },
+        abilities: {
+            0: "Tangled Flames"
+        },
+        heightm: 1.5,
+        weightkg: 31.8,
+        color: "Red",
+        eggGroups: ["Undiscovered"],
+        otherFormes: ["pidgetranmega"],
+    },
+    pidgetranmega: {
+        num: 758889,
+        species: "Pidgetran-Mega",
+        baseSpecies: "Pidgetran",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Fire", "Flying"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 87,
+            atk: 85,
+            def: 95,
+            spa: 185,
+            spd: 98,
+            spe: 129
+        },
+        abilities: {
+            0: "No Guard"
+        },
+        heightm: 1.5,
+        weightkg: 39.5,
         color: "Red",
         eggGroups: ["Undiscovered"],
     },
