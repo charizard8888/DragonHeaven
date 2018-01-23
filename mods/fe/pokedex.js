@@ -5686,4 +5686,359 @@ exports.BattlePokedex = {
          abilities: {0: "Overwhelming"},
         weightkg: ,
     },
+	    covally: {
+        num: 7500241,
+        species: "Covally",
+        types: ["Normal", "Fairy"], 
+        baseStats: {
+            hp: 93,
+            atk: 73,
+            def: 102,
+            spa: 95,
+            spd: 102,
+            spe: 100
+        },
+         abilities: {0: "Triage System"},
+        weightkg: ,
+    },
+    
+     covallyfire: {
+        num: 7500241,
+        species: "Covally-Fire",
+        baseSpecies: "Covally",
+        forme: "Fire",
+        formeLetter: "F",
+        types: ["Fire", "Fairy"], 
+        baseStats: {
+            hp: 93,
+            atk: 73,
+            def: 102,
+            spa: 95,
+            spd: 102,
+            spe: 100
+        },
+        abilities: {0: "Triage System"},
+        weightkg: ,
+    },
+    
+      covallywater: {
+        num: 7500241,
+        species: "Covally-Water",
+        baseSpecies: "Covally",
+        forme: "Water",
+        formeLetter: "W",
+        types: ["Water", "Fairy"], 
+        baseStats: {
+            hp: 93,
+            atk: 73,
+            def: 102,
+            spa: 95,
+            spd: 102,
+            spe: 100
+        },
+        abilities: {0: "Triage System"},
+        weightkg: ,
+    },
+    
+      covallyelectric: {
+        num: 7500241,
+        species: "Covally-Electric",
+        baseSpecies: "Covally",
+        forme: "Electric",
+        formeLetter: "E",
+        types: ["Electric", "Fairy"], 
+        baseStats: {
+            hp: 93,
+            atk: 73,
+            def: 102,
+            spa: 95,
+            spd: 102,
+            spe: 100
+        },
+        abilities: {0: "Triage System"},
+        weightkg: ,
+    },
+    
+    covallygrass: {
+        num: 7500241,
+        species: "Covally-Grass",
+        baseSpecies: "Covally",
+        forme: "Grass",
+        formeLetter: "G",
+        types: ["Grass", "Fairy"], 
+        baseStats: {
+            hp: 93,
+            atk: 73,
+            def: 102,
+            spa: 95,
+            spd: 102,
+            spe: 100
+        },
+        abilities: {0: "Triage System"},
+        weightkg: ,
+    },
+    
+    covallyice: {
+        num: 7500241,
+        species: "Covally-Ice",
+        baseSpecies: "Covally",
+        forme: "Ice",
+        formeLetter: "I",
+        types: ["Ice", "Fairy"], 
+        baseStats: {
+            hp: 93,
+            atk: 73,
+            def: 102,
+            spa: 95,
+            spd: 102,
+            spe: 100
+        },
+        abilities: {0: "Triage System"},
+        weightkg: ,
+    },
+    
+    covallyfighting: {
+        num: 7500241,
+        species: "Covally-Fighting",
+        baseSpecies: "Covally",
+        forme: "Fighting",
+        formeLetter: "H",
+        types: ["Fighting", "Fairy"], 
+        baseStats: {
+            hp: 93,
+            atk: 73,
+            def: 102,
+            spa: 95,
+            spd: 102,
+            spe: 100
+        },
+        abilities: {0: "Triage System"},
+        weightkg: ,
+    },
+    
+    covallypoison: {
+        num: 7500241,
+        species: "Covally-Poison",
+        baseSpecies: "Covally",
+        forme: "Poison",
+        formeLetter: "P",
+        types: ["Poison", "Fairy"], 
+        baseStats: {
+            hp: 93,
+            atk: 73,
+            def: 102,
+            spa: 95,
+            spd: 102,
+            spe: 100
+        },
+        abilities: {0: "Triage System"},
+        weightkg: ,
+    },
+            
+      covallyground: {
+        num: 7500241,
+        species: "Covally-Ground",
+        baseSpecies: "Covally",
+        forme: "Ground",
+        formeLetter: "Q",
+        types: ["Ground", "Fairy"], 
+        baseStats: {
+            hp: 93,
+            atk: 73,
+            def: 102,
+            spa: 95,
+            spd: 102,
+            spe: 100
+        },
+        abilities: {0: "Triage System"},
+        weightkg: ,
+    },
+    
+    covallyflying: {
+        num: 7500241,
+        species: "Covally-Fire",
+        baseSpecies: "Covally",
+        forme: "Flying",
+        formeLetter: "L",
+        types: ["Flying", "Fairy"], 
+        baseStats: {
+            hp: 93,
+            atk: 73,
+            def: 102,
+            spa: 95,
+            spd: 102,
+            spe: 100
+        },
+        abilities: {0: "Triage System"},
+        weightkg: ,
+    },
+    
+    covallypsychic: {
+        num: 7500241,
+        species: "Covally-Psychic",
+        baseSpecies: "Covally",
+        forme: "Psychic",
+        formeLetter: "Y",
+        types: ["Fire", "Fairy"], 
+        baseStats: {
+            hp: 93,
+            atk: 73,
+            def: 102,
+            spa: 95,
+            spd: 102,
+            spe: 100
+        },
+        abilities: {0: "Triage System"},
+        weightkg: ,
+    },
+    
+    
+     covallybug: {
+        num: 7500241,
+        species: "Covally-Bug",
+        baseSpecies: "Covally",
+        forme: "Bug",
+        formeLetter: "B",
+        types: ["Fire", "Fairy"], 
+        baseStats: {
+            hp: 93,
+            atk: 73,
+            def: 102,
+            spa: 95,
+            spd: 102,
+            spe: 100
+        },
+        abilities: {0: "Triage System"},
+        weightkg: ,
+    },
+    
+    covallyrock: {
+        num: 7500241,
+        species: "Covally-Rock",
+        baseSpecies: "Covally",
+        forme: "Rock",
+        formeLetter: "R",
+        types: ["Rock", "Fairy"], 
+        baseStats: {
+            hp: 93,
+            atk: 73,
+            def: 102,
+            spa: 95,
+            spd: 102,
+            spe: 100
+        },
+        abilities: {0: "Triage System"},
+        weightkg: ,
+    },
+    
+    covallyghost: {
+        num: 7500241,
+        species: "Covally-Ghost",
+        baseSpecies: "Covally",
+        forme: "Ghost",
+        formeLetter: "O",
+        types: ["Ghost", "Fairy"], 
+        baseStats: {
+            hp: 93,
+            atk: 73,
+            def: 102,
+            spa: 95,
+            spd: 102,
+            spe: 100
+        },
+        abilities: {0: "Triage System"},
+        weightkg: ,
+    },
+    
+    covallydragon: {
+        num: 7500241,
+        species: "Covally-Dragon",
+        baseSpecies: "Covally",
+        forme: "Dragon",
+        formeLetter: "D",
+        types: ["Dragon", "Fairy"], 
+        baseStats: {
+            hp: 93,
+            atk: 73,
+            def: 102,
+            spa: 95,
+            spd: 102,
+            spe: 100
+        },
+        abilities: {0: "Triage System"},
+        weightkg: ,
+    },
+    
+    covallydark: {
+        num: 7500241,
+        species: "Covally-Dark",
+        baseSpecies: "Covally",
+        forme: "Dark",
+        formeLetter: "K",
+        types: ["Dark", "Fairy"], 
+        baseStats: {
+            hp: 93,
+            atk: 73,
+            def: 102,
+            spa: 95,
+            spd: 102,
+            spe: 100
+        },
+        abilities: {0: "Triage System"},
+        weightkg: ,
+    },
+    
+    covallysteel: {
+        num: 7500241,
+        species: "Covally-Steel",
+        baseSpecies: "Covally",
+        forme: "Steel",
+        formeLetter: "S",
+        types: ["Steel", "Fairy"], 
+        baseStats: {
+            hp: 93,
+            atk: 73,
+            def: 102,
+            spa: 95,
+            spd: 102,
+            spe: 100
+        },
+        abilities: {0: "Triage System"},
+        weightkg: ,
+    },
+    
+    covallyfairy: {
+        num: 7500241,
+        species: "Covally-Fairy",
+        baseSpecies: "Covally",
+        forme: "Fairy",
+        formeLetter: "A",
+        types: ["Fairy"], 
+        baseStats: {
+            hp: 93,
+            atk: 73,
+            def: 102,
+            spa: 95,
+            spd: 102,
+            spe: 100
+        },
+        abilities: {0: "Triage System"},
+        weightkg: ,
+    },
+    
+     toxamola: {
+        num: 7500242,
+        species: "Toxamola",
+        types: ["Water", "Poison"], 
+        baseStats: {
+            hp: 123,
+            atk: 84,
+            def: 131,
+            spa: 61,
+            spd: 109,
+            spe: 65
+        },
+         abilities: {0: "Regenerator"},
+        weightkg: ,
+    },
 };
