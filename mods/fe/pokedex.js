@@ -6986,5 +6986,715 @@ exports.BattlePokedex = {
         },
          abilities: {0: "Pressured Innards"},
         },
+	     omneus: {
+        num: 7500253,
+        species: "Omneus",
+        types: ["Water", "Normal"], 
+        baseStats: {
+            hp: 77,
+            atk: 80,
+            def: 110,
+            spa: 125,
+            spd: 87,
+            spe: 97
+        },
+         abilities: {0: "Spiral Power"},
+        },
+        
+        omneusfire: {
+        num: 7500253,
+        species: "Omneus-Fire",
+        baseSpecies: "Omneus",
+        forme: "Fire",
+        formeLetter: "F",
+        types: ["Water", "Fire"],
+        baseStats: {
+            hp: 77,
+            atk: 80,
+            def: 110,
+            spa: 125,
+            spd: 87,
+            spe: 97
+        },
+        abilities: {0: "Spiral Power"},
+    },
+    
+        omneuswater: {
+        num: 7500253,
+        species: "Omneus-Water",
+        baseSpecies: "Omneus",
+        forme: "Water",
+        formeLetter: "W",
+        types: ["Water"],
+        baseStats: {
+            hp: 77,
+            atk: 80,
+            def: 110,
+            spa: 125,
+            spd: 87,
+            spe: 97
+        },
+        abilities: {0: "Spiral Power"},
+    },
+        
+        omneuselectric: {
+        num: 7500253,
+        species: "Omneus-Electric",
+        baseSpecies: "Omneus",
+        forme: "Electric",
+        formeLetter: "E",
+        types: ["Water", "Electric"],
+        baseStats: {
+            hp: 77,
+            atk: 80,
+            def: 110,
+            spa: 125,
+            spd: 87,
+            spe: 97
+        },
+        abilities: {0: "Spiral Power"},
+    },
+        
+        omneusgrass: {
+        num: 7500253,
+        species: "Omneus-Grass",
+        baseSpecies: "Omneus",
+        forme: "Grass",
+        formeLetter: "G",
+        types: ["Water", "Grass"],
+        baseStats: {
+            hp: 77,
+            atk: 80,
+            def: 110,
+            spa: 125,
+            spd: 87,
+            spe: 97
+        },
+        abilities: {0: "Spiral Power"},
+    },
+        
+        omneusice: {
+        num: 7500253,
+        species: "Omneus-Ice",
+        baseSpecies: "Omneus",
+        forme: "Ice",
+        formeLetter: "I",
+        types: ["Water", "Ice"],
+        baseStats: {
+            hp: 77,
+            atk: 80,
+            def: 110,
+            spa: 125,
+            spd: 87,
+            spe: 97
+        },
+        abilities: {0: "Spiral Power"},
+    },
+        
+        omneusfighting: {
+        num: 7500253,
+        species: "Omneus-Fighting",
+        baseSpecies: "Omneus",
+        forme: "Fighting",
+        formeLetter: "H",
+        types: ["Water", "Fighting"],
+        baseStats: {
+            hp: 77,
+            atk: 80,
+            def: 110,
+            spa: 125,
+            spd: 87,
+            spe: 97
+        },
+        abilities: {0: "Spiral Power"},
+    },
+        
+        omneuspoison: {
+        num: 7500253,
+        species: "Omneus-Poison",
+        baseSpecies: "Omneus",
+        forme: "Poison",
+        formeLetter: "P",
+        types: ["Water", "Poison"],
+        baseStats: {
+            hp: 77,
+            atk: 80,
+            def: 110,
+            spa: 125,
+            spd: 87,
+            spe: 97
+        },
+        abilities: {0: "Spiral Power"},
+    },
+        
+        omneusground: {
+        num: 7500253,
+        species: "Omneus-Ground",
+        baseSpecies: "Omneus",
+        forme: "Ground",
+        formeLetter: "U",
+        types: ["Water", "Ground"],
+        baseStats: {
+            hp: 77,
+            atk: 80,
+            def: 110,
+            spa: 125,
+            spd: 87,
+            spe: 97
+        },
+        abilities: {0: "Spiral Power"},
+    },
+        
+        omneusflying: {
+        num: 7500253,
+        species: "Omneus-Flying",
+        baseSpecies: "Omneus",
+        forme: "Flying",
+        formeLetter: "L",
+        types: ["Water", "Flying"],
+        baseStats: {
+            hp: 77,
+            atk: 80,
+            def: 110,
+            spa: 125,
+            spd: 87,
+            spe: 97
+        },
+        abilities: {0: "Spiral Power"},
+    },
+        
+        omneuspsychic: {
+        num: 7500253,
+        species: "Omneus-Psychic",
+        baseSpecies: "Omneus",
+        forme: "Psychic",
+        formeLetter: "Y",
+        types: ["Water", "Psychic"],
+        baseStats: {
+            hp: 77,
+            atk: 80,
+            def: 110,
+            spa: 125,
+            spd: 87,
+            spe: 97
+        },
+        abilities: {0: "Spiral Power"},
+    },
+        
+        omneusbug: {
+        num: 7500253,
+        species: "Omneus-Bug",
+        baseSpecies: "Omneus",
+        forme: "Bug",
+        formeLetter: "B",
+        types: ["Water", "Bug"],
+        baseStats: {
+            hp: 77,
+            atk: 80,
+            def: 110,
+            spa: 125,
+            spd: 87,
+            spe: 97
+        },
+        abilities: {0: "Spiral Power"},
+    },
+        
+        omneusdragon: {
+        num: 7500253,
+        species: "Omneus-Dragon",
+        baseSpecies: "Omneus",
+        forme: "Dragon",
+        formeLetter: "D",
+        types: ["Water", "Fire"],
+        baseStats: {
+            hp: 77,
+            atk: 80,
+            def: 110,
+            spa: 125,
+            spd: 87,
+            spe: 97
+        },
+        abilities: {0: "Spiral Power"},
+    },
+        
+        omneusdark: {
+        num: 7500253,
+        species: "Omneus-Dark",
+        baseSpecies: "Omneus",
+        forme: "Dark",
+        formeLetter: "D",
+        types: ["Water", "Dark"],
+        baseStats: {
+            hp: 77,
+            atk: 80,
+            def: 110,
+            spa: 125,
+            spd: 87,
+            spe: 97
+        },
+        abilities: {0: "Spiral Power"},
+    },
+        
+        omneussteel: {
+        num: 7500253,
+        species: "Omneus-Steel",
+        baseSpecies: "Omneus",
+        forme: "Steel",
+        formeLetter: "S",
+        types: ["Water", "Steel"],
+        baseStats: {
+            hp: 77,
+            atk: 80,
+            def: 110,
+            spa: 125,
+            spd: 87,
+            spe: 97
+        },
+        abilities: {0: "Spiral Power"},
+    },
+        
+        omneusfairy: {
+        num: 7500253,
+        species: "Omneus-Fairy",
+        baseSpecies: "Omneus",
+        forme: "Fairy",
+        formeLetter: "A",
+        types: ["Water", "Fire"],
+        baseStats: {
+            hp: 77,
+            atk: 80,
+            def: 110,
+            spa: 125,
+            spd: 87,
+            spe: 97
+        },
+        abilities: {0: "Spiral Power"},
+    },
+    
+     pheralie: {
+        num: 7500254,
+        species: "Pheralie",
+        types: ["Ice", "Fighting"], 
+        baseStats: {
+            hp: 75,
+            atk: 123,
+            def: 58,
+            spa: 123,
+            spd: 58,
+            spe: 125
+        },
+         abilities: {0: "Extremist"},
+      },
+      
+      pheraliemega: {
+        num: 7500254,
+        species: "Pheralie-Mega",
+        baseSpecies: "Pheralie",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Ice", "Fighting"], 
+        baseStats: {
+            hp: 75,
+            atk: 163,
+            def: 58,
+            spa: 163,
+            spd: 58,
+            spe: 145
+        },
+        abilities: {0: "Refrigerate"},
+    },
+    
+     tsarakion: {
+        num: 7500255,
+        species: "Tsarakion",
+        types: ["Grass", "Fighting"], 
+        baseStats: {
+            hp: 82,
+            atk: 140,
+            def: 94,
+            spa: 61,
+            spd: 99,
+            spe: 110
+        },
+         abilities: {0: "Queen's Command"},
+    },
+    
+     scipod: {
+        num: 7500256,
+        species: "Scipod",
+        types: ["Steel", "Bug"], 
+        baseStats: {
+            hp: 82,
+            atk: 137,
+            def: 130,
+            spa: 67,
+            spd: 95,
+            spe: 62
+        },
+         abilities: {0: "Guerilla Warfare"},
+       },
+       
+       scipodmega: {
+        num: 7500256,
+        species: "Scipod-Mega",
+        baseSpecies: "Scipod",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Steel", "Bug"], 
+        baseStats: {
+            hp: 82,
+            atk: 157,
+            def: 170,
+            spa: 77,
+            spd: 115,
+            spe: 72
+        },
+        abilities: {0: "Technician"},
+    },
+    
+     necrozmerupt: {
+        num: 7500257,
+        species: "Necrozmerupt",
+        types: ["Fire", "Psychic"], 
+        baseStats: {
+            hp: 103,
+            atk: 103,
+            def: 85,
+            spa: 136,
+            spd: 82,
+            spe: 59
+        },
+         abilities: {0: "Soulforged Diamond"},
+       },
+       
+       necrozmeruptmega: {
+        num: 7500257,
+        species: "Necrozmerupt-Mega",
+        baseSpecies: "Necrozmerupt",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Fire", "Psychic"],
+        baseStats: {
+            hp: 103,
+            atk: 123,
+            def: 115,
+            spa: 176,
+            spd: 112,
+            spe: 39
+        },
+        abilities: {0: "Sheer Force"},
+    },
+    
+     banekyu: {
+        num: 7500258,
+        species: "Banekyu",
+        types: ["Ghost", "Fairy"], 
+        baseStats: {
+            hp: 69,
+            atk: 112,
+            def: 82,
+            spa: 76,
+            spd: 94,
+            spe: 90
+        },
+         abilities: {0: "Cursed Cloak"},
+       },
+       
+       banekyumega: {
+        num: 7500258,
+        species: "Banekyu-Mega",
+        baseSpecies: "Banekyu",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Ghost", "Fairy"],
+        baseStats: {
+            hp: 69,
+            atk: 162,
+            def: 92,
+            spa: 86,
+            spd: 114,
+            spe: 100
+        },
+        abilities: {0: "Prankster"},
+    },
+    
+     ninxys: {
+        num: 7500259,
+        species: "Ninxys",
+        types: ["Psychic", "Bug"], 
+        baseStats: {
+            hp: 56,
+            atk: 93,
+            def: 68,
+            spa: 93,
+            spd: 70,
+            spe: 190
+        },
+         abilities: {0: "Light Speed"},
+      },
+    
+     heratana: {
+        num: 7500260,
+        species: "Heratana",
+        types: ["Bug", "Steel"], 
+        baseStats: {
+            hp: 70,
+            atk: 173,
+            def: 103,
+            spa: 49,
+            spd: 83,
+            spe: 97
+        },
+         abilities: {0: "Gutsy Beast"},
+      },
+      
+      heratanamega: {
+        num: 7500260,
+        species: "Heratana-Mega",
+        baseSpecies: "Heratana",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Bug", "Steel"], 
+        baseStats: {
+            hp: 70,
+            atk: 233,
+            def: 143,
+            spa: 49,
+            spd: 93,
+            spe: 87
+        },
+        abilities: {0: "Skill Link"},
+    },
+    
+     plumin: {
+        num: 7500261,
+        species: "Plumin",
+        types: ["Electric"],
+        baseStats: {
+            hp: 70,
+            atk: 55,
+            def: 55,
+            spa: 90,
+            spd: 90,
+            spe: 105
+        },
+         abilities: {0: "Charged Up"},
+      },
+    
+     oxyblissdefense: {
+        num: 7500262,
+        species: "Oxybliss-Defense",
+        types: ["Psychic", "Normal"], 
+        baseStats: {
+            hp: 162,
+            atk: 40,
+            def: 105,
+            spa: 72,
+            spd: 157,
+            spe: 72
+        },
+         abilities: {0: "Quarantine"},
+     },
+    
+     diggercatealola: {
+        num: 7500263,
+        species: "Diggercate-Alola",
+        types: ["Normal", "Ground"], 
+        baseStats: {
+            hp: 90,
+            atk: 73,
+            def: 83,
+            spa: 55,
+            spd: 88,
+            spe: 87
+        },
+         abilities: {0: "High Stakes"},
+       },
+    
+     inferperior: {
+        num: 7500264,
+        species: "Inferperior",
+        types: ["Grass", "Fire"], 
+        baseStats: {
+            hp: 75,
+            atk: 89,
+            def: 83,
+            spa: 89,
+            spd: 83,
+            spe: 110
+        },
+         abilities: {0: "Blazing Contrary"},
+     },
+    
+     mimukyu: {
+        num: 7500265,
+        species: "Mimukyu",
+        types: ["Dark", "Fairy"],
+        baseStats: {
+            hp: 90,
+            atk: 107,
+            def: 87,
+            spa: 67,
+            spd: 112,
+            spe: 83
+        },
+         abilities: {0: "Appropriation"},
+      },
+    
+     axatree: {
+        num: 7500266,
+        species: "Axatree",
+        types: ["Psychic", "Electric"], 
+        baseStats: {
+            hp: 69,
+            atk: 69,
+            def: 58,
+            spa: 174,
+            spd: 83,
+            spe: 121
+        },
+         abilities: {0: "Beast Guard"},
+      },
+     
+     axatreemega: {
+        num: 7500266,
+        species: "Axatree-Mega",
+        baseSpecies: "Axatree",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Psychic", "Electric"],
+        baseStats: {
+            hp: 69,
+            atk: 69,
+            def: 78,
+            spa: 214,
+            spd: 93,
+            spe: 151
+        },
+        abilities: {0: "Trace"},
+     },
+     
+     cresspal: {
+        num: 7500267,
+        species: "Cresspal",
+        types: ["Normal", "Psychic"],
+        baseStats: {
+            hp: 112,
+            atk: 80,
+            def: 110,
+            spa: 70,
+            spd: 110,
+            spe: 65
+        },
+         abilities: {0: "Fear Shield"},
+    },
+    
+     necrior: {
+        num: 7500268,
+        species: "Necrior",
+        types: ["Grass", "Psychic"],
+        baseStats: {
+            hp: 86,
+            atk: 91,
+            def: 100,
+            spa: 120,
+            spd: 92,
+            spe: 115
+        },
+         abilities: {0: "Inverse Armor"},
+      },
+    
+     cinshado: {
+        num: 7500269,
+        species: "Cinshado",
+        types: ["Normal", "Fighting"],
+        baseStats: {
+            hp: 82,
+            atk: 130,
+            def: 70,
+            spa: 77,
+            spd: 75,
+            spe: 140
+        },
+         abilities: {0: "Frenzy"},
+      },
+    
+     altellow: {
+        num: 7500270,
+        species: "Altellow",
+        types: ["Dragon", "Normal"],
+        baseStats: {
+            hp: 77,
+            atk: 87,
+            def: 85,
+            spa: 82,
+            spd: 87,
+            spe: 112
+        },
+         abilities: {0: "Puffy Cloud"},
+     },
+    
+    altellowmega: {
+        num: 7500270,
+        species: "Altellow-Mega",
+        baseSpecies: "Altellow",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Dragon", "Fairy"],
+        baseStats: {
+            hp: 77,
+            atk: 127,
+            def: 105,
+            spa: 122,
+            spd: 87,
+            spe: 112
+        },
+        abilities: {0: "Pixilate"},
+      },
+      
+      rebell: {
+        num: 7500271,
+        species: "Rebell",
+        types: ["Fighting", "Psychic"], 
+        baseStats: {
+            hp: 70,
+            atk: 85,
+            def: 80,
+            spa: 67,
+            spd: 90,
+            spe: 100
+        },
+         abilities: {0: "Tinkering"},
+    },
+    
+     combarde: {
+        num: 7500272,
+        species: "Combarde",
+        types: ["Fighting", "Ground"], 
+        baseStats: {
+            hp: 94,
+            atk: 112,
+            def: 100,
+            spa: 83,
+            spd: 77,
+            spe: 75
+        },
+         abilities: {0: "Sluggish Aura"},
+     },
+     
+     dittsey: {
+        num: 7500273,
+        species: "Dittsey",
+        types: ["Normal"],
+        baseStats: {
+            hp: 167,
+            atk: 31,
+            def: 36,
+            spa: 61,
+            spd: 106,
+            spe: 51
+        },
+         abilities: {0: "Troll"},
+    },
 
 };
