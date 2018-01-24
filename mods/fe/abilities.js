@@ -1602,24 +1602,5 @@ exports.BattleAbilities = {
 		rating: 4,
 		num: 174,
 	},
-	"normalveil": {
-		desc: "This Pokemon's Normal-type moves become Water-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
-		shortDesc: "This Pokemon's Normal-type moves become Water type and have 1.2x power.",
-		onModifyMovePriority: -1,
-		onModifyMove: function (move, pokemon) {
-			if (move.type === 'Normal' && !['judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'weatherball'].includes(move.id) && !(move.isZ && move.category !== 'Status')) {
-				move.type = 'Water';
-				move.refrigerateBoosted = true;
-			}
-		},
-		onBasePowerPriority: 8,
-		onBasePower: function (basePower, pokemon, target, move) {
-			if (move.refrigerateBoosted) return this.chainModify([0x1333, 0x1000]);
-		},
-		id: "normalveil",
-		name: "Normal Veil",
-		rating: 4,
-		num: 174,
-	},
    // Breaker: This pokemon's attacks aren't hindered by stat boosts, drops or abilities.
 };
