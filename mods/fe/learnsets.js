@@ -10221,7 +10221,7 @@ exports.BattleLearnsets = {
 			stickyweb: ["6L1"]
 		}
 	},
-		wailcaty:
+		wailcatty:
 	{
 		learnset:
 		{amnesia: ["7L37", "6L37", "5L37", "4L37", "3L52", "3S0"],
