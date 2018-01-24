@@ -3919,7 +3919,7 @@ exports.Formats = [
   		       "&bullet; <a href=http://www.smogon.com/forums/threads/fusion-moves-fusion-evolution-companion-project.3564805/>Fusion Moves</a>",
   		      ],
   		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
-		banlist: ['Unreleased', 'Illegal'],
+		// banlist: ['Unreleased', 'Illegal'],
 		mod: 'fe',
   		onModifyTemplate: function (template, pokemon, source) {
   			//This hack is for something important: The Pokemon's Sprite.
@@ -4118,6 +4118,7 @@ exports.Formats = [
 		      ],
   		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
 		mod: 'eternal',
+		// banlist: ['Unreleased', 'Illegal'],
   	},
 		{
   		name: "[Gen 7] Alola Formes",
@@ -4125,6 +4126,7 @@ exports.Formats = [
 		      ],
   		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
 		mod: 'alola',
+		// banlist: ['Unreleased', 'Illegal'],
   	},
 	{
 		name: "[Gen 7] Pokemon: The New First Generation",
