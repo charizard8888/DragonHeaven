@@ -1519,15 +1519,11 @@ exports.BattleAbilities = {
 		onTryHit: function (target, source, move) {
 			if (target !== source && move.type === 'Fire') {
 				move.accuracy = true;
-				if (!target.addVolatile('flashfire')) {
+				if (!target.addVolatile('justifiedfire')) {
 					this.add('-immune', target, '[msg]', '[from] ability: Justified Fire');
+					this.boost({spa: 1});
 				}
 				return null;
-			}
-		},
-			onAfterDamage: function (damage, target, source, effect) {
-			if (effect && effect.type === 'Fire') {
-				this.boost({spa: 1});
 			}
 		},
 		id: "justifiedfire",
