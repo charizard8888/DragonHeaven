@@ -1515,21 +1515,29 @@ exports.BattleAbilities = {
 	// Slow and Steady: This Pokemon takes 1/2 damage from attacks if it moves last.
 	// Error Marco: Physical moves hit off of special attack, and vice versa for special attacks. Stance change forms remain.
 		"justifiedfire": {
+		desc: "Raises user's Special Attack when hit with a Fire-type attack. Grants immunity to Fire.",
 		shortDesc: "Raises user's Special Attack when hit with a Fire-type attack. Grants immunity to Fire.",
 		onTryHit: function (target, source, move) {
 			if (target !== source && move.type === 'Fire') {
-				move.accuracy = true;
-				if (!target.addVolatile('justifiedfire')) {
+				if (!this.boost({spa: 1})) {
 					this.add('-immune', target, '[msg]', '[from] ability: Justified Fire');
-					this.boost({spa: 1});
 				}
 				return null;
 			}
 		},
+		onAnyRedirectTarget: function (target, source, source2, move) {
+			if (move.type !== 'Fire' || ['firepledge', 'grasspledge', 'waterpledge'].includes(move.id)) return;
+			if (this.validTarget(this.effectData.target, source, move.target)) {
+				if (this.effectData.target !== target) {
+					this.add('-activate', this.effectData.target, 'ability: Justified Fire');
+				}
+				return this.effectData.target;
+			}
+		},
 		id: "justifiedfire",
 		name: "Justified Fire",
-		rating: 2,
-		num: 154,
+		rating: 3.5,
+		num: 32,
 	},
 	// Late Bloomer: Late Bloomer: Has a 30% chance of infatuating the opponent at the end of its turn if it moves last.
 	"sturdytempo": {
