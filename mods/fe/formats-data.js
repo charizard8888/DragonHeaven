@@ -20,4 +20,8 @@ swampamar: {
 		requiredItem: "Aerodakoite",
 		tier: "OU",
 	},
+	wailcatty: {
+		randomBattleMoves: ["dragondance", "flareblitz", "dragonclaw", "earthquake", "roost", "willowisp"],
+		tier: "OU",
+	},
  };
