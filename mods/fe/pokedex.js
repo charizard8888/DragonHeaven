@@ -8262,5 +8262,846 @@ exports.BattlePokedex = {
         },
          abilities: {0: "Troll"},
     },
+	    aravealola: {
+        num: 7500274,
+        species: "A Rave-Alola",
+        types: ["Electric", "Normal"],
+        baseStats: {
+            hp: 87,
+            atk: 127,
+            def: 117,
+            spa: 82,
+            spd: 102,
+            spe: 77
+        },
+         abilities: {0: "Optimize"},
+    },
+    
+    aravealolafire: {
+        num: 7500274,
+        species: "A Rave-Alola-Fire",
+        baseSpecies: "A Rave-Alola",
+        forme: "Fire",
+        formeLetter: "F",
+        types: ["Electric", "Fire"], 
+        baseStats: {
+            hp: 87,
+            atk: 127,
+            def: 117,
+            spa: 82,
+            spd: 102,
+            spe: 77
+        },
+        abilities: {0: "Optimize"},
+    },
+    
+    aravealolawater: {
+        num: 7500274,
+        species: "A Rave-Alola-Water",
+        baseSpecies: "A Rave-Alola",
+        forme: "Water",
+        formeLetter: "W",
+        types: ["Electric", "Water"], 
+        baseStats: {
+            hp: 87,
+            atk: 127,
+            def: 117,
+            spa: 82,
+            spd: 102,
+            spe: 77
+        },
+        abilities: {0: "Optimize"},
+    },
+    
+    aravealolaelectric: {
+        num: 7500274,
+        species: "A Rave-Alola-Electric",
+        baseSpecies: "A Rave-Alola",
+        forme: "Electric",
+        formeLetter: "E",
+        types: ["Electric",], 
+        baseStats: {
+            hp: 87,
+            atk: 127,
+            def: 117,
+            spa: 82,
+            spd: 102,
+            spe: 77
+        },
+        abilities: {0: "Optimize"},
+    },
+    
+    aravealolagrass: {
+        num: 7500274,
+        species: "A Rave-Alola-Grass",
+        baseSpecies: "A Rave-Alola",
+        forme: "Grass",
+        formeLetter: "G",
+        types: ["Electric", "Grass"], 
+        baseStats: {
+            hp: 87,
+            atk: 127,
+            def: 117,
+            spa: 82,
+            spd: 102,
+            spe: 77
+        },
+        abilities: {0: "Optimize"},
+    },
+    
+    aravealolaice: {
+        num: 7500274,
+        species: "A Rave-Alola-Ice",
+        baseSpecies: "A Rave-Alola",
+        forme: "Ice",
+        formeLetter: "I",
+        types: ["Electric", "Ice"], 
+        baseStats: {
+            hp: 87,
+            atk: 127,
+            def: 117,
+            spa: 82,
+            spd: 102,
+            spe: 77
+        },
+        abilities: {0: "Optimize"},
+    },
+    
+    aravealolafighting: {
+        num: 7500274,
+        species: "A Rave-Alola-Fighting",
+        baseSpecies: "A Rave-Alola",
+        forme: "Fighting",
+        formeLetter: "H",
+        types: ["Electric", "Fighting"], 
+        baseStats: {
+            hp: 87,
+            atk: 127,
+            def: 117,
+            spa: 82,
+            spd: 102,
+            spe: 77
+        },
+        abilities: {0: "Optimize"},
+    },
+    
+    aravealolapoison: {
+        num: 7500274,
+        species: "A Rave-Alola-Poison",
+        baseSpecies: "A Rave-Alola",
+        forme: "Poison",
+        formeLetter: "P",
+        types: ["Electric", "Poison"], 
+        baseStats: {
+            hp: 87,
+            atk: 127,
+            def: 117,
+            spa: 82,
+            spd: 102,
+            spe: 77
+        },
+        abilities: {0: "Optimize"},
+    },
+    
+    aravealolaground: {
+        num: 7500274,
+        species: "A Rave-Alola-Ground",
+        baseSpecies: "A Rave-Alola",
+        forme: "Ground",
+        formeLetter: "U",
+        types: ["Electric", "Ground"], 
+        baseStats: {
+            hp: 87,
+            atk: 127,
+            def: 117,
+            spa: 82,
+            spd: 102,
+            spe: 77
+        },
+        abilities: {0: "Optimize"},
+    },
+    
+    aravealolaflying: {
+        num: 7500274,
+        species: "A Rave-Alola-Flying",
+        baseSpecies: "A Rave-Alola",
+        forme: "Flying",
+        formeLetter: "L",
+        types: ["Electric", "Flying"], 
+        baseStats: {
+            hp: 87,
+            atk: 127,
+            def: 117,
+            spa: 82,
+            spd: 102,
+            spe: 77
+        },
+        abilities: {0: "Optimize"},
+    },
+    
+    aravealolapsychic: {
+        num: 7500274,
+        species: "A Rave-Alola-Psychic",
+        baseSpecies: "A Rave-Alola",
+        forme: "Psychic",
+        formeLetter: "Y",
+        types: ["Electric", "Psychic"], 
+        baseStats: {
+            hp: 87,
+            atk: 127,
+            def: 117,
+            spa: 82,
+            spd: 102,
+            spe: 77
+        },
+        abilities: {0: "Optimize"},
+    },
+    
+    aravealolabug: {
+        num: 7500274,
+        species: "A Rave-Alola-Bug",
+        baseSpecies: "A Rave-Alola",
+        forme: "Bug",
+        formeLetter: "B",
+        types: ["Electric", "Bug"], 
+        baseStats: {
+            hp: 87,
+            atk: 127,
+            def: 117,
+            spa: 82,
+            spd: 102,
+            spe: 77
+        },
+        abilities: {0: "Optimize"},
+    },
+    
+    aravealolarock: {
+        num: 7500274,
+        species: "A Rave-Alola-Rock",
+        baseSpecies: "A Rave-Alola",
+        forme: "Rock",
+        formeLetter: "R",
+        types: ["Electric", "Rock"], 
+        baseStats: {
+            hp: 87,
+            atk: 127,
+            def: 117,
+            spa: 82,
+            spd: 102,
+            spe: 77
+        },
+        abilities: {0: "Optimize"},
+    },
+    
+    aravealolaghost: {
+        num: 7500274,
+        species: "A Rave-Alola-Ghost",
+        baseSpecies: "A Rave-Alola",
+        forme: "Ghost",
+        formeLetter: "O",
+        types: ["Electric", "Ghost"], 
+        baseStats: {
+            hp: 87,
+            atk: 127,
+            def: 117,
+            spa: 82,
+            spd: 102,
+            spe: 77
+        },
+        abilities: {0: "Optimize"},
+    },
+    
+    aravealoladragon: {
+        num: 7500274,
+        species: "A Rave-Alola-Dragon",
+        baseSpecies: "A Rave-Alola",
+        forme: "Dragon",
+        formeLetter: "D",
+        types: ["Electric", "Fire"], 
+        baseStats: {
+            hp: 87,
+            atk: 127,
+            def: 117,
+            spa: 82,
+            spd: 102,
+            spe: 77
+        },
+        abilities: {0: "Optimize"},
+    },
+    
+    aravealoladark: {
+        num: 7500274,
+        species: "A Rave-Alola-Dark",
+        baseSpecies: "A Rave-Alola",
+        forme: "Dark",
+        formeLetter: "K",
+        types: ["Electric", "Dark"], 
+        baseStats: {
+            hp: 87,
+            atk: 127,
+            def: 117,
+            spa: 82,
+            spd: 102,
+            spe: 77
+        },
+        abilities: {0: "Optimize"},
+    },
+    
+    aravealolasteel: {
+        num: 7500274,
+        species: "A Rave-Alola-Steel",
+        baseSpecies: "A Rave-Alola",
+        forme: "Steel",
+        formeLetter: "S",
+        types: ["Electric", "Steel"], 
+        baseStats: {
+            hp: 87,
+            atk: 127,
+            def: 117,
+            spa: 82,
+            spd: 102,
+            spe: 77
+        },
+        abilities: {0: "Optimize"},
+    },
+    
+    aravealolafairy: {
+        num: 7500274,
+        species: "A Rave-Alola-Fairy",
+        baseSpecies: "A Rave-Alola",
+        forme: "Fairy",
+        formeLetter: "A",
+        types: ["Electric", "Fairy"], 
+        baseStats: {
+            hp: 87,
+            atk: 127,
+            def: 117,
+            spa: 82,
+            spd: 102,
+            spe: 77
+        },
+        abilities: {0: "Optimize"},
+    }, 
+    
+    miminja: {
+        num: 7500275,
+        species: "Miminja",
+        types: ["Dark", "Ghost"], 
+        baseStats: {
+            hp: 63,
+            atk: 112,
+            def: 78,
+            spa: 76,
+            spd: 88,
+            spe: 124
+        },
+         abilities: {0: "Resurrection"},
+    },
+    
+    miminjareborn: {
+        num: 7500275,
+        species: "Miminja-Reborn",
+        baseSpecies: "Pokemon",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Dark", "Ghost"],
+        baseStats: {
+            hp: 63,
+            atk: 162,
+            def: 78,
+            spa: 126,
+            spd: 88,
+            spe: 134
+        },
+        abilities: {0: "Resurrection"},
+    },
+    
+    murkaleo: {
+        num: 7500276,
+        species: "Murkaleo",
+        types: ["Flying", "Steel"], 
+        baseStats: {
+            hp: 98,
+            atk: 115,
+            def: 79,
+            spa: 99,
+            spd: 81,
+            spe: 114
+        },
+         abilities: {0: "Bamboozled"},
+    },
+    
+    zecronaw: {
+        num: 7500277,
+        species: "Zecronaw",
+        types: ["Electric", "Water"], 
+        baseStats: {
+            hp: 82,
+            atk: 130,
+            def: 100,
+            spa: 99,
+            spd: 81,
+            spe: 99
+        },
+         abilities: {0: "Tetra Force"},
+    },
+    
+    quinda: {
+        num: 7500278,
+        species: "Quinda",
+        types: ["Normal", "Flying"], 
+        baseStats: {
+            hp: 102,
+            atk: 102,
+            def: 105,
+            spa: 80,
+            spd: 105,
+            spe: 87
+        },
+         abilities: {0: "Weather Contradiction"},
+    },
+    
+    sablegigas: {
+        num: 7500279,
+        species: "sablegigas",
+        types: ["Normal", "Ghost"], 
+        baseStats: {
+            hp: 90,
+            atk: 122,
+            def: 102,
+            spa: 72,
+            spd: 102,
+            spe: 75
+        },
+         abilities: {0: "Slow Surge"},
+    },
+    
+    sablegigasmega: {
+        num: 7500279,
+        species: "Sablegigas-Mega",
+        baseSpecies: "Sablegigas",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Normal", "Ghost"], 
+        baseStats: {
+            hp: 90,
+            atk: 132,
+            def: 152,
+            spa: 92,
+            spd: 152,
+            spe: 45
+        },
+        abilities: {0: "Magic Bounce"},
+    },
+    
+    galvillonme: {
+        num: 7500280,
+        species: "Galvillon",
+        types: ["Electric", "Flying"], 
+        baseStats: {
+            hp: 90, 
+            atk: 79,
+            def: 70,
+            spa: 108,
+            spd: 70,
+            spe: 113
+        },
+         abilities: {0: "Compound Eyes"},
+   },
+   
+   kyonun: {
+        num: 7500281,
+        species: "Kyonun",
+        types: ["Electric", "Water"], 
+        baseStats: {
+            hp: 80,
+            atk: 70,
+            def: 90,
+            spa: 122,
+            spd: 122,
+            spe: 92
+        },
+         abilities: {0: "Electron Rain"},
+    },
+    
+    kyonunprimal: {
+        num: 7500281,
+        species: "Kyonun-Primal",
+        baseSpecies: "Pokemon",
+        forme: "Primal",
+        formeLetter: "P",
+        types: ["Electric", "Water"],
+        baseStats: {
+            hp: 80,
+            atk: 120,
+            def: 90,
+            spa: 152,
+            spd: 142,
+            spe: 92
+        },
+        abilities: {0: "Primordial Sea"},
+    },
+    
+    abomasorus: {
+        num: 7500282,
+        species: "Abomasorus",
+        types: ["Ice", "Ground"],
+        baseStats: {
+            hp: 95,
+            atk: 125,
+            def: 90,
+            spa: 105,
+            spd: 90,
+            spe: 80
+        },
+         abilities: {0: "Petrify"},
+    },
+    abomasorusmega: {
+        num: 7500282,
+        species: "Abomasorus-Mega",
+        baseSpecies: "Pokemon",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Ice", "Ground"],
+        baseStats: {
+            hp: 95,
+            atk: 165,
+            def: 120,
+            spa: 145,
+            spd: 110,
+            spe: 50
+        },
+        abilities: {0: "Snow Warning"},
+    },
+    
+    toxicario: {
+        num: 7500283,
+        species: "Toxicario",
+        types: ["Poison", "Fighting"], 
+        baseStats: {
+            hp: 86,
+            atk: 118,
+            def: 77,
+            spa: 110,
+            spd: 77,
+            spe: 97
+        },
+         abilities: {0: "Triggered"},
+    },
+    
+    toxicariomega: {
+        num: 7500283,
+        species: "Toxicario-Mega",
+        baseSpecies: "Toxicario",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Poison", "Ground"],
+        baseStats: {
+            hp: 86,
+            atk: 153,
+            def: 95,
+            spa: 135,
+            spd: 77,
+            spe: 119
+        },
+        abilities: {0: "Adaptability"},
+    },
+    
+    washoxchromosome: {
+        num: 7500284,
+        species: "Washox-Chromosome",
+        types: ["Water", "Psychic"],
+        baseStats: {
+            hp: 47,
+            atk: 145,
+            def: 100,
+            spa: 145,
+            spd: 102,
+            spe: 110
+        },
+        abilities: {0: "Mitosis"},
+    },
+    
+    washoxstrand: {
+        num: 7500284,
+        species: "Washox-Strand",
+        baseSpecies: "Washox-Chromosome",
+        forme: "Strand",
+        formeLetter: "S",
+        types: ["Water", "Psychic"],
+        baseStats: {
+            hp: 47,
+            atk: 20,
+            def: 14,
+            spa: 20,
+            spd: 14,
+            spe: 120
+        },
+        abilities: {0: "Mitosis"},
+    },
+    
+    hoorbok: {
+        num: 7500285,
+        species: "Hoorbok",
+        types: ["Poison", "Dark"], 
+        baseStats: {
+            hp: 90,
+            atk: 135,
+            def: 65,
+            spa: 120,
+            spd: 105,
+            spe: 90
+        },
+         abilities: {0: "Prestidigitation"},
+    },
+    
+    ninetalesprime: {
+        num: 7500286,
+        species: "Ninetales-Prime",
+        types: ["Ice", "Fire"], 
+        baseStats: {
+            hp: 83,
+            atk: 81,
+            def: 85,
+            spa: 91,
+            spd: 110,
+            spe: 114
+        },
+         abilities: {0: "Solar Snow"},
+    },
+    
+    blampa: {
+        num: 7500287,
+        species: "Blampa",
+        types: ["Water", "Dragon"], 
+        baseStats: {
+            hp: 88,
+            atk: 81,
+            def: 102,
+            spa: 120,
+            spd: 108,
+            spe: 67
+        },
+         abilities: {0: "Torrential Rage"},
+    },
+    
+    blampamega: {
+        num: 7500287,
+        species: "Blampa-Mega",
+        baseSpecies: "Blampa",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Water", "Dragon"], 
+        baseStats: {
+            hp: 88,
+            atk: 101,
+            def: 122,
+            spa: 170,
+            spd: 118,
+            spe: 67
+        },
+        abilities: {0: "Mega Launcher"},
+    },
+    
+    origamiswan: {
+        num: 7500288,
+        species: "Origami-Swan",
+        types: ["Psychic", "Steel"],
+        baseStats: {
+            hp: 87,
+            atk: 82,
+            def: 92,
+            spa: 124,
+            spd: 112,
+            spe: 79
+        },
+         abilities: {0: "Fluttering Heart"},
+    },
+    
+    kecleus: {
+        num: 7500289,
+        species: "Kecleus",
+        types: ["Normal"],
+        baseStats: {
+            hp: 90,
+            atk: 105,
+            def: 100,
+            spa: 105,
+            spd: 120,
+            spe: 100
+        },
+         abilities: {0: "Prototype"},
+    },
+    
+    fearroh: {
+        num: 7500290,
+        species: "Fear-Roh",
+        types: ["Flying"],
+        baseStats: {
+            hp: 85,
+            atk: 125,
+            def: 97,
+            spa: 85,
+            spd: 107,
+            spe: 100
+        },
+         abilities: {0: "Sharpshooter"},
+    },
+    
+    neoprene: {
+        num: 7500291,
+        species: "Neoprene",
+        types: ["Steel"],
+        baseStats: {
+            hp: 100,
+            atk: 90,
+            def: 108,
+            spa: 135,
+            spd: 108,
+            spe: 62
+        },
+         abilities: {0: "Rubber Up"},
+    },
+    
+    maroramalola: {
+        num: 7500292,
+        species: "Maroram-Alola",
+        types: ["T1", "T2"], 
+        baseStats: {
+            hp: 80,
+            atk: 108,
+            def: 108,
+            spa: 108,
+            spd: 108,
+            spe: 80
+        },
+         abilities: {0: "Turbo Curse"},
+    },
+    
+    genny: {
+        num: 7500293,
+        species: "Genny",
+        types: ["Bug"],
+        baseStats: {
+            hp: 73,
+            atk: 131,
+            def: 87,
+            spa: 115,
+            spd: 87,
+            spe: 95
+        },
+         abilities: {0: "Revved Up"},
+    },
+    
+    sylvoko: {
+        num: 7500294,
+        species: "Sylvoko",
+        types: ["Fairy"],
+        baseStats: {
+            hp: 82,
+            atk: 100,
+            def: 75,
+            spa: 112,
+            spd: 102,
+            spe: 115
+        },
+         abilities: {0: "Misty Supercharge"},
+    },
+    
+    miniancieore: {
+        num: 7500295,
+        species: "Miniancie-Ore",
+        types: ["Rock"],
+        baseStats: {
+            hp: 55,
+            atk: 80,
+            def: 145,
+            spa: 80,
+            spd: 145,
+            spe: 55
+        },
+         abilities: {0: "Crystallized Shield"},
+    },
+    
+    minianciejewel: {
+        num: 7500295,
+        species: "Miniancie-Jewel",
+        baseSpecies: "Miniancie-Ore",
+        forme: "Jewel",
+        formeLetter: "J",
+        types: ["Rock"],
+        baseStats: {
+            hp: 55,
+            atk: 145,
+            def: 80,
+            spa: 145,
+            spd: 80,
+            spe: 115
+        },
+        abilities: {0: "A1"},
+    },
+    
+    tapudede: {
+        num: 7500296,
+        species: "Tapu Dede",
+        types: ["Grass"],
+        baseStats: {
+            hp: 79,
+            atk: 150,
+            def: 110,
+            spa: 85,
+            spd: 100,
+            spe: 57
+        },
+         abilities: {0: "Grassworker"},
+    },
+    
+    shenala: {
+        num: 7500297,
+        species: "Shenala",
+        types: ["Ghost"],
+        baseStats: {
+            hp: 69,
+            atk: 111,
+            def: 67,
+            spa: 103,
+            spd: 68,
+            spe: 78
+        },
+         abilities: {0: "Shadow Guard"},
+    },
+    
+    entir: {
+        num: 7500298,
+        species: "Entir",
+        types: ["Fire", "Bug"],
+        baseStats: {
+            hp: 90,
+            atk: 140,
+            def: 92,
+            spa: 72,
+            spd: 72,
+            spe: 112
+        },
+         abilities: {0: "Vexing Valor"},
+    },
+    
+    entirmega: {
+        num: 7500298,
+        species: "Entir-Mega",
+        baseSpecies: "Entir",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Fire", "Flying"], 
+        baseStats: {
+            hp: 90,
+            atk: 170,
+            def: 112,
+            spa: 82,
+            spd: 92,
+            spe: 132
+        },
+        abilities: {0: "Aerilate"},
+    },
 
 };
