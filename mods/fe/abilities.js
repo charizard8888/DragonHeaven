@@ -1779,8 +1779,45 @@ exports.BattleAbilities = {
 		},
 		id: "desertsnow",
 		name: "Desert Snow",
-		rating: 2,
-		num: 159,
+	},
+	"fromashes": {
+		desc: "If the Pokémon is burned, it will gain 1/8 of its maximum HP at the end of each turn instead of taking damage. The Pokémon with this Ability does not lose Attack due to burn.",
+		shortDesc: "If the Pokémon is burned, it will gain 1/8 of its maximum HP at the end of each turn instead of taking damage. The Pokémon with this Ability does not lose Attack due to burn.",
+		onDamage: function (damage, target, source, effect) {
+			if (effect.id === 'brn') {
+				this.heal(target.maxhp / 8);
+				return false;
+			}
+		},
+		id: "fromashes",
+		name: "From Ashes",
+	},
+	"magicbreak": {
+		shortDesc: "This Pokemon's attacks ignore the effects of the opponent's items.",
+		onStart: function (pokemon) {
+			this.add('-ability', pokemon, 'Magic Break');
+		},
+		onModifyMove: function (move) {
+			move.ignoreItem = true;
+		},
+		id: "magicbreak",
+		name: "Magic Break",
+	},
+		"raptorhead": {
+		desc: "Prevents recoil damage and Attack reduction.",
+		shortDesc: "Prevents recoil damage and Attack reduction.",
+		onDamage: function (damage, target, source, effect) {
+			if (effect.id === 'recoil' && this.activeMove.id !== 'struggle') return null;
+		},
+		onBoost: function (boost, target, source, effect) {
+			if (source && target === source) return;
+			if (boost['atk'] && boost['atk'] < 0) {
+				delete boost['atk'];
+				if (!effect.secondaries) this.add("-fail", target, "unboost", "Attack", "[from] ability: Raptor Head", "[of] " + target);
+			}
+		},
+		id: "raptorhead",
+		name: "Raptor Head",
 	},
 };
 
@@ -1792,3 +1829,7 @@ exports.BattleAbilities = {
 	// Late Bloomer: Late Bloomer: Has a 30% chance of infatuating the opponent at the end of its turn if it moves last.
 	// Slow and Steady: This Pokemon takes 1/2 damage from attacks if it moves last.
 	// Error Marco: Physical moves hit off of special attack, and vice versa for special attacks. Stance change forms remain.
+// Combination Drive: The Pokémon changes form depending on how it battles. Entering Power Forme empowers Punch and Slash based moves by x1.5 for one attack.
+// Charm Star: Moves without a secondary effect have a 20% chance to attract the opponent.
+// Glassing: If the opponent uses a Ground-type move it becomes Burned; Ground immunity.
+// Justice Power: Every time the opponent attacks this Pokemon with a Dark-type move, this Pokémon's Attack is raised by 1 and the move's PP are halved (doesn't apply if the move has 1 PP left).
