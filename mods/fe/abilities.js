@@ -1765,8 +1765,84 @@ exports.BattleAbilities = {
 		id: "raptorhead",
 		name: "Raptor Head",
 	},
+	"steadfastluck": {
+		shortDesc: "When this Fusion Evolution flinches, its speed and critical hit ratio are raised by 1 stage.",
+		onFlinch: function (pokemon) {
+			this.boost({spe: 1, critRatio :1});
+		},
+		id: "steadfastluck",
+		name: "Steadfast Luck",
+	},
+	"thunderousembers": {
+		desc: "Raises Special Attack by 1.5x when hit by a fire attack move; immunity to fire attacks.",
+		shortDesc: "Raises Special Attack by 1.5x when hit by a fire attack move; immunity to fire attacks.",
+		onTryHit: function (target, source, move) {
+			if (target !== source && move.type === 'Fire') {
+				if (!this.boost({spa: 1})) {
+					this.add('-immune', target, '[msg]', '[from] ability: Thunderous Embers');
+				}
+				return null;
+			}
+		},
+		onAnyRedirectTarget: function (target, source, source2, move) {
+			if (move.type !== 'Fire' || ['firepledge', 'grasspledge', 'waterpledge'].includes(move.id)) return;
+			if (this.validTarget(this.effectData.target, source, move.target)) {
+				if (this.effectData.target !== target) {
+					this.add('-activate', this.effectData.target, 'ability: Thunderous Embers');
+				}
+				return this.effectData.target;
+			}
+		},
+		id: "thunderousembers",
+		name: "Thunderous Embers",
+	},
+	"torrentialvoltage": {
+		desc: "Electric immunity, and when hit by an Electric-type move, this Pokemon's Electric moves gain a 50% power boost.",
+		shortDesc: "Electric immunity, and when hit by an Electric-type move, this Pokemon's Electric moves gain a 50% power boost.",
+		onTryHit: function (target, source, move) {
+			if (target !== source && move.type === 'Electric') {
+				move.accuracy = true;
+				if (!target.addVolatile('torrentialvoltage')) {
+					this.add('-immune', target, '[msg]', '[from] ability: Torrential Voltage');
+				}
+				return null;
+			}
+		},
+		onEnd: function (pokemon) {
+			pokemon.removeVolatile('torrentialvoltage');
+		},
+		effect: {
+			noCopy: true, 
+			onStart: function (target) {
+				this.add('-start', target, 'ability: Torrential Voltage');
+			},
+			onModifyAtkPriority: 5,
+			onModifyAtk: function (atk, attacker, defender, move) {
+				if (move.type === 'Electric') {
+					this.debug('Torrential Voltage boost');
+					return this.chainModify(1.5);
+				}
+			},
+			onModifySpAPriority: 5,
+			onModifySpA: function (atk, attacker, defender, move) {
+				if (move.type === 'Electric') {
+					this.debug('Torrential Voltage boost');
+					return this.chainModify(1.5);
+				}
+			},
+			onEnd: function (target) {
+				this.add('-end', target, 'ability: Torrential Voltage', '[silent]');
+			},
+		},
+		id: "torrentialvoltage",
+		name: "Torrential Voltage",
+	},
 		
-	/* "sereneeyes": {
+		
+	/*
+	
+	
+	"sereneeyes": {
 		shortDesc: "Moves with secondary effect chances have their accuracy doubled.",
 		onModifyMovePriority: -2,
 		onModifyMove: function (move) {
@@ -1819,7 +1895,25 @@ exports.BattleAbilities = {
 		id: "fromashes",
 		name: "From Ashes",
 	},
-	 */
+	"torrenttempo": {
+		shortDesc: "If this Pokemon is confused, it snaps out of that confusion and gains a 50% boost to its Water-moves.",
+		onUpdate: function (pokemon) {
+			if (pokemon.volatiles['confusion']) {
+				this.add('-activate', pokemon, 'ability: Torrent Tempo');
+				pokemon.removeVolatile('confusion');
+			}
+		},
+		onTryAddVolatile: function (status, pokemon) {
+			if (status.id === 'confusion') return null;
+		},
+		onHit: function (target, source, move) {
+			if (move && move.volatileStatus === 'confusion') {
+				this.add('-immune', target, 'confusion', '[from] ability: Torrent Tempo');
+			}
+		},
+		id: "torrenttempo",
+		name: "Torrent Tempo",
+	},
 	// Under Pressure: This Pokemon's status is cured at the end of each turn, but it uses 2 PP every time it attacks.
    // Breaker: This pokemon's attacks aren't hindered by stat boosts, drops or abilities.
 	// Bodyguard: Grants immunity to moves that would lower this Pokemon's stats.
@@ -1832,5 +1926,7 @@ exports.BattleAbilities = {
 // Charm Star: Moves without a secondary effect have a 20% chance to attract the opponent.
 // Glassing: If the opponent uses a Ground-type move it becomes Burned; Ground immunity.
 // Justice Power: Every time the opponent attacks this Pokemon with a Dark-type move, this Pokémon's Attack is raised by 1 and the move's PP are halved (doesn't apply if the move has 1 PP left).
-
+	// Lazy Bones: every other turn gains a 20% evasion boost, but loses 20% attack.
+	// Amplify: Increases the power of Exdoom's Fire Type and sound based moves if hit by a sound based/Fire Type attack, grants immunity to sound based/Fire Type attacks.
+// Immune to Fire and Ice type moves as long as it holds an item. */
 };
