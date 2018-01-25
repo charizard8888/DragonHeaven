@@ -47,6 +47,9 @@ exports.BattleAbilities = {
 			this.add('-formechange', pokemon, 'Scrafty-Mega', '[msg]');
 			pokemon.formeChange("Scrafty-Mega");
 		},
+		onModifyMove: function (move) {
+			move.stab = 4;
+		},
 		
 	},
 	"extremeintimidate": { /* Fix this On switchin --> Haze --> Lower all of th foe's stats by one*/
