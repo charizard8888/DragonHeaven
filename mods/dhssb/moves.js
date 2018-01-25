@@ -81,28 +81,38 @@ exports.BattleMovedex = {
 		contestType: "Cool",
 	},
 	"kneeofjustice": {
-		accuracy: 80,
-		basePower: 140,
+		accuracy: true,
+		basePower: 200,
 		category: "Physical",
 		desc: "Can hit Ghost Types.",
 		shortDesc: "Can hit Ghost Types.",
 		id: "kneeofjustice",
 		isViable: true,
 		name: "Knee of Justice",
-		pp: 5,
+		pp: 20,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, gravity: 1},
 		onPrepareHit: function (target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "High Jump Kick", target);
 		},
+		self: {
+			boosts: {
+				def: +2,
+				spd: +2,
+				atk: +2,
+			},
+		},
 		onEffectiveness: function (typeMod, type) {
-			if (type === 'Ghost') return 0;
+			if (type === 'Ghost') return 2;
+			if (type === 'Psychic') return 2;
+			if (type === 'Fairy') return 2;
+			if (type === 'Poison') return 2;
 		},
 		secondary: false,
 		target: "normal",
 		type: "Fighting",
-		zMovePower: 195,
+		zMovePower: 400,
 		contestType: "Cool",
 	},
 	"thenetherlandsfirst": {
