@@ -1512,8 +1512,6 @@ exports.BattleAbilities = {
 		rating: 3,
 		num: 254
 	},
-	// Slow and Steady: This Pokemon takes 1/2 damage from attacks if it moves last.
-	// Error Marco: Physical moves hit off of special attack, and vice versa for special attacks. Stance change forms remain.
 		"justifiedfire": {
 		desc: "Raises user's Special Attack when hit with a Fire-type attack. Grants immunity to Fire.",
 		shortDesc: "Raises user's Special Attack when hit with a Fire-type attack. Grants immunity to Fire.",
@@ -1539,7 +1537,7 @@ exports.BattleAbilities = {
 		rating: 3.5,
 		num: 32,
 	},
-	// Late Bloomer: Late Bloomer: Has a 30% chance of infatuating the opponent at the end of its turn if it moves last.
+
 	"sturdytempo": {
 		desc: "Sturdy + Own Tempo.",
 		shortDesc: "Sturdy + Own Tempo",
@@ -1573,7 +1571,7 @@ exports.BattleAbilities = {
 		id: "sturdytempo",
 		name: "Sturdy Tempo",
 	},
-	// Tangled Flames: This pokemon's fire attacks are boosted 2x when confused. Fire Immunity.
+
 	
 	"hydrostream": {
 		shortDesc: "On switch-in, this Pokemon summons Rain Dance.",
@@ -1606,5 +1604,191 @@ exports.BattleAbilities = {
 		rating: 4,
 		num: 174,
 	},
-   // Breaker: This pokemon's attacks aren't hindered by stat boosts, drops or abilities.
+
+	"sereneeyes": {
+		shortDesc: "Moves with secondary effect chances have their accuracy doubled.",
+		onModifyMovePriority: -2,
+		onModifyMove: function (move) {
+			if (move.secondaries) {
+				this.debug('sereneeyes - enhancing accuracy');
+			return accuracy * 1.3;
+			}
+		},
+		id: "sereneeyes",
+		name: "Serene Eyes",
+	},
+	"leafstream": {
+		shortDesc: "On switch-in, this Pokemon summons Sunny Day.",
+		onStart: function (source) {
+			for (let i = 0; i < this.queue.length; i++) {
+				if (this.queue[i].choice === 'runPrimal' && this.queue[i].pokemon === source && source.template.speciesid === 'groudon') return;
+				if (this.queue[i].choice !== 'runSwitch' && this.queue[i].choice !== 'runPrimal') break;
+			}
+			this.setWeather('sunnyday');
+		},
+		id: "leafstream",
+		name: "Leaf Stream",
+	},
+	"cybercriminal": {
+		desc: "This Pokemon's Special Attack is raised by 1 stage if it attacks and knocks out another Pokemon.",
+		shortDesc: "This Pokemon's Special Attack is raised by 1 stage if it attacks and KOes another Pokemon.",
+		onSourceFaint: function (target, source, effect) {
+			if (effect && effect.effectType === 'Move') {
+				this.boost({atk: 1}, source);
+			}
+		},
+		id: "cybercriminal",
+		name: "Cyber Criminal",
+		rating: 3.5,
+		num: 153,
+	},
+	"seamonster": {
+		desc: "Lowers opponent's attack one stage upon switching in. Water-type attacks are boosted 10%.",
+		shortDesc: "Lowers opponent's attack one stage upon switching in. Water-type attacks are boosted 10%.",
+		onStart: function (pokemon) {
+			let foeactive = pokemon.side.foe.active;
+			let activated = false;
+			for (let i = 0; i < foeactive.length; i++) {
+				if (!foeactive[i] || !this.isAdjacent(foeactive[i], pokemon)) continue;
+				if (!activated) {
+					this.add('-ability', pokemon, 'Sea Monster', 'boost');
+					activated = true;
+				}
+				if (foeactive[i].volatiles['substitute']) {
+					this.add('-immune', foeactive[i], '[msg]');
+				} else {
+					this.boost({atk: -1}, foeactive[i], pokemon);
+				}
+			}
+		},
+		onBasePower: function (basePower, attacker, defender, move) {
+			if (move.type === 'Water') {
+				this.debug('Sea Monster boost');
+				return this.chainModify(1.1);
+		},
+	},
+		id: "seamonster",
+		name: "Sea Monster",
+	},
+	"cleartempo": {
+		shortDesc: "Immune to stat drops and confusion.",
+		onUpdate: function (pokemon) {
+			if (pokemon.volatiles['confusion']) {
+				this.add('-activate', pokemon, 'ability: Clear Tempo');
+				pokemon.removeVolatile('confusion');
+			}
+		},
+		onTryAddVolatile: function (status, pokemon) {
+			if (status.id === 'confusion') return null;
+		},
+		onHit: function (target, source, move) {
+			if (move && move.volatileStatus === 'confusion') {
+				this.add('-immune', target, 'confusion', '[from] ability: Clear Tempo');
+			}
+		},
+		onBoost: function (boost, target, source, effect) {
+			if (source && target === source) return;
+			let showMsg = false;
+			for (let i in boost) {
+				if (boost[i] < 0) {
+					delete boost[i];
+					showMsg = true;
+				}
+			}
+			if (showMsg && !effect.secondaries) this.add("-fail", target, "unboost", "[from] ability: Clear Tempo", "[of] " + target);
+		},
+		id: "cleartempo",
+		name: "Clear Tempo",
+	},
+		
+	"sandyeyes": {
+		desc: "If Sandstorm is active, this Pokemon's Ground-, Rock-, and Steel-type attacks have their power multiplied by 1.3. This Pokemon takes no damage from Sandstorm.",
+		shortDesc: "This Pokemon's Ground/Rock/Steel attacks do 1.3x in Sandstorm; immunity to it.",
+		onSourceModifyAccuracy: function (accuracy) {
+			if (this.isWeather('sandstorm')) {
+			if (typeof accuracy !== 'number') return;
+			this.debug('sandyeyes - enhancing accuracy');
+			return accuracy * 1.3;
+			}
+		},
+		onImmunity: function (type, pokemon) {
+			if (type === 'sandstorm') return false;
+		},
+		id: "sandyeyes",
+		name: "Sandy Eyes",
+	},
+	"sharparmor": {
+		shortDesc: "Atk is raised by 2 when hit by a Water-type move and lowered by 2 when hit by a Fire-type; gives immunity to Water-type moves.",
+		onAfterDamage: function (damage, target, source, effect) {
+			if (effect && effect.type === 'Water') {
+				this.boost({atk: 2});
+			}
+		},
+		onAfterDamage: function (damage, target, source, effect) {
+			if (effect && effect.type === 'Fire') {
+				this.boost({atk: -2});
+			}
+		},
+				onTryHit: function (target, source, move) {
+			if (target !== source && move.type === 'Water') {
+				move.accuracy = true;
+				if (!target.addVolatile('sharparmor')) {
+					this.add('-immune', target, '[msg]', '[from] ability: Sharp Armor');
+				}
+				return null;
+			}
+		},
+		id: "sharparmor",
+		name: "Sharp Armor",
+	},
+	"dreamcrusher": {
+		shortDesc: "The user deals 2x damage to sleeping targets.",
+		onModifyDamage: function (damage, source, target, move) {
+			if (pokemon.status && pokemon.status == 'slp') {
+				this.debug('Dream Crusher boost');
+				return this.chainModify(2);
+			}
+		},
+		id: "dreamcrusher",
+		name: "Dream Crusher",
+	},
+	"desertsnow": {
+		desc: "This pokemon's Ground/Rock/Steel/Ice attacks do 1.3x in Sandstorm and Hail, opposing attacks of those types heal by 1/16 under the same weather conditions.",
+		shortDesc: "This pokemon's Ground/Rock/Steel/Ice attacks do 1.3x in Sandstorm and Hail, opposing attacks of those types heal by 1/16 under the same weather conditions.",
+		onBasePowerPriority: 8,
+		onBasePower: function (basePower, attacker, defender, move) {
+			if (this.isWeather('hail')) {
+				if (move.type === 'Rock' || move.type === 'Ground' || move.type === 'Steel' || move.type === 'Ice') {
+					this.debug('Desert Snow boost');
+					return this.chainModify([0x14CD, 0x1000]);
+				}
+			}
+		},
+		onImmunity: function (type, pokemon) {
+			if (type === 'sandstorm') return false;
+		},
+		onTryHit: function (target, source, move) {
+			if (this.isWeather('hail')) {
+			if (move.type === 'Rock' || move.type === 'Ground' || move.type === 'Steel' || move.type === 'Ice') {
+				if (!this.heal(target.maxhp / 16)) {
+					this.add('-immune', target, '[msg]', '[from] ability: Desert Snow');
+				}
+			}
+				return null;
+			}
+		},
+		id: "desertsnow",
+		name: "Desert Snow",
+		rating: 2,
+		num: 159,
+	},
 };
+
+	// Under Pressure: This Pokemon's status is cured at the end of each turn, but it uses 2 PP every time it attacks.
+   // Breaker: This pokemon's attacks aren't hindered by stat boosts, drops or abilities.
+	// Bodyguard: Grants immunity to moves that would lower this Pokemon's stats.
+	// Hammer Space: If its item is used or lost during battle, the item will regenerate after it switches out.
+	// Tangled Flames: This pokemon's fire attacks are boosted 2x when confused. Fire Immunity.
+	// Late Bloomer: Late Bloomer: Has a 30% chance of infatuating the opponent at the end of its turn if it moves last.
+	// Slow and Steady: This Pokemon takes 1/2 damage from attacks if it moves last.
+	// Error Marco: Physical moves hit off of special attack, and vice versa for special attacks. Stance change forms remain.
