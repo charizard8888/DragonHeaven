@@ -98,13 +98,13 @@ exports.BattleMovedex = {
 		},
 		self: {
 			boosts: {
-				def: +2,
-				spd: +2,
-				atk: +2,
+				def: +1,
+				spd: +1,
+				atk: +1,
 			},
 		},
 		onEffectiveness: function (typeMod, type) {
-			if (type === 'Ghost') return 2;
+			if (type === 'Ghost') return 0;
 			if (type === 'Psychic') return 2;
 			if (type === 'Fairy') return 2;
 			if (type === 'Poison') return 2;
@@ -1062,8 +1062,8 @@ exports.BattleMovedex = {
 	},
 	girlygirl: {
 		shortDesc: "120 BP Special Normal-type move with 16 PP and 95% accuracy. It's a sound move and raises the user's speed sharply.",
-		accuracy:100,
-		pp:15,
+		accuracy: 100,
+		pp: 15,
 		id: "girlygirl",
 		name: "Girly Girl",
 		isNonstandard: true,
