@@ -1659,48 +1659,6 @@ exports.BattleAbilities = {
 		id: "cleartempo",
 		name: "Clear Tempo",
 	},
-		
-	/* "sereneeyes": {
-		shortDesc: "Moves with secondary effect chances have their accuracy doubled.",
-		onModifyMovePriority: -2,
-		onModifyMove: function (move) {
-			if (move.secondaries) {
-				this.debug('sereneeyes - enhancing accuracy');
-			return accuracy * 1.3;
-			}
-		},
-		id: "sereneeyes",
-		name: "Serene Eyes",
-	},
-	"seamonster": {
-		desc: "Lowers opponent's attack one stage upon switching in. Water-type attacks are boosted 10%.",
-		shortDesc: "Lowers opponent's attack one stage upon switching in. Water-type attacks are boosted 10%.",
-		onStart: function (pokemon) {
-			let foeactive = pokemon.side.foe.active;
-			let activated = false;
-			for (let i = 0; i < foeactive.length; i++) {
-				if (!foeactive[i] || !this.isAdjacent(foeactive[i], pokemon)) continue;
-				if (!activated) {
-					this.add('-ability', pokemon, 'Sea Monster', 'boost');
-					activated = true;
-				}
-				if (foeactive[i].volatiles['substitute']) {
-					this.add('-immune', foeactive[i], '[msg]');
-				} else {
-					this.boost({atk: -1}, foeactive[i], pokemon);
-				}
-			}
-		},
-		onBasePower: function (basePower, attacker, defender, move) {
-			if (move.type === 'Water') {
-				this.debug('Sea Monster boost');
-				return this.chainModify(1.1);
-		},
-	},
-		id: "seamonster",
-		name: "Sea Monster",
-	},
-	
 	"sandyeyes": {
 		desc: "If Sandstorm is active, this Pokemon's Ground-, Rock-, and Steel-type attacks have their power multiplied by 1.3. This Pokemon takes no damage from Sandstorm.",
 		shortDesc: "This Pokemon's Ground/Rock/Steel attacks do 1.3x in Sandstorm; immunity to it.",
@@ -1780,6 +1738,48 @@ exports.BattleAbilities = {
 		id: "desertsnow",
 		name: "Desert Snow",
 	},
+		
+	/* "sereneeyes": {
+		shortDesc: "Moves with secondary effect chances have their accuracy doubled.",
+		onModifyMovePriority: -2,
+		onModifyMove: function (move) {
+			if (move.secondaries) {
+				this.debug('sereneeyes - enhancing accuracy');
+			return accuracy * 1.3;
+			}
+		},
+		id: "sereneeyes",
+		name: "Serene Eyes",
+	},
+	"seamonster": {
+		desc: "Lowers opponent's attack one stage upon switching in. Water-type attacks are boosted 10%.",
+		shortDesc: "Lowers opponent's attack one stage upon switching in. Water-type attacks are boosted 10%.",
+		onStart: function (pokemon) {
+			let foeactive = pokemon.side.foe.active;
+			let activated = false;
+			for (let i = 0; i < foeactive.length; i++) {
+				if (!foeactive[i] || !this.isAdjacent(foeactive[i], pokemon)) continue;
+				if (!activated) {
+					this.add('-ability', pokemon, 'Sea Monster', 'boost');
+					activated = true;
+				}
+				if (foeactive[i].volatiles['substitute']) {
+					this.add('-immune', foeactive[i], '[msg]');
+				} else {
+					this.boost({atk: -1}, foeactive[i], pokemon);
+				}
+			}
+		},
+		onBasePower: function (basePower, attacker, defender, move) {
+			if (move.type === 'Water') {
+				this.debug('Sea Monster boost');
+				return this.chainModify(1.1);
+		},
+	},
+		id: "seamonster",
+		name: "Sea Monster",
+	},
+	
 	"fromashes": {
 		desc: "If the Pokémon is burned, it will gain 1/8 of its maximum HP at the end of each turn instead of taking damage. The Pokémon with this Ability does not lose Attack due to burn.",
 		shortDesc: "If the Pokémon is burned, it will gain 1/8 of its maximum HP at the end of each turn instead of taking damage. The Pokémon with this Ability does not lose Attack due to burn.",
