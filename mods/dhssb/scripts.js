@@ -17,7 +17,7 @@ exports.BattleScripts = {
 				signatureMove: "Girly Girl",evs: {hp: 252, atk:252, spd: 252, def: 252, spe: 252},
 				nature:'Modest',
 			},
-			/*'shwb' : {
+			'shwb' : {
 				species: 'Lucario-Mega', ability: 'Brute Force', item: 'Leftovers', gender: 'M', shiny:true,
 				moves: ['highjumpkick', 'meteormash', 'extremespeed'],
 				signatureMove: "Build Up",evs: {hp: 252, atk:252, spd: 252, def: 252, spe: 252},
@@ -223,7 +223,7 @@ exports.BattleScripts = {
 				moves: ['shadowball', 'dragonpulse', 'dreameater'],
 				signatureMove: "secretkiller",
 				evs: {spa:252, spd:252, spe:4}, nature: 'Adamant',
-			}, */
+			}, 
 		};
 
 		// Generate the team randomly.
