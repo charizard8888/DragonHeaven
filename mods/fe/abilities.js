@@ -1604,19 +1604,6 @@ exports.BattleAbilities = {
 		rating: 4,
 		num: 174,
 	},
-
-	/* "sereneeyes": {
-		shortDesc: "Moves with secondary effect chances have their accuracy doubled.",
-		onModifyMovePriority: -2,
-		onModifyMove: function (move) {
-			if (move.secondaries) {
-				this.debug('sereneeyes - enhancing accuracy');
-			return accuracy * 1.3;
-			}
-		},
-		id: "sereneeyes",
-		name: "Serene Eyes",
-	},
 	"leafstream": {
 		shortDesc: "On switch-in, this Pokemon summons Sunny Day.",
 		onStart: function (source) {
@@ -1641,6 +1628,19 @@ exports.BattleAbilities = {
 		name: "Cyber Criminal",
 		rating: 3.5,
 		num: 153,
+	},
+
+	/* "sereneeyes": {
+		shortDesc: "Moves with secondary effect chances have their accuracy doubled.",
+		onModifyMovePriority: -2,
+		onModifyMove: function (move) {
+			if (move.secondaries) {
+				this.debug('sereneeyes - enhancing accuracy');
+			return accuracy * 1.3;
+			}
+		},
+		id: "sereneeyes",
+		name: "Serene Eyes",
 	},
 	"seamonster": {
 		desc: "Lowers opponent's attack one stage upon switching in. Water-type attacks are boosted 10%.",
