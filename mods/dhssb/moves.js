@@ -1086,7 +1086,6 @@ exports.BattleMovedex = {
 		onPrepareHit: function (target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Boomburst", target);
-			this.add("c|%Reviloja753|!");
 		},
 	},
 };
