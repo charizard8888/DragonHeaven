@@ -664,7 +664,7 @@ exports.BattleAbilities = {
 			if (move.pixilateBoosted) return this.chainModify([0x1333, 0x1000]);
 		},
 		id:'girlpower',
-		name:'Girl Power', */
-	},
+		name:'Girl Power', 
+	},*/
 
 };
