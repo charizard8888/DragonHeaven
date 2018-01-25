@@ -1629,20 +1629,7 @@ exports.BattleAbilities = {
 		rating: 3.5,
 		num: 153,
 	},
-
-	/* "sereneeyes": {
-		shortDesc: "Moves with secondary effect chances have their accuracy doubled.",
-		onModifyMovePriority: -2,
-		onModifyMove: function (move) {
-			if (move.secondaries) {
-				this.debug('sereneeyes - enhancing accuracy');
-			return accuracy * 1.3;
-			}
-		},
-		id: "sereneeyes",
-		name: "Serene Eyes",
-	},
-	"seamonster": {
+"seamonster": {
 		desc: "Lowers opponent's attack one stage upon switching in. Water-type attacks are boosted 10%.",
 		shortDesc: "Lowers opponent's attack one stage upon switching in. Water-type attacks are boosted 10%.",
 		onStart: function (pokemon) {
@@ -1701,6 +1688,19 @@ exports.BattleAbilities = {
 		name: "Clear Tempo",
 	},
 		
+	/* "sereneeyes": {
+		shortDesc: "Moves with secondary effect chances have their accuracy doubled.",
+		onModifyMovePriority: -2,
+		onModifyMove: function (move) {
+			if (move.secondaries) {
+				this.debug('sereneeyes - enhancing accuracy');
+			return accuracy * 1.3;
+			}
+		},
+		id: "sereneeyes",
+		name: "Serene Eyes",
+	},
+	
 	"sandyeyes": {
 		desc: "If Sandstorm is active, this Pokemon's Ground-, Rock-, and Steel-type attacks have their power multiplied by 1.3. This Pokemon takes no damage from Sandstorm.",
 		shortDesc: "This Pokemon's Ground/Rock/Steel attacks do 1.3x in Sandstorm; immunity to it.",
