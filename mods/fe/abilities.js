@@ -1605,7 +1605,7 @@ exports.BattleAbilities = {
 		num: 174,
 	},
 
-	"sereneeyes": {
+	/* "sereneeyes": {
 		shortDesc: "Moves with secondary effect chances have their accuracy doubled.",
 		onModifyMovePriority: -2,
 		onModifyMove: function (move) {
@@ -1717,7 +1717,7 @@ exports.BattleAbilities = {
 		id: "sandyeyes",
 		name: "Sandy Eyes",
 	},
-/*	"sharparmor": {
+	"sharparmor": {
 		shortDesc: "Atk is raised by 2 when hit by a Water-type move and lowered by 2 when hit by a Fire-type; gives immunity to Water-type moves.",
 		onAfterDamage: function (damage, target, source, effect) {
 			if (effect && effect.type === 'Water') {
