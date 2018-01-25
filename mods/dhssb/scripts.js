@@ -11,13 +11,13 @@ exports.BattleScripts = {
 				signatureMove: "Stone Wrap",evs: {hp: 252, atk:252, spd: 252, def: 252, spe: 252},
 				nature:'Bold',
 			},
-				'Reviloja 753' : {
+			  'Reviloja 753' : {
 				species: 'Sylveon', ability: 'Girl Power', item: 'Leftovers', gender: 'F', 
 				moves: ['earthpower', 'recover', 'psyshock'],
-				signatureMove: "Girly Girl",evs: {spa: 160, spd: 96, spe: 252},
+				signatureMove: "Girly Girl",evs: {hp: 252, atk:252, spd: 252, def: 252, spe: 252},
 				nature:'Modest',
 			},
-			'shwb' : {
+			/*'shwb' : {
 				species: 'Lucario-Mega', ability: 'Brute Force', item: 'Leftovers', gender: 'M', shiny:true,
 				moves: ['highjumpkick', 'meteormash', 'extremespeed'],
 				signatureMove: "Build Up",evs: {hp: 252, atk:252, spd: 252, def: 252, spe: 252},
@@ -65,7 +65,7 @@ exports.BattleScripts = {
 				signatureMove: "Super Duper Wombo Combo",evs: {hp: 252, spa:252, spd: 252, def: 252},
 				nature: 'Quiet',
 			},
-			/* 'The True Falcon' : {
+			 'The True Falcon' : {
 				species: 'Samurott', ability: 'Ultra Technical', item: 'Assault Vest', gender: 'M',
 				moves: ['icepunch', 'waterfall', 'sacred sword'],
 				signatureMove: "Heroic Beatdown",evs: {hp: 252, atk:252, def:4}, nature: 'Adamant',
