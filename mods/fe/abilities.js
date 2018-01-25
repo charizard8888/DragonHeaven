@@ -1738,6 +1738,33 @@ exports.BattleAbilities = {
 		id: "desertsnow",
 		name: "Desert Snow",
 	},
+	"magicbreak": {
+		shortDesc: "This Pokemon's attacks ignore the effects of the opponent's items.",
+		onStart: function (pokemon) {
+			this.add('-ability', pokemon, 'Magic Break');
+		},
+		onModifyMove: function (move) {
+			move.ignoreItem = true;
+		},
+		id: "magicbreak",
+		name: "Magic Break",
+	},
+		"raptorhead": {
+		desc: "Prevents recoil damage and Attack reduction.",
+		shortDesc: "Prevents recoil damage and Attack reduction.",
+		onDamage: function (damage, target, source, effect) {
+			if (effect.id === 'recoil' && this.activeMove.id !== 'struggle') return null;
+		},
+		onBoost: function (boost, target, source, effect) {
+			if (source && target === source) return;
+			if (boost['atk'] && boost['atk'] < 0) {
+				delete boost['atk'];
+				if (!effect.secondaries) this.add("-fail", target, "unboost", "Attack", "[from] ability: Raptor Head", "[of] " + target);
+			}
+		},
+		id: "raptorhead",
+		name: "Raptor Head",
+	},
 		
 	/* "sereneeyes": {
 		shortDesc: "Moves with secondary effect chances have their accuracy doubled.",
@@ -1792,33 +1819,7 @@ exports.BattleAbilities = {
 		id: "fromashes",
 		name: "From Ashes",
 	},
-	"magicbreak": {
-		shortDesc: "This Pokemon's attacks ignore the effects of the opponent's items.",
-		onStart: function (pokemon) {
-			this.add('-ability', pokemon, 'Magic Break');
-		},
-		onModifyMove: function (move) {
-			move.ignoreItem = true;
-		},
-		id: "magicbreak",
-		name: "Magic Break",
-	},
-		"raptorhead": {
-		desc: "Prevents recoil damage and Attack reduction.",
-		shortDesc: "Prevents recoil damage and Attack reduction.",
-		onDamage: function (damage, target, source, effect) {
-			if (effect.id === 'recoil' && this.activeMove.id !== 'struggle') return null;
-		},
-		onBoost: function (boost, target, source, effect) {
-			if (source && target === source) return;
-			if (boost['atk'] && boost['atk'] < 0) {
-				delete boost['atk'];
-				if (!effect.secondaries) this.add("-fail", target, "unboost", "Attack", "[from] ability: Raptor Head", "[of] " + target);
-			}
-		},
-		id: "raptorhead",
-		name: "Raptor Head",
-	}, */
+	 */
 	// Under Pressure: This Pokemon's status is cured at the end of each turn, but it uses 2 PP every time it attacks.
    // Breaker: This pokemon's attacks aren't hindered by stat boosts, drops or abilities.
 	// Bodyguard: Grants immunity to moves that would lower this Pokemon's stats.
