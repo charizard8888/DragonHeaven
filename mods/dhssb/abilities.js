@@ -638,7 +638,7 @@ exports.BattleAbilities = {
 		id: "slowchat",
 		name: "Slowchat",
 	},
-		"girlpower": {
+	/*	"girlpower": {
 		shortDesc: "+1 Def on switch in + Fairy Aura + Pixilate",
 		onStart: function (pokemon) {
 			this.add('-ability', pokemon, 'Static Boost');
@@ -664,7 +664,7 @@ exports.BattleAbilities = {
 			if (move.pixilateBoosted) return this.chainModify([0x1333, 0x1000]);
 		},
 		id:'girlpower',
-		name:'Girl Power',
+		name:'Girl Power', */
 	},
 
 };
