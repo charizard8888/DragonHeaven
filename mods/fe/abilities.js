@@ -1717,7 +1717,7 @@ exports.BattleAbilities = {
 		id: "sandyeyes",
 		name: "Sandy Eyes",
 	},
-	"sharparmor": {
+/*	"sharparmor": {
 		shortDesc: "Atk is raised by 2 when hit by a Water-type move and lowered by 2 when hit by a Fire-type; gives immunity to Water-type moves.",
 		onAfterDamage: function (damage, target, source, effect) {
 			if (effect && effect.type === 'Water') {
@@ -1818,9 +1818,7 @@ exports.BattleAbilities = {
 		},
 		id: "raptorhead",
 		name: "Raptor Head",
-	},
-};
-
+	}, */
 	// Under Pressure: This Pokemon's status is cured at the end of each turn, but it uses 2 PP every time it attacks.
    // Breaker: This pokemon's attacks aren't hindered by stat boosts, drops or abilities.
 	// Bodyguard: Grants immunity to moves that would lower this Pokemon's stats.
@@ -1833,3 +1831,5 @@ exports.BattleAbilities = {
 // Charm Star: Moves without a secondary effect have a 20% chance to attract the opponent.
 // Glassing: If the opponent uses a Ground-type move it becomes Burned; Ground immunity.
 // Justice Power: Every time the opponent attacks this Pokemon with a Dark-type move, this Pokémon's Attack is raised by 1 and the move's PP are halved (doesn't apply if the move has 1 PP left).
+
+};
