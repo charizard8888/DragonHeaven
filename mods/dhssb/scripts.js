@@ -5,17 +5,17 @@ exports.BattleScripts = {
 		let team = [];
 		let variant = (this.random(2) === 1);
 		let sets = {
-			'Reviloja 753' : {
-				species: 'Sylveon', ability: 'Girl Power', item: 'Leftovers', gender: 'F', 
-				moves: ['earthpower', 'recover', 'psyshock'],
-				signatureMove: "Girly Girl",evs: {spa: 160, spd: 96, spe: 252},
-				nature:'Modest',
-			},
 			'Uncle Flacco' : {
 				species: 'Shuckle', ability: 'Juice Drink', item: 'Binding Band', gender: 'M', 
 				moves: ['defendorder', 'shoreup', 'stickyweb'],
 				signatureMove: "Stone Wrap",evs: {hp: 252, atk:252, spd: 252, def: 252, spe: 252},
 				nature:'Bold',
+			},
+				'Reviloja 753' : {
+				species: 'Sylveon', ability: 'Girl Power', item: 'Leftovers', gender: 'F', 
+				moves: ['earthpower', 'recover', 'psyshock'],
+				signatureMove: "Girly Girl",evs: {spa: 160, spd: 96, spe: 252},
+				nature:'Modest',
 			},
 			'shwb' : {
 				species: 'Lucario-Mega', ability: 'Brute Force', item: 'Leftovers', gender: 'M', shiny:true,
