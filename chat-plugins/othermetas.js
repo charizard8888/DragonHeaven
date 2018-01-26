@@ -642,4 +642,16 @@ typeopthelp: ["/eternalmons - Shows the list of Pokemon in Type Optimisation Pok
 		this.sendReplyBox(`${buf}</div>`);
 	},
 	tnfghelp: ["/tnfg - Shows the list of Pokemon in Pokemon: The New First Gen."],
+	
+		mfa: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of MFA Pokemon</h2></center>`;
+		let mfaDex = require('../mods/megasforall/pokedex.js').BattlePokedex;
+		if (!mfaDex) return this.errorReply("Error Fetching MFA Data.");
+		Object.values(mfaDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.species}, megasforall" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+		mfa: ["/mfa - Shows the list of Pokemon in Megas For All."],
 };
