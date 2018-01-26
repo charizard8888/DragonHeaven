@@ -653,5 +653,5 @@ typeopthelp: ["/eternalmons - Shows the list of Pokemon in Type Optimisation Pok
 		});
 		this.sendReplyBox(`${buf}</div>`);
 	},
-		mfa: ["/mfa - Shows the list of Pokemon in Megas For All."],
+		mfahelp: ["/mfa - Shows the list of Pokemon in Megas For All."],
 };
