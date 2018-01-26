@@ -642,7 +642,7 @@ exports.BattleAbilities = {
 		shortDesc: "+1 Def on switch in + Fairy Aura + Pixilate",
 		onStart: function (pokemon) {
 			this.add('-ability', pokemon, 'Static Boost');
-			this.boost({def:1});
+			this.boost({def: +1});
 		},
 		onStart: function (pokemon) {
 			this.add('-ability', pokemon, 'Fairy Aura');
