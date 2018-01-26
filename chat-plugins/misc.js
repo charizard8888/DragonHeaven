@@ -365,4 +365,59 @@ monc: function (target, room, user, connection, cmd) {
 monchelp:function (target, room, user, connection, cmd) {
 	this.sendReplyBox('/monc name, Dex Num, Name, Types, HP, Atk, Def, SpA, SpD, Spe, Abilities, Weight <br> <b>name:</b> For the first name add no hypens so it should be like charizard <br> <b>Dex Num</b> is the Dex Number <br><b>Name:</b> Now type the name as you want it to be seen in battle like Charizard <br><b>Types:</b> If the mon is a monotyped Pokemon like Dugtrio - Ground then just type that in and move on but if it is dual typed like Zard type in Fire, Flying and after getting the output make add &quot; after Fire and before Flying (Dont do this before or the command show broken result) | It should look like this &quot;Fire&quot;, &quot;Flying&quot; | Two of the quote marks would be already there <br> Then come the stats HP, Atk, Def, SpA, SpD, Spe <br><b>Abilties:</b> This is complex <br><b>Weight:</b> The mon&#39;s weight <br>Use / (Forwards Slash) as separator <br><br><b>Example:</b><br>/monc charizard/6/Charizard/Fire, Flying/78/84/78/109/85/100/0: Blaze, H: Solar Power/90.5 <br><br>Hit Generate and we&#39;re good!<br>Contact <b><font color=#FFA000>charizard8888</font></b> or <b><font color=#AC33D1>Ludicrousity</font></b> for more info!');
 },
+	mfat: function (target, room, user, connection, cmd) {
+    if (!this.runBroadcast()) return;
+    if (!target) return this.parse('/mfathelp');
+    if (!target) target = 'help';
+    let separated = target.split(",");
+	 let target1 = (("" + separated[0]).trim());
+    let target2 = (("" + separated[0]).trim()).toLowerCase();
+    let target3 = (("" + separated[1]).trim());
+    let target4 = (("" + separated[2]).trim());
+    let target5 = (("" + separated[3]).trim());
+    let target6 = (("" + separated[4]).trim());
+    let target7 = (("" + separated[5]).trim());
+    let target8 = (("" + separated[6]).trim());
+    let target9 = (("" + separated[7]).trim());
+    let target10 = (("" + separated[8]).trim());
+    let target11 = (("" + separated[9]).trim());
+    let target12 = (("" + separated[10]).trim());
+    let target13 = (("" + separated[11]).trim());
+    let target14 = (("" + separated[12]).trim()).toUpperCase();
+    let target15 = (("" + separated[13]));
+    let target16 = (("" + separated[14]));
+    let target17 = (("" + separated[15]));
+    this.sendReplyBox('<center><button name="receive" value="|html|<a href=>pokedex.js</a><br><br>'+target2+'mega : {<br>num: '+target3+',<br> species: &quot;'+target1+'-Mega&quot;,<br> baseSpecies: &quot;'+target1+'&quot;,<br> forme: &quot;Mega&quot;,<br>formeLetter: &quot;M&quot;, <br> types: [&quot;'+target4+'&quot;, &quot;'+target5+'&quot;], <br>baseStats:{hp: '+target6+', atk: '+target7+', def: '+target8+', spa: '+target9+', spd: '+target10+', spe: '+target11+'},<br>abilities: {0: &quot;'+target12+'&quot;}, <br> weightkg: '+target13+', <br> };<br><br><a href=>items.js</a><br><br>&quot;'+target1+'ite: {<br>id:&quot;'+target1+'ite&quot;, <br>name:&quot;'+target2+'ite&quot;,<br>megaStone: &quot;'+target1+'-Mega&quot;, <br> megaEvolves: &quot;'+target1+'&quot;,<br>onTakeItem: function (item, source) {<br>if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;<br>return true;<br>},<br>gen: 6,<br>desc: &quot;If holder is a '+target1+', this item allows it to Mega Evolve in battle.&quot;,<br>}, <br><br><a href=>formats-data.js</a><br><br>'+target2+'mega: {<br>randomBattleMoves: [&quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;,], <br>randomDoubleBattleMoves: [&quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;,],<br>requiredItem: &quot;'+target2+'ite&quot;,<br>tier: &quot;'+target14+'&quot;,<br>}, <br><br><a href=>learnsets.js</a><br>'+target2+': {learnset: {<br>'+target15+': [&quot;7L1&quot;],<br>'+target16+': [&quot;7L1&quot;], <br> '+target17+': [&quot;7L1&quot;,]<br>}},,<br><br><a href=http://jsbeautifier.org/>jsbeautifier</a>" style="background-color:black;color:aqua;font-size:36px;border: 6px solid aqua;"><img src="http://play.pokemonshowdown.com/sprites/xyani/marshadow.gif" width="43" height="63">Generate<img src="http://play.pokemonshowdown.com/sprites/xyani/marshadow.gif" width="43" height="63"></button></center><br><marquee direction="left"><img src="http://www.pokestadium.com/assets/img/sprites/misc/icons/charizard-mega-x.png" width="40" height="30"></marquee>');
+
+	},
+	mfathelp:function (target, room, user, connection, cmd) {
+	this.sendReplyBox('/mfat Pokemon, Dex#, Type 1, Type 2, HP, Atk, Def, SpA, SpD, Spe, Ability, Weight, Tier, New Move 1, New Move 2, New Move 3');
+},
+mfam: function (target, room, user, connection, cmd) {
+    if (!this.runBroadcast()) return;
+    if (!target) return this.parse('/mfamhelp');
+    if (!target) target = 'help';
+    let separated = target.split(",");
+	 let target1 = (("" + separated[0]).trim());
+    let target2 = (("" + separated[0]).trim()).toLowerCase();
+    let target3 = (("" + separated[1]).trim());
+    let target4 = (("" + separated[2]).trim());
+    let target5 = (("" + separated[3]).trim());
+    let target6 = (("" + separated[4]).trim());
+    let target7 = (("" + separated[5]).trim());
+    let target8 = (("" + separated[6]).trim());
+    let target9 = (("" + separated[7]).trim());
+    let target10 = (("" + separated[8]).trim());
+    let target11 = (("" + separated[9]).trim());
+    let target12 = (("" + separated[10]).trim());
+    let target13 = (("" + separated[11]).trim()).toUpperCase();
+    let target14 = (("" + separated[12]).trim());
+    let target15 = (("" + separated[13]).trim());
+    let target16 = (("" + separated[14]).trim());
+    this.sendReplyBox('<center><button name="receive" value="|html|<a href=>pokedex.js</a><br><br>'+target2+'mega : {<br>num: '+target3+',<br> species: &quot;'+target1+'-Mega&quot;,<br> baseSpecies: &quot;'+target1+'&quot;,<br> forme: &quot;Mega&quot;,<br>formeLetter: &quot;M&quot;, <br> types: [&quot;'+target4+'&quot;], <br>baseStats:{hp: '+target5+', atk: '+target6+', def: '+target7+', spa: '+target8+', spd: '+target9+', spe: '+target10+'},<br>abilities: {0: &quot;'+target11+'&quot;}, <br> weightkg: '+target12+', <br> };<br><br><a href=>items.js</a><br><br>&quot;'+target1+'ite: {<br>id:&quot;'+target1+'ite&quot;, <br>name:&quot;'+target2+'ite&quot;,<br>megaStone: &quot;'+target1+'-Mega&quot;, <br> megaEvolves: &quot;'+target1+'&quot;,<br>onTakeItem: function (item, source) {<br>if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;<br>return true;<br>},<br>gen: 6,<br>desc: &quot;If holder is a '+target1+', this item allows it to Mega Evolve in battle.&quot;,<br>}, <br><br><a href=>formats-data.js</a><br><br>'+target2+'mega: {<br>randomBattleMoves: [&quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;,], <br>randomDoubleBattleMoves: [&quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;,],<br>requiredItem: &quot;'+target2+'ite&quot;,<br>tier: &quot;'+target13+'&quot;,<br>},<br><br> <a href=>learnsets.js</a><br>'+target2+': {learnset: {<br>'+target14+': [&quot;7L1&quot;],<br>'+target15+': [&quot;7L1&quot;], <br> '+target16+': [&quot;7L1&quot;,]<br>}} <br><br><a href=http://jsbeautifier.org/>jsbeautifier</a>" style="background-color:black;color:aqua;font-size:36px;border: 6px solid aqua;"><img src="http://play.pokemonshowdown.com/sprites/xyani/marshadow.gif" width="43" height="63">Generate<img src="http://play.pokemonshowdown.com/sprites/xyani/marshadow.gif" width="43" height="63"></button></center><br><marquee direction="left"><img src="http://www.pokestadium.com/assets/img/sprites/misc/icons/charizard-mega-x.png" width="40" height="30"></marquee>');
+
+	},
+	mfamhelp:function (target, room, user, connection, cmd) {
+	this.sendReplyBox('/mfat Pokemon, Dex#, Type, HP, Atk, Def, SpA, SpD, Spe, Ability, Weight, Tier, New Move 1, New Move 2, New Move 3');
+},
 };
