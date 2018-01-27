@@ -314,7 +314,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 150,
 		contestType: "Tough",
 	},
-	/*	"batteryoverload": {
+		"batteryoverload": {
 		accuracy: 100,
 		basePower: 110,
 		category: "Physical",
@@ -341,7 +341,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		type: "Electric",
 		zMovePower: 185,
 		contestType: "Cool",
-	},*/
+	},
 	
 	"magikarpsrevenge": {
 		accuracy: true,
@@ -385,7 +385,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 190,
 		contestType: "Cute",
 	},
-	/*"hitandrun": {
+	"hitandrun": {
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
