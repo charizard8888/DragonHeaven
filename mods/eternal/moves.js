@@ -264,7 +264,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		type: "Ghost",
 		zMovePower: 175,
 		contestType: "Tough",
-	},/*
+	},
 	"particlecannon": {
 		accuracy: 100,
 		basePower: 120,
