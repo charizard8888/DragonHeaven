@@ -314,7 +314,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 150,
 		contestType: "Tough",
 	},
-		"batteryoverload": {
+	/*	"batteryoverload": {
 		accuracy: 100,
 		basePower: 110,
 		category: "Physical",
@@ -341,7 +341,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		type: "Electric",
 		zMovePower: 185,
 		contestType: "Cool",
-	},
+	},*/
 	
 	"magikarpsrevenge": {
 		accuracy: true,
@@ -423,7 +423,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 175,
 		contestType: "Cool",
 	},
-	"highnoonclaw": {
+/*	"highnoonclaw": {
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
@@ -446,7 +446,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		type: "Dragon",
 		zMovePower: 175,
 		contestType: "Cute",
-	},
+	},*/
 	"kineticblow": {
 		accuracy: 90,
 		basePower: 90,
@@ -471,7 +471,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 175,
 		contestType: "Beautiful",
 	},
-	"paragongift": {
+	/*"paragongift": {
 		accuracy: 100,
 		basePower: 0,
 		category: "Status",
@@ -496,7 +496,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		type: "Dragon",
 		zMoveEffect: 'healreplacement',
 		contestType: "Cool",
-	},
+	},*/
 	"magicalegg": {
 		accuracy: 100,
 		basePower: 0,
@@ -589,7 +589,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 175,
 		contestType: "Clever",
 	},
-	"protostarburst": {
+	/*"protostarburst": {
 		accuracy: 100,
 		basePower: 90,
 		category: "Special",
@@ -670,7 +670,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		type: "Psychic",
 		zMovePower: 175,
 		contestType: "Clever",
-	},
+	},*/
 	"despoilingvines": {
 		num: 73,
 		accuracy: 90,
@@ -787,7 +787,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 160,
 		contestType: "Beautiful",
 	},
-		"spikestorm": {
+	/*	"spikestorm": {
 		accuracy: 90,
 		basePower: 20,
 		category: "Physical",
@@ -810,7 +810,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		type: "Ground",
 		zMovePower: 80,
 		contestType: "Tough",
-	},
+	},*/
 		"metalliccharge": {
 		accuracy: 100,
 		basePower: 160,
@@ -874,7 +874,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 200,,
 		contestType: "Cute",
 	},
-	"magneticcharge": {
+	/*"magneticcharge": {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -911,7 +911,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		type: "Electric",
 		zMoveBoost: 'clearnegativeboosts',
 		contestType: "Tough",
-	},
+	},*/
 	"aerialsmash": {
 		accuracy: 100,
 		basePower: 170,
