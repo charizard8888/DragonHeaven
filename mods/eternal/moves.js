@@ -156,7 +156,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 			status: 'brn',
 		},
 		onEffectiveness: function (typeMod, type) {
-			if (type === 'Normal') return 0;
+			if (type === 'Normal') return 1;
 		},
 		target: "normal",
 		type: "Ghost",
@@ -314,4 +314,162 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 150,
 		contestType: "Tough",
 	},
+		"batteryoverload": {
+		accuracy: 100,
+		basePower: 110,
+		category: "Physical",
+		desc: "Raises user's Attack stat, but also raises foe's Special Attack stat",
+		shortDesc: "Raises user's Attack stat, but also raises foe's Special Attack stat",
+		id: "batteryoverload",
+		isViable: true,
+		name: "Battery Overload",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					atk: 1,
+				},
+			},
+			boosts: {
+				spa: 1,
+			},
+		},
+		target: "normal",
+		type: "Electric",
+		zMovePower: 185,
+		contestType: "Cool",
+	},
+	
+	"magikarpsrevenge": {
+		accuracy: true,
+		basePower: 120,
+		category: "Physical",
+		desc: "Has a 100% chance to confuse the target and lower its Defense and Special Attack by 1 stage. The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down. The user steals the foe's boosts. If this move is successful, the weather changes to rain unless it is already in effect, and the user gains the effects of Aqua Ring and Magic Coat.",
+		shortDesc: "Does many things turn 1. Can't move turn 2.",
+		id: "magikarpsrevenge",
+		isNonstandard: true,
+		name: "Magikarp's Revenge",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, recharge: 1, protect: 1, mirror: 1},
+		noSketch: true,
+		drain: [1, 2],
+		onTry: function (pokemon) {
+			if (pokemon.template.name !== 'Magikarp') {
+				this.add('-fail', pokemon, 'move: Magikarp\'s Revenge');
+				return null;
+			}
+		},
+		self: {
+			onHit: function (source) {
+				this.setWeather('raindance');
+				source.addVolatile('magiccoat');
+				source.addVolatile('aquaring');
+			},
+			volatileStatus: 'mustrecharge',
+		},
+		secondary: {
+			chance: 100,
+			volatileStatus: 'confusion',
+			boosts: {
+				def: -1,
+				spa: -1,
+			},
+		},
+		stealsBoosts: true,
+		target: "normal",
+		type: "Water",
+		zMovePower: 190,
+		contestType: "Cute",
+	},
+	"hitandrun": {
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		desc: "If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members, or if the target switched out using an Eject Button.",
+		shortDesc: "User switches out after damaging the target.",
+		id: "hitandrun",
+		isViable: true,
+		name: "Hit and Run",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		selfSwitch: true,
+		secondary: false,
+		target: "normal",
+		type: "Bug",
+		zMovePower: 180,
+		contestType: "Cute",
+	},
+	"darttricks": {
+		accuracy: 90,
+		basePower: 30,
+		category: "Special",
+		desc: "Hits 3 times, with each hit having its own accuracy check and a high critical hit ratio",
+		shortDesc: "Hits 3 times, with each hit having its own accuracy check and a high critical hit ratio",
+		id: "darttricks",
+		name: "Dart Tricks",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		multihit: 3,
+		critRatio: 2,
+		secondary: false,
+		target: "normal",
+		type: "Rock",
+		zMovePower: 175,
+		contestType: "Cool",
+	},
+	"highnoonclaw": {
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		desc: "Deals 1.5* damage if the weather is Sunny.",
+		shortDesc: "Deals 1.5* damage if the weather is Sunny.",
+		id: "highnoonclaw",
+		isViable: true,
+		name: "High Noon Claw",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onBasePowerPriority: 8,
+		onBasePower: function (basePower, pokemon) {
+			if (this.isWeather(['sunnyday', 'desolateland'])) {
+				return this.chainModify(1.5);
+			}
+		},
+		secondary: false,
+		target: "normal",
+		type: "Dragon",
+		zMovePower: 175,
+		contestType: "Cute",
+	},
+	"kineticblow": {
+		accuracy: 90,
+		basePower: 90,
+		category: "Special",
+		desc: "15% chance to raise the user's Special Attack stat by 1 stage.",
+		shortDesc: "15% chance to raise the user's Sp. Atk by 1.",
+		id: "kineticblow",
+		name: "Kinetic Blow",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 15,
+			self: {
+				boosts: {
+					spa: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Psychic",
+		zMovePower: 175,
+		contestType: "Beautiful",
+	},
 };
+/* Signature Move: Beauty Drain | Status | Water | 100% Acc | 10 PP | The user heals its HP by the same amount as the target's Special Defense stat (after modifiers). It also lowers target's Special Defense by one stage */
