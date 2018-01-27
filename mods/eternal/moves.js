@@ -471,7 +471,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 175,
 		contestType: "Beautiful",
 	},
-	/*"paragongift": {
+	"paragongift": {
 		accuracy: 100,
 		basePower: 0,
 		category: "Status",
@@ -496,8 +496,8 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		type: "Dragon",
 		zMoveEffect: 'healreplacement',
 		contestType: "Cool",
-	},*/
-/*	"magicalegg": {
+	},
+/*"magicalegg": {
 		accuracy: 100,
 		basePower: 0,
 		damageCallback: function (pokemon) {
