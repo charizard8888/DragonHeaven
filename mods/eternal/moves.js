@@ -730,7 +730,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 180,
 		contestType: "Tough",
 	},
-		/*"pileup": {
+		"pileup": {
 		accuracy: true,
 		basePower: 0,
 		category: "Special",
@@ -756,7 +756,8 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 				let boost = {};
 				boost[randomStat] = 1;
 				this.boost(boost);
-			} else {
+			} 
+				else {
 				return false;
 			}
 		},
@@ -766,7 +767,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMoveEffect: 'clearnegativeboost',
 		contestType: "Tough",
 	},
-	"ardentstrike": {
+	/*"ardentstrike": {
 		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
