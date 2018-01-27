@@ -671,7 +671,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 175,
 		contestType: "Clever",
 	},
-	/*"despoilingvines": {
+	"despoilingvines": {
 		num: 73,
 		accuracy: 90,
 		basePower: 35,
@@ -730,7 +730,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 180,
 		contestType: "Tough",
 	},
-		"pileup": {
+		/*"pileup": {
 		accuracy: true,
 		basePower: 0,
 		category: "Special",
