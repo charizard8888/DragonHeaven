@@ -879,7 +879,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 200,
 		contestType: "Cool",
 	},
-	"magneticcharge": {
+	/*"magneticcharge": {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -916,7 +916,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		type: "Electric",
 		zMoveBoost: 'clearnegativeboosts',
 		contestType: "Tough",
-	},
+	},*/
 	"aerialsmash": {
 		accuracy: 100,
 		basePower: 170,
