@@ -767,7 +767,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMoveEffect: 'clearnegativeboost',
 		contestType: "Tough",
 	},
-	/*"ardentstrike": {
+	"ardentstrike": {
 		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
@@ -788,7 +788,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 160,
 		contestType: "Beautiful",
 	},
-	/*	"spikestorm": {
+		"spikestorm": {
 		accuracy: 90,
 		basePower: 20,
 		category: "Physical",
@@ -811,8 +811,8 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		type: "Ground",
 		zMovePower: 80,
 		contestType: "Tough",
-	},*/
-	/*	"metalliccharge": {
+	},
+	"metalliccharge": {
 		accuracy: 100,
 		basePower: 160,
 		category: "Physical",
@@ -852,15 +852,15 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 180,
 		contestType: "Beautiful",
 	},
-		"honeclaws": {
+		"deadonstrike": {
 		accuracy: true,
 		basePower: 120,
 		category: "Physical",
 		desc: "Raises the user's accuracy by 1 stage. Ignores accuracy check.",
 		shortDesc: "Raises the user's accuracy by 1 stage. Ignores accuracy check.",
-		id: "honeclaws",
+		id: "deadonstrike",
 		isViable: true,
-		name: "Hone Claws",
+		name: "Dead-on Strike",
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
