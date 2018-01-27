@@ -46,7 +46,7 @@ class RandomSeasonalTeams extends RandomTeams {
 			'Zapmaster2010' : {
 				species: 'Scrafty', ability: 'Punishment Prize', item: 'Zapmasterium-Z', gender: 'M',
 				moves: ['shiftgear', 'sunsteelstrike', 'foulplay'],
-				signatureMove: "Knee of Justice",evs: {hp: 252, atk:252, spd: 252, def: 252, spe: 252},
+				signatureMove: "Shitpost",evs: {hp: 252, atk:252, spd: 252, def: 252, spe: 252},
 				nature:'Adamant',
 			},
 			'Zygardeorder' : {
