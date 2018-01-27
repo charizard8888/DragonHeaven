@@ -1151,6 +1151,64 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 195,
 		contestType: "Cute",
 	},
+	"tranquillity": {
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "Removes all hazards, screens and stat modifications from all active Pokémon in play, and removes all forms of status from the team, then switches out.",
+		shortDesc: "Removes all hazards, screens and stat modifications from all active Pokémon in play, and removes all forms of status from the team, then switches out.",
+		id: "tranquillity",
+		isViable: true,
+		name: "Tranquillity",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, authentic: 1},
+		selfSwitch: true,
+		onHit: function (target, source, move) {
+			if (!target.volatiles['substitute'] || move.infiltrates) this.boost({evasion: -1});
+			let removeTarget = ['reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', 'spikes', 'toxicspikes', 'stealthrock', 'stickyweb'];
+			let removeAll = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb'];
+			let success = false;
+			for (let targetCondition of removeTarget) {
+				if (target.side.removeSideCondition(targetCondition)) {
+					if (!removeAll.includes(targetCondition)) continue;
+					this.add('-sideend', target.side, this.getEffect(targetCondition).name, '[from] move: Defog', '[of] ' + target);
+					success = true;
+				}
+			}
+			for (let sideCondition of removeAll) {
+				if (source.side.removeSideCondition(sideCondition)) {
+					this.add('-sideend', source.side, this.getEffect(sideCondition).name, '[from] move: Defog', '[of] ' + source);
+					success = true;
+				}
+			}
+			return success;
+		},
+		onHit: function (pokemon, source) {
+			this.add('-activate', source, 'move: Heal Bell');
+			let side = pokemon.side;
+			let success = false;
+			for (const ally of side.pokemon) {
+				if (ally.hasAbility('soundproof')) continue;
+				if (ally.cureStatus()) success = true;
+			}
+			return success;
+		},
+		onHitField: function () {
+			this.add('-clearallboost');
+			for (let i = 0; i < this.sides.length; i++) {
+				for (let j = 0; j < this.sides[i].active.length; j++) {
+					if (this.sides[i].active[j] && this.sides[i].active[j].isActive) this.sides[i].active[j].clearBoosts();
+				}
+			}
+		},
+		secondary: false,
+		target: "normal",
+		type: "Flying",
+		zMoveEffect: 'healreplacement',
+		contestType: "Cool",
+	},
+	"destinybond": {
 	/*"magneticcharge": {
 		accuracy: true,
 		basePower: 0,
