@@ -25,6 +25,25 @@ exports.BattleAbilities = {
 			return false;
 		},
 	},
+	"punishmentprize": {
+		desc: "If this Pokemon is Zap, it transforms into Zap-Pineapple after knocking out a Pokemon.",
+		shortDesc: "After KOing a Pokemon: becomes Zap-Pineapple. +1 all stats.",
+		onSourceFaint: function (target, source, effect) {
+			if (effect && effect.effectType === 'Move' && source.template.speciesid === 'scrafty' && source.hp && !source.transformed && source.side.foe.pokemonLeft) {
+				this.add('-activate', source, 'ability: Punishment Prize');
+				let template = this.getTemplate('Zapmaster-Pineapple');
+				source.formeChange(template);
+				source.baseTemplate = template;
+				source.details = template.species + (source.level === 100 ? '' : ', L' + source.level) + (source.gender === '' ? '' : ', ' + source.gender) + (source.set.shiny ? ', shiny' : '');
+				this.add('detailschange', source, source.details);
+			}
+		},
+		
+		id: "punishmentprize",
+		name: "Punishment Prize",
+		rating: 3,
+		num: 210,
+	},
 	"moonlightguard": {
 		name:"Moonlight Aura",
 		id: "moonlightaura",
