@@ -9,8 +9,8 @@ class RandomSeasonalTeams extends RandomTeams {
 		let sets = {
 			'Reviloja 753' : {
 				species: 'Sylveon', ability: 'Girl Power', item: 'Leftovers', gender: 'F', 
-				moves: ['earthpower', 'recover', 'psyshock'],
-				signatureMove: "Girly Girl",evs: {hp: 252, atk:252, spd: 252, def: 252, spe: 252},
+				moves: ['earthpower', 'recover', 'psystrike'],
+				signatureMove: "Girly Girl",evs: {spd: 96, spa: 160, spe: 252},
 				nature:'Modest',
 			},
 			'Uncle Flacco' : {
