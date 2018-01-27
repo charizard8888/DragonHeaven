@@ -917,7 +917,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMoveBoost: 'clearnegativeboosts',
 		contestType: "Tough",
 	},*/
-	"aerialsmash": {
+	/*"aerialsmash": {
 		accuracy: 100,
 		basePower: 170,
 		category: "Physical",
