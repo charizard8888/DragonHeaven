@@ -41,7 +41,7 @@ exports.BattleMovedex = {
 		zMovePower: 200,
 		contestType: "Cool",
 	},
-        "seenoevil": {
+      "seenoevil": {
 		accuracy: 100,
 		basePower: 100,
 		category: "Special",
@@ -63,7 +63,7 @@ exports.BattleMovedex = {
 		zMovePower: 180,
 		contestType: "Clever",
 	},
-        "gigavoltimpact": {
+      "gigavoltimpact": {
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
@@ -101,7 +101,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		type: "Ice",
 		zMovePower: 25,
 	},
-	"darkcrowdive": {
+/*	"darkcrowdive": {
 		accuracy: 95,
 		basePower: 150,
 		category: "Physical",
@@ -912,7 +912,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMoveBoost: 'clearnegativeboosts',
 		contestType: "Tough",
 	},*/
-	"aerialsmash": {
+/*	"aerialsmash": {
 		accuracy: 100,
 		basePower: 170,
 		category: "Physical",
@@ -967,7 +967,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		type: "Fighting",
 		zMovePower: 150,
 		contestType: "Clever",
-	},
+	}, */
 };
 /* Signature Move: Beauty Drain | Status | Water | 100% Acc | 10 PP | The user heals its HP by the same amount as the target's Special Defense stat (after modifiers). It also lowers target's Special Defense by one stage 
 Signature Move: Nuclear Pollen - Grass, Other, 5 PP | For 5 turns, all Pokémon on the field are resistant to normally super-effective types and weak to normally not-very-effective or ineffective types (as in Inverse Battles) | Z-Move: Resets negative stat boosts
