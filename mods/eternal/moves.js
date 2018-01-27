@@ -1151,7 +1151,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 195,
 		contestType: "Cute",
 	},
-	"tranquillity": {
+	/*"tranquillity": {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -1207,8 +1207,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		type: "Flying",
 		zMoveEffect: 'healreplacement',
 		contestType: "Cool",
-	},
-	"destinybond": {
+	},*/
 	/*"magneticcharge": {
 		accuracy: true,
 		basePower: 0,
