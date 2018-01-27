@@ -812,6 +812,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 80,
 		contestType: "Tough",
 	},*/
+	
 	"metalliccharge": {
 		accuracy: 100,
 		basePower: 160,
@@ -824,17 +825,17 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		pp: 10,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
+		recoil: [3, 4],
 		secondary: {
 			chance: 30,
 			volatileStatus: 'flinch',
 		},
-		recoil: [3, 4],
 		target: "normal",
 		type: "Steel",
 		zMovePower: 200,
 		contestType: "Tough",
 	},
-	"rapidcascade": {
+/*	"rapidcascade": {
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
