@@ -80,9 +80,29 @@ exports.BattleMovedex = {
 		zMovePower: 195,
 		contestType: "Cool",
 	},
+		"shitpost": {
+		accuracy: true,
+		basePower: 170,
+		category: "Physical",
+		desc: "Targets all foes. Can hit Ghost-types.",
+		shortDesc: "Targets all foes. Can hit Ghost-types.",
+		id: "shitpost",
+		isViable: true,
+		name: "Shitpost",
+		pp: 24,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onEffectiveness: function (typeMod, type) {
+			if (type === 'Ghost') return 1;
+		},
+		target: "allAdjacentFoes",
+		type: "Fighting",
+		zMovePower: 230,
+		contestType: "Tough",
+	},
 	"kneeofjustice": {
 		accuracy: true,
-		basePower: 200,
+		basePower: 230,
 		category: "Physical",
 		desc: "Can hit Ghost Types.",
 		shortDesc: "Can hit Ghost Types.",
@@ -96,24 +116,22 @@ exports.BattleMovedex = {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "High Jump Kick", target);
 		},
-		self: {
+		secondary: {
 			boosts: {
-				def: +1,
-				spd: +1,
-				atk: +1,
+				def: -3,
+				spd: -3,
+				atk: -3,
 			},
 		},
 		onEffectiveness: function (typeMod, type) {
-			if (type === 'Ghost') return 0;
-			if (type === 'Psychic') return 2;
-			if (type === 'Fairy') return 2;
-			if (type === 'Poison') return 2;
+			if (type === 'Ghost') return 1;
 		},
 		secondary: false,
 		target: "normal",
 		type: "Fighting",
-		zMovePower: 400,
+		zMovePower: 230,
 		contestType: "Cool",
+		isZ: "zapmasteriumz",
 	},
 	"thenetherlandsfirst": {
 		accuracy: 100,
@@ -1011,6 +1029,32 @@ exports.BattleMovedex = {
 		type: "Ghost",
 		contestType: "Tough",
 	},
+	girlygirl: {
+		shortDesc: "120 BP Special Normal-type move with 16 PP and 95% accuracy. It's a sound move and raises the user's speed sharply.",
+		accuracy: 100,
+		pp: 15,
+		id: "girlygirl",
+		name: "Girly Girl",
+		isNonstandard: true,
+		isViable: true,
+		basePower:120,
+		category:"Special",
+		type:"Normal",
+		target:"normal",
+		secondary:{
+			chance:100,
+			self: {
+				boosts: {
+					spe: 2, 
+					def: 1,
+				},
+			},
+		},
+		onPrepareHit: function (target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Boomburst", target);
+		},
+	},
 	// Modified moves
 	"defog": {
 		inherit: true,
@@ -1060,30 +1104,5 @@ exports.BattleMovedex = {
 		inherit: true,
 		accuracy: 45,
 	},
-	girlygirl: {
-		shortDesc: "120 BP Special Normal-type move with 16 PP and 95% accuracy. It's a sound move and raises the user's speed sharply.",
-		accuracy: 100,
-		pp: 15,
-		id: "girlygirl",
-		name: "Girly Girl",
-		isNonstandard: true,
-		isViable: true,
-		basePower:120,
-		category:"Special",
-		type:"Normal",
-		target:"normal",
-		secondary:{
-			chance:100,
-			self: {
-				boosts: {
-					spe: 2, 
-					def: 1,
-				},
-			},
-		},
-		onPrepareHit: function (target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Boomburst", target);
-		},
-	},
+	
 };
