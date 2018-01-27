@@ -1080,9 +1080,6 @@ exports.BattleMovedex = {
 				},
 			},
 		},
-		onHit: function (target, source) {
-			if (this.random(2) === 1) target.trySetStatus('brn', source);
-		},
 		onPrepareHit: function (target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Boomburst", target);
