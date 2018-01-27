@@ -20,13 +20,24 @@ exports.BattlePokedex = {
 		inherit: true,
 		otherForms: ["dragonite", "gyarados"],
 	},
-	scraftymega: {
-		num: 560,
-		species: "Scrafty-Mega",
-		forme: "Mega",
-		formeLetter: "M",
-		types: ["Fighting", "Dark"],
-		baseStats: {hp:65, atk:140, def:140, spa:20, spd:140, spe:83},
-		abilities:{0:"Adaptibility"},
-	},
+	zapmasterpineapple: {
+    num: 560,
+    species: "Zapmaster-Pineapple",
+    baseSpecies: "Scrafty",
+    forme: "Pineapple",
+    formeLetter: "P",
+    types: ["Fighting", "Dark"],
+    baseStats: {
+        hp: 80,
+        atk: 110,
+        def: 180,
+        spa: 60,
+        spd: 180,
+        spe: 73
+    },
+    abilities: {
+        0: "Punishment Prize"
+    },
+    weightkg: 30,
+},
 };
