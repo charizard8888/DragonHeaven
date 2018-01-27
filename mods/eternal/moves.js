@@ -81,8 +81,8 @@ exports.BattleMovedex = {
 		zMovePower: 200,
 		contestType: "Beautiful",
 	},
-	"evolutionblast": { /* Evolution Blast (Special, 15 BP, 10 PP, 100 Acc, Hits 8 times. Changes type after each hit (Water -> Electric -> Fire -> Psychic -> Dark -> Grass -> Ice -> Fairy))
-Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigavolt Havoc...) */
+/*	"evolutionblast": { /* Evolution Blast (Special, 15 BP, 10 PP, 100 Acc, Hits 8 times. Changes type after each hit (Water -> Electric -> Fire -> Psychic -> Dark -> Grass -> Ice -> Fairy))
+Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigavolt Havoc...) 
 		accuracy: 100,
 		basePower: 15,
 		category: "Special",
@@ -100,7 +100,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		target: "normal",
 		type: "Ice",
 		zMovePower: 25,
-	},
+	},*/
 /*	"darkcrowdive": {
 		accuracy: 95,
 		basePower: 150,
@@ -385,7 +385,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 190,
 		contestType: "Cute",
 	},
-	"hitandrun": {
+	/*"hitandrun": {
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
@@ -497,7 +497,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMoveEffect: 'healreplacement',
 		contestType: "Cool",
 	},*/
-	"magicalegg": {
+/*	"magicalegg": {
 		accuracy: 100,
 		basePower: 0,
 		damageCallback: function (pokemon) {
@@ -671,7 +671,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 175,
 		contestType: "Clever",
 	},*/
-	"despoilingvines": {
+	/*"despoilingvines": {
 		num: 73,
 		accuracy: 90,
 		basePower: 35,
@@ -811,7 +811,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 80,
 		contestType: "Tough",
 	},*/
-		"metalliccharge": {
+	/*	"metalliccharge": {
 		accuracy: 100,
 		basePower: 160,
 		category: "Physical",
@@ -968,9 +968,9 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 150,
 		contestType: "Clever",
 	}, */
-};
-/* Signature Move: Beauty Drain | Status | Water | 100% Acc | 10 PP | The user heals its HP by the same amount as the target's Special Defense stat (after modifiers). It also lowers target's Special Defense by one stage 
+	/* Signature Move: Beauty Drain | Status | Water | 100% Acc | 10 PP | The user heals its HP by the same amount as the target's Special Defense stat (after modifiers). It also lowers target's Special Defense by one stage 
 Signature Move: Nuclear Pollen - Grass, Other, 5 PP | For 5 turns, all Pokémon on the field are resistant to normally super-effective types and weak to normally not-very-effective or ineffective types (as in Inverse Battles) | Z-Move: Resets negative stat boosts
 Signature Move: Phantasmal Break /   / Physical / 80 BP / 15 PP / 100 Acc / Damage dealt cannot be restored until switched out / Z-Move: 160 BP Never-Ending Nightmare
 
 */
+};
