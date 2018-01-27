@@ -1076,7 +1076,8 @@ exports.BattleMovedex = {
 			chance:100,
 			self: {
 				boosts: {
-					spe: 2,
+					spe: 2, 
+					def: 1,
 				},
 			},
 		},
