@@ -1050,6 +1050,45 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 175,
 		contestType: "Cute",
 	},
+		"holedig": {
+		accuracy: 100,
+		basePower: 135,
+		category: "Physical",
+		desc: "Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.",
+		shortDesc: "Hits adjacent foes. Prevents them from switching.",
+		id: "holedig",
+		name: "Hole Dig",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, nonsky: 1},
+		onHit: function (target, source, move) {
+			if (source.isActive) target.addVolatile('trapped', source, move, 'trapper');
+		},
+		secondary: false,
+		target: "allAdjacentFoes",
+		type: "Ground",
+		zMovePower: 200,
+		contestType: "Tough",
+	},
+	"highwaymansstrike": {
+		accuracy: 90,
+		basePower: 60,
+		category: "Physical",
+		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Abilities Battle Armor or Shell Armor.",
+		shortDesc: "Always results in a critical hit.",
+		id: "highwaymansstrike",
+		isViable: true,
+		name: "Highway Mans Strike",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		willCrit: true,
+		secondary: false,
+		target: "normal",
+		type: "Dark",
+		zMovePower: 150,
+		contestType: "Cool",
+	},
 	
 	/*"magneticcharge": {
 		accuracy: true,
@@ -1153,5 +1192,9 @@ Signature Move: Nuclear Pollen - Grass, Other, 5 PP | For 5 turns, all Pokémon 
 Signature Move: Phantasmal Break /   / Physical / 80 BP / 15 PP / 100 Acc / Damage dealt cannot be restored until switched out / Z-Move: 160 BP Never-Ending Nightmare
 Signature Move: Breakthrough - Rock, Special, 135 BP, 5 PP, 100% Acc | The user takes 1/3 recoil and loses its Rock typing for the rest of the battle. Can only be used if the user is Rock-type. | Z-Move: 200 BP Continental Crush
 Signature Move: Mineral Bath - Water, Other, 10 PP | If there are entry hazards on the user's side of the field, the user recovers 2/3 HP, and the hazards are removed. Otherwise, the user simply recovers 1/2 HP. | Z-Effect: +1 Defense
+Signature Move: Bounce Shield |  Psychic | Status   | 10 PP | Similar to protect but also deals exactly the damage it would take to the opponent attacking it | Z Move - Fully Heals the user
+Signature Move: Divine Luster |  Fairy | SPecial   | 15 PP | 90 BP | 100 Acc | If the attack is used on an foe, the attack will make damage and it'll make 1,5 times more damage, then it removes any negative status. If it targets user or an ally, it's heal 50% of max Health Points and will remove all negative stats
+Signature Move: Doldrum |  Flying | Physical   | 5 PP | - | The users summons Deltra Stream in first turn, the next turn will increase attack by one level, and defense and special defense by two levels
+Signature Move: Mythical Power (Status | Fairy | 10 PP | Resets the user's lowered stats and then boosts Special Attack by two stages)
 */
 };
