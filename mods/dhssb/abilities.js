@@ -55,22 +55,6 @@ exports.BattleAbilities = {
 		},
 		
 	},
-	"zapdem": {
-		name:"Zap Dem",
-		id:"zapdem",
-		shortDesc: "Mega evolves Zap, boosts Attack by 2 stages and Def & SpD by 4 stages",
-		onStart: function(pokemon) {
-			this.add('-ability', pokemon, 'Zap');
-			this.boost({atk:2, def:1, spd:1});
-			this.add('-formechange', pokemon, 'Charizard-Mega-Y', '[msg]');
-			this.add('-formechange', pokemon, 'Scrafty-Mega', '[msg]');
-			pokemon.formeChange("Scrafty-Mega");
-		},
-		onModifyMove: function (move) {
-			move.stab = 2;
-		},
-		
-	},
 	"extremeintimidate": { /* Fix this On switchin --> Haze --> Lower all of th foe's stats by one*/
 		name:"Extreme Intimidate",
 		id:"extremeintimidate",
