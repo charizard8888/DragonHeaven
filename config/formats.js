@@ -178,6 +178,83 @@ exports.Formats = [
 			let name = toId(pokemon.name);
 		},
 	},
+		{
+		name: "[Gen 7] Dragon Heaven Super Staff Bros Doubles",
+		desc: ["&bullet; The staff here becomes a Pokemon and battles! <br> &bullet; <a href=\"https://github.com/XpRienzo/DragonHeaven/blob/master/mods/dhssb/README.md\">Movesets</a>"],
+		mod: 'dhssb',
+		gameType: 'doubles',
+		team: 'randomSeasonalMelee',
+		ruleset: ['PotD', 'Sleep Clause Mod', 'Freeze Clause Mod', 'HP Percentage Mod', 'Cancel Mod'],
+		onBegin: function() {
+			this.add("raw|Dragon Heaven Super Staff Bros. <b>RAWWWWWWWWWWWWWR!!!!</b>");
+			this.add('message', "SURVIVAL! GET READY FOR THE NEXT BATTLE!");
+
+			let globalRenamedMoves = {};
+			let customRenamedMoves = {};
+
+			let allPokemon = this.p1.pokemon.concat(this.p2.pokemon);
+			for (let i = 0, len = allPokemon.length; i < len; i++) {
+				let pokemon = allPokemon[i];		
+				let last = pokemon.moves.length - 1;
+				if (pokemon.moves[last]) {
+					pokemon.moves[last] = toId(pokemon.set.signatureMove);
+					pokemon.moveSlots[last].move = pokemon.set.signatureMove;
+					pokemon.baseMoveSlots[last].move = pokemon.set.signatureMove;
+				}
+				let name = toId(pokemon.illusion ? pokemon.illusion.name : pokemon.name);
+				if (name == "thetruefalcon")
+				{
+					pokemon.types[1] = "Fighting";
+				}
+				if (name == "theswordbreaker")
+				{
+					pokemon.types = ["Dragon"];
+				}
+				for (let j = 0; j < pokemon.moveSlots.length; j++) {
+					let moveData = pokemon.moveSlots[j];
+					if (globalRenamedMoves[moveData.id]) {
+						pokemon.moves[j] = toId(pokemon.set.signatureMove);
+						moveData.move = globalRenamedMoves[moveData.id];
+						pokemon.baseMoveSlots[j].move = globalRenamedMoves[moveData.id];
+					}
+
+					let customRenamedSet = customRenamedMoves[toId(pokemon.name)];
+					if (customRenamedSet && customRenamedSet[moveData.id]) {
+						pokemon.moves[j] = toId(pokemon.set.signatureMove);
+						moveData.move = customRenamedSet[moveData.id];
+						pokemon.baseMoveSlots[j].move = customRenamedSet[moveData.id];
+					}
+				}
+			}
+		},
+		// Hacks for megas changed abilities. This allow for their changed abilities.
+		onUpdate: function(pokemon) {
+			let name = toId(pokemon.name);
+			if (!this.shownTip) {
+				this.add('raw|<div class=\"broadcast-green\">Huh? But what do all these weird moves do??<br><b>Protip: Refer to the <a href="https://github.com/XpRienzo/DragonHeaven/blob/master/mods/dhssb/README.md">PLAYER\'S MANUAL</a>!</b></div>');
+				this.shownTip = true;
+			}
+		},
+		// Here we treat many things, read comments inside for information.
+		onSwitchInPriority: 1,
+		onSwitchIn: function(pokemon) {
+			let name = toId(pokemon.illusion ? pokemon.illusion.name : pokemon.name);
+			// Wonder Guard is available, but it curses you.
+			if (pokemon.getAbility().id === 'wonderguard' && pokemon.baseTemplate.baseSpecies !== 'Shedinja' && pokemon.baseTemplate.baseSpecies !== 'Kakuna') {
+				pokemon.addVolatile('curse', pokemon);
+				this.add('-message', pokemon.name + "'s Wonder Guard has cursed it!");
+			}
+			if (this.data.Statuses[name] && this.data.Statuses[name].exists) {
+				pokemon.addVolatile(name, pokemon);
+			}
+			if (name === 'thetruefalcon') {
+				this.add('-start', pokemon, 'typechange', pokemon.types.join('/'), '[silent]');
+			}
+		},
+		onModifyPokemon: function(pokemon) {
+			let name = toId(pokemon.name);
+		},
+	}, 
 	{
 		name: "[Gen 7] [Main] Super Staff Bros. Melee",
 		mod: 'ssbm',
