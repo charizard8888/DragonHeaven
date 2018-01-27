@@ -853,7 +853,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 180,
 		contestType: "Beautiful",
 	},
-		/*"deadonstrike": {
+		"deadonstrike": {
 		accuracy: true,
 		basePower: 120,
 		category: "Physical",
@@ -865,9 +865,12 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		boosts: {
+		secondary: {
+			chance: 100,
 			self: {
-			accuracy: 1,
+				boosts: {
+					accuracy: 1,
+				},
 			},
 		},
 		secondary: false,
