@@ -45,8 +45,11 @@ exports.BattleMovedex = {
 			target.side.addSideCondition('toxicspikes', source);
 			target.side.addSideCondition('toxicspikes', source);
 			target.side.addSideCondition('spikes', source);
+			target.side.addSideCondition('spikes', source);
+			target.side.addSideCondition('spikes', source);
 			target.side.addSideCondition('stealthrock', source);
 			target.side.addSideCondition('stickyweb', source);
+
 			if (source.name === 'EchoGaia') this.add("c|$EchoGaia|You're screwed now)");
 		},
 		secondary: false,
@@ -95,6 +98,10 @@ exports.BattleMovedex = {
 		onEffectiveness: function (typeMod, type) {
 			if (type === 'Ghost') return 1;
 		},
+		onPrepareHit: function (target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "High Jump Kick", target);
+		},
 		target: "allAdjacentFoes",
 		type: "Fighting",
 		zMovePower: 230,
@@ -109,12 +116,12 @@ exports.BattleMovedex = {
 		id: "kneeofjustice",
 		isViable: true,
 		name: "Knee of Justice",
-		pp: 20,
+		pp: 1,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, gravity: 1},
+		flags: {contact: 1, protect: 1, mirror: 1},
 		onPrepareHit: function (target, source) {
 			this.attrLastMove('[still]');
-			this.add('-anim', source, "High Jump Kick", target);
+			this.add('-anim', source, "Dragon Ascent", target);
 		},
 		secondary: {
 			boosts: {
