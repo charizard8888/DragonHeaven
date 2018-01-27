@@ -423,7 +423,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 175,
 		contestType: "Cool",
 	},
-/*	"highnoonclaw": {
+   "highnoonclaw": {
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
@@ -446,7 +446,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		type: "Dragon",
 		zMovePower: 175,
 		contestType: "Cute",
-	},*/
+	},
 	"kineticblow": {
 		accuracy: 90,
 		basePower: 90,
@@ -471,7 +471,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 175,
 		contestType: "Beautiful",
 	},
-	"paragongift": {
+	/*"paragongift": {
 		accuracy: 100,
 		basePower: 0,
 		category: "Status",
