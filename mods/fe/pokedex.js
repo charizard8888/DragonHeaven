@@ -9103,5 +9103,1003 @@ exports.BattlePokedex = {
         },
         abilities: {0: "Aerilate"},
     },
+	giramini: {
+        num: 7500299,
+        species: "Giramini",
+        types: ["Ghost", "Rock"],
+        baseStats: {
+            hp: 110,
+            atk: 80,
+            def: 125,
+            spa: 80,
+            spd: 125,
+            spe: 80
+        },
+         abilities: {0: "Compression"},
+    },
+     giraminiunleashed: {
+        num: 7500299,
+        species: "Giramini-Unleashed",
+        baseSpecies: "Giramini",
+        forme: "Unleashed",
+        formeLetter: "U",
+        types: ["Ghost", "Rock"],
+        baseStats: {
+            hp: 110,
+            atk: 125,
+            def: 80,
+            spa: 125,
+            spd: 80,
+            spe: 140
+        },
+        abilities: {0: "Compression"},
+    },
+    
+    aquapod: {
+        num: 7500300,
+        species: "Aquapod",
+        types: ["Water", "Bug"],
+        baseStats: {
+            hp: 81,
+            atk: 107,
+            def: 126,
+            spa: 65,
+            spd: 121,
+            spe: 51
+        },
+         abilities: {0: "Bubble Slip"},
+    },
+    reshivine: {
+        num: 7500301,
+        species: "Reshivine",
+        types: ["Dragon", "Grass"],
+        baseStats: {
+            hp: 80,
+            atk: 90,
+            def: 90,
+            spa: 120,
+            spd: 100,
+            spe: 105
+        },
+         abilities: {0: "Spiral Flames"},
+    },
+    rosium: {
+        num: 7500302,
+        species: "Rosium",
+        types: ["Poison", "Grass"], 
+        baseStats: {
+            hp: 80,
+            atk: 86,
+            def: 92,
+            spa: 114,
+            spd: 112,
+            spe: 95
+        },
+         abilities: {0: "Operation Overgrow"},
+    },
+
+    valveon: {
+        num: 7500303,
+        species: "Valveon",
+        types: ["Water", "Fairy"], 
+        baseStats: {
+            hp: 122,
+            atk: 75,
+            def: 72,
+            spa: 120,
+            spd: 122,
+            spe: 72
+        },
+         abilities: {0: "Pixie Absorb"},
+    },
+    
+    raptalon: {
+        num: 7500304,
+        species: "Raptalon",
+        types: ["Flying", "Fire"], 
+        baseStats: {
+            hp: 91,
+            atk: 110,
+            def: 80,
+            spa: 72,
+            spd: 74,
+            spe: 123
+        },
+         abilities: {0: "Fearless"},
+    },
+    
+    deoxurtoutlet: {
+        num: 7500305,
+        species: "Deoxurt-Outlet",
+        types: ["Psychic", "Electric"], 
+        baseStats: {
+            hp: 86,
+            atk: 79,
+            def: 120,
+            spa: 131,
+            spd: 120,
+            spe: 86
+        },
+         abilities: {0: "Peer Pressure"},
+    },
+    
+    dio: {
+        num: 7500306,
+        species: "Dio",
+        types: ["Steel", "Normal"], 
+        baseStats: {
+            hp: 90,
+            atk: 90,
+            def: 100,
+            spa: 92,
+            spd: 87,
+            spe: 60
+        },
+         abilities: {0: "Time Stop"},
+    },
+    
+    generott: {
+        num: 7500307,
+        species: "Generott",
+        types: ["Water", "Bug"], 
+        baseStats: {
+            hp: 85,
+            atk: 120,
+            def: 90,
+            spa: 120,
+            spd: 90,
+            spe: 100
+        },
+         abilities: {0: "Upgrade"},
+    },
+    
+    darminup: {
+        num: 7500308,
+        species: "Darmin-Up",
+        types: ["Fire", "Normal"], 
+        baseStats: {
+            hp: 137,
+            atk: 160,
+            def: 87,
+            spa: 72,
+            spd: 70,
+            spe: 107
+        },
+         abilities: {0: "Rhythm"},
+    },
+    
+    darmindown: {
+        num: 7500308,
+        species: "Darmin-Down",
+        baseSpecies: "Darmin-Up",
+        forme: "Down",
+        formeLetter: "D",
+        types: ["Fire", "Psychic"], 
+        baseStats: {
+            hp: 137,
+            atk: 72,
+            def: 137,
+            spa: 160,
+            spd: 120,
+            spe: 67
+        },
+        abilities: {0: "Rhythm"},
+    },
+    
+    conkeldurus: {
+        num: 7500309,
+        species: "Conkeldurus",
+        types: ["Electric", "Fighting"], 
+        baseStats: {
+            hp: 92,
+            atk: 135,
+            def: 92,
+            spa: 90,
+            spd: 92,
+            spe: 81
+        },
+         abilities: {0: "Lightning Fist"},
+    },
+    
+    fisktres: {
+        num: 7500310,
+        species: "Fisktres",
+        types: ["Ground", "Flying"], 
+        baseStats: {
+            hp: 111,
+            atk: 83,
+            def: 90,
+            spa: 120,
+            spd: 100,
+            spe: 61
+        },
+         abilities: {0: "Flare Wings"},
+    },
+    
+    landana: {
+        num: 7500311,
+        species: "Landana",
+        types: ["Ground", "Flying"], 
+        baseStats: {
+            hp: 82,
+            atk: 137,
+            def: 77,
+            spa: 96,
+            spd: 75,
+            spe: 112
+        },
+         abilities: {0: "Pecking Order"},
+    },
+    
+    regimiki: {
+        num: 7500312,
+        species: "Regimiki",
+        types: ["Normal", "Water"], 
+        baseStats: {
+            hp: 82,
+            atk: 130,
+            def: 120,
+            spa: 55,
+            spd: 120,
+            spe: 72
+        },
+         abilities: {0: "Vomit"},
+    },
+    
+    star: {
+        num: 7500313,
+        species: "Star",
+        types: ["Fairy", "Dark"], 
+        baseStats: {
+            hp: 78,
+            atk: 72,
+            def: 81,
+            spa: 131,
+            spd: 93,
+            spe: 121
+        },
+         abilities: {0: "Magical Wand"},
+    },
+    
+    starbutterfly: {
+        num: 7500313,
+        species: "Star-Butterfly",
+        baseSpecies: "Star",
+        forme: "Butterfly",
+        formeLetter: "B",
+        types: ["Fairy", "Dark"], 
+        baseStats: {
+            hp: 78,
+            atk: 122,
+            def: 81,
+            spa: 181,
+            spd: 103,
+            spe: 131
+        },
+        abilities: {0: "Magical Wand"},
+    },
+    
+    gardelego: {
+        num: 7500314,
+        species: "Gardelego",
+        types: ["Fairy", "Poison"], 
+        baseStats: {
+            hp: 108,
+            atk: 59,
+            def: 76,
+            spa: 126,
+            spd: 123,
+            spe: 101
+        },
+         abilities: {0: "Beast's Copycat"},
+    },
+    
+    gardelegomega: {
+        num: 7500314,
+        species: "Gardelego-Mega",
+        baseSpecies: "Gardelego",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Fairy", "Poison"], 
+        baseStats: {
+            hp: 108,
+            atk: 79,
+            def: 76,
+            spa: 166,
+            spd: 143,
+            spe: 121
+        },
+        abilities: {0: "Pixilate"},
+    },
+    
+    maltarione: {
+        num: 7500315,
+        species: "Maltarione",
+        types: ["Steel", "Dragon"], 
+        baseStats: {
+            hp: 82,
+            atk: 70,
+            def: 102,
+            spa: 120,
+            spd: 107,
+            spe: 70
+        },
+         abilities: {0: "Medical Expert"},
+    },
+    
+    maltarionemega: {
+        num: 7500315,
+        species: "Maltarione-Mega",
+        baseSpecies: "Maltarione",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Steel", "Fairy"], 
+        baseStats: {
+            hp: 82,
+            atk: 110,
+            def: 122,
+            spa: 160,
+            spd: 107,
+            spe: 70
+        },
+        abilities: {0: "Pixilate"},
+    },
+    
+    maskle: {
+        num: 7500316,
+        species: "Maskle",
+        types: ["Bug", "Rock"], 
+        baseStats: {
+            hp: 55,
+            atk: 45,
+            def: 156,
+            spa: 65,
+            spd: 166,
+            spe: 52
+        },
+         abilities: {0: "Bad Influence"},
+    },
+    
+    cowardice: {
+        num: 7500317,
+        species: "Cowardice",
+        types: ["Bug", "Ground"], 
+        baseStats: {
+            hp: 78,
+            atk: 112,
+            def: 133,
+            spa: 70,
+            spd: 98,
+            spe: 48
+        },
+         abilities: {0: "Scout"},
+    },
+    
+    guzzbro: {
+        num: 7500318,
+        species: "Guzzbro",
+        types: ["Dragon", "Water"], 
+        baseStats: {
+            hp: 168,
+            atk: 88,
+            def: 92,
+            spa: 110,
+            spd: 77,
+            spe: 37
+        },
+         abilities: {0: "Rejuvenation"},
+    },
+    
+    guzzbromega: {
+        num: 7500318,
+        species: "Guzzbro-Mega",
+        baseSpecies: "Guzzbro",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Dragon", "Water"], 
+        baseStats: {
+            hp: 168,
+            atk: 88,
+            def: 162,
+            spa: 140,
+            spd: 77,
+            spe: 37
+        },
+        abilities: {0: "Shell Armor"},
+    },
+    
+    zycannon: {
+        num: 7500319,
+        species: "Zycannon",
+        types: ["Ground", "Normal"], 
+        baseStats: {
+            hp: 67,
+            atk: 130,
+            def: 73,
+            spa: 68,
+            spd: 80,
+            spe: 107
+        },
+         abilities: {0: "Force Drain"},
+    },
+    
+    zeeeee: {
+        num: 7500320,
+        species: "Zeeeee",
+        types: ["Ground", "Normal"], 
+        baseStats: {
+            hp: 82,
+            atk: 91,
+            def: 100,
+            spa: 63,
+            spd: 90,
+            spe: 75
+        },
+         abilities: {0: "Foundation"},
+    },
+    
+    zeeeeecomplete: {
+        num: 7500320,
+        species: "Zeeeee-Complete",
+        baseSpecies: "Zeeeee",
+        forme: "Complete",
+        formeLetter: "C",
+        types: ["Ground", "Normal"], 
+        baseStats: {
+            hp: 190,
+            atk: 91,
+            def: 100,
+            spa: 63,
+            spd: 90,
+            spe: 75
+        },
+        abilities: {0: "Foundation"},
+    },
+    
+    peridot: {
+        num: 7500321,
+        species: "Peridot",
+        types: ["Flying", "Electric"], 
+        baseStats: {
+            hp: 83,
+            atk: 84,
+            def: 93,
+            spa: 121,
+            spd: 70,
+            spe: 112
+        },
+         abilities: {0: "Limb Enhancers"},
+    },
+    
+    peridotmega: {
+        num: 7500321,
+        species: "Peridot-Mega",
+        baseSpecies: "Peridot",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Flying", "Electric"], 
+        baseStats: {
+            hp: 83,
+            atk: 84,
+            def: 98,
+            spa: 186,
+            spd: 80,
+            spe: 132
+        },
+        abilities: {0: "No Guard"},
+    },
+    
+    stundicuno: {
+        num: 7500322,
+        species: "Stundicuno",
+        types: ["Ground", "Ice"], 
+        baseStats: {
+            hp: 115,
+            atk: 75,
+            def: 94,
+            spa: 100,
+            spd: 120,
+            spe: 60
+        },
+         abilities: {0: "Dirt Nap"},
+    },
+    
+    aloha: {
+        num: 7500323,
+        species: "Aloha",
+        types: ["Psychic", "Dark"], 
+        baseStats: {
+            hp: 103,
+            atk: 137,
+            def: 79,
+            spa: 112,
+            spd: 74,
+            spe: 103
+        },
+         abilities: {0: "Hydrodynamic"},
+    },
+    
+    alohamega: {
+        num: 7500323,
+        species: "Aloha-Mega",
+        baseSpecies: "Aloha",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Psychic", "Dark"], 
+        baseStats: {
+            hp: 103,
+            atk: 157,
+            def: 109,
+            spa: 127,
+            spd: 99,
+            spe: 113
+        },
+        abilities: {0: "Strong Jaw"},
+    },
+    
+    zekloom: {
+        num: 7500324,
+        species: "Zekloom",
+        types: ["Electric", "Fighting"], 
+        baseStats: {
+            hp: 80,
+            atk: 140,
+            def: 100,
+            spa: 90,
+            spd: 100,
+            spe: 100
+        },
+         abilities: {0: "Engineer"},
+    },
+    
+    gengalure: {
+        num: 7500325,
+        species: "Gengalure",
+        types: ["Ghost", "Fire"], 
+        baseStats: {
+            hp: 70,
+            atk: 70,
+            def: 85,
+            spa: 147,
+            spd: 92,
+            spe: 105
+        },
+         abilities: {0: "Blessed Protection"},
+    },
+    
+    ferrolord: {
+        num: 7500326,
+        species: "Ferrolord",
+        types: ["Steel", "Dragon"], 
+        baseStats: {
+            hp: 148,
+            atk: 107,
+            def: 102,
+            spa: 75,
+            spd: 104,
+            spe: 31
+        },
+         abilities: {0: "Barbs Boost"},
+    },
+    
+    dad: {
+        num: 7500327,
+        species: "Dad",
+        types: ["Normal", "Dark"], 
+        baseStats: {
+            hp: 69,
+            atk: 60,
+            def: 51,
+            spa: 41,
+            spd: 51,
+            spe: 56
+        },
+         abilities: {0: "Mirror Mirror"},
+    },
+    
+    glaive: {
+        num: 7500328,
+        species: "Glaive",
+        types: ["Ghost", "Ground"], 
+        baseStats: {
+            hp: 100,
+            atk: 130,
+            def: 145,
+            spa: 73,
+            spd: 90,
+            spe: 63
+        },
+         abilities: {0: "Atmospheric Pull"},
+    },
+    
+    glaiveprimal: {
+        num: 7500328,
+        species: "Glaive-Primal",
+        baseSpecies: "Glaive",
+        forme: "Primal",
+        formeLetter: "P",
+        types: ["Ghost", "Fire"], 
+        baseStats: {
+            hp: 100,
+            atk: 160,
+            def: 165,
+            spa: 123,
+            spd: 90,
+            spe: 63
+        },
+        abilities: {0: "Desolate Land"},
+    },
+    
+    kyurpedo: {
+        num: 7500329,
+        species: "Kyurpedo",
+        types: ["Ice", "Dark"], 
+        baseStats: {
+            hp: 105,
+            atk: 145,
+            def: 70,
+            spa: 125,
+            spd: 75,
+            spe: 95
+        },
+         abilities: {0: "Volt Boost"},
+    },
+    
+    kyurpedomega: {
+        num: 7500329,
+        species: "Kyurpedo-Mega",
+        baseSpecies: "Kyurpedo",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Ice", "Dark"], 
+        baseStats: {
+            hp: 105,
+            atk: 165,
+            def: 100,
+            spa: 140,
+            spd: 100,
+            spe: 105
+        },
+        abilities: {0: "Strong Jaw"},
+    },
+    
+    gearchamp: {
+        num: 7500330,
+        species: "Gearchamp",
+        types: ["Fighting", "Fairy"], 
+        baseStats: {
+            hp: 80,
+            atk: 84,
+            def: 95,
+            spa: 105,
+            spd: 95,
+            spe: 85
+        },
+         abilities: {0: "Soul Power"},
+    },
+    
+    luau: {
+        num: 7500331,
+        species: "Luau",
+        types: ["Ghost", "Ground"], 
+        baseStats: {
+            hp: 113,
+            atk: 107,
+            def: 79,
+            spa: 139,
+            spd: 97,
+            spe: 73
+        },
+         abilities: {0: "Land's Shield"},
+    },
+    
+    luaumega: {
+        num: 7500331,
+        species: "Luau-Mega",
+        baseSpecies: "Luau",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Ghost", "Ground"], 
+        baseStats: {
+            hp: 113,
+            atk: 127,
+            def: 109,
+            spa: 179,
+            spd: 127,
+            spe: 53
+        },
+        abilities: {0: "Sheer Force"},
+    },
+    
+    dotsensu: {
+        num: 7500332,
+        species: "Dot-Sensu",
+        types: ["Normal", "Ghost"], 
+        baseStats: {
+            hp: 61,
+            atk: 59,
+            def: 59,
+            spa: 93,
+            spd: 59,
+            spe: 90
+        },
+         abilities: {0: "Danceposter"},
+    },
+    
+    darkhunter: {
+        num: 7500333,
+        species: "Dark Hunter",
+        types: ["Rock", "Dark"], 
+        baseStats: {
+            hp: 78,
+            atk: 123,
+            def: 83,
+            spa: 105,
+            spd: 83,
+            spe: 114
+        },
+         abilities: {0: "Night Terror"},
+    },
+    
+    guzzpex: {
+        num: 7500334,
+        species: "Guzzpex",
+        types: ["Poison", "Dark"], 
+        baseStats: {
+            hp: 136,
+            atk: 82,
+            def: 122,
+            spa: 75,
+            spd: 117,
+            spe: 39
+        },
+         abilities: {0: "Merciless Beast"},
+    },
+    
+    dedede: {
+        num: 7500335,
+        species: "Dedede",
+        types: ["Ice", "Electric"], 
+        baseStats: {
+            hp: 66,
+            atk: 66,
+            def: 61,
+            spa: 83,
+            spd: 66,
+            spe: 98
+        },
+         abilities: {0: "Royal Strength"},
+    },
+    
+    cosmill: {
+        num: 7500336,
+        species: "Cosmill",
+        types: ["Psychic", "Fairy"], 
+        baseStats: {
+            hp: 56,
+            atk: 44,
+            def: 40,
+            spa: 44,
+            spd: 40,
+            spe: 38
+        },
+         abilities: {0: "Godlike Powers"},
+    },
+    
+    maginera: {
+        num: 7500337,
+        species: "Maginera",
+        types: ["Fairy", "Fire"], 
+        baseStats: {
+            hp: 87,
+            atk: 110,
+            def: 117,
+            spa: 110,
+            spd: 117,
+            spe: 62
+        },
+         abilities: {0: "Soften Up"},
+    },
+    
+    catdeer: {
+        num: 7500338,
+        species: "Catdeer",
+        types: ["Normal", "Dark"], 
+        baseStats: {
+            hp: 79,
+            atk: 102,
+            def: 66,
+            spa: 97,
+            spd: 68,
+            spe: 106
+        },
+         abilities: {0: "Tricky Glare"},
+    },
+    
+    hooptrio: {
+        num: 7500339,
+        species: "Hooptrio",
+        types: ["Ground", "Dark"], 
+        baseStats: {
+            hp: 75,
+            atk: 140,
+            def: 55,
+            spa: 120,
+            spd: 100,
+            spe: 100
+        },
+         abilities: {0: "Confiscation"},
+    },
+    
+    fablefin: {
+        num: 7500340,
+        species: "Fablefin",
+        types: ["Fairy"],
+        baseStats: {
+            hp: 85,
+            atk: 72,
+            def: 106,
+            spa: 100,
+            spd: 125,
+            spe: 80
+        },
+         abilities: {0: "Misty Mind"},
+    },
+    
+    klefz: {
+        num: 7500341,
+        species: "Klef-Z",
+        types: ["Normal", "Fairy"],
+        baseStats: {
+            hp: 81,
+            atk: 80,
+            def: 80,
+            spa: 117,
+            spd: 81,
+            spe: 102
+        },
+         abilities: {0: "Familiar Maneuvering"},
+    },
+    
+    tropisteela: {
+        num: 7500342,
+        species: "Tropisteela",
+        types: ["Flying", "Steel"], 
+        baseStats: {
+            hp: 100,
+            atk: 90,
+            def: 104,
+            spa: 90,
+            spd: 104,
+            spe: 56
+        },
+         abilities: {0: "Stat Harvesting"},
+    },
+    
+    pokemon: {
+        num: 7500343,
+        species: "Pokemon",
+        types: ["Water", "Fighting"], 
+        baseStats: {
+            hp: 77,
+            atk: 129,
+            def: 76,
+            spa: 114,
+            spd: 86,
+            spe: 110
+        },
+         abilities: {0: "Ability"},
+    },
+    
+    nosegod: {
+        num: 7500344,
+        species: "Nose God",
+        types: ["Normal", "Rock"], 
+        baseStats: {
+            hp: 75,
+            atk: 103,
+            def: 133,
+            spa: 88,
+            spd: 110,
+            spe: 80
+        },
+         abilities: {0: "Type Trap"},
+    },
+    
+    swampterra: {
+        num: 7500345,
+        species: "Swampterra",
+        types: ["Ground", "Water"], 
+        baseStats: {
+            hp: 107,
+            atk: 119,
+            def: 107,
+            spa: 90,
+            spd: 97,
+            spe: 68
+        },
+         abilities: {0: "Uninhabitable"},
+    },
+    
+    swampterramega: {
+        num: 7500345,
+        species: "Swampterra-Mega",
+        baseSpecies: "Swampterra",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Ground", "Water"], 
+        baseStats: {
+            hp: 107,
+            atk: 159,
+            def: 127,
+            spa: 100,
+            spd: 117,
+            spe: 78
+        },
+        abilities: {0: "Swift Swim"},
+    },
+    
+    zeklade: {
+        num: 7500346,
+        species: "Zeklade",
+        types: ["Dragon", "Steel"],
+        baseStats: {
+            hp: 100,
+            atk: 130,
+            def: 135,
+            spa: 82,
+            spd: 95,
+            spe: 62
+        },
+         abilities: {0: "Unstable Voltage"},
+    },
+    
+    grequa: {
+        num: 7500347,
+        species: "Grequa",
+        types: ["Water", "Bug"], 
+        baseStats: {
+            hp: 82,
+            atk: 92,
+            def: 89,
+            spa: 86,
+            spd: 111,
+            spe: 92
+        },
+         abilities: {0: "Huge Bubble"},
+    },
+    
+    alteyer: {
+        num: 7500348,
+        species: "Alteyer",
+        types: ["Ghost", "Flying"],
+        baseStats: {
+            hp: 86,
+            atk: 98,
+            def: 92,
+            spa: 95,
+            spd: 112,
+            spe: 85
+        },
+         abilities: {0: "Constellation"},
+    },
+    
+    alteyermega: {
+        num: 7500348,
+        species: "Alteyer-Mega",
+        baseSpecies: "Alteyer",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Ghost", "Fairy"], 
+        baseStats: {
+            hp: 86,
+            atk: 138,
+            def: 112,
+            spa: 135,
+            spd: 112,
+            spe: 85
+        },
+        abilities: {0: "Pixilate"},
+    },
 
 };
