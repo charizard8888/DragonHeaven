@@ -788,7 +788,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 160,
 		contestType: "Beautiful",
 	},
-		"spikestorm": {
+		/*"spikestorm": {
 		accuracy: 90,
 		basePower: 20,
 		category: "Physical",
@@ -811,7 +811,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		type: "Ground",
 		zMovePower: 80,
 		contestType: "Tough",
-	},
+	},*/
 	"metalliccharge": {
 		accuracy: 100,
 		basePower: 160,
