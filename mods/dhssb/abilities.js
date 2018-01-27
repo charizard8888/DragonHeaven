@@ -642,7 +642,6 @@ exports.BattleAbilities = {
 		shortDesc: "+1 Def on switch in + Fairy Aura + Pixilate",
 		onStart: function (pokemon) {
 			this.add('-ability', pokemon, 'Fairy Aura');
-			this.useMove('Barrier', source);
 		},
 		onAnyBasePower: function (basePower, source, target, move) {
 			if (target === source || move.category === 'Status' || move.type !== 'Fairy' || move.auraBoost) return;
