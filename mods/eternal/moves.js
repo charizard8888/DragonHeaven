@@ -961,11 +961,14 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 				}
 			},
 		},
-		boosts: {
+		secondary: {
+			chance: 20,
 			self: {
-				atk: -1,
-				def: -1,
-				spd: -1,
+				boosts: {
+					atk: -1,
+					def: -1,
+					spd: -1,
+				},
 			},
 		},
 		target: "any",
