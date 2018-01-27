@@ -853,18 +853,19 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 180,
 		contestType: "Beautiful",
 	},
-		"deadonstrike": {
+	"deadonstrike": {
 		accuracy: true,
 		basePower: 120,
 		category: "Physical",
-		desc: "Raises the user's accuracy by 1 stage. Ignores accuracy check.",
-		shortDesc: "Raises the user's accuracy by 1 stage. Ignores accuracy check.",
+		desc: "+1 Acc, ignores acc check. 33% recoil.",
+		shortDesc: "+1 Acc, ignores acc check. 33% recoil.",
 		id: "deadonstrike",
 		isViable: true,
-		name: "Dead-on Strike",
+		name: "Dead-On Strike",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {contact: 1, protect: 1, mirror: 1},
+		recoil: [1, 3],
 		secondary: {
 			chance: 100,
 			self: {
@@ -873,11 +874,10 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 				},
 			},
 		},
-		secondary: false,
 		target: "normal",
 		type: "Dark",
-		zMovePower: 200,,
-		contestType: "Cute",
+		zMovePower: 200,
+		contestType: "Cool",
 	},
 	/*"magneticcharge": {
 		accuracy: true,
@@ -916,8 +916,8 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		type: "Electric",
 		zMoveBoost: 'clearnegativeboosts',
 		contestType: "Tough",
-	},*/
-/*	"aerialsmash": {
+	},
+	"aerialsmash": {
 		accuracy: 100,
 		basePower: 170,
 		category: "Physical",
