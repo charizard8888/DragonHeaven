@@ -24,30 +24,30 @@ exports.BattleStatuses = {
 		exists: true,
 		effectType: 'Ability',
 		onStart: function () {
-			this.add('c|$Ludicrousity|Bow before me foolish mortals xaa');
+			this.add('c|&Ludicrousity|Bow before me foolish mortals xaa');
 		},
 		onFaint: function(pokemon) {
-			this.add('c|$Pika Xreme|Ill be.... Wait, crap wrong quote');
+			this.add('c|%Pika Xreme|Ill be.... Wait, crap wrong quote');
 		},
 	},
 	pikaxreme: {
 		exists: true,
 		effectType: 'Ability',
 		onStart: function () {
-			this.add('c|$Pika Xreme|Praise Kirby');
+			this.add('c|%Pika Xreme|Praise Kirby');
 		},
 		onFaint: function(pokemon) {
-			this.add('c|$Pika Xreme|Urban Dictionary is a terrible site');
+			this.add('c|%Pika Xreme|Urban Dictionary is a terrible site');
 		},
 	},
 	zapmaster2010: {
 		exists: true,
 		effectType: 'Ability',
 		onStart: function () {
-			this.add('c|+Zapmaster2010|Now back to our regularly scheduled shitposting');
+			this.add('c|&Zapmaster2010|Now back to our regularly scheduled shitposting');
 		},
 		onFaint: function(pokemon) {
-			this.add('c|+Zapmaster2010|That concludes our regularly scheduled shitposting');
+			this.add('c|&Zapmaster2010|That concludes our regularly scheduled shitposting');
 		},
 	},
 	flurbel: {
