@@ -879,6 +879,178 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 200,
 		contestType: "Cool",
 	},
+		"tectonicfault": {
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "Protect + Stealth Rock",
+		shortDesc: "Protect + Stealth Rock",
+		id: "tectonicfault",
+		isViable: true,
+		name: "Tectonic Fault",
+		pp: 5,
+		priority: 0,
+		flags: {reflectable: 1},
+		onPrepareHit: function (pokemon) {
+			return !!this.willAct() && this.runEvent('StallMove', pokemon);
+		},
+		onHit: function (pokemon) {
+			pokemon.addVolatile('stall');
+		},
+		effect: {
+			duration: 1,
+			onStart: function (target) {
+				this.add('-singleturn', target, 'Protect');
+			},
+			onTryHitPriority: 3,
+			onTryHit: function (target, source, move) {
+				if (!move.flags['protect']) {
+					if (move.isZ) move.zBrokeProtect = true;
+					return;
+				}
+				this.add('-activate', target, 'move: Protect');
+				source.moveThisTurnResult = true;
+				let lockedmove = source.getVolatile('lockedmove');
+				if (lockedmove) {
+					// Outrage counter is reset
+					if (source.volatiles['lockedmove'].duration === 2) {
+						delete source.volatiles['lockedmove'];
+					}
+				}
+				return null;
+			},
+		},
+		sideCondition: 'stealthrock',
+		effect: {
+			// this is a side condition
+			onStart: function (side) {
+				this.add('-sidestart', side, 'move: Stealth Rock');
+			},
+			onSwitchIn: function (pokemon) {
+				let typeMod = this.clampIntRange(pokemon.runEffectiveness('Rock'), -6, 6);
+				this.damage(pokemon.maxhp * Math.pow(2, typeMod) / 8);
+			},
+		},
+		secondary: false,
+		target: "foeSide",
+		type: "Rock",
+		zMoveEffect: 'heal',
+		contestType: "Cool",
+	},
+		"biteerfragarance": {
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		desc: "Drops target defense and special defense by one level, then returns to the player. 20% of chance to paralyze target.",
+		shortDesc: "Drops target defense and special defense by one level, then returns to the player. 20% of chance to paralyze target.",
+		id: "biteerfragarance",
+		isViable: true,
+		name: "Bitter Fragarance",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, sound: 1, authentic: 1},
+		selfSwitch: true,
+		boosts: {
+			def: -1,
+			spd: -1,
+		},
+		secondary: {
+			chance: 20,
+			status: 'par',
+		},
+		target: "normal",
+		type: "Dark",
+		zMoveEffect: 'healreplacement',
+		contestType: "Cool",
+	},
+	"mistbath": {
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "The user summons Misty Terrain, and then recovers half of its health.",
+		shortDesc: "The user summons Misty Terrain, and then recovers half of its health.",
+		id: "mistbath",
+		name: "Mist Bath",
+		pp: 10,
+		priority: 0,
+		flags: {nonsky: 1},
+		heal: [1, 2],
+		terrain: 'mistyterrain',
+		effect: {
+			duration: 5,
+			durationCallback: function (source, effect) {
+				if (source && source.hasItem('terrainextender')) {
+					return 8;
+				}
+				return 5;
+			},
+			onSetStatus: function (status, target, source, effect) {
+				if (!target.isGrounded() || target.isSemiInvulnerable()) return;
+				if (effect && effect.status) {
+					this.add('-activate', target, 'move: Misty Terrain');
+				}
+				return false;
+			},
+			onTryAddVolatile: function (status, target, source, effect) {
+				if (!target.isGrounded() || target.isSemiInvulnerable()) return;
+				if (status.id === 'confusion') {
+					if (effect.effectType === 'Move' && !effect.secondaries) this.add('-activate', target, 'move: Misty Terrain');
+					return null;
+				}
+			},
+			onBasePower: function (basePower, attacker, defender, move) {
+				if (move.type === 'Dragon' && defender.isGrounded() && !defender.isSemiInvulnerable()) {
+					this.debug('misty terrain weaken');
+					return this.chainModify(0.5);
+				}
+			},
+			onStart: function (battle, source, effect) {
+				if (effect && effect.effectType === 'Ability') {
+					this.add('-fieldstart', 'move: Misty Terrain', '[from] ability: ' + effect, '[of] ' + source);
+				} else {
+					this.add('-fieldstart', 'move: Misty Terrain');
+				}
+			},
+			onResidualOrder: 21,
+			onResidualSubOrder: 2,
+			onEnd: function (side) {
+				this.add('-fieldend', 'Misty Terrain');
+			},
+		},
+		secondary: false,
+		target: "all",
+		type: "Water",
+		zMoveEffect: 'clearnegativeboost',
+		contestType: "Beautiful",
+	},
+	   "bamboobash": {
+		accuracy: 100,
+		basePower: 90,
+		category: "Physical",
+		desc: "Deals 1.5* damage if the weather is Rainy.",
+		shortDesc: "Deals 1.5* damage if the weather is Rainy.",
+		id: "bamboobash",
+		isViable: true,
+		name: "Bamboo Bash",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onBasePowerPriority: 8,
+		onBasePower: function (basePower, pokemon) {
+			if (this.isWeather(['rainyday', 'primodialsea'])) {
+				return this.chainModify(1.5);
+			}
+		},
+		secondary: {
+			chance: 30,
+			volatileStatus: 'confusion',
+		},
+		target: "normal",
+		type: "Grass",
+		zMovePower: 175,
+		contestType: "Cute",
+	},
+	
 	/*"magneticcharge": {
 		accuracy: true,
 		basePower: 0,
@@ -979,6 +1151,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 	/* Signature Move: Beauty Drain | Status | Water | 100% Acc | 10 PP | The user heals its HP by the same amount as the target's Special Defense stat (after modifiers). It also lowers target's Special Defense by one stage 
 Signature Move: Nuclear Pollen - Grass, Other, 5 PP | For 5 turns, all Pokémon on the field are resistant to normally super-effective types and weak to normally not-very-effective or ineffective types (as in Inverse Battles) | Z-Move: Resets negative stat boosts
 Signature Move: Phantasmal Break /   / Physical / 80 BP / 15 PP / 100 Acc / Damage dealt cannot be restored until switched out / Z-Move: 160 BP Never-Ending Nightmare
-
+Signature Move: Breakthrough - Rock, Special, 135 BP, 5 PP, 100% Acc | The user takes 1/3 recoil and loses its Rock typing for the rest of the battle. Can only be used if the user is Rock-type. | Z-Move: 200 BP Continental Crush
+Signature Move: Mineral Bath - Water, Other, 10 PP | If there are entry hazards on the user's side of the field, the user recovers 2/3 HP, and the hazards are removed. Otherwise, the user simply recovers 1/2 HP. | Z-Effect: +1 Defense
 */
 };
