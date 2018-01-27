@@ -1,5 +1,15 @@
 'use strict';
 exports.BattleStatuses = {
+	uncleflacco: {
+		exists: true,
+		effectType: 'Ability',
+		onStart: function () {
+			this.add('c|%uncleflacco|<div class="chat chatmessage-uncleflacco"><strong style="color:hsl(3,82%,46.53322260126517%);"><small>%</small><span class="username" data-name="UncleFlacco">UncleFlacco</span>:</strong> <em><img src="http://i.imgur.com/v4l4e0o.gif" title="feelsabsol" width="50" height="50"> I love you, [players name]!</em></div>');
+		},
+		onFaint: function(pokemon) {
+			this.add('c|%uncleflacco|<div class="chat chatmessage-uncleflacco"><strong style="color:hsl(3,82%,46.53322260126517%);"><small>%</small><span class="username" data-name="UncleFlacco">UncleFlacco</span>:</strong> <em><img src="http://i.imgur.com/ljl6Sfd.png" title="feelsrip" width="50" height="50"> <img src="http://i.imgur.com/jTTPtyW.jpg?1" title="feelsshivam" width="50" height="50"></em></div>');
+		},
+	},
 	shwb: {
 		exists: true,
 		effectType: 'Ability',
@@ -34,10 +44,10 @@ exports.BattleStatuses = {
 		exists: true,
 		effectType: 'Ability',
 		onStart: function () {
-			this.add('c|+Zapmaster2010|Boi, tell me where the muffins at. llamashades');
+			this.add('c|+Zapmaster2010|Now back to our regularly scheduled shitposting');
 		},
 		onFaint: function(pokemon) {
-			this.add('c|+Zapmaster2010|Nuuu. llamacry');
+			this.add('c|+Zapmaster2010|That concludes our regularly scheduled shitposting');
 		},
 	},
 	flurbel: {
