@@ -913,7 +913,7 @@ exports.BattlePokedex = {
             H: "Rain Dish"
         },
     },
-    digltteternal: {
+    digletteternal: {
         num: 50,
         species: "Diglett-Eternal",
         baseSpecies: "Diglett",
