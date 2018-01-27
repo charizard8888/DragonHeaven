@@ -81,8 +81,8 @@ exports.BattleMovedex = {
 		zMovePower: 200,
 		contestType: "Beautiful",
 	},
-/*	"evolutionblast": { /* Evolution Blast (Special, 15 BP, 10 PP, 100 Acc, Hits 8 times. Changes type after each hit (Water -> Electric -> Fire -> Psychic -> Dark -> Grass -> Ice -> Fairy))
-Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigavolt Havoc...) 
+	"evolutionblast": { /* Evolution Blast (Special, 15 BP, 10 PP, 100 Acc, Hits 8 times. Changes type after each hit (Water -> Electric -> Fire -> Psychic -> Dark -> Grass -> Ice -> Fairy))
+Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigavolt Havoc...) */
 		accuracy: 100,
 		basePower: 15,
 		category: "Special",
@@ -100,8 +100,8 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		target: "normal",
 		type: "Ice",
 		zMovePower: 25,
-	},*/
-/*	"darkcrowdive": {
+	},
+	"darkcrowdive": {
 		accuracy: 95,
 		basePower: 150,
 		category: "Physical",
@@ -264,7 +264,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		type: "Ghost",
 		zMovePower: 175,
 		contestType: "Tough",
-	},
+	},/*
 	"particlecannon": {
 		accuracy: 100,
 		basePower: 120,
