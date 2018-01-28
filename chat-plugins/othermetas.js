@@ -660,10 +660,10 @@ typeopthelp: ["/eternalmons - Shows the list of Pokemon in Type Optimisation Pok
 		let jillianDex = require('../mods/alola/pokedex.js').BattlePokedex;
 		if (!jillianDex) return this.errorReply("Error Fetching Istor Data.");
 		Object.values(jillianDex).forEach(mon => {
-			buf += `<button name="send" value="/dt ${mon.species}, thefirstnewgen" style="background:none;border:none;">${mon.species}</button><br>`;
+			buf += `<button name="send" value="/dt ${mon.species}, alola" style="background:none;border:none;">${mon.species}</button><br>`;
 		});
 		this.sendReplyBox(`${buf}</div>`);
 	},
-	alolahelp: ["/tnfg - Shows the list of Pokemon in Alola Formes."],
+	alolahelp: ["/alola - Shows the list of Pokemon in Alola Formes."],
 	
 };
