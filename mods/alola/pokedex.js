@@ -196,8 +196,8 @@ exports.BattlePokedex = {
     },
 		  clefairylola: {
         num: 35,
-        species: "Cleffa-Alola",
-        baseSpecies: "Cleffa",
+        species: "Clefairy-Alola",
+        baseSpecies: "Clefairy",
         forme: "Alola",
         formeLetter: "A",
         types: ["Fire", "Fairy"],
