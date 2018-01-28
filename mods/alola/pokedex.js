@@ -206,7 +206,7 @@ exports.BattlePokedex = {
 			  weightkg: 7.5,
     },
 	     clefablelola: {
-        num: 173,
+        num: 36,
         species: "Clefable-Alola",
         baseSpecies: "Clefable",
         forme: "Alola",
