@@ -1040,7 +1040,7 @@ exports.BattlePokedex = {
 	tailloweternal: {
         num: 276,
         species: "Taillow-Eternal",
-        baseSpecies: "Eternal",
+        baseSpecies: "Taillow",
         forme: "Eternal",
         formeLetter: "E",
         types: ["Nomral", "Water"],
@@ -1060,7 +1060,7 @@ exports.BattlePokedex = {
 		wingulleternal: {
         num: 278,
         species: "Wingull-Eternal",
-        baseSpecies: "Eternal",
+        baseSpecies: "Wingull",
         forme: "Eternal",
         formeLetter: "E",
         types: ["Water", "Ghost"],
@@ -1077,7 +1077,7 @@ exports.BattlePokedex = {
 		staraviaeternal: {
         num: 397,
         species: "Staravia-Eternal",
-        baseSpecies: "Eternal",
+        baseSpecies: "Staravia",
         forme: "Eternal",
         formeLetter: "E",
         types: ["Fairy", "Flying"],
@@ -1098,7 +1098,7 @@ exports.BattlePokedex = {
     tranquilleternal: {
         num: 520,
         species: "Tranquill-Eternal",
-        baseSpecies: "Eternal",
+        baseSpecies: "Tranquill",
         forme: "Eternal",
         formeLetter: "E",
         types: ["Flying"],
@@ -1119,7 +1119,7 @@ exports.BattlePokedex = {
     fletchindereternal: {
         num: 662,
         species: "Fletchinder-Eternal",
-        baseSpecies: "Eternal",
+        baseSpecies: "Fletchinder",
         forme: "Eternal",
         formeLetter: "E",
         types: ["Fire", "Dark"],
@@ -1139,7 +1139,7 @@ exports.BattlePokedex = {
     trumbeaketernal: {
         num: 732,
         species: "Trumbeak-Eternal",
-        baseSpecies: "Eternal",
+        baseSpecies: "Trumbeak",
         forme: "Eternal",
         formeLetter: "E",
         types: ["Grass", "Flying"],
@@ -1160,7 +1160,7 @@ exports.BattlePokedex = {
     clefairyeternal: {
         num: 35,
         species: "Clefairy-Eternal",
-        baseSpecies: "Eternal",
+        baseSpecies: "Clefairy",
         forme: "Eternal",
         formeLetter: "E",
         types: ["Fairy", "Steel"],
@@ -1181,7 +1181,7 @@ exports.BattlePokedex = {
     jigglypuffeternal: {
         num: 39,
         species: "Jigglypuff-Eternal",
-        baseSpecies: "Eternal",
+        baseSpecies: "Jigglypuff",
         forme: "Eternal",
         formeLetter: "E",
         types: ["Normal", "Fighting"],
@@ -1202,7 +1202,7 @@ exports.BattlePokedex = {
     togeticeternal: {
         num: 176,
         species: "Togetic-Eternal",
-        baseSpecies: "Eternal",
+        baseSpecies: "Togetic",
         forme: "Eternal",
         formeLetter: "E",
         types: ["Fairy", "Water"],
@@ -1223,7 +1223,7 @@ exports.BattlePokedex = {
     snubbulleternal: {
         num: 209,
         species: "Snubbull-Eternal",
-        baseSpecies: "Eternal",
+        baseSpecies: "Snubbull",
         forme: "Eternal",
         formeLetter: "E",
         types: ["Fairy", "Electric"],
@@ -1244,7 +1244,7 @@ exports.BattlePokedex = {
     driflooneternal: {
         num: 425,
         species: "Drifloon-Eternal",
-        baseSpecies: "Eternal",
+        baseSpecies: "Drifloon",
         forme: "Eternal",
         formeLetter: "E",
         types: ["Ghost", "Psychic"],
@@ -1266,7 +1266,7 @@ exports.BattlePokedex = {
     yamasketernal: {
         num: 562,
         species: "Yamask-Eternal",
-        baseSpecies: "Eternal",
+        baseSpecies: "Yamask",
         forme: "Eternal",
         formeLetter: "E",
         types: ["Ghost", "Steel"],
@@ -1285,7 +1285,7 @@ exports.BattlePokedex = {
     phantumpeternal: {
         num: 708,
         species: "Phantump-Eternal",
-        baseSpecies: "Eternal",
+        baseSpecies: "Phantump",
         forme: "Eternal",
         formeLetter: "E",
         types: ["Ghost", "Dragon"],
@@ -1307,7 +1307,7 @@ exports.BattlePokedex = {
     ruffleteternal: {
         num: 627,
         species: "Rufflet-Eternal",
-        baseSpecies: "Eternal",
+        baseSpecies: "Rufflet",
         forme: "Eternal",
         formeLetter: "E",
         types: ["Flying"],
@@ -1329,7 +1329,7 @@ exports.BattlePokedex = {
     vullabyeternal: {
         num: 629,
         species: "Vullaby-Eternal",
-        baseSpecies: "Eternal",
+        baseSpecies: "Vullaby",
         forme: "Eternal",
         formeLetter: "E",
         types: ["Dark", "Bug"],
@@ -1350,7 +1350,7 @@ exports.BattlePokedex = {
     larvestaeternal: {
         num: 636,
         species: "Larvesta-Eternal",
-        baseSpecies: "Eternal",
+        baseSpecies: "Larvesta",
         forme: "Eternal",
         formeLetter: "E",
         types: ["Bug", "Fire"],
