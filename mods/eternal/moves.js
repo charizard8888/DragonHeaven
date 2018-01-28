@@ -1264,11 +1264,9 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		onSourceFaint: function (target, source, effect) {
-			if (effect && effect.effectType === 'Move') {
-				this.useMove('Transform', source);
-				this.useMove('Recover', source);
-			}
+			onSourceFaint: function (source) {
+			this.useMove('Transform', source);
+			this.useMove('Recover', source);
 		},
 		secondary: false,
 		target: "normal",
