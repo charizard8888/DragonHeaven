@@ -1306,7 +1306,7 @@ exports.BattlePokedex = {
 
     ruffleteternal: {
         num: 627,
-        species: "Pokemon-Eternal",
+        species: "Rufflet-Eternal",
         baseSpecies: "Eternal",
         forme: "Eternal",
         formeLetter: "E",
@@ -1367,5 +1367,4 @@ exports.BattlePokedex = {
             H: "Swarm"
         },
     },
-	
 };
