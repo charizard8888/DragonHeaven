@@ -1071,242 +1071,297 @@ exports.BattlePokedex = {
         },
         abilities: {0: "Keen Eye", 1: "Hydration", H: "Rain Dish"},  
     },
-		/*nameeternal: {
-        num: ,
-        species: "Pokemon-Eternal",
+staraviaeternal: {
+        num: 397,
+        species: "Staravia-Eternal",
         baseSpecies: "Eternal",
         forme: "Eternal",
         formeLetter: "E",
-        types: ["T1", "T2"], or ["T1"],
+        types: ["Fairy", "Flying"],
         baseStats: {
-            hp: ,
-            atk: ,
-            def: ,
-            spa: ,
-            spd: ,
-            spe:
+            hp: 55,
+            atk: 154,
+            def: 55,
+            spa: 66,
+            spd: 55,
+            spe: 99
         },
-        abilities: {0: "A1"}, OR {0: "A1", 1: "A2"}, OR {0: "A1", 1: "A2", H: "A3"},  
+        abilities: {
+            0: "Intimidate",
+            H: "Reckless"
+        }
     },
-		nameeternal: {
-        num: ,
-        species: "Pokemon-Eternal",
+
+    tranquilleternal: {
+        num: 520,
+        species: "Tranquill-Eternal",
         baseSpecies: "Eternal",
         forme: "Eternal",
         formeLetter: "E",
-        types: ["T1", "T2"], or ["T1"],
+        types: ["Flying"],
         baseStats: {
-            hp: ,
-            atk: ,
-            def: ,
-            spa: ,
-            spd: ,
-            spe:
+            hp: 115,
+            atk: 57,
+            def: 67,
+            spa: 57,
+            spd: 80,
+            spe: 111
         },
-        abilities: {0: "A1"}, OR {0: "A1", 1: "A2"}, OR {0: "A1", 1: "A2", H: "A3"},  
+        abilities: {
+            0: "Big Pecks",
+            1: "Super Luck",
+            H: "Rivalry"
+        },
     },
-		nameeternal: {
-        num: ,
-        species: "Pokemon-Eternal",
+    fletchindereternal: {
+        num: 662,
+        species: "Fletchinder-Eternal",
         baseSpecies: "Eternal",
         forme: "Eternal",
         formeLetter: "E",
-        types: ["T1", "T2"], or ["T1"],
+        types: ["Fire", "Dark"],
         baseStats: {
-            hp: ,
-            atk: ,
-            def: ,
-            spa: ,
-            spd: ,
-            spe:
+            hp: 63,
+            atk: 104,
+            def: 105,
+            spa: 40,
+            spd: 63,
+            spe: 124
         },
-        abilities: {0: "A1"}, OR {0: "A1", 1: "A2"}, OR {0: "A1", 1: "A2", H: "A3"},  
+        abilities: {
+            0: "Flame Body",
+            H: "Gale Wings"
+        },
     },
-		nameeternal: {
-        num: ,
-        species: "Pokemon-Eternal",
+    trumbeaketernal: {
+        num: 732,
+        species: "Trumbeak-Eternal",
         baseSpecies: "Eternal",
         forme: "Eternal",
         formeLetter: "E",
-        types: ["T1", "T2"], or ["T1"],
+        types: ["Grass", "Flying"],
         baseStats: {
-            hp: ,
-            atk: ,
-            def: ,
-            spa: ,
-            spd: ,
-            spe:
+            hp: 80,
+            atk: 115,
+            def: 70,
+            spa: 50,
+            spd: 70,
+            spe: 99
         },
-        abilities: {0: "A1"}, OR {0: "A1", 1: "A2"}, OR {0: "A1", 1: "A2", H: "A3"},  
+        abilities: {
+            0: "Keen Eye",
+            1: "Skill Link",
+            H: "Pickup"
+        },
     },
-		nameeternal: {
-        num: ,
-        species: "Pokemon-Eternal",
+    clefairyeternal: {
+        num: 35,
+        species: "Clefairy-Eternal",
         baseSpecies: "Eternal",
         forme: "Eternal",
         formeLetter: "E",
-        types: ["T1", "T2"], or ["T1"],
+        types: ["Fairy", "Steel"],
         baseStats: {
-            hp: ,
-            atk: ,
-            def: ,
-            spa: ,
-            spd: ,
-            spe:
+            hp: 99,
+            atk: 110,
+            def: 68,
+            spa: 60,
+            spd: 85,
+            spe: 75
         },
-        abilities: {0: "A1"}, OR {0: "A1", 1: "A2"}, OR {0: "A1", 1: "A2", H: "A3"},  
+        abilities: {
+            0: "Cute Charm",
+            1: "Magic Guard",
+            H: "Friend Guard"
+        },
     },
-		nameeternal: {
-        num: ,
-        species: "Pokemon-Eternal",
+    jigglypuffeternal: {
+        num: 39,
+        species: "Jigglypuff-Eternal",
         baseSpecies: "Eternal",
         forme: "Eternal",
         formeLetter: "E",
-        types: ["T1", "T2"], or ["T1"],
+        types: ["Normal", "Fighting"],
         baseStats: {
-            hp: ,
-            atk: ,
-            def: ,
-            spa: ,
-            spd: ,
-            spe:
+            hp: 120,
+            atk: 120,
+            def: 25,
+            spa: 24,
+            spd: 25,
+            spe: 120
         },
-        abilities: {0: "A1"}, OR {0: "A1", 1: "A2"}, OR {0: "A1", 1: "A2", H: "A3"},  
+        abilities: {
+            0: "Cute Charm",
+            1: "Competitive",
+            H: "Friend Guard"
+        },
     },
-		nameeternal: {
-        num: ,
-        species: "Pokemon-Eternal",
+    togeticeternal: {
+        num: 176,
+        species: "Togetic-Eternal",
         baseSpecies: "Eternal",
         forme: "Eternal",
         formeLetter: "E",
-        types: ["T1", "T2"], or ["T1"],
+        types: ["Fairy", "Water"],
         baseStats: {
-            hp: ,
-            atk: ,
-            def: ,
-            spa: ,
-            spd: ,
-            spe:
+            hp: 64,
+            atk: 44,
+            def: 124,
+            spa: 144,
+            spd: 144,
+            spe: 54
         },
-        abilities: {0: "A1"}, OR {0: "A1", 1: "A2"}, OR {0: "A1", 1: "A2", H: "A3"},  
+        abilities: {
+            0: "Hustle",
+            1: "Serene Grace",
+            H: "Super Luck"
+        },
     },
-		nameeternal: {
-        num: ,
-        species: "Pokemon-Eternal",
+    snubbulleternal: {
+        num: 209,
+        species: "Snubbull-Eternal",
         baseSpecies: "Eternal",
         forme: "Eternal",
         formeLetter: "E",
-        types: ["T1", "T2"], or ["T1"],
+        types: ["Fairy", "Electric"],
         baseStats: {
-            hp: ,
-            atk: ,
-            def: ,
-            spa: ,
-            spd: ,
-            spe:
+            hp: 91,
+            atk: 46,
+            def: 84,
+            spa: 133,
+            spd: 60,
+            spe: 30
         },
-        abilities: {0: "A1"}, OR {0: "A1", 1: "A2"}, OR {0: "A1", 1: "A2", H: "A3"},  
+        abilities: {
+            0: "Intimidate",
+            1: "Run Away",
+            H: "Rattled"
+        },
     },
-		nameeternal: {
-        num: ,
-        species: "Pokemon-Eternal",
+    driflooneternal: {
+        num: 425,
+        species: "Drifloon-Eternal",
         baseSpecies: "Eternal",
         forme: "Eternal",
         formeLetter: "E",
-        types: ["T1", "T2"], or ["T1"],
+        types: ["Ghost", "Psychic"],
         baseStats: {
-            hp: ,
-            atk: ,
-            def: ,
-            spa: ,
-            spd: ,
-            spe:
+            hp: 100,
+            atk: 37,
+            def: 80,
+            spa: 110,
+            spd: 80,
+            spe: 90
         },
-        abilities: {0: "A1"}, OR {0: "A1", 1: "A2"}, OR {0: "A1", 1: "A2", H: "A3"},  
+        abilities: {
+            0: "Aftermath",
+            1: "Unburden",
+            H: "Flare Boost"
+        },
+
     },
-		nameeternal: {
-        num: ,
-        species: "Pokemon-Eternal",
+    yamasketernal: {
+        num: 562,
+        species: "Yamask-Eternal",
         baseSpecies: "Eternal",
         forme: "Eternal",
         formeLetter: "E",
-        types: ["T1", "T2"], or ["T1"],
+        types: ["Ghost", "Steel"],
         baseStats: {
-            hp: ,
-            atk: ,
-            def: ,
-            spa: ,
-            spd: ,
-            spe:
+            hp: 110,
+            atk: 30,
+            def: 93,
+            spa: 115,
+            spd: 83,
+            spe: 61
         },
-        abilities: {0: "A1"}, OR {0: "A1", 1: "A2"}, OR {0: "A1", 1: "A2", H: "A3"},  
+        abilities: {
+            0: "Mummy"
+        },
     },
-		nameeternal: {
-        num: ,
-        species: "Pokemon-Eternal",
+    phantumpeternal: {
+        num: 708,
+        species: "Phantump-Eternal",
         baseSpecies: "Eternal",
         forme: "Eternal",
         formeLetter: "E",
-        types: ["T1", "T2"], or ["T1"],
+        types: ["Ghost", "Dragon"],
         baseStats: {
-            hp: ,
-            atk: ,
-            def: ,
-            spa: ,
-            spd: ,
-            spe:
+            hp: 93,
+            atk: 60,
+            def: 55,
+            spa: 100,
+            spd: 130,
+            spe: 35
         },
-        abilities: {0: "A1"}, OR {0: "A1", 1: "A2"}, OR {0: "A1", 1: "A2", H: "A3"},  
+        abilities: {
+            0: "Natural Care",
+            1: "Frisk",
+            H: "Harvest"
+        },
     },
-		nameeternal: {
-        num: ,
+
+    ruffleteternal: {
+        num: 627,
         species: "Pokemon-Eternal",
         baseSpecies: "Eternal",
         forme: "Eternal",
         formeLetter: "E",
-        types: ["T1", "T2"], or ["T1"],
+        types: ["Flying"],
         baseStats: {
-            hp: ,
-            atk: ,
-            def: ,
-            spa: ,
-            spd: ,
-            spe:
+            hp: 99,
+            atk: 104,
+            def: 84,
+            spa: 41,
+            spd: 84,
+            spe: 97
         },
-        abilities: {0: "A1"}, OR {0: "A1", 1: "A2"}, OR {0: "A1", 1: "A2", H: "A3"},  
+        abilities: {
+            0: "Keen Eye",
+            1: "Sheer Force",
+            H: "Hustle"
+        },
     },
-		nameeternal: {
-        num: ,
-        species: "Pokemon-Eternal",
+
+    vullabyeternal: {
+        num: 629,
+        species: "Vullaby-Eternal",
         baseSpecies: "Eternal",
         forme: "Eternal",
         formeLetter: "E",
-        types: ["T1", "T2"], or ["T1"],
+        types: ["Dark", "Bug"],
         baseStats: {
-            hp: ,
-            atk: ,
-            def: ,
-            spa: ,
-            spd: ,
-            spe:
+            hp: 80,
+            atk: 60,
+            def: 100,
+            spa: 118,
+            spd: 96,
+            spe: 55
         },
-        abilities: {0: "A1"}, OR {0: "A1", 1: "A2"}, OR {0: "A1", 1: "A2", H: "A3"},  
+        abilities: {
+            0: "Big Pecks",
+            1: "Overcoat",
+            H: "Weak Armor"
+        },
     },
-		nameeternal: {
-        num: ,
-        species: "Pokemon-Eternal",
+    larvestaeternal: {
+        num: 636,
+        species: "Larvesta-Eternal",
         baseSpecies: "Eternal",
         forme: "Eternal",
         formeLetter: "E",
-        types: ["T1", "T2"], or ["T1"],
+        types: ["Bug", "Fire"],
         baseStats: {
-            hp: ,
-            atk: ,
-            def: ,
-            spa: ,
-            spd: ,
-            spe:
+            hp: 99,
+            atk: 44,
+            def: 69,
+            spa: 144,
+            spd: 99,
+            spe: 94
         },
-        abilities: {0: "A1"}, OR {0: "A1", 1: "A2"}, OR {0: "A1", 1: "A2", H: "A3"},  
-    },*/
+        abilities: {
+            0: "Flame Body",
+            H: "Swarm"
+        },
+    },
 };
