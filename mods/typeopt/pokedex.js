@@ -846,4 +846,54 @@ exports.BattlePokedex = {
             H: "Levitate"
         },
     },
+		   scrafty: {
+        inherit: true,
+        types: ["Rock", "Fighting"],
+        baseStats: {
+            hp: 80,
+            atk: 130,
+            def: 105,
+            spa: 40,
+            spd: 105,
+            spe: 110
+        },
+        abilities: {
+            0: "Intimidate",
+            1: "Moxie",
+            H: "Rock Head"
+        },
+    },
+		    torterra: {
+        inherit: true,
+        types: ["Rock", "Grass"],
+        baseStats: {
+            hp: 95,
+            atk: 135,
+            def: 125,
+            spa: 55,
+            spd: 105,
+            spe: 55
+        },
+        abilities: {
+            0: "Overgrow",
+            H: "Rock Head"
+        },
+    },
+		    lunatone: {
+        inherit: true,
+        types: ["Rock", "Psychic"],
+        baseStats: {
+            hp: 90,
+            atk: 55,
+            def: 75,
+            spa: 125,
+            spd: 95,
+            spe: 130
+        },
+        abilities: {
+            0: "Levitate",
+            1: "Technician",
+            H: "Magic Bounce"
+        },
+    },
 };
