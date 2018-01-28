@@ -22,7 +22,7 @@ exports.BattlePokedex = {
         inherit: true,
         types: ["Psychic", "Fairy"],
     },
-    Samurott: {
+    samurott: {
         inherit: true,
         types: ["Water", "Fighting"],
     },
