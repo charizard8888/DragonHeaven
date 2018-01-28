@@ -390,4 +390,32 @@
 			/*weightkg: undefined, */
 			prevo: "Onix"
 	 },
+	 riolu: {
+		 inherit: true,
+		 evos: ["lucario","chacario","cryocario","kobucha"],
+	 },
+	 chacario: {
+			num: 9039,
+			species: "Chacario",
+			types: ["Fighting", "Ground"], 
+			baseStats:{hp: 70, atk: 115, def: 70, spa: 90, spd: 70, spe: 110}, 
+			abilities: {0: "Steadfast", 1: "Inner Focus", H: "Torrid Sand"},  
+			prevo: "Riolu"
+	 },
+	 cryocario: {
+			num: 9040,
+			species: "Cryocario",
+			types: ["Fighting", "Ice"], 
+			baseStats:{hp: 70, atk: 115, def: 65, spa: 115, spd: 60, spe: 100}, // 70	115	65	115	60	100
+			abilities: {0: "Justified", 1: "Anger Point", H: "Slush Rush"},  
+			prevo: "Riolu"
+	 },
+	 kobucha: {
+			num: 9041,
+			species: "Kobucha",
+			types: ["Fighting"], 
+			baseStats:{hp: 70, atk: 122, def: 78, spa: 70, spd: 78, spe: 107},
+			abilities: {0: "Inner Focus", 1: "Pressure", H: "Long Reach"},  
+			prevo: "Riolu"
+	 },
 };
