@@ -1274,6 +1274,25 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 185,
 		contestType: "Beautiful",
 	},
+		"fleastorm": {
+		accuracy: 100,
+		basePower: 120,
+		category: "Special",
+		desc: "The user recovers 100% the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+		shortDesc: "User recovers 100% of the damage dealt.",
+		id: "fleastorm",
+		isViable: true,
+		name: "Flea Storm",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1, heal: 1},
+		drain: [1, 1],
+		secondary: false,
+		target: "normal",
+		type: "Bug",
+		zMovePower: 140,
+		contestType: "Tough",
+	},
 	
 	/*"tranquillity": {
 		accuracy: true,
@@ -1441,5 +1460,9 @@ Signature Move: Mythical Power (Status | Fairy | 10 PP | Resets the user's lower
 Signature Move: Napalm /   /   / 40 BP / 10 PP / 100 Acc / Fletchinder sideswipes the target, attaching a glob of napalm to them that detonates at the end of the next turn, dealing 100 physical Dark damage. Fletchinder switches out after the initial attack. The explosion will also trigger if the opponent is burned, a Fire-type, or when hit by a Fire-type attack. / Z-Move: 100 BP Black Hole Eclipse
 Signature Move: Egg Overboil |   |   | 45 BP | 10 PP | 90% Acc | Hits twice, the first hit has a 50% chance to Soak its foe, and the second hit a 50% chance to burn it. | Z Move - 175 BP Hydro Vortex
 Signature Move: Nosokinesis |   |   | 5 PP | 100 BP | 100 Acc | This move's power is increased by 1,5x if it has a status move, and it transfer the status problem to the enemy. if it transfer the status, the user regains 25% of max HP.
+Signature Move: Ancient Ritual - Special, Dragon, 150 BP, 100% Accuracy, 5 PP | The user chants a cataclysmic tune. Calls for an attack turn 1, hits turn 4. If the opponent has been KOd by this attack, apply the Wish effect to the current Pokemon on the field. | Z-move: Devastating Drake, 210 BP
+Signature Move: Pumpkin Flare - Fire, Special, 10 PP, - BP, 100% Accuracy | The user bursts its body and fires an array of seeds at the opponent. BP is dependent on form (20 BP for small, 22 BP for medium, 25 BP for large, 30 BP for XL), burn chance is dependent on form (8% for small, 11% for medium, 14% for large, 20% for XL), and amount of hits are based on size (6 for small, 5 for medium, 4 for large, 3 for XL). | Z-move: Inferno Overdrive, 190 BP
+Signature Move: Manifest Destiny /   /   / 90 BP / 90 Acc / 10 PP / Grasping at the chance to gain power in justice, Rufflet assaults the target. Deals 50% more damage and never misses if Rufflet is hit on the turn of the attack. / Z-Move: 170 BP Supersonic Skystrike
+Signature Move: Sun Dance |   |   | -- BP | 5 PP | -- Acc | "The user sacrifices its vital energy as a gift for the sun, therefore summoning stronger daylight along with a boost to its power." | -5 Priority. User decreases it HP until it's left with one hit point, the exact number of hit points is lot by the foe as well (à la Final Gambit). Sets up Sunny Day, and Boosts user's Special Attack, Special Defense, and Speed by one stage each. Never Misses. | Z Move - 180 BP Inferno Overdrive
 */
 };
