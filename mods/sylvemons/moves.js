@@ -74,4 +74,276 @@ exports.BattleMovedex = {
                 zMovePower: 195,
                 contestType: "Beautiful",
         },
+		"teleport": {
+		accuracy: 100,
+		basePower: 70,
+		category: "Special",
+		desc: "The user switches out after successful use.",
+		shortDesc: "The user switches out after successful use.",
+		id: "teleport",
+		name: "Teleport",
+		pp: 32,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		selfSwitch: true,
+		onTryHit: false,
+		secondary: false,
+		target: "normal",
+		type: "Psychic",
+		zMovePower: '140',
+		contestType: "Cool",
+	},
+	"plumecannon": {
+		accuracy: 90,
+		basePower: 25,
+		category: "Physical",
+		desc: "Hits two to five times. Has a 1/3 chance to hit two or three times, and a 1/6 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Ability Skill Link, this move will always hit five times.",
+		shortDesc: "Hits 2-5 times in one turn.",
+		id: "plumecannon",
+		isViable: true,
+		name: "Plume Cannon",
+		pp: 8,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		multihit: [2, 5],
+		secondary: false,
+		target: "normal",
+		type: "Flying",
+		zMovePower: 140,
+		contestType: "Tough",
+	},
+	 "slipstream": {
+		accuracy: 100,
+		basePower: 60,
+		category: "Physical",
+		desc: "The user switches out after successful use. Deals double damage under Tailwind",
+		shortDesc: "The user switches out after successful use. Deals double damage under Tailwind",
+		id: "slipstream",
+		isViable: true,
+		name: "Slipstream",
+		pp: 32,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onBasePowerPriority: 8,
+		onBasePower: function (basePower, pokemon) {
+			if (this.issideCondition(['tailwind'])) {
+				return this.chainModify(2);
+			}
+		},
+		selfSwitch: true,
+		secondary: false,
+		target: "normal",
+		type: "Flying",
+		zMovePower: 120,
+		contestType: "Cute",
+	},
+		"thunderclap": {
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		desc: "No additional effect.",
+		shortDesc: "No additional effect. Hits adjacent Pokemon.",
+		id: "thunderclap",
+		isViable: true,
+		name: "Thunder Clap",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, sound: 1, authentic: 1},
+		secondary: false,
+		target: "allAdjacent",
+		type: "Electric",
+		zMovePower: 200,
+		contestType: "Tough",
+	},
+		"rinseoff": {
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "Heals the user by 50% (66% in rain, 25% in sun)",
+		shortDesc: "Heals the user by 50% (66% in rain, 25% in sun)",
+		id: "rinseoff",
+		isViable: true,
+		name: "Rinse Off",
+		pp: 16,
+		priority: 0,
+		flags: {snatch: 1, heal: 1},
+		onHit: function (pokemon) {
+			if (this.isWeather(['raindance', 'primordialsea'])) {
+				return this.heal(this.modify(pokemon.maxhp, 0.667));
+			} else if (this.isWeather(['sunnyday', 'desolateland'])) {
+				return this.heal(this.modify(pokemon.maxhp, 0.25));
+			} else {
+				return this.heal(this.modify(pokemon.maxhp, 0.5));
+			}
+		},
+		secondary: false,
+		target: "self",
+		type: "Water",
+		zMoveEffect: 'clearnegativeboost',
+		contestType: "Beautiful",
+	},
+	"acidmelt": {
+		accuracy: 100,
+		basePower: 70,
+		category: "Special",
+		desc: "10% chance to burn the opponent and is super effective against Steel-types.",
+		shortDesc: "10% chance to burn the opponent and is super effective against Steel-types.",
+		id: "acidmelt",
+		isViable: true,
+		name: "Acid Melt",
+		pp: 32,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onEffectiveness: function (typeMod, type) {
+			if (type === 'Steel') return 1;
+		},
+		secondary: {
+			chance: 10,
+			status: 'brn',
+		},
+		target: "normal",
+		type: "Poison",
+		zMovePower: 140,
+		contestType: "Beautiful",
+	},
+	"fairycharge": {
+		accuracy: 100,
+		basePower: 120,
+		category: "Physical",
+		desc: "The user receives 1/3 damage inflicted in recoil. Has a 10% chance to decrease the target's Atk by 1 stage.",
+		shortDesc: "The user receives 1/3 damage inflicted in recoil. Has a 10% chance to decrease the target's Atk by 1 stage.",
+		id: "fairycharge",
+		isViable: true,
+		name: "Fairy Charge",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		recoil: [1, 3],
+		secondary: {
+			chance: 10,
+			boosts: {
+				atk: -1,
+			},
+		},
+		target: "normal",
+		type: "Fairy",
+		zMovePower: 180,
+		contestType: "Cute",
+	},
+		"jetstream": {
+		accuracy: 100,
+		basePower: 40,
+		category: "Special",
+		desc: "Has +1 Priority and can thaw the user. ",
+		shortDesc: "Has +1 Priority and can thaw the user. ",
+		id: "jetstream",
+		isViable: true,
+		name: "Jetstream",
+		pp: 48,
+		priority: 1,
+		flags: {contact: 1, protect: 1, mirror: 1, defrost: 1},
+		target: "normal",
+		type: "Flying",
+		zMovePower: 190,
+		contestType: "Cool",
+	},
+	"recrystalize": {
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "Heals up to 50% of the user's max HP; Ice-types recover 67% in Hail and Rock-types recover 67% in Sandstorm.",
+		shortDesc: "Heals up to 50% of the user's max HP; Ice-types recover 67% in Hail and Rock-types recover 67% in Sandstorm.",
+		id: "recrystalize",
+		isViable: true,
+		name: "Recrystalize",
+		pp: 5,
+		priority: 0,
+		flags: {snatch: 1, heal: 1},
+		onHit: function (pokemon) {
+			if (this.isWeather(['hail', 'sandstorm'])) {
+				return this.heal(this.modify(pokemon.maxhp, 0.667));
+			}  else {
+				return this.heal(this.modify(pokemon.maxhp, 0.5));
+			}
+		},
+		secondary: false,
+		target: "self",
+		type: "Normal",
+		zMoveEffect: 'clearnegativeboost',
+		contestType: "Beautiful",
+	},
+	"meteormash": {
+		accuracy: 100,
+		basePower: 90,
+		category: "Physical",
+		desc: "Has a high critical hit ratio and a 30% chance to increase the user’s Def by 1 stage. (Contact, Blade)",
+		shortDesc: "Has a high critical hit ratio and a 30% chance to increase the user’s Def by 1 stage. (Contact, Blade)",
+		id: "meteormash",
+		isViable: true,
+		name: "Meteor Mash",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
+		critRatio: 2,
+		secondary: {
+			chance: 30,
+			self: {
+				boosts: {
+					def: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Steel",
+		zMovePower: 175,
+		contestType: "Cool",
+	},
+	"ionabsorb": {
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		desc: "Applies the Charge effect to the user after doing damage (If used while boosted by Charge, effect is not applied)",
+		shortDesc: "Applies the Charge effect to the user after doing damage (If used while boosted by Charge, effect is not applied)",
+		id: "ionabsorb",
+		isViable: true,
+		name: "Ion Absorb",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
+		onHit: function (pokemon) {
+			this.add('-activate', pokemon, 'move: Charge');
+		},
+		effect: {
+			duration: 2,
+			onRestart: function (pokemon) {
+				this.effectData.duration = 2;
+			},
+			onBasePowerPriority: 3,
+			onBasePower: function (basePower, attacker, defender, move) {
+				if (move.type === 'Electric') {
+					this.debug('charge boost');
+					return this.chainModify(2);
+				}
+			},
+		},
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spd: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Steel",
+		zMovePower: 175,
+		contestType: "Cool",
+	},
+	
+	/* Haunting Scream	Ghost	Special	90, 100%	16 Max	Inflicts the Perish Song  effect on the opponent 30% of the time. (Sound)	Never-Ending Nightmare (175 BP)
+	Air Current	Flying	Status	--	16 Max	See abilities page under "Air Stream"	Raises the user's Speed by 1
+	Swampland	Water	Status	--	16 Max	Envelops the opponent’s side of the field in a Swamp (halves the opponent's team's Speed for 4 turns)	Raises the user's Special Attack by 1
+	Shadow Charge	Ghost	Physical	85, 95%	24 Max	Power is boosted 1.5x if target is switching in. (Contact)	Never-Ending Nightmare (160 BP)
+	
+	*/
 }; 
