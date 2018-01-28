@@ -1052,9 +1052,12 @@ exports.BattlePokedex = {
             spd: 65,
             spe: 105
         },
-        abilities: {0: "Guts", H: "Scrappy"},
+        abilities: {
+			  0: "Guts", 
+			  H: "Scrappy"
+		  },
     },
-		wingulleternal: {
+		/*wingulleternal: {
         num: 278,
         species: "Wingull-Eternal",
         baseSpecies: "Eternal",
@@ -1071,7 +1074,7 @@ exports.BattlePokedex = {
         },
         abilities: {0: "Keen Eye", 1: "Hydration", H: "Rain Dish"},  
     },
-staraviaeternal: {
+		staraviaeternal: {
         num: 397,
         species: "Staravia-Eternal",
         baseSpecies: "Eternal",
@@ -1363,6 +1366,6 @@ staraviaeternal: {
             0: "Flame Body",
             H: "Swarm"
         },
-    },
+    },*/
 	
 };
