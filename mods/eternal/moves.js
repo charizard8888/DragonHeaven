@@ -1151,6 +1151,132 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 195,
 		contestType: "Cute",
 	},
+		"woodpeckerbarrage": {
+		accuracy: 100,
+		basePower: 10,
+		category: "Physical",
+		desc: "Multihit move: 1-15, doesn't make contact.",
+		shortDesc: "Multihit move: 1-15, doesn't make contact.",
+		id: "woodpeckerbarrage",
+		isViable: true,
+		name: "Woodpecker Barrage",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		multihit: [1, 15],
+		secondary: false,
+		target: "normal",
+		type: "Flying",
+		zMovePower: 190,
+		contestType: "Tough",
+	},
+		"meteoriteimpact": {
+		accuracy: 95,
+		basePower: 45,
+		category: "Special",
+		desc: "+2 Priority.",
+		shortDesc: "+2 Priority.",
+		id: "meteoriteimpact",
+		name: "Meteorite Impact",
+		pp: 10,
+		priority: 1,
+		flags: {protect: 1, mirror: 1},
+		secondary: false,
+		target: "normal",
+		type: "Fairy",
+		zMovePower: 170,
+		contestType: "Cool",
+	},
+		"brawlingball": {
+		accuracy: 90,
+		basePower: 120,
+		category: "Physical",
+		desc: "Raises Spe by one stage. Ignores immunities. Removes hazards from the user's side of the field, gets rid of binding moves and Leech Seed as well.",
+		shortDesc: "Raises Spe by one stage. Ignores immunities. Removes hazards from the user's side of the field, gets rid of binding moves and Leech Seed as well.",
+		id: "brawlingball",
+		isViable: true,
+		name: "Brawling Ball",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+				self: {
+			onHit: function (pokemon) {
+				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
+					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', '[of] ' + pokemon);
+				}
+				let sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb'];
+				for (const condition of sideConditions) {
+					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+						this.add('-sideend', pokemon.side, this.getEffect(condition).name, '[from] move: Rapid Spin', '[of] ' + pokemon);
+					}
+				}
+				if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
+					pokemon.removeVolatile('partiallytrapped');
+				}
+			},
+		},
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spe: 1,
+				},
+			},
+		},
+		onEffectiveness: function (typeMod, type) {
+			if (type === 'Ghost') return 1;
+		},
+		target: "normal",
+		type: "Fighting",
+		zMovePower: 190,
+		contestType: "Cool",
+	},
+		"razzledazzle": {
+		accuracy: 100,
+		basePower: 45,
+		category: "Physical",
+		desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit. 30% chance to burn the target.",
+		shortDesc: "Hits 2 times in one turn. 30% chance to burn the target.",
+		id: "razzledazzle",
+		name: "Razzle Dazzle",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		multihit: 2,
+		secondary: {
+			chance: 30,
+			status: 'par',
+		},
+		target: "normal",
+		type: "Electric",
+		zMovePower: 100,
+		contestType: "Tough",
+	},
+		"soulstamp": {
+		accuracy: 100,
+		basePower: 110,
+		category: "Special",
+		desc: "If the target is KOed by this move, Yamask transforms into the target and heals 50% of its max HP.",
+		shortDesc: "If the target is KOed by this move, Yamask transforms into the target and heals 50% of its max HP.",
+		id: "soulstamp",
+		isViable: true,
+		name: "Soul Stamp",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onSourceFaint: function (target, source, effect) {
+			if (effect && effect.effectType === 'Move') {
+				this.useMove('Transform', source);
+				this.useMove('Recover', source);
+			}
+		},
+		secondary: false,
+		target: "normal",
+		type: "Steel",
+		zMovePower: 185,
+		contestType: "Beautiful",
+	},
+	
 	/*"tranquillity": {
 		accuracy: true,
 		basePower: 0,
@@ -1314,5 +1440,8 @@ Signature Move: Bounce Shield |  Psychic | Status   | 10 PP | Similar to protect
 Signature Move: Divine Luster |  Fairy | SPecial   | 15 PP | 90 BP | 100 Acc | If the attack is used on an foe, the attack will make damage and it'll make 1,5 times more damage, then it removes any negative status. If it targets user or an ally, it's heal 50% of max Health Points and will remove all negative stats
 Signature Move: Doldrum |  Flying | Physical   | 5 PP | - | The users summons Deltra Stream in first turn, the next turn will increase attack by one level, and defense and special defense by two levels
 Signature Move: Mythical Power (Status | Fairy | 10 PP | Resets the user's lowered stats and then boosts Special Attack by two stages)
+Signature Move: Napalm /   /   / 40 BP / 10 PP / 100 Acc / Fletchinder sideswipes the target, attaching a glob of napalm to them that detonates at the end of the next turn, dealing 100 physical Dark damage. Fletchinder switches out after the initial attack. The explosion will also trigger if the opponent is burned, a Fire-type, or when hit by a Fire-type attack. / Z-Move: 100 BP Black Hole Eclipse
+Signature Move: Egg Overboil |   |   | 45 BP | 10 PP | 90% Acc | Hits twice, the first hit has a 50% chance to Soak its foe, and the second hit a 50% chance to burn it. | Z Move - 175 BP Hydro Vortex
+Signature Move: Nosokinesis |   |   | 5 PP | 100 BP | 100 Acc | This move's power is increased by 1,5x if it has a status move, and it transfer the status problem to the enemy. if it transfer the status, the user regains 25% of max HP.
 */
 };
