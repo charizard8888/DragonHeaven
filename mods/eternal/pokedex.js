@@ -1037,7 +1037,7 @@ exports.BattlePokedex = {
             H: "Tinted Lens"
         },
     },
-/*	tailloweternal: {
+	tailloweternal: {
         num: 276,
         species: "Taillow-Eternal",
         baseSpecies: "Eternal",
@@ -1056,7 +1056,7 @@ exports.BattlePokedex = {
 			  0: "Guts", 
 			  H: "Scrappy"
 		  },
-    },*/
+    },
 		wingulleternal: {
         num: 278,
         species: "Wingull-Eternal",
