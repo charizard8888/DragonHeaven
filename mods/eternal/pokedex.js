@@ -1037,5 +1037,332 @@ exports.BattlePokedex = {
             H: "Tinted Lens"
         },
     },
+	tailloweternal: {
+        num: 276,
+        species: "Taillow-Eternal",
+        baseSpecies: "Eternal",
+        forme: "Eternal",
+        formeLetter: "E",
+        types: ["Nomral", "Water"],
+        baseStats: {
+            hp: 60,
+            atk: 105,
+            def: 65,
+            spa: 54,
+            spd: 65,
+            spe: 105
+        },
+        abilities: {0: "Guts", H: "Scrappy"},
+    },
+		wingulleternal: {
+        num: 278,
+        species: "Wingull-Eternal",
+        baseSpecies: "Eternal",
+        forme: "Eternal",
+        formeLetter: "E",
+        types: ["Water", "Ghost"],
+        baseStats: {
+            hp: 96,
+            atk: 30,
+            def: 30,
+            spa: 66,
+            spd: 104,
+            spe: 113
+        },
+        abilities: {0: "Keen Eye", 1: "Hydration", H: "Rain Dish"},  
+    },
+staraviaeternal: {
+        num: 397,
+        species: "Staravia-Eternal",
+        baseSpecies: "Eternal",
+        forme: "Eternal",
+        formeLetter: "E",
+        types: ["Fairy", "Flying"],
+        baseStats: {
+            hp: 55,
+            atk: 154,
+            def: 55,
+            spa: 66,
+            spd: 55,
+            spe: 99
+        },
+        abilities: {
+            0: "Intimidate",
+            H: "Reckless"
+        }
+    },
+
+    tranquilleternal: {
+        num: 520,
+        species: "Tranquill-Eternal",
+        baseSpecies: "Eternal",
+        forme: "Eternal",
+        formeLetter: "E",
+        types: ["Flying"],
+        baseStats: {
+            hp: 115,
+            atk: 57,
+            def: 67,
+            spa: 57,
+            spd: 80,
+            spe: 111
+        },
+        abilities: {
+            0: "Big Pecks",
+            1: "Super Luck",
+            H: "Rivalry"
+        },
+    },
+    fletchindereternal: {
+        num: 662,
+        species: "Fletchinder-Eternal",
+        baseSpecies: "Eternal",
+        forme: "Eternal",
+        formeLetter: "E",
+        types: ["Fire", "Dark"],
+        baseStats: {
+            hp: 63,
+            atk: 104,
+            def: 105,
+            spa: 40,
+            spd: 63,
+            spe: 124
+        },
+        abilities: {
+            0: "Flame Body",
+            H: "Gale Wings"
+        },
+    },
+    trumbeaketernal: {
+        num: 732,
+        species: "Trumbeak-Eternal",
+        baseSpecies: "Eternal",
+        forme: "Eternal",
+        formeLetter: "E",
+        types: ["Grass", "Flying"],
+        baseStats: {
+            hp: 80,
+            atk: 115,
+            def: 70,
+            spa: 50,
+            spd: 70,
+            spe: 99
+        },
+        abilities: {
+            0: "Keen Eye",
+            1: "Skill Link",
+            H: "Pickup"
+        },
+    },
+    clefairyeternal: {
+        num: 35,
+        species: "Clefairy-Eternal",
+        baseSpecies: "Eternal",
+        forme: "Eternal",
+        formeLetter: "E",
+        types: ["Fairy", "Steel"],
+        baseStats: {
+            hp: 99,
+            atk: 110,
+            def: 68,
+            spa: 60,
+            spd: 85,
+            spe: 75
+        },
+        abilities: {
+            0: "Cute Charm",
+            1: "Magic Guard",
+            H: "Friend Guard"
+        },
+    },
+    jigglypuffeternal: {
+        num: 39,
+        species: "Jigglypuff-Eternal",
+        baseSpecies: "Eternal",
+        forme: "Eternal",
+        formeLetter: "E",
+        types: ["Normal", "Fighting"],
+        baseStats: {
+            hp: 120,
+            atk: 120,
+            def: 25,
+            spa: 24,
+            spd: 25,
+            spe: 120
+        },
+        abilities: {
+            0: "Cute Charm",
+            1: "Competitive",
+            H: "Friend Guard"
+        },
+    },
+    togeticeternal: {
+        num: 176,
+        species: "Togetic-Eternal",
+        baseSpecies: "Eternal",
+        forme: "Eternal",
+        formeLetter: "E",
+        types: ["Fairy", "Water"],
+        baseStats: {
+            hp: 64,
+            atk: 44,
+            def: 124,
+            spa: 144,
+            spd: 144,
+            spe: 54
+        },
+        abilities: {
+            0: "Hustle",
+            1: "Serene Grace",
+            H: "Super Luck"
+        },
+    },
+    snubbulleternal: {
+        num: 209,
+        species: "Snubbull-Eternal",
+        baseSpecies: "Eternal",
+        forme: "Eternal",
+        formeLetter: "E",
+        types: ["Fairy", "Electric"],
+        baseStats: {
+            hp: 91,
+            atk: 46,
+            def: 84,
+            spa: 133,
+            spd: 60,
+            spe: 30
+        },
+        abilities: {
+            0: "Intimidate",
+            1: "Run Away",
+            H: "Rattled"
+        },
+    },
+    driflooneternal: {
+        num: 425,
+        species: "Drifloon-Eternal",
+        baseSpecies: "Eternal",
+        forme: "Eternal",
+        formeLetter: "E",
+        types: ["Ghost", "Psychic"],
+        baseStats: {
+            hp: 100,
+            atk: 37,
+            def: 80,
+            spa: 110,
+            spd: 80,
+            spe: 90
+        },
+        abilities: {
+            0: "Aftermath",
+            1: "Unburden",
+            H: "Flare Boost"
+        },
+
+    },
+    yamasketernal: {
+        num: 562,
+        species: "Yamask-Eternal",
+        baseSpecies: "Eternal",
+        forme: "Eternal",
+        formeLetter: "E",
+        types: ["Ghost", "Steel"],
+        baseStats: {
+            hp: 110,
+            atk: 30,
+            def: 93,
+            spa: 115,
+            spd: 83,
+            spe: 61
+        },
+        abilities: {
+            0: "Mummy"
+        },
+    },
+    phantumpeternal: {
+        num: 708,
+        species: "Phantump-Eternal",
+        baseSpecies: "Eternal",
+        forme: "Eternal",
+        formeLetter: "E",
+        types: ["Ghost", "Dragon"],
+        baseStats: {
+            hp: 93,
+            atk: 60,
+            def: 55,
+            spa: 100,
+            spd: 130,
+            spe: 35
+        },
+        abilities: {
+            0: "Natural Care",
+            1: "Frisk",
+            H: "Harvest"
+        },
+    },
+
+    ruffleteternal: {
+        num: 627,
+        species: "Pokemon-Eternal",
+        baseSpecies: "Eternal",
+        forme: "Eternal",
+        formeLetter: "E",
+        types: ["Flying"],
+        baseStats: {
+            hp: 99,
+            atk: 104,
+            def: 84,
+            spa: 41,
+            spd: 84,
+            spe: 97
+        },
+        abilities: {
+            0: "Keen Eye",
+            1: "Sheer Force",
+            H: "Hustle"
+        },
+    },
+
+    vullabyeternal: {
+        num: 629,
+        species: "Vullaby-Eternal",
+        baseSpecies: "Eternal",
+        forme: "Eternal",
+        formeLetter: "E",
+        types: ["Dark", "Bug"],
+        baseStats: {
+            hp: 80,
+            atk: 60,
+            def: 100,
+            spa: 118,
+            spd: 96,
+            spe: 55
+        },
+        abilities: {
+            0: "Big Pecks",
+            1: "Overcoat",
+            H: "Weak Armor"
+        },
+    },
+    larvestaeternal: {
+        num: 636,
+        species: "Larvesta-Eternal",
+        baseSpecies: "Eternal",
+        forme: "Eternal",
+        formeLetter: "E",
+        types: ["Bug", "Fire"],
+        baseStats: {
+            hp: 99,
+            atk: 44,
+            def: 69,
+            spa: 144,
+            spd: 99,
+            spe: 94
+        },
+        abilities: {
+            0: "Flame Body",
+            H: "Swarm"
+        },
+    },
 	
 };
