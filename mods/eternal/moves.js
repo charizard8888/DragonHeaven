@@ -1292,11 +1292,11 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 140,
 		contestType: "Tough",
 	},
-	   /*"sundance": {
+	   "sundance": {
        accuracy: true,
        basePower: 0,
        damageCallback: function (pokemon) {
-			 let damage = pokemon.hp - 1;
+			 let damage = pokemon.hp;
 			 pokemon.sethp(1);
 			 return damage;
        },
@@ -1320,7 +1320,7 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
        target: "normal",
        type: "Fire",
        zMovePower: 180,
-    },*/
+    },
 	
 	/*"tranquillity": {
 		accuracy: true,
