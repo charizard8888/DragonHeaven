@@ -4,12 +4,12 @@ exports.BattleFormatsData = { //
 
 swampamar: {
 		randomBattleMoves: ["dragondance", "flareblitz", "dragonclaw", "earthquake", "roost", "willowisp"],
-		tier: "OU",
+		tier: "Ubers",
 	},
  swampamarmega: {
 		randomBattleMoves: ["dragondance", "flareblitz", "dragonclaw", "earthquake", "roost", "willowisp"],
 		requiredItem: "Swampamarite",
-		tier: "OU",
+		tier: "Ubers",
 	},
 gyarotic: {
 		randomBattleMoves: ["dragondance", "flareblitz", "dragonclaw", "earthquake", "roost", "willowisp"],
