@@ -12,2630 +12,2630 @@ swampamar: {
 		tier: "OU",
 	},
 gyarotic: {
-        tier: "OU"
+        tier: "OU",
     },
     gyaroticmega: {
-        tier: "OU"
+        tier: "OU",
     },
     azuninja: {
-        tier: "OU"
+        tier: "OU",
     },
     chandeform: {
-        tier: "OU"
+        tier: "OU",
     },
     chandeformsunny: {
-        tier: "OU"
+        tier: "OU",
     },
     chandeformrainy: {
-        tier: "OU"
+        tier: "OU",
     },
     chandeformsnowy: {
-        tier: "OU"
+        tier: "OU",
     },
     chandeformsandy: {
-        tier: "OU"
+        tier: "OU",
     },
     mismatross: {
-        tier: "OU"
+        tier: "OU",
     },
     haxardos: {
-        tier: "OU"
+        tier: "OU",
     },
     pangleye: {
-        tier: "OU"
+        tier: "OU",
     }, pangleyemega: {
-        tier: "OU"
+        tier: "OU",
     },
     garchados: {
-        tier: "OU"
+        tier: "OU",
     },
     garchadosmegay: {
-        tier: "OU"
+        tier: "OU",
     },
     garchadosmegac: {
-        tier: "OU"
+        tier: "OU",
     },
     wailcatty: {
-        tier: "OU"
+        tier: "OU",
     },
     gargatr: {
-        tier: "OU"
+        tier: "OU",
     },
     gargatrmega: {
-        tier: "OU"
+        tier: "OU",
     },
     dragon: {
-        tier: "OU"
+        tier: "OU",
     },
     hawlusharp: {
-        tier: "OU"
+        tier: "OU",
     },
     cofagreelix: {
-        tier: "OU"
+        tier: "OU",
     },
     cofagreelixmega: {
-        tier: "OU"
+        tier: "OU",
     },
     joltlord: {
-        tier: "OU"
+        tier: "OU",
     },
     vepsicor: {
-        tier: "OU"
+        tier: "OU",
     },
     zorcanine: {
-        tier: "OU"
+        tier: "OU",
     },
     archedactyl: {
-        tier: "OU"
+        tier: "OU",
     },
     archedactylmega: {
-        tier: "OU"
+        tier: "OU",
     },
     chesdon: {
-        tier: "OU"
+        tier: "OU",
     },
     mamodrill: {
-        tier: "OU"
+        tier: "OU",
     },
     heliodra: {
-        tier: "OU"
+        tier: "OU",
     },
     scyscor: {
-        tier: "OU"
+        tier: "OU",
     },
     joltry: {
-        tier: "OU"
+        tier: "OU",
     },
     azumaloom: {
-        tier: "OU"
+        tier: "OU",
     },
     sawkape: {
-        tier: "OU"
+        tier: "OU",
     },
     weasol: {
-        tier: "OU"
+        tier: "OU",
     },
     weasolmega: {
-        tier: "OU"
+        tier: "OU",
     },
     tyranichomp: {
-        tier: "OU"
+        tier: "OU",
     },
     tyranichompmegat: {
-        tier: "OU"
+        tier: "OU",
     },
     tyranichompmegag: {
-        tier: "OU"
+        tier: "OU",
     },
     railie: {
-        tier: "OU"
+        tier: "OU",
     },
     railiemega: {
-        tier: "OU"
+        tier: "OU",
     },
     charatos: {
-        tier: "OU"
+        tier: "OU",
     },
     charatosmegay: {
-        tier: "OU"
+        tier: "OU",
     },
     charatosmegag: {
-        tier: "OU"
+        tier: "OU",
     },
     charatosmegax: {
-        tier: "OU"
+        tier: "OU",
     },
     aggrosaur: {
-        tier: "OU"
+        tier: "OU",
     },
     aggrosaurmegav: {
-        tier: "OU"
+        tier: "OU",
     },
     aggrosaurmegaa: {
-        tier: "OU"
+        tier: "OU",
     },
     blastinja: {
-        tier: "OU"
+        tier: "OU",
     },
     blastinjamega: {
-        tier: "OU"
+        tier: "OU",
     },
     skaria: {
-        tier: "OU"
+        tier: "OU",
     },
     skariamega: {
-        tier: "OU"
+        tier: "OU",
     },
     magmozam: {
-        tier: "OU"
+        tier: "OU",
     },
     magmozammega: {
-        tier: "OU"
+        tier: "OU",
     },
     glakiss: {
-        tier: "OU"
+        tier: "OU",
     },
     glakissmega: {
-        tier: "OU"
+        tier: "OU",
     },
     sharpedos: {
-        tier: "OU"
+        tier: "OU",
     },
     sharpedosmegas: {
-        tier: "OU"
+        tier: "OU",
     },
     sharpedosmegag: {
-        tier: "OU"
+        tier: "OU",
     },
     vapornine: {
-        tier: "OU"
+        tier: "OU",
     },
     pidgetot: {
-        tier: "OU"
+        tier: "OU",
     }, pidgetotmega: {
-        tier: "OU"
+        tier: "OU",
     },
     goracanion: {
-        tier: "OU"
+        tier: "OU",
     },
     klazor: {
-        tier: "OU"
+        tier: "OU",
     },
     klazormega: {
-        tier: "OU"
+        tier: "OU",
     },
     pidgemie: {
-        tier: "OU"
+        tier: "OU",
     },
     pidgemiemega: {
-        tier: "OU"
+        tier: "OU",
     },
     porylure: {
-        tier: "OU"
+        tier: "OU",
     },
     starchamp: {
-        tier: "OU"
+        tier: "OU",
     },
     eek: {
-        tier: "OU"
+        tier: "OU",
     },
     hitachi: {
-        tier: "OU"
+        tier: "OU",
     },
     shaymizard: {
-        tier: "OU"
+        tier: "OU",
     },
     shaymizardmegax: {
-        tier: "OU"
+        tier: "OU",
     },
     shaymizardmegay: {
-        tier: "OU"
+        tier: "OU",
     },
     ferroslashshield: {
-        tier: "OU"
+        tier: "OU",
     },
     ferroslashblade: {
-        tier: "OU"
+        tier: "OU",
     },
     hazard: {
-        tier: "OU"
+        tier: "OU",
     },
     hazardmegax: {
-        tier: "OU"
+        tier: "OU",
     },
     hazardmegay: {
-        tier: "OU"
+        tier: "OU",
     },
     hitmonklang: {
-        tier: "OU"
+        tier: "OU",
     },
     maladuck: {
-        tier: "OU"
+        tier: "OU",
     },
     yangarde: {
-        tier: "OU"
+        tier: "OU",
     },
     suirizion: {
-        tier: "OU"
+        tier: "OU",
     },
     jellivoir: {
-        tier: "OU"
+        tier: "OU",
     },
     jellivoirmega: {
-        tier: "OU"
+        tier: "OU",
     },
     metabat: {
-        tier: "OU"
+        tier: "OU",
     },
     metabatmega: {
-        tier: "OU"
+        tier: "OU",
     },
     dartios: {
-        tier: "OU"
+        tier: "OU",
     },
     dartiosmega: {
-        tier: "OU"
+        tier: "OU",
     },
     grenheatja: {
-        tier: "OU"
+        tier: "OU",
     },
     moltie: {
-        tier: "OU"
+        tier: "OU",
     },
     banegross: {
-        tier: "OU"
+        tier: "OU",
     },
     banegrossmegax: {
-        tier: "OU"
+        tier: "OU",
     },
     banegrossmegay: {
-        tier: "OU"
+        tier: "OU",
     },
     herasir: {
-        tier: "OU"
+        tier: "OU",
     },
     herasirmegah: {
-        tier: "OU"
+        tier: "OU",
     }, herasirmegap: {
-        tier: "OU"
+        tier: "OU",
     },
     mismagivoir: {
-        tier: "OU"
+        tier: "OU",
     },
     mismagivoirmega: {
-        tier: "OU"
+        tier: "OU",
     },
     harem: {
-        tier: "OU"
+        tier: "OU",
     },
     mana: {
-        tier: "OU"
+        tier: "OU",
     },
     manamega: {
-        tier: "OU"
+        tier: "OU",
     },
     lucharma: {
-        tier: "OU"
+        tier: "OU",
     },
     swank: {
-        tier: "OU"
+        tier: "OU",
     },
     swankmega: {
-        tier: "OU"
+        tier: "OU",
     },
     casting: {
-        tier: "OU"
+        tier: "OU",
     },
     castingsunny: {
-        tier: "OU"
+        tier: "OU",
     },
     castingrainy: {
-        tier: "OU"
+        tier: "OU",
     },
     castingsnowy: {
-        tier: "OU"
+        tier: "OU",
     },
     sablemimez: {
-        tier: "OU"
+        tier: "OU",
     },
     sablemimezmega: {
-        tier: "OU"
+        tier: "OU",
     },
     aegilineshield: {
-        tier: "OU"
+        tier: "OU",
     },
     aegilineblade: {
-        tier: "OU"
+        tier: "OU",
     },
     houndlion: {
-        tier: "OU"
+        tier: "OU",
     },
     houndlionmega: {
-        tier: "OU"
+        tier: "OU",
     },
     loppeye: {
-        tier: "OU"
+        tier: "OU",
     },
     loppeyemegax: {
-        tier: "OU"
+        tier: "OU",
     },
     loppeyemegay: {
-        tier: "OU"
+        tier: "OU",
     },
     bastioking: {
-        tier: "OU"
+        tier: "OU",
     },
     peatran: {
-        tier: "OU"
+        tier: "OU",
     },
     peatranmega: {
-        tier: "OU"
+        tier: "OU",
     },
     manatar: {
-        tier: "OU"
+        tier: "OU",
     },
     manatarmega: {
-        tier: "OU"
+        tier: "OU",
     },
     aurortoise: {
-        tier: "OU"
+        tier: "OU",
     },
     aurortoisemega: {
-        tier: "OU"
+        tier: "OU",
     },
     metsir: {
-        tier: "OU"
+        tier: "OU",
     },
     metsirmegam: {
-        tier: "OU"
+        tier: "OU",
     },
     metsirmegap: {
-        tier: "OU"
+        tier: "OU",
     },
     fablesteel: {
-        tier: "OU"
+        tier: "OU",
     },
     houdini: {
-        tier: "OU"
+        tier: "OU",
     },
     houdinimega: {
-        tier: "OU"
+        tier: "OU",
     },
     shot: {
-        tier: "OU"
+        tier: "OU",
     },
     shotmega: {
-        tier: "OU"
+        tier: "OU",
     },
     leafadon: {
-        tier: "OU"
+        tier: "OU",
     },
     mampharos: {
-        tier: "OU"
+        tier: "OU",
     },
     mampharosmegam: {
-        tier: "OU"
+        tier: "OU",
     },
     mampharosmegaa: {
-        tier: "OU"
+        tier: "OU",
     },
     krookz: {
-        tier: "OU"
+        tier: "OU",
     },
     entaria: {
-        tier: "OU"
+        tier: "OU",
     },
     entariamega: {
-        tier: "OU"
+        tier: "OU",
     },
     blasterain: {
-        tier: "OU"
+        tier: "OU",
     },
     blasterainmega: {
-        tier: "OU"
+        tier: "OU",
     },
     dianbro: {
-        tier: "OU"
+        tier: "OU",
     },
     dianbromega: {
-        tier: "OU"
+        tier: "OU",
     },
     chatotorus: {
-        tier: "OU"
+        tier: "OU",
     },
     blisskiss: {
-        tier: "OU"
+        tier: "OU",
     }, toxisharp: {
-        tier: "OU"
+        tier: "OU",
     },
     darmega: {
-        tier: "OU"
+        tier: "OU",
     },
     lagi: {
-        tier: "OU"
+        tier: "OU",
     },
     lagimega: {
-        tier: "OU"
+        tier: "OU",
     },
     heatloom: {
-        tier: "OU"
+        tier: "OU",
     },
     golislashdefense: {
-        tier: "OU"
+        tier: "OU",
     },
     golislashpower: {
-        tier: "OU"
+        tier: "OU",
     },
     hooporus: {
-        tier: "OU"
+        tier: "OU",
     },
     lopunnini: {
-        tier: "OU"
+        tier: "OU",
     },
     lopunninimega: {
-        tier: "OU"
+        tier: "OU",
     },
     volcagon: {
-        tier: "OU"
+        tier: "OU",
     },
     enterrak: {
-        tier: "OU"
+        tier: "OU",
     },
     aeroraptor: {
-        tier: "OU"
+        tier: "OU",
     },
     aeroraptormega: {
-        tier: "OU"
+        tier: "OU",
     },
     sans: {
-        tier: "OU"
+        tier: "OU",
     },
     lucasol: {
-        tier: "OU"
+        tier: "OU",
     },
     lucasolmegal: {
-        tier: "OU"
+        tier: "OU",
     },
     lucasolmegaa: {
-        tier: "OU"
+        tier: "OU",
     },
     sceptilusaur: {
-        tier: "OU"
+        tier: "OU",
     },
     sceptilusaurmegax: {
-        tier: "OU"
+        tier: "OU",
     },
     sceptilusaurmegay: {
-        tier: "OU"
+        tier: "OU",
     },
     houndectric: {
-        tier: "OU"
+        tier: "OU",
     },
     houndectricmegam: {
-        tier: "OU"
+        tier: "OU",
     },
     houndectricmegah: {
-        tier: "OU"
+        tier: "OU",
     },
     exdoom: {
-        tier: "OU"
+        tier: "OU",
     },
     exdoommega: {
-        tier: "OU"
+        tier: "OU",
     },
     gyaramence: {
-        tier: "OU"
+        tier: "OU",
     },
     gyaramencemegas: {
-        tier: "OU"
+        tier: "OU",
     },
     gyaramencemegag: {
-        tier: "OU"
+        tier: "OU",
     },
     thunderblast: {
-        tier: "OU"
+        tier: "OU",
     },
     thunderblastmega: {
-        tier: "OU"
+        tier: "OU",
     },
     snoopa: {
-        tier: "OU"
+        tier: "OU",
     },
     empoleking: {
-        tier: "OU"
+        tier: "OU",
     },
     heathorn: {
-        tier: "OU"
+        tier: "OU",
     },
     galvantulys: {
-        tier: "OU"
+        tier: "OU",
     },
     hazygon: {
-        tier: "OU"
+        tier: "OU",
     },
     jellie: {
-        tier: "OU"
+        tier: "OU",
     },
     zaggron: {
-        tier: "OU"
+        tier: "OU",
     },
     zaggronmega: {
-        tier: "OU"
+        tier: "OU",
     },
     malaras: {
-        tier: "OU"
+        tier: "OU",
     },
     umbord: {
-        tier: "OU"
+        tier: "OU",
     },
     eruption: {
-        tier: "OU"
+        tier: "OU",
     },
     eruptionmega: {
-        tier: "OU"
+        tier: "OU",
     },
     porygardezy: {
-        tier: "OU"
+        tier: "OU",
     },
     raptorus: {
-        tier: "OU"
+        tier: "OU",
     },
     sickle: {
-        tier: "OU"
+        tier: "OU",
     },
     sicklemega: {
-        tier: "OU"
+        tier: "OU",
     },
     koulion: {
-        tier: "OU"
+        tier: "OU",
     },
     dongoro: {
-        tier: "OU"
+        tier: "OU",
     },
     darkchomp: {
-        tier: "OU"
+        tier: "OU",
     }, darkchompmega: {
-        tier: "OU"
+        tier: "OU",
     },
     jelluk: {
-        tier: "OU"
+        tier: "OU",
     },
     crustlecross: {
-        tier: "OU"
+        tier: "OU",
     },
     crustlecrossmega: {
-        tier: "OU"
+        tier: "OU",
     },
     wigglyman: {
-        tier: "OU"
+        tier: "OU",
     },
     magnetic: {
-        tier: "OU"
+        tier: "OU",
     },
     zorogonz: {
-        tier: "OU"
+        tier: "OU",
     },
     thundini: {
-        tier: "OU"
+        tier: "OU",
     },
     clawdra: {
-        tier: "OU"
+        tier: "OU",
     },
     shaymode: {
-        tier: "OU"
+        tier: "OU",
     },
     armortran: {
-        tier: "OU"
+        tier: "OU",
     },
     gonzap: {
-        tier: "OU"
+        tier: "OU",
     },
     bouffanine: {
-        tier: "OU"
+        tier: "OU",
     },
     dedsteel: {
-        tier: "OU"
+        tier: "OU",
     },
     avaizard: {
-        tier: "OU"
+        tier: "OU",
     },
     avaizardmegax: {
-        tier: "OU"
+        tier: "OU",
     },
     avaizardmegay: {
-        tier: "OU"
+        tier: "OU",
     },
     cargolure: {
-        tier: "OU"
+        tier: "OU",
     },
     alakario: {
-        tier: "OU"
+        tier: "OU",
     },
     alakariomegal: {
-        tier: "OU"
+        tier: "OU",
     },
     alakariomegaa: {
-        tier: "OU"
+        tier: "OU",
     },
     cazantor: {
-        tier: "OU"
+        tier: "OU",
     },
     cazantormega: {
-        tier: "OU"
+        tier: "OU",
     },
     gallete: {
-        tier: "OU"
+        tier: "OU",
     },
     galletemegag: {
-        tier: "OU"
+        tier: "OU",
     },
     galletemegab: {
-        tier: "OU"
+        tier: "OU",
     },
     aurantrum: {
-        tier: "OU"
+        tier: "OU",
     },
     steelthorn: {
-        tier: "OU"
+        tier: "OU",
     },
     steelthornmega: {
-        tier: "OU"
+        tier: "OU",
     },
     venoqueen: {
-        tier: "OU"
+        tier: "OU",
     },
     polyform2: {
-        tier: "OU"
+        tier: "OU",
     },
     polyform2sunny: {
-        tier: "OU"
+        tier: "OU",
     },
     polyform2rainy: {
-        tier: "OU"
+        tier: "OU",
     },
     polyform2snowy: {
-        tier: "OU"
+        tier: "OU",
     },
     polyform2sandy: {
-        tier: "OU"
+        tier: "OU",
     },
     scraftia: {
-        tier: "OU"
+        tier: "OU",
     },
     scraftiamega: {
-        tier: "OU"
+        tier: "OU",
     },
     slurpum: {
-        tier: "OU"
+        tier: "OU",
     },
     thundersaurus: {
-        tier: "OU"
+        tier: "OU",
     },
     thundersaurusmega: {
-        tier: "OU"
+        tier: "OU",
     },
     rhyperlax: {
-        tier: "OU"
+        tier: "OU",
     },
     lopunne: {
-        tier: "OU"
+        tier: "OU",
     },
     lopunnemega: {
-        tier: "OU"
+        tier: "OU",
     },
     hootoise: {
-        tier: "OU"
+        tier: "OU",
     },
     hootoisemega: {
-        tier: "OU"
+        tier: "OU",
     },
     lietaur: {
-        tier: "OU"
+        tier: "OU",
     },
     laprazone: {
-        tier: "OU"
+        tier: "OU",
     },
     hydraulic: {
-        tier: "OU"
+        tier: "OU",
     },
     klinkle: {
-        tier: "OU"
+        tier: "OU",
     },
     metanlee: {
-        tier: "OU"
+        tier: "OU",
     }, metanleemega: {
-        tier: "OU"
+        tier: "OU",
     },
     kangoruskhan: {
-        tier: "OU"
+        tier: "OU",
     },
     heebleye: {
-        tier: "OU"
+        tier: "OU",
     },
     heebleyemega: {
-        tier: "OU"
+        tier: "OU",
     },
     crygotran: {
-        tier: "OU"
+        tier: "OU",
     },
     dugterra: {
-        tier: "OU"
+        tier: "OU",
     },
     garbagorde: {
-        tier: "OU"
+        tier: "OU",
     },
     cherform: {
-        tier: "OU"
+        tier: "OU",
     },
     cherformsunny: {
-        tier: "OU"
+        tier: "OU",
     },
     cherformrainy: {
-        tier: "OU"
+        tier: "OU",
     },
     cherformsnowy: {
-        tier: "OU"
+        tier: "OU",
     },
     cherformsandy: {
-        tier: "OU"
+        tier: "OU",
     },
     porygrigus: {
-        tier: "OU"
+        tier: "OU",
     },
     zoroldeo: {
-        tier: "OU"
+        tier: "OU",
     },
     stundos: {
-        tier: "OU"
+        tier: "OU",
     },
     macaroon: {
-        tier: "OU"
+        tier: "OU",
     },
     dank: {
-        tier: "OU"
+        tier: "OU",
     },
     rapipom: {
-        tier: "OU"
+        tier: "OU",
     },
     tadpole: {
-        tier: "OU"
+        tier: "OU",
     },
     draegarados: {
-        tier: "OU"
+        tier: "OU",
     },
     draegaradosmega: {
-        tier: "OU"
+        tier: "OU",
     },
     grangoro: {
-        tier: "OU"
+        tier: "OU",
     },
     babuffe: {
-        tier: "OU"
+        tier: "OU",
     },
     babuffemega: {
-        tier: "OU"
+        tier: "OU",
     },
     galionz: {
-        tier: "OU"
+        tier: "OU",
     },
     glalionzmega: {
-        tier: "OU"
+        tier: "OU",
     },
     steelweez: {
-        tier: "OU"
+        tier: "OU",
     },
     thundurbee: {
-        tier: "OU"
+        tier: "OU",
     },
     gallatross: {
-        tier: "OU"
+        tier: "OU",
     },
     gallatrossmega: {
-        tier: "OU"
+        tier: "OU",
     },
     victant: {
-        tier: "OU"
+        tier: "OU",
     },
     rosetteeternal: {
-        tier: "OU"
+        tier: "OU",
     },
     conkelvire: {
-        tier: "OU"
+        tier: "OU",
     },
     landia: {
-        tier: "OU"
+        tier: "OU",
     },
     landiamega: {
-        tier: "OU"
+        tier: "OU",
     },
     odelay: {
-        tier: "OU"
+        tier: "OU",
     },
     thundercast: {
-        tier: "OU"
+        tier: "OU",
     },
     thundercastsunny: {
-        tier: "OU"
+        tier: "OU",
     },
     thundercastrainy: {
-        tier: "OU"
+        tier: "OU",
     }, thundercastsnowy: {
-        tier: "OU"
+        tier: "OU",
     },
     sceptetteeternal: {
-        tier: "OU"
+        tier: "OU",
     },
     sceptetteeternalmega: {
-        tier: "OU"
+        tier: "OU",
     },
     raillink: {
-        tier: "OU"
+        tier: "OU",
     },
     agrippa: {
-        tier: "OU"
+        tier: "OU",
     },
     basculinbasculin: {
-        tier: "OU"
+        tier: "OU",
     },
     mewelli: {
-        tier: "OU"
+        tier: "OU",
     },
     bael: {
-        tier: "OU"
+        tier: "OU",
     },
     baelmega: {
-        tier: "OU"
+        tier: "OU",
     },
     simigoat: {
-        tier: "OU"
+        tier: "OU",
     },
     miltrank: {
-        tier: "OU"
+        tier: "OU",
     }, furfraught: {
-        tier: "OU"
+        tier: "OU",
     },
     tyranking: {
-        tier: "OU"
+        tier: "OU",
     },
     tyrankingmega: {
-        tier: "OU"
+        tier: "OU",
     },
     supermuk: {
-        tier: "OU"
+        tier: "OU",
     },
     mentor: {
-        tier: "OU"
+        tier: "OU",
     },
     mentormega: {
-        tier: "OU"
+        tier: "OU",
     },
     elektra: {
-        tier: "OU"
+        tier: "OU",
     },
     elektramega: {
-        tier: "OU"
+        tier: "OU",
     },
     escagon: {
-        tier: "OU"
+        tier: "OU",
     },
     golmanitan: {
-        tier: "OU"
+        tier: "OU",
     },
     sunflorrim: {
-        tier: "OU"
+        tier: "OU",
     },
     unconventional: {
-        tier: "OU"
+        tier: "OU",
     },
     ambiccino: {
-        tier: "OU"
+        tier: "OU",
     },
     parp: {
-        tier: "OU"
+        tier: "OU",
     },
     zyflare: {
-        tier: "OU"
+        tier: "OU",
     },
     probs: {
-        tier: "OU"
+        tier: "OU",
     },
     probsmega: {
-        tier: "OU"
+        tier: "OU",
     },
     hentai: {
-        tier: "OU"
+        tier: "OU",
     },
     tornastar: {
-        tier: "OU"
+        tier: "OU",
     },
     magmovire: {
-        tier: "OU"
+        tier: "OU",
     },
     volgon: {
-        tier: "OU"
+        tier: "OU",
     },
     tapuloom: {
-        tier: "OU"
+        tier: "OU",
     },
     lucashadow: {
-        tier: "OU"
+        tier: "OU",
     },
     lucashadowmega: {
-        tier: "OU"
+        tier: "OU",
     },
     cradilego: {
-        tier: "OU"
+        tier: "OU",
     },
     astrolithclear: {
-        tier: "OU"
+        tier: "OU",
     },
     astrolithstar: {
-        tier: "OU"
+        tier: "OU",
     },
     astrolithcomet: {
-        tier: "OU"
+        tier: "OU",
     },
     astrolithneutron: {
-        tier: "OU"
+        tier: "OU",
     },
     astrolithmeteor: {
-        tier: "OU"
+        tier: "OU",
     },
     kyraurem: {
-        tier: "OU"
+        tier: "OU",
     },
     kyrauremmega: {
-        tier: "OU"
+        tier: "OU",
     },
     hetrarna: {
-        tier: "OU"
+        tier: "OU",
     },
     xurkivoir: {
-        tier: "OU"
+        tier: "OU",
     },
     xurkivoirmega: {
-        tier: "OU"
+        tier: "OU",
     },
     vikarona: {
-        tier: "OU"
+        tier: "OU",
     },
     mudgoat: {
-        tier: "OU"
+        tier: "OU",
     },
     theridel: {
-        tier: "OU"
+        tier: "OU",
     },
     shrek: {
-        tier: "OU"
+        tier: "OU",
     },
     vitality: {
-        tier: "OU"
+        tier: "OU",
     },
     vitalityfire: {
-        tier: "OU"
+        tier: "OU",
     },
     vitalitywater: {
-        tier: "OU"
+        tier: "OU",
     },
     vitalityelectric: {
-        tier: "OU"
+        tier: "OU",
     },
     vitalitygrass: {
-        tier: "OU"
+        tier: "OU",
     },
     vitalityice: {
-        tier: "OU"
+        tier: "OU",
     },
     vitalityfighting: {
-        tier: "OU"
+        tier: "OU",
     },
     vitalitypoison: {
-        tier: "OU"
+        tier: "OU",
     },
     vitalityground: {
-        tier: "OU"
+        tier: "OU",
     },
     vitalityflying: {
-        tier: "OU"
+        tier: "OU",
     },
     vitalitypsychic: {
-        tier: "OU"
+        tier: "OU",
     }, vitalitybug: {
-        tier: "OU"
+        tier: "OU",
     },
     vitalityrock: {
-        tier: "OU"
+        tier: "OU",
     },
     vitalityghost: {
-        tier: "OU"
+        tier: "OU",
     },
     vitalitydragon: {
-        tier: "OU"
+        tier: "OU",
     },
     vitalitydark: {
-        tier: "OU"
+        tier: "OU",
     },
     vitalitysteel: {
-        tier: "OU"
+        tier: "OU",
     },
     vitalityfairy: {
-        tier: "OU"
+        tier: "OU",
     },
     necromega: {
-        tier: "OU"
+        tier: "OU",
     },
     malaquanid: {
-        tier: "OU"
+        tier: "OU",
     },
     scrapunny: {
-        tier: "OU"
+        tier: "OU",
     },
     scrapunnymega: {
-        tier: "OU"
+        tier: "OU",
     },
     bezong: {
-        tier: "OU"
+        tier: "OU",
     },
     valcro: {
-        tier: "OU"
+        tier: "OU",
     },
     valcrofire: {
-        tier: "OU"
+        tier: "OU",
     },
     valcrowater: {
-        tier: "OU"
+        tier: "OU",
     },
     valcroelectric: {
-        tier: "OU"
+        tier: "OU",
     },
     valcrograss: {
-        tier: "OU"
+        tier: "OU",
     },
     valcroice: {
-        tier: "OU"
+        tier: "OU",
     },
     valcrofighting: {
-        tier: "OU"
+        tier: "OU",
     },
     valcropoison: {
-        tier: "OU"
+        tier: "OU",
     },
     valcroground: {
-        tier: "OU"
+        tier: "OU",
     },
     valcroflying: {
-        tier: "OU"
+        tier: "OU",
     },
     valcropsychic: {
-        tier: "OU"
+        tier: "OU",
     },
     valcrobug: {
-        tier: "OU"
+        tier: "OU",
     },
     valcrorock: {
-        tier: "OU"
+        tier: "OU",
     },
     valcroghost: {
-        tier: "OU"
+        tier: "OU",
     },
     valcrodragon: {
-        tier: "OU"
+        tier: "OU",
     },
     valcrodark: {
-        tier: "OU"
+        tier: "OU",
     },
     valcrosteel: {
-        tier: "OU"
+        tier: "OU",
     },
     valcrofairy: {
-        tier: "OU"
+        tier: "OU",
     },
     smelly: {
-        tier: "OU"
+        tier: "OU",
     },
     smellyfire: {
-        tier: "OU"
+        tier: "OU",
     },
     smellywater: {
-        tier: "OU"
+        tier: "OU",
     },
     smellyelectric: {
-        tier: "OU"
+        tier: "OU",
     },
     smellygrass: {
-        tier: "OU"
+        tier: "OU",
     },
     smellyice: {
-        tier: "OU"
+        tier: "OU",
     },
     smellyfighting: {
-        tier: "OU"
+        tier: "OU",
     },
     smellypoison: {
-        tier: "OU"
+        tier: "OU",
     },
     smellyground: {
-        tier: "OU"
+        tier: "OU",
     },
     smellyflying: {
-        tier: "OU"
+        tier: "OU",
     },
     smellypsychic: {
-        tier: "OU"
+        tier: "OU",
     },
     smellybug: {
-        tier: "OU"
+        tier: "OU",
     },
     smellyrock: {
-        tier: "OU"
+        tier: "OU",
     },
     smellyghost: {
-        tier: "OU"
+        tier: "OU",
     },
     smellydragon: {
-        tier: "OU"
+        tier: "OU",
     },
     smellydark: {
-        tier: "OU"
+        tier: "OU",
     },
     smellysteel: {
-        tier: "OU"
+        tier: "OU",
     },
     smellyfairy: {
-        tier: "OU"
+        tier: "OU",
     },
     tapumeme: {
-        tier: "OU"
+        tier: "OU",
     },
     tapumemedank: {
-        tier: "OU"
+        tier: "OU",
     }, comcott: {
-        tier: "OU"
+        tier: "OU",
     },
     minislashmeteor: {
-        tier: "OU"
+        tier: "OU",
     },
     minislashblade: {
-        tier: "OU"
+        tier: "OU",
     },
     crematoria: {
-        tier: "OU"
+        tier: "OU",
     },
     crematoriasematary: {
-        tier: "OU"
+        tier: "OU",
     },
     crematoriamegax: {
-        tier: "OU"
+        tier: "OU",
     },
     crematoriamegay: {
-        tier: "OU"
+        tier: "OU",
     },
     crematoriasemmegax: {
-        tier: "OU"
+        tier: "OU",
     },
     crematoriasemmegay: {
-        tier: "OU"
+        tier: "OU",
     },
     pherothorn: {
-        tier: "OU"
+        tier: "OU",
     },
     archking: {
-        tier: "OU"
+        tier: "OU",
     },
     slampa: {
-        tier: "OU"
+        tier: "OU",
     },
     slampamega: {
-        tier: "OU"
+        tier: "OU",
     },
     decidactyl: {
-        tier: "OU"
+        tier: "OU",
     },
     decedactylmega: {
-        tier: "OU"
+        tier: "OU",
     },
     lycanape: {
-        tier: "OU"
+        tier: "OU",
     },
     golisotops: {
-        tier: "OU"
+        tier: "OU",
     },
     perwearalola: {
-        tier: "OU"
+        tier: "OU",
     },
     mudape: {
-        tier: "OU"
+        tier: "OU",
     },
     kira: {
-        tier: "OU"
+        tier: "OU",
     },
     exelegoalola: {
-        tier: "OU"
+        tier: "OU",
     },
     joltarina: {
-        tier: "OU"
+        tier: "OU",
     },
     dhelchamp: {
-        tier: "OU"
+        tier: "OU",
     },
     mimian: {
-        tier: "OU"
+        tier: "OU",
     },
     aerodako: {
-        tier: "OU"
+        tier: "OU",
     },
     aerodakomega: {
-        tier: "OU"
+        tier: "OU",
     },
     tapujojo: {
-        tier: "OU"
+        tier: "OU",
     },
     magicarticgear: {
-        tier: "OU"
+        tier: "OU",
     },
     necroltres: {
-        tier: "OU"
+        tier: "OU",
     },
     kartanbull: {
-        tier: "OU"
+        tier: "OU",
     },
     venustoise: {
-        tier: "OU"
+        tier: "OU",
     },
     venustoisemegag: {
-        tier: "OU"
+        tier: "OU",
     },
     venustoisemegab: {
-        tier: "OU"
+        tier: "OU",
     },
     kingkek: {
-        tier: "OU"
+        tier: "OU",
     },
     sigillow: {
-        tier: "OU"
+        tier: "OU",
     },
     covally: {
-        tier: "OU"
+        tier: "OU",
     },
     covallyfire: {
-        tier: "OU"
+        tier: "OU",
     },
     covallywater: {
-        tier: "OU"
+        tier: "OU",
     },
     covallyelectric: {
-        tier: "OU"
+        tier: "OU",
     },
     covallygrass: {
-        tier: "OU"
+        tier: "OU",
     },
     covallyice: {
-        tier: "OU"
+        tier: "OU",
     },
     covallyfighting: {
-        tier: "OU"
+        tier: "OU",
     },
     covallypoison: {
-        tier: "OU"
+        tier: "OU",
     },
     covallyground: {
-        tier: "OU"
+        tier: "OU",
     },
     covallyflying: {
-        tier: "OU"
+        tier: "OU",
     },
     covallypsychic: {
-        tier: "OU"
+        tier: "OU",
     },
     covallybug: {
-        tier: "OU"
+        tier: "OU",
     },
     covallyrock: {
-        tier: "OU"
+        tier: "OU",
     },
     covallyghost: {
-        tier: "OU"
+        tier: "OU",
     },
     covallydragon: {
-        tier: "OU"
+        tier: "OU",
     }, covallydark: {
-        tier: "OU"
+        tier: "OU",
     },
     covallysteel: {
-        tier: "OU"
+        tier: "OU",
     },
     covallyfairy: {
-        tier: "OU"
+        tier: "OU",
     },
     toxamola: {
-        tier: "OU"
+        tier: "OU",
     },
     melon: {
-        tier: "OU"
+        tier: "OU",
     },
     melonpriouette: {
-        tier: "OU"
+        tier: "OU",
     },
     kyutomwhite: {
-        tier: "OU"
+        tier: "OU",
     },
     xernemite: {
-        tier: "OU"
+        tier: "OU",
     },
     cherron: {
-        tier: "OU"
+        tier: "OU",
     },
     cherronprimal: {
-        tier: "OU"
+        tier: "OU",
     },
     dialcatty: {
-        tier: "OU"
+        tier: "OU",
     },
     lunatic: {
-        tier: "OU"
+        tier: "OU",
     },
     granho: {
-        tier: "OU"
+        tier: "OU",
     },
     lies: {
-        tier: "OU"
+        tier: "OU",
     },
     viva: {
-        tier: "OU"
+        tier: "OU",
     },
     girutukumuka: {
-        tier: "OU"
+        tier: "OU",
     },
     omneus: {
-        tier: "OU"
+        tier: "OU",
     },
     omneusfire: {
-        tier: "OU"
+        tier: "OU",
     },
     omneuswater: {
-        tier: "OU"
+        tier: "OU",
     },
     omneuselectric: {
-        tier: "OU"
+        tier: "OU",
     },
     omneusgrass: {
-        tier: "OU"
+        tier: "OU",
     },
     omneusice: {
-        tier: "OU"
+        tier: "OU",
     },
     omneusfighting: {
-        tier: "OU"
+        tier: "OU",
     },
     omneuspoison: {
-        tier: "OU"
+        tier: "OU",
     },
     omneusground: {
-        tier: "OU"
+        tier: "OU",
     },
     omneusflying: {
-        tier: "OU"
+        tier: "OU",
     },
     omneuspsychic: {
-        tier: "OU"
+        tier: "OU",
     },
     omneusbug: {
-        tier: "OU"
+        tier: "OU",
     },
     omneusrock: {
-        tier: "OU"
+        tier: "OU",
     },
     omneusghost: {
-        tier: "OU"
+        tier: "OU",
     },
     omneusdragon: {
-        tier: "OU"
+        tier: "OU",
     },
     omneusdark: {
-        tier: "OU"
+        tier: "OU",
     },
     omneussteel: {
-        tier: "OU"
+        tier: "OU",
     },
     omneusfairy: {
-        tier: "OU"
+        tier: "OU",
     },
     pheralie: {
-        tier: "OU"
+        tier: "OU",
     },
     pheraliemega: {
-        tier: "OU"
+        tier: "OU",
     },
     tsarakion: {
-        tier: "OU"
+        tier: "OU",
     },
     scipod: {
-        tier: "OU"
+        tier: "OU",
     },
     scipodmega: {
-        tier: "OU"
+        tier: "OU",
     },
     necrozmerupt: {
-        tier: "OU"
+        tier: "OU",
     },
     necrozmeruptmega: {
-        tier: "OU"
+        tier: "OU",
     },
     banekyu: {
-        tier: "OU"
+        tier: "OU",
     },
     banekyumega: {
-        tier: "OU"
+        tier: "OU",
     },
     ninxys: {
-        tier: "OU"
+        tier: "OU",
     },
     heratana: {
-        tier: "OU"
+        tier: "OU",
     },
     heratanamega: {
-        tier: "OU"
+        tier: "OU",
     },
     plumin: {
-        tier: "OU"
+        tier: "OU",
     },
     oxyblissdefense: {
-        tier: "OU"
+        tier: "OU",
     },
     diggercatealola: {
-        tier: "OU"
+        tier: "OU",
     },
     inferperior: {
-        tier: "OU"
+        tier: "OU",
     }, mimukyu: {
-        tier: "OU"
+        tier: "OU",
     },
     axatree: {
-        tier: "OU"
+        tier: "OU",
     },
     axatreemega: {
-        tier: "OU"
+        tier: "OU",
     },
     cressapal: {
-        tier: "OU"
+        tier: "OU",
     },
     necrior: {
-        tier: "OU"
+        tier: "OU",
     },
     cinshado: {
-        tier: "OU"
+        tier: "OU",
     },
     altellow: {
-        tier: "OU"
+        tier: "OU",
     },
     altellowmega: {
-        tier: "OU"
+        tier: "OU",
     },
     rebell: {
-        tier: "OU"
+        tier: "OU",
     },
     combarde: {
-        tier: "OU"
+        tier: "OU",
     },
     dittsey: {
-        tier: "OU"
+        tier: "OU",
     },
     aravealola: {
-        tier: "OU"
+        tier: "OU",
     },
     aravealolaelectric: {
-        tier: "OU"
+        tier: "OU",
     },
     aravealolafire: {
-        tier: "OU"
+        tier: "OU",
     },
     aravealolawater: {
-        tier: "OU"
+        tier: "OU",
     },
     aravealolagrass: {
-        tier: "OU"
+        tier: "OU",
     },
     aravealolaice: {
-        tier: "OU"
+        tier: "OU",
     },
     aravealolafighting: {
-        tier: "OU"
+        tier: "OU",
     },
     aravealolapoison: {
-        tier: "OU"
+        tier: "OU",
     },
     aravealolaground: {
-        tier: "OU"
+        tier: "OU",
     },
     aravealolaflying: {
-        tier: "OU"
+        tier: "OU",
     },
     aravealolapsychic: {
-        tier: "OU"
+        tier: "OU",
     },
     aravealolabug: {
-        tier: "OU"
+        tier: "OU",
     },
     aravealolarock: {
-        tier: "OU"
+        tier: "OU",
     },
     aravealolaghost: {
-        tier: "OU"
+        tier: "OU",
     },
     aravealoladragon: {
-        tier: "OU"
+        tier: "OU",
     },
     aravealoladark: {
-        tier: "OU"
+        tier: "OU",
     },
     aravealolasteel: {
-        tier: "OU"
+        tier: "OU",
     },
     aravealolafairy: {
-        tier: "OU"
+        tier: "OU",
     },
     miminja: {
-        tier: "OU"
+        tier: "OU",
     },
     miminjareborn: {
-        tier: "OU"
+        tier: "OU",
     },
     murkaleo: {
-        tier: "OU"
+        tier: "OU",
     },
     zekronaw: {
-        tier: "OU"
+        tier: "OU",
     },
     quinda: {
-        tier: "OU"
+        tier: "OU",
     },
     sablegigas: {
-        tier: "OU"
+        tier: "OU",
     },
     sablegigasmega: {
-        tier: "OU"
+        tier: "OU",
     },
     galvillon: {
-        tier: "OU"
+        tier: "OU",
     },
     kyonun: {
-        tier: "OU"
+        tier: "OU",
     },
     kyonunprimal: {
-        tier: "OU"
+        tier: "OU",
     },
     abomasorus: {
-        tier: "OU"
+        tier: "OU",
     },
     abomasorusmega: {
-        tier: "OU"
+        tier: "OU",
     },
     toxicario: {
-        tier: "OU"
+        tier: "OU",
     },
     toxicariomega: {
-        tier: "OU"
+        tier: "OU",
     },
     washoxchromosome: {
-        tier: "OU"
+        tier: "OU",
     },
     washoxstrand: {
-        tier: "OU"
+        tier: "OU",
     },
     hoorbok: {
-        tier: "OU"
+        tier: "OU",
     },
     ninetalesprime: {
-        tier: "OU"
+        tier: "OU",
     },
     blampa: {
-        tier: "OU"
+        tier: "OU",
     },
     blampamega: {
-        tier: "OU"
+        tier: "OU",
     },
     origamiswan: {
-        tier: "OU"
+        tier: "OU",
     }, kecleus: {
-        tier: "OU"
+        tier: "OU",
     },
     fearroh: {
-        tier: "OU"
+        tier: "OU",
     },
     neoprene: {
-        tier: "OU"
+        tier: "OU",
     },
     maroramalola: {
-        tier: "OU"
+        tier: "OU",
     },
     genny: {
-        tier: "OU"
+        tier: "OU",
     },
     sylvoko: {
-        tier: "OU"
+        tier: "OU",
     },
     miniancieore: {
-        tier: "OU"
+        tier: "OU",
     },
     minianciejewel: {
-        tier: "OU"
+        tier: "OU",
     },
     tapudede: {
-        tier: "OU"
+        tier: "OU",
     },
     shenala: {
-        tier: "OU"
+        tier: "OU",
     },
     entir: {
-        tier: "OU"
+        tier: "OU",
     },
     entirmega: {
-        tier: "OU"
+        tier: "OU",
     },
     giramini: {
-        tier: "OU"
+        tier: "OU",
     },
     giraminiunleashed: {
-        tier: "OU"
+        tier: "OU",
     },
     aquapod: {
-        tier: "OU"
+        tier: "OU",
     },
     reshivine: {
-        tier: "OU"
+        tier: "OU",
     },
     rosium: {
-        tier: "OU"
+        tier: "OU",
     },
     valveon: {
-        tier: "OU"
+        tier: "OU",
     },
     raptalon: {
-        tier: "OU"
+        tier: "OU",
     },
     deoxurkoutlet: {
-        tier: "OU"
+        tier: "OU",
     },
     dio: {
-        tier: "OU"
+        tier: "OU",
     },
     generott: {
-        tier: "OU"
+        tier: "OU",
     },
     darminup: {
-        tier: "OU"
+        tier: "OU",
     },
     darmindown: {
-        tier: "OU"
+        tier: "OU",
     },
     conkeldurus: {
-        tier: "OU"
+        tier: "OU",
     },
     fisktres: {
-        tier: "OU"
+        tier: "OU",
     },
     landana: {
-        tier: "OU"
+        tier: "OU",
     },
     regimiki: {
-        tier: "OU"
+        tier: "OU",
     },
     star: {
-        tier: "OU"
+        tier: "OU",
     },
     starbutterfly: {
-        tier: "OU"
+        tier: "OU",
     },
     gardelego: {
-        tier: "OU"
+        tier: "OU",
     },
     gardelegomega: {
-        tier: "OU"
+        tier: "OU",
     },
     maltarione: {
-        tier: "OU"
+        tier: "OU",
     },
     maltarionemega: {
-        tier: "OU"
+        tier: "OU",
     },
     maskle: {
-        tier: "OU"
+        tier: "OU",
     },
     cowardice: {
-        tier: "OU"
+        tier: "OU",
     },
     guzzbro: {
-        tier: "OU"
+        tier: "OU",
     },
     guzzbromega: {
-        tier: "OU"
+        tier: "OU",
     },
     zycannon: {
-        tier: "OU"
+        tier: "OU",
     },
     zeeeee: {
-        tier: "OU"
+        tier: "OU",
     },
     zeeeeecomplete: {
-        tier: "OU"
+        tier: "OU",
     },
     peridot: {
-        tier: "OU"
+        tier: "OU",
     },
     peridotmega: {
-        tier: "OU"
+        tier: "OU",
     },
     stundicuno: {
-        tier: "OU"
+        tier: "OU",
     },
     aloha: {
-        tier: "OU"
+        tier: "OU",
     },
     alohamega: {
-        tier: "OU"
+        tier: "OU",
     },
     zekloom: {
-        tier: "OU"
+        tier: "OU",
     },
     gengalure: {
-        tier: "OU"
+        tier: "OU",
     },
     ferrolord: {
-        tier: "OU"
+        tier: "OU",
     },
     dad: {
-        tier: "OU"
+        tier: "OU",
     }, glaive: {
-        tier: "OU"
+        tier: "OU",
     },
     glaiveprimal: {
-        tier: "OU"
+        tier: "OU",
     },
     kyurpedo: {
-        tier: "OU"
+        tier: "OU",
     },
     kyurpedomega: {
-        tier: "OU"
+        tier: "OU",
     },
     gearchamp: {
-        tier: "OU"
+        tier: "OU",
     },
     luau: {
-        tier: "OU"
+        tier: "OU",
     },
     luaumega: {
-        tier: "OU"
+        tier: "OU",
     },
     dotsensu: {
-        tier: "OU"
+        tier: "OU",
     },
     darkhunter: {
-        tier: "OU"
+        tier: "OU",
     },
     guzzpex: {
-        tier: "OU"
+        tier: "OU",
     },
     dedede: {
-        tier: "OU"
+        tier: "OU",
     },
     cosmill: {
-        tier: "OU"
+        tier: "OU",
     },
     maginera: {
-        tier: "OU"
+        tier: "OU",
     },
     catdeer: {
-        tier: "OU"
+        tier: "OU",
     },
     hooptrio: {
-        tier: "OU"
+        tier: "OU",
     },
     fablefin: {
-        tier: "OU"
+        tier: "OU",
     },
     klefz: {
-        tier: "OU"
+        tier: "OU",
     },
     tropisteela: {
-        tier: "OU"
+        tier: "OU",
     },
     pokemon: {
-        tier: "OU"
+        tier: "OU",
     },
     nosegod: {
-        tier: "OU"
+        tier: "OU",
     },
     swampterra: {
-        tier: "OU"
+        tier: "OU",
     },
     swampterramega: {
-        tier: "OU"
+        tier: "OU",
     },
     zeklade: {
-        tier: "OU"
+        tier: "OU",
     },
     grequa: {
-        tier: "OU"
+        tier: "OU",
     },
     alteyer: {
-        tier: "OU"
+        tier: "OU",
     },
     alteyermega: {
-        tier: "OU"
+        tier: "OU",
     },
     scrafting: {
-        tier: "OU"
+        tier: "OU",
     },
     not: {
-        tier: "OU"
+        tier: "OU",
     },
     notmega: {
-        tier: "OU"
+        tier: "OU",
     },
     joltsol: {
-        tier: "OU"
+        tier: "OU",
     },
     joltsolmega: {
-        tier: "OU"
+        tier: "OU",
     },
     topaz: {
-        tier: "OU"
+        tier: "OU",
     },
     dolphin: {
-        tier: "OU"
+        tier: "OU",
     },
     snorligatr: {
-        tier: "OU"
+        tier: "OU",
     },
     emponite: {
-        tier: "OU"
+        tier: "OU",
     },
     leafrou: {
-        tier: "OU"
+        tier: "OU",
     },
     mimiblim: {
-        tier: "OU"
+        tier: "OU",
     },
     warcanein: {
-        tier: "OU"
+        tier: "OU",
     },
     zorarce: {
-        tier: "OU"
+        tier: "OU",
     },
     zorarcefire: {
-        tier: "OU"
+        tier: "OU",
     },
     zorarcewater: {
-        tier: "OU"
+        tier: "OU",
     },
     zorarceelectric: {
-        tier: "OU"
+        tier: "OU",
     },
     zorarcegrass: {
-        tier: "OU"
+        tier: "OU",
     },
     zorarceice: {
-        tier: "OU"
+        tier: "OU",
     },
     zorarcefighting: {
-        tier: "OU"
+        tier: "OU",
     },
     zorarcepoison: {
-        tier: "OU"
+        tier: "OU",
     },
     zorarceground: {
-        tier: "OU"
+        tier: "OU",
     },
     zorarceflying: {
-        tier: "OU"
+        tier: "OU",
     },
     zorarcepsychic: {
-        tier: "OU"
+        tier: "OU",
     },
     zorarcebug: {
-        tier: "OU"
+        tier: "OU",
     }, zorarcerock: {
-        tier: "OU"
+        tier: "OU",
     },
     zorarceghost: {
-        tier: "OU"
+        tier: "OU",
     },
     zorarcedragon: {
-        tier: "OU"
+        tier: "OU",
     },
     zorarcedark: {
-        tier: "OU"
+        tier: "OU",
     },
     zorarcesteel: {
-        tier: "OU"
+        tier: "OU",
     },
     zorarcefairy: {
-        tier: "OU"
+        tier: "OU",
     },
     happislashfriendly: {
-        tier: "OU"
+        tier: "OU",
     },
     happislashunfriendly: {
-        tier: "OU"
+        tier: "OU",
     },
     torkobulu: {
-        tier: "OU"
+        tier: "OU",
     },
     pheroxish: {
-        tier: "OU"
+        tier: "OU",
     },
     padunk: {
-        tier: "OU"
+        tier: "OU",
     },
     magnelure: {
-        tier: "OU"
+        tier: "OU",
     },
     shucklord: {
-        tier: "OU"
+        tier: "OU",
     },
     mtndew: {
-        tier: "OU"
+        tier: "OU",
     },
     altearnia: {
-        tier: "OU"
+        tier: "OU",
     },
     altearniamega: {
-        tier: "OU"
+        tier: "OU",
     },
     regigiot: {
-        tier: "OU"
+        tier: "OU",
     },
     regigiotmega: {
-        tier: "OU"
+        tier: "OU",
     },
     kasukabe: {
-        tier: "OU"
+        tier: "OU",
     },
     sakamaki: {
-        tier: "OU"
+        tier: "OU",
     },
     sakamakimega: {
-        tier: "OU"
+        tier: "OU",
     },
     mapuiasu: {
-        tier: "OU"
+        tier: "OU",
     },
     mapuauhe: {
-        tier: "OU"
+        tier: "OU",
     },
     mapumoli: {
-        tier: "OU"
+        tier: "OU",
     },
     mapubupa: {
-        tier: "OU"
+        tier: "OU",
     },
     meazle: {
-        tier: "OU"
+        tier: "OU",
     },
     parantis: {
-        tier: "OU"
+        tier: "OU",
     },
     dinna: {
-        tier: "OU"
+        tier: "OU",
     },
     sylvias: {
-        tier: "OU"
+        tier: "OU",
     },
     sylviasmega: {
-        tier: "OU"
+        tier: "OU",
     },
     mightyyvel: {
-        tier: "OU"
+        tier: "OU",
     },
     tyranwak: {
-        tier: "OU"
+        tier: "OU",
     },
     volcanoemblem: {
-        tier: "OU"
+        tier: "OU",
     },
     pelikoko: {
-        tier: "OU"
+        tier: "OU",
     },
     mimitto: {
-        tier: "OU"
+        tier: "OU",
     },
     eellee: {
-        tier: "OU"
+        tier: "OU",
     },
     celesir: {
-        tier: "OU"
+        tier: "OU",
     },
     celesirmega: {
-        tier: "OU"
+        tier: "OU",
     },
     nymph: {
-        tier: "OU"
+        tier: "OU",
     },
     kyokid: {
-        tier: "OU"
+        tier: "OU",
     },
     kyokidprimal: {
-        tier: "OU"
+        tier: "OU",
     },
     lemorusincarnate: {
-        tier: "OU"
+        tier: "OU",
     },
     absoko: {
-        tier: "OU"
+        tier: "OU",
     },
     absokomega: {
-        tier: "OU"
+        tier: "OU",
     },
     permafrost: {
-        tier: "OU"
+        tier: "OU",
     },
     giradino: {
-        tier: "OU"
+        tier: "OU",
     },
     giradinomega: {
-        tier: "OU"
+        tier: "OU",
     },
     xurkizard: {
-        tier: "OU"
+        tier: "OU",
     },
     xurkizardmegax: {
-        tier: "OU"
+        tier: "OU",
     },
     xurkizardmegay: {
-        tier: "OU"
+        tier: "OU",
     }, skarmeye: {
-        tier: "OU"
+        tier: "OU",
     },
     marshern: {
-        tier: "OU"
+        tier: "OU",
     },
     grovyltal: {
-        tier: "OU"
+        tier: "OU",
     },
     rairai: {
-        tier: "OU"
+        tier: "OU",
     },
     dramasnow: {
-        tier: "OU"
+        tier: "OU",
     },
     dramasnowmega: {
-        tier: "OU"
+        tier: "OU",
     },
     chaosii: {
-        tier: "OU"
+        tier: "OU",
     },
     slowmarina: {
-        tier: "OU"
+        tier: "OU",
     },
     slowmarinamega: {
-        tier: "OU"
+        tier: "OU",
     },
     kartaria: {
-        tier: "OU"
+        tier: "OU",
     },
     kartariamega: {
-        tier: "OU"
+        tier: "OU",
     },
     altarbat: {
-        tier: "OU"
+        tier: "OU",
     },
     altarbatmega: {
-        tier: "OU"
+        tier: "OU",
     },
     darkelectrode: {
-        tier: "OU"
+        tier: "OU",
     },
     vanilele: {
-        tier: "OU"
+        tier: "OU",
     },
     shiinofey: {
-        tier: "OU"
+        tier: "OU",
     },
     algantine: {
-        tier: "OU"
+        tier: "OU",
     },
     regetta: {
-        tier: "OU"
+        tier: "OU",
     },
     regettacompressed: {
-        tier: "OU"
+        tier: "OU",
     },
     heataria: {
-        tier: "OU"
+        tier: "OU",
     },
     heatariamega: {
-        tier: "OU"
+        tier: "OU",
     },
     gardecuno: {
-        tier: "OU"
+        tier: "OU",
     },
     gardecunomega: {
-        tier: "OU"
+        tier: "OU",
     },
     sparklingart: {
-        tier: "OU"
+        tier: "OU",
     },
     vallysect: {
-        tier: "OU"
+        tier: "OU",
     },
     vallysectfire: {
-        tier: "OU"
+        tier: "OU",
     },
     vallysectwater: {
-        tier: "OU"
+        tier: "OU",
     },
     vallysectelectric: {
-        tier: "OU"
+        tier: "OU",
     },
     vallysectgrass: {
-        tier: "OU"
+        tier: "OU",
     },
     vallysectice: {
-        tier: "OU"
+        tier: "OU",
     },
     vallysectfighting: {
-        tier: "OU"
+        tier: "OU",
     },
     vallysectpoison: {
-        tier: "OU"
+        tier: "OU",
     },
     vallysectground: {
-        tier: "OU"
+        tier: "OU",
     },
     vallysectflying: {
-        tier: "OU"
+        tier: "OU",
     },
     vallysectpsychic: {
-        tier: "OU"
+        tier: "OU",
     },
     vallysectbug: {
-        tier: "OU"
+        tier: "OU",
     },
     vallysectrock: {
-        tier: "OU"
+        tier: "OU",
     },
     vallysectghost: {
-        tier: "OU"
+        tier: "OU",
     },
     vallysectdragon: {
-        tier: "OU"
+        tier: "OU",
     },
     vallysectdark: {
-        tier: "OU"
+        tier: "OU",
     },
     vallysectsteel: {
-        tier: "OU"
+        tier: "OU",
     },
     vallysectfairy: {
-        tier: "OU"
+        tier: "OU",
     },
     mamozone: {
-        tier: "OU"
+        tier: "OU",
     },
     slakoem: {
-        tier: "OU"
+        tier: "OU",
     },
     audala: {
-        tier: "OU"
+        tier: "OU",
     },
     audalamega: {
-        tier: "OU"
+        tier: "OU",
     },
     sandgardefort: {
-        tier: "OU"
+        tier: "OU",
     },
     sandgardecastle: {
-        tier: "OU"
+        tier: "OU",
     },
     triagonal: {
-        tier: "OU"
+        tier: "OU",
     },
     triagonal: {
-        tier: "OU"
+        tier: "OU",
     }, exfeycola: {
-        tier: "OU"
+        tier: "OU",
     },
     komodreigon: {
-        tier: "OU"
+        tier: "OU",
     },
     dunking: {
-        tier: "OU"
+        tier: "OU",
     },
     kudou: {
-        tier: "OU"
+        tier: "OU",
     },
     golisorem: {
-        tier: "OU"
+        tier: "OU",
     },
     tyrazma: {
-        tier: "OU"
+        tier: "OU",
     },
     tyrazmamega: {
-        tier: "OU"
+        tier: "OU",
     },
     parasol: {
-        tier: "OU"
+        tier: "OU",
     },
     diceus: {
-        tier: "OU"
+        tier: "OU",
     },
     nintwo: {
-        tier: "OU"
+        tier: "OU",
     },
     nintwomegax: {
-        tier: "OU"
+        tier: "OU",
     },
     nintwomegay: {
-        tier: "OU"
+        tier: "OU",
     },
     kommew: {
-        tier: "OU"
+        tier: "OU",
     },
     tamatoa: {
-        tier: "OU"
+        tier: "OU",
     },
     pelippex: {
-        tier: "OU"
+        tier: "OU",
     },
     kyzor: {
-        tier: "OU"
+        tier: "OU",
     },
     kyzormega: {
-        tier: "OU"
+        tier: "OU",
     },
     gumanitoos: {
-        tier: "OU"
+        tier: "OU",
     },
     xurkino: {
-        tier: "OU"
+        tier: "OU",
     },
     xurkinomega: {
-        tier: "OU"
+        tier: "OU",
     },
     yvelchan: {
-        tier: "OU"
+        tier: "OU",
     },
     heatreon: {
-        tier: "OU"
+        tier: "OU",
     },
     altarigarde: {
-        tier: "OU"
+        tier: "OU",
     },
     altarigardemega: {
-        tier: "OU"
+        tier: "OU",
     },
     flycanion: {
-        tier: "OU"
+        tier: "OU",
     },
     belle: {
-        tier: "OU"
+        tier: "OU",
     },
     maui: {
-        tier: "OU"
+        tier: "OU",
     },
     garzone: {
-        tier: "OU"
+        tier: "OU",
     },
     garzonemega: {
-        tier: "OU"
+        tier: "OU",
     },
     shitpost: {
-        tier: "OU"
+        tier: "OU",
     },
     catbed: {
-        tier: "OU"
+        tier: "OU",
     },
     trampoline: {
-        tier: "OU"
+        tier: "OU",
     },
     trampolinemega: {
-        tier: "OU"
+        tier: "OU",
     },
     arcalie: {
-        tier: "OU"
+        tier: "OU",
     },
     stakeye: {
-        tier: "OU"
+        tier: "OU",
     },
     stakeyemega: {
-        tier: "OU"
+        tier: "OU",
     },
     lycanperiordusk: {
-        tier: "OU"
+        tier: "OU",
     },
     gigafini: {
-        tier: "OU"
+        tier: "OU",
     },
     stalossaka: {
-        tier: "OU"
+        tier: "OU",
     },
     stakamise: {
-        tier: "OU"
+        tier: "OU",
     },
     deoxysconfused: {
-        tier: "OU"
+        tier: "OU",
     },
     auroritar: {
-        tier: "OU"
+        tier: "OU",
     },
     auroritarmega: {
-        tier: "OU"
+        tier: "OU",
     },
     necrynxcutewig: {
-        tier: "OU"
+        tier: "OU",
     },
     necrynxultra: {
-        tier: "OU"
+        tier: "OU",
     },
     hippally: {
-        tier: "OU"
+        tier: "OU",
     },
     hippallyfire: {
-        tier: "OU"
+        tier: "OU",
     },
     hippallywater: {
-        tier: "OU"
+        tier: "OU",
     },
     hippallyelectric: {
-        tier: "OU"
+        tier: "OU",
     },
     hippallygrass: {
-        tier: "OU"
+        tier: "OU",
     }, hippallyice: {
-        tier: "OU"
+        tier: "OU",
     },
     hippallyfighting: {
-        tier: "OU"
+        tier: "OU",
     },
     hippallypoison: {
-        tier: "OU"
+        tier: "OU",
     },
     hippallyground: {
-        tier: "OU"
+        tier: "OU",
     },
     hippallyflying: {
-        tier: "OU"
+        tier: "OU",
     },
     hippallypsychic: {
-        tier: "OU"
+        tier: "OU",
     },
     hippallybug: {
-        tier: "OU"
+        tier: "OU",
     },
     hippallyrock: {
-        tier: "OU"
+        tier: "OU",
     },
     hippallyghost: {
-        tier: "OU"
+        tier: "OU",
     },
     hippallydragon: {
-        tier: "OU"
+        tier: "OU",
     },
     hippallydark: {
-        tier: "OU"
+        tier: "OU",
     },
     hippallysteel: {
-        tier: "OU"
+        tier: "OU",
     },
     hippallyfairy: {
-        tier: "OU"
+        tier: "OU",
     },
     necroquaduskbubble: {
-        tier: "OU"
+        tier: "OU",
     },
     necroquaultra: {
-        tier: "OU"
+        tier: "OU",
     },
     poize: {
-        tier: "OU"
+        tier: "OU",
     },
     magnettanorth: {
-        tier: "OU"
+        tier: "OU",
     },
     magnettasouth: {
-        tier: "OU"
+        tier: "OU",
     },
     kromork: {
-        tier: "OU"
+        tier: "OU",
     },
     watafak: {
-        tier: "OU"
+        tier: "OU",
     },
     necrozeraindawndisguise: {
-        tier: "OU"
+        tier: "OU",
     },
     necrozerainultra: {
-        tier: "OU"
+        tier: "OU",
     },
     quagsirom: {
-        tier: "OU"
+        tier: "OU",
     },
     bunny: {
-        tier: "OU"
+        tier: "OU",
     },
     kingrat: {
-        tier: "OU"
+        tier: "OU",
     },
     gamera: {
-        tier: "OU"
+        tier: "OU",
     },
     gameramegax: {
-        tier: "OU"
+        tier: "OU",
     },
     gameramegay: {
-        tier: "OU"
+        tier: "OU",
     },
     sandslashprime: {
-        tier: "OU"
+        tier: "OU",
     },
     suiceon: {
-        tier: "OU"
+        tier: "OU",
     },
     raikeon: {
-        tier: "OU"
+        tier: "OU",
     },
     enteon: {
-        tier: "OU"
+        tier: "OU",
     },
     vilossom: {
-        tier: "OU"
+        tier: "OU",
     },
     gholemisealola: {
-        tier: "OU"
+        tier: "OU",
     },
     tallsteelegg: {
-        tier: "OU"
+        tier: "OU",
     },
     zerpuff: {
-        tier: "OU"
+        tier: "OU",
     },
     lycakingdusk: {
-        tier: "OU"
+        tier: "OU",
     },
     tornadeltherian: {
-        tier: "OU"
+        tier: "OU",
     },
     necropurugly: {
-        tier: "OU"
+        tier: "OU",
     },
     necropurbeautiful: {
-        tier: "OU"
+        tier: "OU",
     },
     flyorusguard: {
-        tier: "OU"
+        tier: "OU",
     },
     lamparadenoche: {
-        tier: "OU"
+        tier: "OU",
     },
     lamparadelava: {
-        tier: "OU"
+        tier: "OU",
     },
     balloon: {
-        tier: "OU"
+        tier: "OU",
     },
     tyrannosaurus: {
-        tier: "OU"
+        tier: "OU",
     },
     tyrannosaurusmegax: {
-        tier: "OU"
+        tier: "OU",
     },
     tyrannosaurusmegay: {
-        tier: "OU"
+        tier: "OU",
     },
     espeord: {
-        tier: "OU"
+        tier: "OU",
     },
     glacord: {
-        tier: "OU"
+        tier: "OU",
     },
     hypango: {
-        tier: "OU"
+        tier: "OU",
     }, scizion: {
-        tier: "OU"
+        tier: "OU",
     },
     scizionmega: {
-        tier: "OU"
+        tier: "OU",
     },
     fluorine: {
-        tier: "OU"
+        tier: "OU",
     },
     fluorinemega: {
-        tier: "OU"
+        tier: "OU",
     },
     wallray: {
-        tier: "OU"
+        tier: "OU",
     },
     persianprime: {
-        tier: "OU"
+        tier: "OU",
     },
     octapex: {
-        tier: "OU"
+        tier: "OU",
     },
     gooo: {
-        tier: "OU"
+        tier: "OU",
     },
     noivian: {
-        tier: "OU"
+        tier: "OU",
     },
     noivianmega: {
-        tier: "OU"
+        tier: "OU",
     },
     cruski: {
-        tier: "OU"
+        tier: "OU",
     },
     periurora: {
-        tier: "OU"
+        tier: "OU",
     },
     apouprobo: {
-        tier: "OU"
+        tier: "OU",
     },
     shedigigas: {
-        tier: "OU"
+        tier: "OU",
     },
     chazmaegg: {
-        tier: "OU"
+        tier: "OU",
     },
     chazmahatched: {
-        tier: "OU"
+        tier: "OU",
     },
     smolitizer: {
-        tier: "OU"
+        tier: "OU",
     },
     smolitizerultra: {
-        tier: "OU"
+        tier: "OU",
     },
     noirtic: {
-        tier: "OU"
+        tier: "OU",
     },
     casserole: {
-        tier: "OU"
+        tier: "OU",
     },
     blazel: {
-        tier: "OU"
+        tier: "OU",
     },
     blazelmega: {
-        tier: "OU"
+        tier: "OU",
     },
     funsparret: {
-        tier: "OU"
+        tier: "OU",
     },
     claytar: {
-        tier: "OU"
+        tier: "OU",
     },
     claytarmega: {
-        tier: "OU"
+        tier: "OU",
     },
     komally: {
-        tier: "OU"
+        tier: "OU",
     },
     joltalesalola: {
-        tier: "OU"
+        tier: "OU",
     },
     pluffatisse: {
-        tier: "OU"
+        tier: "OU",
     },
     lars: {
-        tier: "OU"
+        tier: "OU",
     },
     theye: {
-        tier: "OU"
+        tier: "OU",
     },
     theyemega: {
-        tier: "OU"
+        tier: "OU",
     },
     chillax: {
-        tier: "OU"
+        tier: "OU",
     },
     masterpiece: {
-        tier: "OU"
+        tier: "OU",
     },
     masterpiecemega: {
-        tier: "OU"
+        tier: "OU",
     },
     celemence: {
-        tier: "OU"
+        tier: "OU",
     },
     celemencemega: {
-        tier: "OU"
+        tier: "OU",
     },
  };
