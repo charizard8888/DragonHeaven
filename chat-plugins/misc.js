@@ -420,4 +420,128 @@ mfam: function (target, room, user, connection, cmd) {
 	mfamhelp:function (target, room, user, connection, cmd) {
 	this.sendReplyBox('/mfat Pokemon, Dex#, Type, HP, Atk, Def, SpA, SpD, Spe, Ability, Weight, Tier, New Move 1, New Move 2, New Move 3');
 },
+learnc: function(target, room, user, connection, cmd) {
+        if (!this.runBroadcast()) return;
+        if (!target) return this.parse('/learnchelp');
+        if (!target) target = 'help';
+        let separated = target.split(",");
+        let target1 = (("" + separated[0]).trim()).toLowerCase();
+        let target2 = (("" + separated[1]).trim()).toLowerCase();
+        let target3 = (("" + separated[2]).trim()).toLowerCase();
+        let target4 = (("" + separated[3]).trim()).toLowerCase();
+        let target5 = (("" + separated[4]).trim()).toLowerCase();
+        let target6 = (("" + separated[5]).trim()).toLowerCase();
+        let target7 = (("" + separated[6]).trim()).toLowerCase();
+        let target8 = (("" + separated[7]).trim()).toLowerCase();
+        let target9 = (("" + separated[8]).trim()).toLowerCase();
+        let target10 = (("" + separated[9]).trim()).toLowerCase();
+        let target11 = (("" + separated[10]).trim()).toLowerCase();
+        let target12 = (("" + separated[11]).trim()).toLowerCase();
+        let target13 = (("" + separated[12]).trim()).toLowerCase();
+        let target14 = (("" + separated[13]).trim()).toLowerCase();
+        let target15 = (("" + separated[14]).trim()).toLowerCase();
+        let target16 = (("" + separated[15]).trim()).toLowerCase();
+        let target17 = (("" + separated[16]).trim()).toLowerCase();
+        let target18 = (("" + separated[17]).trim()).toLowerCase();
+        let target19 = (("" + separated[18]).trim()).toLowerCase();
+        let target20 = (("" + separated[19]).trim()).toLowerCase();
+        let target21 = (("" + separated[20]).trim()).toLowerCase();
+        let target22 = (("" + separated[21]).trim()).toLowerCase();
+        let target23 = (("" + separated[22]).trim()).toLowerCase();
+        let target24 = (("" + separated[23]).trim()).toLowerCase();
+        let target25 = (("" + separated[24]).trim()).toLowerCase();
+        let target26 = (("" + separated[25]).trim()).toLowerCase();
+        let target27 = (("" + separated[26]).trim()).toLowerCase();
+        let target28 = (("" + separated[27]).trim()).toLowerCase();
+        let target29 = (("" + separated[28]).trim()).toLowerCase();
+        let target30 = (("" + separated[29]).trim()).toLowerCase();
+        let target31 = (("" + separated[30]).trim()).toLowerCase();
+        let target32 = (("" + separated[31]).trim()).toLowerCase();
+        let target33 = (("" + separated[32]).trim()).toLowerCase();
+        let target34 = (("" + separated[33]).trim()).toLowerCase();
+        let target35 = (("" + separated[34]).trim()).toLowerCase();
+        let target36 = (("" + separated[35]).trim()).toLowerCase();
+        let target37 = (("" + separated[36]).trim()).toLowerCase();
+        let target38 = (("" + separated[37]).trim()).toLowerCase();
+        let target39 = (("" + separated[38]).trim()).toLowerCase();
+        let target40 = (("" + separated[39]).trim()).toLowerCase();
+        let target41 = (("" + separated[40]).trim()).toLowerCase();
+        let target42 = (("" + separated[41]).trim()).toLowerCase();
+        let target43 = (("" + separated[42]).trim()).toLowerCase();
+        let target44 = (("" + separated[43]).trim()).toLowerCase();
+        let target45 = (("" + separated[44]).trim()).toLowerCase();
+        let target46 = (("" + separated[45]).trim()).toLowerCase();
+        let target47 = (("" + separated[46]).trim()).toLowerCase();
+        let target48 = (("" + separated[28]).trim()).toLowerCase();
+        let target49 = (("" + separated[28]).trim()).toLowerCase();
+        let target50 = (("" + separated[28]).trim()).toLowerCase();
+        this.sendReplyBox('<center><button name="receive" value="|html|' + target1 + ':{learnset: {<br>' + target2 + ': [&quot;7L1&quot;],<br>' + target3 + ': [&quot;7L1&quot;],<br>' + target4 + ': [&quot;7L1&quot;],<br>' + target5 + ': [&quot;7L1&quot;],<br>' + target6 + ': [&quot;7L1&quot;],<br>' + target7 + ': [&quot;7L1&quot;],<br>' + target8 + ': [&quot;7L1&quot;],<br>' + target9 + ': [&quot;7L1&quot;],<br>' + target10 + ': [&quot;7L1&quot;],<br>' + target11 + ': [&quot;7L1&quot;],<br>' + target12 + ': [&quot;7L1&quot;],<br>' + target13 + ': [&quot;7L1&quot;],<br>' + target14 + ': [&quot;7L1&quot;],<br>' + target15 + ': [&quot;7L1&quot;],<br>' + target16 + ': [&quot;7L1&quot;],<br>' + target17 + ': [&quot;7L1&quot;],<br>' + target18 + ': [&quot;7L1&quot;],<br>' + target19 + ': [&quot;7L1&quot;],<br>' + target20 + ': [&quot;7L1&quot;],<br>' + target21 + ': [&quot;7L1&quot;],<br>' + target22 + ': [&quot;7L1&quot;],<br>' + target23 + ': [&quot;7L1&quot;],<br>' + target24 + ': [&quot;7L1&quot;],<br>' + target25 + ': [&quot;7L1&quot;],<br>' + target26 + ': [&quot;7L1&quot;],<br>' + target27 + ': [&quot;7L1&quot;],<br>' + target28 + ': [&quot;7L1&quot;],<br>' + target29 + ': [&quot;7L1&quot;],<br>' + target30 + ': [&quot;7L1&quot;],<br>' + target31 + ': [&quot;7L1&quot;],<br>' + target32 + ': [&quot;7L1&quot;],<br>' + target33 + ': [&quot;7L1&quot;],<br>' + target34 + ': [&quot;7L1&quot;],<br>' + target35 + ': [&quot;7L1&quot;],<br>' + target36 + ': [&quot;7L1&quot;],<br>' + target37 + ': [&quot;7L1&quot;],<br>' + target38 + ': [&quot;7L1&quot;],<br>' + target39 + ': [&quot;7L1&quot;],<br>' + target40 + ': [&quot;7L1&quot;],<br>' + target41 + ': [&quot;7L1&quot;],<br>' + target42 + ': [&quot;7L1&quot;],<br>' + target43 + ': [&quot;7L1&quot;],<br>' + target44 + ': [&quot;7L1&quot;],<br>' + target45 + ': [&quot;7L1&quot;],<br>' + target46 + ': [&quot;7L1&quot;],<br>' + target47 + ': [&quot;7L1&quot;],<br>  }}," style="background-color:black;color:aqua;font-size:36px;border: 6px solid aqua;">Generate</button></center><br><marquee direction="left"><img src="http://www.pokestadium.com/assets/img/sprites/misc/icons/charizard-mega-x.png" width="40" height="30"></marquee>');
+
+    },
+    learnchelp: function(target, room, user, connection, cmd) {
+        this.sendReplyBox('/><br>Hit Generate, copy paste in the doc, remove the additional slots of undefined <b> and we&#39;re good!<br>Contact <b><font color=#FFA000>charizard8888</font></b> or <b><font color=#AC33D1>Ludicrousity</font></b> for more info!');
+    },
+
+    fdjs: function(target, room, user, connection, cmd) {
+        if (!this.runBroadcast()) return;
+        if (!target) return this.parse('/fdjshelp');
+        if (!target) target = 'help';
+        let separated = target.split(",");
+        let target1 = (("" + separated[0]).trim()).toLowerCase();
+        let target2 = (("" + separated[1]).trim()).toLowerCase();
+        let target3 = (("" + separated[2]).trim()).toLowerCase();
+        let target4 = (("" + separated[3]).trim()).toLowerCase();
+        let target5 = (("" + separated[4]).trim()).toLowerCase();
+        let target6 = (("" + separated[5]).trim()).toLowerCase();
+        let target7 = (("" + separated[6]).trim()).toLowerCase();
+        let target8 = (("" + separated[7]).trim()).toLowerCase();
+        let target9 = (("" + separated[8]).trim()).toLowerCase();
+        let target10 = (("" + separated[9]).trim()).toLowerCase();
+        let target11 = (("" + separated[10]).trim()).toLowerCase();
+        let target12 = (("" + separated[11]).trim()).toLowerCase();
+        let target13 = (("" + separated[12]).trim()).toLowerCase();
+        let target14 = (("" + separated[13]).trim()).toLowerCase();
+        let target15 = (("" + separated[14]).trim()).toLowerCase();
+        let target16 = (("" + separated[15]).trim()).toLowerCase();
+        let target17 = (("" + separated[16]).trim()).toLowerCase();
+        let target18 = (("" + separated[17]).trim()).toLowerCase();
+        let target19 = (("" + separated[18]).trim()).toLowerCase();
+        let target20 = (("" + separated[19]).trim()).toLowerCase();
+        let target21 = (("" + separated[20]).trim()).toLowerCase();
+        let target22 = (("" + separated[21]).trim()).toLowerCase();
+        let target23 = (("" + separated[22]).trim()).toLowerCase();
+        let target24 = (("" + separated[23]).trim()).toLowerCase();
+        let target25 = (("" + separated[24]).trim()).toLowerCase();
+        let target26 = (("" + separated[25]).trim()).toLowerCase();
+        let target27 = (("" + separated[26]).trim()).toLowerCase();
+        let target28 = (("" + separated[27]).trim()).toLowerCase();
+        let target29 = (("" + separated[28]).trim()).toLowerCase();
+        let target30 = (("" + separated[29]).trim()).toLowerCase();
+        let target31 = (("" + separated[30]).trim()).toLowerCase();
+        let target32 = (("" + separated[31]).trim()).toLowerCase();
+        let target33 = (("" + separated[32]).trim()).toLowerCase();
+        let target34 = (("" + separated[33]).trim()).toLowerCase();
+        let target35 = (("" + separated[34]).trim()).toLowerCase();
+        let target36 = (("" + separated[35]).trim()).toLowerCase();
+        let target37 = (("" + separated[36]).trim()).toLowerCase();
+        let target38 = (("" + separated[37]).trim()).toLowerCase();
+        let target39 = (("" + separated[38]).trim()).toLowerCase();
+        let target40 = (("" + separated[39]).trim()).toLowerCase();
+        let target41 = (("" + separated[40]).trim()).toLowerCase();
+        let target42 = (("" + separated[41]).trim()).toLowerCase();
+        let target43 = (("" + separated[42]).trim()).toLowerCase();
+        let target44 = (("" + separated[43]).trim()).toLowerCase();
+        let target45 = (("" + separated[44]).trim()).toLowerCase();
+        let target46 = (("" + separated[45]).trim()).toLowerCase();
+        let target47 = (("" + separated[46]).trim()).toLowerCase();
+        let target48 = (("" + separated[28]).trim()).toLowerCase();
+        let target49 = (("" + separated[28]).trim()).toLowerCase();
+        let target50 = (("" + separated[28]).trim()).toLowerCase();
+        this.sendReplyBox('<center><button name="receive" value="|html|' + target1 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target2 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target3 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target4 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target5 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target6 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target7 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target8 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target9 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target10 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target11 + ': {<br>tier: &#39;OU&#39;<br>},' + target12 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target13 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target14 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target15 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target16 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target17 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target18 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target19 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target20 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target21 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target22 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target23 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target24 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target25 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target26 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target27 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target28 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target29 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target30 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target31 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target32 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target33 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target34 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target35 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target36 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target37 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target38 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target39 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target40 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target41 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target42 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target43 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target44 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target45 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target46 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target47 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target48 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target49 + ': {<br>tier: &#39;OU&#39;<br>},<br>' + target50 + ': {<br>tier: &#39;OU&#39;<br>}," style="background-color:black;color:aqua;font-size:36px;border: 6px solid aqua;">Generate</button></center><br><marquee direction="left"><img src="http://www.pokestadium.com/assets/img/sprites/misc/icons/charizard-mega-x.png" width="40" height="30"></marquee>');
+
+
+    },
+    fdjshelp: function(target, room, user, connection, cmd) {
+        this.sendReplyBox('/fdjs <br>Hit Generate, copy paste in the doc, remove the additional slots of undefined <b> and we&#39;re good!<br>Contact <b><font color=#FFA000>charizard8888</font></b> or <b><font color=#AC33D1>Ludicrousity</font></b> for more info!');
+    },
 };
