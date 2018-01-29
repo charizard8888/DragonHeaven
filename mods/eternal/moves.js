@@ -484,7 +484,6 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		priority: 0,
 		flags: {protect: 1, reflectable: 1, mirror: 1, authentic: 1},
 		selfdestruct: "ifHit",
-		selfSwitch: "copyvolatile",
 		boosts: {
 			self: {
 			def: 1,
