@@ -10101,5 +10101,1152 @@ exports.BattlePokedex = {
         },
         abilities: {0: "Pixilate"},
     },
-
+scrafting: {
+        num: 7500349,
+        species: "Scrafting",
+        types: ["Fighting", "Normal"], 
+        baseStats: {
+            hp: 117,
+            atk: 135,
+            def: 115,
+            spa: 80,
+            spd: 97,
+            spe: 89
+        },
+         abilities: {0: "Stare Down"},
+    },
+    
+    not: {
+        num: 7500350,
+        species: "Not",
+        types: ["Flying", "Normal"], 
+        baseStats: {
+            hp: 94,
+            atk: 85,
+            def: 87,
+            spa: 93,
+            spd: 85,
+            spe: 122
+        },
+         abilities: {0: "Ambition"},
+    },
+    
+    notmega: {
+        num: 7500350,
+        species: "Not-Mega",
+        baseSpecies: "Not",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Flying", "Normal"], 
+        baseStats: {
+            hp: 94,
+            atk: 85,
+            def: 92,
+            spa: 158,
+            spd: 95,
+            spe: 142
+        },
+        abilities: {0: "No Guard"},
+    },
+    
+    joltsol: {
+        num: 7500351,
+        species: "Joltsol",
+        types: ["Electric", "Dark"], 
+        baseStats: {
+            hp: 75,
+            atk: 107,
+            def: 70,
+            spa: 102,
+            spd: 87,
+            spe: 112
+        },
+         abilities: {0: "Power Surge"},
+    },
+    
+    joltsolmega: {
+        num: 7500351,
+        species: "Joltsol-Mega",
+        baseSpecies: "Joltsol",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Electric", "Dark"], 
+        baseStats: {
+            hp: 75,
+            atk: 127,
+            def: 70,
+            spa: 142,
+            spd: 87,
+            spe: 152
+        },
+        abilities: {0: "Magic Bounce"},
+    },
+    
+    topaz: {
+        num: 7500352,
+        species: "Topaz",
+        types: ["Rock", "Fairy"],
+        baseStats: {
+            hp: 90,
+            atk: 92,
+            def: 102,
+            spa: 72,
+            spd: 85,
+            spe: 95
+        },
+         abilities: {0: "Power Of Two"},
+    },
+    
+    dolphin: {
+        num: 7500353,
+        species: "Dolphin",
+        types: ["Fire", "Normal"], 
+        baseStats: {
+            hp: 122,
+            atk: 124,
+            def: 96,
+            spa: 114,
+            spd: 92,
+            spe: 112
+        },
+         abilities: {0: "Lava Dive"},
+    },
+    
+    snorligatr: {
+        num: 7500354,
+        species: "Snorligatr",
+        types: ["Normal", "Water"],
+        baseStats: {
+            hp: 132,
+            atk: 117,
+            def: 92,
+            spa: 82,
+            spd: 106,
+            spe: 64
+        },
+         abilities: {0: "Sheer Fat"},
+    },
+    
+    emponite: {
+        num: 7500355,
+        species: "Emponite",
+        types: ["Steel", "Dragon"], 
+        baseStats: {
+            hp: 97,
+            atk: 120,
+            def: 101,
+            spa: 115,
+            spd: 110,
+            spe: 80
+        },
+         abilities: {0: "Ocean Shield"},
+    },
+    
+    leafrou: {
+        num: 7500356,
+        species: "Leafrou",
+        types: ["Normal", "Grass"], 
+        baseStats: {
+            hp: 80,
+            atk: 105,
+            def: 105,
+            spa: 72,
+            spd: 87,
+            spe: 108
+        },
+         abilities: {0: "Chlorocoat"},
+    },
+    
+    mimiblim: {
+        num: 7500357,
+        species: "Mimiblim",
+        types: ["Ghost"],
+        baseStats: {
+            hp: 112,
+            atk: 95,
+            def: 72,
+            spa: 80,
+            spd: 89,
+            spe: 98
+        },
+         abilities: {0: "Disguise Burden"},
+    },
+    
+    warcanein: {
+        num: 7500358,
+        species: "Warcanein",
+        types: ["Water", "Fire"],
+        baseStats: {
+            hp: 110,
+            atk: 105,
+            def: 95,
+            spa: 107,
+            spd: 95,
+            spe: 90
+        },
+         abilities: {0: "Persistent Morale"},
+    },
+    
+    zorarce: {
+        num: 7500359,
+        species: "Zorarce",
+        types: ["Normal", "Dark"],
+        baseStats: {
+            hp: 80,
+            atk: 102,
+            def: 90,
+            spa: 100,
+            spd: 90,
+            spe: 102
+        },
+         abilities: {0: "Type Illusionist"},
+    },
+    
+    zorarcefire: {
+        num: 7500359,
+        species: "Zorarce-Fire",
+        baseSpecies: "Zorarce",
+        forme: "Fire",
+        formeLetter: "F",
+        types: ["Fire", "Dark"],
+        baseStats: {
+            hp: 80,
+            atk: 102,
+            def: 90,
+            spa: 100,
+            spd: 90,
+            spe: 102
+        },
+        abilities: {0: "Type Illusionist"},
+    },
+    
+    zorarcewater: {
+        num: 7500359,
+        species: "Zorarce-Water",
+        baseSpecies: "Zorarce",
+        forme: "Water",
+        formeLetter: "W",
+        types: ["Water", "Dark"],
+        baseStats: {
+            hp: 80,
+            atk: 102,
+            def: 90,
+            spa: 100,
+            spd: 90,
+            spe: 102
+        },
+        abilities: {0: "Type Illusionist"},
+    },
+    
+    zorarceelectric: {
+        num: 7500359,
+        species: "Zorarce-Electric",
+        baseSpecies: "Zorarce",
+        forme: "Electric",
+        formeLetter: "E",
+        types: ["Electric", "Dark"],
+        baseStats: {
+            hp: 80,
+            atk: 102,
+            def: 90,
+            spa: 100,
+            spd: 90,
+            spe: 102
+        },
+        abilities: {0: "Type Illusionist"},
+    },
+    
+    zorarcegrass: {
+        num: 7500359,
+        species: "Zorarce-Grass",
+        baseSpecies: "Zorarce",
+        forme: "Grass",
+        formeLetter: "G",
+        types: ["Grass", "Dark"],
+        baseStats: {
+            hp: 80,
+            atk: 102,
+            def: 90,
+            spa: 100,
+            spd: 90,
+            spe: 102
+        },
+        abilities: {0: "Type Illusionist"},
+    },
+    
+    zorarceice: {
+        num: 7500359,
+        species: "Zorarce-Ice",
+        baseSpecies: "Zorarce",
+        forme: "Ice",
+        formeLetter: "I",
+        types: ["Ice", "Dark"],
+        baseStats: {
+            hp: 80,
+            atk: 102,
+            def: 90,
+            spa: 100,
+            spd: 90,
+            spe: 102
+        },
+        abilities: {0: "Type Illusionist"},
+    },
+    
+    zorarcefighting: {
+        num: 7500359,
+        species: "Zorarce-Fighting",
+        baseSpecies: "Zorarce",
+        forme: "Fighting",
+        formeLetter: "H",
+        types: ["Fighting", "Dark"],
+        baseStats: {
+            hp: 80,
+            atk: 102,
+            def: 90,
+            spa: 100,
+            spd: 90,
+            spe: 102
+        },
+        abilities: {0: "Type Illusionist"},
+    },
+    
+    zorarcepoison: {
+        num: 7500359,
+        species: "Zorarce-Poison",
+        baseSpecies: "Zorarce",
+        forme: "Poison",
+        formeLetter: "P",
+        types: ["Poison", "Dark"],
+        baseStats: {
+            hp: 80,
+            atk: 102,
+            def: 90,
+            spa: 100,
+            spd: 90,
+            spe: 102
+        },
+        abilities: {0: "Type Illusionist"},
+    },
+    
+    zorarceground: {
+        num: 7500359,
+        species: "Zorarce-Ground",
+        baseSpecies: "Zorarce",
+        forme: "Ground",
+        formeLetter: "U",
+        types: ["Ground", "Dark"],
+        baseStats: {
+            hp: 80,
+            atk: 102,
+            def: 90,
+            spa: 100,
+            spd: 90,
+            spe: 102
+        },
+        abilities: {0: "Type Illusionist"},
+    },
+    
+    zorarceflying: {
+        num: 7500359,
+        species: "Zorarce-Flying",
+        baseSpecies: "Zorarce",
+        forme: "Flying",
+        formeLetter: "L",
+        types: ["Flying", "Dark"],
+        baseStats: {
+            hp: 80,
+            atk: 102,
+            def: 90,
+            spa: 100,
+            spd: 90,
+            spe: 102
+        },
+        abilities: {0: "Type Illusionist"},
+    },
+    
+    zorarcepsychic: {
+        num: 7500359,
+        species: "Zorarce-Psychic",
+        baseSpecies: "Zorarce",
+        forme: "Psychic",
+        formeLetter: "Y",
+        types: ["Psychic", "Dark"],
+        baseStats: {
+            hp: 80,
+            atk: 102,
+            def: 90,
+            spa: 100,
+            spd: 90,
+            spe: 102
+        },
+        abilities: {0: "Type Illusionist"},
+    },
+    
+    zorarcebug: {
+        num: 7500359,
+        species: "Zorarce-Bug",
+        baseSpecies: "Zorarce",
+        forme: "Bug",
+        formeLetter: "B",
+        types: ["Bug", "Dark"],
+        baseStats: {
+            hp: 80,
+            atk: 102,
+            def: 90,
+            spa: 100,
+            spd: 90,
+            spe: 102
+        },
+        abilities: {0: "Type Illusionist"},
+    },
+    
+    zorarcerock: {
+        num: 7500359,
+        species: "Zorarce-Rock",
+        baseSpecies: "Zorarce",
+        forme: "Rock",
+        formeLetter: "R",
+        types: ["Rock", "Dark"],
+        baseStats: {
+            hp: 80,
+            atk: 102,
+            def: 90,
+            spa: 100,
+            spd: 90,
+            spe: 102
+        },
+        abilities: {0: "Type Illusionist"},
+    },
+    
+    zorarceghost: {
+        num: 7500359,
+        species: "Zorarce-Ghost",
+        baseSpecies: "Zorarce",
+        forme: "Ghost",
+        formeLetter: "O",
+        types: ["Ghost", "Dark"],
+        baseStats: {
+            hp: 80,
+            atk: 102,
+            def: 90,
+            spa: 100,
+            spd: 90,
+            spe: 102
+        },
+        abilities: {0: "Type Illusionist"},
+    },
+    
+    zorarcedragon: {
+        num: 7500359,
+        species: "Zorarce-dragon",
+        baseSpecies: "Zorarce",
+        forme: "Dragon",
+        formeLetter: "D",
+        types: ["Dragon", "Dark"],
+        baseStats: {
+            hp: 80,
+            atk: 102,
+            def: 90,
+            spa: 100,
+            spd: 90,
+            spe: 102
+        },
+        abilities: {0: "Type Illusionist"},
+    },
+    
+    zorarcedark: {
+        num: 7500359,
+        species: "Zorarce-Dark",
+        baseSpecies: "Zorarce",
+        forme: "Dark",
+        formeLetter: "K",
+        types: ["Dark"],
+        baseStats: {
+            hp: 80,
+            atk: 102,
+            def: 90,
+            spa: 100,
+            spd: 90,
+            spe: 102
+        },
+        abilities: {0: "Type Illusionist"},
+    },
+    
+    zorarcesteel: {
+        num: 7500359,
+        species: "Zorarce-Steel",
+        baseSpecies: "Zorarce",
+        forme: "Steel",
+        formeLetter: "S",
+        types: ["Steel", "Dark"],
+        baseStats: {
+            hp: 80,
+            atk: 102,
+            def: 90,
+            spa: 100,
+            spd: 90,
+            spe: 102
+        },
+        abilities: {0: "Type Illusionist"},
+    },
+    
+    zorarcefairy: {
+        num: 7500359,
+        species: "Zorarce-Fairy",
+        baseSpecies: "Zorarce",
+        forme: "Fairy",
+        formeLetter: "A",
+        types: ["Fairy", "Dark"],
+        baseStats: {
+            hp: 80,
+            atk: 102,
+            def: 90,
+            spa: 100,
+            spd: 90,
+            spe: 102
+        },
+        abilities: {0: "Type Illusionist"},
+    },
+    
+    happislashfriendly: {
+        num: 7500360,
+        species: "Happislash-Friendly",
+        types: ["Ghost", "Normal"], 
+        baseStats: {
+            hp: 80,
+            atk: 27,
+            def: 97,
+            spa: 32,
+            spd: 127,
+            spe: 45
+        },
+         abilities: {0: "Unfriend"},
+    },
+    
+    happislashunfriendly: {
+        num: 7500360,
+        species: "Happislash-Unfriendly",
+        baseSpecies: "Happislash-Friendly",
+        forme: "Unfriendly",
+        formeLetter: "U",
+        types: ["Ghost", "Normal"], 
+        baseStats: {
+            hp: 80,
+            atk: 97,
+            def: 27,
+            spa: 127,
+            spd: 32,
+            spe: 45
+        },
+        abilities: {0: "Unfriend"},
+    },
+    
+    torkobulu: {
+        num: 7500361,
+        species: "Torko Bulu",
+        types: ["Grass", "Fire"], 
+        baseStats: {
+            hp: 70,
+            atk: 107,
+            def: 127,
+            spa: 105,
+            spd: 102,
+            spe: 47
+        },
+         abilities: {0: "Photosynthesis Surge"},
+    },
+    
+    pheroxish: {
+        num: 7500362,
+        species: "Pheroxish",
+        types: ["Water", "Fighting"], 
+        baseStats: {
+            hp: 69,
+            atk: 122,
+            def: 53,
+            spa: 122,
+            spd: 53,
+            spe: 141
+        },
+         abilities: {0: "Dazzle Beast"},
+    },
+    
+    padunk: {
+        num: 7500363,
+        species: "Padunk",
+        types: ["Poison", "Dark"], 
+        baseStats: {
+            hp: 93,
+            atk: 101,
+            def: 68,
+            spa: 89,
+            spd: 65,
+            spe: 105
+        },
+         abilities: {0: "Rage Potion"},
+    },
+    
+    magnelure: {
+        num: 7500364,
+        species: "Magnelure",
+        types: ["Electric", "Fire"], 
+        baseStats: {
+            hp: 65,
+            atk: 62,
+            def: 102,
+            spa: 147,
+            spd: 100,
+            spe: 90
+        },
+         abilities: {0: "Blacksmith"},
+    },
+    
+    shucklord: {
+        num: 7500365,
+        species: "Shucklord",
+        types: ["Bug", "Dragon"], 
+        baseStats: {
+            hp: 141,
+            atk: 55,
+            def: 141,
+            spa: 73,
+            spd: 141,
+            spe: 24
+        },
+         abilities: {0: "Two-Faced"},
+    },
+    
+    mtndew: {
+        num: 7500366,
+        species: "Mtn Dew",
+        types: ["Steel", "Psychic"], 
+        baseStats: {
+            hp: 79,
+            atk: 114,
+            def: 106,
+            spa: 94,
+            spd: 74,
+            spe: 114
+        },
+         abilities: {0: "Contagious Yawn"},
+    },
+    
+    altearnia: {
+        num: 7500367,
+        species: "Altearnia",
+        types: ["Dragon", "Steel"], 
+        baseStats: {
+            hp: 90,
+            atk: 100,
+            def: 102,
+            spa: 109,
+            spd: 110,
+            spe: 72
+        },
+         abilities: {0: "Compassionate Soul"},
+    },
+    
+    altearniamega: {
+        num: 7500367,
+        species: "Altearnia-Mega",
+        baseSpecies: "Altearnia",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Dragon", "Fairy"], 
+        baseStats: {
+            hp: 90,
+            atk: 140,
+            def: 122,
+            spa: 149,
+            spd: 110,
+            spe: 72
+        },
+        abilities: {0: "Pixilate"},
+    },
+    
+    regigiot: {
+        num: 7500368,
+        species: "Regigiot",
+        types: ["Flying", "Ice"], 
+        baseStats: {
+            hp: 81,
+            atk: 65,
+            def: 87,
+            spa: 105,
+            spd: 135,
+            spe: 95
+        },
+         abilities: {0: "Magical Ice"},
+    },
+    
+    regigiotmega: {
+        num: 7500368,
+        species: "Regigiot-Mega",
+        baseSpecies: "Regigiot",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Flying", "Ice"], 
+        baseStats: {
+            hp: 81,
+            atk: 65,
+            def: 92,
+            spa: 170,
+            spd: 145,
+            spe: 115
+        },
+        abilities: {0: "No Guard"},
+    },
+    
+    kasukabe: {
+        num: 7500369,
+        species: "Kasukabe",
+        types: ["Normal", "Fighting"], 
+        baseStats: {
+            hp: 109,
+            atk: 117,
+            def: 109,
+            spa: 47,
+            spd: 83,
+            spe: 103
+        },
+         abilities: {0: "Genome Tree"},
+    },
+    
+    sakamaki: {
+        num: 7500370,
+        species: "Sakamaki",
+        types: ["Dragon", "Steel"],
+        baseStats: {
+            hp: 80,
+            atk: 128,
+            def: 100,
+            spa: 90,
+            spd: 85,
+            spe: 115
+        },
+         abilities: {0: "Code Unknown"},
+    },
+    
+    sakamakimega: {
+        num: 7500370,
+        species: "Sakamaki-Mega",
+        baseSpecies: "Sakamaki",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Dragon", "Steel"], 
+        baseStats: {
+            hp: 80,
+            atk: 138,
+            def: 150,
+            spa: 100,
+            spd: 95,
+            spe: 135
+        },
+        abilities: {0: "Aerilate"},
+    },
+    
+    mapuiasu: {
+        num: 7500371,
+        species: "Mapu Iasu",
+        types: ["Ghost", "Fairy"], 
+        baseStats: {
+            hp: 75,
+            atk: 85,
+            def: 93,
+            spa: 98,
+            spd: 120,
+            spe: 90
+        },
+         abilities: {0: "Sensu Dancer"},
+    },
+    
+    mapuauhe: {
+        num: 7500372,
+        species: "Mapu Auhe",
+        types: ["Fire", "Grass"], 
+        baseStats: {
+            hp: 75,
+            atk: 120,
+            def: 98,
+            spa: 93,
+            spd: 85,
+            spe: 90
+        },
+         abilities: {0: "Baile Dancer"},
+    },
+    
+    mapumoli: {
+        num: 7500373,
+        species: "Mapu Moli",
+        types: ["Electric"],
+        baseStats: {
+            hp: 75,
+            atk: 93,
+            def: 89,
+            spa: 98,
+            spd: 85,
+            spe: 120
+        },
+         abilities: {0: "Pom-Pom Dancer"},
+    },
+    
+    mapubupa: {
+        num: 7500374,
+        species: "Mapu Bupa",
+        types: ["Psychic"],
+        baseStats: {
+            hp: 75,
+            atk: 90,
+            def: 85,
+            spa: 120,
+            spd: 93,
+            spe: 98
+        },
+         abilities: {0: "Pau Dancer"},
+    },
+    
+    meazle: {
+        num: 7500375,
+        species: "Meazle",
+        types: ["Psychic", "Poison"], 
+        baseStats: {
+            hp: 84,
+            atk: 82,
+            def: 100,
+            spa: 105,
+            spd: 100,
+            spe: 108
+        },
+         abilities: {0: "Ailment Master"},
+    },
+    
+    parantis: {
+        num: 7500376,
+        species: "Parantis",
+        types: ["Bug", "Grass"],
+        baseStats: {
+            hp: 75,
+            atk: 110,
+            def: 95,
+            spa: 80,
+            spd: 95,
+            spe: 47
+        },
+         abilities: {0: "Thermophilic"},
+    },
+    
+    dinna: {
+        num: 7500377,
+        species: "Dinna",
+        types: ["Normal", "Psychic"], 
+        baseStats: {
+            hp: 82,
+            atk: 36,
+            def: 46,
+            spa: 57,
+            spd: 51,
+            spe: 56
+        },
+         abilities: {0: "Move~Stat"},
+    },
+    
+    sylvias: {
+        num: 7500378,
+        species: "Sylvias",
+        types: ["Dragon", "Fairy"], 
+        baseStats: {
+            hp: 107,
+            atk: 72,
+            def: 97,
+            spa: 110,
+            spd: 130,
+            spe: 85
+        },
+         abilities: {0: "Enchanted"},
+    },
+    
+    sylviasmega: {
+        num: 7500378,
+        species: "Sylvias-Mega",
+        baseSpecies: "Sylvias",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Dragon", "Fairy"], 
+        baseStats: {
+            hp: 107,
+            atk: 92,
+            def: 127,
+            spa: 140,
+            spd: 150,
+            spe: 85
+        },
+        abilities: {0: "A1"},
+    },
+    
+    mightyyvel: {
+        num: 7500379,
+        species: "Mighty Yvel",
+        types: ["Dark"],
+        baseStats: {
+            hp: 101,
+            atk: 110,
+            def: 90,
+            spa: 95,
+            spd: 90,
+            spe: 102
+        },
+         abilities: {0: "Plan In Action"},
+    },
+    
+    tyranwak: {
+        num: 7500380,
+        species: "Tyranwak",
+        types: ["Rock", "Ghost"], 
+        baseStats: {
+            hp: 81,
+            atk: 110,
+            def: 124,
+            spa: 69,
+            spd: 79,
+            spe: 68
+        },
+         abilities: {0: "Enchanted Skull"},
+    },
+    
+    volcanoemblem: {
+        num: 7500381,
+        species: "Volcano Emblem",
+        types: ["Flying", "Fire"], 
+        baseStats: {
+            hp: 78,
+            atk: 84,
+            def: 100,
+            spa: 130,
+            spd: 90,
+            spe: 100
+        },
+         abilities: {0: "Magic Sponge"},
+    },
+    
+    pelikoko: {
+        num: 7500382,
+        species: "Peli Koko",
+        types: ["Water", "Electric"], 
+        baseStats: {
+            hp: 65,
+            atk: 82,
+            def: 92,
+            spa: 115,
+            spd: 72,
+            spe: 117
+        },
+         abilities: {0: "Thunderstorm Surge"},
+    },
+    
+    mimitto: {
+        num: 7500383,
+        species: "Mimitto",
+        types: ["Normal", "Fairy"],
+        baseStats: {
+            hp: 71,
+            atk: 89,
+            def: 64,
+            spa: 49,
+            spd: 76,
+            spe: 72
+        },
+         abilities: {0: "Hide-And-Seek"},
+    },
+    
+    eellee: {
+        num: 7500384,
+        species: "Eel-Lee",
+        types: ["Electric", "Fire"], 
+        baseStats: {
+            hp: 90,
+            atk: 110,
+            def: 90,
+            spa: 100,
+            spd: 120,
+            spe: 71
+        },
+         abilities: {0: "Ground Leecher"},
+    },
+    
+    celesir: {
+        num: 7500385,
+        species: "Celesir",
+        types: ["Steel", "Bug"], 
+        baseStats: {
+            hp: 81,
+            atk: 133,
+            def: 101,
+            spa: 81,
+            spd: 105,
+            spe: 73
+        },
+         abilities: {0: "Bloodthirst"},
+    },
+    
+    celesirmega: {
+        num: 7500385,
+        species: "Celesir-Mega",
+        baseSpecies: "Celesir",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Steel", "Flying"], 
+        baseStats: {
+            hp: 81,
+            atk: 163,
+            def: 121,
+            spa: 91,
+            spd: 125,
+            spe: 93
+        },
+        abilities: {0: "Aerilate"},
+    },
+    
+    nymph: {
+        num: 7500386,
+        species: "Nymph",
+        types: ["Fairy", "Grass"], 
+        baseStats: {
+            hp: 88,
+            atk: 85,
+            def: 105,
+            spa: 115,
+            spd: 105,
+            spe: 105
+        },
+         abilities: {0: "Deceiver"},
+    },
+    
+    kyokid: {
+        num: 7500387,
+        species: "Kyokid",
+        types: ["Water", "Electric"],
+        baseStats: {
+            hp: 72,
+            atk: 81,
+            def: 70,
+            spa: 120,
+            spd: 97,
+            spe: 112
+        },
+         abilities: {0: "Electrotorrent"},
+    },
+    
+    kyokidprimal: {
+        num: 7500387,
+        species: "Kyokid-Primal",
+        baseSpecies: "Kyokid",
+        forme: "Primal",
+        formeLetter: "P",
+        types: ["Water", "Electric"], 
+        baseStats: {
+            hp: 72,
+            atk: 131,
+            def: 70,
+            spa: 150,
+            spd: 117,
+            spe: 112
+        },
+        abilities: {0: "Primordial Sea"},
+    },
+    
+    lemorusincarnate: {
+        num: 7500388,
+        species: "Lemorus-Incarnate",
+        types: ["Ground", "Electric"],
+        baseStats: {
+            hp: 104,
+            atk: 142,
+            def: 110,
+            spa: 85,
+            spd: 72,
+            spe: 73
+        },
+         abilities: {0: "Move Madness"},
+    },
+    
+    absoko: {
+        num: 7500389,
+        species: "Absoko",
+        types: ["Dark", "Fairy"], 
+        baseStats: {
+            hp: 67,
+            atk: 142,
+            def: 72,
+            spa: 85,
+            spd: 67,
+            spe: 122
+        },
+         abilities: {0: "Dark Surge"},
+    },
+    
+    absokomega: {
+        num: 7500389,
+        species: "Absoko-Mega",
+        baseSpecies: "Absoko",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Dark", "Fairy"],
+        baseStats: {
+            hp: 67,
+            atk: 162,
+            def: 72,
+            spa: 125,
+            spd: 67,
+            spe: 162
+        },
+        abilities: {0: "Magic Bounce"},
+    },
+    
+    permafrost: {
+        num: 7500390,
+        species: "Permafrost",
+        types: ["Steel", "Fairy"], 
+        baseStats: {
+            hp: 83,
+            atk: 99,
+            def: 84,
+            spa: 72,
+            spd: 84,
+            spe: 94
+        },
+         abilities: {0: "Special Snowflake"},
+    },
+    
+    giradino: {
+        num: 7500391,
+        species: "Giradino",
+        types: ["Ghost", "Normal"], 
+        baseStats: {
+            hp: 146,
+            atk: 80,
+            def: 113,
+            spa: 80,
+            spd: 113,
+            spe: 70
+        },
+         abilities: {0: "Revitalize"},
+    },
+    
+    giradinomega: {
+        num: 7500391,
+        species: "Giradino-Mega",
+        baseSpecies: "Giradino",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Ghost", "Fairy"],
+        baseStats: {
+            hp: 146,
+            atk: 80,
+            def: 153,
+            spa: 100,
+            spd: 153,
+            spe: 70
+        },
+        abilities: {0: "Healer"},
+    },
 };
