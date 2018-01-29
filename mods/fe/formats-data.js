@@ -16,7 +16,6 @@ swampamar: {
 		tier: "OU",
 	},
 	aerodakomega: {
-		randomBattleMoves: ["dragondance", "flareblitz", "dragonclaw", "earthquake", "roost", "willowisp"],
 		requiredItem: "Aerodakoite",
 		tier: "OU",
 	},
