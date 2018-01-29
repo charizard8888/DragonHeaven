@@ -12,6 +12,7 @@ swampamar: {
 		tier: "OU",
 	},
 gyarotic: {
+		randomBattleMoves: ["dragondance", "flareblitz", "dragonclaw", "earthquake", "roost", "willowisp"],
         tier: "OU",
     },
     gyaroticmega: {
