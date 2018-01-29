@@ -11249,4 +11249,162 @@ scrafting: {
         },
         abilities: {0: "Healer"},
     },
+	xurkizard: {
+        num: 7500392,
+        species: "Xurkizard",
+        types: ["Electric", "Fire"],
+        baseStats: {
+            hp: 80,
+            atk: 86,
+            def: 74,
+            spa: 161,
+            spd: 78,
+            spe: 111
+        },
+         abilities: {0: "Blazing Beast"},
+    },
+    
+    xurkizardmegax: {
+        num: 7500392,
+        species: "Xurkizard-Mega",
+        baseSpecies: "Xurkizard",
+        forme: "Mega",
+        formeLetter: "X",
+        types: ["Electric", "Dragon"], 
+        baseStats: {
+            hp: 80,
+            atk: 132,
+            def: 107,
+            spa: 182,
+            spd: 78,
+            spe: 111
+        },
+        abilities: {0: "Tough Claws"},
+    },
+    
+    xurkizardmegay: {
+        num: 7500392,
+        species: "Xurkizard-Mega",
+        baseSpecies: "Xurkizard",
+        forme: "Mega",
+        formeLetter: "Y",
+        types: ["Electric", "Fire"],
+        baseStats: {
+            hp: 80,
+            atk: 106,
+            def: 74,
+            spa: 211,
+            spd: 108,
+            spe: 111
+        },
+        abilities: {0: "Drought"},
+    },
+    
+    skarmeye: {
+        num: 7500393,
+        species: "Skarmeye",
+        types: ["Steel", "Ghost"],
+        baseStats: {
+            hp: 81,
+            atk: 103,
+            def: 117,
+            spa: 80,
+            spd: 95,
+            spe: 80
+        },
+         abilities: {0: "Light Armor"},
+    },
+    
+    marshern: {
+        num: 7500394,
+        species: "Marshern",
+        types: ["Ground", "Fairy"],
+        baseStats: {
+            hp: 98,
+            atk: 108,
+            def: 100,
+            spa: 106,
+            spd: 95,
+            spe: 80
+        },
+         abilities: {0: "Soaking Aura"},
+    },
+    
+    grovyltal: {
+        num: 7500395,
+        species: "Grovyltal",
+        types: ["Grass", "Dark"],
+        baseStats: {
+            hp: 88,
+            atk: 113,
+            def: 70,
+            spa: 113,
+            spd: 81,
+            spe: 117
+        },
+         abilities: {0: "Jailbreak"},
+    },
+    
+    rairai: {
+        num: 7500396,
+        species: "Rairai",
+        types: ["Dark", "Electric"],
+        baseStats: {
+            hp: 65,
+            atk: 110,
+            def: 73,
+            spa: 133,
+            spd: 85,
+            spe: 118
+        },
+         abilities: {0: "Paralyzed With Fear"},
+    },
+    
+    dramasnow: {
+        num: 7500397,
+        species: "dramasnow",
+        types: ["Dragon", "Ice"], 
+        baseStats: {
+            hp: 94,
+            atk: 86,
+            def: 90,
+            spa: 123,
+            spd: 98,
+            spe: 58
+        },
+         abilities: {0: "Ageless Blizzard"},
+    },
+    
+    dramasnowmega: {
+        num: 7500397,
+        species: "Dramasnow-Mega",
+        baseSpecies: "Dramasnow",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Dragon", "Ice"],
+        baseStats: {
+            hp: 94,
+            atk: 126,
+            def: 120,
+            spa: 163,
+            spd: 118,
+            spe: 28
+        },
+        abilities: {0: "Snow Warning"},
+    },
+    
+    chaosii: {
+        num: 7500398,
+        species: "Chaos II",
+        types: ["Normal", "Fighting"], 
+        baseStats: {
+            hp: 80,
+            atk: 120,
+            def: 70,
+            spa: 90,
+            spd: 70,
+            spe: 120
+        },
+         abilities: {0: "Flip Out"},
+    },
 };
