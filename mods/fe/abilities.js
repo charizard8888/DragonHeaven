@@ -1862,12 +1862,12 @@ exports.BattleAbilities = {
 	},
 		onModifyAtkPriority: 5,
 		onModifyAtk: function (atk, attacker, defender, move) {
-				this.debug('Torrent boost');
+				this.debug('Sea Monster boost');
 				return this.chainModify(1.1);
 		},
 		onModifySpAPriority: 5,
 		onModifySpA: function (atk, attacker, defender, move) {
-				this.debug('Torrent boost');
+				this.debug('Sea Monster boost');
 				return this.chainModify(1.1);
 		},
 		
