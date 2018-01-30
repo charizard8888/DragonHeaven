@@ -3969,7 +3969,7 @@ exports.Formats = [
 		{
 		name: "[Gen 7] Random Choonmons δ",
 		mod: 'choonmons',
-		team: 'random',
+		team: 'randomSeasonalMelee',
 		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
 	},
 	
