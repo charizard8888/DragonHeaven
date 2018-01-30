@@ -13,7 +13,7 @@ class RandomSeasonalTeams extends RandomTeams {
 				signatureMove: "Girly Girl",evs: {spd: 96, spa: 160, spe: 252},
 				nature:'Modest',
 			},
-			/*'Uncle Flacco' : {
+			'Uncle Flacco' : {
 				species: 'Shuckle', ability: 'Juice Drink', item: 'Binding Band', gender: 'M', 
 				moves: ['defendorder', 'shoreup', 'stickyweb'],
 				signatureMove: "Stone Wrap",evs: {hp: 252, atk:252, spd: 252, def: 252, spe: 252},
@@ -225,7 +225,7 @@ class RandomSeasonalTeams extends RandomTeams {
 				moves: ['shadowball', 'dragonpulse', 'dreameater'],
 				signatureMove: "secretkiller",
 				evs: {spa:252, spd:252, spe:4}, nature: 'Adamant',
-			},*/
+			},
 		};
 
 		// Generate the team randomly.
