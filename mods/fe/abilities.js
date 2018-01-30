@@ -1348,46 +1348,7 @@ exports.BattleAbilities = {
 		rating: 3.5,
 		num: 248
 	},
-	"seamonster": {
-		desc: "On switch-in, this Pokemon lowers the Attack of adjacent opposing Pokemon by 1 stage. Pokemon behind a substitute are immune.",
-		shortDesc: "On switch-in, this Pokemon lowers the Attack of adjacent opponents by 1 stage.",
-		onModifyAtkPriority: 5,
-		onModifyAtk: function(atk, attacker, defender, move) {
-			if (move.type === 'Water') {
-				this.debug('Torrent boost');
-				return this.chainModify(1.1);
-			}
-		},
-		onModifySpAPriority: 5,
-		onModifySpA: function(atk, attacker, defender, move) {
-			if (move.type === 'Water') {
-				this.debug('Torrent boost');
-				return this.chainModify(1.1);
-			}
-		},
-		onStart: function(pokemon) {
-			var foeactive = pokemon.side.foe.active;
-			var activated = false;
-			for (var i = 0; i < foeactive.length; i++) {
-				if (!foeactive[i] || !this.isAdjacent(foeactive[i], pokemon)) continue;
-				if (!activated) {
-					this.add('-ability', pokemon, 'Intimidate');
-					activated = true;
-				}
-				if (foeactive[i].volatiles['substitute']) {
-					this.add('-activate', foeactive[i], 'Substitute', 'ability: Intimidate', '[of] ' + pokemon);
-				} else {
-					this.boost({
-						atk: -1
-					}, foeactive[i], pokemon);
-				}
-			}
-		},
-		id: "seamonster",
-		name: "Sea Monster",
-		rating: 3.5,
-		num: 249
-	},
+	
 	"underpressure": {
 		desc: "This Pokemon has its major status condition cured at the end of each turn if Rain Dance is active.",
 		shortDesc: "This Pokemon has its status cured at the end of each turn if Rain Dance is active.",
