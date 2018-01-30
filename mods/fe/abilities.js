@@ -1860,15 +1860,10 @@ exports.BattleAbilities = {
 		id: "seamonster",
 		name: "Sea Monster",
 	},
-		onModifyAtkPriority: 5,
-		onModifyAtk: function (atk, attacker, defender, move) {
-				this.debug('Sea Monster boost');
-				return this.chainModify(1.1);
-		},
-		onModifySpAPriority: 5,
-		onModifySpA: function (atk, attacker, defender, move) {
-				this.debug('Sea Monster boost');
-				return this.chainModify(1.1);
+onBasePower: function (basePower, user, target, move) {
+			if (move.type === 'Water') {
+				return this.chainModify([0x1333, 0x1000]);
+			}
 		},
 		
 	/*
