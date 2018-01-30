@@ -1856,15 +1856,20 @@ exports.BattleAbilities = {
 				}
 			}
 		},
-		onBasePower: function (basePower, attacker, defender, move) {
-			if (move.type === 'Water') {
-				return this.chainModify(1.1);
-		},
-	},
+		
 		id: "seamonster",
 		name: "Sea Monster",
 	},
-		
+		onModifyAtkPriority: 5,
+		onModifyAtk: function (atk, attacker, defender, move) {
+				this.debug('Torrent boost');
+				return this.chainModify(1.1);
+		},
+		onModifySpAPriority: 5,
+		onModifySpA: function (atk, attacker, defender, move) {
+				this.debug('Torrent boost');
+				return this.chainModify(1.1);
+		},
 		
 	/*
 	
