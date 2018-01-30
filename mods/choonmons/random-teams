@@ -1,40 +1,22 @@
 'use strict';
 
 const RandomTeams = require('../../data/random-teams');
-class RandomTeams extends RandomTeams {
-	randomTeam(side) {
-  
-/*pikachulibre: {
-		randomBattleMoves: ["volttackle", "knockoff", "extremespeed", "imprisonedstrike"],
-		tier: "OU",
-	},*/
-porygonz: {
-		randomBattleMoves: ["thunderbolt", "shadowball", "icebeam", "psyshock"],
-		tier: "OU",
-	},
-  gastrodon: {
-		randomBattleMoves: ["scald", "earthpower", "recover", "toxic"],
-		tier: "OU",
-	},
-	pikachu: {
-		randomBattleMoves: ["volttackle", "knockoff", "extremespeed", "imprisonedstrike"],
-		tier: "OU",
-	},
-	raichu: {
-		randomBattleMoves: ["volttackle", "knockoff", "extremespeed", "imprisonedstrike"],
-		tier: "OU",
-	},
-	pichu: {
-		randomBattleMoves: ["volttackle", "knockoff", "extremespeed", "imprisonedstrike"],
-		tier: "OU",
-	},
-	heracross: {
-		randomBattleMoves: ["volttackle", "knockoff", "extremespeed", "imprisonedstrike"],
-		tier: "OU",
-	},
-};
 
-// Generate the team randomly.
+class RandomSeasonalTeams extends RandomTeams {
+	randomSeasonalMeleeTeam(side) {
+		let team = [];
+		let variant = (this.random(2) === 1);
+		let sets = {
+			
+			'Pikachu Libre' : {
+				species: 'Pikachu-Libre', ability: 'Iron Fist', item: 'Life Orb',
+				moves: ['fakeout', 'volttackle', 'imprisonedstrike', 'extremespeed'],
+				evs: {atk: 252, spe: 252, spd: 4},
+				nature:'Jolly',
+			},
+		};
+
+		// Generate the team randomly.
 		let pool = Object.keys(sets);
 		for (let i = 0; i < 6; i++) {
 			let name = this.sampleNoReplace(pool);
@@ -57,4 +39,5 @@ porygonz: {
 		return team;
 	}
 }
-module.exports = RandomTeams;
+
+module.exports = RandomSeasonalTeams;
