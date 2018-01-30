@@ -50,6 +50,12 @@ class RandomSeasonalTeams extends RandomTeams {
 				signatureMove: "Protect", evs: {spa: 252, spe: 252, spd: 4},
 				nature:'Jolly',
 			},
+				'Heracross' : {
+				species: 'Heracross', ability: 'Moxie', item: 'Choice Scarf',
+				moves: ['closecombat', 'megahorn', 'knockoff', 'stoneedge'],
+				signatureMove: "Protect", evs: {atk: 252, spe: 252, spd: 4},
+				nature:'Jolly',
+			},
 		};
 
 		// Generate the team randomly.
