@@ -4041,7 +4041,6 @@ exports.Formats = [
 			let name = toId(pokemon.name);
 		},
 	},
-		},
 	
 	/*{	THis needs a "randomCHOONMONSFactory function in mods/choonmons/scripts.js"
 		name: "[Gen 7] Choonmons Factory",
