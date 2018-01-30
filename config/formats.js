@@ -3967,12 +3967,12 @@ exports.Formats = [
 		},
 	},
 		{
-		name: "Random Choonmons δ",
-
+		name: "[Gen 7] Random Choonmons δ",
 		mod: 'choonmons',
 		team: 'random',
 		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
 	},
+	
 	/*{	THis needs a "randomCHOONMONSFactory function in mods/choonmons/scripts.js"
 		name: "[Gen 7] Choonmons Factory",
 
@@ -3980,6 +3980,7 @@ exports.Formats = [
 		team: 'randomCHOONMONSFactory',
 		ruleset: ['Pokemon', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod'],
 	},*/
+	
 	{
 		name: "[Gen 7] Clovermons",
 		desc: ["&bullet; <a href=http://pgenvp.wikia.com/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number>Clovermons</a>",
