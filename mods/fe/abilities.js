@@ -1837,6 +1837,33 @@ exports.BattleAbilities = {
 		id: "torrentialvoltage",
 		name: "Torrential Voltage",
 	},
+		"seamonster": {
+		desc: "Lowers opponent's attack one stage upon switching in. Water-type attacks are boosted 10%.",
+		shortDesc: "Lowers opponent's attack one stage upon switching in. Water-type attacks are boosted 10%.",
+		onStart: function (pokemon) {
+			let foeactive = pokemon.side.foe.active;
+			let activated = false;
+			for (let i = 0; i < foeactive.length; i++) {
+				if (!foeactive[i] || !this.isAdjacent(foeactive[i], pokemon)) continue;
+				if (!activated) {
+					this.add('-ability', pokemon, 'Sea Monster', 'boost');
+					activated = true;
+				}
+				if (foeactive[i].volatiles['substitute']) {
+					this.add('-immune', foeactive[i], '[msg]');
+				} else {
+					this.boost({atk: -1}, foeactive[i], pokemon);
+				}
+			}
+		},
+		onBasePower: function (basePower, attacker, defender, move) {
+			if (move.type === 'Water') {
+				return this.chainModify(1.1);
+		},
+	},
+		id: "seamonster",
+		name: "Sea Monster",
+	},
 		
 		
 	/*
@@ -1875,7 +1902,6 @@ exports.BattleAbilities = {
 		},
 		onBasePower: function (basePower, attacker, defender, move) {
 			if (move.type === 'Water') {
-				this.debug('Sea Monster boost');
 				return this.chainModify(1.1);
 		},
 	},
