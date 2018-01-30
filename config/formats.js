@@ -3966,6 +3966,13 @@ exports.Formats = [
 			if (pokemon.baseTemplate.actualSpecies) this.add('-end', pokemon, pokemon.baseTemplate.actualSpecies, '[silent]');
 		},
 	},
+		{
+		name: "Random Choonmons δ",
+
+		mod: 'choonmons',
+		team: 'random',
+		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+	},
 	/*{	THis needs a "randomCHOONMONSFactory function in mods/choonmons/scripts.js"
 		name: "[Gen 7] Choonmons Factory",
 
