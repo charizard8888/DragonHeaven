@@ -1817,14 +1817,13 @@ exports.BattleAbilities = {
 				}
 			}
 		},
-		
-		id: "seamonster",
-		name: "Sea Monster",
-	},
-onBasePower: function (basePower, user, target, move) {
+		onBasePower: function (basePower, user, target, move) {
 			if (move.type === 'Water') {
 				return this.chainModify([0x1333, 0x1000]);
 			}
+		},
+		id: "seamonster",
+		name: "Sea Monster",
 		},
 		
 	/*
