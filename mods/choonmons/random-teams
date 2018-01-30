@@ -10,8 +10,8 @@ class RandomSeasonalTeams extends RandomTeams {
 			
 			'Pikachu Libre' : {
 				species: 'Pikachu-Libre', ability: 'Iron Fist', item: 'Life Orb',
-				moves: ['fakeout', 'volttackle', 'imprisonedstrike'],
-				signatureMove: "Extreme Speed", evs: {atk: 252, spe: 252, spd: 4},
+				moves: ['fakeout', 'volttackle', 'imprisonedstrike', 'extremespeed'],
+				evs: {atk: 252, spe: 252, spd: 4},
 				nature:'Jolly',
 			},
 		};
