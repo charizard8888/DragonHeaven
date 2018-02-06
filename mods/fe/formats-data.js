@@ -55,9 +55,11 @@ gyarotic: {
     },
     garchadosmegay: {
         tier: "OU",
+		 requiredItem: "garchadosyite",
     },
     garchadosmegac: {
         tier: "OU",
+		 requiredItem: "garchadoscite",
     },
     wailcatty: {
         tier: "OU",
@@ -67,6 +69,7 @@ gyarotic: {
     },
     gargatrmega: {
         tier: "OU",
+		 requiredItem: "gargatrite",
     },
     dragon: {
         tier: "OU",
@@ -79,6 +82,7 @@ gyarotic: {
     },
     cofagreelixmega: {
         tier: "OU",
+		 requiredItem: "cofagreelixite",
     },
     joltlord: {
         tier: "OU",
@@ -94,6 +98,7 @@ gyarotic: {
     },
     archedactylmega: {
         tier: "OU",
+		 requiredItem: "archedactylite",
     },
     chesdon: {
         tier: "OU",
@@ -121,83 +126,100 @@ gyarotic: {
     },
     weasolmega: {
         tier: "OU",
+		 requiredItem: "weasolite",
     },
     tyranichomp: {
         tier: "OU",
     },
     tyranichompmegat: {
         tier: "OU",
+		 requiredItem: "tyranichomptite",
     },
     tyranichompmegag: {
         tier: "OU",
+		 requiredItem: "tyranichompgite",
     },
     railie: {
         tier: "OU",
     },
     railiemega: {
         tier: "OU",
+		 requiredItem: "railieite",
     },
     charatos: {
         tier: "OU",
     },
     charatosmegay: {
         tier: "OU",
+		 requiredItem: "charatosyite",
     },
     charatosmegag: {
         tier: "OU",
+		 requiredItem: "charatosgite",
     },
     charatosmegax: {
         tier: "OU",
+		 requiredItem: "charatosxite",
     },
     aggrosaur: {
         tier: "OU",
     },
     aggrosaurmegav: {
         tier: "OU",
+		 requiredItem: "aggrosaurvite",
     },
     aggrosaurmegaa: {
         tier: "OU",
+		 requiredItem: "aggrosauraite",
     },
     blastinja: {
         tier: "OU",
     },
     blastinjamega: {
         tier: "OU",
+		 requiredItem: "blastinjaite",
     },
     skaria: {
         tier: "OU",
     },
     skariamega: {
         tier: "OU",
+		 requiredItem: "skariaite",
     },
     magmozam: {
         tier: "OU",
     },
     magmozammega: {
         tier: "OU",
+		 requiredItem: "magmozamite",
     },
     glakiss: {
         tier: "OU",
     },
     glakissmega: {
         tier: "OU",
+		 requiredItem: "glakissite",
     },
     sharpedos: {
         tier: "OU",
     },
     sharpedosmegas: {
         tier: "OU",
+		 requiredItem: "sharpedossite",
     },
     sharpedosmegag: {
         tier: "OU",
+		 requiredItem: "sharpedosgite",
     },
     vapornine: {
         tier: "OU",
     },
     pidgetot: {
         tier: "OU",
-    }, pidgetotmega: {
+    }, 
+	pidgetotmega: {
         tier: "OU",
+		requiredItem: "pidgetotite",
     },
     goracanion: {
         tier: "OU",
@@ -207,12 +229,14 @@ gyarotic: {
     },
     klazormega: {
         tier: "OU",
+		 requiredItem: "klazorite",
     },
     pidgemie: {
         tier: "OU",
     },
     pidgemiemega: {
         tier: "OU",
+		 requiredItem: "pidgemieite",
     },
     porylure: {
         tier: "OU",
@@ -231,9 +255,11 @@ gyarotic: {
     },
     shaymizardmegax: {
         tier: "OU",
+		 requiredItem: "shaymizardxite",
     },
     shaymizardmegay: {
         tier: "OU",
+		 requiredItem: "shaymizardyite",
     },
     ferroslashshield: {
         tier: "OU",
@@ -246,9 +272,11 @@ gyarotic: {
     },
     hazardmegax: {
         tier: "OU",
+		  requiredItem: "hazardxite",
     },
-    hazardmegay: {
+   hazardmegay: {
         tier: "OU",
+		requiredItem: "hazardyite",
     },
     hitmonklang: {
         tier: "OU",
@@ -267,18 +295,21 @@ gyarotic: {
     },
     jellivoirmega: {
         tier: "OU",
+		 requiredItem: "jellivoirite",
     },
     metabat: {
         tier: "OU",
     },
     metabatmega: {
         tier: "OU",
+		 requiredItem: "metabatite",
     },
     dartios: {
         tier: "OU",
     },
     dartiosmega: {
         tier: "OU",
+		 requiredItem: "dartiosite",
     },
     grenheatja: {
         tier: "OU",
@@ -291,23 +322,29 @@ gyarotic: {
     },
     banegrossmegax: {
         tier: "OU",
+		 requiredItem: "banegrossxite",
     },
     banegrossmegay: {
         tier: "OU",
+		 requiredItem: "banegrossyite",
     },
     herasir: {
         tier: "OU",
     },
     herasirmegah: {
         tier: "OU",
-    }, herasirmegap: {
+		 requiredItem: "herasirhite",
+    }, 
+	herasirmegap: {
         tier: "OU",
+		requiredItem: "herasirpite",
     },
     mismagivoir: {
         tier: "OU",
     },
     mismagivoirmega: {
         tier: "OU",
+		 requiredItem: "mismagivoirite",
     },
     harem: {
         tier: "OU",
@@ -317,6 +354,7 @@ gyarotic: {
     },
     manamega: {
         tier: "OU",
+		 requiredItem: "manaite",
     },
     lucharma: {
         tier: "OU",
@@ -326,6 +364,7 @@ gyarotic: {
     },
     swankmega: {
         tier: "OU",
+		 requiredItem: "swankite",
     },
     casting: {
         tier: "OU",
@@ -344,6 +383,7 @@ gyarotic: {
     },
     sablemimezmega: {
         tier: "OU",
+		 requiredItem: "sablemimezite",
     },
     aegilineshield: {
         tier: "OU",
@@ -356,15 +396,18 @@ gyarotic: {
     },
     houndlionmega: {
         tier: "OU",
+		 requiredItem: "houndlionite",
     },
     loppeye: {
         tier: "OU",
     },
     loppeyemegax: {
         tier: "OU",
+		 requiredItem: "loppeyexite",
     },
     loppeyemegay: {
         tier: "OU",
+		 requiredItem: "loppeyeyite",
     },
     bastioking: {
         tier: "OU",
@@ -374,27 +417,32 @@ gyarotic: {
     },
     peatranmega: {
         tier: "OU",
+		 requiredItem: "peatranite",
     },
     manatar: {
         tier: "OU",
     },
     manatarmega: {
         tier: "OU",
+		 requiredItem: "manatarite",
     },
     aurortoise: {
         tier: "OU",
     },
     aurortoisemega: {
         tier: "OU",
+		 requiredItem: "aurotoiseite",
     },
     metsir: {
         tier: "OU",
     },
     metsirmegam: {
         tier: "OU",
+		 requiredItem: "metsirmite",
     },
     metsirmegap: {
         tier: "OU",
+		 requiredItem: "metsirpite",
     },
     fablesteel: {
         tier: "OU",
@@ -404,12 +452,14 @@ gyarotic: {
     },
     houdinimega: {
         tier: "OU",
+		 requiredItem: "houdiniite",
     },
     shot: {
         tier: "OU",
     },
     shotmega: {
         tier: "OU",
+		 requiredItem: "shotite",
     },
     leafadon: {
         tier: "OU",
@@ -419,9 +469,11 @@ gyarotic: {
     },
     mampharosmegam: {
         tier: "OU",
+		 requiredItem: "mampharosmite",
     },
     mampharosmegaa: {
         tier: "OU",
+		 requiredItem: "mampharosaite",
     },
     krookz: {
         tier: "OU",
@@ -431,25 +483,29 @@ gyarotic: {
     },
     entariamega: {
         tier: "OU",
+		 requiredItem: "entariaite",
     },
     blasterain: {
         tier: "OU",
     },
     blasterainmega: {
         tier: "OU",
+		 requiredItem: "blasterainite",
     },
     dianbro: {
         tier: "OU",
     },
     dianbromega: {
         tier: "OU",
+		 requiredItem: "dianbroite",
     },
     chatotorus: {
         tier: "OU",
     },
     blisskiss: {
         tier: "OU",
-    }, toxisharp: {
+    }, 
+	toxisharp: {
         tier: "OU",
     },
     darmega: {
@@ -460,6 +516,7 @@ gyarotic: {
     },
     lagimega: {
         tier: "OU",
+		 requiredItem: "lagiite",
     },
     heatloom: {
         tier: "OU",
@@ -478,6 +535,7 @@ gyarotic: {
     },
     lopunninimega: {
         tier: "OU",
+		 requiredItem: "lopunniniite",
     },
     volcagon: {
         tier: "OU",
@@ -490,6 +548,7 @@ gyarotic: {
     },
     aeroraptormega: {
         tier: "OU",
+		 requiredItem: "aeroraptorite",
     },
     sans: {
         tier: "OU",
@@ -499,48 +558,58 @@ gyarotic: {
     },
     lucasolmegal: {
         tier: "OU",
+		 requiredItem: "lucasollite",
     },
     lucasolmegaa: {
         tier: "OU",
+		 requiredItem: "lucasolaite",
     },
     sceptilusaur: {
         tier: "OU",
     },
     sceptilusaurmegax: {
         tier: "OU",
+		 requiredItem: "sceptilusaurxite",
     },
     sceptilusaurmegay: {
         tier: "OU",
+		 requiredItem: "sceptilusauryite",
     },
     houndectric: {
         tier: "OU",
     },
     houndectricmegam: {
         tier: "OU",
+		 requiredItem: "houndectricmite",
     },
     houndectricmegah: {
         tier: "OU",
+		 requiredItem: "houndectrichite",
     },
     exdoom: {
         tier: "OU",
     },
     exdoommega: {
         tier: "OU",
+		 requiredItem: "exdoomite",
     },
     gyaramence: {
         tier: "OU",
     },
     gyaramencemegas: {
         tier: "OU",
+		 requiredItem: "gyaramencesite",
     },
     gyaramencemegag: {
         tier: "OU",
+		 requiredItem: "gyaramencegite"
     },
     thunderblast: {
         tier: "OU",
     },
     thunderblastmega: {
         tier: "OU",
+		 requiredItem: "thunderblastite",
     },
     snoopa: {
         tier: "OU",
@@ -565,6 +634,7 @@ gyarotic: {
     },
     zaggronmega: {
         tier: "OU",
+		 requiredItem: "zaggronite"
     },
     malaras: {
         tier: "OU",
@@ -577,6 +647,7 @@ gyarotic: {
     },
     eruptionmega: {
         tier: "OU",
+		 requiredItem: "eruptionite"
     },
     porygardezy: {
         tier: "OU",
@@ -589,6 +660,7 @@ gyarotic: {
     },
     sicklemega: {
         tier: "OU",
+		 requiredItem: "sickleite",
     },
     koulion: {
         tier: "OU",
@@ -598,8 +670,10 @@ gyarotic: {
     },
     darkchomp: {
         tier: "OU",
-    }, darkchompmega: {
+    }, 
+	darkchompmega: {
         tier: "OU",
+		requiredItem: "darkchompite",
     },
     jelluk: {
         tier: "OU",
@@ -609,6 +683,7 @@ gyarotic: {
     },
     crustlecrossmega: {
         tier: "OU",
+		 requiredItem: "crustlecrossite",
     },
     wigglyman: {
         tier: "OU",
@@ -645,9 +720,11 @@ gyarotic: {
     },
     avaizardmegax: {
         tier: "OU",
+		 requiredItem: "avaizardxite",
     },
     avaizardmegay: {
         tier: "OU",
+		 requiredItem: "avaizardyite",
     },
     cargolure: {
         tier: "OU",
@@ -657,24 +734,29 @@ gyarotic: {
     },
     alakariomegal: {
         tier: "OU",
+		 requiredItem: "alakariolite",
     },
     alakariomegaa: {
         tier: "OU",
+		 requiredItem: "alakarioaite",
     },
     cazantor: {
         tier: "OU",
     },
     cazantormega: {
         tier: "OU",
+		 requiredItem: "cazantorite",
     },
     gallete: {
         tier: "OU",
     },
     galletemegag: {
         tier: "OU",
+		 requiredItem: "galletegite"
     },
     galletemegab: {
         tier: "OU",
+		 requiredItem: "galletebite",
     },
     aurantrum: {
         tier: "OU",
@@ -684,6 +766,7 @@ gyarotic: {
     },
     steelthornmega: {
         tier: "OU",
+		 requiredItem: "steelthornite",
     },
     venoqueen: {
         tier: "OU",
@@ -708,6 +791,7 @@ gyarotic: {
     },
     scraftiamega: {
         tier: "OU",
+		 requiredItem: "scraftiaite",
     },
     slurpum: {
         tier: "OU",
@@ -717,6 +801,7 @@ gyarotic: {
     },
     thundersaurusmega: {
         tier: "OU",
+		 requiredItem: "thundersaurusite",
     },
     rhyperlax: {
         tier: "OU",
@@ -726,12 +811,14 @@ gyarotic: {
     },
     lopunnemega: {
         tier: "OU",
+		 requiredItem: "lopunneite",
     },
     hootoise: {
         tier: "OU",
     },
     hootoisemega: {
         tier: "OU",
+		 requiredItem: "hootoiseite",
     },
     lietaur: {
         tier: "OU",
@@ -747,8 +834,10 @@ gyarotic: {
     },
     metanlee: {
         tier: "OU",
-    }, metanleemega: {
+    }, 
+	metanleemega: {
         tier: "OU",
+		requiredItem: "metanleeite",
     },
     kangoruskhan: {
         tier: "OU",
@@ -758,6 +847,7 @@ gyarotic: {
     },
     heebleyemega: {
         tier: "OU",
+		 requiredItem: "heebleyeite",
     },
     crygotran: {
         tier: "OU",
@@ -809,6 +899,7 @@ gyarotic: {
     },
     draegaradosmega: {
         tier: "OU",
+		 requiredItem: "draegaradosite",
     },
     grangoro: {
         tier: "OU",
@@ -818,12 +909,14 @@ gyarotic: {
     },
     babuffemega: {
         tier: "OU",
+		 requiredItem: "babuffeite",
     },
     galionz: {
         tier: "OU",
     },
     glalionzmega: {
         tier: "OU",
+		 requiredItem: "glalionzite",
     },
     steelweez: {
         tier: "OU",
@@ -836,6 +929,7 @@ gyarotic: {
     },
     gallatrossmega: {
         tier: "OU",
+		 requiredItem: "gallatrossite",
     },
     victant: {
         tier: "OU",
@@ -851,6 +945,7 @@ gyarotic: {
     },
     landiamega: {
         tier: "OU",
+		 requiredItem: "landiaite",
     },
     odelay: {
         tier: "OU",
@@ -871,6 +966,7 @@ gyarotic: {
     },
     sceptetteeternalmega: {
         tier: "OU",
+		 requiredItem: "sceptetteeternalite",
     },
     raillink: {
         tier: "OU",
@@ -889,6 +985,7 @@ gyarotic: {
     },
     baelmega: {
         tier: "OU",
+		 requiredItem: "baelite",
     },
     simigoat: {
         tier: "OU",
@@ -903,6 +1000,7 @@ gyarotic: {
     },
     tyrankingmega: {
         tier: "OU",
+		 requiredItem: "tyrankingite",
     },
     supermuk: {
         tier: "OU",
@@ -912,12 +1010,14 @@ gyarotic: {
     },
     mentormega: {
         tier: "OU",
+		 requiredItem: "mentorite",
     },
     elektra: {
         tier: "OU",
     },
     elektramega: {
         tier: "OU",
+		 requiredItem: "elektraite",
     },
     escagon: {
         tier: "OU",
@@ -945,6 +1045,7 @@ gyarotic: {
     },
     probsmega: {
         tier: "OU",
+		 requiredItem: "probsite",
     },
     hentai: {
         tier: "OU",
@@ -966,6 +1067,7 @@ gyarotic: {
     },
     lucashadowmega: {
         tier: "OU",
+		 requiredItem: "lucashadowite",
     },
     cradilego: {
         tier: "OU",
@@ -990,6 +1092,7 @@ gyarotic: {
     },
     kyrauremmega: {
         tier: "OU",
+		 requiredItem: "kyrauremite", 
     },
     hetrarna: {
         tier: "OU",
@@ -999,6 +1102,7 @@ gyarotic: {
     },
     xurkivoirmega: {
         tier: "OU",
+		 requiredItem: "xurkivoirite",
     },
     vikarona: {
         tier: "OU",
@@ -1076,6 +1180,7 @@ gyarotic: {
     },
     scrapunnymega: {
         tier: "OU",
+		 requiredItem: "scrapunnyite",
     },
     bezong: {
         tier: "OU",
@@ -1210,15 +1315,19 @@ gyarotic: {
     },
     crematoriamegax: {
         tier: "OU",
+		 requiredItem: "crematoriaxite",
     },
     crematoriamegay: {
         tier: "OU",
+		 requiredItem: "crematoriayite",
     },
     crematoriasemmegax: {
         tier: "OU",
+		 requiredItem: "crematoriasemataryxite",
     },
     crematoriasemmegay: {
         tier: "OU",
+		 requiredItem: "crematoriasemataryyite",
     },
     pherothorn: {
         tier: "OU",
@@ -1231,12 +1340,14 @@ gyarotic: {
     },
     slampamega: {
         tier: "OU",
+		 requiredItem: "slampaite",
     },
     decidactyl: {
         tier: "OU",
     },
     decedactylmega: {
         tier: "OU",
+		 requiredItem: "decedactylite",
     },
     lycanape: {
         tier: "OU",
@@ -1270,6 +1381,7 @@ gyarotic: {
     },
     aerodakomega: {
         tier: "OU",
+		 requiredItem: "aerodakoite",
     },
     tapujojo: {
         tier: "OU",
@@ -1288,9 +1400,11 @@ gyarotic: {
     },
     venustoisemegag: {
         tier: "OU",
+		 requiredItem: "venustoisegreenite",
     },
     venustoisemegab: {
         tier: "OU",
+		 requiredItem: "venustoiseblueite",
     },
     kingkek: {
         tier: "OU",
@@ -1342,7 +1456,8 @@ gyarotic: {
     },
     covallydragon: {
         tier: "OU",
-    }, covallydark: {
+    }, 
+	covallydark: {
         tier: "OU",
     },
     covallysteel: {
@@ -1449,6 +1564,7 @@ gyarotic: {
     },
     pheraliemega: {
         tier: "OU",
+		 requiredItem: "pheraliescipodite",
     },
     tsarakion: {
         tier: "OU",
@@ -1464,12 +1580,14 @@ gyarotic: {
     },
     necrozmeruptmega: {
         tier: "OU",
+		 requiredItem: "necrozmeruptite",
     },
     banekyu: {
         tier: "OU",
     },
     banekyumega: {
         tier: "OU",
+		 requiredItem: "banekyuite",
     },
     ninxys: {
         tier: "OU",
@@ -1479,6 +1597,7 @@ gyarotic: {
     },
     heratanamega: {
         tier: "OU",
+		 requiredItem: "heratanaite",
     },
     plumin: {
         tier: "OU",
@@ -1499,6 +1618,7 @@ gyarotic: {
     },
     axatreemega: {
         tier: "OU",
+		 requiredItem: "axatreeite",
     },
     cressapal: {
         tier: "OU",
@@ -1514,6 +1634,7 @@ gyarotic: {
     },
     altellowmega: {
         tier: "OU",
+		 requiredItem: "altellowite",
     },
     rebell: {
         tier: "OU",
@@ -1598,6 +1719,7 @@ gyarotic: {
     },
     sablegigasmega: {
         tier: "OU",
+		 requiredItem: "sablegigasite",
     },
     galvillon: {
         tier: "OU",
@@ -1613,12 +1735,14 @@ gyarotic: {
     },
     abomasorusmega: {
         tier: "OU",
+		 requiredItem: "abomasorusite",
     },
     toxicario: {
         tier: "OU",
     },
     toxicariomega: {
         tier: "OU",
+		 requiredItem: "toxicarioite",
     },
     washoxchromosome: {
         tier: "OU",
@@ -1637,6 +1761,7 @@ gyarotic: {
     },
     blampamega: {
         tier: "OU",
+		 requiredItem: "blampaite",
     },
     origamiswan: {
         tier: "OU",
@@ -1675,6 +1800,7 @@ gyarotic: {
     },
     entirmega: {
         tier: "OU",
+		 requiredItem: "entirite",
     },
     giramini: {
         tier: "OU",
@@ -1735,12 +1861,14 @@ gyarotic: {
     },
     gardelegomega: {
         tier: "OU",
+		 requiredItem: "gardelegoite"
     },
     maltarione: {
         tier: "OU",
     },
     maltarionemega: {
         tier: "OU",
+		 requiredItem: "maltarioneite",
     },
     maskle: {
         tier: "OU",
@@ -1753,6 +1881,7 @@ gyarotic: {
     },
     guzzbromega: {
         tier: "OU",
+		 requiredItem: "guzzbroite",
     },
     zycannon: {
         tier: "OU",
@@ -1768,6 +1897,7 @@ gyarotic: {
     },
     peridotmega: {
         tier: "OU",
+		 requiredItem: "peridotite",
     },
     stundicuno: {
         tier: "OU",
@@ -1777,6 +1907,7 @@ gyarotic: {
     },
     alohamega: {
         tier: "OU",
+		 requiredItem: "alohaite",
     },
     zekloom: {
         tier: "OU",
@@ -1800,6 +1931,7 @@ gyarotic: {
     },
     kyurpedomega: {
         tier: "OU",
+		 requiredItem: "kyupedoite",
     },
     gearchamp: {
         tier: "OU",
@@ -1809,6 +1941,7 @@ gyarotic: {
     },
     luaumega: {
         tier: "OU",
+		 requiredItem: "luauite",
     },
     dotsensu: {
         tier: "OU",
@@ -1854,6 +1987,7 @@ gyarotic: {
     },
     swampterramega: {
         tier: "OU",
+		 requiredItem: "swampterraite",
     },
     zeklade: {
         tier: "OU",
@@ -1866,6 +2000,7 @@ gyarotic: {
     },
     alteyermega: {
         tier: "OU",
+		 requiredItem: "alteyerite",
     },
     scrafting: {
         tier: "OU",
@@ -1875,12 +2010,14 @@ gyarotic: {
     },
     notmega: {
         tier: "OU",
+		 requiredItem: "notite",
     },
     joltsol: {
         tier: "OU",
     },
     joltsolmega: {
         tier: "OU",
+		 requiredItem: "joltsolite",
     },
     topaz: {
         tier: "OU",
@@ -1985,12 +2122,14 @@ gyarotic: {
     },
     altearniamega: {
         tier: "OU",
+		 requiredItem: "altearniaite",
     },
     regigiot: {
         tier: "OU",
     },
     regigiotmega: {
         tier: "OU",
+		 requiredItem: "regigotite",
     },
     kasukabe: {
         tier: "OU",
@@ -2000,6 +2139,7 @@ gyarotic: {
     },
     sakamakimega: {
         tier: "OU",
+		 requiredItem: "sakamakiite",
     },
     mapuiasu: {
         tier: "OU",
@@ -2027,6 +2167,7 @@ gyarotic: {
     },
     sylviasmega: {
         tier: "OU",
+		 requiredItem: "sylviasite",
     },
     mightyyvel: {
         tier: "OU",
@@ -2051,6 +2192,7 @@ gyarotic: {
     },
     celesirmega: {
         tier: "OU",
+		 requiredItem: "celesirite",
     },
     nymph: {
         tier: "OU",
@@ -2069,6 +2211,7 @@ gyarotic: {
     },
     absokomega: {
         tier: "OU",
+		 requiredItem: "absokoite"
     },
     permafrost: {
         tier: "OU",
@@ -2078,16 +2221,20 @@ gyarotic: {
     },
     giradinomega: {
         tier: "OU",
+		 requiredItem: "giradinoite",
     },
     xurkizard: {
         tier: "OU",
     },
     xurkizardmegax: {
         tier: "OU",
+		 requiredItem: "xurkizardxite",
     },
     xurkizardmegay: {
         tier: "OU",
-    }, skarmeye: {
+		 requiredItem: "xurkizardyite",
+    }, 
+	skarmeye: {
         tier: "OU",
     },
     marshern: {
@@ -2104,6 +2251,7 @@ gyarotic: {
     },
     dramasnowmega: {
         tier: "OU",
+		 requiredItem: "dramasnowite",
     },
     chaosii: {
         tier: "OU",
@@ -2113,18 +2261,21 @@ gyarotic: {
     },
     slowmarinamega: {
         tier: "OU",
+		 requiredItem: "slowmarinaite",
     },
     kartaria: {
         tier: "OU",
     },
     kartariamega: {
         tier: "OU",
+		 requiredItem: "kartariaite",
     },
     altarbat: {
         tier: "OU",
     },
     altarbatmega: {
         tier: "OU",
+		 requiredItem: "altarbatite",
     },
     darkelectrode: {
         tier: "OU",
@@ -2149,12 +2300,14 @@ gyarotic: {
     },
     heatariamega: {
         tier: "OU",
+		 requiredItem: "heatariaite",
     },
     gardecuno: {
         tier: "OU",
     },
     gardecunomega: {
         tier: "OU",
+		 requiredItem: "gardecunoite",
     },
     sparklingart: {
         tier: "OU",
@@ -2224,6 +2377,7 @@ gyarotic: {
     },
     audalamega: {
         tier: "OU",
+		 requiredItem: "audalaite",
     },
     sandgardefort: {
         tier: "OU",
@@ -2236,7 +2390,8 @@ gyarotic: {
     },
     triagonal: {
         tier: "OU",
-    }, exfeycola: {
+    }, 
+	exfeycola: {
         tier: "OU",
     },
     komodreigon: {
@@ -2256,6 +2411,7 @@ gyarotic: {
     },
     tyrazmamega: {
         tier: "OU",
+		 requiredItem: "triagonalite",
     },
     parasol: {
         tier: "OU",
@@ -2268,9 +2424,11 @@ gyarotic: {
     },
     nintwomegax: {
         tier: "OU",
+		 requiredItem: "nintwoxite",
     },
     nintwomegay: {
         tier: "OU",
+		 requiredItem: "nintwoyite",
     },
     kommew: {
         tier: "OU",
@@ -2286,6 +2444,7 @@ gyarotic: {
     },
     kyzormega: {
         tier: "OU",
+		 requiredItem: "kyzorite",
     },
     gumanitoos: {
         tier: "OU",
@@ -2295,6 +2454,7 @@ gyarotic: {
     },
     xurkinomega: {
         tier: "OU",
+		 requiredItem: "xurkinoite",
     },
     yvelchan: {
         tier: "OU",
@@ -2307,6 +2467,7 @@ gyarotic: {
     },
     altarigardemega: {
         tier: "OU",
+		 requiredItem: "altarigardeite",
     },
     flycanion: {
         tier: "OU",
@@ -2322,6 +2483,7 @@ gyarotic: {
     },
     garzonemega: {
         tier: "OU",
+		 requiredItem: "garzoneite",
     },
     shitpost: {
         tier: "OU",
@@ -2334,6 +2496,7 @@ gyarotic: {
     },
     trampolinemega: {
         tier: "OU",
+		 requiredItem: "trampolineite",
     },
     arcalie: {
         tier: "OU",
@@ -2343,6 +2506,7 @@ gyarotic: {
     },
     stakeyemega: {
         tier: "OU",
+		 requiredItem: "stakeyeite"
     },
     lycanperiordusk: {
         tier: "OU",
@@ -2364,6 +2528,7 @@ gyarotic: {
     },
     auroritarmega: {
         tier: "OU",
+		 requiredItem: "auroritarite",
     },
     necrynxcutewig: {
         tier: "OU",
@@ -2465,9 +2630,11 @@ gyarotic: {
     },
     gameramegax: {
         tier: "OU",
+		 requiredItem: "gameraxite",
     },
     gameramegay: {
         tier: "OU",
+		 requiredItem: "gamerayite",
     },
     sandslashprime: {
         tier: "OU",
@@ -2522,9 +2689,11 @@ gyarotic: {
     },
     tyrannosaurusmegax: {
         tier: "OU",
+		 requiredItem: "tyrannosaurusxite",
     },
     tyrannosaurusmegay: {
         tier: "OU",
+		 requiredItem: "tyrannosaurusyite",
     },
     espeord: {
         tier: "OU",
@@ -2534,17 +2703,20 @@ gyarotic: {
     },
     hypango: {
         tier: "OU",
-    }, scizion: {
+    }, 
+	scizion: {
         tier: "OU",
     },
     scizionmega: {
         tier: "OU",
+		 requiredItem: "scizionite",
     },
     fluorine: {
         tier: "OU",
     },
     fluorinemega: {
         tier: "OU",
+		 requiredItem: "fluorineite",
     },
     wallray: {
         tier: "OU",
@@ -2563,6 +2735,7 @@ gyarotic: {
     },
     noivianmega: {
         tier: "OU",
+		 requiredItem: "noivianite",
     },
     cruski: {
         tier: "OU",
@@ -2599,6 +2772,7 @@ gyarotic: {
     },
     blazelmega: {
         tier: "OU",
+		 requiredItem: "blazelite",
     },
     funsparret: {
         tier: "OU",
@@ -2608,6 +2782,7 @@ gyarotic: {
     },
     claytarmega: {
         tier: "OU",
+		 requiredItem: "claytarite",
     },
     komally: {
         tier: "OU",
@@ -2626,6 +2801,7 @@ gyarotic: {
     },
     theyemega: {
         tier: "OU",
+		 requiredItem: "theyeite",
     },
     chillax: {
         tier: "OU",
@@ -2635,186 +2811,18 @@ gyarotic: {
     },
     masterpiecemega: {
         tier: "OU",
+		 requiredItem: "masterpieceite",
     },
     celemence: {
         tier: "OU",
     },
     celemencemega: {
         tier: "OU",
+		 requiredItem: "celemenceite",
     },
  };
-/* requiredItem: "pangleye",
-requiredItem: "garchadosy",
-requiredItem: "garchadosc",
-requiredItem: "gargatr",
-requiredItem: "cofagreelix",
-requiredItem: "archedactyl",
-requiredItem: "weasol",
-requiredItem: "tyranichompt",
-requiredItem: "tyranichompg",
-requiredItem: "railie",
-requiredItem: "charatosy",
-requiredItem: "charatosx",
-requiredItem: "charatosg",
-requiredItem: "aggrosaurv",
-requiredItem: "aggrosaura",
-requiredItem: "blastinja",
-requiredItem: "skaria",
-requiredItem: "magmozam",
-requiredItem: "glakiss",
-requiredItem: "sharpedoss",
-requiredItem: "sharpedosg",
-requiredItem: "pidgetot",
-requiredItem: "klazor",
-requiredItem: "pidgemie",
-requiredItem: "shaymizardx",
-requiredItem: "shaymizardy",
-requiredItem: "hazardx",
-requiredItem: "hazardy",
-requiredItem: "jellivoir",
-requiredItem: "metabat",
-requiredItem: "dartios",
-requiredItem: "banegrossx",
-requiredItem: "banegrossy",
-requiredItem: "herasirh",
-requiredItem: "herasirp",
-requiredItem: "mismagivoir",
-requiredItem: "mana",
-requiredItem: "swank",
-requiredItem: "sablemimez",
-requiredItem: "houndlion",
-requiredItem: "loppeyex",
-requiredItem: "loppeyey",
-requiredItem: "peatran",
-requiredItem: "manatar",
-requiredItem: "aurotoise",
-requiredItem: "metsirm",
-requiredItem: "metsirp",
-requiredItem: "houdini",
-requiredItem: "shot",
-requiredItem: "mampharosm",
-requiredItem: "mampharosa",
-requiredItem: "entaria",
-requiredItem: "blasterain",
-requiredItem: "dianbro",
-requiredItem: "lagi",
-requiredItem: "lopunnini",
-requiredItem: "aeroraptor",
-requiredItem: "lucasoll",
-requiredItem: "lucasola",
-requiredItem: "sceptilusaurx",
-requiredItem: "sceptilusaury",
-requiredItem: "houndectricm",
-requiredItem: "houndectrich",
-requiredItem: "exdoom",
-requiredItem: "gyaramences",
-requiredItem: "gyaramenceg",
-requiredItem: "thunderblast",
-requiredItem: "zaggron",
-requiredItem: "eruption",
-requiredItem: "sickle",
-requiredItem: "darkchomp",
-requiredItem: "crustlecross",
-requiredItem: "avaizardx",
-requiredItem: "avaizardy",
-requiredItem: "alakariol",
-requiredItem: "alakarioa",
-requiredItem: "cazantor",
-requiredItem: "galleteg",
-requiredItem: "galleteb",
-requiredItem: "steelthorn",
-requiredItem: "scraftia",
-requiredItem: "thundersaurus",
-requiredItem: "lopunne",
-requiredItem: "hootoise",
-requiredItem: "metanlee",
-requiredItem: "heebleye",
-requiredItem: "draegarados",
-requiredItem: "babuffe",
-requiredItem: "glalionz",
-requiredItem: "gallatross",
-requiredItem: "landia",
-requiredItem: "sceptetteeternal",
-requiredItem: "bael",
-requiredItem: "tyranking",
-requiredItem: "mentor",
-requiredItem: "elektra",
-requiredItem: "probs",
-requiredItem: "lucashadow",
-requiredItem: "kyraurem", 
-requiredItem: "xurkivoir",
-requiredItem: "scrapunny",
-requiredItem: "crematoriax",
-requiredItem: "crematoriay",
-requiredItem: "crematoriasemataryx",
-requiredItem: "crematoriasemataryy",
-requiredItem: "slampa",
-requiredItem: "decedactyl",
-requiredItem: "aero dako",
-requiredItem: "venustoisegreen",
-requiredItem: "venustoiseblue",
-requiredItem: "pheraliescipod",
-requiredItem: "necrozmerupt",
-requiredItem: "banekyu",
-requiredItem: "heratana",
-requiredItem: "axatree",
-requiredItem: "altellow",
-requiredItem: "ablegigas",
-requiredItem: "abomasorus",
-requiredItem: "toxicario",
-requiredItem: "blampa",
-requiredItem: "entir",
-requiredItem: "gardelego",
-requiredItem: "maltarione",
-requiredItem: "guzzbro",
-requiredItem: "peridot",
-requiredItem: "aloha",
-requiredItem: "kyupedo",
-requiredItem: "luau",
-requiredItem: "swampterra",
-requiredItem: "alteyer",
-requiredItem: "not",
-requiredItem: "joltsol",
-requiredItem: "altearnia",
-requiredItem: "regigot",
-requiredItem: "sakamaki",
-requiredItem: "sylvias",
-requiredItem: "celesir",
-requiredItem: "absoko",
-requiredItem: "giradino",
-requiredItem: "xurkizardx",
-requiredItem: "xurkizardy",
-requiredItem: "dramasnow",
-requiredItem: "slowmarina",
-requiredItem: "kartaria",
-requiredItem: "altarbat",
-requiredItem: "heataria",
-requiredItem: "gardecuno",
-requiredItem: "audala",
-requiredItem: "triagonal",
-requiredItem: "tyrazma",
-requiredItem: "nintwox",
-requiredItem: "nintwoy",
-requiredItem: "kyzor",
-requiredItem: "xurkino",
-requiredItem: "altarigarde",
-requiredItem: "garzone",
-requiredItem: "trampoline",
-requiredItem: "stakeye",
-requiredItem: "auroritar",
-requiredItem: "gamerax",
-requiredItem: "gameray",
-requiredItem: "tyrannosaurusx",
-requiredItem: "tyrannosaurusy",
-requiredItem: "scizion",
-requiredItem: "fluorine",
-requiredItem: "noivian",
-requiredItem: "blazel",
-requiredItem: "claytar",
-requiredItem: "theye",
-requiredItem: "masterpiece",
-requiredItem: "celemence",
-requiredItem: "saldreigonce",
-requiredItem: "salasaur",
-requiredItem: "centenarian",
-requiredItem: "amdremayre",*/
+/* 
+requiredItem: "saldreigonceite",
+requiredItem: "salasaurite",
+requiredItem: "centenarianite",
+requiredItem: "amdremayre"*/
