@@ -3,7 +3,7 @@
 exports.BattleItems = {
     "swampamarite": {
         id: "swampamarite",
-        name: "gyaroticite",
+        name: "swampamarite",
         spritenum: 594,
 
         megaStone: "swampamar-Mega",
