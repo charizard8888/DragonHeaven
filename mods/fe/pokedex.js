@@ -5194,10 +5194,6 @@ exports.BattlePokedex = {
         num: 7500154,
         species: "Zoroldeo",
         types: ["Dark", "Fighting"],
-        genderRatio: {
-            M: 0.0,
-            F: 0.0
-        },
         baseStats: {
             hp: 75,
             atk: 106,
@@ -5209,10 +5205,7 @@ exports.BattlePokedex = {
         abilities: {
             0: "Justice Illusion"
         },
-        heightm: 1.5,
         weightkg: 64.8,
-        color: "Black",
-        eggGroups: ["Undiscovered"],
     },
     stundos: {
         num: 7500155,
