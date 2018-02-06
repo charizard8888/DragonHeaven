@@ -62,7 +62,7 @@ exports.Formats = [
 			`All of the team's abilities are active at once, except those that are restricted.`,
 			`&bullet; <a href="http://www.smogon.com/forums/threads/3623341/">Shared Power</a>`,
 		],
-		team: 'random',
+		team: 'randomFactory',
 		mod: 'sharedpower',
 		ruleset: ['[Gen 7] OU', 'Evasion Abilities Clause'],
 		banlist: ['Gyarados-Mega', 'Shedinja'],
