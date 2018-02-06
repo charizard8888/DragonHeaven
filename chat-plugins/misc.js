@@ -583,4 +583,65 @@ fdjshelp:function (target, room, user, connection, cmd) {
 	mitehelp:function (target, room, user, connection, cmd) {
 	this.sendReplyBox('/mite Mega Pokemon 1, 2, 3... for coding mega stones.');
 },
+	mdjs: function (target, room, user, connection, cmd) {
+    if (!this.runBroadcast()) return;
+    if (!target) return this.parse('/mdjshelp');
+    if (!target) target = 'help';
+    let separated = target.split(",");
+	let target1 = (("" + separated[0]).trim());
+    let target2 = (("" + separated[1]).trim());
+    let target3 = (("" + separated[2]).trim());
+    let target4 = (("" + separated[3]).trim());
+    let target5 = (("" + separated[4]).trim());
+    let target6 = (("" + separated[5]).trim());
+    let target7 = (("" + separated[6]).trim());
+    let target8 = (("" + separated[7]).trim());
+    let target9 = (("" + separated[8]).trim());
+    let target10 = (("" + separated[9]).trim());
+    let target11 = (("" + separated[10]).trim());
+    let target12 = (("" + separated[11]).trim());
+    let target13 = (("" + separated[12]).trim());
+    let target14 = (("" + separated[13]).trim());
+    let target15 = (("" + separated[14]).trim());
+    let target16 = (("" + separated[15]).trim());
+    let target17 = (("" + separated[16]).trim());
+    let target18 = (("" + separated[17]).trim());
+    let target19 = (("" + separated[18]).trim());
+    let target20 = (("" + separated[19]).trim());
+    let target21 = (("" + separated[20]).trim());
+    let target22 = (("" + separated[21]).trim());
+    let target23 = (("" + separated[22]).trim());
+    let target24 = (("" + separated[23]).trim());
+    let target25 = (("" + separated[24]).trim());
+    let target26 = (("" + separated[25]).trim());
+    let target27 = (("" + separated[26]).trim());
+    let target28 = (("" + separated[27]).trim());
+    let target29 = (("" + separated[28]).trim());
+    let target30 = (("" + separated[29]).trim());
+    let target31 = (("" + separated[30]).trim());
+    let target32 = (("" + separated[31]).trim());
+    let target33 = (("" + separated[32]).trim());
+    let target34 = (("" + separated[33]).trim());
+    let target35 = (("" + separated[34]).trim());
+    let target36 = (("" + separated[35]).trim());
+    let target37 = (("" + separated[36]).trim());
+    let target38 = (("" + separated[37]).trim());
+    let target39 = (("" + separated[38]).trim());
+    let target40 = (("" + separated[39]).trim());
+    let target41 = (("" + separated[40]).trim());
+    let target42 = (("" + separated[41]).trim());
+    let target43 = (("" + separated[42]).trim());
+    let target44 = (("" + separated[43]).trim());
+    let target45 = (("" + separated[44]).trim());
+    let target46 = (("" + separated[45]).trim());
+    let target47 = (("" + separated[46]).trim());
+    let target48 = (("" + separated[47]).trim());
+    let target49 = (("" + separated[48]).trim());
+    let target50 = (("" + separated[49]).trim());
+    this.sendReplyBox('<center><button name="receive" value="|html|requiredItem: &quot;'+target1+'&quot;,<br>requiredItem: &quot;'+target2+'&quot;,<br>requiredItem: &quot;'+target3+'&quot;,<br>requiredItem: &quot;'+target4+'&quot;,<br>requiredItem: &quot;'+target5+'&quot;,<br>requiredItem: &quot;'+target6+'&quot;,<br>requiredItem: &quot;'+target7+'&quot;,<br>requiredItem: &quot;'+target8+'&quot;,<br>requiredItem: &quot;'+target9+'&quot;,<br>requiredItem: &quot;'+target10+'&quot;,<br>requiredItem: &quot;'+target11+'&quot;,<br>requiredItem: &quot;'+target12+'&quot;,<br>requiredItem: &quot;'+target13+'&quot;,<br>requiredItem: &quot;'+target14+'&quot;,<br>requiredItem: &quot;'+target15+'&quot;,<br>requiredItem: &quot;'+target16+'&quot;,<br>requiredItem: &quot;'+target17+'&quot;,<br>requiredItem: &quot;'+target18+'&quot;,<br>requiredItem: &quot;'+target19+'&quot;,<br>requiredItem: &quot;'+target20+'&quot;,<br>requiredItem: &quot;'+target21+'&quot;,<br>requiredItem: &quot;'+target22+'&quot;,<br>requiredItem: &quot;'+target23+'&quot;,<br>requiredItem: &quot;'+target24+'&quot;,<br>requiredItem: &quot;'+target25+'&quot;,<br>requiredItem: &quot;'+target26+'&quot;,<br>requiredItem: &quot;'+target27+'&quot;,<br>requiredItem: &quot;'+target28+'&quot;,<br>requiredItem: &quot;'+target29+'&quot;,<br>requiredItem: &quot;'+target30+'&quot;,<br>requiredItem: &quot;'+target31+'&quot;,<br>requiredItem: &quot;'+target32+'&quot;,<br>requiredItem: &quot;'+target33+'&quot;,<br>requiredItem: &quot;'+target34+'&quot;,<br>requiredItem: &quot;'+target35+'&quot;,<br>requiredItem: &quot;'+target36+'&quot;,<br>requiredItem: &quot;'+target37+'&quot;,<br>requiredItem: &quot;'+target38+'&quot;,<br>requiredItem: &quot;'+target39+'&quot;,<br>requiredItem: &quot;'+target40+'&quot;,<br>requiredItem: &quot;'+target41+'&quot;,<br>requiredItem: &quot;'+target42+'&quot;,<br>requiredItem: &quot;'+target43+'&quot;,<br>requiredItem: &quot;'+target44+'&quot;,<br>requiredItem: &quot;'+target45+'&quot;,<br>requiredItem: &quot;'+target46+'&quot;,<br>requiredItem: &quot;'+target47+'&quot;,<br>requiredItem: &quot;'+target48+'&quot;,<br>requiredItem: &quot;'+target49+'&quot;,<br>requiredItem: &quot;'+target50+'&quot;, <br><br><a href=http://jsbeautifier.org/>jsbeautifier</a>" style="background-color:black;color:aqua;font-size:36px;border: 6px solid aqua;"><img src="http://play.pokemonshowdown.com/sprites/xyani/lucario-mega.gif" width="58" height="101">Generate<img src="http://play.pokemonshowdown.com/sprites/xyani/lucario-mega.gif" width="58" height="101"></button></center><br><marquee direction="left"><img src="http://www.pokestadium.com/assets/img/sprites/misc/icons/charizard-mega-x.png" width="40" height="30"></marquee>');
+
+	},
+	mdjshelp:function (target, room, user, connection, cmd) {
+	this.sendReplyBox('/mdjs Mega Pokemon 1, 2, 3... for coding mega stones requirement in formats-data.js.');
+},
 };
