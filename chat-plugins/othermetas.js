@@ -671,11 +671,11 @@ typeopthelp: ["/eternalmons - Shows the list of Pokemon in Type Optimisation Pok
 		let feDex = require('../mods/fe/items.js').BattleItems;
 		if (!feDex) return this.errorReply("Error Fetching FE Data.");
 		Object.values(feDex).forEach(item => {
-			buf += `<button name="send" value="/dt ${item.id}, FE" style="background:none;border:none;">${mon.id}</button><br>`;
+			buf += `<button name="send" value="/dt ${item.id}, FE" style="background:none;border:none;">${item.id}</button><br>`;
 		});
 		this.sendReplyBox(`${buf}</div>`);
 	},
-	femgashelp: ["/femgas - Shows the list of Pokemon in Fusion Evolution."],
+	femgashelp: ["/femgas - Shows the list of Mega Stones in Fusion Evolution."],
 
 	
 };
