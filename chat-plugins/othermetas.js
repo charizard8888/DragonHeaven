@@ -665,5 +665,17 @@ typeopthelp: ["/eternalmons - Shows the list of Pokemon in Type Optimisation Pok
 		this.sendReplyBox(`${buf}</div>`);
 	},
 	alolahelp: ["/alola - Shows the list of Pokemon in Alola Formes."],
+	femgas: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Fusion Evolution Mega Stones</h2></center>`;
+		let feDex = require('../mods/fe/items.js').BattlePokedex;
+		if (!feDex) return this.errorReply("Error Fetching FE Data.");
+		Object.values(feDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.id}, FE" style="background:none;border:none;">${mon.id}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	femgashelp: ["/femgas - Shows the list of Pokemon in Fusion Evolution."],
+
 	
 };
