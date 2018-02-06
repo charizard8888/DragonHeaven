@@ -14,6 +14,7 @@ swampamar: {
 gyarotic: {
 		randomBattleMoves: ["dragondance", "flareblitz", "dragonclaw", "earthquake", "roost", "willowisp"],
         tier: "OU",
+		  requiredItem: "gyaroticite",
     },
     gyaroticmega: {
         tier: "OU",
