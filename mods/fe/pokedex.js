@@ -1566,6 +1566,33 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	klazormega: {
+        num: 750038,
+        species: "Klazor-Mega",
+        baseSpecies: "Klazor",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Bug", "Steel"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 75,
+            atk: 125,
+            def: 140,
+            spa: 92,
+            spd: 105,
+            spe: 71
+        },
+        abilities: {
+            0: "Technician"
+        },
+        heightm: 1.8,
+        weightkg: 117.5,
+        color: "Red",
+        eggGroups: ["Undiscovered"],
+    },
     pidgemie: {
         num: 750039,
         species: "Pidgemie",
@@ -1588,6 +1615,33 @@ exports.BattlePokedex = {
         heightm: 1.295,
         weightkg: 59.75,
         color: "Black",
+        eggGroups: ["Undiscovered"],
+    },
+	pidgemiemega: {
+        num: 750039,
+        species: "Pidgemie-Mega",
+        baseSpecies: "Pidgemie",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Water", "Normal"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 84,
+            atk: 77,
+            def: 85,
+            spa: 160,
+            spd: 90,
+            spe: 142
+        },
+        abilities: {
+            0: "No Guard"
+        },
+        heightm: 1.5,
+        weightkg: 39.5,
+        color: "Blue",
         eggGroups: ["Undiscovered"],
     },
     eek: {
@@ -1662,6 +1716,60 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	shaymizardmegax: {
+        num: 750042,
+        species: "Shaymizard-Mega-X",
+        baseSpecies: "Shaymizard",
+        forme: "Mega-X",
+        formeLetter: "M",
+        types: ["Fire", "Dragon"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 89,
+            atk: 148,
+            def: 122,
+            spa: 135,
+            spd: 92,
+            spe: 120
+        },
+        abilities: {
+            0: "Tough Claws"
+        },
+        heightm: 1.8,
+        weightkg: 105.5,
+        color: "Green",
+        eggGroups: ["Undiscovered"],
+    },
+    shaymizardmegay: {
+        num: 750042,
+        species: "Shaymizard-Mega-Y",
+        baseSpecies: "Shaymizard",
+        forme: "Mega-Y",
+        formeLetter: "M",
+        types: ["Fire", "Grass"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 89,
+            atk: 122,
+            def: 89,
+            spa: 164,
+            spd: 122,
+            spe: 120
+        },
+        abilities: {
+            0: "Drought"
+        },
+        heightm: 1.8,
+        weightkg: 105.5,
+        color: "Green",
+        eggGroups: ["Undiscovered"],
+    },
     ferroslashshield: {
         num: 750043,
         species: "Ferroslash-Shield",
@@ -1710,6 +1818,61 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	hazardmegax: {
+        num: 750044,
+        species: "Hazard-Mega-X",
+        baseSpecies: "Hazard",
+        forme: "Mega-X",
+        formeLetter: "M",
+        types: ["Fire", "Dragon"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 87,
+            atk: 171,
+            def: 127,
+            spa: 115,
+            spd: 82,
+            spe: 108
+        },
+        abilities: {
+            0: "Tough Claws"
+        },
+        heightm: 1.8,
+        weightkg: 105.5,
+        color: "Red",
+        eggGroups: ["Monster", "Dragon"],
+    },
+    hazardmegay: {
+        num: 750044,
+        species: "Hazard-Mega-Y",
+        baseSpecies: "Hazard",
+        forme: "Mega-Y",
+        formeLetter: "M",
+        types: ["Fire", "Dragon"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 87,
+            atk: 145,
+            def: 94,
+            spa: 144,
+            spd: 112,
+            spe: 108
+        },
+        abilities: {
+            0: "Drought"
+        },
+        heightm: 1.8,
+        weightkg: 105.5,
+        color: "Red",
+        eggGroups: ["Monster", "Dragon"],
+    },
+
     hitmonklang: {
         num: 750045,
         species: "Hitmonklang",
@@ -1829,6 +1992,33 @@ exports.BattlePokedex = {
         weightkg: 91.7,
         color: "Black",
         eggGroups: ["Undiscovered"],
+    },
+	jellivoirmega: {
+        num: 750049,
+        species: "Jellivoir-Mega",
+        baseSpecies: "Jellivoir",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Ghost", "Fairy"],
+        genderRatio: {
+            M: 0.5,
+            F: 0.5
+        },
+        baseStats: {
+            hp: 94,
+            atk: 92,
+            def: 77,
+            spa: 155,
+            spd: 140,
+            spe: 100
+        },
+        abilities: {
+            0: "Pixilate"
+        },
+        heightm: 1.6,
+        weightkg: 90.0,
+        color: "Blue",
+        eggGroups: ["Amorphous"],
     },
     metabat: {
         num: 750050,
@@ -6572,6 +6762,61 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
+	crematoriamegax: {
+        num: 7500219,
+        species: "Crematoria-Mega X",
+        baseSpecies: "Crematoria",
+        forme: "Mega",
+        formeLetter: "X",
+        types: ["Flying", "Dragon"],
+        genderRatio: {
+            M: 50.0,
+            F: 50.0
+        },
+        baseStats: {
+            hp: 104,
+            atk: 127,
+            def: 111,
+            spa: 160,
+            spd: 107,
+            spe: 100
+        },
+        abilities: {
+            0: "Tough Claws"
+        },
+        heightm: 1.7,
+        weightkg: 117,
+        color: "Black",
+        eggGroups: ["Undiscovered"],
+    },
+
+    crematoriamegay: {
+        num: 7500219,
+        species: "Crematoria-Mega Y",
+        baseSpecies: "Crematoria",
+        forme: "Mega",
+        formeLetter: "Y",
+        types: ["Flying", "Psychic"],
+        genderRatio: {
+            M: 50.0,
+            F: 50.0
+        },
+        baseStats: {
+            hp: 104,
+            atk: 101,
+            def: 78,
+            spa: 189,
+            spd: 137,
+            spe: 100
+        },
+        abilities: {
+            0: "Drought"
+        },
+        heightm: 1.7,
+        weightkg: 107,
+        color: "Orange",
+        eggGroups: ["Undiscovered"],
+    },
     pherrothorn: {
         num: 7500220,
         species: "Pherothorn",
@@ -6643,6 +6888,33 @@ exports.BattlePokedex = {
         weightkg: 131.75,
         color: "Black",
         eggGroups: ["Undiscovered"],
+    },
+	slampamega: {
+        num: 7500222,
+        species: "Slampa-Mega",
+        baseSpecies: "Slampa",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Water", "Dragon"],
+        genderRatio: {
+            M: 0.60,
+            F: 0.40
+        },
+        baseStats: {
+            hp: 96,
+            atk: 77,
+            def: 177,
+            spa: 157,
+            spd: 95,
+            spe: 43
+        },
+        abilities: {
+            0: "Shell Armor"
+        },
+        heightm: 2.3,
+        weightkg: 163.25,
+        color: "Pink",
+        eggGroups: ["Monster", ],
     },
     decidactyl: {
         num: 7500223,
