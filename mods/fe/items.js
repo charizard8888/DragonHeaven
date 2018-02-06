@@ -1465,17 +1465,17 @@ exports.BattleItems = {
         gen: 6,
         desc: "If holder is a altellow, this item allows it to Mega Evolve in battle.",
     },
-    "ablegigasite": {
-        id: "ablegigasite",
-        name: "ablegigasite",
-        megaStone: "ablegigas-Mega",
-        megaEvolves: "ablegigas",
+    "sablegigasite": {
+        id: "sablegigasite",
+        name: "sablegigasite",
+        megaStone: "sablegigas-Mega",
+        megaEvolves: "sablegigas",
         onTakeItem: function(item, source) {
             if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
             return true;
         },
         gen: 6,
-        desc: "If holder is a ablegigas, this item allows it to Mega Evolve in battle.",
+        desc: "If holder is a Sablegigas, this item allows it to Mega Evolve in battle.",
     },
     "abomasorusite": {
         id: "abomasorusite",
