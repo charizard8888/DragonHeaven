@@ -1568,7 +1568,7 @@ exports.BattleFormatsData = { //
     },
     pheraliemega: {
         tier: "OU",
-        requiredItem: "pheraliescipodite",
+        requiredItem: "pheralieite",
     },
     tsarakion: {
         tier: "OU",
@@ -1578,6 +1578,7 @@ exports.BattleFormatsData = { //
     },
     scipodmega: {
         tier: "OU",
+		 requiredItem: "scipodite",
     },
     necrozmerupt: {
         tier: "OU",
