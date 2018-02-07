@@ -11,10 +11,10 @@ abilities: {0: "Illuminate", 1: "Effect Spore", H: "Triage"},
 },
 gastly: {
 inherit: true,
-types: ["Ghost", "Luke"],
+types: ["Ghost", "Poison", "Luke"],
 abilities: {0: "Cursed Body"},
 },
-/* haunter: {
+haunter: {
 inherit: true,
 types: ["Ghost", "Poison", "Luke"],
 abilities: {0: "Cursed Body"},
@@ -28,5 +28,5 @@ weezing: {
 inherit: true,
 types: ["Poison", "Fire", "Luke"],
 abilities: {0: "Flash Fire", "Aftermath"},
-},*/
+},
 };
