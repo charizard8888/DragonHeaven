@@ -11,7 +11,7 @@ abilities: {0: "Illuminate", 1: "Effect Spore", H: "Triage"},
 },
 gastly: {
 inherit: true,
-types: ["Ghost", "Poison", "Luke"],
+types: ["Ghost", "Luke"],
 abilities: {0: "Cursed Body"},
 },
 /* haunter: {
