@@ -22,11 +22,11 @@ abilities: {0: "Cursed Body"},
 koffing: {
 inherit: true,
 types: ["Poison", "Fire", "Luke"],
-abilities: {0: "Flash Fire", "Aftermath"},
+abilities: {0: "Flash Fire", H: "Aftermath"},
 },
 weezing: {
 inherit: true,
 types: ["Poison", "Fire", "Luke"],
-abilities: {0: "Flash Fire", "Aftermath"},
+abilities: {0: "Flash Fire", H: "Aftermath"},
 },
 };
