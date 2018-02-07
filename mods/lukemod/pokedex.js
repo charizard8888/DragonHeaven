@@ -9,24 +9,24 @@ shiinotic: {
 inherit: true,
 abilities: {0: "Illuminate", 1: "Effect Spore", H: "Triage"},
 },
-/*gastly: {
+gastly: {
 inherit: true,
-types: ["Ghost", "Poison", "luke"],
+types: ["Ghost", "Poison", "Luke"],
 abilities: {0: "Cursed Body"},
 },
-haunter: {
+/* haunter: {
 inherit: true,
-types: ["Ghost", "Poison", "luke"],
+types: ["Ghost", "Poison", "Luke"],
 abilities: {0: "Cursed Body"},
 },
 koffing: {
 inherit: true,
-types: ["Poison", "Fire", "luke"],
+types: ["Poison", "Fire", "Luke"],
 abilities: {0: "Flash Fire", "Aftermath"},
 },
 weezing: {
 inherit: true,
-types: ["Poison", "Fire", "luke"],
+types: ["Poison", "Fire", "Luke"],
 abilities: {0: "Flash Fire", "Aftermath"},
 },*/
 };
