@@ -7844,7 +7844,7 @@ exports.Formats = [
 			return problems;
 		}
 	},
-	{
+	 {
         name: "[Gen 6] 1v1",
         desc: [
             "Bring three Pok&eacute;mon to Team Preview and choose one to battle.",
@@ -7865,7 +7865,7 @@ exports.Formats = [
             'Flash', 'Kinesis', 'Leaf Tornado', 'Mirror Shot', 'Mud Bomb', 'Mud-Slap', 'Muddy Water', 'Night Daze', 'Octazooka', 'Sand Attack', 'Smokescreen'
         ],
     },
-		{
+    {
         name: "[Gen 5] 1v1",
         desc: [
             "Bring one Pok&eacute;mon and battle with it.",
@@ -7877,10 +7877,13 @@ exports.Formats = [
             validate: [1, 1],
             battle: 1,
         },
-        ruleset: ['Pokemon', 'Moody Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Swagger Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod'],
+        ruleset: ['Pokemon', 'Nickname Clause', 'Moody Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Swagger Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod'],
         banlist: [
-            'Illegal', 'Unreleased', 'Arceus', 'Blaziken', 'Darkrai', 'Deoxys-A', 'Deoxys', 'Dialga', 'Giratina', 'Giritina-O', 'Groudon', 'Ho-Oh', 'Kyurem-W', 'Lugia', 'Mewtwo', 'Palkia', 'Rayquaza', 'Reshiram', 'Shaymin-S', 'Zekrom',
-            'Perish Song', 'Chansey + Charm + Seismic Toss', 'Focus Sash'
+            'Illegal', 'Unreleased',
+            'Arceus', 'Blaziken', 'Darkrai', 'Deoxys-A', 'Deoxys-Base', 'Dialga', 'Giratina', 'Giratina-O', 'Groudon', 'Ho-Oh', 'Kyurem-W', 'Lugia', 'Mewtwo', 'Palkia', 'Rayquaza', 'Reshiram', 'Shaymin-S', 'Zekrom',
+            'Perish Song',
+            'Chansey + Charm + Seismic Toss',
+            'Focus Sash', 'Soul Dew'
         ],
     },
 	{
