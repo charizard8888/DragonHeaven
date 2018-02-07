@@ -11627,7 +11627,7 @@ scrafting: {
     
     dramasnow: {
         num: 7500397,
-        species: "dramasnow",
+        species: "Dramasnow",
         types: ["Dragon", "Ice"], 
         baseStats: {
             hp: 94,
