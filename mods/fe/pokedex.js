@@ -499,7 +499,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-    vespicor: {
+    vepsicor: {
         num: 750015,
         species: "Vepsicor",
         types: ["Bug", "Ground"],
