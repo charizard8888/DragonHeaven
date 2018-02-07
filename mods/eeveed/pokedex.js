@@ -329,6 +329,17 @@
 	        abilities: {0: "Speed Boost", 1: "Quick Claws", H: "Technician"},
 	        prevo: "Scyther"
    },
+	 buzzasoarmega : {
+num: 123,
+species: "Buzzasoar-Mega",
+baseSpecies: "Buzzasoar",
+forme: "Mega",
+formeLetter: "M", 
+types: ["Bug", "Flying"], 
+baseStats:{hp: 80, atk: 60, def: 80, spa: 160, spd: 80, spe: 140},
+abilities: {0: "Speed Boost"}, 
+// weightkg: ,
+},
    scyanide: {
 	        num: 9032,
 	        species: "Scyanide",
