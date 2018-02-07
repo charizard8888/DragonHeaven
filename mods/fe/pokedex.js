@@ -9231,7 +9231,7 @@ exports.BattlePokedex = {
     maroramalola: {
         num: 7500292,
         species: "Maroram-Alola",
-        types: ["T1", "T2"], 
+        types: ["Fire"], 
         baseStats: {
             hp: 80,
             atk: 108,
@@ -9473,9 +9473,9 @@ exports.BattlePokedex = {
          abilities: {0: "Fearless"},
     },
     
-    deoxurtoutlet: {
+    deoxurkoutlet: {
         num: 7500305,
-        species: "Deoxurt-Outlet",
+        species: "Deoxurk-Outlet",
         types: ["Psychic", "Electric"], 
         baseStats: {
             hp: 86,
