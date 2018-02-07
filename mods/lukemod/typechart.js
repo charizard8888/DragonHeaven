@@ -442,7 +442,7 @@ exports.BattleTypeChart = {
 		HPivs: {"atk": 30, "def": 30, "spa": 30},
 		HPdvs: {"atk": 14, "def": 13},
 	},
-	"luke": {
+/*"luke": {
 		damageTaken: {
 			"Bug": 0,
 			"Dark": 0,
