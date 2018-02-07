@@ -1393,17 +1393,29 @@ exports.BattleItems = {
         gen: 6,
         desc: "If holder is a venustoiseblue, this item allows it to Mega Evolve in battle.",
     },
-    "pheraliescipodite": {
-        id: "pheraliescipodite",
-        name: "pheraliescipodite",
-        megaStone: "pheraliescipod-Mega",
-        megaEvolves: "pheraliescipod",
+    "pheralieite": {
+        id: "pheralieite",
+        name: "pheralieite",
+        megaStone: "Pheralie-Mega",
+        megaEvolves: "Pheralie",
         onTakeItem: function(item, source) {
             if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
             return true;
         },
         gen: 6,
-        desc: "If holder is a pheraliescipod, this item allows it to Mega Evolve in battle.",
+        desc: "If holder is a Pheralie, this item allows it to Mega Evolve in battle.",
+    },
+	    "scipodite": {
+        id: "scipodite",
+        name: "scipodite",
+        megaStone: "Scipod-Mega",
+        megaEvolves: "Scipod",
+        onTakeItem: function(item, source) {
+            if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+            return true;
+        },
+        gen: 6,
+        desc: "If holder is a Scipod, this item allows it to Mega Evolve in battle.",
     },
     "necrozmeruptite": {
         id: "necrozmeruptite",
