@@ -299,6 +299,25 @@ exports.BattleItems = {
 		gen: 6,
 		desc: "Holder's Sp. Def is 1.5x, but it can only select damaging moves.",
 	},
+	"combovest": {
+		id: "combovest",
+		name: "Combo Vest",
+		fling: {
+			basePower: 80,
+		},
+		onModifyDefPriority: 1,
+		onModifyDef: function (def) {
+			return this.chainModify(1.5);
+		},
+		onDisableMove: function (pokemon) {
+			for (const moveSlot of pokemon.moveSlots) {
+				if (this.getMove(moveSlot.move).category === 'Status') {
+					pokemon.disableMove(moveSlot.id);
+				}
+			}
+		},
+		desc: "Holder's Def is 1.5x, but it can only select damaging moves.",
+	},
 	"audinite": {
 		id: "audinite",
 		name: "Audinite",
@@ -4576,6 +4595,36 @@ exports.BattleItems = {
 		gen: 6,
 		desc: "If held by a Groudon, this item triggers its Primal Reversion in battle.",
 	},
+	/*"rainboworb": {
+		id: "rainboworb",
+		name: "Rainbow Orb",
+		spritenum: 390,
+		onSwitchIn: function (pokemon) {
+			if (pokemon.isActive && pokemon.baseTemplate.species === 'Unown') {
+				this.insertQueue({pokemon: pokemon, choice: 'runPrimal'});
+			}
+		},
+		onPrimal: function (pokemon) {
+			let template = this.getTemplate('Unown-Primal');
+			pokemon.formeChange(template);
+			pokemon.baseTemplate = template;
+			pokemon.details = template.species + (pokemon.level === 100 ? '' : ', L' + pokemon.level) + (pokemon.gender === '' ? '' : ', ' + pokemon.gender) + (pokemon.set.shiny ? ', shiny' : '');
+			if (pokemon.illusion) {
+				pokemon.ability = ''; // Don't allow Illusion to wear off
+				this.add('-primal', pokemon.illusion);
+			} else {
+				this.add('detailschange', pokemon, pokemon.details);
+				this.add('-primal', pokemon);
+			}
+			pokemon.setAbility(template.abilities['0'], null, true);
+			pokemon.baseAbility = pokemon.ability;
+		},
+		onTakeItem: function (item, source) {
+			if (source.baseTemplate.baseSpecies === 'Groudon') return false;
+			return true;
+		},
+		desc: "If held by a Unown, this item triggers its Primal Reversion in battle.",
+	},*/
 	"repeatball": {
 		id: "repeatball",
 		name: "Repeat Ball",
@@ -5569,6 +5618,21 @@ exports.BattleItems = {
 		gen: 4,
 		desc: "At the end of every turn, this item attempts to badly poison the holder.",
 	},
+	"staticorb": {
+		id: "staticorb",
+		name: "Static Orb",
+		spritenum: 515,
+		fling: {
+			basePower: 30,
+			status: 'par',
+		},
+		onResidualOrder: 26,
+		onResidualSubOrder: 2,
+		onResidual: function (pokemon) {
+			pokemon.trySetStatus('par', pokemon);
+		},
+		desc: "At the end of every turn, this item attempts to paralyze the holder.",
+	},
 	"toxicplate": {
 		id: "toxicplate",
 		name: "Toxic Plate",
@@ -6283,6 +6347,19 @@ exports.BattleItems = {
 		gen: 2,
 		isNonstandard: 'gen2',
 		desc: "(Gen 2) Holder is cured if it is poisoned. Single use.",
+	},
+	"iceskates": {
+		shortDesc: "If Hail is active, holder's Speed is doubled.",
+		onModifySpe: function (spe, pokemon) {
+			if (this.isWeather('hail')) {
+				return this.chainModify(2);
+			}
+		},
+		fling: {
+			basePower: 50,
+		},
+		id: "iceskates",
+		name: "Ice Skates",
 	},
 
 	// CAP items
