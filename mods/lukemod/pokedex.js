@@ -3,7 +3,7 @@ exports.BattlePokedex = {
 
 rapidash: {
 inherit: true,
-types: ["Fire", "Fairy", "Grass"],
+types: ["Fire", "Fairy"],
 },
 shiinotic: {
 inherit: true,
