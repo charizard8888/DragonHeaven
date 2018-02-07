@@ -9,7 +9,7 @@ shiinotic: {
 inherit: true,
 abilities: {0: "Illuminate", 1: "Effect Spore", H: "Triage"},
 },
-gastly: {
+/*gastly: {
 inherit: true,
 types: ["Ghost", "Poison", "luke"],
 abilities: {0: "Cursed Body"},
@@ -28,5 +28,5 @@ weezing: {
 inherit: true,
 types: ["Poison", "Fire", "luke"],
 abilities: {0: "Flash Fire", "Aftermath"},
-},
+},*/
 };
