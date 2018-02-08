@@ -1,6 +1,11 @@
 'use strict';
 
 exports.BattlePokedex = {
+	//Iron Crusher
+	bastiodon: {
+		inherit: true,
+		baseStats: {hp: 60, atk: 83, def: 168, spa: 47, spd: 138, spe: 30},
+	},
 	//%Elcrest
 	dragonite: {
 		inherit: true,
