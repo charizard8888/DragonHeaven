@@ -3,7 +3,7 @@
 exports.BattleAbilities = {
 	
 	"supremeshield": {
-		shortDesc: "Halves the damage of all supereffective moves as well as making the user unaffected by abilities.",
+		shortDesc: "Halves the damage of all supereffective moves.",
 		onSourceModifyDamage: function (damage, source, target, move) {
 			if (move.typeMod > 0) {
 				return this.chainModify(0.5);
