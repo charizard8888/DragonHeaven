@@ -1,5 +1,15 @@
 'use strict';
 exports.BattleStatuses = {
+	ironcrusher: {
+		exists: true,
+		effectType: 'Ability',
+		onStart: function () {
+			this.add('c|+shwb|Woopsiedaisy things are about to get crazy.');
+		},
+		onFaint: function(pokemon) {
+			this.add('c|+shwb|ig ill leave then, cya next time!');
+		},
+	},
 	uncleflacco: {
 		exists: true,
 		effectType: 'Ability',
