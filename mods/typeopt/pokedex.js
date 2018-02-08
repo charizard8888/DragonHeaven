@@ -921,7 +921,7 @@ exports.BattlePokedex = {
 		},
 		abilities: {0: "Queenly Majesty", 1: "Tinted Lens", H: "Magic Bounce"},
 	},
-	araidos: {
+	ariados: {
 		inherit: true,
 		types: ["Psychic", "Bug"],
 		baseStats: {
