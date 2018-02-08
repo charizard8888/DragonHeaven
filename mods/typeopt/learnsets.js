@@ -2393,7 +2393,7 @@ lycanroc: {learnset: {
 		zenheadbutt: ["7T", "6T", "5T", "4T"],
 		destinybond: ["7L1"],
 		hex: ["7L1"],
-		willowwisp: ["7L1"],
+		willowisp: ["7L1"],
 	}},
 	bronzong: {learnset: {
 		allyswitch: ["7T"],
@@ -3618,7 +3618,7 @@ lycanroc: {learnset: {
 		xscissor: ["7M", "6M", "5M", "4M"],
 		dragondance: ["7L1"],
 		dragonhammer: ["7L1"],
-		icefang: ["7L1"],
+		firefang: ["7L1"],
 	}},
 	lapras: {learnset: {
 		ancientpower: ["7E", "6E", "5E", "4T", "4E"],
