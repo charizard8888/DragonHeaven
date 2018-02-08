@@ -5190,7 +5190,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-    zoroledo: {
+    zoroldeo: {
         num: 7500154,
         species: "Zoroldeo",
         types: ["Dark", "Fighting"],
