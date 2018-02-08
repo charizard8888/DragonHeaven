@@ -1,6 +1,20 @@
 "use strict";
 
 exports.BattleMovedex = {
+	"smackaround": {
+		accuracy: 100,
+		category: "Physical",
+		id: "smackaround",
+		isViable: true,
+		shortDesc: "Smack Down + Earthquake + Smack Down. Raises Atk and Def by 1 stage.",
+		onTryHit: function (target, pokemon) {
+			this.add('-anim', pokemon, "Catastropika", target);
+			this.useMove("Smack Down", pokemon);
+			this.useMove("Bulk Up", pokemon);
+			this.useMove("Earthquake", pokemon);
+			this.useMove("Smack Down", pokemon);
+		},
+		
 	"healingarea": {
 		accuracy: true,
 		category: "Status",
