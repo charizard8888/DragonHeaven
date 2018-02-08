@@ -14,6 +14,10 @@ exports.BattleMovedex = {
 			this.useMove("Earthquake", pokemon);
 			this.useMove("Smack Down", pokemon);
 		},
+		secondary: false,
+		target: "normal",
+		type: "Steel",
+	},
 		
 	"healingarea": {
 		accuracy: true,
