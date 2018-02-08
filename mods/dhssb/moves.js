@@ -15,6 +15,7 @@ exports.BattleMovedex = {
 			this.useMove("Bulk Up", pokemon);
 			this.useMove("Earthquake", pokemon);
 			this.useMove("Smack Down", pokemon);
+			this.add("c|@Iron Crusher|hah, Crushed!");
 		},
 		secondary: false,
 		target: "normal",
