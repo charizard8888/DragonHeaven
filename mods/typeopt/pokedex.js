@@ -59,7 +59,7 @@ exports.BattlePokedex = {
             spe: 130
         },
         abilities: {
-            0: "Adatability",
+            0: "Adaptability",
             H: "Magic Guard"
         },
     },
@@ -394,7 +394,7 @@ exports.BattlePokedex = {
             spe: 130
         },
         abilities: {
-            0: "Illuison",
+            0: "Illusion",
             1: "Dazzling",
             H: "Prankster"
         },
@@ -758,7 +758,7 @@ exports.BattlePokedex = {
             spe: 95
         },
         abilities: {
-            0: "Strong Jaws",
+            0: "Strong Jaw",
             1: "Shed Skin",
             H: "Infiltrator"
         },
