@@ -6,6 +6,8 @@ exports.BattleMovedex = {
 		category: "Physical",
 		id: "smackaround",
 		isViable: true,
+		name: "Smack Around",
+		pp: 15,
 		shortDesc: "Smack Down + Earthquake + Smack Down. Raises Atk and Def by 1 stage.",
 		onTryHit: function (target, pokemon) {
 			this.add('-anim', pokemon, "Catastropika", target);
