@@ -896,4 +896,42 @@ exports.BattlePokedex = {
             H: "Magic Bounce"
         },
     },
+	mew: {
+		inherit: true,
+		 		baseStats: {
+				hp: 100,
+            atk: 70,
+            def: 100,
+            spa: 100,
+            spd: 100,
+            spe: 100
+        },
+	abilities: {0: "Magic Bounce", 1: "Sheer Force", H: "Prankster"},
+},
+	lilligant: {
+		inherit: true,
+		types: ["Psychic", "Grass"],
+		baseStats: {
+			hp: 60,
+			atk: 50,
+			def: 50,
+			spa: 145,
+			spd: 135,
+			spe: 105
+		},
+		abilities: {0: "Queenly Majesty", 1: "Tinted Lens", H: "Magic Bounce"},
+	},
+	araidos: {
+		inherit: true,
+		types: ["Psychic", "Bug"],
+		baseStats: {
+			hp: 80,
+			atk: 110,
+			def: 90,
+			spa: 60,
+			spd: 90,
+			spe: 140
+		},
+		abilities: {0: "Strong Jaw", 1: "Intimidate", H: "Mold Breaker"},
+	},
 };
