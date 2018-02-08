@@ -1,6 +1,17 @@
 'use strict';
 
 exports.BattleAbilities = {
+	
+	"supremeshield": {
+		shortDesc: "Halves the damage of all supereffective moves as well as making the user unaffected by abilities.",
+		onSourceModifyDamage: function (damage, source, target, move) {
+			if (move.typeMod > 0) {
+				return this.chainModify(0.5);
+			}
+		},
+		id: "supremeshield",
+		name: "Supreme Shield",
+	},
 	"xremebulk": {
 		name:"Xreme Bulk",
 		id: "xremebulk",
