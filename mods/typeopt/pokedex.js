@@ -126,7 +126,7 @@ exports.BattlePokedex = {
             spe: 130
         },
         abilities: {
-            0: "Aerialte",
+            0: "Aerilate",
             1: "Intimidate",
             H: "Ice Body"
         },
@@ -280,7 +280,7 @@ exports.BattlePokedex = {
         abilities: {
             0: "Chlorophyll",
             1: "Drought",
-            H: "Natural Care"
+            H: "Natural Cure"
         },
     },
     electrode: {
