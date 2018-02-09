@@ -669,7 +669,7 @@ exports.BattlePokedex = {
             atk: 50,
             def: 110,
             spa: 110,
-            spd: 1100,
+            spd: 110,
             spe: 60
         },
         abilities: {
