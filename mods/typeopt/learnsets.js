@@ -4132,7 +4132,7 @@ lycanroc: {learnset: {
 		worryseed: ["7T", "6T", "5T", "4T"],
 		spikes: ["7L1"],
 		headsmash: ["7L1"],
-		spikes: ["7L1"],
+		shellsmash: ["7L1"],
 	}},
 	lunatone: {learnset: {
 		acrobatics: ["7M", "6M", "5M"],
