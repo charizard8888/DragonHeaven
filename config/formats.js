@@ -7743,36 +7743,20 @@ exports.Formats = [
 		column:4,
 	},
 	{
-		name: "[Gen 7] 1v1 Almost Any Ability",
-		section: "1v1 Other Metas",
-		desc: [
-			"Pok&eacute;mon can use any ability, barring the few that are banned.",
-			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3587901/\">Almost Any Ability</a>",
-		],
-
-		mod: 'gen7',
-		ruleset: ['Pokemon', 'Standard', 'Ability Clause', 'Ignore Illegal Abilities', 'Swagger Clause', 'Team Preview'],
-		teamLength: {
-			validate: [1, 3],
-			battle: 1,
-		},
-		banlist: ['Illegal', 'Unreleased', 'Arceus', 'Darkrai', 'Deoxys-Base', 'Deoxys-Attack', 'Deoxys-Defense', 'Dialga', 'Giratina', 'Groudon', 'Ho-Oh', 'Kyogre',
-			'Kyurem-White', 'Lugia', 'Lunala', 'Marshadow', 'Mewtwo', 'Palkia', 'Rayquaza', 'Reshiram', 'Shaymin-Sky', 'Solgaleo', 'Xerneas', 'Yveltal', 'Zekrom',
-			'Power Construct', 'Perish Song', 'Focus Sash', 'Kangaskhanite', 'Salamencite', 'Chansey + Charm + Seismic Toss', 'Chansey + Charm + Psywave',
-			'Flash', 'Kinesis', 'Leaf Tornado', 'Mirror Shot', 'Mud Bomb', 'Mud-Slap', 'Muddy Water', 'Night Daze', 'Octazooka', 'Sand Attack', 'Smokescreen',
-		],
-		onValidateSet: function (set) {
-			let bannedAbilities = {'Arena Trap': 1, 'Comatose': 1, 'Contrary': 1, 'Fluffy': 1, 'Fur Coat': 1, 'Huge Power': 1, 'Illusion': 1, 'Imposter': 1, 'Innards Out': 1, 'Parental Bond': 1, 'Protean': 1, 'Pure Power': 1, 'Simple':1, 'Speed Boost': 1, 'Stakeout': 1, 'Water Bubble': 1, 'Wonder Guard': 1};
-			if (set.ability in bannedAbilities) {
-				let template = this.getTemplate(set.species || set.name);
-				let legalAbility = false;
-				for (let i in template.abilities) {
-					if (set.ability === template.abilities[i]) legalAbility = true;
-				}
-				if (!legalAbility) return ['The ability ' + set.ability + ' is banned on Pok\u00e9mon that do not naturally have it.'];
-			}
-		},
-	},
+    name: "[Gen 7] AAA 1v1",
+    desc: [
+        "Almost Any Ability 1v1",
+        "&bullet; Pokémon can have almost any ability they don't normally get, with a few exceptions"
+    ],
+    section: "1v1 Other Metas",
+    mod: 'gen7',
+    teamLength: {
+        validate: [1, 3],
+        battle: 1,
+    },
+    ruleset: ['Ignore Illegal Abilities', 'gen71v1'],
+    banlist: ['Sturdy', 'Huge Power', 'Pure Power', 'Fur Coat', 'Illusion', 'Moody', 'Parental Bond', 'Protean', 'Simple', 'Speed Boost', 'Water Bubble', 'Wonder Guard', 'No Guard', 'Imposter', 'Normalize', 'Psychic Surge', 'Multiscale', 'Shadow Shield', 'Hustle', 'Regigigas', 'Slaking', 'Kartana', 'Pheromosa', 'Archeops'],
+},
 	{
 		name: "[Gen 7] 1v1 Anything Goes",
 		section: "1v1 Other Metas",
