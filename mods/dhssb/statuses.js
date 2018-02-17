@@ -4,10 +4,10 @@ exports.BattleStatuses = {
 		exists: true,
 		effectType: 'Ability',
 		onStart: function () {
-			this.add('c|+shwb|Woopsiedaisy things are about to get crazy.');
+			this.add('c|%Iron Crusher|Woopsiedaisy things are about to get crazy.');
 		},
 		onFaint: function(pokemon) {
-			this.add('c|+shwb|ig ill leave then, cya next time!');
+			this.add('c|%Iron Crusher|ig ill leave then, cya next time!');
 		},
 	},
 	uncleflacco: {
