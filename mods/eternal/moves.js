@@ -16,22 +16,33 @@ exports.BattleMovedex = {
 			boosts: {
 				spd: -1,
 			},
+		},
+		secondary: {
 			chance: 15,
 			self: {
 				boosts: {
 					spe: 1,
 				},
+			},
+		},
+		secondary: {
 			chance: 30,
 			self: {
 				boosts: {
 					spa: 1,
 				},
 			},
-         onPrepareHit: function (target, source) {
+		},
+                onPrepareHit: function (target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Photon Geyser", target);
 			this.add("c|@Acornia|BOP");
 		},
+	},
+		target: "normal",
+		type: "Grass",
+		zMovePower: 180,
+		contestType: "Cool",
 	},
 	"wrathofnature": {
 		accuracy: 100,
