@@ -1,6 +1,38 @@
 'use strict';
 
 exports.BattleMovedex = {
+		"photonicbloom": {
+		accuracy: 85,
+		basePower: 100,
+		category: "Special",
+		shortDesc: "30% to Raise my SpA, 30% to Lower their SpD, 15% to Raise my speed",
+		id: "photonicbloom",
+		name: "Photonic Bloom",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			boosts: {
+				spd: -1,
+			},
+			chance: 15,
+			self: {
+				boosts: {
+					spe: 1,
+				},
+			chance: 30,
+			self: {
+				boosts: {
+					spa: 1,
+				},
+			},
+         onPrepareHit: function (target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Photon Geyser", target);
+			this.add("c|@Acornia|BOP");
+		},
+	},
 	"wrathofnature": {
 		accuracy: 100,
 		basePower: 100,
