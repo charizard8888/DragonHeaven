@@ -1292,6 +1292,30 @@ Z-Move Effect: Does a 25BP Z-Move for all 8 attacks. (E.g, Hydro Vortex -> Gigav
 		zMovePower: 140,
 		contestType: "Tough",
 	},
+	"beautydrain": {
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		desc: "Lowers the target's SpD by 1 stage. The user restores its HP equal to the target's SpD stat calculated with its stat stage before this move was used. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down. Fails if the target's Attack stat stage is -6.",
+		shortDesc: "User heals HP=target's SpD stat. Lowers SpD by 1.",
+		id: "strengthsap",
+		isViable: true,
+		name: "Beauty Drain",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, heal: 1},
+		onHit: function (target, source) {
+			if (target.boosts.spd === -6) return false;
+			let spd = target.getStat('spd', false, true);
+			let success = this.boost({spd: -1}, target, source, null, null, true);
+			return this.heal(spd, source, target) || success;
+		},
+		secondary: false,
+		target: "normal",
+		type: "Water",
+		zMoveBoost: {def: 1},
+		contestType: "Cute",
+	},
 	   /*"sundance": {
     num: 1001,
     accuracy: true,
