@@ -12673,7 +12673,7 @@ exports.BattlePokedex = {
         },
     },
 
-    slakoem: {
+    /*slakoem: {
         num: 7500411,
         species: "Slakoem",
         types: ["Normal", "Psychic"],
@@ -13515,6 +13515,6 @@ exports.BattlePokedex = {
         weightkg: 529.8,
         color: "Green",
         eggGroups: ["Field", "Grass"],
-    },
+    },*/
 // Cat Bed: 75004348
 };
