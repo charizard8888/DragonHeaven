@@ -12895,7 +12895,7 @@ exports.BattlePokedex = {
         eggGroups: ["Field"],
     },
 
-    /*dunking: {
+    dunking: {
         num: 7500417,
         species: "Dunking",
         types: ["Normal"],
@@ -13121,7 +13121,7 @@ exports.BattlePokedex = {
             0: "Insomnia"
         },
     },
-    kommew: {
+   /* kommew: {
         num: 7500424,
         species: "Kommew",
         types: ["Fighting", "Psychic"], //107	105	112	110	112	92
