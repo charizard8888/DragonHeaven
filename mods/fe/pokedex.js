@@ -12924,7 +12924,6 @@ exports.BattlePokedex = {
         num: 7500418,
         species: "Kudou",
         types: ["Water", "Electric"],
-        gender: "N",
         baseStats: {
             hp: 85,
             atk: 100,
@@ -13103,7 +13102,7 @@ exports.BattlePokedex = {
             0: "Steadfast"
         },
     },
-    nintwomegaya: {
+    nintwomegay: {
         num: 7500423,
         species: "Nintwo-Mega-Y",
         baseSpecies: "Nintwo",
@@ -13142,174 +13141,380 @@ exports.BattlePokedex = {
             0: "Echo Chamber"
         },
     },
-	tamatoa: { num: 7500425,
-species: "Tamatoa",
-types: ["Grass", "Water"],
-genderRatio: {M: 0.0, F: 0.0},
-baseStats: {hp: 70, atk: 140, def: 100, spa: 87, spd: 90, spe: 71},
-abilities: {0: "Kelp Surge"},
-heightm: 86.45,
-weightkg: 39.15,
-color: "Black",
-eggGroups: ["Undiscovered"], },
-	pelippex: { num: 7500426,
-species: "Pelippex",
-types: ["Water", "Poison"],
-genderRatio: {M: 50.0, F: 50.0},
-baseStats: {hp: 65, atk: 66, def: 136, spa: 84, spd: 116, spe: 60},
-abilities: {0: "Rain Regen"},
-heightm: 1,
-weightkg: 21.3,
-color: "Yellow",
-eggGroups: ["Water 1"]},
-	
-	kyzor: { num: 7500427,
-species: "Kyzor",
-types: ["Dragon", "Steel"],
-genderRatio: {M: 0.0, F: 0.0},
-baseStats: {hp: 97, atk: 130, def: 105, spa: 92, spd: 105, spe: 90},
-abilities: {0: "Pressurizer"},
-heightm: 2.4,
-weightkg: 221.5,
-color: "Blue",
-eggGroups: ["Undiscovered"],
-otherFormes: {"Kyzor-Mega"},
-},
-	
-	kyzormega: { num: 7500427,
-species: "Kyzor-Mega",
-baseSpecies: "Kyzor",
-forme: "Mega",
-formeLetter: "M",
-types: ["Dragon", "Steel"],
-genderRatio: {M: 0.0, F: 0.0},
-baseStats: {hp: 97, atk: 150, def: 145, spa: 102, spd: 125, spe: 100},
-abilities: {0: "Technician"}, 
-heightm: 2.6,
-weightkg: 228.5,
-color: "Blue",
-eggGroups: ["Undiscovered"], },
-	
-	gumanitoos: { num: 7500428,
-species: "Gumanitoos",
-types: ["Normal", "Ghost"],
-genderRatio: {M: 0.0, F: 0.0}, // 119	115	100	77	100	67
-baseStats: {hp: 119, atk: 115, def: 100, spa: 77, spd: 100, spe: 67},
-abilities: {0: "Levi Stakes"},
-},
-	xurkino: { num: 7500429,
-species: "Xurkino",
-types: ["Electric", "Normal"],
-genderRatio: {M: 0.0, F: 0.0},
-baseStats: {hp: 93, atk: 74, def: 98, spa: 116, spd: 98, spe: 66},
-abilities: {0: "Hydra"},
-heightm: 2.5,
-weightkg: 65.5,
-color: "White",
-eggGroups: ["Undiscovered"],
-otherFormes: {"Xurkino-Mega"},
-},
-	
-	xurkinomega: { num: 7500429,
-species: "Xurkino-Mega",
-baseSpecies: "Xurkino",
-forme: "Mega",
-formeLetter: "M",
-types: ["Electric", "Fairy"],
-genderRatio: {M: 0.0, F: 0.0},
-baseStats: {hp: 93, atk: 74, def: 138, spa: 136, spd: 138, spe: 66},
-abilities: {0: "Healer"}, 
-heightm: 2.9,
-weightkg: 66.5,
-color: "White",
-eggGroups: ["Undiscovered"], },
-	
-	yvelchan: { num: 7500430,
-species: "Yvel-Chan",
-types: ["Flying", "Normal"],
-genderRatio: "F",
-baseStats: {hp: 208, atk: 68, def: 70, spa: 83, spd: 101, spe: 74},
-abilities: {0: "Dark Aura"},
-heightm: 3.5,
-weightkg: 118.8,
-color: "Pink",
-eggGroups: ["Fairy"], },
-	
-	heatreon: { num: 7500431,
-species: "Heatreon",
-types: ["Steel", "Fairy"], // 100	77	100	125	130	69
-baseStats: {hp: 100, atk: 77, def: 100, spa: 125, spd: 130, spe: 69},
-abilities: {0: "Fire-B-Gone"},
- },
-	
-	altarigarde: { num: 7500432, species: "Altarigarde",
-types: ["Ground", "Flying"],
-genderRatio: {M: 0.0, F: 0.0},
-baseStats: {hp: 91, atk: 105, def: 105, spa: 75, spd: 110, spe: 97},
-abilities: {0: "Weather Break"},
-heightm: 3.05,
-weightkg: 162.8,
-color: "Green",
-eggGroups: ["Undiscovered"],
-otherFormes: {"Altarigarde-Mega"}, },
+	tamatoa: {
+        num: 7500425,
+        species: "Tamatoa",
+        types: ["Grass", "Water"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 70,
+            atk: 140,
+            def: 100,
+            spa: 87,
+            spd: 90,
+            spe: 71
+        },
+        abilities: {
+            0: "Kelp Surge"
+        },
+        heightm: 86.45,
+        weightkg: 39.15,
+        color: "Black",
+        eggGroups: ["Undiscovered"],
+    },
+    pelippex: {
+        num: 7500426,
+        species: "Pelippex",
+        types: ["Water", "Poison"],
+        genderRatio: {
+            M: 50.0,
+            F: 50.0
+        },
+        baseStats: {
+            hp: 65,
+            atk: 66,
+            def: 136,
+            spa: 84,
+            spd: 116,
+            spe: 60
+        },
+        abilities: {
+            0: "Rain Regen"
+        },
+        heightm: 1,
+        weightkg: 21.3,
+        color: "Yellow",
+        eggGroups: ["Water 1"]
+    },
 
-altarigardemega: { num: 7500432,
-species: "Altarigarde-Mega",
-baseSpecies: "Altarigarde",
-forme: "Mega",
-formeLetter: "M",
-types: ["Ground", "Fairy"],
-genderRatio: {M: 0.0, F: 0.0},
-baseStats: {hp: 91, atk: 145, def: 125, spa: 115, spd: 110, spe: 97},
-abilities: {0: "Pixilate"}, 
-heightm: 3.45,
-weightkg: 162.8,
-color: "Green",
-eggGroups: ["Undiscovered"], },
-	flycanion: { num: 7500433,
-species: "Flycanion",
-types: ["Ground", "Fire"],
-genderRatio: {M: 50.0, F: 50.0},
-baseStats: {hp: 100, atk: 105, def: 110, spa: 105, spd: 95, spe: 85},
-abilities: {0: "Mud Absorb"},
-heightm: 1.9,
-weightkg: 138.5,
-color: "Brown",
-eggGroups: ["Bug"], },
-	
-	belle:{ num: 7500434,
-species: "Belle",
-types: ["Steel", "Fairy"],
-genderRatio: {M: 0.0, F: 0.0},
-baseStats: {hp: 100, atk: 85, def: 100, spa: 110, spd: 110, spe: 60},
-abilities: {0: "Greedy Princess"},
-heightm: 1146.3,
-weightkg: 519.95,
-color: "Pink",
-eggGroups: ["Undiscovered"], },
-	
-	maui: { num: 7500435,
-species: "Māui",
-types: ["Electric", "Poison"],
-genderRatio: {M: 0.0, F: 0.0},
-baseStats: {hp: 75, atk: 110, def: 81, spa: 110, spd: 80, spe: 120},
-abilities: {0: "Radioactive Surge"},
-heightm: 90.95,
-weightkg: 41.25,
-color: "Black",
-eggGroups: ["Undiscovered"], },
-	
-	// Garzone and Mega 75004346
-	
-	shitpost: { num: 7500437,
-species: "Shitpost",
-types: ["Dark", "Steel"],
-genderRatio: {M: 50.0, F: 50.0},
-baseStats: {hp: 113, atk: 120, def: 81, spa: 98, spd: 80, spe: 70},
-abilities: {0: "Meme Stealer"},
-heightm: 5.3,
-weightkg: 529.8,
-color: "Green",
-eggGroups: ["Field", "Grass"], },
-	// Cat Bed: 75004348
+    kyzor: {
+        num: 7500427,
+        species: "Kyzor",
+        types: ["Dragon", "Steel"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 97,
+            atk: 130,
+            def: 105,
+            spa: 92,
+            spd: 105,
+            spe: 90
+        },
+        abilities: {
+            0: "Pressurizer"
+        },
+        heightm: 2.4,
+        weightkg: 221.5,
+        color: "Blue",
+        eggGroups: ["Undiscovered"],
+        otherFormes: {
+            "Kyzor-Mega"
+        },
+    },
+
+    kyzormega: {
+        num: 7500427,
+        species: "Kyzor-Mega",
+        baseSpecies: "Kyzor",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Dragon", "Steel"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 97,
+            atk: 150,
+            def: 145,
+            spa: 102,
+            spd: 125,
+            spe: 100
+        },
+        abilities: {
+            0: "Technician"
+        },
+        heightm: 2.6,
+        weightkg: 228.5,
+        color: "Blue",
+        eggGroups: ["Undiscovered"],
+    },
+
+    gumanitoos: {
+        num: 7500428,
+        species: "Gumanitoos",
+        types: ["Normal", "Ghost"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        }, // 119	115	100	77	100	67
+        baseStats: {
+            hp: 119,
+            atk: 115,
+            def: 100,
+            spa: 77,
+            spd: 100,
+            spe: 67
+        },
+        abilities: {
+            0: "Levi Stakes"
+        },
+    },
+    xurkino: {
+        num: 7500429,
+        species: "Xurkino",
+        types: ["Electric", "Normal"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 93,
+            atk: 74,
+            def: 98,
+            spa: 116,
+            spd: 98,
+            spe: 66
+        },
+        abilities: {
+            0: "Hydra"
+        },
+        heightm: 2.5,
+        weightkg: 65.5,
+        color: "White",
+        eggGroups: ["Undiscovered"],
+        otherFormes: {
+            "Xurkino-Mega"
+        },
+    },
+
+    xurkinomega: {
+        num: 7500429,
+        species: "Xurkino-Mega",
+        baseSpecies: "Xurkino",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Electric", "Fairy"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 93,
+            atk: 74,
+            def: 138,
+            spa: 136,
+            spd: 138,
+            spe: 66
+        },
+        abilities: {
+            0: "Healer"
+        },
+        heightm: 2.9,
+        weightkg: 66.5,
+        color: "White",
+        eggGroups: ["Undiscovered"],
+    },
+
+    yvelchan: {
+        num: 7500430,
+        species: "Yvel-Chan",
+        types: ["Flying", "Normal"],
+        baseStats: {
+            hp: 208,
+            atk: 68,
+            def: 70,
+            spa: 83,
+            spd: 101,
+            spe: 74
+        },
+        abilities: {
+            0: "Dark Aura"
+        },
+        heightm: 3.5,
+        weightkg: 118.8,
+        color: "Pink",
+        eggGroups: ["Fairy"],
+    },
+
+    heatreon: {
+        num: 7500431,
+        species: "Heatreon",
+        types: ["Steel", "Fairy"], // 100	77	100	125	130	69
+        baseStats: {
+            hp: 100,
+            atk: 77,
+            def: 100,
+            spa: 125,
+            spd: 130,
+            spe: 69
+        },
+        abilities: {
+            0: "Fire-B-Gone"
+        },
+    },
+
+    altarigarde: {
+        num: 7500432,
+        species: "Altarigarde",
+        types: ["Ground", "Flying"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 91,
+            atk: 105,
+            def: 105,
+            spa: 75,
+            spd: 110,
+            spe: 97
+        },
+        abilities: {
+            0: "Weather Break"
+        },
+        heightm: 3.05,
+        weightkg: 162.8,
+        color: "Green",
+        eggGroups: ["Undiscovered"],
+        otherFormes: {
+            "Altarigarde-Mega"
+        },
+    },
+
+    altarigardemega: {
+        num: 7500432,
+        species: "Altarigarde-Mega",
+        baseSpecies: "Altarigarde",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Ground", "Fairy"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 91,
+            atk: 145,
+            def: 125,
+            spa: 115,
+            spd: 110,
+            spe: 97
+        },
+        abilities: {
+            0: "Pixilate"
+        },
+        heightm: 3.45,
+        weightkg: 162.8,
+        color: "Green",
+        eggGroups: ["Undiscovered"],
+    },
+    flycanion: {
+        num: 7500433,
+        species: "Flycanion",
+        types: ["Ground", "Fire"],
+        genderRatio: {
+            M: 50.0,
+            F: 50.0
+        },
+        baseStats: {
+            hp: 100,
+            atk: 105,
+            def: 110,
+            spa: 105,
+            spd: 95,
+            spe: 85
+        },
+        abilities: {
+            0: "Mud Absorb"
+        },
+        heightm: 1.9,
+        weightkg: 138.5,
+        color: "Brown",
+        eggGroups: ["Bug"],
+    },
+
+    belle: {
+        num: 7500434,
+        species: "Belle",
+        types: ["Steel", "Fairy"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 100,
+            atk: 85,
+            def: 100,
+            spa: 110,
+            spd: 110,
+            spe: 60
+        },
+        abilities: {
+            0: "Greedy Princess"
+        },
+        heightm: 1146.3,
+        weightkg: 519.95,
+        color: "Pink",
+        eggGroups: ["Undiscovered"],
+    },
+
+    maui: {
+        num: 7500435,
+        species: "Māui",
+        types: ["Electric", "Poison"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 75,
+            atk: 110,
+            def: 81,
+            spa: 110,
+            spd: 80,
+            spe: 120
+        },
+        abilities: {
+            0: "Radioactive Surge"
+        },
+        heightm: 90.95,
+        weightkg: 41.25,
+        color: "Black",
+        eggGroups: ["Undiscovered"],
+    },
+
+    // Garzone and Mega 75004346
+
+    shitpost: {
+        num: 7500437,
+        species: "Shitpost",
+        types: ["Dark", "Steel"],
+        genderRatio: {
+            M: 50.0,
+            F: 50.0
+        },
+        baseStats: {
+            hp: 113,
+            atk: 120,
+            def: 81,
+            spa: 98,
+            spd: 80,
+            spe: 70
+        },
+        abilities: {
+            0: "Meme Stealer"
+        },
+        heightm: 5.3,
+        weightkg: 529.8,
+        color: "Green",
+        eggGroups: ["Field", "Grass"],
+    },
+// Cat Bed: 75004348
 };
