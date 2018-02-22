@@ -13062,7 +13062,7 @@ exports.BattlePokedex = {
             0: "Miracle Morph"
         },
     },
-    nintwo: {
+  /*  nintwo: {
         num: 7500423,
         species: "Nintwo",
         types: ["Bug", "Psychic"], //83	100	77	122	80	145	607
@@ -13514,6 +13514,6 @@ exports.BattlePokedex = {
         weightkg: 529.8,
         color: "Green",
         eggGroups: ["Field", "Grass"],
-    },
+    },*/
 // Cat Bed: 75004348
 };
