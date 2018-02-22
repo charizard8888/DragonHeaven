@@ -26,7 +26,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	swampamarmega: {
+    swampamarmega: {
         num: 75001,
         species: "Swampamar-Mega",
         baseSpecies: "Swampamar",
@@ -73,7 +73,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	    gyaroticmega: {
+    gyaroticmega: {
         num: 75002,
         species: "Gyarotic-Mega",
         baseSpecies: "Gyarotic",
@@ -216,7 +216,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	 pangleyemega: {
+    pangleyemega: {
         num: 75007,
         species: "Pangleye-Mega",
         baseSpecies: "Pangleye-",
@@ -263,7 +263,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	garchadosmegax: {
+    garchadosmegax: {
         num: 75008,
         species: "Garchados-Mega-X",
         baseSpecies: "Garchados",
@@ -286,7 +286,7 @@ exports.BattlePokedex = {
         color: "Brown",
         eggGroups: ["Dragon"],
     },
-	garchadosmegay: {
+    garchadosmegay: {
         num: 75008,
         species: "Garchados-Mega-Y",
         baseSpecies: "Garchados",
@@ -357,7 +357,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	gargatrmega: {
+    gargatrmega: {
         num: 750010,
         species: "Gargatr-Mega",
         baseSpecies: "Gargatr",
@@ -452,7 +452,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	cofagreelixmega: {
+    cofagreelixmega: {
         num: 750013,
         species: "Cofagreelix-Mega",
         baseSpecies: "Cofagreelix",
@@ -523,7 +523,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	aggrodos: {
+    aggrodos: {
         num: 758888,
         species: "Aggrodos",
         types: ["Water", "Steel"],
@@ -571,7 +571,7 @@ exports.BattlePokedex = {
         color: "Brown",
         eggGroups: ["Monster"],
     },
-	 aggrodosmegay: {
+    aggrodosmegay: {
         num: 758888,
         species: "Aggrodos-Mega-Y",
         baseSpecies: "Aggrodos",
@@ -642,7 +642,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	archedactylmega: {
+    archedactylmega: {
         num: 750017,
         species: "Archedactyl-Mega",
         baseSpecies: "Archedactyl",
@@ -857,7 +857,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	weasolmega: {
+    weasolmega: {
         num: 750025,
         species: "Weasol-Mega",
         baseSpecies: "Weasol",
@@ -904,7 +904,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	tyranichompmegax: {
+    tyranichompmegax: {
         num: 750026,
         species: "Tyranichomp-Mega-X",
         baseSpecies: "Tyranichomp",
@@ -927,7 +927,7 @@ exports.BattlePokedex = {
         color: "Brown",
         eggGroups: ["Monster"],
     },
-	 tyranichompmegax: {
+    tyranichompmegax: {
         num: 750026,
         species: "Tyranichomp-Mega-X",
         baseSpecies: "Tyranichomp",
@@ -998,7 +998,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	railiemega: {
+    railiemega: {
         num: 750027,
         species: "Railie-Mega",
         baseSpecies: "Railie",
@@ -1045,7 +1045,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	 charatosmegay: {
+    charatosmegay: {
         num: 750028,
         species: "Charatos-Mega-Y",
         baseSpecies: "Charatos",
@@ -1140,7 +1140,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	aggrosaurmegax: {
+    aggrosaurmegax: {
         num: 750029,
         species: "Aggrosaur-Mega-X",
         baseSpecies: "Aggrosaur",
@@ -1211,7 +1211,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	blastinjamega: {
+    blastinjamega: {
         num: 750030,
         species: "Blastinja-Mega",
         baseSpecies: "Blastinja",
@@ -1259,7 +1259,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	skariamega: {
+    skariamega: {
         num: 750031,
         species: "Skaria-Mega",
         baseSpecies: "Skaria",
@@ -1306,7 +1306,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	magmozammega: {
+    magmozammega: {
         num: 750032,
         species: "Magmozam-Mega",
         baseSpecies: "Magmozam",
@@ -1353,7 +1353,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	glakissmega: {
+    glakissmega: {
         num: 750033,
         species: "Glakiss-Mega",
         baseSpecies: "Glakiss",
@@ -1400,7 +1400,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	sharpedosmegax: {
+    sharpedosmegax: {
         num: 750034,
         species: "Sharpedos-Mega-X",
         baseSpecies: "Sharpedos",
@@ -1495,7 +1495,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	pidgetotmega: {
+    pidgetotmega: {
         num: 750036,
         species: "Pidgetot-Mega",
         baseSpecies: "Pidgetot",
@@ -1566,7 +1566,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	klazormega: {
+    klazormega: {
         num: 750038,
         species: "Klazor-Mega",
         baseSpecies: "Klazor",
@@ -1617,7 +1617,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	pidgemiemega: {
+    pidgemiemega: {
         num: 750039,
         species: "Pidgemie-Mega",
         baseSpecies: "Pidgemie",
@@ -1716,7 +1716,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	shaymizardmegax: {
+    shaymizardmegax: {
         num: 750042,
         species: "Shaymizard-Mega-X",
         baseSpecies: "Shaymizard",
@@ -1818,7 +1818,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	hazardmegax: {
+    hazardmegax: {
         num: 750044,
         species: "Hazard-Mega-X",
         baseSpecies: "Hazard",
@@ -1993,7 +1993,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	jellivoirmega: {
+    jellivoirmega: {
         num: 750049,
         species: "Jellivoir-Mega",
         baseSpecies: "Jellivoir",
@@ -2044,7 +2044,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	metabatmega: {
+    metabatmega: {
         num: 750050,
         species: "Metabat-Mega",
         baseSpecies: "Metabat",
@@ -2095,7 +2095,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	dartiosmega: {
+    dartiosmega: {
         num: 750051,
         species: "Dartios-Mega",
         baseSpecies: "Dartios",
@@ -2194,7 +2194,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	banegrossmegax: {
+    banegrossmegax: {
         num: 750054,
         species: "Banegross-Mega-X",
         baseSpecies: "Banegross",
@@ -2272,7 +2272,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	herasirmegah: {
+    herasirmegah: {
         num: 750055,
         species: "Herasir-Mega-H",
         baseSpecies: "Herasir",
@@ -2350,7 +2350,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	mismagivoirmega: {
+    mismagivoirmega: {
         num: 750056,
         species: "Mismagivoir-Mega",
         baseSpecies: "Mismagivoir",
@@ -2425,7 +2425,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	manamega: {
+    manamega: {
         num: 750058,
         species: "Mana-Mega",
         baseSpecies: "Mana",
@@ -2500,7 +2500,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	swankmega: {
+    swankmega: {
         num: 750060,
         species: "Swankz-Mega",
         baseSpecies: "Swank",
@@ -2575,7 +2575,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	sablemimezmega: {
+    sablemimezmega: {
         num: 750062,
         species: "Sablemimez-Mega",
         baseSpecies: "Sablemimez",
@@ -2650,7 +2650,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	houndlionmega: {
+    houndlionmega: {
         num: 750064,
         species: "Houndlion-Mega",
         baseSpecies: "Houndlion",
@@ -2701,8 +2701,8 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-    
-	loppeyemegax: {
+
+    loppeyemegax: {
         num: 750065,
         species: "Loppeye-Mega-X",
         baseSpecies: "Loppeye",
@@ -2756,7 +2756,7 @@ exports.BattlePokedex = {
         color: "Brown",
         eggGroups: ["Human-Like"],
     },
-	bastioking: {
+    bastioking: {
         num: 750066,
         species: "Bastioking",
         types: ["Water", "Steel"],
@@ -2828,7 +2828,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	manatarmega: {
+    manatarmega: {
         num: 750068,
         species: "Manatar-Mega",
         baseSpecies: "Manatar",
@@ -2879,7 +2879,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	aurortoisemega: {
+    aurortoisemega: {
         num: 750069,
         species: "Aurortoise-Mega",
         baseSpecies: "Aurortoise",
@@ -2930,7 +2930,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	metsirmegam: {
+    metsirmegam: {
         num: 750070,
         species: "Mestir-Mega-M",
         baseSpecies: "Metsir",
@@ -3032,7 +3032,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	houdinimega: {
+    houdinimega: {
         num: 750072,
         species: "Houdini-Mega",
         baseSpecies: "Houdini",
@@ -3083,7 +3083,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	shotmega: {
+    shotmega: {
         num: 750073,
         species: "Shot-Mega",
         baseSpecies: "Shot",
@@ -3158,7 +3158,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	mampharosmegam: {
+    mampharosmegam: {
         num: 750075,
         species: "Mampharos-Mega-M",
         baseSpecies: "Mampharos",
@@ -3260,7 +3260,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	entariamega: {
+    entariamega: {
         num: 750077,
         species: "Entaria-Mega",
         baseSpecies: "Entaria",
@@ -3287,7 +3287,7 @@ exports.BattlePokedex = {
         color: "Red",
         eggGroups: ["Undiscovered"],
     },
-	pidgetran: {
+    pidgetran: {
         num: 758889,
         species: "Pidgetran",
         types: ["Fire", "Flying"],
@@ -3363,7 +3363,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	blasterainmega: {
+    blasterainmega: {
         num: 750078,
         species: "Blasterain-Mega",
         baseSpecies: "Blasterain",
@@ -6755,7 +6755,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	crematoriamegax: {
+    crematoriamegax: {
         num: 7500219,
         species: "Crematoria-Mega X",
         baseSpecies: "Crematoria",
@@ -6882,7 +6882,7 @@ exports.BattlePokedex = {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-	slampamega: {
+    slampamega: {
         num: 7500222,
         species: "Slampa-Mega",
         baseSpecies: "Slampa",
@@ -6984,7 +6984,7 @@ exports.BattlePokedex = {
     pewearalola: {
         num: 7500226,
         species: "Perwear-Alola",
-        types: ["Fighting", "Dark"], 
+        types: ["Fighting", "Dark"],
         baseStats: {
             hp: 102,
             atk: 102,
@@ -6993,11 +6993,13 @@ exports.BattlePokedex = {
             spd: 72,
             spe: 97
         },
-         abilities: {0: "Fluffy Fur"},
-        
+        abilities: {
+            0: "Fluffy Fur"
+        },
+
     },
-    
-     mudape: {
+
+    mudape: {
         num: 7500227,
         species: "Mudape",
         types: ["Fighting", "Ground"],
@@ -7009,11 +7011,13 @@ exports.BattlePokedex = {
             spd: 87,
             spe: 75
         },
-         abilities: {0: "Champion's Spirit"},
-        
+        abilities: {
+            0: "Champion's Spirit"
+        },
+
     },
-     
-     kira: {
+
+    kira: {
         num: 7500228,
         species: "Kira",
         types: ["Dragon", "Steel"],
@@ -7025,11 +7029,13 @@ exports.BattlePokedex = {
             spd: 65,
             spe: 101
         },
-         abilities: {0: "Beast's Focus"},
-        
+        abilities: {
+            0: "Beast's Focus"
+        },
+
     },
-    
-     exelegoalola: {
+
+    exelegoalola: {
         num: 7500229,
         species: "Exelego-Alola",
         types: ["Rock", "Dragon"],
@@ -7041,11 +7047,13 @@ exports.BattlePokedex = {
             spd: 113,
             spe: 95
         },
-         abilities: {0: "Frisky Beast"},
-        
+        abilities: {
+            0: "Frisky Beast"
+        },
+
     },
-    
-     joltarina : {
+
+    joltarina: {
         num: 7500230,
         species: "Joltarina",
         types: ["Water", "Electric"],
@@ -7057,11 +7065,13 @@ exports.BattlePokedex = {
             spd: 115,
             spe: 105
         },
-         abilities: {0: "Volt Torrent"},
-        
+        abilities: {
+            0: "Volt Torrent"
+        },
+
     },
-    
-     dhelchamp: {
+
+    dhelchamp: {
         num: 7500231,
         species: "Dhelchamp",
         types: ["Grass", "Fighting"],
@@ -7073,11 +7083,13 @@ exports.BattlePokedex = {
             spd: 100,
             spe: 47
         },
-         abilities: {0: "Ancient Mariner"},
-        
+        abilities: {
+            0: "Ancient Mariner"
+        },
+
     },
-    
-     mimian: {
+
+    mimian: {
         num: 7500232,
         species: "Mimian",
         types: ["Psychic", "Fighting"],
@@ -7089,11 +7101,13 @@ exports.BattlePokedex = {
             spd: 95,
             spe: 110
         },
-         abilities: {0: "Monkey See Monkey Do"},
-        
+        abilities: {
+            0: "Monkey See Monkey Do"
+        },
+
     },
-    
-     aerodako: {
+
+    aerodako: {
         num: 7500233,
         species: "Aero Dako",
         types: ["Rock", "Electric"],
@@ -7105,17 +7119,19 @@ exports.BattlePokedex = {
             spd: 75,
             spe: 150
         },
-         abilities: {0: "Rocky Surge"},
-        
-    }, 
-    
+        abilities: {
+            0: "Rocky Surge"
+        },
+
+    },
+
     aerodakomega: {
         num: 7500233,
         species: "Aero Dako-Mega",
         baseSpecies: "Aero Dako",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Rock", "Electric"], 
+        types: ["Rock", "Electric"],
         baseStats: {
             hp: 75,
             atk: 160,
@@ -7124,14 +7140,16 @@ exports.BattlePokedex = {
             spd: 95,
             spe: 170
         },
-        abilities: {0: "Tough Claws"},
-        
+        abilities: {
+            0: "Tough Claws"
+        },
+
     },
-    
-     tapujojo: {
+
+    tapujojo: {
         num: 7500234,
         species: "Tapu Jojo",
-        types: ["Ice", "Electric"], 
+        types: ["Ice", "Electric"],
         baseStats: {
             hp: 67,
             atk: 82,
@@ -7140,14 +7158,16 @@ exports.BattlePokedex = {
             spd: 85,
             spe: 132
         },
-         abilities: {0: "Supercharge Surge"},
-        
+        abilities: {
+            0: "Supercharge Surge"
+        },
+
     },
-    
-     magicarticgear: {
+
+    magicarticgear: {
         num: 7500235,
         species: "Magic Artic Gear",
-        types: ["Steel", "Flying"], 
+        types: ["Steel", "Flying"],
         baseStats: {
             hp: 105,
             atk: 90,
@@ -7156,11 +7176,13 @@ exports.BattlePokedex = {
             spd: 120,
             spe: 75
         },
-         abilities: {0: "Broken Heart"},
-        
+        abilities: {
+            0: "Broken Heart"
+        },
+
     },
-    
-     necroltres: {
+
+    necroltres: {
         num: 7500236,
         species: "Necroltres",
         types: ["Psychic", "Fire"],
@@ -7172,14 +7194,16 @@ exports.BattlePokedex = {
             spd: 95,
             spe: 91
         },
-         abilities: {0: "Diamond Armor"},
-        
+        abilities: {
+            0: "Diamond Armor"
+        },
+
     },
-    
-     kartanbull: {
+
+    kartanbull: {
         num: 7500237,
         species: "Kartanbull",
-        types: ["Steel", "Fairy"], 
+        types: ["Steel", "Fairy"],
         baseStats: {
             hp: 85,
             atk: 151,
@@ -7188,14 +7212,16 @@ exports.BattlePokedex = {
             spd: 46,
             spe: 97
         },
-         abilities: {0: "Subdue"},
-        
+        abilities: {
+            0: "Subdue"
+        },
+
     },
-    
-     venustoise: {
+
+    venustoise: {
         num: 7500238,
         species: "Venustoise",
-        types: ["Water", "Poison"], 
+        types: ["Water", "Poison"],
         baseStats: {
             hp: 89,
             atk: 92,
@@ -7204,11 +7230,13 @@ exports.BattlePokedex = {
             spd: 112,
             spe: 89
         },
-         abilities: {0: "Sun Bath"},
-        
+        abilities: {
+            0: "Sun Bath"
+        },
+
     },
-    
-     venustoisemegag: {
+
+    venustoisemegag: {
         num: 7500238,
         species: "Venustoise-Mega G",
         baseSpecies: "Venustoise",
@@ -7223,11 +7251,13 @@ exports.BattlePokedex = {
             spd: 132,
             spe: 89
         },
-        abilities: {0: "Thick Fat"},
-        
+        abilities: {
+            0: "Thick Fat"
+        },
+
     },
-    
-     venustoisemegab: {
+
+    venustoisemegab: {
         num: 7500238,
         species: "Venustoise-Mega B",
         baseSpecies: "Venustoise",
@@ -7242,11 +7272,13 @@ exports.BattlePokedex = {
             spd: 122,
             spe: 89
         },
-        abilities: {0: "Mega Launcher"},
-        
+        abilities: {
+            0: "Mega Launcher"
+        },
+
     },
-    
-     kingkek: {
+
+    kingkek: {
         num: 7500239,
         species: "King Kek",
         types: ["Normal"],
@@ -7258,14 +7290,16 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 80
         },
-         abilities: {0: "Lazy Camo"},
-        
+        abilities: {
+            0: "Lazy Camo"
+        },
+
     },
-    
-     sigillow: {
+
+    sigillow: {
         num: 7500240,
         species: "Sigillow",
-        types: ["Normal", "Psychic"], 
+        types: ["Normal", "Psychic"],
         baseStats: {
             hp: 76,
             atk: 81,
@@ -7274,13 +7308,15 @@ exports.BattlePokedex = {
             spd: 75,
             spe: 121
         },
-         abilities: {0: "Overwhelming"},
-        
+        abilities: {
+            0: "Overwhelming"
+        },
+
     },
-	    covally: {
+    covally: {
         num: 7500241,
         species: "Covally",
-        types: ["Normal", "Fairy"], 
+        types: ["Normal", "Fairy"],
         baseStats: {
             hp: 93,
             atk: 73,
@@ -7289,17 +7325,19 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 100
         },
-         abilities: {0: "Triage System"},
-        
+        abilities: {
+            0: "Triage System"
+        },
+
     },
-    
-     covallyfire: {
+
+    covallyfire: {
         num: 7500241,
         species: "Covally-Fire",
         baseSpecies: "Covally",
         forme: "Fire",
         formeLetter: "F",
-        types: ["Fire", "Fairy"], 
+        types: ["Fire", "Fairy"],
         baseStats: {
             hp: 93,
             atk: 73,
@@ -7308,17 +7346,19 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 100
         },
-        abilities: {0: "Triage System"},
-        
+        abilities: {
+            0: "Triage System"
+        },
+
     },
-    
-      covallywater: {
+
+    covallywater: {
         num: 7500241,
         species: "Covally-Water",
         baseSpecies: "Covally",
         forme: "Water",
         formeLetter: "W",
-        types: ["Water", "Fairy"], 
+        types: ["Water", "Fairy"],
         baseStats: {
             hp: 93,
             atk: 73,
@@ -7327,17 +7367,19 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 100
         },
-        abilities: {0: "Triage System"},
-        
+        abilities: {
+            0: "Triage System"
+        },
+
     },
-    
-      covallyelectric: {
+
+    covallyelectric: {
         num: 7500241,
         species: "Covally-Electric",
         baseSpecies: "Covally",
         forme: "Electric",
         formeLetter: "E",
-        types: ["Electric", "Fairy"], 
+        types: ["Electric", "Fairy"],
         baseStats: {
             hp: 93,
             atk: 73,
@@ -7346,17 +7388,19 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 100
         },
-        abilities: {0: "Triage System"},
-        
+        abilities: {
+            0: "Triage System"
+        },
+
     },
-    
+
     covallygrass: {
         num: 7500241,
         species: "Covally-Grass",
         baseSpecies: "Covally",
         forme: "Grass",
         formeLetter: "G",
-        types: ["Grass", "Fairy"], 
+        types: ["Grass", "Fairy"],
         baseStats: {
             hp: 93,
             atk: 73,
@@ -7365,17 +7409,19 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 100
         },
-        abilities: {0: "Triage System"},
-        
+        abilities: {
+            0: "Triage System"
+        },
+
     },
-    
+
     covallyice: {
         num: 7500241,
         species: "Covally-Ice",
         baseSpecies: "Covally",
         forme: "Ice",
         formeLetter: "I",
-        types: ["Ice", "Fairy"], 
+        types: ["Ice", "Fairy"],
         baseStats: {
             hp: 93,
             atk: 73,
@@ -7384,17 +7430,19 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 100
         },
-        abilities: {0: "Triage System"},
-        
+        abilities: {
+            0: "Triage System"
+        },
+
     },
-    
+
     covallyfighting: {
         num: 7500241,
         species: "Covally-Fighting",
         baseSpecies: "Covally",
         forme: "Fighting",
         formeLetter: "H",
-        types: ["Fighting", "Fairy"], 
+        types: ["Fighting", "Fairy"],
         baseStats: {
             hp: 93,
             atk: 73,
@@ -7403,17 +7451,19 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 100
         },
-        abilities: {0: "Triage System"},
-        
+        abilities: {
+            0: "Triage System"
+        },
+
     },
-    
+
     covallypoison: {
         num: 7500241,
         species: "Covally-Poison",
         baseSpecies: "Covally",
         forme: "Poison",
         formeLetter: "P",
-        types: ["Poison", "Fairy"], 
+        types: ["Poison", "Fairy"],
         baseStats: {
             hp: 93,
             atk: 73,
@@ -7422,17 +7472,19 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 100
         },
-        abilities: {0: "Triage System"},
-        
+        abilities: {
+            0: "Triage System"
+        },
+
     },
-            
-      covallyground: {
+
+    covallyground: {
         num: 7500241,
         species: "Covally-Ground",
         baseSpecies: "Covally",
         forme: "Ground",
         formeLetter: "Q",
-        types: ["Ground", "Fairy"], 
+        types: ["Ground", "Fairy"],
         baseStats: {
             hp: 93,
             atk: 73,
@@ -7441,17 +7493,19 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 100
         },
-        abilities: {0: "Triage System"},
-        
+        abilities: {
+            0: "Triage System"
+        },
+
     },
-    
+
     covallyflying: {
         num: 7500241,
         species: "Covally-Fire",
         baseSpecies: "Covally",
         forme: "Flying",
         formeLetter: "L",
-        types: ["Flying", "Fairy"], 
+        types: ["Flying", "Fairy"],
         baseStats: {
             hp: 93,
             atk: 73,
@@ -7460,17 +7514,19 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 100
         },
-        abilities: {0: "Triage System"},
-        
+        abilities: {
+            0: "Triage System"
+        },
+
     },
-    
+
     covallypsychic: {
         num: 7500241,
         species: "Covally-Psychic",
         baseSpecies: "Covally",
         forme: "Psychic",
         formeLetter: "Y",
-        types: ["Fire", "Fairy"], 
+        types: ["Fire", "Fairy"],
         baseStats: {
             hp: 93,
             atk: 73,
@@ -7479,18 +7535,20 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 100
         },
-        abilities: {0: "Triage System"},
-        
+        abilities: {
+            0: "Triage System"
+        },
+
     },
-    
-    
-     covallybug: {
+
+
+    covallybug: {
         num: 7500241,
         species: "Covally-Bug",
         baseSpecies: "Covally",
         forme: "Bug",
         formeLetter: "B",
-        types: ["Fire", "Fairy"], 
+        types: ["Fire", "Fairy"],
         baseStats: {
             hp: 93,
             atk: 73,
@@ -7499,17 +7557,19 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 100
         },
-        abilities: {0: "Triage System"},
-        
+        abilities: {
+            0: "Triage System"
+        },
+
     },
-    
+
     covallyrock: {
         num: 7500241,
         species: "Covally-Rock",
         baseSpecies: "Covally",
         forme: "Rock",
         formeLetter: "R",
-        types: ["Rock", "Fairy"], 
+        types: ["Rock", "Fairy"],
         baseStats: {
             hp: 93,
             atk: 73,
@@ -7518,17 +7578,19 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 100
         },
-        abilities: {0: "Triage System"},
-        
+        abilities: {
+            0: "Triage System"
+        },
+
     },
-    
+
     covallyghost: {
         num: 7500241,
         species: "Covally-Ghost",
         baseSpecies: "Covally",
         forme: "Ghost",
         formeLetter: "O",
-        types: ["Ghost", "Fairy"], 
+        types: ["Ghost", "Fairy"],
         baseStats: {
             hp: 93,
             atk: 73,
@@ -7537,17 +7599,19 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 100
         },
-        abilities: {0: "Triage System"},
-        
+        abilities: {
+            0: "Triage System"
+        },
+
     },
-    
+
     covallydragon: {
         num: 7500241,
         species: "Covally-Dragon",
         baseSpecies: "Covally",
         forme: "Dragon",
         formeLetter: "D",
-        types: ["Dragon", "Fairy"], 
+        types: ["Dragon", "Fairy"],
         baseStats: {
             hp: 93,
             atk: 73,
@@ -7556,17 +7620,19 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 100
         },
-        abilities: {0: "Triage System"},
-        
+        abilities: {
+            0: "Triage System"
+        },
+
     },
-    
+
     covallydark: {
         num: 7500241,
         species: "Covally-Dark",
         baseSpecies: "Covally",
         forme: "Dark",
         formeLetter: "K",
-        types: ["Dark", "Fairy"], 
+        types: ["Dark", "Fairy"],
         baseStats: {
             hp: 93,
             atk: 73,
@@ -7575,17 +7641,19 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 100
         },
-        abilities: {0: "Triage System"},
-        
+        abilities: {
+            0: "Triage System"
+        },
+
     },
-    
+
     covallysteel: {
         num: 7500241,
         species: "Covally-Steel",
         baseSpecies: "Covally",
         forme: "Steel",
         formeLetter: "S",
-        types: ["Steel", "Fairy"], 
+        types: ["Steel", "Fairy"],
         baseStats: {
             hp: 93,
             atk: 73,
@@ -7594,17 +7662,19 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 100
         },
-        abilities: {0: "Triage System"},
-        
+        abilities: {
+            0: "Triage System"
+        },
+
     },
-    
+
     covallyfairy: {
         num: 7500241,
         species: "Covally-Fairy",
         baseSpecies: "Covally",
         forme: "Fairy",
         formeLetter: "A",
-        types: ["Fairy"], 
+        types: ["Fairy"],
         baseStats: {
             hp: 93,
             atk: 73,
@@ -7613,14 +7683,16 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 100
         },
-        abilities: {0: "Triage System"},
-        
+        abilities: {
+            0: "Triage System"
+        },
+
     },
-    
-     toxamola: {
+
+    toxamola: {
         num: 7500242,
         species: "Toxamola",
-        types: ["Water", "Poison"], 
+        types: ["Water", "Poison"],
         baseStats: {
             hp: 123,
             atk: 84,
@@ -7629,13 +7701,15 @@ exports.BattlePokedex = {
             spd: 109,
             spe: 65
         },
-         abilities: {0: "Regenerator"},
-        
+        abilities: {
+            0: "Regenerator"
+        },
+
     },
-	   melon: {
+    melon: {
         num: 7500243,
         species: "Melon",
-        types: ["Fairy", "Paychic"], 
+        types: ["Fairy", "Paychic"],
         baseStats: {
             hp: 97,
             atk: 71,
@@ -7644,16 +7718,18 @@ exports.BattlePokedex = {
             spd: 149,
             spe: 75
         },
-         abilities: {0: "Pixie Grace"},
-      },
-    
+        abilities: {
+            0: "Pixie Grace"
+        },
+    },
+
     melonpirouette: {
         num: 7500243,
         species: "Melon-Pirouette",
         baseSpecies: "Pokemon",
         forme: "Pirouette",
         formeLetter: "P",
-        types: ["Fairy", "Fighting"], 
+        types: ["Fairy", "Fighting"],
         baseStats: {
             hp: 97,
             atk: 139,
@@ -7662,13 +7738,15 @@ exports.BattlePokedex = {
             spd: 71,
             spe: 149
         },
-        abilities: {0: "Pixie Grace"},
+        abilities: {
+            0: "Pixie Grace"
         },
-    
-     kyutomwhite: {
+    },
+
+    kyutomwhite: {
         num: 7500244,
         species: "Kyutom-White",
-        types: ["Ice", "Electric"], 
+        types: ["Ice", "Electric"],
         baseStats: {
             hp: 87,
             atk: 95,
@@ -7677,13 +7755,15 @@ exports.BattlePokedex = {
             spd: 93,
             spe: 108
         },
-         abilities: {0: "Turborise"},
+        abilities: {
+            0: "Turborise"
         },
-    
-     xernemite: {
+    },
+
+    xernemite: {
         num: 7500245,
         species: "Xernemite",
-        types: ["Steel", "Fairy"], 
+        types: ["Steel", "Fairy"],
         baseStats: {
             hp: 90,
             atk: 83,
@@ -7692,10 +7772,12 @@ exports.BattlePokedex = {
             spd: 86,
             spe: 82
         },
-         abilities: {0: "Pixie Lure"},
-       },
-    
-     cherron: {
+        abilities: {
+            0: "Pixie Lure"
+        },
+    },
+
+    cherron: {
         num: 7500246,
         species: "Cherron",
         types: ["Grass", "Ground"],
@@ -7707,16 +7789,18 @@ exports.BattlePokedex = {
             spd: 84,
             spe: 87
         },
-         abilities: {0: "Flower Power"},
+        abilities: {
+            0: "Flower Power"
         },
-        
-        cherronprimal: {
+    },
+
+    cherronprimal: {
         num: 7500246,
         species: "Cherron-Primal",
         baseSpecies: "Cherron",
         forme: "Primal",
         formeLetter: "P",
-        types: ["Grass", "Fire"], 
+        types: ["Grass", "Fire"],
         baseStats: {
             hp: 105,
             atk: 155,
@@ -7725,13 +7809,15 @@ exports.BattlePokedex = {
             spd: 84,
             spe: 87
         },
-        abilities: {0: "A1"},
+        abilities: {
+            0: "A1"
+        },
     },
-    
-     dialcatty: {
+
+    dialcatty: {
         num: 7500247,
         species: "Dialcatty",
-        types: ["Steel", "Normal"], 
+        types: ["Steel", "Normal"],
         baseStats: {
             hp: 85,
             atk: 107,
@@ -7740,13 +7826,15 @@ exports.BattlePokedex = {
             spd: 77,
             spe: 110
         },
-         abilities: {0: "Normalized Enemy"},
+        abilities: {
+            0: "Normalized Enemy"
         },
-    
-     lunatic: {
+    },
+
+    lunatic: {
         num: 7500248,
         species: "Lunatic",
-        types: ["Fairy", "Ghost"], 
+        types: ["Fairy", "Ghost"],
         baseStats: {
             hp: 118,
             atk: 79,
@@ -7755,10 +7843,12 @@ exports.BattlePokedex = {
             spd: 110,
             spe: 63
         },
-         abilities: {0: "Fungal Shield"},
+        abilities: {
+            0: "Fungal Shield"
         },
-    
-     granho: {
+    },
+
+    granho: {
         num: 7500249,
         species: "Gran-Ho",
         types: ["Fairy", "Fire"],
@@ -7770,13 +7860,15 @@ exports.BattlePokedex = {
             spd: 110,
             spe: 69
         },
-         abilities: {0: "Pressurate"},
+        abilities: {
+            0: "Pressurate"
         },
-    
-     lies: {
+    },
+
+    lies: {
         num: 7500250,
         species: "Lies",
-        types: ["Fairy", "Dark"], 
+        types: ["Fairy", "Dark"],
         baseStats: {
             hp: 115,
             atk: 109,
@@ -7785,10 +7877,12 @@ exports.BattlePokedex = {
             spd: 74,
             spe: 122
         },
-         abilities: {0: "Mana Potion"},
+        abilities: {
+            0: "Mana Potion"
         },
-    
-     viva: {
+    },
+
+    viva: {
         num: 7500251,
         species: "Viva",
         types: ["Steel", "Flying"],
@@ -7800,13 +7894,15 @@ exports.BattlePokedex = {
             spd: 90,
             spe: 91
         },
-         abilities: {0: "Piercing Gaze"},
+        abilities: {
+            0: "Piercing Gaze"
         },
-    
-     girutukumuka: {
+    },
+
+    girutukumuka: {
         num: 7500252,
         species: "Girutukumuka",
-        types: ["Water", "Ghost"], 
+        types: ["Water", "Ghost"],
         baseStats: {
             hp: 122,
             atk: 90,
@@ -7815,12 +7911,14 @@ exports.BattlePokedex = {
             spd: 130,
             spe: 47
         },
-         abilities: {0: "Pressured Innards"},
+        abilities: {
+            0: "Pressured Innards"
         },
-	     omneus: {
+    },
+    omneus: {
         num: 7500253,
         species: "Omneus",
-        types: ["Water", "Normal"], 
+        types: ["Water", "Normal"],
         baseStats: {
             hp: 77,
             atk: 80,
@@ -7829,10 +7927,12 @@ exports.BattlePokedex = {
             spd: 87,
             spe: 97
         },
-         abilities: {0: "Spiral Power"},
+        abilities: {
+            0: "Spiral Power"
         },
-        
-        omneusfire: {
+    },
+
+    omneusfire: {
         num: 7500253,
         species: "Omneus-Fire",
         baseSpecies: "Omneus",
@@ -7847,10 +7947,12 @@ exports.BattlePokedex = {
             spd: 87,
             spe: 97
         },
-        abilities: {0: "Spiral Power"},
+        abilities: {
+            0: "Spiral Power"
+        },
     },
-    
-        omneuswater: {
+
+    omneuswater: {
         num: 7500253,
         species: "Omneus-Water",
         baseSpecies: "Omneus",
@@ -7865,10 +7967,12 @@ exports.BattlePokedex = {
             spd: 87,
             spe: 97
         },
-        abilities: {0: "Spiral Power"},
+        abilities: {
+            0: "Spiral Power"
+        },
     },
-        
-        omneuselectric: {
+
+    omneuselectric: {
         num: 7500253,
         species: "Omneus-Electric",
         baseSpecies: "Omneus",
@@ -7883,10 +7987,12 @@ exports.BattlePokedex = {
             spd: 87,
             spe: 97
         },
-        abilities: {0: "Spiral Power"},
+        abilities: {
+            0: "Spiral Power"
+        },
     },
-        
-        omneusgrass: {
+
+    omneusgrass: {
         num: 7500253,
         species: "Omneus-Grass",
         baseSpecies: "Omneus",
@@ -7901,10 +8007,12 @@ exports.BattlePokedex = {
             spd: 87,
             spe: 97
         },
-        abilities: {0: "Spiral Power"},
+        abilities: {
+            0: "Spiral Power"
+        },
     },
-        
-        omneusice: {
+
+    omneusice: {
         num: 7500253,
         species: "Omneus-Ice",
         baseSpecies: "Omneus",
@@ -7919,10 +8027,12 @@ exports.BattlePokedex = {
             spd: 87,
             spe: 97
         },
-        abilities: {0: "Spiral Power"},
+        abilities: {
+            0: "Spiral Power"
+        },
     },
-        
-        omneusfighting: {
+
+    omneusfighting: {
         num: 7500253,
         species: "Omneus-Fighting",
         baseSpecies: "Omneus",
@@ -7937,10 +8047,12 @@ exports.BattlePokedex = {
             spd: 87,
             spe: 97
         },
-        abilities: {0: "Spiral Power"},
+        abilities: {
+            0: "Spiral Power"
+        },
     },
-        
-        omneuspoison: {
+
+    omneuspoison: {
         num: 7500253,
         species: "Omneus-Poison",
         baseSpecies: "Omneus",
@@ -7955,10 +8067,12 @@ exports.BattlePokedex = {
             spd: 87,
             spe: 97
         },
-        abilities: {0: "Spiral Power"},
+        abilities: {
+            0: "Spiral Power"
+        },
     },
-        
-        omneusground: {
+
+    omneusground: {
         num: 7500253,
         species: "Omneus-Ground",
         baseSpecies: "Omneus",
@@ -7973,10 +8087,12 @@ exports.BattlePokedex = {
             spd: 87,
             spe: 97
         },
-        abilities: {0: "Spiral Power"},
+        abilities: {
+            0: "Spiral Power"
+        },
     },
-        
-        omneusflying: {
+
+    omneusflying: {
         num: 7500253,
         species: "Omneus-Flying",
         baseSpecies: "Omneus",
@@ -7991,10 +8107,12 @@ exports.BattlePokedex = {
             spd: 87,
             spe: 97
         },
-        abilities: {0: "Spiral Power"},
+        abilities: {
+            0: "Spiral Power"
+        },
     },
-        
-        omneuspsychic: {
+
+    omneuspsychic: {
         num: 7500253,
         species: "Omneus-Psychic",
         baseSpecies: "Omneus",
@@ -8009,10 +8127,12 @@ exports.BattlePokedex = {
             spd: 87,
             spe: 97
         },
-        abilities: {0: "Spiral Power"},
+        abilities: {
+            0: "Spiral Power"
+        },
     },
-        
-        omneusbug: {
+
+    omneusbug: {
         num: 7500253,
         species: "Omneus-Bug",
         baseSpecies: "Omneus",
@@ -8027,10 +8147,12 @@ exports.BattlePokedex = {
             spd: 87,
             spe: 97
         },
-        abilities: {0: "Spiral Power"},
+        abilities: {
+            0: "Spiral Power"
+        },
     },
-        
-        omneusdragon: {
+
+    omneusdragon: {
         num: 7500253,
         species: "Omneus-Dragon",
         baseSpecies: "Omneus",
@@ -8045,10 +8167,12 @@ exports.BattlePokedex = {
             spd: 87,
             spe: 97
         },
-        abilities: {0: "Spiral Power"},
+        abilities: {
+            0: "Spiral Power"
+        },
     },
-        
-        omneusdark: {
+
+    omneusdark: {
         num: 7500253,
         species: "Omneus-Dark",
         baseSpecies: "Omneus",
@@ -8063,10 +8187,12 @@ exports.BattlePokedex = {
             spd: 87,
             spe: 97
         },
-        abilities: {0: "Spiral Power"},
+        abilities: {
+            0: "Spiral Power"
+        },
     },
-        
-        omneussteel: {
+
+    omneussteel: {
         num: 7500253,
         species: "Omneus-Steel",
         baseSpecies: "Omneus",
@@ -8081,10 +8207,12 @@ exports.BattlePokedex = {
             spd: 87,
             spe: 97
         },
-        abilities: {0: "Spiral Power"},
+        abilities: {
+            0: "Spiral Power"
+        },
     },
-        
-        omneusfairy: {
+
+    omneusfairy: {
         num: 7500253,
         species: "Omneus-Fairy",
         baseSpecies: "Omneus",
@@ -8099,13 +8227,15 @@ exports.BattlePokedex = {
             spd: 87,
             spe: 97
         },
-        abilities: {0: "Spiral Power"},
+        abilities: {
+            0: "Spiral Power"
+        },
     },
-    
-     pheralie: {
+
+    pheralie: {
         num: 7500254,
         species: "Pheralie",
-        types: ["Ice", "Fighting"], 
+        types: ["Ice", "Fighting"],
         baseStats: {
             hp: 75,
             atk: 123,
@@ -8114,16 +8244,18 @@ exports.BattlePokedex = {
             spd: 58,
             spe: 125
         },
-         abilities: {0: "Extremist"},
-      },
-      
-      pheraliemega: {
+        abilities: {
+            0: "Extremist"
+        },
+    },
+
+    pheraliemega: {
         num: 7500254,
         species: "Pheralie-Mega",
         baseSpecies: "Pheralie",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Ice", "Fighting"], 
+        types: ["Ice", "Fighting"],
         baseStats: {
             hp: 75,
             atk: 163,
@@ -8132,13 +8264,15 @@ exports.BattlePokedex = {
             spd: 58,
             spe: 145
         },
-        abilities: {0: "Refrigerate"},
+        abilities: {
+            0: "Refrigerate"
+        },
     },
-    
-     tsarakion: {
+
+    tsarakion: {
         num: 7500255,
         species: "Tsarakion",
-        types: ["Grass", "Fighting"], 
+        types: ["Grass", "Fighting"],
         baseStats: {
             hp: 82,
             atk: 140,
@@ -8147,13 +8281,15 @@ exports.BattlePokedex = {
             spd: 99,
             spe: 110
         },
-         abilities: {0: "Queen's Command"},
+        abilities: {
+            0: "Queen's Command"
+        },
     },
-    
-     scipod: {
+
+    scipod: {
         num: 7500256,
         species: "Scipod",
-        types: ["Steel", "Bug"], 
+        types: ["Steel", "Bug"],
         baseStats: {
             hp: 82,
             atk: 137,
@@ -8162,16 +8298,18 @@ exports.BattlePokedex = {
             spd: 95,
             spe: 62
         },
-         abilities: {0: "Guerilla Warfare"},
-       },
-       
-       scipodmega: {
+        abilities: {
+            0: "Guerilla Warfare"
+        },
+    },
+
+    scipodmega: {
         num: 7500256,
         species: "Scipod-Mega",
         baseSpecies: "Scipod",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Steel", "Bug"], 
+        types: ["Steel", "Bug"],
         baseStats: {
             hp: 82,
             atk: 157,
@@ -8180,13 +8318,15 @@ exports.BattlePokedex = {
             spd: 115,
             spe: 72
         },
-        abilities: {0: "Technician"},
+        abilities: {
+            0: "Technician"
+        },
     },
-    
-     necrozmerupt: {
+
+    necrozmerupt: {
         num: 7500257,
         species: "Necrozmerupt",
-        types: ["Fire", "Psychic"], 
+        types: ["Fire", "Psychic"],
         baseStats: {
             hp: 103,
             atk: 103,
@@ -8195,10 +8335,12 @@ exports.BattlePokedex = {
             spd: 82,
             spe: 59
         },
-         abilities: {0: "Soulforged Diamond"},
-       },
-       
-       necrozmeruptmega: {
+        abilities: {
+            0: "Soulforged Diamond"
+        },
+    },
+
+    necrozmeruptmega: {
         num: 7500257,
         species: "Necrozmerupt-Mega",
         baseSpecies: "Necrozmerupt",
@@ -8213,13 +8355,15 @@ exports.BattlePokedex = {
             spd: 112,
             spe: 39
         },
-        abilities: {0: "Sheer Force"},
+        abilities: {
+            0: "Sheer Force"
+        },
     },
-    
-     banekyu: {
+
+    banekyu: {
         num: 7500258,
         species: "Banekyu",
-        types: ["Ghost", "Fairy"], 
+        types: ["Ghost", "Fairy"],
         baseStats: {
             hp: 69,
             atk: 112,
@@ -8228,10 +8372,12 @@ exports.BattlePokedex = {
             spd: 94,
             spe: 90
         },
-         abilities: {0: "Cursed Cloak"},
-       },
-       
-       banekyumega: {
+        abilities: {
+            0: "Cursed Cloak"
+        },
+    },
+
+    banekyumega: {
         num: 7500258,
         species: "Banekyu-Mega",
         baseSpecies: "Banekyu",
@@ -8246,13 +8392,15 @@ exports.BattlePokedex = {
             spd: 114,
             spe: 100
         },
-        abilities: {0: "Prankster"},
+        abilities: {
+            0: "Prankster"
+        },
     },
-    
-     ninxys: {
+
+    ninxys: {
         num: 7500259,
         species: "Ninxys",
-        types: ["Psychic", "Bug"], 
+        types: ["Psychic", "Bug"],
         baseStats: {
             hp: 56,
             atk: 93,
@@ -8261,13 +8409,15 @@ exports.BattlePokedex = {
             spd: 70,
             spe: 190
         },
-         abilities: {0: "Light Speed"},
-      },
-    
-     heratana: {
+        abilities: {
+            0: "Light Speed"
+        },
+    },
+
+    heratana: {
         num: 7500260,
         species: "Heratana",
-        types: ["Bug", "Steel"], 
+        types: ["Bug", "Steel"],
         baseStats: {
             hp: 70,
             atk: 173,
@@ -8276,16 +8426,18 @@ exports.BattlePokedex = {
             spd: 83,
             spe: 97
         },
-         abilities: {0: "Gutsy Beast"},
-      },
-      
-      heratanamega: {
+        abilities: {
+            0: "Gutsy Beast"
+        },
+    },
+
+    heratanamega: {
         num: 7500260,
         species: "Heratana-Mega",
         baseSpecies: "Heratana",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Bug", "Steel"], 
+        types: ["Bug", "Steel"],
         baseStats: {
             hp: 70,
             atk: 233,
@@ -8294,10 +8446,12 @@ exports.BattlePokedex = {
             spd: 93,
             spe: 87
         },
-        abilities: {0: "Skill Link"},
+        abilities: {
+            0: "Skill Link"
+        },
     },
-    
-     plumin: {
+
+    plumin: {
         num: 7500261,
         species: "Plumin",
         types: ["Electric"],
@@ -8309,13 +8463,15 @@ exports.BattlePokedex = {
             spd: 90,
             spe: 105
         },
-         abilities: {0: "Charged Up"},
-      },
-    
-     oxyblissdefense: {
+        abilities: {
+            0: "Charged Up"
+        },
+    },
+
+    oxyblissdefense: {
         num: 7500262,
         species: "Oxybliss-Defense",
-        types: ["Psychic", "Normal"], 
+        types: ["Psychic", "Normal"],
         baseStats: {
             hp: 162,
             atk: 40,
@@ -8324,13 +8480,15 @@ exports.BattlePokedex = {
             spd: 157,
             spe: 72
         },
-         abilities: {0: "Quarantine"},
-     },
-    
-     diggercatealola: {
+        abilities: {
+            0: "Quarantine"
+        },
+    },
+
+    diggercatealola: {
         num: 7500263,
         species: "Diggercate-Alola",
-        types: ["Normal", "Ground"], 
+        types: ["Normal", "Ground"],
         baseStats: {
             hp: 90,
             atk: 73,
@@ -8339,13 +8497,15 @@ exports.BattlePokedex = {
             spd: 88,
             spe: 87
         },
-         abilities: {0: "High Stakes"},
-       },
-    
-     inferperior: {
+        abilities: {
+            0: "High Stakes"
+        },
+    },
+
+    inferperior: {
         num: 7500264,
         species: "Inferperior",
-        types: ["Grass", "Fire"], 
+        types: ["Grass", "Fire"],
         baseStats: {
             hp: 75,
             atk: 89,
@@ -8354,10 +8514,12 @@ exports.BattlePokedex = {
             spd: 83,
             spe: 110
         },
-         abilities: {0: "Blazing Contrary"},
-     },
-    
-     mimukyu: {
+        abilities: {
+            0: "Blazing Contrary"
+        },
+    },
+
+    mimukyu: {
         num: 7500265,
         species: "Mimukyu",
         types: ["Dark", "Fairy"],
@@ -8369,13 +8531,15 @@ exports.BattlePokedex = {
             spd: 112,
             spe: 83
         },
-         abilities: {0: "Appropriation"},
-      },
-    
-     axatree: {
+        abilities: {
+            0: "Appropriation"
+        },
+    },
+
+    axatree: {
         num: 7500266,
         species: "Axatree",
-        types: ["Psychic", "Electric"], 
+        types: ["Psychic", "Electric"],
         baseStats: {
             hp: 69,
             atk: 69,
@@ -8384,10 +8548,12 @@ exports.BattlePokedex = {
             spd: 83,
             spe: 121
         },
-         abilities: {0: "Beast Guard"},
-      },
-     
-     axatreemega: {
+        abilities: {
+            0: "Beast Guard"
+        },
+    },
+
+    axatreemega: {
         num: 7500266,
         species: "Axatree-Mega",
         baseSpecies: "Axatree",
@@ -8402,10 +8568,12 @@ exports.BattlePokedex = {
             spd: 93,
             spe: 151
         },
-        abilities: {0: "Trace"},
-     },
-     
-     cresspal: {
+        abilities: {
+            0: "Trace"
+        },
+    },
+
+    cresspal: {
         num: 7500267,
         species: "Cresspal",
         types: ["Normal", "Psychic"],
@@ -8417,10 +8585,12 @@ exports.BattlePokedex = {
             spd: 110,
             spe: 65
         },
-         abilities: {0: "Fear Shield"},
+        abilities: {
+            0: "Fear Shield"
+        },
     },
-    
-     necrior: {
+
+    necrior: {
         num: 7500268,
         species: "Necrior",
         types: ["Grass", "Psychic"],
@@ -8432,10 +8602,12 @@ exports.BattlePokedex = {
             spd: 92,
             spe: 115
         },
-         abilities: {0: "Inverse Armor"},
-      },
-    
-     cinshado: {
+        abilities: {
+            0: "Inverse Armor"
+        },
+    },
+
+    cinshado: {
         num: 7500269,
         species: "Cinshado",
         types: ["Normal", "Fighting"],
@@ -8447,10 +8619,12 @@ exports.BattlePokedex = {
             spd: 75,
             spe: 140
         },
-         abilities: {0: "Frenzy"},
-      },
-    
-     altellow: {
+        abilities: {
+            0: "Frenzy"
+        },
+    },
+
+    altellow: {
         num: 7500270,
         species: "Altellow",
         types: ["Dragon", "Normal"],
@@ -8462,9 +8636,11 @@ exports.BattlePokedex = {
             spd: 87,
             spe: 112
         },
-         abilities: {0: "Puffy Cloud"},
-     },
-    
+        abilities: {
+            0: "Puffy Cloud"
+        },
+    },
+
     altellowmega: {
         num: 7500270,
         species: "Altellow-Mega",
@@ -8480,13 +8656,15 @@ exports.BattlePokedex = {
             spd: 87,
             spe: 112
         },
-        abilities: {0: "Pixilate"},
-      },
-      
-      rebell: {
+        abilities: {
+            0: "Pixilate"
+        },
+    },
+
+    rebell: {
         num: 7500271,
         species: "Rebell",
-        types: ["Fighting", "Psychic"], 
+        types: ["Fighting", "Psychic"],
         baseStats: {
             hp: 70,
             atk: 85,
@@ -8495,13 +8673,15 @@ exports.BattlePokedex = {
             spd: 90,
             spe: 100
         },
-         abilities: {0: "Tinkering"},
+        abilities: {
+            0: "Tinkering"
+        },
     },
-    
-     combarde: {
+
+    combarde: {
         num: 7500272,
         species: "Combarde",
-        types: ["Fighting", "Ground"], 
+        types: ["Fighting", "Ground"],
         baseStats: {
             hp: 94,
             atk: 112,
@@ -8510,10 +8690,12 @@ exports.BattlePokedex = {
             spd: 77,
             spe: 75
         },
-         abilities: {0: "Sluggish Aura"},
-     },
-     
-     dittsey: {
+        abilities: {
+            0: "Sluggish Aura"
+        },
+    },
+
+    dittsey: {
         num: 7500273,
         species: "Dittsey",
         types: ["Normal"],
@@ -8525,9 +8707,11 @@ exports.BattlePokedex = {
             spd: 106,
             spe: 51
         },
-         abilities: {0: "Troll"},
+        abilities: {
+            0: "Troll"
+        },
     },
-	    aravealola: {
+    aravealola: {
         num: 7500274,
         species: "A Rave-Alola",
         types: ["Electric", "Normal"],
@@ -8539,16 +8723,18 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 77
         },
-         abilities: {0: "Optimize"},
+        abilities: {
+            0: "Optimize"
+        },
     },
-    
+
     aravealolafire: {
         num: 7500274,
         species: "A Rave-Alola-Fire",
         baseSpecies: "A Rave-Alola",
         forme: "Fire",
         formeLetter: "F",
-        types: ["Electric", "Fire"], 
+        types: ["Electric", "Fire"],
         baseStats: {
             hp: 87,
             atk: 127,
@@ -8557,16 +8743,18 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 77
         },
-        abilities: {0: "Optimize"},
+        abilities: {
+            0: "Optimize"
+        },
     },
-    
+
     aravealolawater: {
         num: 7500274,
         species: "A Rave-Alola-Water",
         baseSpecies: "A Rave-Alola",
         forme: "Water",
         formeLetter: "W",
-        types: ["Electric", "Water"], 
+        types: ["Electric", "Water"],
         baseStats: {
             hp: 87,
             atk: 127,
@@ -8575,16 +8763,18 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 77
         },
-        abilities: {0: "Optimize"},
+        abilities: {
+            0: "Optimize"
+        },
     },
-    
+
     aravealolaelectric: {
         num: 7500274,
         species: "A Rave-Alola-Electric",
         baseSpecies: "A Rave-Alola",
         forme: "Electric",
         formeLetter: "E",
-        types: ["Electric",], 
+        types: ["Electric", ],
         baseStats: {
             hp: 87,
             atk: 127,
@@ -8593,16 +8783,18 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 77
         },
-        abilities: {0: "Optimize"},
+        abilities: {
+            0: "Optimize"
+        },
     },
-    
+
     aravealolagrass: {
         num: 7500274,
         species: "A Rave-Alola-Grass",
         baseSpecies: "A Rave-Alola",
         forme: "Grass",
         formeLetter: "G",
-        types: ["Electric", "Grass"], 
+        types: ["Electric", "Grass"],
         baseStats: {
             hp: 87,
             atk: 127,
@@ -8611,16 +8803,18 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 77
         },
-        abilities: {0: "Optimize"},
+        abilities: {
+            0: "Optimize"
+        },
     },
-    
+
     aravealolaice: {
         num: 7500274,
         species: "A Rave-Alola-Ice",
         baseSpecies: "A Rave-Alola",
         forme: "Ice",
         formeLetter: "I",
-        types: ["Electric", "Ice"], 
+        types: ["Electric", "Ice"],
         baseStats: {
             hp: 87,
             atk: 127,
@@ -8629,16 +8823,18 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 77
         },
-        abilities: {0: "Optimize"},
+        abilities: {
+            0: "Optimize"
+        },
     },
-    
+
     aravealolafighting: {
         num: 7500274,
         species: "A Rave-Alola-Fighting",
         baseSpecies: "A Rave-Alola",
         forme: "Fighting",
         formeLetter: "H",
-        types: ["Electric", "Fighting"], 
+        types: ["Electric", "Fighting"],
         baseStats: {
             hp: 87,
             atk: 127,
@@ -8647,16 +8843,18 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 77
         },
-        abilities: {0: "Optimize"},
+        abilities: {
+            0: "Optimize"
+        },
     },
-    
+
     aravealolapoison: {
         num: 7500274,
         species: "A Rave-Alola-Poison",
         baseSpecies: "A Rave-Alola",
         forme: "Poison",
         formeLetter: "P",
-        types: ["Electric", "Poison"], 
+        types: ["Electric", "Poison"],
         baseStats: {
             hp: 87,
             atk: 127,
@@ -8665,16 +8863,18 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 77
         },
-        abilities: {0: "Optimize"},
+        abilities: {
+            0: "Optimize"
+        },
     },
-    
+
     aravealolaground: {
         num: 7500274,
         species: "A Rave-Alola-Ground",
         baseSpecies: "A Rave-Alola",
         forme: "Ground",
         formeLetter: "U",
-        types: ["Electric", "Ground"], 
+        types: ["Electric", "Ground"],
         baseStats: {
             hp: 87,
             atk: 127,
@@ -8683,16 +8883,18 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 77
         },
-        abilities: {0: "Optimize"},
+        abilities: {
+            0: "Optimize"
+        },
     },
-    
+
     aravealolaflying: {
         num: 7500274,
         species: "A Rave-Alola-Flying",
         baseSpecies: "A Rave-Alola",
         forme: "Flying",
         formeLetter: "L",
-        types: ["Electric", "Flying"], 
+        types: ["Electric", "Flying"],
         baseStats: {
             hp: 87,
             atk: 127,
@@ -8701,16 +8903,18 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 77
         },
-        abilities: {0: "Optimize"},
+        abilities: {
+            0: "Optimize"
+        },
     },
-    
+
     aravealolapsychic: {
         num: 7500274,
         species: "A Rave-Alola-Psychic",
         baseSpecies: "A Rave-Alola",
         forme: "Psychic",
         formeLetter: "Y",
-        types: ["Electric", "Psychic"], 
+        types: ["Electric", "Psychic"],
         baseStats: {
             hp: 87,
             atk: 127,
@@ -8719,16 +8923,18 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 77
         },
-        abilities: {0: "Optimize"},
+        abilities: {
+            0: "Optimize"
+        },
     },
-    
+
     aravealolabug: {
         num: 7500274,
         species: "A Rave-Alola-Bug",
         baseSpecies: "A Rave-Alola",
         forme: "Bug",
         formeLetter: "B",
-        types: ["Electric", "Bug"], 
+        types: ["Electric", "Bug"],
         baseStats: {
             hp: 87,
             atk: 127,
@@ -8737,16 +8943,18 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 77
         },
-        abilities: {0: "Optimize"},
+        abilities: {
+            0: "Optimize"
+        },
     },
-    
+
     aravealolarock: {
         num: 7500274,
         species: "A Rave-Alola-Rock",
         baseSpecies: "A Rave-Alola",
         forme: "Rock",
         formeLetter: "R",
-        types: ["Electric", "Rock"], 
+        types: ["Electric", "Rock"],
         baseStats: {
             hp: 87,
             atk: 127,
@@ -8755,16 +8963,18 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 77
         },
-        abilities: {0: "Optimize"},
+        abilities: {
+            0: "Optimize"
+        },
     },
-    
+
     aravealolaghost: {
         num: 7500274,
         species: "A Rave-Alola-Ghost",
         baseSpecies: "A Rave-Alola",
         forme: "Ghost",
         formeLetter: "O",
-        types: ["Electric", "Ghost"], 
+        types: ["Electric", "Ghost"],
         baseStats: {
             hp: 87,
             atk: 127,
@@ -8773,16 +8983,18 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 77
         },
-        abilities: {0: "Optimize"},
+        abilities: {
+            0: "Optimize"
+        },
     },
-    
+
     aravealoladragon: {
         num: 7500274,
         species: "A Rave-Alola-Dragon",
         baseSpecies: "A Rave-Alola",
         forme: "Dragon",
         formeLetter: "D",
-        types: ["Electric", "Fire"], 
+        types: ["Electric", "Fire"],
         baseStats: {
             hp: 87,
             atk: 127,
@@ -8791,16 +9003,18 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 77
         },
-        abilities: {0: "Optimize"},
+        abilities: {
+            0: "Optimize"
+        },
     },
-    
+
     aravealoladark: {
         num: 7500274,
         species: "A Rave-Alola-Dark",
         baseSpecies: "A Rave-Alola",
         forme: "Dark",
         formeLetter: "K",
-        types: ["Electric", "Dark"], 
+        types: ["Electric", "Dark"],
         baseStats: {
             hp: 87,
             atk: 127,
@@ -8809,16 +9023,18 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 77
         },
-        abilities: {0: "Optimize"},
+        abilities: {
+            0: "Optimize"
+        },
     },
-    
+
     aravealolasteel: {
         num: 7500274,
         species: "A Rave-Alola-Steel",
         baseSpecies: "A Rave-Alola",
         forme: "Steel",
         formeLetter: "S",
-        types: ["Electric", "Steel"], 
+        types: ["Electric", "Steel"],
         baseStats: {
             hp: 87,
             atk: 127,
@@ -8827,16 +9043,18 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 77
         },
-        abilities: {0: "Optimize"},
+        abilities: {
+            0: "Optimize"
+        },
     },
-    
+
     aravealolafairy: {
         num: 7500274,
         species: "A Rave-Alola-Fairy",
         baseSpecies: "A Rave-Alola",
         forme: "Fairy",
         formeLetter: "A",
-        types: ["Electric", "Fairy"], 
+        types: ["Electric", "Fairy"],
         baseStats: {
             hp: 87,
             atk: 127,
@@ -8845,13 +9063,15 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 77
         },
-        abilities: {0: "Optimize"},
-    }, 
-    
+        abilities: {
+            0: "Optimize"
+        },
+    },
+
     miminja: {
         num: 7500275,
         species: "Miminja",
-        types: ["Dark", "Ghost"], 
+        types: ["Dark", "Ghost"],
         baseStats: {
             hp: 63,
             atk: 112,
@@ -8860,9 +9080,11 @@ exports.BattlePokedex = {
             spd: 88,
             spe: 124
         },
-         abilities: {0: "Resurrection"},
+        abilities: {
+            0: "Resurrection"
+        },
     },
-    
+
     miminjareborn: {
         num: 7500275,
         species: "Miminja-Reborn",
@@ -8878,13 +9100,15 @@ exports.BattlePokedex = {
             spd: 88,
             spe: 134
         },
-        abilities: {0: "Resurrection"},
+        abilities: {
+            0: "Resurrection"
+        },
     },
-    
+
     murkaleo: {
         num: 7500276,
         species: "Murkaleo",
-        types: ["Flying", "Steel"], 
+        types: ["Flying", "Steel"],
         baseStats: {
             hp: 98,
             atk: 115,
@@ -8893,13 +9117,15 @@ exports.BattlePokedex = {
             spd: 81,
             spe: 114
         },
-         abilities: {0: "Bamboozled"},
+        abilities: {
+            0: "Bamboozled"
+        },
     },
-    
+
     zecronaw: {
         num: 7500277,
         species: "Zecronaw",
-        types: ["Electric", "Water"], 
+        types: ["Electric", "Water"],
         baseStats: {
             hp: 82,
             atk: 130,
@@ -8908,13 +9134,15 @@ exports.BattlePokedex = {
             spd: 81,
             spe: 99
         },
-         abilities: {0: "Tetra Force"},
+        abilities: {
+            0: "Tetra Force"
+        },
     },
-    
+
     quinda: {
         num: 7500278,
         species: "Quinda",
-        types: ["Normal", "Flying"], 
+        types: ["Normal", "Flying"],
         baseStats: {
             hp: 102,
             atk: 102,
@@ -8923,13 +9151,15 @@ exports.BattlePokedex = {
             spd: 105,
             spe: 87
         },
-         abilities: {0: "Weather Contradiction"},
+        abilities: {
+            0: "Weather Contradiction"
+        },
     },
-    
+
     sablegigas: {
         num: 7500279,
         species: "sablegigas",
-        types: ["Normal", "Ghost"], 
+        types: ["Normal", "Ghost"],
         baseStats: {
             hp: 90,
             atk: 122,
@@ -8938,16 +9168,18 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 75
         },
-         abilities: {0: "Slow Surge"},
+        abilities: {
+            0: "Slow Surge"
+        },
     },
-    
+
     sablegigasmega: {
         num: 7500279,
         species: "Sablegigas-Mega",
         baseSpecies: "Sablegigas",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Normal", "Ghost"], 
+        types: ["Normal", "Ghost"],
         baseStats: {
             hp: 90,
             atk: 132,
@@ -8956,28 +9188,32 @@ exports.BattlePokedex = {
             spd: 152,
             spe: 45
         },
-        abilities: {0: "Magic Bounce"},
+        abilities: {
+            0: "Magic Bounce"
+        },
     },
-    
+
     galvillonme: {
         num: 7500280,
         species: "Galvillon",
-        types: ["Electric", "Flying"], 
+        types: ["Electric", "Flying"],
         baseStats: {
-            hp: 90, 
+            hp: 90,
             atk: 79,
             def: 70,
             spa: 108,
             spd: 70,
             spe: 113
         },
-         abilities: {0: "Compound Eyes"},
-   },
-   
-   kyonun: {
+        abilities: {
+            0: "Compound Eyes"
+        },
+    },
+
+    kyonun: {
         num: 7500281,
         species: "Kyonun",
-        types: ["Electric", "Water"], 
+        types: ["Electric", "Water"],
         baseStats: {
             hp: 80,
             atk: 70,
@@ -8986,9 +9222,11 @@ exports.BattlePokedex = {
             spd: 122,
             spe: 92
         },
-         abilities: {0: "Electron Rain"},
+        abilities: {
+            0: "Electron Rain"
+        },
     },
-    
+
     kyonunprimal: {
         num: 7500281,
         species: "Kyonun-Primal",
@@ -9004,9 +9242,11 @@ exports.BattlePokedex = {
             spd: 142,
             spe: 92
         },
-        abilities: {0: "Primordial Sea"},
+        abilities: {
+            0: "Primordial Sea"
+        },
     },
-    
+
     abomasorus: {
         num: 7500282,
         species: "Abomasorus",
@@ -9019,7 +9259,9 @@ exports.BattlePokedex = {
             spd: 90,
             spe: 80
         },
-         abilities: {0: "Petrify"},
+        abilities: {
+            0: "Petrify"
+        },
     },
     abomasorusmega: {
         num: 7500282,
@@ -9036,13 +9278,15 @@ exports.BattlePokedex = {
             spd: 110,
             spe: 50
         },
-        abilities: {0: "Snow Warning"},
+        abilities: {
+            0: "Snow Warning"
+        },
     },
-    
+
     toxicario: {
         num: 7500283,
         species: "Toxicario",
-        types: ["Poison", "Fighting"], 
+        types: ["Poison", "Fighting"],
         baseStats: {
             hp: 86,
             atk: 118,
@@ -9051,9 +9295,11 @@ exports.BattlePokedex = {
             spd: 77,
             spe: 97
         },
-         abilities: {0: "Triggered"},
+        abilities: {
+            0: "Triggered"
+        },
     },
-    
+
     toxicariomega: {
         num: 7500283,
         species: "Toxicario-Mega",
@@ -9069,9 +9315,11 @@ exports.BattlePokedex = {
             spd: 77,
             spe: 119
         },
-        abilities: {0: "Adaptability"},
+        abilities: {
+            0: "Adaptability"
+        },
     },
-    
+
     washoxchromosome: {
         num: 7500284,
         species: "Washox-Chromosome",
@@ -9084,9 +9332,11 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 110
         },
-        abilities: {0: "Mitosis"},
+        abilities: {
+            0: "Mitosis"
+        },
     },
-    
+
     washoxstrand: {
         num: 7500284,
         species: "Washox-Strand",
@@ -9102,13 +9352,15 @@ exports.BattlePokedex = {
             spd: 14,
             spe: 120
         },
-        abilities: {0: "Mitosis"},
+        abilities: {
+            0: "Mitosis"
+        },
     },
-    
+
     hoorbok: {
         num: 7500285,
         species: "Hoorbok",
-        types: ["Poison", "Dark"], 
+        types: ["Poison", "Dark"],
         baseStats: {
             hp: 90,
             atk: 135,
@@ -9117,13 +9369,15 @@ exports.BattlePokedex = {
             spd: 105,
             spe: 90
         },
-         abilities: {0: "Prestidigitation"},
+        abilities: {
+            0: "Prestidigitation"
+        },
     },
-    
+
     ninetalesprime: {
         num: 7500286,
         species: "Ninetales-Prime",
-        types: ["Ice", "Fire"], 
+        types: ["Ice", "Fire"],
         baseStats: {
             hp: 83,
             atk: 81,
@@ -9132,13 +9386,15 @@ exports.BattlePokedex = {
             spd: 110,
             spe: 114
         },
-         abilities: {0: "Solar Snow"},
+        abilities: {
+            0: "Solar Snow"
+        },
     },
-    
+
     blampa: {
         num: 7500287,
         species: "Blampa",
-        types: ["Water", "Dragon"], 
+        types: ["Water", "Dragon"],
         baseStats: {
             hp: 88,
             atk: 81,
@@ -9147,16 +9403,18 @@ exports.BattlePokedex = {
             spd: 108,
             spe: 67
         },
-         abilities: {0: "Torrential Rage"},
+        abilities: {
+            0: "Torrential Rage"
+        },
     },
-    
+
     blampamega: {
         num: 7500287,
         species: "Blampa-Mega",
         baseSpecies: "Blampa",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Water", "Dragon"], 
+        types: ["Water", "Dragon"],
         baseStats: {
             hp: 88,
             atk: 101,
@@ -9165,9 +9423,11 @@ exports.BattlePokedex = {
             spd: 118,
             spe: 67
         },
-        abilities: {0: "Mega Launcher"},
+        abilities: {
+            0: "Mega Launcher"
+        },
     },
-    
+
     origamiswan: {
         num: 7500288,
         species: "Origami-Swan",
@@ -9180,9 +9440,11 @@ exports.BattlePokedex = {
             spd: 112,
             spe: 79
         },
-         abilities: {0: "Fluttering Heart"},
+        abilities: {
+            0: "Fluttering Heart"
+        },
     },
-    
+
     kecleus: {
         num: 7500289,
         species: "Kecleus",
@@ -9195,9 +9457,11 @@ exports.BattlePokedex = {
             spd: 120,
             spe: 100
         },
-         abilities: {0: "Prototype"},
+        abilities: {
+            0: "Prototype"
+        },
     },
-    
+
     fearroh: {
         num: 7500290,
         species: "Fear-Roh",
@@ -9210,9 +9474,11 @@ exports.BattlePokedex = {
             spd: 107,
             spe: 100
         },
-         abilities: {0: "Sharpshooter"},
+        abilities: {
+            0: "Sharpshooter"
+        },
     },
-    
+
     neoprene: {
         num: 7500291,
         species: "Neoprene",
@@ -9225,13 +9491,15 @@ exports.BattlePokedex = {
             spd: 108,
             spe: 62
         },
-         abilities: {0: "Rubber Up"},
+        abilities: {
+            0: "Rubber Up"
+        },
     },
-    
+
     maroramalola: {
         num: 7500292,
         species: "Maroram-Alola",
-        types: ["Fire"], 
+        types: ["Fire"],
         baseStats: {
             hp: 80,
             atk: 108,
@@ -9240,9 +9508,11 @@ exports.BattlePokedex = {
             spd: 108,
             spe: 80
         },
-         abilities: {0: "Turbo Curse"},
+        abilities: {
+            0: "Turbo Curse"
+        },
     },
-    
+
     genny: {
         num: 7500293,
         species: "Genny",
@@ -9255,9 +9525,11 @@ exports.BattlePokedex = {
             spd: 87,
             spe: 95
         },
-         abilities: {0: "Revved Up"},
+        abilities: {
+            0: "Revved Up"
+        },
     },
-    
+
     sylvoko: {
         num: 7500294,
         species: "Sylvoko",
@@ -9270,9 +9542,11 @@ exports.BattlePokedex = {
             spd: 102,
             spe: 115
         },
-         abilities: {0: "Misty Supercharge"},
+        abilities: {
+            0: "Misty Supercharge"
+        },
     },
-    
+
     miniancieore: {
         num: 7500295,
         species: "Miniancie-Ore",
@@ -9285,9 +9559,11 @@ exports.BattlePokedex = {
             spd: 145,
             spe: 55
         },
-         abilities: {0: "Crystallized Shield"},
+        abilities: {
+            0: "Crystallized Shield"
+        },
     },
-    
+
     minianciejewel: {
         num: 7500295,
         species: "Miniancie-Jewel",
@@ -9303,9 +9579,11 @@ exports.BattlePokedex = {
             spd: 80,
             spe: 115
         },
-        abilities: {0: "A1"},
+        abilities: {
+            0: "A1"
+        },
     },
-    
+
     tapudede: {
         num: 7500296,
         species: "Tapu Dede",
@@ -9318,9 +9596,11 @@ exports.BattlePokedex = {
             spd: 100,
             spe: 57
         },
-         abilities: {0: "Grassworker"},
+        abilities: {
+            0: "Grassworker"
+        },
     },
-    
+
     shenala: {
         num: 7500297,
         species: "Shenala",
@@ -9333,9 +9613,11 @@ exports.BattlePokedex = {
             spd: 68,
             spe: 78
         },
-         abilities: {0: "Shadow Guard"},
+        abilities: {
+            0: "Shadow Guard"
+        },
     },
-    
+
     entir: {
         num: 7500298,
         species: "Entir",
@@ -9348,16 +9630,18 @@ exports.BattlePokedex = {
             spd: 72,
             spe: 112
         },
-         abilities: {0: "Vexing Valor"},
+        abilities: {
+            0: "Vexing Valor"
+        },
     },
-    
+
     entirmega: {
         num: 7500298,
         species: "Entir-Mega",
         baseSpecies: "Entir",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Fire", "Flying"], 
+        types: ["Fire", "Flying"],
         baseStats: {
             hp: 90,
             atk: 170,
@@ -9366,9 +9650,11 @@ exports.BattlePokedex = {
             spd: 92,
             spe: 132
         },
-        abilities: {0: "Aerilate"},
+        abilities: {
+            0: "Aerilate"
+        },
     },
-	giramini: {
+    giramini: {
         num: 7500299,
         species: "Giramini",
         types: ["Ghost", "Rock"],
@@ -9380,9 +9666,11 @@ exports.BattlePokedex = {
             spd: 125,
             spe: 80
         },
-         abilities: {0: "Compression"},
+        abilities: {
+            0: "Compression"
+        },
     },
-     giraminiunleashed: {
+    giraminiunleashed: {
         num: 7500299,
         species: "Giramini-Unleashed",
         baseSpecies: "Giramini",
@@ -9397,9 +9685,11 @@ exports.BattlePokedex = {
             spd: 80,
             spe: 140
         },
-        abilities: {0: "Compression"},
+        abilities: {
+            0: "Compression"
+        },
     },
-    
+
     aquapod: {
         num: 7500300,
         species: "Aquapod",
@@ -9412,7 +9702,9 @@ exports.BattlePokedex = {
             spd: 121,
             spe: 51
         },
-         abilities: {0: "Bubble Slip"},
+        abilities: {
+            0: "Bubble Slip"
+        },
     },
     reshivine: {
         num: 7500301,
@@ -9426,12 +9718,14 @@ exports.BattlePokedex = {
             spd: 100,
             spe: 105
         },
-         abilities: {0: "Spiral Flames"},
+        abilities: {
+            0: "Spiral Flames"
+        },
     },
     rosium: {
         num: 7500302,
         species: "Rosium",
-        types: ["Poison", "Grass"], 
+        types: ["Poison", "Grass"],
         baseStats: {
             hp: 80,
             atk: 86,
@@ -9440,13 +9734,15 @@ exports.BattlePokedex = {
             spd: 112,
             spe: 95
         },
-         abilities: {0: "Operation Overgrow"},
+        abilities: {
+            0: "Operation Overgrow"
+        },
     },
 
     valveon: {
         num: 7500303,
         species: "Valveon",
-        types: ["Water", "Fairy"], 
+        types: ["Water", "Fairy"],
         baseStats: {
             hp: 122,
             atk: 75,
@@ -9455,13 +9751,15 @@ exports.BattlePokedex = {
             spd: 122,
             spe: 72
         },
-         abilities: {0: "Pixie Absorb"},
+        abilities: {
+            0: "Pixie Absorb"
+        },
     },
-    
+
     raptalon: {
         num: 7500304,
         species: "Raptalon",
-        types: ["Flying", "Fire"], 
+        types: ["Flying", "Fire"],
         baseStats: {
             hp: 91,
             atk: 110,
@@ -9470,13 +9768,15 @@ exports.BattlePokedex = {
             spd: 74,
             spe: 123
         },
-         abilities: {0: "Fearless"},
+        abilities: {
+            0: "Fearless"
+        },
     },
-    
+
     deoxurkoutlet: {
         num: 7500305,
         species: "Deoxurk-Outlet",
-        types: ["Psychic", "Electric"], 
+        types: ["Psychic", "Electric"],
         baseStats: {
             hp: 86,
             atk: 79,
@@ -9485,13 +9785,15 @@ exports.BattlePokedex = {
             spd: 120,
             spe: 86
         },
-         abilities: {0: "Peer Pressure"},
+        abilities: {
+            0: "Peer Pressure"
+        },
     },
-    
+
     dio: {
         num: 7500306,
         species: "Dio",
-        types: ["Steel", "Normal"], 
+        types: ["Steel", "Normal"],
         baseStats: {
             hp: 90,
             atk: 90,
@@ -9500,13 +9802,15 @@ exports.BattlePokedex = {
             spd: 87,
             spe: 60
         },
-         abilities: {0: "Time Stop"},
+        abilities: {
+            0: "Time Stop"
+        },
     },
-    
+
     generott: {
         num: 7500307,
         species: "Generott",
-        types: ["Water", "Bug"], 
+        types: ["Water", "Bug"],
         baseStats: {
             hp: 85,
             atk: 120,
@@ -9515,13 +9819,15 @@ exports.BattlePokedex = {
             spd: 90,
             spe: 100
         },
-         abilities: {0: "Upgrade"},
+        abilities: {
+            0: "Upgrade"
+        },
     },
-    
+
     darminup: {
         num: 7500308,
         species: "Darmin-Up",
-        types: ["Fire", "Normal"], 
+        types: ["Fire", "Normal"],
         baseStats: {
             hp: 137,
             atk: 160,
@@ -9530,16 +9836,18 @@ exports.BattlePokedex = {
             spd: 70,
             spe: 107
         },
-         abilities: {0: "Rhythm"},
+        abilities: {
+            0: "Rhythm"
+        },
     },
-    
+
     darmindown: {
         num: 7500308,
         species: "Darmin-Down",
         baseSpecies: "Darmin-Up",
         forme: "Down",
         formeLetter: "D",
-        types: ["Fire", "Psychic"], 
+        types: ["Fire", "Psychic"],
         baseStats: {
             hp: 137,
             atk: 72,
@@ -9548,13 +9856,15 @@ exports.BattlePokedex = {
             spd: 120,
             spe: 67
         },
-        abilities: {0: "Rhythm"},
+        abilities: {
+            0: "Rhythm"
+        },
     },
-    
+
     conkeldurus: {
         num: 7500309,
         species: "Conkeldurus",
-        types: ["Electric", "Fighting"], 
+        types: ["Electric", "Fighting"],
         baseStats: {
             hp: 92,
             atk: 135,
@@ -9563,13 +9873,15 @@ exports.BattlePokedex = {
             spd: 92,
             spe: 81
         },
-         abilities: {0: "Lightning Fist"},
+        abilities: {
+            0: "Lightning Fist"
+        },
     },
-    
+
     fisktres: {
         num: 7500310,
         species: "Fisktres",
-        types: ["Ground", "Flying"], 
+        types: ["Ground", "Flying"],
         baseStats: {
             hp: 111,
             atk: 83,
@@ -9578,13 +9890,15 @@ exports.BattlePokedex = {
             spd: 100,
             spe: 61
         },
-         abilities: {0: "Flare Wings"},
+        abilities: {
+            0: "Flare Wings"
+        },
     },
-    
+
     landana: {
         num: 7500311,
         species: "Landana",
-        types: ["Ground", "Flying"], 
+        types: ["Ground", "Flying"],
         baseStats: {
             hp: 82,
             atk: 137,
@@ -9593,13 +9907,15 @@ exports.BattlePokedex = {
             spd: 75,
             spe: 112
         },
-         abilities: {0: "Pecking Order"},
+        abilities: {
+            0: "Pecking Order"
+        },
     },
-    
+
     regimiki: {
         num: 7500312,
         species: "Regimiki",
-        types: ["Normal", "Water"], 
+        types: ["Normal", "Water"],
         baseStats: {
             hp: 82,
             atk: 130,
@@ -9608,13 +9924,15 @@ exports.BattlePokedex = {
             spd: 120,
             spe: 72
         },
-         abilities: {0: "Vomit"},
+        abilities: {
+            0: "Vomit"
+        },
     },
-    
+
     star: {
         num: 7500313,
         species: "Star",
-        types: ["Fairy", "Dark"], 
+        types: ["Fairy", "Dark"],
         baseStats: {
             hp: 78,
             atk: 72,
@@ -9623,16 +9941,18 @@ exports.BattlePokedex = {
             spd: 93,
             spe: 121
         },
-         abilities: {0: "Magical Wand"},
+        abilities: {
+            0: "Magical Wand"
+        },
     },
-    
+
     starbutterfly: {
         num: 7500313,
         species: "Star-Butterfly",
         baseSpecies: "Star",
         forme: "Butterfly",
         formeLetter: "B",
-        types: ["Fairy", "Dark"], 
+        types: ["Fairy", "Dark"],
         baseStats: {
             hp: 78,
             atk: 122,
@@ -9641,13 +9961,15 @@ exports.BattlePokedex = {
             spd: 103,
             spe: 131
         },
-        abilities: {0: "Magical Wand"},
+        abilities: {
+            0: "Magical Wand"
+        },
     },
-    
+
     gardelego: {
         num: 7500314,
         species: "Gardelego",
-        types: ["Fairy", "Poison"], 
+        types: ["Fairy", "Poison"],
         baseStats: {
             hp: 108,
             atk: 59,
@@ -9656,16 +9978,18 @@ exports.BattlePokedex = {
             spd: 123,
             spe: 101
         },
-         abilities: {0: "Beast's Copycat"},
+        abilities: {
+            0: "Beast's Copycat"
+        },
     },
-    
+
     gardelegomega: {
         num: 7500314,
         species: "Gardelego-Mega",
         baseSpecies: "Gardelego",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Fairy", "Poison"], 
+        types: ["Fairy", "Poison"],
         baseStats: {
             hp: 108,
             atk: 79,
@@ -9674,13 +9998,15 @@ exports.BattlePokedex = {
             spd: 143,
             spe: 121
         },
-        abilities: {0: "Pixilate"},
+        abilities: {
+            0: "Pixilate"
+        },
     },
-    
+
     maltarione: {
         num: 7500315,
         species: "Maltarione",
-        types: ["Steel", "Dragon"], 
+        types: ["Steel", "Dragon"],
         baseStats: {
             hp: 82,
             atk: 70,
@@ -9689,16 +10015,18 @@ exports.BattlePokedex = {
             spd: 107,
             spe: 70
         },
-         abilities: {0: "Medical Expert"},
+        abilities: {
+            0: "Medical Expert"
+        },
     },
-    
+
     maltarionemega: {
         num: 7500315,
         species: "Maltarione-Mega",
         baseSpecies: "Maltarione",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Steel", "Fairy"], 
+        types: ["Steel", "Fairy"],
         baseStats: {
             hp: 82,
             atk: 110,
@@ -9707,13 +10035,15 @@ exports.BattlePokedex = {
             spd: 107,
             spe: 70
         },
-        abilities: {0: "Pixilate"},
+        abilities: {
+            0: "Pixilate"
+        },
     },
-    
+
     maskle: {
         num: 7500316,
         species: "Maskle",
-        types: ["Bug", "Rock"], 
+        types: ["Bug", "Rock"],
         baseStats: {
             hp: 55,
             atk: 45,
@@ -9722,13 +10052,15 @@ exports.BattlePokedex = {
             spd: 166,
             spe: 52
         },
-         abilities: {0: "Bad Influence"},
+        abilities: {
+            0: "Bad Influence"
+        },
     },
-    
+
     cowardice: {
         num: 7500317,
         species: "Cowardice",
-        types: ["Bug", "Ground"], 
+        types: ["Bug", "Ground"],
         baseStats: {
             hp: 78,
             atk: 112,
@@ -9737,13 +10069,15 @@ exports.BattlePokedex = {
             spd: 98,
             spe: 48
         },
-         abilities: {0: "Scout"},
+        abilities: {
+            0: "Scout"
+        },
     },
-    
+
     guzzbro: {
         num: 7500318,
         species: "Guzzbro",
-        types: ["Dragon", "Water"], 
+        types: ["Dragon", "Water"],
         baseStats: {
             hp: 168,
             atk: 88,
@@ -9752,16 +10086,18 @@ exports.BattlePokedex = {
             spd: 77,
             spe: 37
         },
-         abilities: {0: "Rejuvenation"},
+        abilities: {
+            0: "Rejuvenation"
+        },
     },
-    
+
     guzzbromega: {
         num: 7500318,
         species: "Guzzbro-Mega",
         baseSpecies: "Guzzbro",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Dragon", "Water"], 
+        types: ["Dragon", "Water"],
         baseStats: {
             hp: 168,
             atk: 88,
@@ -9770,13 +10106,15 @@ exports.BattlePokedex = {
             spd: 77,
             spe: 37
         },
-        abilities: {0: "Shell Armor"},
+        abilities: {
+            0: "Shell Armor"
+        },
     },
-    
+
     zycannon: {
         num: 7500319,
         species: "Zycannon",
-        types: ["Ground", "Normal"], 
+        types: ["Ground", "Normal"],
         baseStats: {
             hp: 67,
             atk: 130,
@@ -9785,13 +10123,15 @@ exports.BattlePokedex = {
             spd: 80,
             spe: 107
         },
-         abilities: {0: "Force Drain"},
+        abilities: {
+            0: "Force Drain"
+        },
     },
-    
+
     zeeeee: {
         num: 7500320,
         species: "Zeeeee",
-        types: ["Ground", "Normal"], 
+        types: ["Ground", "Normal"],
         baseStats: {
             hp: 82,
             atk: 91,
@@ -9800,16 +10140,18 @@ exports.BattlePokedex = {
             spd: 90,
             spe: 75
         },
-         abilities: {0: "Foundation"},
+        abilities: {
+            0: "Foundation"
+        },
     },
-    
+
     zeeeeecomplete: {
         num: 7500320,
         species: "Zeeeee-Complete",
         baseSpecies: "Zeeeee",
         forme: "Complete",
         formeLetter: "C",
-        types: ["Ground", "Normal"], 
+        types: ["Ground", "Normal"],
         baseStats: {
             hp: 190,
             atk: 91,
@@ -9818,13 +10160,15 @@ exports.BattlePokedex = {
             spd: 90,
             spe: 75
         },
-        abilities: {0: "Foundation"},
+        abilities: {
+            0: "Foundation"
+        },
     },
-    
+
     peridot: {
         num: 7500321,
         species: "Peridot",
-        types: ["Flying", "Electric"], 
+        types: ["Flying", "Electric"],
         baseStats: {
             hp: 83,
             atk: 84,
@@ -9833,16 +10177,18 @@ exports.BattlePokedex = {
             spd: 70,
             spe: 112
         },
-         abilities: {0: "Limb Enhancers"},
+        abilities: {
+            0: "Limb Enhancers"
+        },
     },
-    
+
     peridotmega: {
         num: 7500321,
         species: "Peridot-Mega",
         baseSpecies: "Peridot",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Flying", "Electric"], 
+        types: ["Flying", "Electric"],
         baseStats: {
             hp: 83,
             atk: 84,
@@ -9851,13 +10197,15 @@ exports.BattlePokedex = {
             spd: 80,
             spe: 132
         },
-        abilities: {0: "No Guard"},
+        abilities: {
+            0: "No Guard"
+        },
     },
-    
+
     stundicuno: {
         num: 7500322,
         species: "Stundicuno",
-        types: ["Ground", "Ice"], 
+        types: ["Ground", "Ice"],
         baseStats: {
             hp: 115,
             atk: 75,
@@ -9866,13 +10214,15 @@ exports.BattlePokedex = {
             spd: 120,
             spe: 60
         },
-         abilities: {0: "Dirt Nap"},
+        abilities: {
+            0: "Dirt Nap"
+        },
     },
-    
+
     aloha: {
         num: 7500323,
         species: "Aloha",
-        types: ["Psychic", "Dark"], 
+        types: ["Psychic", "Dark"],
         baseStats: {
             hp: 103,
             atk: 137,
@@ -9881,16 +10231,18 @@ exports.BattlePokedex = {
             spd: 74,
             spe: 103
         },
-         abilities: {0: "Hydrodynamic"},
+        abilities: {
+            0: "Hydrodynamic"
+        },
     },
-    
+
     alohamega: {
         num: 7500323,
         species: "Aloha-Mega",
         baseSpecies: "Aloha",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Psychic", "Dark"], 
+        types: ["Psychic", "Dark"],
         baseStats: {
             hp: 103,
             atk: 157,
@@ -9899,13 +10251,15 @@ exports.BattlePokedex = {
             spd: 99,
             spe: 113
         },
-        abilities: {0: "Strong Jaw"},
+        abilities: {
+            0: "Strong Jaw"
+        },
     },
-    
+
     zekloom: {
         num: 7500324,
         species: "Zekloom",
-        types: ["Electric", "Fighting"], 
+        types: ["Electric", "Fighting"],
         baseStats: {
             hp: 80,
             atk: 140,
@@ -9914,13 +10268,15 @@ exports.BattlePokedex = {
             spd: 100,
             spe: 100
         },
-         abilities: {0: "Engineer"},
+        abilities: {
+            0: "Engineer"
+        },
     },
-    
+
     gengalure: {
         num: 7500325,
         species: "Gengalure",
-        types: ["Ghost", "Fire"], 
+        types: ["Ghost", "Fire"],
         baseStats: {
             hp: 70,
             atk: 70,
@@ -9929,13 +10285,15 @@ exports.BattlePokedex = {
             spd: 92,
             spe: 105
         },
-         abilities: {0: "Blessed Protection"},
+        abilities: {
+            0: "Blessed Protection"
+        },
     },
-    
+
     ferrolord: {
         num: 7500326,
         species: "Ferrolord",
-        types: ["Steel", "Dragon"], 
+        types: ["Steel", "Dragon"],
         baseStats: {
             hp: 148,
             atk: 107,
@@ -9944,13 +10302,15 @@ exports.BattlePokedex = {
             spd: 104,
             spe: 31
         },
-         abilities: {0: "Barbs Boost"},
+        abilities: {
+            0: "Barbs Boost"
+        },
     },
-    
+
     dad: {
         num: 7500327,
         species: "Dad",
-        types: ["Normal", "Dark"], 
+        types: ["Normal", "Dark"],
         baseStats: {
             hp: 69,
             atk: 60,
@@ -9959,13 +10319,15 @@ exports.BattlePokedex = {
             spd: 51,
             spe: 56
         },
-         abilities: {0: "Mirror Mirror"},
+        abilities: {
+            0: "Mirror Mirror"
+        },
     },
-    
+
     glaive: {
         num: 7500328,
         species: "Glaive",
-        types: ["Ghost", "Ground"], 
+        types: ["Ghost", "Ground"],
         baseStats: {
             hp: 100,
             atk: 130,
@@ -9974,16 +10336,18 @@ exports.BattlePokedex = {
             spd: 90,
             spe: 63
         },
-         abilities: {0: "Atmospheric Pull"},
+        abilities: {
+            0: "Atmospheric Pull"
+        },
     },
-    
+
     glaiveprimal: {
         num: 7500328,
         species: "Glaive-Primal",
         baseSpecies: "Glaive",
         forme: "Primal",
         formeLetter: "P",
-        types: ["Ghost", "Fire"], 
+        types: ["Ghost", "Fire"],
         baseStats: {
             hp: 100,
             atk: 160,
@@ -9992,13 +10356,15 @@ exports.BattlePokedex = {
             spd: 90,
             spe: 63
         },
-        abilities: {0: "Desolate Land"},
+        abilities: {
+            0: "Desolate Land"
+        },
     },
-    
+
     kyurpedo: {
         num: 7500329,
         species: "Kyurpedo",
-        types: ["Ice", "Dark"], 
+        types: ["Ice", "Dark"],
         baseStats: {
             hp: 105,
             atk: 145,
@@ -10007,16 +10373,18 @@ exports.BattlePokedex = {
             spd: 75,
             spe: 95
         },
-         abilities: {0: "Volt Boost"},
+        abilities: {
+            0: "Volt Boost"
+        },
     },
-    
+
     kyurpedomega: {
         num: 7500329,
         species: "Kyurpedo-Mega",
         baseSpecies: "Kyurpedo",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Ice", "Dark"], 
+        types: ["Ice", "Dark"],
         baseStats: {
             hp: 105,
             atk: 165,
@@ -10025,13 +10393,15 @@ exports.BattlePokedex = {
             spd: 100,
             spe: 105
         },
-        abilities: {0: "Strong Jaw"},
+        abilities: {
+            0: "Strong Jaw"
+        },
     },
-    
+
     gearchamp: {
         num: 7500330,
         species: "Gearchamp",
-        types: ["Fighting", "Fairy"], 
+        types: ["Fighting", "Fairy"],
         baseStats: {
             hp: 80,
             atk: 84,
@@ -10040,13 +10410,15 @@ exports.BattlePokedex = {
             spd: 95,
             spe: 85
         },
-         abilities: {0: "Soul Power"},
+        abilities: {
+            0: "Soul Power"
+        },
     },
-    
+
     luau: {
         num: 7500331,
         species: "Luau",
-        types: ["Ghost", "Ground"], 
+        types: ["Ghost", "Ground"],
         baseStats: {
             hp: 113,
             atk: 107,
@@ -10055,16 +10427,18 @@ exports.BattlePokedex = {
             spd: 97,
             spe: 73
         },
-         abilities: {0: "Land's Shield"},
+        abilities: {
+            0: "Land's Shield"
+        },
     },
-    
+
     luaumega: {
         num: 7500331,
         species: "Luau-Mega",
         baseSpecies: "Luau",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Ghost", "Ground"], 
+        types: ["Ghost", "Ground"],
         baseStats: {
             hp: 113,
             atk: 127,
@@ -10073,13 +10447,15 @@ exports.BattlePokedex = {
             spd: 127,
             spe: 53
         },
-        abilities: {0: "Sheer Force"},
+        abilities: {
+            0: "Sheer Force"
+        },
     },
-    
+
     dotsensu: {
         num: 7500332,
         species: "Dot-Sensu",
-        types: ["Normal", "Ghost"], 
+        types: ["Normal", "Ghost"],
         baseStats: {
             hp: 61,
             atk: 59,
@@ -10088,13 +10464,15 @@ exports.BattlePokedex = {
             spd: 59,
             spe: 90
         },
-         abilities: {0: "Danceposter"},
+        abilities: {
+            0: "Danceposter"
+        },
     },
-    
+
     darkhunter: {
         num: 7500333,
         species: "Dark Hunter",
-        types: ["Rock", "Dark"], 
+        types: ["Rock", "Dark"],
         baseStats: {
             hp: 78,
             atk: 123,
@@ -10103,13 +10481,15 @@ exports.BattlePokedex = {
             spd: 83,
             spe: 114
         },
-         abilities: {0: "Night Terror"},
+        abilities: {
+            0: "Night Terror"
+        },
     },
-    
+
     guzzpex: {
         num: 7500334,
         species: "Guzzpex",
-        types: ["Poison", "Dark"], 
+        types: ["Poison", "Dark"],
         baseStats: {
             hp: 136,
             atk: 82,
@@ -10118,13 +10498,15 @@ exports.BattlePokedex = {
             spd: 117,
             spe: 39
         },
-         abilities: {0: "Merciless Beast"},
+        abilities: {
+            0: "Merciless Beast"
+        },
     },
-    
+
     dedede: {
         num: 7500335,
         species: "Dedede",
-        types: ["Ice", "Electric"], 
+        types: ["Ice", "Electric"],
         baseStats: {
             hp: 66,
             atk: 66,
@@ -10133,13 +10515,15 @@ exports.BattlePokedex = {
             spd: 66,
             spe: 98
         },
-         abilities: {0: "Royal Strength"},
+        abilities: {
+            0: "Royal Strength"
+        },
     },
-    
+
     cosmill: {
         num: 7500336,
         species: "Cosmill",
-        types: ["Psychic", "Fairy"], 
+        types: ["Psychic", "Fairy"],
         baseStats: {
             hp: 56,
             atk: 44,
@@ -10148,13 +10532,15 @@ exports.BattlePokedex = {
             spd: 40,
             spe: 38
         },
-         abilities: {0: "Godlike Powers"},
+        abilities: {
+            0: "Godlike Powers"
+        },
     },
-    
+
     maginera: {
         num: 7500337,
         species: "Maginera",
-        types: ["Fairy", "Fire"], 
+        types: ["Fairy", "Fire"],
         baseStats: {
             hp: 87,
             atk: 110,
@@ -10163,13 +10549,15 @@ exports.BattlePokedex = {
             spd: 117,
             spe: 62
         },
-         abilities: {0: "Soften Up"},
+        abilities: {
+            0: "Soften Up"
+        },
     },
-    
+
     catdeer: {
         num: 7500338,
         species: "Catdeer",
-        types: ["Normal", "Dark"], 
+        types: ["Normal", "Dark"],
         baseStats: {
             hp: 79,
             atk: 102,
@@ -10178,13 +10566,15 @@ exports.BattlePokedex = {
             spd: 68,
             spe: 106
         },
-         abilities: {0: "Tricky Glare"},
+        abilities: {
+            0: "Tricky Glare"
+        },
     },
-    
+
     hooptrio: {
         num: 7500339,
         species: "Hooptrio",
-        types: ["Ground", "Dark"], 
+        types: ["Ground", "Dark"],
         baseStats: {
             hp: 75,
             atk: 140,
@@ -10193,9 +10583,11 @@ exports.BattlePokedex = {
             spd: 100,
             spe: 100
         },
-         abilities: {0: "Confiscation"},
+        abilities: {
+            0: "Confiscation"
+        },
     },
-    
+
     fablefin: {
         num: 7500340,
         species: "Fablefin",
@@ -10208,9 +10600,11 @@ exports.BattlePokedex = {
             spd: 125,
             spe: 80
         },
-         abilities: {0: "Misty Mind"},
+        abilities: {
+            0: "Misty Mind"
+        },
     },
-    
+
     klefz: {
         num: 7500341,
         species: "Klef-Z",
@@ -10223,13 +10617,15 @@ exports.BattlePokedex = {
             spd: 81,
             spe: 102
         },
-         abilities: {0: "Familiar Maneuvering"},
+        abilities: {
+            0: "Familiar Maneuvering"
+        },
     },
-    
+
     tropisteela: {
         num: 7500342,
         species: "Tropisteela",
-        types: ["Flying", "Steel"], 
+        types: ["Flying", "Steel"],
         baseStats: {
             hp: 100,
             atk: 90,
@@ -10238,13 +10634,15 @@ exports.BattlePokedex = {
             spd: 104,
             spe: 56
         },
-         abilities: {0: "Stat Harvesting"},
+        abilities: {
+            0: "Stat Harvesting"
+        },
     },
-    
+
     pokemon: {
         num: 7500343,
         species: "Pokemon",
-        types: ["Water", "Fighting"], 
+        types: ["Water", "Fighting"],
         baseStats: {
             hp: 77,
             atk: 129,
@@ -10253,13 +10651,15 @@ exports.BattlePokedex = {
             spd: 86,
             spe: 110
         },
-         abilities: {0: "Ability"},
+        abilities: {
+            0: "Ability"
+        },
     },
-    
+
     nosegod: {
         num: 7500344,
         species: "Nose God",
-        types: ["Normal", "Rock"], 
+        types: ["Normal", "Rock"],
         baseStats: {
             hp: 75,
             atk: 103,
@@ -10268,13 +10668,15 @@ exports.BattlePokedex = {
             spd: 110,
             spe: 80
         },
-         abilities: {0: "Type Trap"},
+        abilities: {
+            0: "Type Trap"
+        },
     },
-    
+
     swampterra: {
         num: 7500345,
         species: "Swampterra",
-        types: ["Ground", "Water"], 
+        types: ["Ground", "Water"],
         baseStats: {
             hp: 107,
             atk: 119,
@@ -10283,16 +10685,18 @@ exports.BattlePokedex = {
             spd: 97,
             spe: 68
         },
-         abilities: {0: "Uninhabitable"},
+        abilities: {
+            0: "Uninhabitable"
+        },
     },
-    
+
     swampterramega: {
         num: 7500345,
         species: "Swampterra-Mega",
         baseSpecies: "Swampterra",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Ground", "Water"], 
+        types: ["Ground", "Water"],
         baseStats: {
             hp: 107,
             atk: 159,
@@ -10301,9 +10705,11 @@ exports.BattlePokedex = {
             spd: 117,
             spe: 78
         },
-        abilities: {0: "Swift Swim"},
+        abilities: {
+            0: "Swift Swim"
+        },
     },
-    
+
     zeklade: {
         num: 7500346,
         species: "Zeklade",
@@ -10316,13 +10722,15 @@ exports.BattlePokedex = {
             spd: 95,
             spe: 62
         },
-         abilities: {0: "Unstable Voltage"},
+        abilities: {
+            0: "Unstable Voltage"
+        },
     },
-    
+
     grequa: {
         num: 7500347,
         species: "Grequa",
-        types: ["Water", "Bug"], 
+        types: ["Water", "Bug"],
         baseStats: {
             hp: 82,
             atk: 92,
@@ -10331,9 +10739,11 @@ exports.BattlePokedex = {
             spd: 111,
             spe: 92
         },
-         abilities: {0: "Huge Bubble"},
+        abilities: {
+            0: "Huge Bubble"
+        },
     },
-    
+
     alteyer: {
         num: 7500348,
         species: "Alteyer",
@@ -10346,16 +10756,18 @@ exports.BattlePokedex = {
             spd: 112,
             spe: 85
         },
-         abilities: {0: "Constellation"},
+        abilities: {
+            0: "Constellation"
+        },
     },
-    
+
     alteyermega: {
         num: 7500348,
         species: "Alteyer-Mega",
         baseSpecies: "Alteyer",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Ghost", "Fairy"], 
+        types: ["Ghost", "Fairy"],
         baseStats: {
             hp: 86,
             atk: 138,
@@ -10364,12 +10776,14 @@ exports.BattlePokedex = {
             spd: 112,
             spe: 85
         },
-        abilities: {0: "Pixilate"},
+        abilities: {
+            0: "Pixilate"
+        },
     },
-scrafting: {
+    scrafting: {
         num: 7500349,
         species: "Scrafting",
-        types: ["Fighting", "Normal"], 
+        types: ["Fighting", "Normal"],
         baseStats: {
             hp: 117,
             atk: 135,
@@ -10378,13 +10792,15 @@ scrafting: {
             spd: 97,
             spe: 89
         },
-         abilities: {0: "Stare Down"},
+        abilities: {
+            0: "Stare Down"
+        },
     },
-    
+
     not: {
         num: 7500350,
         species: "Not",
-        types: ["Flying", "Normal"], 
+        types: ["Flying", "Normal"],
         baseStats: {
             hp: 94,
             atk: 85,
@@ -10393,16 +10809,18 @@ scrafting: {
             spd: 85,
             spe: 122
         },
-         abilities: {0: "Ambition"},
+        abilities: {
+            0: "Ambition"
+        },
     },
-    
+
     notmega: {
         num: 7500350,
         species: "Not-Mega",
         baseSpecies: "Not",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Flying", "Normal"], 
+        types: ["Flying", "Normal"],
         baseStats: {
             hp: 94,
             atk: 85,
@@ -10411,13 +10829,15 @@ scrafting: {
             spd: 95,
             spe: 142
         },
-        abilities: {0: "No Guard"},
+        abilities: {
+            0: "No Guard"
+        },
     },
-    
+
     joltsol: {
         num: 7500351,
         species: "Joltsol",
-        types: ["Electric", "Dark"], 
+        types: ["Electric", "Dark"],
         baseStats: {
             hp: 75,
             atk: 107,
@@ -10426,16 +10846,18 @@ scrafting: {
             spd: 87,
             spe: 112
         },
-         abilities: {0: "Power Surge"},
+        abilities: {
+            0: "Power Surge"
+        },
     },
-    
+
     joltsolmega: {
         num: 7500351,
         species: "Joltsol-Mega",
         baseSpecies: "Joltsol",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Electric", "Dark"], 
+        types: ["Electric", "Dark"],
         baseStats: {
             hp: 75,
             atk: 127,
@@ -10444,9 +10866,11 @@ scrafting: {
             spd: 87,
             spe: 152
         },
-        abilities: {0: "Magic Bounce"},
+        abilities: {
+            0: "Magic Bounce"
+        },
     },
-    
+
     topaz: {
         num: 7500352,
         species: "Topaz",
@@ -10459,13 +10883,15 @@ scrafting: {
             spd: 85,
             spe: 95
         },
-         abilities: {0: "Power Of Two"},
+        abilities: {
+            0: "Power Of Two"
+        },
     },
-    
+
     dolphin: {
         num: 7500353,
         species: "Dolphin",
-        types: ["Fire", "Normal"], 
+        types: ["Fire", "Normal"],
         baseStats: {
             hp: 122,
             atk: 124,
@@ -10474,9 +10900,11 @@ scrafting: {
             spd: 92,
             spe: 112
         },
-         abilities: {0: "Lava Dive"},
+        abilities: {
+            0: "Lava Dive"
+        },
     },
-    
+
     snorligatr: {
         num: 7500354,
         species: "Snorligatr",
@@ -10489,13 +10917,15 @@ scrafting: {
             spd: 106,
             spe: 64
         },
-         abilities: {0: "Sheer Fat"},
+        abilities: {
+            0: "Sheer Fat"
+        },
     },
-    
+
     emponite: {
         num: 7500355,
         species: "Emponite",
-        types: ["Steel", "Dragon"], 
+        types: ["Steel", "Dragon"],
         baseStats: {
             hp: 97,
             atk: 120,
@@ -10504,13 +10934,15 @@ scrafting: {
             spd: 110,
             spe: 80
         },
-         abilities: {0: "Ocean Shield"},
+        abilities: {
+            0: "Ocean Shield"
+        },
     },
-    
+
     leafrou: {
         num: 7500356,
         species: "Leafrou",
-        types: ["Normal", "Grass"], 
+        types: ["Normal", "Grass"],
         baseStats: {
             hp: 80,
             atk: 105,
@@ -10519,9 +10951,11 @@ scrafting: {
             spd: 87,
             spe: 108
         },
-         abilities: {0: "Chlorocoat"},
+        abilities: {
+            0: "Chlorocoat"
+        },
     },
-    
+
     mimiblim: {
         num: 7500357,
         species: "Mimiblim",
@@ -10534,9 +10968,11 @@ scrafting: {
             spd: 89,
             spe: 98
         },
-         abilities: {0: "Disguise Burden"},
+        abilities: {
+            0: "Disguise Burden"
+        },
     },
-    
+
     warcanein: {
         num: 7500358,
         species: "Warcanein",
@@ -10549,9 +10985,11 @@ scrafting: {
             spd: 95,
             spe: 90
         },
-         abilities: {0: "Persistent Morale"},
+        abilities: {
+            0: "Persistent Morale"
+        },
     },
-    
+
     zorarce: {
         num: 7500359,
         species: "Zorarce",
@@ -10564,9 +11002,11 @@ scrafting: {
             spd: 90,
             spe: 102
         },
-         abilities: {0: "Type Illusionist"},
+        abilities: {
+            0: "Type Illusionist"
+        },
     },
-    
+
     zorarcefire: {
         num: 7500359,
         species: "Zorarce-Fire",
@@ -10582,9 +11022,11 @@ scrafting: {
             spd: 90,
             spe: 102
         },
-        abilities: {0: "Type Illusionist"},
+        abilities: {
+            0: "Type Illusionist"
+        },
     },
-    
+
     zorarcewater: {
         num: 7500359,
         species: "Zorarce-Water",
@@ -10600,9 +11042,11 @@ scrafting: {
             spd: 90,
             spe: 102
         },
-        abilities: {0: "Type Illusionist"},
+        abilities: {
+            0: "Type Illusionist"
+        },
     },
-    
+
     zorarceelectric: {
         num: 7500359,
         species: "Zorarce-Electric",
@@ -10618,9 +11062,11 @@ scrafting: {
             spd: 90,
             spe: 102
         },
-        abilities: {0: "Type Illusionist"},
+        abilities: {
+            0: "Type Illusionist"
+        },
     },
-    
+
     zorarcegrass: {
         num: 7500359,
         species: "Zorarce-Grass",
@@ -10636,9 +11082,11 @@ scrafting: {
             spd: 90,
             spe: 102
         },
-        abilities: {0: "Type Illusionist"},
+        abilities: {
+            0: "Type Illusionist"
+        },
     },
-    
+
     zorarceice: {
         num: 7500359,
         species: "Zorarce-Ice",
@@ -10654,9 +11102,11 @@ scrafting: {
             spd: 90,
             spe: 102
         },
-        abilities: {0: "Type Illusionist"},
+        abilities: {
+            0: "Type Illusionist"
+        },
     },
-    
+
     zorarcefighting: {
         num: 7500359,
         species: "Zorarce-Fighting",
@@ -10672,9 +11122,11 @@ scrafting: {
             spd: 90,
             spe: 102
         },
-        abilities: {0: "Type Illusionist"},
+        abilities: {
+            0: "Type Illusionist"
+        },
     },
-    
+
     zorarcepoison: {
         num: 7500359,
         species: "Zorarce-Poison",
@@ -10690,9 +11142,11 @@ scrafting: {
             spd: 90,
             spe: 102
         },
-        abilities: {0: "Type Illusionist"},
+        abilities: {
+            0: "Type Illusionist"
+        },
     },
-    
+
     zorarceground: {
         num: 7500359,
         species: "Zorarce-Ground",
@@ -10708,9 +11162,11 @@ scrafting: {
             spd: 90,
             spe: 102
         },
-        abilities: {0: "Type Illusionist"},
+        abilities: {
+            0: "Type Illusionist"
+        },
     },
-    
+
     zorarceflying: {
         num: 7500359,
         species: "Zorarce-Flying",
@@ -10726,9 +11182,11 @@ scrafting: {
             spd: 90,
             spe: 102
         },
-        abilities: {0: "Type Illusionist"},
+        abilities: {
+            0: "Type Illusionist"
+        },
     },
-    
+
     zorarcepsychic: {
         num: 7500359,
         species: "Zorarce-Psychic",
@@ -10744,9 +11202,11 @@ scrafting: {
             spd: 90,
             spe: 102
         },
-        abilities: {0: "Type Illusionist"},
+        abilities: {
+            0: "Type Illusionist"
+        },
     },
-    
+
     zorarcebug: {
         num: 7500359,
         species: "Zorarce-Bug",
@@ -10762,9 +11222,11 @@ scrafting: {
             spd: 90,
             spe: 102
         },
-        abilities: {0: "Type Illusionist"},
+        abilities: {
+            0: "Type Illusionist"
+        },
     },
-    
+
     zorarcerock: {
         num: 7500359,
         species: "Zorarce-Rock",
@@ -10780,9 +11242,11 @@ scrafting: {
             spd: 90,
             spe: 102
         },
-        abilities: {0: "Type Illusionist"},
+        abilities: {
+            0: "Type Illusionist"
+        },
     },
-    
+
     zorarceghost: {
         num: 7500359,
         species: "Zorarce-Ghost",
@@ -10798,9 +11262,11 @@ scrafting: {
             spd: 90,
             spe: 102
         },
-        abilities: {0: "Type Illusionist"},
+        abilities: {
+            0: "Type Illusionist"
+        },
     },
-    
+
     zorarcedragon: {
         num: 7500359,
         species: "Zorarce-dragon",
@@ -10816,9 +11282,11 @@ scrafting: {
             spd: 90,
             spe: 102
         },
-        abilities: {0: "Type Illusionist"},
+        abilities: {
+            0: "Type Illusionist"
+        },
     },
-    
+
     zorarcedark: {
         num: 7500359,
         species: "Zorarce-Dark",
@@ -10834,9 +11302,11 @@ scrafting: {
             spd: 90,
             spe: 102
         },
-        abilities: {0: "Type Illusionist"},
+        abilities: {
+            0: "Type Illusionist"
+        },
     },
-    
+
     zorarcesteel: {
         num: 7500359,
         species: "Zorarce-Steel",
@@ -10852,9 +11322,11 @@ scrafting: {
             spd: 90,
             spe: 102
         },
-        abilities: {0: "Type Illusionist"},
+        abilities: {
+            0: "Type Illusionist"
+        },
     },
-    
+
     zorarcefairy: {
         num: 7500359,
         species: "Zorarce-Fairy",
@@ -10870,13 +11342,15 @@ scrafting: {
             spd: 90,
             spe: 102
         },
-        abilities: {0: "Type Illusionist"},
+        abilities: {
+            0: "Type Illusionist"
+        },
     },
-    
+
     happislashfriendly: {
         num: 7500360,
         species: "Happislash-Friendly",
-        types: ["Ghost", "Normal"], 
+        types: ["Ghost", "Normal"],
         baseStats: {
             hp: 80,
             atk: 27,
@@ -10885,16 +11359,18 @@ scrafting: {
             spd: 127,
             spe: 45
         },
-         abilities: {0: "Unfriend"},
+        abilities: {
+            0: "Unfriend"
+        },
     },
-    
+
     happislashunfriendly: {
         num: 7500360,
         species: "Happislash-Unfriendly",
         baseSpecies: "Happislash-Friendly",
         forme: "Unfriendly",
         formeLetter: "U",
-        types: ["Ghost", "Normal"], 
+        types: ["Ghost", "Normal"],
         baseStats: {
             hp: 80,
             atk: 97,
@@ -10903,13 +11379,15 @@ scrafting: {
             spd: 32,
             spe: 45
         },
-        abilities: {0: "Unfriend"},
+        abilities: {
+            0: "Unfriend"
+        },
     },
-    
+
     torkobulu: {
         num: 7500361,
         species: "Torko Bulu",
-        types: ["Grass", "Fire"], 
+        types: ["Grass", "Fire"],
         baseStats: {
             hp: 70,
             atk: 107,
@@ -10918,13 +11396,15 @@ scrafting: {
             spd: 102,
             spe: 47
         },
-         abilities: {0: "Photosynthesis Surge"},
+        abilities: {
+            0: "Photosynthesis Surge"
+        },
     },
-    
+
     pheroxish: {
         num: 7500362,
         species: "Pheroxish",
-        types: ["Water", "Fighting"], 
+        types: ["Water", "Fighting"],
         baseStats: {
             hp: 69,
             atk: 122,
@@ -10933,13 +11413,15 @@ scrafting: {
             spd: 53,
             spe: 141
         },
-         abilities: {0: "Dazzle Beast"},
+        abilities: {
+            0: "Dazzle Beast"
+        },
     },
-    
+
     padunk: {
         num: 7500363,
         species: "Padunk",
-        types: ["Poison", "Dark"], 
+        types: ["Poison", "Dark"],
         baseStats: {
             hp: 93,
             atk: 101,
@@ -10948,13 +11430,15 @@ scrafting: {
             spd: 65,
             spe: 105
         },
-         abilities: {0: "Rage Potion"},
+        abilities: {
+            0: "Rage Potion"
+        },
     },
-    
+
     magnelure: {
         num: 7500364,
         species: "Magnelure",
-        types: ["Electric", "Fire"], 
+        types: ["Electric", "Fire"],
         baseStats: {
             hp: 65,
             atk: 62,
@@ -10963,13 +11447,15 @@ scrafting: {
             spd: 100,
             spe: 90
         },
-         abilities: {0: "Blacksmith"},
+        abilities: {
+            0: "Blacksmith"
+        },
     },
-    
+
     shucklord: {
         num: 7500365,
         species: "Shucklord",
-        types: ["Bug", "Dragon"], 
+        types: ["Bug", "Dragon"],
         baseStats: {
             hp: 141,
             atk: 55,
@@ -10978,13 +11464,15 @@ scrafting: {
             spd: 141,
             spe: 24
         },
-         abilities: {0: "Two-Faced"},
+        abilities: {
+            0: "Two-Faced"
+        },
     },
-    
+
     mtndew: {
         num: 7500366,
         species: "Mtn Dew",
-        types: ["Steel", "Psychic"], 
+        types: ["Steel", "Psychic"],
         baseStats: {
             hp: 79,
             atk: 114,
@@ -10993,13 +11481,15 @@ scrafting: {
             spd: 74,
             spe: 114
         },
-         abilities: {0: "Contagious Yawn"},
+        abilities: {
+            0: "Contagious Yawn"
+        },
     },
-    
+
     altearnia: {
         num: 7500367,
         species: "Altearnia",
-        types: ["Dragon", "Steel"], 
+        types: ["Dragon", "Steel"],
         baseStats: {
             hp: 90,
             atk: 100,
@@ -11008,16 +11498,18 @@ scrafting: {
             spd: 110,
             spe: 72
         },
-         abilities: {0: "Compassionate Soul"},
+        abilities: {
+            0: "Compassionate Soul"
+        },
     },
-    
+
     altearniamega: {
         num: 7500367,
         species: "Altearnia-Mega",
         baseSpecies: "Altearnia",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Dragon", "Fairy"], 
+        types: ["Dragon", "Fairy"],
         baseStats: {
             hp: 90,
             atk: 140,
@@ -11026,13 +11518,15 @@ scrafting: {
             spd: 110,
             spe: 72
         },
-        abilities: {0: "Pixilate"},
+        abilities: {
+            0: "Pixilate"
+        },
     },
-    
+
     regigiot: {
         num: 7500368,
         species: "Regigiot",
-        types: ["Flying", "Ice"], 
+        types: ["Flying", "Ice"],
         baseStats: {
             hp: 81,
             atk: 65,
@@ -11041,16 +11535,18 @@ scrafting: {
             spd: 135,
             spe: 95
         },
-         abilities: {0: "Magical Ice"},
+        abilities: {
+            0: "Magical Ice"
+        },
     },
-    
+
     regigiotmega: {
         num: 7500368,
         species: "Regigiot-Mega",
         baseSpecies: "Regigiot",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Flying", "Ice"], 
+        types: ["Flying", "Ice"],
         baseStats: {
             hp: 81,
             atk: 65,
@@ -11059,13 +11555,15 @@ scrafting: {
             spd: 145,
             spe: 115
         },
-        abilities: {0: "No Guard"},
+        abilities: {
+            0: "No Guard"
+        },
     },
-    
+
     kasukabe: {
         num: 7500369,
         species: "Kasukabe",
-        types: ["Normal", "Fighting"], 
+        types: ["Normal", "Fighting"],
         baseStats: {
             hp: 109,
             atk: 117,
@@ -11074,9 +11572,11 @@ scrafting: {
             spd: 83,
             spe: 103
         },
-         abilities: {0: "Genome Tree"},
+        abilities: {
+            0: "Genome Tree"
+        },
     },
-    
+
     sakamaki: {
         num: 7500370,
         species: "Sakamaki",
@@ -11089,16 +11589,18 @@ scrafting: {
             spd: 85,
             spe: 115
         },
-         abilities: {0: "Code Unknown"},
+        abilities: {
+            0: "Code Unknown"
+        },
     },
-    
+
     sakamakimega: {
         num: 7500370,
         species: "Sakamaki-Mega",
         baseSpecies: "Sakamaki",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Dragon", "Steel"], 
+        types: ["Dragon", "Steel"],
         baseStats: {
             hp: 80,
             atk: 138,
@@ -11107,13 +11609,15 @@ scrafting: {
             spd: 95,
             spe: 135
         },
-        abilities: {0: "Aerilate"},
+        abilities: {
+            0: "Aerilate"
+        },
     },
-    
+
     mapuiasu: {
         num: 7500371,
         species: "Mapu Iasu",
-        types: ["Ghost", "Fairy"], 
+        types: ["Ghost", "Fairy"],
         baseStats: {
             hp: 75,
             atk: 85,
@@ -11122,13 +11626,15 @@ scrafting: {
             spd: 120,
             spe: 90
         },
-         abilities: {0: "Sensu Dancer"},
+        abilities: {
+            0: "Sensu Dancer"
+        },
     },
-    
+
     mapuauhe: {
         num: 7500372,
         species: "Mapu Auhe",
-        types: ["Fire", "Grass"], 
+        types: ["Fire", "Grass"],
         baseStats: {
             hp: 75,
             atk: 120,
@@ -11137,9 +11643,11 @@ scrafting: {
             spd: 85,
             spe: 90
         },
-         abilities: {0: "Baile Dancer"},
+        abilities: {
+            0: "Baile Dancer"
+        },
     },
-    
+
     mapumoli: {
         num: 7500373,
         species: "Mapu Moli",
@@ -11152,9 +11660,11 @@ scrafting: {
             spd: 85,
             spe: 120
         },
-         abilities: {0: "Pom-Pom Dancer"},
+        abilities: {
+            0: "Pom-Pom Dancer"
+        },
     },
-    
+
     mapubupa: {
         num: 7500374,
         species: "Mapu Bupa",
@@ -11167,13 +11677,15 @@ scrafting: {
             spd: 93,
             spe: 98
         },
-         abilities: {0: "Pau Dancer"},
+        abilities: {
+            0: "Pau Dancer"
+        },
     },
-    
+
     meazle: {
         num: 7500375,
         species: "Meazle",
-        types: ["Psychic", "Poison"], 
+        types: ["Psychic", "Poison"],
         baseStats: {
             hp: 84,
             atk: 82,
@@ -11182,9 +11694,11 @@ scrafting: {
             spd: 100,
             spe: 108
         },
-         abilities: {0: "Ailment Master"},
+        abilities: {
+            0: "Ailment Master"
+        },
     },
-    
+
     parantis: {
         num: 7500376,
         species: "Parantis",
@@ -11197,13 +11711,15 @@ scrafting: {
             spd: 95,
             spe: 47
         },
-         abilities: {0: "Thermophilic"},
+        abilities: {
+            0: "Thermophilic"
+        },
     },
-    
+
     dinna: {
         num: 7500377,
         species: "Dinna",
-        types: ["Normal", "Psychic"], 
+        types: ["Normal", "Psychic"],
         baseStats: {
             hp: 82,
             atk: 36,
@@ -11212,13 +11728,15 @@ scrafting: {
             spd: 51,
             spe: 56
         },
-         abilities: {0: "Move~Stat"},
+        abilities: {
+            0: "Move~Stat"
+        },
     },
-    
+
     sylvias: {
         num: 7500378,
         species: "Sylvias",
-        types: ["Dragon", "Fairy"], 
+        types: ["Dragon", "Fairy"],
         baseStats: {
             hp: 107,
             atk: 72,
@@ -11227,16 +11745,18 @@ scrafting: {
             spd: 130,
             spe: 85
         },
-         abilities: {0: "Enchanted"},
+        abilities: {
+            0: "Enchanted"
+        },
     },
-    
+
     sylviasmega: {
         num: 7500378,
         species: "Sylvias-Mega",
         baseSpecies: "Sylvias",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Dragon", "Fairy"], 
+        types: ["Dragon", "Fairy"],
         baseStats: {
             hp: 107,
             atk: 92,
@@ -11245,9 +11765,11 @@ scrafting: {
             spd: 150,
             spe: 85
         },
-        abilities: {0: "A1"},
+        abilities: {
+            0: "A1"
+        },
     },
-    
+
     mightyyvel: {
         num: 7500379,
         species: "Mighty Yvel",
@@ -11260,13 +11782,15 @@ scrafting: {
             spd: 90,
             spe: 102
         },
-         abilities: {0: "Plan In Action"},
+        abilities: {
+            0: "Plan In Action"
+        },
     },
-    
+
     tyranwak: {
         num: 7500380,
         species: "Tyranwak",
-        types: ["Rock", "Ghost"], 
+        types: ["Rock", "Ghost"],
         baseStats: {
             hp: 81,
             atk: 110,
@@ -11275,13 +11799,15 @@ scrafting: {
             spd: 79,
             spe: 68
         },
-         abilities: {0: "Enchanted Skull"},
+        abilities: {
+            0: "Enchanted Skull"
+        },
     },
-    
+
     volcanoemblem: {
         num: 7500381,
         species: "Volcano Emblem",
-        types: ["Flying", "Fire"], 
+        types: ["Flying", "Fire"],
         baseStats: {
             hp: 78,
             atk: 84,
@@ -11290,13 +11816,15 @@ scrafting: {
             spd: 90,
             spe: 100
         },
-         abilities: {0: "Magic Sponge"},
+        abilities: {
+            0: "Magic Sponge"
+        },
     },
-    
+
     pelikoko: {
         num: 7500382,
         species: "Peli Koko",
-        types: ["Water", "Electric"], 
+        types: ["Water", "Electric"],
         baseStats: {
             hp: 65,
             atk: 82,
@@ -11305,9 +11833,11 @@ scrafting: {
             spd: 72,
             spe: 117
         },
-         abilities: {0: "Thunderstorm Surge"},
+        abilities: {
+            0: "Thunderstorm Surge"
+        },
     },
-    
+
     mimitto: {
         num: 7500383,
         species: "Mimitto",
@@ -11320,13 +11850,15 @@ scrafting: {
             spd: 76,
             spe: 72
         },
-         abilities: {0: "Hide-And-Seek"},
+        abilities: {
+            0: "Hide-And-Seek"
+        },
     },
-    
+
     eellee: {
         num: 7500384,
         species: "Eel-Lee",
-        types: ["Electric", "Fire"], 
+        types: ["Electric", "Fire"],
         baseStats: {
             hp: 90,
             atk: 110,
@@ -11335,13 +11867,15 @@ scrafting: {
             spd: 120,
             spe: 71
         },
-         abilities: {0: "Ground Leecher"},
+        abilities: {
+            0: "Ground Leecher"
+        },
     },
-    
+
     celesir: {
         num: 7500385,
         species: "Celesir",
-        types: ["Steel", "Bug"], 
+        types: ["Steel", "Bug"],
         baseStats: {
             hp: 81,
             atk: 133,
@@ -11350,16 +11884,18 @@ scrafting: {
             spd: 105,
             spe: 73
         },
-         abilities: {0: "Bloodthirst"},
+        abilities: {
+            0: "Bloodthirst"
+        },
     },
-    
+
     celesirmega: {
         num: 7500385,
         species: "Celesir-Mega",
         baseSpecies: "Celesir",
         forme: "Mega",
         formeLetter: "M",
-        types: ["Steel", "Flying"], 
+        types: ["Steel", "Flying"],
         baseStats: {
             hp: 81,
             atk: 163,
@@ -11368,13 +11904,15 @@ scrafting: {
             spd: 125,
             spe: 93
         },
-        abilities: {0: "Aerilate"},
+        abilities: {
+            0: "Aerilate"
+        },
     },
-    
+
     nymph: {
         num: 7500386,
         species: "Nymph",
-        types: ["Fairy", "Grass"], 
+        types: ["Fairy", "Grass"],
         baseStats: {
             hp: 88,
             atk: 85,
@@ -11383,9 +11921,11 @@ scrafting: {
             spd: 105,
             spe: 105
         },
-         abilities: {0: "Deceiver"},
+        abilities: {
+            0: "Deceiver"
+        },
     },
-    
+
     kyokid: {
         num: 7500387,
         species: "Kyokid",
@@ -11398,16 +11938,18 @@ scrafting: {
             spd: 97,
             spe: 112
         },
-         abilities: {0: "Electrotorrent"},
+        abilities: {
+            0: "Electrotorrent"
+        },
     },
-    
+
     kyokidprimal: {
         num: 7500387,
         species: "Kyokid-Primal",
         baseSpecies: "Kyokid",
         forme: "Primal",
         formeLetter: "P",
-        types: ["Water", "Electric"], 
+        types: ["Water", "Electric"],
         baseStats: {
             hp: 72,
             atk: 131,
@@ -11416,9 +11958,11 @@ scrafting: {
             spd: 117,
             spe: 112
         },
-        abilities: {0: "Primordial Sea"},
+        abilities: {
+            0: "Primordial Sea"
+        },
     },
-    
+
     lemorusincarnate: {
         num: 7500388,
         species: "Lemorus-Incarnate",
@@ -11431,13 +11975,15 @@ scrafting: {
             spd: 72,
             spe: 73
         },
-         abilities: {0: "Move Madness"},
+        abilities: {
+            0: "Move Madness"
+        },
     },
-    
+
     absoko: {
         num: 7500389,
         species: "Absoko",
-        types: ["Dark", "Fairy"], 
+        types: ["Dark", "Fairy"],
         baseStats: {
             hp: 67,
             atk: 142,
@@ -11446,9 +11992,11 @@ scrafting: {
             spd: 67,
             spe: 122
         },
-         abilities: {0: "Dark Surge"},
+        abilities: {
+            0: "Dark Surge"
+        },
     },
-    
+
     absokomega: {
         num: 7500389,
         species: "Absoko-Mega",
@@ -11464,13 +12012,15 @@ scrafting: {
             spd: 67,
             spe: 162
         },
-        abilities: {0: "Magic Bounce"},
+        abilities: {
+            0: "Magic Bounce"
+        },
     },
-    
+
     permafrost: {
         num: 7500390,
         species: "Permafrost",
-        types: ["Steel", "Fairy"], 
+        types: ["Steel", "Fairy"],
         baseStats: {
             hp: 83,
             atk: 99,
@@ -11479,13 +12029,15 @@ scrafting: {
             spd: 84,
             spe: 94
         },
-         abilities: {0: "Special Snowflake"},
+        abilities: {
+            0: "Special Snowflake"
+        },
     },
-    
+
     giradino: {
         num: 7500391,
         species: "Giradino",
-        types: ["Ghost", "Normal"], 
+        types: ["Ghost", "Normal"],
         baseStats: {
             hp: 146,
             atk: 80,
@@ -11494,9 +12046,11 @@ scrafting: {
             spd: 113,
             spe: 70
         },
-         abilities: {0: "Revitalize"},
+        abilities: {
+            0: "Revitalize"
+        },
     },
-    
+
     giradinomega: {
         num: 7500391,
         species: "Giradino-Mega",
@@ -11512,9 +12066,11 @@ scrafting: {
             spd: 153,
             spe: 70
         },
-        abilities: {0: "Healer"},
+        abilities: {
+            0: "Healer"
+        },
     },
-	xurkizard: {
+    xurkizard: {
         num: 7500392,
         species: "Xurkizard",
         types: ["Electric", "Fire"],
@@ -11526,16 +12082,18 @@ scrafting: {
             spd: 78,
             spe: 111
         },
-         abilities: {0: "Blazing Beast"},
+        abilities: {
+            0: "Blazing Beast"
+        },
     },
-    
+
     xurkizardmegax: {
         num: 7500392,
         species: "Xurkizard-Mega",
         baseSpecies: "Xurkizard",
         forme: "Mega",
         formeLetter: "X",
-        types: ["Electric", "Dragon"], 
+        types: ["Electric", "Dragon"],
         baseStats: {
             hp: 80,
             atk: 132,
@@ -11544,9 +12102,11 @@ scrafting: {
             spd: 78,
             spe: 111
         },
-        abilities: {0: "Tough Claws"},
+        abilities: {
+            0: "Tough Claws"
+        },
     },
-    
+
     xurkizardmegay: {
         num: 7500392,
         species: "Xurkizard-Mega",
@@ -11562,9 +12122,11 @@ scrafting: {
             spd: 108,
             spe: 111
         },
-        abilities: {0: "Drought"},
+        abilities: {
+            0: "Drought"
+        },
     },
-    
+
     skarmeye: {
         num: 7500393,
         species: "Skarmeye",
@@ -11577,9 +12139,11 @@ scrafting: {
             spd: 95,
             spe: 80
         },
-         abilities: {0: "Light Armor"},
+        abilities: {
+            0: "Light Armor"
+        },
     },
-    
+
     marshern: {
         num: 7500394,
         species: "Marshern",
@@ -11592,9 +12156,11 @@ scrafting: {
             spd: 95,
             spe: 80
         },
-         abilities: {0: "Soaking Aura"},
+        abilities: {
+            0: "Soaking Aura"
+        },
     },
-    
+
     grovyltal: {
         num: 7500395,
         species: "Grovyltal",
@@ -11607,9 +12173,11 @@ scrafting: {
             spd: 81,
             spe: 117
         },
-         abilities: {0: "Jailbreak"},
+        abilities: {
+            0: "Jailbreak"
+        },
     },
-    
+
     rairai: {
         num: 7500396,
         species: "Rairai",
@@ -11622,13 +12190,15 @@ scrafting: {
             spd: 85,
             spe: 118
         },
-         abilities: {0: "Paralyzed With Fear"},
+        abilities: {
+            0: "Paralyzed With Fear"
+        },
     },
-    
+
     dramasnow: {
         num: 7500397,
         species: "Dramasnow",
-        types: ["Dragon", "Ice"], 
+        types: ["Dragon", "Ice"],
         baseStats: {
             hp: 94,
             atk: 86,
@@ -11637,9 +12207,11 @@ scrafting: {
             spd: 98,
             spe: 58
         },
-         abilities: {0: "Ageless Blizzard"},
+        abilities: {
+            0: "Ageless Blizzard"
+        },
     },
-    
+
     dramasnowmega: {
         num: 7500397,
         species: "Dramasnow-Mega",
@@ -11655,13 +12227,15 @@ scrafting: {
             spd: 118,
             spe: 28
         },
-        abilities: {0: "Snow Warning"},
+        abilities: {
+            0: "Snow Warning"
+        },
     },
-    
+
     chaosii: {
         num: 7500398,
         species: "Chaos II",
-        types: ["Normal", "Fighting"], 
+        types: ["Normal", "Fighting"],
         baseStats: {
             hp: 80,
             atk: 120,
@@ -11670,365 +12244,1072 @@ scrafting: {
             spd: 70,
             spe: 120
         },
-         abilities: {0: "Flip Out"},
+        abilities: {
+            0: "Flip Out"
+        },
     },
-slowmarina:	{ 
-num: 7500399,
-species: "Slowmarina",
-types: ["Water", "Fairy"],
-genderRatio: {M: 50.0, F: 50.0},
-baseStats: {hp: 97, atk: 84, def: 102, spa: 123, spd: 108, spe: 55},
-abilities: {0: "Magical Voice"},
-heightm: 1.7,
-weightkg: 61.25,
-color: "Pink",
-eggGroups: ["Undiscovered"] 
-},
-	slowmarinamega: { 
-num: 7500399,
-species: "Slowmarina-Mega",
-baseSpecies: "Slowmarina",
-forme: "Mega",
-formeLetter: "M",
-types: ["Water", "Fairy"],
-genderRatio: {M: 50.0, F: 50.0},
-baseStats: {hp: 97, atk: 84, def: 172, spa: 153, spd: 108, spe: 55},
-abilities: {0: "Shell Armor"},
-heightm: 1.9,
-weightkg: 99.25,
-color: "Pink",
-eggGroups: ["Undiscovered"] 
-	},
-kartaria:	{ 
-num:7500400,
-species: "Kartaria",
-types: ["Steel", "Dragon"],
+    slowmarina: {
+        num: 7500399,
+        species: "Slowmarina",
+        types: ["Water", "Fairy"],
+        genderRatio: {
+            M: 50.0,
+            F: 50.0
+        },
+        baseStats: {
+            hp: 97,
+            atk: 84,
+            def: 102,
+            spa: 123,
+            spd: 108,
+            spe: 55
+        },
+        abilities: {
+            0: "Magical Voice"
+        },
+        heightm: 1.7,
+        weightkg: 61.25,
+        color: "Pink",
+        eggGroups: ["Undiscovered"]
+    },
+    slowmarinamega: {
+        num: 7500399,
+        species: "Slowmarina-Mega",
+        baseSpecies: "Slowmarina",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Water", "Fairy"],
+        genderRatio: {
+            M: 50.0,
+            F: 50.0
+        },
+        baseStats: {
+            hp: 97,
+            atk: 84,
+            def: 172,
+            spa: 153,
+            spd: 108,
+            spe: 55
+        },
+        abilities: {
+            0: "Shell Armor"
+        },
+        heightm: 1.9,
+        weightkg: 99.25,
+        color: "Pink",
+        eggGroups: ["Undiscovered"]
+    },
+    kartaria: {
+        num: 7500400,
+        species: "Kartaria",
+        types: ["Steel", "Dragon"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 70,
+            atk: 140,
+            def: 110,
+            spa: 70,
+            spd: 70,
+            spe: 108
+        },
+        abilities: {
+            0: "Cloud Boost"
+        },
+        heightm: 22.8,
+        weightkg: 10.35,
+        color: "Blue",
+        eggGroups: ["Undiscovered"],
+    },
+    kartariamega: {
+        num: 7500400,
+        species: "Kartaria-Mega",
+        baseSpecies: "Kartaria",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Steel", "Fairy"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 70,
+            atk: 180,
+            def: 130,
+            spa: 110,
+            spd: 70,
+            spe: 108
+        },
+        abilities: {
+            0: "Pixilate"
+        },
+        heightm: 22.8,
+        weightkg: 10.35,
+        color: "Blue",
+        eggGroups: ["Undiscovered"],
+    },
+    altarbat: {
+        num: 7500401,
+        species: "Altarbat",
+        types: ["Poison", "Dragon"],
+        genderRatio: {
+            M: 50.0,
+            F: 50.0
+        },
+        baseStats: {
+            hp: 90,
+            atk: 90,
+            def: 95,
+            spa: 80,
+            spd: 102,
+            spe: 115
+        },
+        abilities: {
+            0: "Clean Aura"
+        },
+        heightm: 1.1,
+        weightkg: 20.6,
+        color: "Purple",
+        eggGroups: ["Flying"],
+    },
+    altarbatmega: {
+        num: 7500401,
+        species: "Altarbat-Mega",
+        baseSpecies: "Altarbat",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Poison", "Fairy"],
+        genderRatio: {
+            M: 50.0,
+            F: 50.0
+        },
+        baseStats: {
+            hp: 90,
+            atk: 130,
+            def: 115,
+            spa: 120,
+            spd: 102,
+            spe: 115
+        },
+        abilities: {
+            0: "Pixilate"
+        },
+        heightm: 1.5,
+        weightkg: 20.6,
+        color: "Blue",
+        eggGroups: ["Flying"],
+    },
+    darkelectrode: {
+        num: 7500402,
+        species: "Dark Electrode",
+        types: ["Electric", "Dark"],
+        baseStats: {
+            hp: 65,
+            atk: 70,
+            def: 80,
+            spa: 127,
+            spd: 85,
+            spe: 157
+        },
+        abilities: {
+            0: "Last Nightmare"
+        },
+    },
+    vanilele: {
+        num: 7500403,
+        species: "Vani Lele",
+        types: ["Ice", "Psychic"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 70,
+            atk: 90,
+            def: 80,
+            spa: 140,
+            spd: 105,
+            spe: 107
+        },
+        abilities: {
+            0: "Brainfreeze Surge"
+        },
+        heightm: 1.25,
+        weightkg: 38.05,
+        color: "Pink",
+        eggGroups: ["Undiscovered"]
+    },
+    shiinofey: {
+        num: 7500404,
+        species: "Shiinofey",
+        types: ["Grass", "Fairy"],
+        genderRatio: {
+            M: 37.5,
+            F: 62.5
+        },
+        baseStats: {
+            hp: 65,
+            atk: 58,
+            def: 95,
+            spa: 96,
+            spd: 115,
+            spe: 75
+        },
+        abilities: {
+            0: "Spore Spreading"
+        },
+        heightm: 55,
+        weightkg: 5.9,
+        color: "Green",
+        eggGroups: ["Grass"]
+    },
+    algantine: {
+        num: 7500405,
+        species: "Algantine",
+        types: ["Poison", "Water"],
+        genderRatio: {
+            M: 50.0,
+            F: 50.0
+        },
+        baseStats: {
+            hp: 85,
+            atk: 67,
+            def: 80,
+            spa: 98,
+            spd: 141,
+            spe: 67
+        },
+        abilities: {
+            0: "Adapting Absorption"
+        },
+        heightm: 2,
+        weightkg: 150.8,
+        color: "White",
+        eggGroups: ["Water 1"],
+    },
+    regetta: {
+        num: 7500406,
+        species: "Regetta",
+        types: ["Ice", "Psychic"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 90,
+            atk: 63,
+            def: 88,
+            spa: 134,
+            spd: 184,
+            spe: 70
+        },
+        abilities: {
+            0: "Cool as Ice"
+        },
+        heightm: 1.2,
+        weightkg: 90.8,
+        color: "Blue",
+        eggGroups: ["Undiscovered"]
+    },
+    regettacompressed: {
+        num: 7500406,
+        species: "Regetta-Compressed",
+        baseSpecies: "Regetta",
+        forme: "Compressed",
+        formeLetter: "C",
+        types: ["Ice", "Fighting"],
+        baseStats: {
+            hp: 90,
+            atk: 134,
+            def: 70,
+            spa: 63,
+            spd: 88,
+            spe: 184
+        },
+        abilities: {
+            0: "Cool as Ice"
+        },
+        heightm: 1.2,
+        weightkg: 90.8,
+        color: "Blue",
+        eggGroups: ["Undiscovered"]
+    },
+    heataria: {
+        num: 7500407,
+        species: "Heataria",
+        types: ["Dragon", "Steel"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 103,
+            atk: 100,
+            def: 98,
+            spa: 100,
+            spd: 105,
+            spe: 78
+        },
+        abilities: {
+            0: "Firefighter"
+        },
+    },
+    heatariamega: {
+        num: 7500407,
+        species: "Heataria-Mega",
+        baseSpecies: "Heataria",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Dragon", "Fairy"],
+        baseStats: {
+            hp: 103,
+            atk: 100,
+            def: 98,
+            spa: 100,
+            spd: 105,
+            spe: 78
+        },
+        abilities: {
+            0: "Firefighter"
+        },
+    },
+    gardecuno: {
+        num: 7500408,
+        species: "Gardecuno",
+        types: ["Ice", "Fairy"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 85,
+            atk: 75,
+            def: 90,
+            spa: 120,
+            spd: 128,
+            spe: 90
+        },
+        abilities: {
+            0: "Goddess Trace"
+        },
+        heightm: 1.65,
+        weightkg: 51.9,
+        color: "Blue",
+        eggGroups: ["Undiscovered"]
+    },
+
+    gardecunomega: {
+        num: 7500408,
+        species: "Gardecuno-Mega",
+        baseSpecies: "Gardecuno",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Ice", "Fairy"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 85,
+            atk: 95,
+            def: 90,
+            spa: 160,
+            spd: 148,
+            spe: 110
+        },
+        abilities: {
+            0: "Pixilate"
+        },
+        heightm: 1.65,
+        weightkg: 51.9,
+        color: "Blue",
+        eggGroups: ["Undiscovered"]
+    },
+    sparklingart: {
+        num: 7500408,
+        species: "Sparkling Art",
+        types: ["Steel", "Flying"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 72,
+            atk: 110,
+            def: 92,
+            spa: 60,
+            spd: 92,
+            spe: 115
+        },
+        abilities: {
+            0: "Brilliant Brightness"
+        },
+        heightm: 0.9,
+        weightkg: 53.0,
+        color: "Gray",
+        eggGroups: ["Undiscovered"]
+    },
+    // Vallysect 7500409
+    mamozone: {
+        num: 7500410,
+        species: "Mamozone",
+        types: ["Ground", "Steel"],
+        genderRatio: {
+            M: 50.0,
+            F: 50.0
+        },
+        baseStats: {
+            hp: 90,
+            atk: 120,
+            def: 97,
+            spa: 100,
+            spd: 95,
+            spe: 70
+        },
+        abilities: {
+            0: "Fat Trap"
+        },
+    },
+
+    slakoem: {
+        num: 7500411,
+        species: "Slakoem",
+        types: ["Normal", "Psychic"],
+        genderRatio: {
+            M: 50.0,
+            F: 50.0
+        }, // 106	114	115	62	108	68
+        baseStats: {
+            hp: 106,
+            atk: 114,
+            def: 115,
+            spa: 62,
+            spd: 108,
+            spe: 68
+        },
+        abilities: {
+            0: "Singularity"
+        },
+    },
+    audala: {
+        num: 7500412,
+        species: "Audala",
+        types: ["Ghost", "Normal"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 140,
+            atk: 86,
+            def: 101,
+            spa: 99,
+            spd: 101,
+            spe: 73
+        },
+        abilities: {
+            0: "Recovery Shield"
+        },
+        heightm: 2.6,
+        weightkg: 75.5,
+        color: "Purple",
+        eggGroups: ["Undiscovered"],
+    },
+
+    audalamega: {
+        num: 7500412,
+        species: "Audala-Mega",
+        baseSpecies: "Audala",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Ghost", "Fairy"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 140,
+            atk: 86,
+            def: 141,
+            spa: 119,
+            spd: 141,
+            spe: 73
+        },
+        abilities: {
+            0: "Healer"
+        },
+        heightm: 3.0,
+        weightkg: 76.5,
+        color: "Purple",
+        eggGroups: ["Undiscovered"],
+    },
+
+    sandgarde: {
+        num: 7500413,
+        species: "Sandgarde",
+        types: ["Ground", "Dragon"],
+        gender: "N",
+        baseStats: {
+            hp: 96,
+            atk: 87,
+            def: 115,
+            spa: 110,
+            spd: 105,
+            spe: 65
+        },
+        abilities: {
+            0: "Sandy Construct"
+        },
+        heightm: 3.1,
+        weightkg: 277.5,
+        color: "Brown",
+        eggGroups: ["Undiscovered"],
+        otherFormes: ["sandgardecastle"],
+    },
+
+    sandgardecastle: {
+        num: 7500413,
+        species: "Sandgarde-Castle",
+        baseSpecies: "Sandgarde",
+        forme: "Castle",
+        formeLetter: "C",
+        types: ["Ground", "Dragon"],
+        gender: "N",
+        baseStats: {
+            hp: 204,
+            atk: 87,
+            def: 115,
+            spa: 120,
+            spd: 105,
+            spe: 55
+        },
+        abilities: {
+            0: "Sandy Construct"
+        },
+        heightm: 2.6,
+        weightkg: 582.5,
+        color: "Brown",
+        eggGroups: ["Undiscovered"],
+    },
+
+    triagonal: {
+        num: 7500414,
+        species: "Triagonal",
+        types: ["Electric", "Ice"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 75,
+            atk: 62,
+            def: 55,
+            spa: 120,
+            spd: 97,
+            spe: 125
+        },
+        abilities: {
+            0: "Airbone Lightning"
+        },
+        heightm: 1.3,
+        weightkg: 94.1,
+        color: "Blue",
+        eggGroups: ["Undiscovered"],
+    },
+
+    triagonalmega: {
+        num: 7500414,
+        species: "Triagonal-Mega",
+        baseSpecies: "Triagonal",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Electric", "Ice"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 75,
+            atk: 62,
+            def: 75,
+            spa: 150,
+            spd: 117,
+            spe: 155
+        },
+        abilities: {
+            0: "Intimidate"
+        },
+        heightm: 1.6,
+        weightkg: 97.9,
+        color: "Blue",
+        eggGroups: ["Undiscovered"],
+    },
+
+    exfeycofa: {
+        num: 7500415,
+        species: "Exfey-Cola",
+        types: ["Fairy", "Grass"],
+        genderRatio: {
+            M: 25.0,
+            F: 75.0
+        },
+        baseStats: {
+            hp: 83,
+            atk: 88,
+            def: 97,
+            spa: 133,
+            spd: 102,
+            spe: 82
+        },
+        abilities: {
+            0: "Berry Cola"
+        },
+        heightm: 5.5,
+        weightkg: 208,
+        color: "Green",
+        eggGroups: ["Grass"],
+    },
+
+
+    komodreigon: {
+        num: 7500416,
+        species: "Komodreigon",
+        types: ["Dragon", "Fighting"],
+        genderRatio: {
+            M: 50.0,
+            F: 50.0
+        },
+        baseStats: {
+            hp: 93,
+            atk: 117,
+            def: 117,
+            spa: 125,
+            spd: 107,
+            spe: 101
+        },
+        abilities: {
+            0: "S.O.N.A.R"
+        },
+        eggGroups: ["Field"],
+    },
+
+    dunking: {
+        num: 7500417,
+        species: "Dunking",
+        types: ["Normal"],
+        genderRatio: {
+            M: 50.0,
+            F: 50.0
+        },
+        baseStats: {
+            hp: 135,
+            atk: 125,
+            def: 95,
+            spa: 90,
+            spd: 75,
+            spe: 82
+        },
+        abilities: {
+            0: "Work Ethic"
+        },
+        heightm: 1.8,
+        weightkg: 72.3,
+        color: "Yellow",
+        eggGroups: ["Field"],
+    },
+
+    kudou: {
+        num: 7500418,
+        species: "Kudou",
+        types: ["Water", "Electric"],
+        gender: "N",
+        baseStats: {
+            hp: 85,
+            atk: 100,
+            def: 80,
+            spa: 140,
+            spd: 85,
+            spe: 129
+        },
+        abilities: {
+            0: "Authority"
+        },
+        heightm: 1.4,
+        weightkg: 54.7,
+        color: "Yellow",
+        eggGroups: ["Undiscovered"],
+    },
+
+    golisorem: {
+        num: 7500419,
+        species: "Golisorem",
+        types: ["Ice", "Water"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 100,
+            atk: 147,
+            def: 115,
+            spa: 95,
+            spd: 110,
+            spe: 67
+        },
+        abilities: {
+            0: "Threatening Glare"
+        },
+        heightm: 2.5,
+        weightkg: 216.5,
+        color: "Gray",
+        eggGroups: ["Undiscovered"]
+    },
+
+    tyrazma: {
+        num: 7500420,
+        species: "Tyrazma",
+        types: ["Rock", "Psychic"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 118,
+            atk: 120,
+            def: 105,
+            spa: 121,
+            spd: 104,
+            spe: 70
+        },
+        abilities: {
+            0: "Diamond Shield"
+        },
+        heightm: 2.4,
+        weightkg: 230,
+        color: "Black",
+        eggGroups: ["Undiscovered"],
+    },
+
+    tyrazmamega: {
+        num: 7500420,
+        species: "Tyrazma-Mega",
+        baseSpecies: "Tyrazma",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Rock", "Psychic"],
+        genderRatio: {
+            M: 0.0,
+            F: 0.0
+        },
+        baseStats: {
+            hp: 118,
+            atk: 150,
+            def: 145,
+            spa: 121,
+            spd: 124,
+            spe: 80
+        },
+        abilities: {
+            0: "Sand Stream"
+        },
+        heightm: 2.9,
+        weightkg: 283,
+        color: "Black",
+        eggGroups: ["Undiscovered"],
+    },
+    parasol: {
+        num: 7500421,
+        species: "Parasol",
+        types: ["Bug", "Steel"],
+        genderRatio: {
+            M: 50.0,
+            F: 50.0
+        },
+        baseStats: {
+            hp: 118,
+            atk: 136,
+            def: 93,
+            spa: 86,
+            spd: 84,
+            spe: 63
+        },
+        abilities: {
+            0: "Sunsteel Skin"
+        },
+        heightm: 2.2,
+        weightkg: 129.8,
+        color: "White",
+        eggGroups: ["Bug"],
+        ["Grass"]
+    },
+    diceus: {
+        num: 7500422,
+        species: "Diceus",
+        types: ["Normal"], //104	84	84	84	84	104	544
+        genderRatio: {
+            M: 50.0,
+            F: 50.0
+        },
+        baseStats: {
+            hp: 104,
+            atk: 84,
+            def: 84,
+            spa: 84,
+            spd: 84,
+            spe: 104
+        },
+        abilities: {
+            0: "Miracle Morph"
+        },
+    },
+    nintwo: {
+        num: 7500423,
+        species: "Nintwo",
+        types: ["Bug", "Psychic"], //83	100	77	122	80	145	607
+        genderRatio: {
+            M: 50.0,
+            F: 50.0
+        },
+        baseStats: {
+            hp: 83,
+            atk: 100,
+            def: 77,
+            spa: 122,
+            spd: 80,
+            spe: 145
+        },
+        abilities: {
+            0: "Speed Stopper"
+        },
+    },
+    nintwomegax: {
+        num: 7500423,
+        species: "Nintwo-Mega-X",
+        baseSpecies: "Nintwo",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Bug", "Fighting"],
+        baseStats: {
+            hp: 83,
+            atk: 180,
+            def: 87,
+            spa: 122,
+            spd: 90,
+            spe: 145
+        },
+        abilities: {
+            0: "Steadfast"
+        },
+    },
+    nintwomegaya: {
+        num: 7500423,
+        species: "Nintwo-Mega-Y",
+        baseSpecies: "Nintwo",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Bug", "Psychic"],
+        baseStats: {
+            hp: 83,
+            atk: 140,
+            def: 57,
+            spa: 162,
+            spd: 110,
+            spe: 155
+        },
+        abilities: {
+            0: "Insomnia"
+        },
+    },
+    kommew: {
+        num: 7500424,
+        species: "Kommew",
+        types: ["Fighting", "Psychic"], //107	105	112	110	112	92
+        genderRatio: {
+            M: 50.0,
+            F: 50.0
+        },
+        baseStats: {
+            hp: 107,
+            atk: 105,
+            def: 112,
+            spa: 110,
+            spd: 112,
+            spe: 92
+        },
+        abilities: {
+            0: "Echo Chamber"
+        },
+    },
+	tamatoa: { num: 7500425,
+species: "Tamatoa",
+types: ["Grass", "Water"],
 genderRatio: {M: 0.0, F: 0.0},
-baseStats: {hp: 70, atk: 140, def: 110, spa: 70, spd: 70, spe: 108},
-abilities: {0: "Cloud Boost"},
-heightm: 22.8,
-weightkg: 10.35,
+baseStats: {hp: 70, atk: 140, def: 100, spa: 87, spd: 90, spe: 71},
+abilities: {0: "Kelp Surge"},
+heightm: 86.45,
+weightkg: 39.15,
+color: "Black",
+eggGroups: ["Undiscovered"], },
+	pelippex: { num: 7500426,
+species: "Pelippex",
+types: ["Water", "Poison"],
+genderRatio: {M: 50.0, F: 50.0},
+baseStats: {hp: 65, atk: 66, def: 136, spa: 84, spd: 116, spe: 60},
+abilities: {0: "Rain Regen"},
+heightm: 1,
+weightkg: 21.3,
+color: "Yellow",
+eggGroups: ["Water 1"]},
+	
+	kyzor: { num: 7500427,
+species: "Kyzor",
+types: ["Dragon", "Steel"],
+genderRatio: {M: 0.0, F: 0.0},
+baseStats: {hp: 97, atk: 130, def: 105, spa: 92, spd: 105, spe: 90},
+abilities: {0: "Pressurizer"},
+heightm: 2.4,
+weightkg: 221.5,
 color: "Blue",
-eggGroups: ["Undiscovered"], 
+eggGroups: ["Undiscovered"],
+otherFormes: {"Kyzor-Mega"},
 },
-	kartariamega: { 
-num: 7500400,
-species: "Kartaria-Mega",
-baseSpecies: "Kartaria",
+	
+	kyzormega: { num: 7500427,
+species: "Kyzor-Mega",
+baseSpecies: "Kyzor",
 forme: "Mega",
 formeLetter: "M",
+types: ["Dragon", "Steel"],
+genderRatio: {M: 0.0, F: 0.0},
+baseStats: {hp: 97, atk: 150, def: 145, spa: 102, spd: 125, spe: 100},
+abilities: {0: "Technician"}, 
+heightm: 2.6,
+weightkg: 228.5,
+color: "Blue",
+eggGroups: ["Undiscovered"], },
+	
+	gumanitoos: { num: 7500428,
+species: "Gumanitoos",
+types: ["Normal", "Ghost"],
+genderRatio: {M: 0.0, F: 0.0}, // 119	115	100	77	100	67
+baseStats: {hp: 119, atk: 115, def: 100, spa: 77, spd: 100, spe: 67},
+abilities: {0: "Levi Stakes"},
+},
+	xurkino: { num: 7500429,
+species: "Xurkino",
+types: ["Electric", "Normal"],
+genderRatio: {M: 0.0, F: 0.0},
+baseStats: {hp: 93, atk: 74, def: 98, spa: 116, spd: 98, spe: 66},
+abilities: {0: "Hydra"},
+heightm: 2.5,
+weightkg: 65.5,
+color: "White",
+eggGroups: ["Undiscovered"],
+otherFormes: {"Xurkino-Mega"},
+},
+	
+	xurkinomega: { num: 7500429,
+species: "Xurkino-Mega",
+baseSpecies: "Xurkino",
+forme: "Mega",
+formeLetter: "M",
+types: ["Electric", "Fairy"],
+genderRatio: {M: 0.0, F: 0.0},
+baseStats: {hp: 93, atk: 74, def: 138, spa: 136, spd: 138, spe: 66},
+abilities: {0: "Healer"}, 
+heightm: 2.9,
+weightkg: 66.5,
+color: "White",
+eggGroups: ["Undiscovered"], },
+	
+	yvelchan: { num: 7500430,
+species: "Yvel-Chan",
+types: ["Flying", "Normal"],
+genderRatio: "F",
+baseStats: {hp: 208, atk: 68, def: 70, spa: 83, spd: 101, spe: 74},
+abilities: {0: "Dark Aura"},
+heightm: 3.5,
+weightkg: 118.8,
+color: "Pink",
+eggGroups: ["Fairy"], },
+	
+	heatreon: { num: 7500431,
+species: "Heatreon",
+types: ["Steel", "Fairy"], // 100	77	100	125	130	69
+baseStats: {hp: 100, atk: 77, def: 100, spa: 125, spd: 130, spe: 69},
+abilities: {0: "Fire-B-Gone"},
+ },
+	
+	altarigarde: { num: 7500432, species: "Altarigarde",
+types: ["Ground", "Flying"],
+genderRatio: {M: 0.0, F: 0.0},
+baseStats: {hp: 91, atk: 105, def: 105, spa: 75, spd: 110, spe: 97},
+abilities: {0: "Weather Break"},
+heightm: 3.05,
+weightkg: 162.8,
+color: "Green",
+eggGroups: ["Undiscovered"],
+otherFormes: {"Altarigarde-Mega"}, },
+
+altarigardemega: { num: 7500432,
+species: "Altarigarde-Mega",
+baseSpecies: "Altarigarde",
+forme: "Mega",
+formeLetter: "M",
+types: ["Ground", "Fairy"],
+genderRatio: {M: 0.0, F: 0.0},
+baseStats: {hp: 91, atk: 145, def: 125, spa: 115, spd: 110, spe: 97},
+abilities: {0: "Pixilate"}, 
+heightm: 3.45,
+weightkg: 162.8,
+color: "Green",
+eggGroups: ["Undiscovered"], },
+	flycanion: { num: 7500433,
+species: "Flycanion",
+types: ["Ground", "Fire"],
+genderRatio: {M: 50.0, F: 50.0},
+baseStats: {hp: 100, atk: 105, def: 110, spa: 105, spd: 95, spe: 85},
+abilities: {0: "Mud Absorb"},
+heightm: 1.9,
+weightkg: 138.5,
+color: "Brown",
+eggGroups: ["Bug"], },
+	
+	belle:{ num: 7500434,
+species: "Belle",
 types: ["Steel", "Fairy"],
 genderRatio: {M: 0.0, F: 0.0},
-baseStats: {hp: 70, atk: 180, def: 130, spa: 110, spd: 70, spe: 108},
-abilities: {0: "Pixilate"},
-heightm: 22.8,
-weightkg: 10.35,
-color: "Blue",
-eggGroups: ["Undiscovered"], 
-},
-	altarbat: { 
-		num:7500401,
-species: "Altarbat",
-types: ["Poison", "Dragon"],
-genderRatio: {M: 50.0, F: 50.0},
-baseStats: {hp: 90, atk: 90, def: 95, spa: 80, spd: 102, spe: 115},
-abilities: {0: "Clean Aura"},
-heightm: 1.1,
-weightkg: 20.6,
-color: "Purple",
-eggGroups: ["Flying"], 
-	},
-	altarbatmega: { 
-	num:7500401,
-species: "Altarbat-Mega",
-baseSpecies: "Altarbat",
-forme: "Mega",
-formeLetter: "M",
-types: ["Poison", "Fairy"],
-genderRatio: {M: 50.0, F: 50.0},
-baseStats: {hp: 90, atk: 130, def: 115, spa: 120, spd: 102, spe: 115},
-abilities: {0: "Pixilate"},
-heightm: 1.5,
-weightkg: 20.6,
-color: "Blue",
-eggGroups: ["Flying"], 
-},
-	darkelectrode: { 
-		num:7500402,
-species: "Dark Electrode",
-types: ["Electric", "Dark"],
-baseStats: {hp: 65, atk: 70, def: 80, spa: 127, spd: 85, spe: 157},
-abilities: {0: "Last Nightmare"},
-	},
-	vanilele: { num: 7500403,
-				  species: "Vani Lele",
-types: ["Ice", "Psychic"],
-genderRatio: {M: 0.0, F: 0.0},
-baseStats: {hp: 70, atk: 90, def: 80, spa: 140, spd: 105, spe: 107},
-abilities: {0: "Brainfreeze Surge"},
-heightm: 1.25,
-weightkg: 38.05,
+baseStats: {hp: 100, atk: 85, def: 100, spa: 110, spd: 110, spe: 60},
+abilities: {0: "Greedy Princess"},
+heightm: 1146.3,
+weightkg: 519.95,
 color: "Pink",
-eggGroups: ["Undiscovered"] 
-},
-	shiinofey: { num: 7500404,
-species: "Shiinofey",
-types: ["Grass", "Fairy"],
-genderRatio: {M: 37.5, F: 62.5},
-baseStats: {hp: 65, atk: 58, def: 95, spa: 96, spd: 115, spe: 75},
-abilities: {0: "Spore Spreading"},
-heightm: 55,
-weightkg: 5.9,
-color: "Green",
-eggGroups: ["Grass"] 
-},
-algantine: { num: 7500405,
-species: "Algantine",
-types: ["Poison", "Water"],
-genderRatio: {M: 50.0, F: 50.0},
-baseStats: {hp: 85, atk: 67, def: 80, spa: 98, spd: 141, spe: 67},
-abilities: {0: "Adapting Absorption"},
-heightm: 2,
-weightkg: 150.8,
-color: "White",
-eggGroups: ["Water 1"], 
-},
-	regetta: { num: 7500406,
-species: "Regetta", 
-types: ["Ice", "Psychic"], 
-genderRatio: {M: 0.0, F: 0.0}, 
-baseStats: {hp: 90, atk: 63, def: 88, spa: 134, spd: 184, spe: 70}, 
-abilities: {0: "Cool as Ice"}, 
-heightm: 1.2, 
-weightkg: 90.8,
-color: "Blue", 
-eggGroups: ["Undiscovered"] },
-	regettacompressed: {
-num: 7500406,
-species: "Regetta-Compressed",
-baseSpecies: "Regetta",
-forme: "Compressed",
-formeLetter: "C", 
-types: ["Ice", "Fighting"], 
-baseStats: {hp: 90, atk: 134, def: 70, spa: 63, spd: 88, spe: 184}, 
-abilities: {0: "Cool as Ice"}, 
-heightm: 1.2, 
-weightkg: 90.8,
-color: "Blue", 
-eggGroups: ["Undiscovered"] },
-	heataria: { num: 7500407,
-species: "Heataria", 
-types: ["Dragon", "Steel"],
-genderRatio: {M: 0.0, F: 0.0}, 
-baseStats: {hp: 103, atk: 100, def: 98, spa: 100, spd: 105, spe: 78}, 
-abilities: {0: "Firefighter"}, 
-},
-	heatariamega : {
-num: 7500407,
-species: "Heataria-Mega",
-baseSpecies: "Heataria",
-forme: "Mega",
-formeLetter: "M", 
-types: ["Dragon", "Fairy"], 
-baseStats:{hp: 103, atk: 100, def: 98, spa: 100, spd: 105, spe: 78},
-abilities: {0: "Firefighter"}, 
-},
-gardecuno: { num: 7500408,species: "Gardecuno",
-types: ["Ice", "Fairy"],
+eggGroups: ["Undiscovered"], },
+	
+	maui: { num: 7500435,
+species: "Māui",
+types: ["Electric", "Poison"],
 genderRatio: {M: 0.0, F: 0.0},
-baseStats: {hp: 85, atk: 75, def: 90, spa: 120, spd: 128, spe: 90},
-abilities: {0: "Goddess Trace"},
-heightm: 1.65,
-weightkg: 51.9,
-color: "Blue",
-eggGroups: ["Undiscovered"] },
-	
-	gardecunomega: { num: 7500408,species: "Gardecuno-Mega",
-baseSpecies: "Gardecuno",
-forme: "Mega",
-formeLetter: "M",
-types: ["Ice", "Fairy"],
-genderRatio: {M: 0.0, F: 0.0},
-baseStats: {hp: 85, atk: 95, def: 90, spa: 160, spd: 148, spe: 110},
-abilities: {0: "Pixilate"},
-heightm: 1.65,
-weightkg: 51.9,
-color: "Blue",
-eggGroups: ["Undiscovered"] },
-	sparklingart: { num: 7500408,
-species: "Sparkling Art", 
-types: ["Steel", "Flying"], 
-genderRatio: {M: 0.0, F: 0.0}, 
-baseStats: {hp: 72, atk: 110, def: 92, spa: 60, spd: 92, spe: 115}, 
-abilities: {0: "Brilliant Brightness"}, 
-heightm: 0.9, 
-weightkg: 53.0, 
-color: "Gray", 
-eggGroups: ["Undiscovered"] },
-	// Vallysect 7500409
-	mamozone: { num: 7500410,
-species: "Mamozone",
-types: ["Ground", "Steel"],
-genderRatio: {M: 50.0, F: 50.0}, 
-baseStats: {hp: 90, atk: 120, def: 97, spa: 100, spd: 95, spe: 70},
-abilities: {0: "Fat Trap"},
-},
-	
-	slakoem: { num: 7500411,
-species: "Slakoem",
-types: ["Normal", "Psychic"],
-genderRatio: {M: 50.0, F: 50.0}, // 106	114	115	62	108	68
-baseStats: {hp: 106, atk: 114, def: 115, spa: 62, spd: 108, spe: 68},
-abilities: {0: "Singularity"},
-},
-	audala: { num: 7500412,
-species: "Audala", 
-types: ["Ghost", "Normal"], 
-genderRatio: {M: 0.0, F: 0.0}, 
-baseStats: {hp: 140, atk: 86, def: 101, spa: 99, spd: 101, spe: 73}, 
-abilities: {0: "Recovery Shield"}, 
-heightm: 2.6, 
-weightkg: 75.5, 
-color: "Purple", 
-eggGroups: ["Undiscovered"], },
-
-	audalamega: { num: 7500412,
-species: "Audala-Mega", 
-baseSpecies: "Audala", 
-forme: "Mega", 
-formeLetter: "M", 
-types: ["Ghost", "Fairy"], 
-genderRatio: {M: 0.0, F: 0.0}, 
-baseStats: {hp: 140, atk: 86, def: 141, spa: 119, spd: 141, spe: 73}, 
-abilities: {0: "Healer"}, 
-heightm: 3.0, 
-weightkg: 76.5, 
-color: "Purple", 
-eggGroups: ["Undiscovered"], },
-	
-	sandgarde: { num: 7500413,species: "Sandgarde",
-types: ["Ground", "Dragon"],
-gender: "N",
-baseStats: {hp: 96, atk: 87, def: 115, spa: 110, spd: 105, spe: 65},
-abilities: {0: "Sandy Construct"},
-heightm: 3.1,
-weightkg: 277.5,
-color: "Brown",
-eggGroups: ["Undiscovered"],
-otherFormes: ["sandgardecastle"], },
-	
-	sandgardecastle: { num: 7500413, species: "Sandgarde-Castle",
-baseSpecies: "Sandgarde",
-forme: "Castle",
-formeLetter: "C",
-types: ["Ground", "Dragon"],
-gender: "N",
-baseStats: {hp: 204, atk: 87, def: 115, spa: 120, spd: 105, spe: 55},
-abilities: {0: "Sandy Construct"},
-heightm: 2.6,
-weightkg: 582.5,
-color: "Brown",
-eggGroups: ["Undiscovered"], },
-	
-	triagonal: { num: 7500414, 
-species: "Triagonal", 
-types: ["Electric", "Ice"], 
-genderRatio: {M: 0.0, F: 0.0}, 
-baseStats: {hp: 75, atk: 62, def: 55, spa: 120, spd: 97, spe: 125}, 
-abilities: {0: "Airbone Lightning"}, 
-heightm: 1.3, 
-weightkg: 94.1, 
-color: "Blue", 
-eggGroups: ["Undiscovered"], },
-	
-	triagonalmega: { num: 7500414, 
-species: "Triagonal-Mega", 
-baseSpecies: "Triagonal", 
-forme: "Mega", 
-formeLetter: "M", 
-types: ["Electric", "Ice"], 
-genderRatio: {M: 0.0, F: 0.0}, 
-baseStats: {hp: 75, atk: 62, def: 75, spa: 150, spd: 117, spe: 155}, 
-abilities: {0: "Intimidate"}, 
-heightm: 1.6, 
-weightkg: 97.9, 
-color: "Blue", 
-eggGroups: ["Undiscovered"], },
-	
-	exfeycofa: { num: 7500415,
-species: "Exfey-Cola",
-types: ["Fairy", "Grass"],
-genderRatio: {M: 25.0, F: 75.0},
-baseStats: {hp: 83, atk: 88, def: 97, spa: 133, spd: 102, spe: 82},
-abilities: {0: "Berry Cola"},
-heightm: 5.5,
-weightkg: 208,
-color: "Green",
-eggGroups: ["Grass"], },
-	
-	
-	komodreigon: { num: 7500416,
-species: "Komodreigon",
-types: ["Dragon", "Fighting"],
-genderRatio: {M: 50.0, F: 50.0},
-baseStats: {hp: 93, atk: 117, def: 117, spa: 125, spd: 107, spe: 101},
-abilities: {0: "S.O.N.A.R"},
-eggGroups: ["Field"], },
-	
-	dunking: { num: 7500417,
-species: "Dunking",
-types: ["Normal"],
-genderRatio: {M: 50.0, F: 50.0},
-baseStats: {hp: 135, atk: 125, def: 95, spa: 90, spd: 75, spe: 82},
-abilities: {0: "Work Ethic"},
-heightm: 1.8,
-weightkg: 72.3,
-color: "Yellow",
-eggGroups: ["Field"], },
-	
-	kudou: { num: 7500418, species: "Kudou",
-types: ["Water", "Electric"],
-gender: "N",
-baseStats: {hp: 85, atk: 100, def: 80, spa: 140, spd: 85, spe: 129},
-abilities: {0: "Authority"},
-heightm: 1.4,
-weightkg: 54.7,
-color: "Yellow",
-eggGroups: ["Undiscovered"], },
-	
-	golisorem: { num: 7500419, species: "Golisorem",
-types: ["Ice", "Water"],
-genderRatio: {M: 0.0, F: 0.0},
-baseStats: {hp: 100, atk: 147, def: 115, spa: 95, spd: 110, spe: 67},
-abilities: {0: "Threatening Glare"},
-heightm: 2.5,
-weightkg: 216.5,
-color: "Gray",
-eggGroups: ["Undiscovered"] },
-	
-	tyrazma: { num: 7500420,
-species: "Tyrazma",
-types: ["Rock", "Psychic"],
-genderRatio: {M: 0.0, F: 0.0},
-baseStats: {hp: 118, atk: 120, def: 105, spa: 121, spd: 104, spe: 70},
-abilities: {0: "Diamond Shield"},
-heightm: 2.4,
-weightkg: 230,
+baseStats: {hp: 75, atk: 110, def: 81, spa: 110, spd: 80, spe: 120},
+abilities: {0: "Radioactive Surge"},
+heightm: 90.95,
+weightkg: 41.25,
 color: "Black",
 eggGroups: ["Undiscovered"], },
 	
-	tyrazmamega: { num: 7500420,
-species: "Tyrazma-Mega",
-baseSpecies: "Tyrazma",
-forme: "Mega",
-formeLetter: "M",
-types: ["Rock", "Psychic"],
-genderRatio: {M: 0.0, F: 0.0},
-baseStats: {hp: 118, atk: 150, def: 145, spa: 121, spd: 124, spe: 80},
-abilities: {0: "Sand Stream"},
-heightm: 2.9,
-weightkg: 283,
-color: "Black",
-eggGroups: ["Undiscovered"], },
+	// Garzone and Mega 75004346
 	
+	shitpost: { num: 7500437,
+species: "Shitpost",
+types: ["Dark", "Steel"],
+genderRatio: {M: 50.0, F: 50.0},
+baseStats: {hp: 113, atk: 120, def: 81, spa: 98, spd: 80, spe: 70},
+abilities: {0: "Meme Stealer"},
+heightm: 5.3,
+weightkg: 529.8,
+color: "Green",
+eggGroups: ["Field", "Grass"], },
+	// Cat Bed: 75004348
 };
