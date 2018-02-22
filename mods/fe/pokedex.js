@@ -13041,7 +13041,6 @@ exports.BattlePokedex = {
         weightkg: 129.8,
         color: "White",
         eggGroups: ["Bug"],
-        ["Grass"]
     },
     diceus: {
         num: 7500422,
@@ -13083,7 +13082,7 @@ exports.BattlePokedex = {
             0: "Speed Stopper"
         },
     },
-    /*nintwomegax: {
+    nintwomegax: {
         num: 7500423,
         species: "Nintwo-Mega-X",
         baseSpecies: "Nintwo",
@@ -13515,6 +13514,6 @@ exports.BattlePokedex = {
         weightkg: 529.8,
         color: "Green",
         eggGroups: ["Field", "Grass"],
-    },*/
+    },
 // Cat Bed: 75004348
 };
