@@ -12673,7 +12673,7 @@ exports.BattlePokedex = {
         },
     },
 
-    /*slakoem: {
+    slakoem: {
         num: 7500411,
         species: "Slakoem",
         types: ["Normal", "Psychic"],
@@ -12895,7 +12895,7 @@ exports.BattlePokedex = {
         eggGroups: ["Field"],
     },
 
-    dunking: {
+    /*dunking: {
         num: 7500417,
         species: "Dunking",
         types: ["Normal"],
