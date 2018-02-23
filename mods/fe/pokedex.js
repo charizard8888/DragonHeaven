@@ -12557,7 +12557,7 @@ exports.BattlePokedex = {
         },
     },
     heatariamega: {
-        num: 7500407,
+        num: 7500407, // 103	140	118	140	105	78
         species: "Heataria-Mega",
         baseSpecies: "Heataria",
         forme: "Mega",
@@ -12565,9 +12565,9 @@ exports.BattlePokedex = {
         types: ["Dragon", "Fairy"],
         baseStats: {
             hp: 103,
-            atk: 100,
-            def: 98,
-            spa: 100,
+            atk: 140,
+            def: 118,
+            spa: 140,
             spd: 105,
             spe: 78
         },
