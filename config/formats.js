@@ -4132,6 +4132,10 @@ exports.Formats = [
 			pokemon.id = pokemon.fullname;
 			return temp;
   		},
+		checkLearnset: function (move, template, lsetData, set) {
+            if (!template.fusion) return this.checkLearnset(move, template, lsetData, set);
+            return this.checkLearnset(move, this.getTemplate(template.fusion[0])) || this.checkLearnset(move, this.getTemplate(template.fusion[1]));
+        },
   	},
 	{
 		name: "[Gen 7] Move Mastery",
