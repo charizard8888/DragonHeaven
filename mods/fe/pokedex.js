@@ -4252,6 +4252,7 @@ exports.BattlePokedex = {
         heightm: 1.705,
         weightkg: 72.75,
         color: "Black",
+		  fusion: ["darkrai", "garchomp"],
         eggGroups: ["Undiscovered"],
     },
     jelluk: {
