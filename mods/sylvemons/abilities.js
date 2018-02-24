@@ -17,4 +17,35 @@ Guard Up	Upon switch-in, this Pokemon's Defense or Special Defense goes up by 1 
 Scrappy	Ignores every type inmunity when attacking.
 Technician	This Pokemon's moves of 75 power or less have 1.5x power. Includes Struggle. */
 
+	"magichealing": {
+		id: "magichealing",
+		name: "Magic Healing",
+		spritenum: 242,
+		onResidualOrder: 5,
+		onResidualSubOrder: 2,
+		onResidual: function (pokemon) {
+			if (this.isTerrain('grassyterrain')) return;
+			this.heal(pokemon.maxhp / 16);
+		},
+		onTerrain: function (pokemon) {
+			if (!this.isTerrain('grassyterrain')) return;
+			this.heal(pokemon.maxhp / 16);
+		},
+		desc: "At the end of every turn, the Pokemon restores 1/16 of its max HP.",
+	},
+	/*"etherealfist": {
+		desc: "This Pokemon's punch-based attacks have their power multiplied by 1.2 and become Special.",
+		shortDesc: "This Pokemon's punch-based attacks have 1.2x power and become Special. Sucker Punch is not boosted.",
+		onBasePowerPriority: 8,
+		onBasePower: function (basePower, attacker, defender, move) {
+			if (move.flags['punch']) {
+				this.debug('Iron Fist boost');
+				return this.chainModify([0x1333, 0x1000]);
+			}
+		},
+		id: "etherealfist",
+		name: "Ethereal Fist",
+		rating: 3,
+		num: 89,
+	},*/
 };
