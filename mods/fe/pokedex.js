@@ -4301,11 +4301,11 @@ darkchomp: {
             spe: 113
         },
         abilities: {
-            0: "Sand Dreams"
+            0: "Rough Skin"
         },
         heightm: 1.705,
         weightkg: 72.75,
-fusion: ["darkrai", "garchomp"],
+			fusion: ["darkrai", "garchomp"],
     },
     jelluk: {
         num: 7500115,
