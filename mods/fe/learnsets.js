@@ -1,4382 +1,2096 @@
 'use strict';
 exports.BattleLearnsets = {
-swampamar:
-	{
-		learnset:
-		{
-
-			ancientpower: ["6L1"],
-
-			aquatail: ["6L1"],
-
-			attract: ["6L1"],
-
-			avalanche: ["6L1"],
-
-			bide: ["6L1"],
-
-			blizzard: ["6L1"],
-
-			bodyslam: ["6L1"],
-
-			brickbreak: ["6L1"],
-
-			bulldoze: ["6L1"],
-
-			captivate: ["6L1"],
-
-			confide: ["6L1"],
-
-			counter: ["6L1"],
-
-			defensecurl: ["6L1"],
-
-			dig: ["6L1"],
-
-			dive: ["6L1"],
-
-			doubleedge: ["6L1"],
-
-			doubleteam: ["6L1"],
-
-			dynamicpunch: ["6L1"],
-
-			earthpower: ["6L1"],
-
-			earthquake: ["6L1"],
-
-			echoedvoice: ["6L1"],
-
-			endeavor: ["6L1"],
-
-			endure: ["6L1"],
-
-			facade: ["6L1"],
-
-			fling: ["6L1"],
-
-			focusblast: ["6L1"],
-
-			focuspunch: ["6L1"],
-
-			foresight: ["6L1"],
-
-			frustration: ["6L1"],
-
-			gigaimpact: ["6L1"],
-
-			growl: ["6L1"],
-
-			hail: ["6L1"],
-
-			hammerarm: ["6L1"],
-
-			headbutt: ["6L1"],
-
-			hiddenpower: ["6L1"],
-
-			hydrocannon: ["6L1"],
-
-			hydropump: ["6L1"],
-
-			hyperbeam: ["6L1"],
-
-			icebeam: ["6L1"],
-
-			icepunch: ["6L1"],
-
-			icywind: ["6L1"],
-
-			irontail: ["6L1"],
-
-			lowkick: ["6L1"],
-
-			megakick: ["6L1"],
-
-			megapunch: ["6L1"],
-
-			mimic: ["6L1"],
-
-			mudbomb: ["6L1"],
-
-			muddywater: ["6L1"],
-
-			mudshot: ["6L1"],
-
-			mudslap: ["6L1"],
-
-			mudsport: ["6L1"],
-
-			naturalgift: ["6L1"],
-
-			outrage: ["6L1"],
-
-			poweruppunch: ["6L1"],
-
-			protect: ["6L1"],
-
-			raindance: ["6L1"],
-
-			rest: ["6L1"],
-
-			return: ["6L1"],
-
-			roar: ["6L1"],
-
-			rockclimb: ["6L1"],
-
-			rockslide: ["6L1"],
-
-			rocksmash: ["6L1"],
-
-			rocktomb: ["6L1"],
-
-			rollout: ["6L1"],
-
-			round: ["6L1"],
-
-			scald: ["6L1"],
-
-			secretpower: ["6L1"],
-
-			seismictoss: ["6L1"],
-
-			sleeptalk: ["6L1"],
-
-			sludgewave: ["6L1"],
-
-			snore: ["6L1"],
-
-			stealthrock: ["6L1"],
-
-			stompingtantrum: ["6L1"],
-
-			stoneedge: ["6L1"],
-
-			strength: ["6L1"],
-
-			substitute: ["6L1"],
-
-			superpower: ["6L1"],
-
-			surf: ["6L1"],
-
-			swagger: ["6L1"],
-
-			tackle: ["6L1"],
-
-			takedown: ["6L1"],
-
-			toxic: ["6L1"],
-
-			uproar: ["6L1"],
-
-			waterfall: ["6L1"],
-
-			watergun: ["6L1"],
-
-			waterpledge: ["6L1"],
-
-			waterpulse: ["6L1"],
-
-			whirlpool: ["6L1"],
-
-			workup: ["6L1"],
-
-			barrier: ["6L1"],
-
-			bite: ["6L1"],
-
-			aerialace: ["6L1"],
-
-			allyswitch: ["6L1"],
-
-			bind: ["6L1"],
-
-			block: ["6L1"],
-
-			brutalswing: ["6L1"],
-
-			calmmind: ["6L1"],
-
-			constrict: ["6L1"],
-
-			cut: ["6L1"],
-
-			darkpulse: ["6L1"],
-
-			embargo: ["6L1"],
-
-			flamethrower: ["6L1"],
-
-			flash: ["6L1"],
-
-			foulplay: ["6L1"],
-
-			iceball: ["6L1"],
-
-			hypnosis: ["6L1"],
-
-			knockoff: ["6L1"],
-
-			lightscreen: ["6L1"],
-
-			nightslash: ["6L1"],
-
-			payback: ["6L1"],
-
-			peck: ["6L1"],
-
-			pluck: ["6L1"],
-
-			psybeam: ["6L1"],
-
-			psychic: ["6L1"],
-
-			psychocut: ["6L1"],
-
-			psychup: ["6L1"],
-
-			psyshock: ["6L1"],
-
-			psywave: ["6L1"],
-
-			rockthrow: ["6L1"],
-
-			reflect: ["6L1"],
-
-			retaliate: ["6L1"],
-
-			reversal: ["6L1"],
-
-			roleplay: ["6L1"],
-
-			signalbeam: ["6L1"],
-
-			slash: ["6L1"],
-
-			snatch: ["6L1"],
-
-			spite: ["6L1"],
-
-			sunnyday: ["6L1"],
-
-			switcheroo: ["6L1"],
-
-			taunt: ["6L1"],
-
-			telekinesis: ["6L1"],
-
-			thief: ["6L1"],
-
-		}
-	},
 
 	gyarotic:
 	{
 		learnset:
 		{
-
 			aquatail: ["6L1"],
-
 			attract: ["6L1"],
-
 			avalanche: ["6L1"],
-
 			bide: ["6L1"],
-
 			bite: ["6L1"],
-
 			blizzard: ["6L1"],
-
 			bodyslam: ["6L1"],
-
 			bounce: ["6L1"],
-
 			brine: ["6L1"],
-
 			brutalswing: ["6L1"],
-
 			bubblebeam: ["6L1"],
-
 			bulldoze: ["6L1"],
-
 			captivate: ["6L1"],
-
 			confide: ["6L1"],
-
 			crunch: ["6L1"],
-
 			curse: ["6L1"],
-
 			darkpulse: ["6L1"],
-
 			dive: ["6L1"],
-
 			doubleedge: ["6L1"],
-
 			doubleteam: ["6L1"],
-
 			dragonbreath: ["6L1"],
-
 			dragondance: ["6L1"],
-
 			dragonpulse: ["6L1"],
-
 			dragonrage: ["6L1"],
-
 			dragontail: ["6L1"],
-
 			earthquake: ["6L1"],
-
 			endure: ["6L1"],
-
 			facade: ["6L1"],
-
 			fireblast: ["6L1"],
-
 			flamethrower: ["6L1"],
-
 			frustration: ["6L1"],
-
 			gigaimpact: ["6L1"],
-
 			hail: ["6L1"],
-
 			headbutt: ["6L1"],
-
 			hiddenpower: ["6L1"],
-
 			hurricane: ["6L1"],
-
 			hydropump: ["6L1"],
-
 			hyperbeam: ["6L1"],
-
 			icebeam: ["6L1"],
-
 			icefang: ["6L1"],
-
 			icywind: ["6L1"],
-
 			incinerate: ["6L1"],
-
 			ironhead: ["6L1"],
-
 			irontail: ["6L1"],
-
 			leer: ["6L1"],
-
 			mimic: ["6L1"],
-
 			naturalgift: ["6L1"],
-
 			outrage: ["6L1"],
-
 			payback: ["6L1"],
-
 			protect: ["6L1"],
-
 			rage: ["6L1"],
-
 			raindance: ["6L1"],
-
 			reflect: ["6L1"],
-
 			rest: ["6L1"],
-
 			return: ["6L1"],
-
 			roar: ["6L1"],
-
 			rocksmash: ["6L1"],
-
 			round: ["6L1"],
-
 			sandstorm: ["6L1"],
-
 			scald: ["6L1"],
-
 			scaryface: ["6L1"],
-
 			secretpower: ["6L1"],
-
 			skullbash: ["6L1"],
-
 			sleeptalk: ["6L1"],
-
 			snore: ["6L1"],
-
 			spite: ["6L1"],
-
 			stoneedge: ["6L1"],
-
 			strength: ["6L1"],
-
 			substitute: ["6L1"],
-
 			surf: ["6L1"],
-
 			swagger: ["6L1"],
-
 			tackle: ["6L1"],
-
 			takedown: ["6L1"],
-
 			taunt: ["6L1"],
-
 			thrash: ["6L1"],
-
 			thunder: ["6L1"],
-
 			thunderbolt: ["6L1"],
-
 			thunderwave: ["6L1"],
-
 			torment: ["6L1"],
-
 			toxic: ["6L1"],
-
 			twister: ["6L1"],
-
 			uproar: ["6L1"],
-
 			waterfall: ["6L1"],
-
 			watergun: ["6L1"],
-
 			waterpulse: ["6L1"],
-
 			whirlpool: ["6L1"],
-
 			zapcannon: ["6L1"],
-
 			celebrate: ["6L1"],
-
 			flail: ["6L1"],
-
 			happyhour: ["6L1"],
-
 			aquaring: ["6L1"],
-
 			bind: ["6L1"],
-
 			coil: ["6L1"],
-
 			disarmingvoice: ["6L1"],
-
 		}
 	},
-
 	azuninja:
 	{
 		learnset:
 		{
-
 			aquaring: ["6L1"],
-
 			aquatail: ["6L1"],
-
 			attract: ["6L1"],
-
 			blizzard: ["6L1"],
-
 			bodyslam: ["6L1"],
-
 			bounce: ["6L1"],
-
 			brickbreak: ["6L1"],
-
 			bubble: ["6L1"],
-
 			bubblebeam: ["6L1"],
-
 			bulldoze: ["6L1"],
-
 			captivate: ["6L1"],
-
 			confide: ["6L1"],
-
 			covet: ["6L1"],
-
 			curse: ["6L1"],
-
 			defensecurl: ["6L1"],
-
 			dig: ["6L1"],
-
 			dive: ["6L1"],
-
 			doubleedge: ["6L1"],
-
 			doubleteam: ["6L1"],
-
 			dynamicpunch: ["6L1"],
-
 			endure: ["6L1"],
-
 			facade: ["6L1"],
-
 			fling: ["6L1"],
-
 			focusblast: ["6L1"],
-
 			focuspunch: ["6L1"],
-
 			frustration: ["6L1"],
-
 			gigaimpact: ["6L1"],
-
 			grassknot: ["6L1"],
-
 			hail: ["6L1"],
-
 			headbutt: ["6L1"],
-
 			helpinghand: ["6L1"],
-
 			hiddenpower: ["6L1"],
-
 			hydropump: ["6L1"],
-
 			hyperbeam: ["6L1"],
-
 			hypervoice: ["6L1"],
-
 			icebeam: ["6L1"],
-
 			icepunch: ["6L1"],
-
 			icywind: ["6L1"],
-
 			irontail: ["6L1"],
-
 			knockoff: ["6L1"],
-
 			lightscreen: ["6L1"],
-
 			liquidation: ["6L1"],
-
 			megakick: ["6L1"],
-
 			megapunch: ["6L1"],
-
 			mimic: ["6L1"],
-
 			mudslap: ["6L1"],
-
 			naturalgift: ["6L1"],
-
 			playrough: ["6L1"],
-
 			poweruppunch: ["6L1"],
-
 			protect: ["6L1"],
-
 			raindance: ["6L1"],
-
 			rest: ["6L1"],
-
 			return: ["6L1"],
-
 			rocksmash: ["6L1"],
-
 			rollout: ["6L1"],
-
 			round: ["6L1"],
-
 			scald: ["6L1"],
-
 			secretpower: ["6L1"],
-
 			seismictoss: ["6L1"],
-
 			sleeptalk: ["6L1"],
-
 			snore: ["6L1"],
-
 			strength: ["6L1"],
-
 			substitute: ["6L1"],
-
 			superpower: ["6L1"],
-
 			surf: ["6L1"],
-
 			swagger: ["6L1"],
-
 			swift: ["6L1"],
-
 			tackle: ["6L1"],
-
 			tailwhip: ["6L1"],
-
 			toxic: ["6L1"],
-
 			waterfall: ["6L1"],
-
 			watergun: ["6L1"],
-
 			waterpulse: ["6L1"],
-
 			watersport: ["6L1"],
-
 			whirlpool: ["6L1"],
-
 			workup: ["6L1"],
-
 			camouflage: ["6L1"],
-
 			charm: ["6L1"],
-
 			copycat: ["6L1"],
-
 			encore: ["6L1"],
-
 			faketears: ["6L1"],
-
 			acrobatics: ["6L1"],
-
 			aerialace: ["6L1"],
-
 			brutalswing: ["6L1"],
-
 			muddywater: ["6L1"],
-
 			cut: ["6L1"],
-
 			darkpulse: ["6L1"],
-
 			refresh: ["6L1"],
-
 			echoedvoice: ["6L1"],
-
 			extrasensory: ["6L1"],
-
 			feintattack: ["6L1"],
-
 			sing: ["6L1"],
-
 			slam: ["6L1"],
-
 			growl: ["6L1"],
-
 			gunkshot: ["6L1"],
-
 			happyhour: ["6L1"],
-
 			haze: ["6L1"],
-
 			hydrocannon: ["6L1"],
-
 			tickle: ["6L1"],
-
 			lick: ["6L1"],
-
 			lowkick: ["6L1"],
-
 			matblock: ["6L1"],
-
 			nightslash: ["6L1"],
-
 			pound: ["6L1"],
-
 			quickattack: ["6L1"],
-
 			aquajet: ["6L1"],
-
 			rockslide: ["6L1"],
-
 			bellydrum: ["6L1"],
-
 			rocktomb: ["6L1"],
-
 			roleplay: ["6L1"],
-
 			shadowsneak: ["6L1"],
-
 			smackdown: ["6L1"],
-
 			smokescreen: ["6L1"],
-
 			snatch: ["6L1"],
-
 			spikes: ["6L1"],
-
 			spite: ["6L1"],
-
 		}
 	},
-
 	chandeform:
 	{
 		learnset:
 		{
-
 			allyswitch: ["6L1"],
-
 			attract: ["6L1"],
-
 			calmmind: ["6L1"],
-
 			confide: ["6L1"],
-
 			confuseray: ["6L1"],
-
 			darkpulse: ["6L1"],
-
 			doubleteam: ["6L1"],
-
 			dreameater: ["6L1"],
-
 			embargo: ["6L1"],
-
 			energyball: ["6L1"],
-
 			facade: ["6L1"],
-
 			fireblast: ["6L1"],
-
 			flameburst: ["6L1"],
-
 			flamecharge: ["6L1"],
-
 			flamethrower: ["6L1"],
-
 			flash: ["6L1"],
-
 			frustration: ["6L1"],
-
 			gigaimpact: ["6L1"],
-
 			heatwave: ["6L1"],
-
 			hex: ["6L1"],
-
 			hiddenpower: ["6L1"],
-
 			hyperbeam: ["6L1"],
-
 			incinerate: ["6L1"],
-
 			laserfocus: ["6L1"],
-
 			overheat: ["6L1"],
-
 			painsplit: ["6L1"],
-
 			payback: ["6L1"],
-
 			protect: ["6L1"],
-
 			psychic: ["6L1"],
-
 			psychup: ["6L1"],
-
 			rest: ["6L1"],
-
 			return: ["6L1"],
-
 			round: ["6L1"],
-
 			safeguard: ["6L1"],
-
 			secretpower: ["6L1"],
-
 			shadowball: ["6L1"],
-
 			shockwave: ["6L1"],
-
 			sleeptalk: ["6L1"],
-
 			smog: ["6L1"],
-
 			snore: ["6L1"],
-
 			solarbeam: ["6L1"],
-
 			spite: ["6L1"],
-
 			substitute: ["6L1"],
-
 			sunnyday: ["6L1"],
-
 			swagger: ["6L1"],
-
 			taunt: ["6L1"],
-
 			telekinesis: ["6L1"],
-
 			thief: ["6L1"],
-
 			toxic: ["6L1"],
-
 			trick: ["6L1"],
-
 			trickroom: ["6L1"],
-
 			willowisp: ["6L1"],
-
 			acid: ["6L1"],
-
 			acidarmor: ["6L1"],
-
 			astonish: ["6L1"],
-
 			captivate: ["6L1"],
-
 			clearsmog: ["6L1"],
-
 			curse: ["6L1"],
-
 			ember: ["6L1"],
-
 			endure: ["6L1"],
-
 			firespin: ["6L1"],
-
 			amnesia: ["6L1"],
-
 			avalanche: ["6L1"],
-
 			blizzard: ["6L1"],
-
 			bodyslam: ["6L1"],
-
 			imprison: ["6L1"],
-
 			cosmicpower: ["6L1"],
-
 			defensecurl: ["6L1"],
-
 			defog: ["6L1"],
-
 			disable: ["6L1"],
-
 			doubleedge: ["6L1"],
-
 			powersplit: ["6L1"],
-
 			futuresight: ["6L1"],
-
 			guardswap: ["6L1"],
-
 			hail: ["6L1"],
-
 			headbutt: ["6L1"],
-
 			hurricane: ["6L1"],
-
 			hydropump: ["6L1"],
-
 			icebeam: ["6L1"],
-
 			icywind: ["6L1"],
-
 			lastresort: ["6L1"],
-
 			luckychant: ["6L1"],
-
 			mimic: ["6L1"],
-
 			naturalgift: ["6L1"],
-
 			ominouswind: ["6L1"],
-
 		}
 	},
-
 	mismatross:
 	{
 		learnset:
 		{
-
 			aerialace: ["6L1"],
-
 			allyswitch: ["6L1"],
-
 			astonish: ["6L1"],
-
 			attract: ["6L1"],
-
 			calmmind: ["6L1"],
-
 			captivate: ["6L1"],
-
 			chargebeam: ["6L1"],
-
 			confide: ["6L1"],
-
 			darkpulse: ["6L1"],
-
 			dazzlinggleam: ["6L1"],
-
 			doubleteam: ["6L1"],
-
 			dreameater: ["6L1"],
-
 			echoedvoice: ["6L1"],
-
 			embargo: ["6L1"],
-
 			endure: ["6L1"],
-
 			energyball: ["6L1"],
-
 			facade: ["6L1"],
-
 			flash: ["6L1"],
-
 			foulplay: ["6L1"],
-
 			frustration: ["6L1"],
-
 			gigaimpact: ["6L1"],
-
 			growl: ["6L1"],
-
 			headbutt: ["6L1"],
-
 			healbell: ["6L1"],
-
 			hiddenpower: ["6L1"],
-
 			hyperbeam: ["6L1"],
-
 			hypervoice: ["6L1"],
-
 			icywind: ["6L1"],
-
 			laserfocus: ["6L1"],
-
 			luckychant: ["6L1"],
-
 			magicalleaf: ["6L1"],
-
 			magiccoat: ["6L1"],
-
 			magicroom: ["6L1"],
-
 			mysticalfire: ["6L1"],
-
 			naturalgift: ["6L1"],
-
 			ominouswind: ["6L1"],
-
 			painsplit: ["6L1"],
-
 			payback: ["6L1"],
-
 			phantomforce: ["6L1"],
-
 			powergem: ["6L1"],
-
 			protect: ["6L1"],
-
 			psychic: ["6L1"],
-
 			psychup: ["6L1"],
-
 			psywave: ["6L1"],
-
 			raindance: ["6L1"],
-
 			rest: ["6L1"],
-
 			return: ["6L1"],
-
 			round: ["6L1"],
-
 			secretpower: ["6L1"],
-
 			shadowball: ["6L1"],
-
 			shockwave: ["6L1"],
-
 			skillswap: ["6L1"],
-
 			sleeptalk: ["6L1"],
-
 			snatch: ["6L1"],
-
 			snore: ["6L1"],
-
 			spite: ["6L1"],
-
 			substitute: ["6L1"],
-
 			suckerpunch: ["6L1"],
-
 			sunnyday: ["6L1"],
-
 			swagger: ["6L1"],
-
 			swift: ["6L1"],
-
 			taunt: ["6L1"],
-
 			telekinesis: ["6L1"],
-
 			thief: ["6L1"],
-
 			thunder: ["6L1"],
-
 			thunderbolt: ["6L1"],
-
 			thunderwave: ["6L1"],
-
 			torment: ["6L1"],
-
 			toxic: ["6L1"],
-
 			trick: ["6L1"],
-
 			trickroom: ["6L1"],
-
 			uproar: ["6L1"],
-
 			willowisp: ["6L1"],
-
 			wonderroom: ["6L1"],
-
 			confuseray: ["6L1"],
-
 			curse: ["6L1"],
-
 			defensecurl: ["6L1"],
-
 			destinybond: ["6L1"],
-
 			doubleedge: ["6L1"],
-
 			acid: ["6L1"],
-
 			acrobatics: ["6L1"],
-
 			aquatail: ["6L1"],
-
 			bind: ["6L1"],
-
 			bounce: ["6L1"],
-
 			brickbreak: ["6L1"],
-
 			hex: ["6L1"],
-
 			coil: ["6L1"],
-
 			crunch: ["6L1"],
-
 			crushclaw: ["6L1"],
-
 			cut: ["6L1"],
-
 			discharge: ["6L1"],
-
 			dragonclaw: ["6L1"],
-
 			dragonpulse: ["6L1"],
-
 			dragontail: ["6L1"],
-
 			drainpunch: ["6L1"],
-
 			nastyplot: ["6L1"],
-
 			firepunch: ["6L1"],
-
 			flamethrower: ["6L1"],
-
 			flashcannon: ["6L1"],
-
 			focuspunch: ["6L1"],
-
 			perishsong: ["6L1"],
-
 			gastroacid: ["6L1"],
-
 			gigadrain: ["6L1"],
-
 			psybeam: ["6L1"],
-
 			grassknot: ["6L1"],
-
 			honeclaws: ["6L1"],
-
 			iondeluge: ["6L1"],
-
 			irontail: ["6L1"],
-
 			knockoff: ["6L1"],
-
 			lightscreen: ["6L1"],
-
 			magnetrise: ["6L1"],
-
 			outrage: ["6L1"],
-
 			poweruppunch: ["6L1"],
-
 			roar: ["6L1"],
-
 			rockslide: ["6L1"],
-
 			rocksmash: ["6L1"],
-
 			rocktomb: ["6L1"],
-
 			signalbeam: ["6L1"],
-
 			strength: ["6L1"],
-
 		}
 	},
-
 	haxardos:
 	{
 		learnset:
 		{
-
 			aerialace: ["6L1"],
-
 			aquatail: ["6L1"],
-
 			assurance: ["6L1"],
-
 			attract: ["6L1"],
-
 			brickbreak: ["6L1"],
-
 			brutalswing: ["6L1"],
-
 			bulldoze: ["6L1"],
-
 			confide: ["6L1"],
-
 			cut: ["6L1"],
-
 			dig: ["6L1"],
-
 			doubleteam: ["6L1"],
-
 			dracometeor: ["6L1"],
-
 			dragonclaw: ["6L1"],
-
 			dragondance: ["6L1"],
-
 			dragonpulse: ["6L1"],
-
 			dragonrage: ["6L1"],
-
 			dragontail: ["6L1"],
-
 			dualchop: ["6L1"],
-
 			earthquake: ["6L1"],
-
 			endeavor: ["6L1"],
-
 			facade: ["6L1"],
-
 			falseswipe: ["6L1"],
-
 			fling: ["6L1"],
-
 			focusblast: ["6L1"],
-
 			frustration: ["6L1"],
-
 			gigaimpact: ["6L1"],
-
 			grassknot: ["6L1"],
-
 			guillotine: ["6L1"],
-
 			hiddenpower: ["6L1"],
-
 			honeclaws: ["6L1"],
-
 			hyperbeam: ["6L1"],
-
 			incinerate: ["6L1"],
-
 			irontail: ["6L1"],
-
 			laserfocus: ["6L1"],
-
 			leer: ["6L1"],
-
 			lowkick: ["6L1"],
-
 			outrage: ["6L1"],
-
 			payback: ["6L1"],
-
 			poisonjab: ["6L1"],
-
 			protect: ["6L1"],
-
 			raindance: ["6L1"],
-
 			rest: ["6L1"],
-
 			return: ["6L1"],
-
 			roar: ["6L1"],
-
 			rockslide: ["6L1"],
-
 			rocksmash: ["6L1"],
-
 			rocktomb: ["6L1"],
-
 			round: ["6L1"],
-
 			scaryface: ["6L1"],
-
 			scratch: ["6L1"],
-
 			secretpower: ["6L1"],
-
 			shadowclaw: ["6L1"],
-
 			shockwave: ["6L1"],
-
 			slash: ["6L1"],
-
 			sleeptalk: ["6L1"],
-
 			snore: ["6L1"],
-
 			stompingtantrum: ["6L1"],
-
 			strength: ["6L1"],
-
 			substitute: ["6L1"],
-
 			sunnyday: ["6L1"],
-
 			superpower: ["6L1"],
-
 			surf: ["6L1"],
-
 			swagger: ["6L1"],
-
 			swordsdance: ["6L1"],
-
 			taunt: ["6L1"],
-
 			toxic: ["6L1"],
-
 			xscissor: ["6L1"],
-
 			counter: ["6L1"],
-
 			ancientpower: ["6L1"],
-
 			avalanche: ["6L1"],
-
 			blizzard: ["6L1"],
-
 			captivate: ["6L1"],
-
 			chipaway: ["6L1"],
-
 			focusenergy: ["6L1"],
-
 			earthpower: ["6L1"],
-
 			harden: ["6L1"],
-
 			endure: ["6L1"],
-
 			fireblast: ["6L1"],
-
 			firepunch: ["6L1"],
-
 			flamethrower: ["6L1"],
-
 			focusenergy: ["6L1"],
-
 			focuspunch: ["6L1"],
-
 			razorwind: ["6L1"],
-
 			headbutt: ["6L1"],
-
 			headsmash: ["6L1"],
-
 			reversal: ["6L1"],
-
 			icebeam: ["6L1"],
-
 			ironhead: ["6L1"],
-
 			mudslap: ["6L1"],
-
 			naturalgift: ["6L1"],
-
 			painsplit: ["6L1"],
-
 			poweruppunch: ["6L1"],
-
 			pursuit: ["6L1"],
-
 			rockclimb: ["6L1"],
-
 			rockpolish: ["6L1"],
-
 			sandstorm: ["6L1"],
-
 			screech: ["6L1"],
-
 		}
 	},
-
 	pangleye:
 	{
 		learnset:
 		{
-
 			aerialace: ["6L1"],
-
 			armthrust: ["6L1"],
-
 			attract: ["6L1"],
-
 			block: ["6L1"],
-
 			bodyslam: ["6L1"],
-
 			brickbreak: ["6L1"],
-
 			bulkup: ["6L1"],
-
 			bulldoze: ["6L1"],
-
 			bulletpunch: ["6L1"],
-
 			circlethrow: ["6L1"],
-
 			cometpunch: ["6L1"],
-
 			confide: ["6L1"],
-
 			covet: ["6L1"],
-
 			crunch: ["6L1"],
-
 			cut: ["6L1"],
-
 			darkpulse: ["6L1"],
-
 			dig: ["6L1"],
-
 			doubleteam: ["6L1"],
-
 			dragonclaw: ["6L1"],
-
 			drainpunch: ["6L1"],
-
 			dualchop: ["6L1"],
-
 			earthquake: ["6L1"],
-
 			echoedvoice: ["6L1"],
-
 			embargo: ["6L1"],
-
 			endeavor: ["6L1"],
-
 			entrainment: ["6L1"],
-
 			facade: ["6L1"],
-
 			falseswipe: ["6L1"],
-
 			firepunch: ["6L1"],
-
 			fling: ["6L1"],
-
 			focusblast: ["6L1"],
-
 			focuspunch: ["6L1"],
-
 			foulplay: ["6L1"],
-
 			frustration: ["6L1"],
-
 			gigaimpact: ["6L1"],
-
 			grassknot: ["6L1"],
-
 			gunkshot: ["6L1"],
-
 			hammerarm: ["6L1"],
-
 			helpinghand: ["6L1"],
-
 			hiddenpower: ["6L1"],
-
 			honeclaws: ["6L1"],
-
 			hyperbeam: ["6L1"],
-
 			hypervoice: ["6L1"],
-
 			icepunch: ["6L1"],
-
 			infestation: ["6L1"],
-
 			ironhead: ["6L1"],
-
 			karatechop: ["6L1"],
-
 			knockoff: ["6L1"],
-
 			laserfocus: ["6L1"],
-
 			leer: ["6L1"],
-
 			lowkick: ["6L1"],
-
 			lowsweep: ["6L1"],
-
 			outrage: ["6L1"],
-
 			partingshot: ["6L1"],
-
 			payback: ["6L1"],
-
 			poisonjab: ["6L1"],
-
 			poweruppunch: ["6L1"],
-
 			protect: ["6L1"],
-
 			quash: ["6L1"],
-
 			raindance: ["6L1"],
-
 			rest: ["6L1"],
-
 			retaliate: ["6L1"],
-
 			return: ["6L1"],
-
 			roar: ["6L1"],
-
 			rockslide: ["6L1"],
-
 			rocksmash: ["6L1"],
-
 			rocktomb: ["6L1"],
-
 			round: ["6L1"],
-
 			secretpower: ["6L1"],
-
 			shadowclaw: ["6L1"],
-
 			skyuppercut: ["6L1"],
-
 			slash: ["6L1"],
-
 			sleeptalk: ["6L1"],
-
 			sludgebomb: ["6L1"],
-
 			snarl: ["6L1"],
-
 			snatch: ["6L1"],
-
 			snore: ["6L1"],
-
 			spite: ["6L1"],
-
 			stompingtantrum: ["6L1"],
-
 			stoneedge: ["6L1"],
-
 			strength: ["6L1"],
-
 			substitute: ["6L1"],
-
 			sunnyday: ["6L1"],
-
 			superpower: ["6L1"],
-
 			surf: ["6L1"],
-
 			swagger: ["6L1"],
-
 			swordsdance: ["6L1"],
-
 			tackle: ["6L1"],
-
 			taunt: ["6L1"],
-
 			thief: ["6L1"],
-
 			throatchop: ["6L1"],
-
 			thunderpunch: ["6L1"],
-
 			torment: ["6L1"],
-
 			toxic: ["6L1"],
-
 			uproar: ["6L1"],
-
 			vitalthrow: ["6L1"],
-
 			workup: ["6L1"],
-
 			xscissor: ["6L1"],
-
 			zenheadbutt: ["6L1"],
-
 			allyswitch: ["6L1"],
-
 			astonish: ["6L1"],
-
 			calmmind: ["6L1"],
-
 			captivate: ["6L1"],
-
 			confuseray: ["6L1"],
-
 			counter: ["6L1"],
-
 			dazzlinggleam: ["6L1"],
-
 			detect: ["6L1"],
-
 			doubleedge: ["6L1"],
-
 			dreameater: ["6L1"],
-
 			dynamicpunch: ["6L1"],
-
 			endure: ["6L1"],
-
 			fakeout: ["6L1"],
-
 			feint: ["6L1"],
-
 			feintattack: ["6L1"],
-
 			flash: ["6L1"],
-
 			flatter: ["6L1"],
-
 			foresight: ["6L1"],
-
 			furycutter: ["6L1"],
-
 			furyswipes: ["6L1"],
-
 			gravity: ["6L1"],
-
 			headbutt: ["6L1"],
-
 			powertrip: ["6L1"],
-
 			icywind: ["6L1"],
-
 			imprison: ["6L1"],
-
 			incinerate: ["6L1"],
-
 			magiccoat: ["6L1"],
-
 			meanlook: ["6L1"],
-
 			megakick: ["6L1"],
-
 			megapunch: ["6L1"],
-
 			metalburst: ["6L1"],
-
 			metronome: ["6L1"],
-
 			mimic: ["6L1"],
-
 			moonlight: ["6L1"],
-
 			mudslap: ["6L1"],
-
 			nastyplot: ["6L1"],
-
 			naturalgift: ["6L1"],
-
 		}
 	},
-
 	garchados:
 	{
 		learnset:
 		{
-
 			aerialace: ["6L1"],
-
 			aquatail: ["6L1"],
-
 			attract: ["6L1"],
-
 			brickbreak: ["6L1"],
-
 			brutalswing: ["6L1"],
-
 			bulldoze: ["6L1"],
-
 			captivate: ["6L1"],
-
 			confide: ["6L1"],
-
 			crunch: ["6L1"],
-
 			cut: ["6L1"],
-
 			dig: ["6L1"],
-
 			doubleteam: ["6L1"],
-
 			dracometeor: ["6L1"],
-
 			dragonclaw: ["6L1"],
-
 			dragonpulse: ["6L1"],
-
 			dragonrage: ["6L1"],
-
 			dragonrush: ["6L1"],
-
 			dragontail: ["6L1"],
-
 			dualchop: ["6L1"],
-
 			earthpower: ["6L1"],
-
 			earthquake: ["6L1"],
-
 			endure: ["6L1"],
-
 			facade: ["6L1"],
-
 			falseswipe: ["6L1"],
-
 			fireblast: ["6L1"],
-
 			firefang: ["6L1"],
-
 			flamethrower: ["6L1"],
-
 			fling: ["6L1"],
-
 			frustration: ["6L1"],
-
 			furycutter: ["6L1"],
-
 			gigaimpact: ["6L1"],
-
 			headbutt: ["6L1"],
-
 			hiddenpower: ["6L1"],
-
 			honeclaws: ["6L1"],
-
 			hyperbeam: ["6L1"],
-
 			incinerate: ["6L1"],
-
 			ironhead: ["6L1"],
-
 			irontail: ["6L1"],
-
 			laserfocus: ["6L1"],
-
 			mudslap: ["6L1"],
-
 			naturalgift: ["6L1"],
-
 			outrage: ["6L1"],
-
 			poisonjab: ["6L1"],
-
 			protect: ["6L1"],
-
 			raindance: ["6L1"],
-
 			rest: ["6L1"],
-
 			return: ["6L1"],
-
 			roar: ["6L1"],
-
 			rockclimb: ["6L1"],
-
 			rockslide: ["6L1"],
-
 			rocksmash: ["6L1"],
-
 			rocktomb: ["6L1"],
-
 			round: ["6L1"],
-
 			sandattack: ["6L1"],
-
 			sandstorm: ["6L1"],
-
 			sandtomb: ["6L1"],
-
 			secretpower: ["6L1"],
-
 			shadowclaw: ["6L1"],
-
 			slash: ["6L1"],
-
 			sleeptalk: ["6L1"],
-
 			snore: ["6L1"],
-
 			stealthrock: ["6L1"],
-
 			stompingtantrum: ["6L1"],
-
 			stoneedge: ["6L1"],
-
 			strength: ["6L1"],
-
 			substitute: ["6L1"],
-
 			sunnyday: ["6L1"],
-
 			surf: ["6L1"],
-
 			swagger: ["6L1"],
-
 			swift: ["6L1"],
-
 			swordsdance: ["6L1"],
-
 			tackle: ["6L1"],
-
 			takedown: ["6L1"],
-
 			toxic: ["6L1"],
-
 			twister: ["6L1"],
-
 			whirlpool: ["6L1"],
-
 			bodyslam: ["6L1"],
-
 			doubleedge: ["6L1"],
-
 			avalanche: ["6L1"],
-
 			bide: ["6L1"],
-
 			bite: ["6L1"],
-
 			blizzard: ["6L1"],
-
 			bounce: ["6L1"],
-
 			brine: ["6L1"],
-
 			bubblebeam: ["6L1"],
-
 			curse: ["6L1"],
-
 			darkpulse: ["6L1"],
-
 			dive: ["6L1"],
-
 			dragonbreath: ["6L1"],
-
 			dragondance: ["6L1"],
-
 			metalclaw: ["6L1"],
-
 			mudshot: ["6L1"],
-
 			hail: ["6L1"],
-
 			hurricane: ["6L1"],
-
 			hydropump: ["6L1"],
-
 			icebeam: ["6L1"],
-
 			icefang: ["6L1"],
-
 			icywind: ["6L1"],
-
 		}
 	},
-
 	wailcatty:
 	{
 		learnset:
 		{
-
 			amnesia: ["6L1"],
-
 			astonish: ["6L1"],
-
 			attract: ["6L1"],
-
 			avalanche: ["6L1"],
-
 			blizzard: ["6L1"],
-
 			block: ["6L1"],
-
 			bodyslam: ["6L1"],
-
 			bounce: ["6L1"],
-
 			brine: ["6L1"],
-
 			bulldoze: ["6L1"],
-
 			captivate: ["6L1"],
-
 			confide: ["6L1"],
-
 			defensecurl: ["6L1"],
-
 			dive: ["6L1"],
-
 			doubleedge: ["6L1"],
-
 			doubleteam: ["6L1"],
-
 			earthquake: ["6L1"],
-
 			echoedvoice: ["6L1"],
-
 			endure: ["6L1"],
-
 			facade: ["6L1"],
-
 			frustration: ["6L1"],
-
 			gigaimpact: ["6L1"],
-
 			growl: ["6L1"],
-
 			hail: ["6L1"],
-
 			headbutt: ["6L1"],
-
 			heavyslam: ["6L1"],
-
 			hiddenpower: ["6L1"],
-
 			hydropump: ["6L1"],
-
 			hyperbeam: ["6L1"],
-
 			hypervoice: ["6L1"],
-
 			icebeam: ["6L1"],
-
 			icywind: ["6L1"],
-
 			ironhead: ["6L1"],
-
 			liquidation: ["6L1"],
-
 			mimic: ["6L1"],
-
 			mist: ["6L1"],
-
 			naturalgift: ["6L1"],
-
 			nobleroar: ["6L1"],
-
 			protect: ["6L1"],
-
 			raindance: ["6L1"],
-
 			rest: ["6L1"],
-
 			return: ["6L1"],
-
 			roar: ["6L1"],
-
 			rocksmash: ["6L1"],
-
 			rocktomb: ["6L1"],
-
 			rollout: ["6L1"],
-
 			round: ["6L1"],
-
 			scald: ["6L1"],
-
 			secretpower: ["6L1"],
-
 			selfdestruct: ["6L1"],
-
 			sleeptalk: ["6L1"],
-
 			snore: ["6L1"],
-
 			soak: ["6L1"],
-
 			splash: ["6L1"],
-
 			strength: ["6L1"],
-
 			substitute: ["6L1"],
-
 			surf: ["6L1"],
-
 			swagger: ["6L1"],
-
 			toxic: ["6L1"],
-
 			waterfall: ["6L1"],
-
 			watergun: ["6L1"],
-
 			waterpulse: ["6L1"],
-
 			waterspout: ["6L1"],
-
 			whirlpool: ["6L1"],
-
 			zenheadbutt: ["6L1"],
-
 			aquaring: ["6L1"],
-
 			calmmind: ["6L1"],
-
 			clearsmog: ["6L1"],
-
 			chargebeam: ["6L1"],
-
 			curse: ["6L1"],
-
 			covet: ["6L1"],
-
 			dig: ["6L1"],
-
 			doubleslap: ["6L1"],
-
 			dreameater: ["6L1"],
-
 			fissure: ["6L1"],
-
 			fakeout: ["6L1"],
-
 			flash: ["6L1"],
-
 			grassknot: ["6L1"],
-
 			healbell: ["6L1"],
-
 			helpinghand: ["6L1"],
-
 			irontail: ["6L1"],
-
 			laserfocus: ["6L1"],
-
 			lastresort: ["6L1"],
-
 			mudslap: ["6L1"],
-
 			payback: ["6L1"],
-
 			psychup: ["6L1"],
-
 			retaliate: ["6L1"],
-
 			safeguard: ["6L1"],
-
 			shadowball: ["6L1"],
-
 			shockwave: ["6L1"],
-
 			sing: ["6L1"],
-
 			solarbeam: ["6L1"],
-
 			stompingtantrum: ["6L1"],
-
 			suckerpunch: ["6L1"],
-
 			sunnyday: ["6L1"],
-
 			sweetkiss: ["6L1"],
-
 			swift: ["6L1"],
-
 			thunder: ["6L1"],
-
 			thunderbolt: ["6L1"],
-
 			thunderwave: ["6L1"],
-
 		}
 	},
-
 	gargatr:
 	{
 		learnset:
 		{
-
 			aerialace: ["6L1"],
-
 			agility: ["6L1"],
-
 			ancientpower: ["6L1"],
-
 			aquatail: ["6L1"],
-
 			attract: ["6L1"],
-
 			avalanche: ["6L1"],
-
 			bite: ["6L1"],
-
 			blizzard: ["6L1"],
-
 			block: ["6L1"],
-
 			bodyslam: ["6L1"],
-
 			brickbreak: ["6L1"],
-
 			bulldoze: ["6L1"],
-
 			captivate: ["6L1"],
-
 			chipaway: ["6L1"],
-
 			confide: ["6L1"],
-
 			counter: ["6L1"],
-
 			crunch: ["6L1"],
-
 			curse: ["6L1"],
-
 			cut: ["6L1"],
-
 			detect: ["6L1"],
-
 			dig: ["6L1"],
-
 			dive: ["6L1"],
-
 			doubleedge: ["6L1"],
-
 			doubleteam: ["6L1"],
-
 			dragonclaw: ["6L1"],
-
 			dragonpulse: ["6L1"],
-
 			dragontail: ["6L1"],
-
 			dynamicpunch: ["6L1"],
-
 			earthquake: ["6L1"],
-
 			endure: ["6L1"],
-
 			facade: ["6L1"],
-
 			flail: ["6L1"],
-
 			fling: ["6L1"],
-
 			focusblast: ["6L1"],
-
 			focuspunch: ["6L1"],
-
 			frustration: ["6L1"],
-
 			furycutter: ["6L1"],
-
 			gigaimpact: ["6L1"],
-
 			hail: ["6L1"],
-
 			headbutt: ["6L1"],
-
 			hiddenpower: ["6L1"],
-
 			honeclaws: ["6L1"],
-
 			hydrocannon: ["6L1"],
-
 			hydropump: ["6L1"],
-
 			hyperbeam: ["6L1"],
-
 			icebeam: ["6L1"],
-
 			icefang: ["6L1"],
-
 			icepunch: ["6L1"],
-
 			icywind: ["6L1"],
-
 			irontail: ["6L1"],
-
 			leer: ["6L1"],
-
 			liquidation: ["6L1"],
-
 			lowkick: ["6L1"],
-
 			megakick: ["6L1"],
-
 			megapunch: ["6L1"],
-
 			mimic: ["6L1"],
-
 			mudslap: ["6L1"],
-
 			naturalgift: ["6L1"],
-
 			outrage: ["6L1"],
-
 			poweruppunch: ["6L1"],
-
 			protect: ["6L1"],
-
 			rage: ["6L1"],
-
 			raindance: ["6L1"],
-
 			rest: ["6L1"],
-
 			return: ["6L1"],
-
 			roar: ["6L1"],
-
 			rockclimb: ["6L1"],
-
 			rockslide: ["6L1"],
-
 			rocksmash: ["6L1"],
-
 			rocktomb: ["6L1"],
-
 			round: ["6L1"],
-
 			scald: ["6L1"],
-
 			scaryface: ["6L1"],
-
 			scratch: ["6L1"],
-
 			screech: ["6L1"],
-
 			secretpower: ["6L1"],
-
 			seismictoss: ["6L1"],
-
 			shadowclaw: ["6L1"],
-
 			slash: ["6L1"],
-
 			sleeptalk: ["6L1"],
-
 			snore: ["6L1"],
-
 			spite: ["6L1"],
-
 			strength: ["6L1"],
-
 			substitute: ["6L1"],
-
 			superpower: ["6L1"],
-
 			surf: ["6L1"],
-
 			swagger: ["6L1"],
-
 			swordsdance: ["6L1"],
-
 			thrash: ["6L1"],
-
 			toxic: ["6L1"],
-
 			uproar: ["6L1"],
-
 			waterfall: ["6L1"],
-
 			watergun: ["6L1"],
-
 			waterpledge: ["6L1"],
-
 			waterpulse: ["6L1"],
-
 			whirlpool: ["6L1"],
-
 			workup: ["6L1"],
-
 			aquajet: ["6L1"],
-
 			brutalswing: ["6L1"],
-
 			dracometeor: ["6L1"],
-
 			dragondance: ["6L1"],
-
 			dragonrage: ["6L1"],
-
 			dragonrush: ["6L1"],
-
 			dualchop: ["6L1"],
-
 			earthpower: ["6L1"],
-
 			flatter: ["6L1"],
-
 			falseswipe: ["6L1"],
-
 			fireblast: ["6L1"],
-
 			firefang: ["6L1"],
-
 			flamethrower: ["6L1"],
-
 			incinerate: ["6L1"],
-
 			ironhead: ["6L1"],
-
 			laserfocus: ["6L1"],
-
 			metalclaw: ["6L1"],
-
 			poisonjab: ["6L1"],
-
 			razorwind: ["6L1"],
-
 		}
 	},
-
 	dragon:
 	{
 		learnset:
 		{
-
 			acrobatics: ["6L1"],
-
 			aquatail: ["6L1"],
-
 			attract: ["6L1"],
-
 			bite: ["6L1"],
-
 			bodyslam: ["6L1"],
-
 			brutalswing: ["6L1"],
-
 			bulldoze: ["6L1"],
-
 			chargebeam: ["6L1"],
-
 			confide: ["6L1"],
-
 			crunch: ["6L1"],
-
 			darkpulse: ["6L1"],
-
 			defog: ["6L1"],
-
 			doubleteam: ["6L1"],
-
 			dracometeor: ["6L1"],
-
 			dragonbreath: ["6L1"],
-
 			dragonpulse: ["6L1"],
-
 			dragonrage: ["6L1"],
-
 			dragonrush: ["6L1"],
-
 			dragontail: ["6L1"],
-
 			earthpower: ["6L1"],
-
 			earthquake: ["6L1"],
-
 			echoedvoice: ["6L1"],
-
 			facade: ["6L1"],
-
 			fireblast: ["6L1"],
-
 			flamethrower: ["6L1"],
-
 			flashcannon: ["6L1"],
-
 			fly: ["6L1"],
-
 			focusblast: ["6L1"],
-
 			focusenergy: ["6L1"],
-
 			frustration: ["6L1"],
-
 			gigaimpact: ["6L1"],
-
 			headbutt: ["6L1"],
-
 			heatwave: ["6L1"],
-
 			hiddenpower: ["6L1"],
-
 			hyperbeam: ["6L1"],
-
 			hypervoice: ["6L1"],
-
 			incinerate: ["6L1"],
-
 			irontail: ["6L1"],
-
 			outrage: ["6L1"],
-
 			payback: ["6L1"],
-
 			protect: ["6L1"],
-
 			psychup: ["6L1"],
-
 			raindance: ["6L1"],
-
 			reflect: ["6L1"],
-
 			rest: ["6L1"],
-
 			return: ["6L1"],
-
 			roar: ["6L1"],
-
 			rockslide: ["6L1"],
-
 			rocksmash: ["6L1"],
-
 			rocktomb: ["6L1"],
-
 			roost: ["6L1"],
-
 			round: ["6L1"],
-
 			scaryface: ["6L1"],
-
 			secretpower: ["6L1"],
-
 			shockwave: ["6L1"],
-
 			signalbeam: ["6L1"],
-
 			slam: ["6L1"],
-
 			sleeptalk: ["6L1"],
-
 			snore: ["6L1"],
-
 			spite: ["6L1"],
-
 			steelwing: ["6L1"],
-
 			stoneedge: ["6L1"],
-
 			strength: ["6L1"],
-
 			substitute: ["6L1"],
-
 			sunnyday: ["6L1"],
-
 			superpower: ["6L1"],
-
 			surf: ["6L1"],
-
 			swagger: ["6L1"],
-
 			tailwind: ["6L1"],
-
 			taunt: ["6L1"],
-
 			thief: ["6L1"],
-
 			throatchop: ["6L1"],
-
 			thunderwave: ["6L1"],
-
 			torment: ["6L1"],
-
 			toxic: ["6L1"],
-
 			triattack: ["6L1"],
-
 			uproar: ["6L1"],
-
 			uturn: ["6L1"],
-
 			workup: ["6L1"],
-
 			zenheadbutt: ["6L1"],
-
 			assurance: ["6L1"],
-
 			astonish: ["6L1"],
-
 			belch: ["6L1"],
-
 			doublehit: ["6L1"],
-
 			acid: ["6L1"],
-
 			bounce: ["6L1"],
-
 			bubble: ["6L1"],
-
 			camouflage: ["6L1"],
-
 			dive: ["6L1"],
-
 			firefang: ["6L1"],
-
 			feintattack: ["6L1"],
-
 			icefang: ["6L1"],
-
 			gunkshot: ["6L1"],
-
 			hail: ["6L1"],
-
 			hydropump: ["6L1"],
-
 			icywind: ["6L1"],
-
 			poisontail: ["6L1"],
-
 			screech: ["6L1"],
-
 			scald: ["6L1"],
-
 			shadowball: ["6L1"],
-
 			sludgebomb: ["6L1"],
-
 			sludgewave: ["6L1"],
-
 			smokescreen: ["6L1"],
-
 			tackle: ["6L1"],
-
 		}
 	},
-
 	hawlusharp:
 	{
 		learnset:
 		{
-
 			aerialace: ["6L1"],
-
 			assurance: ["6L1"],
-
 			attract: ["6L1"],
-
 			brickbreak: ["6L1"],
-
 			confide: ["6L1"],
-
 			cut: ["6L1"],
-
 			darkpulse: ["6L1"],
-
 			dig: ["6L1"],
-
 			doubleteam: ["6L1"],
-
 			dualchop: ["6L1"],
-
 			embargo: ["6L1"],
-
 			facade: ["6L1"],
-
 			falseswipe: ["6L1"],
-
 			feintattack: ["6L1"],
-
 			fling: ["6L1"],
-
 			focusblast: ["6L1"],
-
 			foulplay: ["6L1"],
-
 			frustration: ["6L1"],
-
 			furycutter: ["6L1"],
-
 			gigaimpact: ["6L1"],
-
 			grassknot: ["6L1"],
-
 			guillotine: ["6L1"],
-
 			hiddenpower: ["6L1"],
-
 			honeclaws: ["6L1"],
-
 			hyperbeam: ["6L1"],
-
 			irondefense: ["6L1"],
-
 			ironhead: ["6L1"],
-
 			knockoff: ["6L1"],
-
 			laserfocus: ["6L1"],
-
 			leer: ["6L1"],
-
 			lowkick: ["6L1"],
-
 			lowsweep: ["6L1"],
-
 			magnetrise: ["6L1"],
-
 			metalburst: ["6L1"],
-
 			metalclaw: ["6L1"],
-
 			metalsound: ["6L1"],
-
 			nightslash: ["6L1"],
-
 			payback: ["6L1"],
-
 			poisonjab: ["6L1"],
-
 			poweruppunch: ["6L1"],
-
 			protect: ["6L1"],
-
 			raindance: ["6L1"],
-
 			rest: ["6L1"],
-
 			retaliate: ["6L1"],
-
 			return: ["6L1"],
-
 			rockpolish: ["6L1"],
-
 			rocksmash: ["6L1"],
-
 			rocktomb: ["6L1"],
-
 			roleplay: ["6L1"],
-
 			round: ["6L1"],
-
 			sandstorm: ["6L1"],
-
 			scaryface: ["6L1"],
-
 			scratch: ["6L1"],
-
 			secretpower: ["6L1"],
-
 			shadowclaw: ["6L1"],
-
 			slash: ["6L1"],
-
 			sleeptalk: ["6L1"],
-
 			snarl: ["6L1"],
-
 			snatch: ["6L1"],
-
 			snore: ["6L1"],
-
 			spite: ["6L1"],
-
 			stealthrock: ["6L1"],
-
 			stoneedge: ["6L1"],
-
 			substitute: ["6L1"],
-
 			swagger: ["6L1"],
-
 			swordsdance: ["6L1"],
-
 			taunt: ["6L1"],
-
 			thief: ["6L1"],
-
 			throatchop: ["6L1"],
-
 			thunderwave: ["6L1"],
-
 			torment: ["6L1"],
-
 			toxic: ["6L1"],
-
 			xscissor: ["6L1"],
-
 			acrobatics: ["6L1"],
-
 			agility: ["6L1"],
-
 			allyswitch: ["6L1"],
-
 			batonpass: ["6L1"],
-
 			bounce: ["6L1"],
-
 			bulkup: ["6L1"],
-
 			defog: ["6L1"],
-
 			detect: ["6L1"],
-
 			drainpunch: ["6L1"],
-
 			encore: ["6L1"],
-
 			endeavor: ["6L1"],
-
 			entrainment: ["6L1"],
-
 			featherdance: ["6L1"],
-
 			feint: ["6L1"],
-
 			firepunch: ["6L1"],
-
 			fly: ["6L1"],
-
 			flyingpress: ["6L1"],
-
 			focuspunch: ["6L1"],
-
 			psychocut: ["6L1"],
-
 			pursuit: ["6L1"],
-
 			quickguard: ["6L1"],
-
 			helpinghand: ["6L1"],
-
 			highjumpkick: ["6L1"],
-
 			revenge: ["6L1"],
-
 			karatechop: ["6L1"],
-
 		}
 	},
-
 	cofagreelix:
 	{
 		learnset:
 		{
-
 			afteryou: ["6L1"],
-
 			allyswitch: ["6L1"],
-
 			astonish: ["6L1"],
-
 			attract: ["6L1"],
-
 			block: ["6L1"],
-
 			calmmind: ["6L1"],
-
 			confide: ["6L1"],
-
 			curse: ["6L1"],
-
 			darkpulse: ["6L1"],
-
 			destinybond: ["6L1"],
-
 			disable: ["6L1"],
-
 			doubleteam: ["6L1"],
-
 			dreameater: ["6L1"],
-
 			embargo: ["6L1"],
-
 			energyball: ["6L1"],
-
 			facade: ["6L1"],
-
 			flash: ["6L1"],
-
 			frustration: ["6L1"],
-
 			gigaimpact: ["6L1"],
-
 			grassknot: ["6L1"],
-
 			grudge: ["6L1"],
-
 			guardsplit: ["6L1"],
-
 			haze: ["6L1"],
-
 			hex: ["6L1"],
-
 			hiddenpower: ["6L1"],
-
 			hyperbeam: ["6L1"],
-
 			infestation: ["6L1"],
-
 			irondefense: ["6L1"],
-
 			knockoff: ["6L1"],
-
 			magiccoat: ["6L1"],
-
 			meanlook: ["6L1"],
-
 			nightshade: ["6L1"],
-
 			ominouswind: ["6L1"],
-
 			painsplit: ["6L1"],
-
 			payback: ["6L1"],
-
 			powersplit: ["6L1"],
-
 			protect: ["6L1"],
-
 			psychic: ["6L1"],
-
 			psychup: ["6L1"],
-
 			raindance: ["6L1"],
-
 			rest: ["6L1"],
-
 			return: ["6L1"],
-
 			roleplay: ["6L1"],
-
 			round: ["6L1"],
-
 			safeguard: ["6L1"],
-
 			scaryface: ["6L1"],
-
 			secretpower: ["6L1"],
-
 			shadowball: ["6L1"],
-
 			shockwave: ["6L1"],
-
 			skillswap: ["6L1"],
-
 			sleeptalk: ["6L1"],
-
 			snatch: ["6L1"],
-
 			snore: ["6L1"],
-
 			spite: ["6L1"],
-
 			substitute: ["6L1"],
-
 			swagger: ["6L1"],
-
 			telekinesis: ["6L1"],
-
 			thief: ["6L1"],
-
 			toxic: ["6L1"],
-
 			trick: ["6L1"],
-
 			trickroom: ["6L1"],
-
 			willowisp: ["6L1"],
-
 			wonderroom: ["6L1"],
-
 			zenheadbutt: ["6L1"],
-
 			ancientpower: ["6L1"],
-
 			aquatail: ["6L1"],
-
 			autotomize: ["6L1"],
-
 			bind: ["6L1"],
-
 			bodyslam: ["6L1"],
-
 			brutalswing: ["6L1"],
-
 			bulldoze: ["6L1"],
-
 			captivate: ["6L1"],
-
 			crunch: ["6L1"],
-
 			cut: ["6L1"],
-
 			defensecurl: ["6L1"],
-
 			dig: ["6L1"],
-
 			doubleedge: ["6L1"],
-
 			dragonbreath: ["6L1"],
-
 			dragonpulse: ["6L1"],
-
 			dragontail: ["6L1"],
-
 			earthpower: ["6L1"],
-
 			earthquake: ["6L1"],
-
 			endure: ["6L1"],
-
 			explosion: ["6L1"],
-
 			firefang: ["6L1"],
-
 			flashcannon: ["6L1"],
-
 			gyroball: ["6L1"],
-
 			harden: ["6L1"],
-
 			headbutt: ["6L1"],
-
 			icefang: ["6L1"],
-
 			ironhead: ["6L1"],
-
 			irontail: ["6L1"],
-
 			magnetrise: ["6L1"],
-
 			mimic: ["6L1"],
-
 			mudslap: ["6L1"],
-
 			mudsport: ["6L1"],
-
 			naturalgift: ["6L1"],
-
 			naturepower: ["6L1"],
-
 			rage: ["6L1"],
-
 			roar: ["6L1"],
-
 			rockclimb: ["6L1"],
-
 			rockpolish: ["6L1"],
-
 			rockslide: ["6L1"],
-
 			rocksmash: ["6L1"],
-
 			rockthrow: ["6L1"],
-
 			rocktomb: ["6L1"],
-
 			rollout: ["6L1"],
-
 			sandstorm: ["6L1"],
-
 			screech: ["6L1"],
-
 			selfdestruct: ["6L1"],
-
 			slam: ["6L1"],
-
 			smackdown: ["6L1"],
-
 			stealthrock: ["6L1"],
-
 			stompingtantrum: ["6L1"],
-
 			stoneedge: ["6L1"],
-
 			strength: ["6L1"],
-
 			sunnyday: ["6L1"],
-
 			tackle: ["6L1"],
-
 			taunt: ["6L1"],
-
 			thunderfang: ["6L1"],
-
 		}
 	},
-
 	joltlord:
 	{
 		learnset:
 		{
-
 			agility: ["6L1"],
-
 			attract: ["6L1"],
-
 			babydolleyes: ["6L1"],
-
 			bide: ["6L1"],
-
 			bodyslam: ["6L1"],
-
 			captivate: ["6L1"],
-
 			celebrate: ["6L1"],
-
 			chargebeam: ["6L1"],
-
 			confide: ["6L1"],
-
 			covet: ["6L1"],
-
 			curse: ["6L1"],
-
 			detect: ["6L1"],
-
 			dig: ["6L1"],
-
 			discharge: ["6L1"],
-
 			doubleedge: ["6L1"],
-
 			doublekick: ["6L1"],
-
 			doubleteam: ["6L1"],
-
 			echoedvoice: ["6L1"],
-
 			endure: ["6L1"],
-
 			facade: ["6L1"],
-
 			flash: ["6L1"],
-
 			frustration: ["6L1"],
-
 			gigaimpact: ["6L1"],
-
 			headbutt: ["6L1"],
-
 			healbell: ["6L1"],
-
 			helpinghand: ["6L1"],
-
 			hiddenpower: ["6L1"],
-
 			hyperbeam: ["6L1"],
-
 			hypervoice: ["6L1"],
-
 			irontail: ["6L1"],
-
 			laserfocus: ["6L1"],
-
 			lastresort: ["6L1"],
-
 			lightscreen: ["6L1"],
-
 			magnetrise: ["6L1"],
-
 			mimic: ["6L1"],
-
 			mudslap: ["6L1"],
-
 			naturalgift: ["6L1"],
-
 			pinmissile: ["6L1"],
-
 			protect: ["6L1"],
-
 			quickattack: ["6L1"],
-
 			rage: ["6L1"],
-
 			raindance: ["6L1"],
-
 			reflect: ["6L1"],
-
 			rest: ["6L1"],
-
 			retaliate: ["6L1"],
-
 			return: ["6L1"],
-
 			roar: ["6L1"],
-
 			rocksmash: ["6L1"],
-
 			round: ["6L1"],
-
 			sandattack: ["6L1"],
-
 			secretpower: ["6L1"],
-
 			shadowball: ["6L1"],
-
 			shockwave: ["6L1"],
-
 			signalbeam: ["6L1"],
-
 			skullbash: ["6L1"],
-
 			sleeptalk: ["6L1"],
-
 			snore: ["6L1"],
-
 			strength: ["6L1"],
-
 			substitute: ["6L1"],
-
 			sunnyday: ["6L1"],
-
 			swagger: ["6L1"],
-
 			swift: ["6L1"],
-
 			tackle: ["6L1"],
-
 			tailwhip: ["6L1"],
-
 			takedown: ["6L1"],
-
 			thunder: ["6L1"],
-
 			thunderbolt: ["6L1"],
-
 			thunderfang: ["6L1"],
-
 			thundershock: ["6L1"],
-
 			thunderwave: ["6L1"],
-
 			toxic: ["6L1"],
-
 			voltswitch: ["6L1"],
-
 			wildcharge: ["6L1"],
-
 			workup: ["6L1"],
-
 			zapcannon: ["6L1"],
-
 			batonpass: ["6L1"],
-
 			bite: ["6L1"],
-
 			charm: ["6L1"],
-
 			amnesia: ["6L1"],
-
 			astonish: ["6L1"],
-
 			avalanche: ["6L1"],
-
 			blizzard: ["6L1"],
-
 			block: ["6L1"],
-
 			bounce: ["6L1"],
-
 			brine: ["6L1"],
-
 			bulldoze: ["6L1"],
-
 			defensecurl: ["6L1"],
-
 			dive: ["6L1"],
-
 			earthquake: ["6L1"],
-
 			growl: ["6L1"],
-
 			hail: ["6L1"],
-
 			refresh: ["6L1"],
-
 			heavyslam: ["6L1"],
-
 			hydropump: ["6L1"],
-
 			icebeam: ["6L1"],
-
 			icywind: ["6L1"],
-
 			ironhead: ["6L1"],
-
 			liquidation: ["6L1"],
-
 			mist: ["6L1"],
-
 			storedpower: ["6L1"],
-
 			nobleroar: ["6L1"],
-
 			synchronoise: ["6L1"],
-
 			rocktomb: ["6L1"],
-
 			rollout: ["6L1"],
-
 			scald: ["6L1"],
-
 			wish: ["6L1"],
-
 			selfdestruct: ["6L1"],
-
 			yawn: ["6L1"],
-
 		}
 	},
-
 	vepsicor:
 	{
 		learnset:
 		{
-
 			acrobatics: ["6L1"],
-
 			aerialace: ["6L1"],
-
 			aircutter: ["6L1"],
-
 			airslash: ["6L1"],
-
 			attackorder: ["6L1"],
-
 			attract: ["6L1"],
-
 			bugbite: ["6L1"],
-
 			captivate: ["6L1"],
-
 			confide: ["6L1"],
-
 			confuseray: ["6L1"],
-
 			cut: ["6L1"],
-
 			defendorder: ["6L1"],
-
 			defog: ["6L1"],
-
 			destinybond: ["6L1"],
-
 			doubleteam: ["6L1"],
-
 			endeavor: ["6L1"],
-
 			endure: ["6L1"],
-
 			facade: ["6L1"],
-
 			fellstinger: ["6L1"],
-
 			flash: ["6L1"],
-
 			fling: ["6L1"],
-
 			frustration: ["6L1"],
-
 			furycutter: ["6L1"],
-
 			furyswipes: ["6L1"],
-
 			gigaimpact: ["6L1"],
-
 			gust: ["6L1"],
-
 			healorder: ["6L1"],
-
 			hiddenpower: ["6L1"],
-
 			honeclaws: ["6L1"],
-
 			hyperbeam: ["6L1"],
-
 			infestation: ["6L1"],
-
 			laserfocus: ["6L1"],
-
 			mudslap: ["6L1"],
-
 			naturalgift: ["6L1"],
-
 			ominouswind: ["6L1"],
-
 			poisonsting: ["6L1"],
-
 			powergem: ["6L1"],
-
 			protect: ["6L1"],
-
 			pursuit: ["6L1"],
-
 			quash: ["6L1"],
-
 			raindance: ["6L1"],
-
 			rest: ["6L1"],
-
 			return: ["6L1"],
-
 			roost: ["6L1"],
-
 			round: ["6L1"],
-
 			secretpower: ["6L1"],
-
 			signalbeam: ["6L1"],
-
 			silverwind: ["6L1"],
-
 			slash: ["6L1"],
-
 			sleeptalk: ["6L1"],
-
 			sludgebomb: ["6L1"],
-
 			snore: ["6L1"],
-
 			stringshot: ["6L1"],
-
 			strugglebug: ["6L1"],
-
 			substitute: ["6L1"],
-
 			sunnyday: ["6L1"],
-
 			swagger: ["6L1"],
-
 			sweetscent: ["6L1"],
-
 			swift: ["6L1"],
-
 			tailwind: ["6L1"],
-
 			thief: ["6L1"],
-
 			toxic: ["6L1"],
-
 			uturn: ["6L1"],
-
 			venoshock: ["6L1"],
-
 			xscissor: ["6L1"],
-
 			bugbuzz: ["6L1"],
-
 			aquatail: ["6L1"],
-
 			batonpass: ["6L1"],
-
 			brickbreak: ["6L1"],
-
 			brutalswing: ["6L1"],
-
 			bulldoze: ["6L1"],
-
 			darkpulse: ["6L1"],
-
 			dig: ["6L1"],
-
 			earthpower: ["6L1"],
-
 			earthquake: ["6L1"],
-
 			falseswipe: ["6L1"],
-
 			feintattack: ["6L1"],
-
 			firefang: ["6L1"],
-
 			guillotine: ["6L1"],
-
 			harden: ["6L1"],
-
 			headbutt: ["6L1"],
-
 			icefang: ["6L1"],
-
 			irontail: ["6L1"],
-
 			knockoff: ["6L1"],
-
 			nightslash: ["6L1"],
-
 			payback: ["6L1"],
-
 			poisonjab: ["6L1"],
-
 			quickattack: ["6L1"],
-
 			rockpolish: ["6L1"],
-
 			rockslide: ["6L1"],
-
 			rocksmash: ["6L1"],
-
 			rocktomb: ["6L1"],
-
 			sandattack: ["6L1"],
-
 			sandstorm: ["6L1"],
-
 			screech: ["6L1"],
-
 			skyattack: ["6L1"],
-
 			skyuppercut: ["6L1"],
-
 			stealthrock: ["6L1"],
-
 			steelwing: ["6L1"],
-
 			stoneedge: ["6L1"],
-
 			strength: ["6L1"],
-
 		}
 	},
-
 	zorcanine:
 	{
 		learnset:
 		{
-
 			aerialace: ["6L1"],
-
 			agility: ["6L1"],
-
 			attract: ["6L1"],
-
 			bounce: ["6L1"],
-
 			calmmind: ["6L1"],
-
 			confide: ["6L1"],
-
 			covet: ["6L1"],
-
 			cut: ["6L1"],
-
 			darkpulse: ["6L1"],
-
 			dig: ["6L1"],
-
 			doubleteam: ["6L1"],
-
 			embargo: ["6L1"],
-
 			facade: ["6L1"],
-
 			feintattack: ["6L1"],
-
 			flamethrower: ["6L1"],
-
 			fling: ["6L1"],
-
 			focusblast: ["6L1"],
-
 			foulplay: ["6L1"],
-
 			frustration: ["6L1"],
-
 			furyswipes: ["6L1"],
-
 			gigaimpact: ["6L1"],
-
 			grassknot: ["6L1"],
-
 			hiddenpower: ["6L1"],
-
 			honeclaws: ["6L1"],
-
 			hyperbeam: ["6L1"],
-
 			hypervoice: ["6L1"],
-
 			imprison: ["6L1"],
-
 			incinerate: ["6L1"],
-
 			knockoff: ["6L1"],
-
 			laserfocus: ["6L1"],
-
 			leer: ["6L1"],
-
 			lowkick: ["6L1"],
-
 			lowsweep: ["6L1"],
-
 			nastyplot: ["6L1"],
-
 			nightdaze: ["6L1"],
-
 			nightslash: ["6L1"],
-
 			payback: ["6L1"],
-
 			protect: ["6L1"],
-
 			psychup: ["6L1"],
-
 			punishment: ["6L1"],
-
 			pursuit: ["6L1"],
-
 			raindance: ["6L1"],
-
 			rest: ["6L1"],
-
 			retaliate: ["6L1"],
-
 			return: ["6L1"],
-
 			roar: ["6L1"],
-
 			rocksmash: ["6L1"],
-
 			round: ["6L1"],
-
 			scaryface: ["6L1"],
-
 			scratch: ["6L1"],
-
 			secretpower: ["6L1"],
-
 			shadowball: ["6L1"],
-
 			shadowclaw: ["6L1"],
-
 			sleeptalk: ["6L1"],
-
 			sludgebomb: ["6L1"],
-
 			snarl: ["6L1"],
-
 			snatch: ["6L1"],
-
 			snore: ["6L1"],
-
 			spite: ["6L1"],
-
 			substitute: ["6L1"],
-
 			suckerpunch: ["6L1"],
-
 			sunnyday: ["6L1"],
-
 			swagger: ["6L1"],
-
 			swordsdance: ["6L1"],
-
 			taunt: ["6L1"],
-
 			thief: ["6L1"],
-
 			throatchop: ["6L1"],
-
 			torment: ["6L1"],
-
 			toxic: ["6L1"],
-
 			trick: ["6L1"],
-
 			uproar: ["6L1"],
-
 			uturn: ["6L1"],
-
 			captivate: ["6L1"],
-
 			copycat: ["6L1"],
-
 			counter: ["6L1"],
-
 			bide: ["6L1"],
-
 			bite: ["6L1"],
-
 			bodyslam: ["6L1"],
-
 			bulldoze: ["6L1"],
-
 			extrasensory: ["6L1"],
-
 			crunch: ["6L1"],
-
 			curse: ["6L1"],
-
 			doubleedge: ["6L1"],
-
 			dragonbreath: ["6L1"],
-
 			dragonpulse: ["6L1"],
-
 			dragonrage: ["6L1"],
-
 			ember: ["6L1"],
-
 			endure: ["6L1"],
-
 			extremespeed: ["6L1"],
-
 			fireblast: ["6L1"],
-
 			firefang: ["6L1"],
-
 			flamecharge: ["6L1"],
-
 			memento: ["6L1"],
-
 			flamewheel: ["6L1"],
-
 			flareblitz: ["6L1"],
-
 			headbutt: ["6L1"],
-
 			heatwave: ["6L1"],
-
 			helpinghand: ["6L1"],
-
 			ironhead: ["6L1"],
-
 			irontail: ["6L1"],
-
 			mimic: ["6L1"],
-
 			mudslap: ["6L1"],
-
 			naturalgift: ["6L1"],
-
 			odorsleuth: ["6L1"],
-
 			outrage: ["6L1"],
-
 			overheat: ["6L1"],
-
 			rage: ["6L1"],
-
 			reflect: ["6L1"],
-
 			rockclimb: ["6L1"],
-
 			safeguard: ["6L1"],
-
 			skullbash: ["6L1"],
-
 		}
 	},
-
 	archedactyl:
 	{
 		learnset:
 		{
-
 			acrobatics: ["6L1"],
-
 			aerialace: ["6L1"],
-
 			agility: ["6L1"],
-
 			allyswitch: ["6L1"],
-
 			ancientpower: ["6L1"],
-
 			aquatail: ["6L1"],
-
 			attract: ["6L1"],
-
 			bounce: ["6L1"],
-
 			bulldoze: ["6L1"],
-
 			confide: ["6L1"],
-
 			crunch: ["6L1"],
-
 			cut: ["6L1"],
-
 			defog: ["6L1"],
-
 			dig: ["6L1"],
-
 			doubleteam: ["6L1"],
-
 			dragonbreath: ["6L1"],
-
 			dragonclaw: ["6L1"],
-
 			dragonpulse: ["6L1"],
-
 			dragontail: ["6L1"],
-
 			earthpower: ["6L1"],
-
 			earthquake: ["6L1"],
-
 			endeavor: ["6L1"],
-
 			facade: ["6L1"],
-
 			fly: ["6L1"],
-
 			focusblast: ["6L1"],
-
 			frustration: ["6L1"],
-
 			gigaimpact: ["6L1"],
-
 			heatwave: ["6L1"],
-
 			hiddenpower: ["6L1"],
-
 			honeclaws: ["6L1"],
-
 			hyperbeam: ["6L1"],
-
 			irondefense: ["6L1"],
-
 			irontail: ["6L1"],
-
 			knockoff: ["6L1"],
-
 			leer: ["6L1"],
-
 			outrage: ["6L1"],
-
 			pluck: ["6L1"],
-
 			protect: ["6L1"],
-
 			quickattack: ["6L1"],
-
 			quickguard: ["6L1"],
-
 			rest: ["6L1"],
-
 			return: ["6L1"],
-
 			roar: ["6L1"],
-
 			rockpolish: ["6L1"],
-
 			rockslide: ["6L1"],
-
 			rocksmash: ["6L1"],
-
 			rockthrow: ["6L1"],
-
 			rocktomb: ["6L1"],
-
 			roost: ["6L1"],
-
 			round: ["6L1"],
-
 			sandstorm: ["6L1"],
-
 			scaryface: ["6L1"],
-
 			secretpower: ["6L1"],
-
 			shadowclaw: ["6L1"],
-
 			skyattack: ["6L1"],
-
 			sleeptalk: ["6L1"],
-
 			smackdown: ["6L1"],
-
 			snore: ["6L1"],
-
 			stealthrock: ["6L1"],
-
 			steelwing: ["6L1"],
-
 			stoneedge: ["6L1"],
-
 			substitute: ["6L1"],
-
 			swagger: ["6L1"],
-
 			tailwind: ["6L1"],
-
 			taunt: ["6L1"],
-
 			thrash: ["6L1"],
-
 			torment: ["6L1"],
-
 			toxic: ["6L1"],
-
 			uproar: ["6L1"],
-
 			uturn: ["6L1"],
-
 			wingattack: ["6L1"],
-
 			zenheadbutt: ["6L1"],
-
 			aircutter: ["6L1"],
-
 			bite: ["6L1"],
-
 			assurance: ["6L1"],
-
 			bide: ["6L1"],
-
 			bite: ["6L1"],
-
 			brutalswing: ["6L1"],
-
 			captivate: ["6L1"],
-
 			curse: ["6L1"],
-
 			detect: ["6L1"],
-
 			doubleedge: ["6L1"],
-
 			headsmash: ["6L1"],
-
 			dragonrage: ["6L1"],
-
 			endure: ["6L1"],
-
 			fireblast: ["6L1"],
-
 			firefang: ["6L1"],
-
 			flamethrower: ["6L1"],
-
 			foresight: ["6L1"],
-
 			headbutt: ["6L1"],
-
 			icefang: ["6L1"],
-
 		}
 	},
-
 	chesdon:
 	{
 		learnset:
 		{
-
 			aerialace: ["6L1"],
-
 			attract: ["6L1"],
-
 			bellydrum: ["6L1"],
-
 			bite: ["6L1"],
-
 			block: ["6L1"],
-
 			bodyslam: ["6L1"],
-
 			brickbreak: ["6L1"],
-
 			bulkup: ["6L1"],
-
 			bulldoze: ["6L1"],
-
 			confide: ["6L1"],
-
 			cut: ["6L1"],
-
 			dig: ["6L1"],
-
 			doubleteam: ["6L1"],
-
 			dragonclaw: ["6L1"],
-
 			drainpunch: ["6L1"],
-
 			dualchop: ["6L1"],
-
 			earthquake: ["6L1"],
-
 			endeavor: ["6L1"],
-
 			energyball: ["6L1"],
-
 			facade: ["6L1"],
-
 			feint: ["6L1"],
-
 			flash: ["6L1"],
-
 			fling: ["6L1"],
-
 			focusblast: ["6L1"],
-
 			focuspunch: ["6L1"],
-
 			frenzyplant: ["6L1"],
-
 			frustration: ["6L1"],
-
 			gigadrain: ["6L1"],
-
 			gigaimpact: ["6L1"],
-
 			grassknot: ["6L1"],
-
 			grasspledge: ["6L1"],
-
 			growl: ["6L1"],
-
 			gyroball: ["6L1"],
-
 			hammerarm: ["6L1"],
-
 			helpinghand: ["6L1"],
-
 			hiddenpower: ["6L1"],
-
 			honeclaws: ["6L1"],
-
 			hyperbeam: ["6L1"],
-
 			irondefense: ["6L1"],
-
 			ironhead: ["6L1"],
-
 			irontail: ["6L1"],
-
 			leechseed: ["6L1"],
-
 			lowkick: ["6L1"],
-
 			lowsweep: ["6L1"],
-
 			mudshot: ["6L1"],
-
 			naturepower: ["6L1"],
-
 			needlearm: ["6L1"],
-
 			painsplit: ["6L1"],
-
 			payback: ["6L1"],
-
 			pinmissile: ["6L1"],
-
 			poisonjab: ["6L1"],
-
 			poweruppunch: ["6L1"],
-
 			protect: ["6L1"],
-
 			reflect: ["6L1"],
-
 			rest: ["6L1"],
-
 			retaliate: ["6L1"],
-
 			return: ["6L1"],
-
 			roar: ["6L1"],
-
 			rockslide: ["6L1"],
-
 			rocksmash: ["6L1"],
-
 			rocktomb: ["6L1"],
-
 			rollout: ["6L1"],
-
 			round: ["6L1"],
-
 			secretpower: ["6L1"],
-
 			seedbomb: ["6L1"],
-
 			shadowclaw: ["6L1"],
-
 			sleeptalk: ["6L1"],
-
 			sludgebomb: ["6L1"],
-
 			smackdown: ["6L1"],
-
 			snore: ["6L1"],
-
 			solarbeam: ["6L1"],
-
 			spikyshield: ["6L1"],
-
 			stompingtantrum: ["6L1"],
-
 			stoneedge: ["6L1"],
-
 			strength: ["6L1"],
-
 			substitute: ["6L1"],
-
 			sunnyday: ["6L1"],
-
 			superfang: ["6L1"],
-
 			superpower: ["6L1"],
-
 			swagger: ["6L1"],
-
 			swordsdance: ["6L1"],
-
 			synthesis: ["6L1"],
-
 			tackle: ["6L1"],
-
 			takedown: ["6L1"],
-
 			taunt: ["6L1"],
-
 			thunderpunch: ["6L1"],
-
 			toxic: ["6L1"],
-
 			vinewhip: ["6L1"],
-
 			woodhammer: ["6L1"],
-
 			workup: ["6L1"],
-
 			worryseed: ["6L1"],
-
 			zenheadbutt: ["6L1"],
-
 			captivate: ["6L1"],
-
 			curse: ["6L1"],
-
 			crunch: ["6L1"],
-
 			defensecurl: ["6L1"],
-
 			doubleedge: ["6L1"],
-
 			earthpower: ["6L1"],
-
 			endure: ["6L1"],
-
 			firefang: ["6L1"],
-
 			fissure: ["6L1"],
-
 			headbutt: ["6L1"],
-
 			icefang: ["6L1"],
-
 			mudslap: ["6L1"],
-
 			naturalgift: ["6L1"],
-
 		}
 	},
-
 	mamodrill:
 	{
 		learnset:
 		{
-
 			aerialace: ["6L1"],
-
 			attract: ["6L1"],
-
 			brickbreak: ["6L1"],
-
 			brutalswing: ["6L1"],
-
 			bulldoze: ["6L1"],
-
 			confide: ["6L1"],
-
 			cut: ["6L1"],
-
 			dig: ["6L1"],
-
 			doubleteam: ["6L1"],
-
 			drillrun: ["6L1"],
-
 			earthpower: ["6L1"],
-
 			earthquake: ["6L1"],
-
 			facade: ["6L1"],
-
 			fissure: ["6L1"],
-
 			fling: ["6L1"],
-
 			focusblast: ["6L1"],
-
 			frustration: ["6L1"],
-
 			furyswipes: ["6L1"],
-
 			gigaimpact: ["6L1"],
-
 			hiddenpower: ["6L1"],
-
 			honeclaws: ["6L1"],
-
 			horndrill: ["6L1"],
-
 			hyperbeam: ["6L1"],
-
 			irondefense: ["6L1"],
-
 			ironhead: ["6L1"],
-
 			magnetrise: ["6L1"],
-
 			metalclaw: ["6L1"],
-
 			mudslap: ["6L1"],
-
 			mudsport: ["6L1"],
-
 			poisonjab: ["6L1"],
-
 			protect: ["6L1"],
-
 			rapidspin: ["6L1"],
-
 			rest: ["6L1"],
-
 			return: ["6L1"],
-
 			rockslide: ["6L1"],
-
 			rocksmash: ["6L1"],
-
 			rocktomb: ["6L1"],
-
 			rototiller: ["6L1"],
-
 			round: ["6L1"],
-
 			sandstorm: ["6L1"],
-
 			scratch: ["6L1"],
-
 			secretpower: ["6L1"],
-
 			shadowclaw: ["6L1"],
-
 			slash: ["6L1"],
-
 			sleeptalk: ["6L1"],
-
 			sludgebomb: ["6L1"],
-
 			smartstrike: ["6L1"],
-
 			snore: ["6L1"],
-
 			stealthrock: ["6L1"],
-
 			stompingtantrum: ["6L1"],
-
 			strength: ["6L1"],
-
 			substitute: ["6L1"],
-
 			swagger: ["6L1"],
-
 			swordsdance: ["6L1"],
-
 			toxic: ["6L1"],
-
 			xscissor: ["6L1"],
-
 			crushclaw: ["6L1"],
-
 			ancientpower: ["6L1"],
-
 			avalanche: ["6L1"],
-
 			blizzard: ["6L1"],
-
 			block: ["6L1"],
-
 			captivate: ["6L1"],
-
 			doublehit: ["6L1"],
-
 			endeavor: ["6L1"],
-
 			endure: ["6L1"],
-
 			metalsound: ["6L1"],
-
 			furyattack: ["6L1"],
-
 			hail: ["6L1"],
-
 			headbutt: ["6L1"],
-
 			icebeam: ["6L1"],
-
 			icefang: ["6L1"],
-
 			iciclecrash: ["6L1"],
-
 			iciclespear: ["6L1"],
-
 			icywind: ["6L1"],
-
 			knockoff: ["6L1"],
-
 			lightscreen: ["6L1"],
-
 			mist: ["6L1"],
-
 			mudbomb: ["6L1"],
-
 			naturalgift: ["6L1"],
-
 			odorsleuth: ["6L1"],
-
 			peck: ["6L1"],
-
 			powdersnow: ["6L1"],
-
 			submission: ["6L1"],
-
 			raindance: ["6L1"],
-
 			reflect: ["6L1"],
-
 			roar: ["6L1"],
-
 			rockclimb: ["6L1"],
-
 			scaryface: ["6L1"],
-
 			stoneedge: ["6L1"],
-
 			superpower: ["6L1"],
-
 		}
 	},
-
 	heliodra:
 	{
 		learnset:
 		{
-
 			absorb: ["6L1"],
-
 			aquatail: ["6L1"],
-
 			attract: ["6L1"],
-
 			bide: ["6L1"],
-
 			blizzard: ["6L1"],
-
 			bodyslam: ["6L1"],
-
 			brutalswing: ["6L1"],
-
 			bubble: ["6L1"],
-
 			bulldoze: ["6L1"],
-
 			confide: ["6L1"],
-
 			doubleteam: ["6L1"],
-
 			dracometeor: ["6L1"],
-
 			dragonbreath: ["6L1"],
-
 			dragonpulse: ["6L1"],
-
 			dragontail: ["6L1"],
-
 			earthquake: ["6L1"],
-
 			facade: ["6L1"],
-
 			feint: ["6L1"],
-
 			fireblast: ["6L1"],
-
 			firepunch: ["6L1"],
-
 			flail: ["6L1"],
-
 			flamethrower: ["6L1"],
-
 			focusblast: ["6L1"],
-
 			focuspunch: ["6L1"],
-
 			frustration: ["6L1"],
-
 			gigaimpact: ["6L1"],
-
 			hail: ["6L1"],
-
 			hiddenpower: ["6L1"],
-
 			hyperbeam: ["6L1"],
-
 			icebeam: ["6L1"],
-
 			incinerate: ["6L1"],
-
 			infestation: ["6L1"],
-
 			irontail: ["6L1"],
-
 			laserfocus: ["6L1"],
-
 			muddywater: ["6L1"],
-
 			outrage: ["6L1"],
-
 			powerwhip: ["6L1"],
-
 			protect: ["6L1"],
-
 			raindance: ["6L1"],
-
 			rest: ["6L1"],
-
 			return: ["6L1"],
-
 			rockslide: ["6L1"],
-
 			rocksmash: ["6L1"],
-
 			round: ["6L1"],
-
 			secretpower: ["6L1"],
-
 			shockwave: ["6L1"],
-
 			sleeptalk: ["6L1"],
-
 			sludgebomb: ["6L1"],
-
 			sludgewave: ["6L1"],
-
 			snore: ["6L1"],
-
 			stompingtantrum: ["6L1"],
-
 			strength: ["6L1"],
-
 			substitute: ["6L1"],
-
 			sunnyday: ["6L1"],
-
 			superpower: ["6L1"],
-
 			swagger: ["6L1"],
-
 			tackle: ["6L1"],
-
 			thunder: ["6L1"],
-
 			thunderbolt: ["6L1"],
-
 			thunderpunch: ["6L1"],
-
 			toxic: ["6L1"],
-
 			waterpulse: ["6L1"],
-
 			acidarmor: ["6L1"],
-
 			allyswitch: ["6L1"],
-
 			counter: ["6L1"],
-
 			curse: ["6L1"],
-
 			charge: ["6L1"],
-
 			chargebeam: ["6L1"],
-
 			cut: ["6L1"],
-
 			darkpulse: ["6L1"],
-
 			dig: ["6L1"],
-
 			eerieimpulse: ["6L1"],
-
 			electrify: ["6L1"],
-
 			electroweb: ["6L1"],
-
 			poisontail: ["6L1"],
-
 			flash: ["6L1"],
-
 			grassknot: ["6L1"],
-
 			hypervoice: ["6L1"],
-
 			lightscreen: ["6L1"],
-
 			lowkick: ["6L1"],
-
 			lowsweep: ["6L1"],
-
 			magnetrise: ["6L1"],
-
 			paraboliccharge: ["6L1"],
-
 			psychup: ["6L1"],
-
 			quickattack: ["6L1"],
-
 			razorwind: ["6L1"],
-
 			rocktomb: ["6L1"],
-
 			sandstorm: ["6L1"],
-
 			signalbeam: ["6L1"],
-
 		}
 	},
 	scyscor:
@@ -10258,7 +7972,6 @@ swampamar:
 			taunt: ["6L1"],
 		}
 	},
-
 	metabat:
 	{
 		learnset:
@@ -41293,5 +39006,4 @@ crygotran: {learnset: {
 		magiccoat: ["6L1"],
 		mist: ["6L1"],
 		}},
-
 };
