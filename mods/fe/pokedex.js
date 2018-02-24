@@ -13217,7 +13217,7 @@ darkchomp: {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-  /*  pelippex: {
+    pelippex: {
         num: 7500426,
         species: "Pelippex",
         types: ["Water", "Poison"],
@@ -13239,10 +13239,10 @@ darkchomp: {
         heightm: 1,
         weightkg: 21.3,
         color: "Yellow",
-        eggGroups: ["Water 1"]
+        eggGroups: ["Water 1"],
     },
 
-    kyzor: {
+    /*kyzor: {
         num: 7500427,
         species: "Kyzor",
         types: ["Dragon", "Steel"],
