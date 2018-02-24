@@ -1,6 +1,6 @@
 'use strict';
 exports.BattleAbilities = {
-	"turnabouttorrent": {
+	"sanddreams": {
 		desc: "When this Pokemon has 1/3 or more of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Water-type attack.",
 		shortDesc: "When this Pokemon has 1/3 or less of its max HP, its Water attacks do 1.5x damage. Stat changes are reversed",
 		onBoost: function(boost) {
@@ -22,8 +22,8 @@ exports.BattleAbilities = {
 				return this.chainModify(1.5);
 			}
 		},
-		id: "turnabouttorrent",
-		name: "Turnabout Torrent",
+		id: "sanddreams",
+		name: "sanddreams",
 		rating: 2,
 		num: 192
 	},
