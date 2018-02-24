@@ -2897,7 +2897,6 @@ exports.Formats = [
 		],
 
 		mod: 'automagic',
-		searchShow: false,
 		ruleset: ['[Gen 7] OU'],
 		banlist: ["King's Rock", 'Razor Fang'],
 		onAfterSecondaryEffect: function (target, source, move) {
@@ -3072,7 +3071,6 @@ exports.Formats = [
 		mod: 'gen7',
 		ruleset: ['[Gen 7] Ubers', 'Baton Pass Clause'],
 		banlist: ['Rule:nicknameclause'],
-		searchShow: false,
 		onValidateTeam: function (team) {
 			let nameTable = {};
 			for (let i = 0; i < team.length; i++) {
