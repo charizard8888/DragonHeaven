@@ -15,7 +15,13 @@ Corrosion	This Pokemon can poison any Pokemon, and attack any Pokemon with Poiso
 Air Stream	Summons the new weather Air Current for 5 turns. In this weather, Flying-Types take 0.75* damage from Electric, Rock, and Ice-Type moves (kinda like Solid Rock), and the move Hurricane has perfect accuracy. Weather Ball doubles in power and becomes Flying-Type.
 Guard Up	Upon switch-in, this Pokemon's Defense or Special Defense goes up by 1 stage depending on the opponent's higher attacking stat (Download clone).
 Scrappy	Ignores every type inmunity when attacking.
-Technician	This Pokemon's moves of 75 power or less have 1.5x power. Includes Struggle. */
+Technician	This Pokemon's moves of 75 power or less have 1.5x power. Includes Struggle. 
+Obstinacy	User gains a boost in it's moves the lower it's HP gets. Formula:  (1.0 - [Current percentage of HP in decimal form]) + 1.0
+Overgrow	Boosts the power of Grass-type moves by 1.5x.
+Blaze	Boosts the power of Fire-type moves by 1.5x.
+Torrent	Boosts the power of Water-type moves by 1.5x.
+Swarm	Boosts the power of Bug-type moves by 1.5x.
+*/
 
 	"magichealing": {
 		id: "magichealing",
