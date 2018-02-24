@@ -13115,10 +13115,10 @@ darkchomp: {
             0: "Miracle Morph"
         },
     },
-  /*  nintwo: {
+    nintwo: {
         num: 7500423,
         species: "Nintwo",
-        types: ["Bug", "Psychic"], //83	100	77	122	80	145	607
+        types: ["Bug", "Psychic"],
         genderRatio: {
             M: 50.0,
             F: 50.0
@@ -13173,7 +13173,7 @@ darkchomp: {
             0: "Insomnia"
         },
     },
-    kommew: {
+  /*  kommew: {
         num: 7500424,
         species: "Kommew",
         types: ["Fighting", "Psychic"], //107	105	112	110	112	92
