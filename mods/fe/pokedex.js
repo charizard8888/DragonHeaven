@@ -13176,7 +13176,7 @@ darkchomp: {
     kommew: {
         num: 7500424,
         species: "Kommew",
-        types: ["Fighting", "Psychic"], //107	105	112	110	112	92
+        types: ["Fighting", "Psychic"],
         genderRatio: {
             M: 50.0,
             F: 50.0
@@ -13217,7 +13217,7 @@ darkchomp: {
         color: "Black",
         eggGroups: ["Undiscovered"],
     },
-    pelippex: {
+  /*  pelippex: {
         num: 7500426,
         species: "Pelippex",
         types: ["Water", "Poison"],
@@ -13567,6 +13567,6 @@ darkchomp: {
         weightkg: 529.8,
         color: "Green",
         eggGroups: ["Field", "Grass"],
-    },
+    },*/
 // Cat Bed: 75004348
 };
