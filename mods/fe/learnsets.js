@@ -34958,7 +34958,7 @@ dongoro: {learnset: {
 		snatch: ["6L1"],
 		spite: ["6L1"],
 		}},
-darkchomp: {learnset: {
+/*darkchomp: {learnset: {
 		aerialace: ["6L1"],
 		blizzard: ["6L1"],
 		brickbreak: ["6L1"],
@@ -35080,7 +35080,7 @@ darkchomp: {learnset: {
 		sandtomb: ["6L1"],
 		slash: ["6L1"],
 		stealthrock: ["6L1"],
-		}},
+	}},*/
 jelluk: {learnset: {
 		acidarmor: ["6L1"],
 		attract: ["6L1"],
@@ -39145,4 +39145,3 @@ crygotran: {learnset: {
 		mist: ["6L1"],
 		}},
 };
-
