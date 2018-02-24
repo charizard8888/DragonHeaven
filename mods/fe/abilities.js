@@ -1,6 +1,6 @@
 'use strict';
 exports.BattleAbilities = {
-	"turnabouttorrent": {
+	"sanddreams": {
 		desc: "When this Pokemon has 1/3 or more of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Water-type attack.",
 		shortDesc: "When this Pokemon has 1/3 or less of its max HP, its Water attacks do 1.5x damage. Stat changes are reversed",
 		onBoost: function(boost) {
@@ -22,8 +22,8 @@ exports.BattleAbilities = {
 				return this.chainModify(1.5);
 			}
 		},
-		id: "turnabouttorrent",
-		name: "Turnabout Torrent",
+		id: "sanddreams",
+		name: "Sand Dreams",
 		rating: 2,
 		num: 192
 	},
@@ -236,7 +236,7 @@ exports.BattleAbilities = {
 		name: "FEAR",
 		rating: 3,
 		num: 201,
-	}, 
+	},
 	"cactuspower": {
 		shortDesc: "On switch-in, this Pokemon summons Sandstorm.",
 		onStart: function(source) {
@@ -252,7 +252,7 @@ exports.BattleAbilities = {
 		name: "Cactus Power",
 		rating: 4.5,
 		num: 202
-	}, 
+	},
 	"snowforce": {
 		desc: "If Sandstorm is active, this Pokemon's Ground-, Rock-, and Steel-type attacks have their power multiplied by 1.3. This Pokemon takes no damage from Sandstorm.",
 		shortDesc: "This Pokemon's Ice attacks do 1.3x in Hail; immunity to it.",
@@ -701,7 +701,7 @@ exports.BattleAbilities = {
 		id: "naturalguard",
 		name: "Natural Guard",
 		rating: 4,
-		num: 220, 
+		num: 220,
 	},
 	"stickylevitation": {
 		shortDesc: "This Pokemon cannot lose its held item due to another Pokemon's attack.",
@@ -1348,7 +1348,7 @@ exports.BattleAbilities = {
 		rating: 3.5,
 		num: 248
 	},
-	
+
 	"underpressure": {
 		desc: "This Pokemon has its major status condition cured at the end of each turn if Rain Dance is active.",
 		shortDesc: "This Pokemon has its status cured at the end of each turn if Rain Dance is active.",
@@ -1533,7 +1533,7 @@ exports.BattleAbilities = {
 		name: "Sturdy Tempo",
 	},
 
-	
+
 	"hydrostream": {
 		shortDesc: "On switch-in, this Pokemon summons Rain Dance.",
 		onStart: function (source) {
@@ -1773,7 +1773,7 @@ exports.BattleAbilities = {
 			pokemon.removeVolatile('torrentialvoltage');
 		},
 		effect: {
-			noCopy: true, 
+			noCopy: true,
 			onStart: function (target) {
 				this.add('-start', target, 'ability: Torrential Voltage');
 			},
@@ -1825,10 +1825,10 @@ exports.BattleAbilities = {
 		id: "seamonster",
 		name: "Sea Monster",
 		},
-		
+
 	/*
-	
-	
+
+
 	"sereneeyes": {
 		shortDesc: "Moves with secondary effect chances have their accuracy doubled.",
 		onModifyMovePriority: -2,
@@ -1868,7 +1868,7 @@ exports.BattleAbilities = {
 		id: "seamonster",
 		name: "Sea Monster",
 	},
-	
+
 	"fromashes": {
 		desc: "If the Pokémon is burned, it will gain 1/8 of its maximum HP at the end of each turn instead of taking damage. The Pokémon with this Ability does not lose Attack due to burn.",
 		shortDesc: "If the Pokémon is burned, it will gain 1/8 of its maximum HP at the end of each turn instead of taking damage. The Pokémon with this Ability does not lose Attack due to burn.",
