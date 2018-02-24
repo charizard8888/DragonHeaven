@@ -13242,7 +13242,7 @@ darkchomp: {
         eggGroups: ["Water 1"],
     },
 
-     kyzor: {
+     /*kyzor: {
         num: 7500427,
         species: "Kyzor",
         types: ["Dragon", "Steel"],
@@ -13567,6 +13567,6 @@ darkchomp: {
         weightkg: 529.8,
         color: "Green",
         eggGroups: ["Field", "Grass"],
-    },
+    },*/
 // Cat Bed: 75004348
 };
