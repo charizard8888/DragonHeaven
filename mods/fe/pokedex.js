@@ -13173,7 +13173,7 @@ darkchomp: {
             0: "Insomnia"
         },
     },
-  /*  kommew: {
+    kommew: {
         num: 7500424,
         species: "Kommew",
         types: ["Fighting", "Psychic"], //107	105	112	110	112	92
@@ -13567,6 +13567,6 @@ darkchomp: {
         weightkg: 529.8,
         color: "Green",
         eggGroups: ["Field", "Grass"],
-    },*/
+    },
 // Cat Bed: 75004348
 };
