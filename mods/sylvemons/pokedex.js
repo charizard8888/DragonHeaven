@@ -42,4 +42,20 @@ exports.BattlePokedex = {
         inherit: true,
         types: ["Fighting", "Flying"],
     },
+	misdreavus: {
+		inherit: true,
+		types: ["Ghost", "Fairy"],
+	},
+	mismagius: {
+		inherit: true,
+		types: ["Ghost", "Fairy"],
+	},
+	yanmega: {
+		inherit: true,
+		types: ["Bug", "Dragon"],
+	},
+	goodra: {
+		inherit: true,
+		types: ["Dragon", "Poison"],
+	},
 };
