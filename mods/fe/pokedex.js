@@ -1,7 +1,34 @@
 'use strict';
 
 exports.BattlePokedex = {
-
+swampert: {
+		num: 260,
+		species: "Swampert",
+		types: ["Water", "Ground"],
+		genderRatio: {M: 0.875, F: 0.125},
+		baseStats: {hp: 100, atk: 110, def: 90, spa: 85, spd: 90, spe: 60},
+		abilities: {0: "Torrent", H: "Damp"},
+		heightm: 1.5,
+		weightkg: 81.9,
+		color: "Blue",
+		prevo: "marshtomp",
+		evoLevel: 36,
+		eggGroups: ["Monster", "Water 1"],
+		otherFormes: ["swampertmega"],
+	},
+	malamar: {
+		num: 687,
+		species: "Malamar",
+		types: ["Dark", "Psychic"],
+		baseStats: {hp: 86, atk: 92, def: 88, spa: 68, spd: 75, spe: 73},
+		abilities: {0: "Contrary", 1: "Suction Cups", H: "Infiltrator"},
+		heightm: 1.5,
+		weightkg: 47,
+		color: "Blue",
+		prevo: "inkay",
+		evoLevel: 30,
+		eggGroups: ["Water 1", "Water 2"],
+	},
     swampamar: {
         num: 75001,
         species: "Swampamar",
@@ -24,6 +51,7 @@ exports.BattlePokedex = {
         heightm: 1.5,
         weightkg: 64.45,
         color: "Black",
+		  fusion: ["Swampert", "Malamar"],
         eggGroups: ["Undiscovered"],
     },
     swampamarmega: {
