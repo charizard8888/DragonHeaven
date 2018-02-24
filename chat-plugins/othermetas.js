@@ -645,7 +645,7 @@ typeopthelp: ["/eternalmons - Shows the list of Pokemon in Type Optimisation Pok
 	
 		mfa: function (target, room, user) {
 		if (!this.runBroadcast()) return;
-		let buf = `<div class=infobox-limited><center><h2>List Of MFA Pokemon</h2></center>`;
+		let buf = `<div class=infobox-limited><center><h2>List Of MFA Pokemon</h2><br>Clickable list!</center>`;
 		let mfaDex = require('../mods/megasforall/pokedex.js').BattlePokedex;
 		if (!mfaDex) return this.errorReply("Error Fetching MFA Data.");
 		Object.values(mfaDex).forEach(mon => {
