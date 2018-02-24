@@ -339,6 +339,181 @@ exports.BattleMovedex = {
 		zMovePower: 175,
 		contestType: "Cool",
 	},
+	"morningsun": {
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "The user restores 1/2 of its maximum HP if no weather conditions are in effect, 2/3 of its maximum HP if the weather is Sunny Day, and 1/4 of its maximum HP if the weather is Hail, Rain Dance, or Sandstorm, all rounded half down.",
+		shortDesc: "Heals the user by a weather-dependent amount.",
+		id: "morningsun",
+		isViable: true,
+		name: "Morning Sun",
+		pp: 5,
+		priority: 0,
+		flags: {snatch: 1, heal: 1},
+		onHit: function (pokemon) {
+			if (this.isWeather(['desolateland'])) {
+				return this.heal(this.modify(pokemon.maxhp, 0.667));
+			} else {
+				return this.heal(this.modify(pokemon.maxhp, 0.5));
+			}
+		},
+		secondary: false,
+		target: "self",
+		type: "Normal",
+		zMoveEffect: 'clearnegativeboost',
+	},
+	"moonlight": {
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "The user restores 1/2 of its maximum HP if no weather conditions are in effect, 2/3 of its maximum HP if the weather is Sunny Day, and 1/4 of its maximum HP if the weather is Hail, Rain Dance, or Sandstorm, all rounded half down.",
+		shortDesc: "Heals the user by a weather-dependent amount.",
+		id: "moonlight",
+		isViable: true,
+		name: "Moonlight",
+		pp: 5,
+		priority: 0,
+		flags: {snatch: 1, heal: 1},
+		onHit: function (pokemon) {
+			if (this.isWeather(['desolateland'])) {
+				return this.heal(this.modify(pokemon.maxhp, 0.667));
+			} else {
+				return this.heal(this.modify(pokemon.maxhp, 0.5));
+			}
+		},
+		secondary: false,
+		target: "self",
+		type: "Fairy",
+		zMoveEffect: 'clearnegativeboost',
+	},
+	"synthesis": {
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "The user restores 1/2 of its maximum HP if no weather conditions are in effect, 2/3 of its maximum HP if the weather is Sunny Day, and 1/4 of its maximum HP if the weather is Hail, Rain Dance, or Sandstorm, all rounded half down.",
+		shortDesc: "Heals the user by a weather-dependent amount.",
+		id: "synthesis",
+		isViable: true,
+		name: "Synthesis",
+		pp: 5,
+		priority: 0,
+		flags: {snatch: 1, heal: 1},
+		onHit: function (pokemon) {
+			if (this.isWeather(['desolateland'])) {
+				return this.heal(this.modify(pokemon.maxhp, 0.667));
+			} else {
+				return this.heal(this.modify(pokemon.maxhp, 0.5));
+			}
+		},
+		secondary: false,
+		target: "self",
+		type: "Grass",
+		zMoveEffect: 'clearnegativeboost',
+	},
+	"bugbite": {
+		accuracy: 100,
+		basePower: 65,
+		category: "Physical",
+		desc: "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately. Items lost to this move cannot be regained with Recycle or the Ability Harvest.",
+		shortDesc: "User steals and eats the target's Berry. 1.5x power if the foe has a removable item.",
+		id: "bugbite",
+		name: "Bug Bite",
+		pp: 32,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onBasePowerPriority: 4,
+		onBasePower: function (basePower, source, target, move) {
+			let item = target.getItem();
+			if (!this.singleEvent('TakeItem', item, target.itemData, target, source, move, item)) return;
+			if (item.id) {
+				return this.chainModify(1.5);
+			}
+		},
+		onHit: function (target, source) {
+			let item = target.getItem();
+			if (source.hp && item.isBerry && target.takeItem(source)) {
+				this.add('-enditem', target, item.name, '[from] stealeat', '[move] Bug Bite', '[of] ' + source);
+				if (this.singleEvent('Eat', item, null, source, null, null)) {
+					this.runEvent('EatItem', source, null, null, item);
+				}
+				if (item.onEat) source.ateBerry = true;
+			}
+		},
+		secondary: false,
+		target: "normal",
+		type: "Bug",
+		zMovePower: 120,
+		contestType: "Cute",
+	},
+	"pluck": {
+		accuracy: 100,
+		basePower: 65,
+		category: "Physical",
+		desc: "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately. Items lost to this move cannot be regained with Recycle or the Ability Harvest.",
+		shortDesc: "User steals and eats the target's Berry. 1.5x power if the foe has a removable item.",
+		id: "pluck",
+		name: "Pluck",
+		pp: 32,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onBasePowerPriority: 4,
+		onBasePower: function (basePower, source, target, move) {
+			let item = target.getItem();
+			if (!this.singleEvent('TakeItem', item, target.itemData, target, source, move, item)) return;
+			if (item.id) {
+				return this.chainModify(1.5);
+			}
+		},
+		onHit: function (target, source) {
+			let item = target.getItem();
+			if (source.hp && item.isBerry && target.takeItem(source)) {
+				this.add('-enditem', target, item.name, '[from] stealeat', '[move] Bug Bite', '[of] ' + source);
+				if (this.singleEvent('Eat', item, null, source, null, null)) {
+					this.runEvent('EatItem', source, null, null, item);
+				}
+				if (item.onEat) source.ateBerry = true;
+			}
+		},
+		secondary: false,
+		target: "normal",
+		type: "Flying",
+		zMovePower: 120,
+	},
+	"incinerate": {
+		accuracy: 100,
+		basePower: 65,
+		category: "Special",
+		desc: "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately. Items lost to this move cannot be regained with Recycle or the Ability Harvest.",
+		shortDesc: "User steals and eats the target's Berry. 1.5x power if the foe has a removable item.",
+		id: "incinerate",
+		name: "Incinerate",
+		pp: 32,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onBasePowerPriority: 4,
+		onBasePower: function (basePower, source, target, move) {
+			let item = target.getItem();
+			if (!this.singleEvent('TakeItem', item, target.itemData, target, source, move, item)) return;
+			if (item.id) {
+				return this.chainModify(1.5);
+			}
+		},
+		onHit: function (target, source) {
+			let item = target.getItem();
+			if (source.hp && item.isBerry && target.takeItem(source)) {
+				this.add('-enditem', target, item.name, '[from] stealeat', '[move] Bug Bite', '[of] ' + source);
+				if (this.singleEvent('Eat', item, null, source, null, null)) {
+					this.runEvent('EatItem', source, null, null, item);
+				}
+				if (item.onEat) source.ateBerry = true;
+			}
+		},
+		secondary: false,
+		target: "normal",
+		type: "Fire",
+		zMovePower: 120,
+	},
 	
 	/* Haunting Scream	Ghost	Special	90, 100%	16 Max	Inflicts the Perish Song  effect on the opponent 30% of the time. (Sound)	Never-Ending Nightmare (175 BP)
 	Air Current	Flying	Status	--	16 Max	See abilities page under "Air Stream"	Raises the user's Speed by 1
