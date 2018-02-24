@@ -23,7 +23,7 @@ exports.BattleAbilities = {
 			}
 		},
 		id: "sanddreams",
-		name: "sanddreams",
+		name: "Sand Dreams",
 		rating: 2,
 		num: 192
 	},
