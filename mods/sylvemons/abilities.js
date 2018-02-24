@@ -16,12 +16,5 @@ Air Stream	Summons the new weather Air Current for 5 turns. In this weather, Fly
 Guard Up	Upon switch-in, this Pokemon's Defense or Special Defense goes up by 1 stage depending on the opponent's higher attacking stat (Download clone).
 Scrappy	Ignores every type inmunity when attacking.
 Technician	This Pokemon's moves of 75 power or less have 1.5x power. Includes Struggle. */
-'slowchat': {
-		shortDesc: "Uses Defog, Sticky Web then Stealth Rock on switch in",
-		onSwitchOut: function (source) {
-			this.useMove('Future Sight', source);
-		},
-		id: "slowchat",
-		name: "Slowchat",
-	},
+
 };
