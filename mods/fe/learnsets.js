@@ -1,6 +1,6 @@
 'use strict';
 exports.BattleLearnsets = {
-swampamar:
+/*swampamar:
 	{
 		learnset:
 		{
@@ -137,7 +137,7 @@ swampamar:
 			telekinesis: ["6L1"],
 			thief: ["6L1"],
 		}
-	},
+	},*/
 
 	gyarotic:
 	{
