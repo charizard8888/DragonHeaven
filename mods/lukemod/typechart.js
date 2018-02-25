@@ -472,7 +472,7 @@ exports.BattleTypeChart = {
 			"Flying": 0,
 			"Ghost": 0,
 			"Grass": 0,
-			"Ground": 2,
+			"Ground": 3,
 			"Ice": 0,
 			"Normal": 0,
 			"Poison": 0,
