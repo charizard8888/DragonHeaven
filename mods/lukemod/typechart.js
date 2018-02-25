@@ -482,7 +482,5 @@ exports.BattleTypeChart = {
 			"Water": 0,
 			"Luke": 0,
 		},
-	HPivs: {"atk": 30, "def": 30},
-		HPdvs: {"def": 31},
 	},
 };
