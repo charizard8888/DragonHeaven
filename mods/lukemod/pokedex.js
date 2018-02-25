@@ -26,7 +26,7 @@ abilities: {0: "Flash Fire", H: "Aftermath"},
 },
 weezing: {
 inherit: true,
-types: ["Poison", "Fire", "Luke"],
+types: ["Luke"],
 abilities: {0: "Flash Fire", H: "Aftermath"},
 },
 };
