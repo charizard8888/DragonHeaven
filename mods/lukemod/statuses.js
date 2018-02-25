@@ -1,8 +1,21 @@
 'use strict';
 
 exports.BattleStatuses = {
-	brn: {
-		effectType: 'Status',
+	
+	weezing: {
+		// Weezing: Aftermath
+		onImmunity: function (type, pokemon) {
+			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+		},
+		onStart: function (pokemon) {
+			if (pokemon.ability === 'levitate') {
+				pokemon.ability = 'aftermath';
+				pokemon.baseAbility = 'aftermath';
+			}
+		},
+	},
+brn: {
+	effectType: 'Status',
 		onStart: function (target, source, sourceEffect) {
 			if (sourceEffect && sourceEffect.id === 'flameorb') {
 				this.add('-status', target, 'brn', '[from] item: Flame Orb');
