@@ -13295,7 +13295,7 @@ darkchomp: {
         eggGroups: ["Undiscovered"],
     },
 
-   /* gumanitoos: {
+    gumanitoos: {
         num: 7500428,
         species: "Gumanitoos",
         types: ["Normal", "Ghost"],
@@ -13315,7 +13315,7 @@ darkchomp: {
             0: "Levi Stakes"
         },
     },
-    xurkino: {
+    /* xurkino: {
         num: 7500429,
         species: "Xurkino",
         types: ["Electric", "Normal"],
