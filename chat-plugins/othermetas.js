@@ -671,7 +671,7 @@ typeopthelp: ["/eternalmons - Shows the list of Pokemon in Type Optimisation Pok
 		let feDex = require('../mods/fe/items.js').BattleItems;
 		if (!feDex) return this.errorReply("Error Fetching FE Data.");
 		Object.values(feDex).forEach(item => {
-			buf += `<button name="send" value="/dt ${item.id}, FE" style="background:none;border:none;">${item.id}</button><br>`;
+			buf += `<button name="send" value="/dt ${item.name}, FE" style="background:none;border:none;">${item.id}</button><br>`;
 		});
 		this.sendReplyBox(`${buf}</div>`);
 	},
@@ -682,9 +682,18 @@ sylveitems: function (target, room, user) {
 		let sylveDex = require('../mods/sylvemons/items.js').BattleItems;
 		if (!sylveDex) return this.errorReply("Error Fetching Sylvemons Data.");
 		Object.values(sylveDex).forEach(item => {
-			buf += `<button name="send" value="/dt ${item.id}, Sylvemons" style="background:none;border:none;">${item.id}</button><br>`;
+			buf += `<button name="send" value="/dt ${item.name}, Sylvemons" style="background:none;border:none;">${item.id}</button><br>`;
 		});
 		this.sendReplyBox(`${buf}</div>`);
 	},
-	
+	sylvemoves: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Sylvemons Items Additions/Alterations</h2></center>`;
+		let sylveDex = require('../mods/sylvemons/moves.js').BattleMovedex;
+		if (!sylveDex) return this.errorReply("Error Fetching Sylvemons Data.");
+		Object.values(sylveDex).forEach(move => {
+			buf += `<button name="send" value="/dt ${move.name}, Sylvemons" style="background:none;border:none;">${item.id}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
 };
