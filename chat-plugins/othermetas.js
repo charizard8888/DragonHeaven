@@ -676,6 +676,15 @@ typeopthelp: ["/eternalmons - Shows the list of Pokemon in Type Optimisation Pok
 		this.sendReplyBox(`${buf}</div>`);
 	},
 	femegashelp: ["/femegas - Shows the list of Mega Stones in Fusion Evolution."],
-
+sylveitems: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Sylvemons Items Additions/Alterations</h2></center>`;
+		let sylveDex = require('../mods/sylve/items.js').BattleItems;
+		if (!sylveDex) return this.errorReply("Error Fetching Sylvemons Data.");
+		Object.values(sylveDex).forEach(item => {
+			buf += `<button name="send" value="/dt ${item.id}, Sylvemons" style="background:none;border:none;">${item.id}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
 	
 };
