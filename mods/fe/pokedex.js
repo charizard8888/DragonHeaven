@@ -13368,7 +13368,7 @@ darkchomp: {
         eggGroups: ["Undiscovered"],
     },
 
-  /*  yvelchan: {
+    yvelchan: {
         num: 7500430,
         species: "Yvel-Chan",
         types: ["Flying", "Normal"],
@@ -13429,9 +13429,6 @@ darkchomp: {
         weightkg: 162.8,
         color: "Green",
         eggGroups: ["Undiscovered"],
-        otherFormes: {
-            "Altarigarde-Mega"
-        },
     },
 
     altarigardemega: {
@@ -13461,7 +13458,7 @@ darkchomp: {
         color: "Green",
         eggGroups: ["Undiscovered"],
     },
-    flycanion: {
+  /*  flycanion: {
         num: 7500433,
         species: "Flycanion",
         types: ["Ground", "Fire"],
