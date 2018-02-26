@@ -13458,7 +13458,7 @@ darkchomp: {
         color: "Green",
         eggGroups: ["Undiscovered"],
     },
-  /*  flycanion: {
+    flycanion: {
         num: 7500433,
         species: "Flycanion",
         types: ["Ground", "Fire"],
@@ -13558,6 +13558,6 @@ darkchomp: {
         weightkg: 529.8,
         color: "Green",
         eggGroups: ["Field", "Grass"],
-    },*/
+    },
 // Cat Bed: 75004348
 };
