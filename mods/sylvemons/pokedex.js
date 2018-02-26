@@ -58,4 +58,24 @@ exports.BattlePokedex = {
 		inherit: true,
 		types: ["Dragon", "Poison"],
 	},
+	xurkitree: {
+		inherit: true,
+		types: ["Electric", "Grass"],
+	},
+	servine: {
+		inherit: true,
+		types: ["Grass", "Dragon"],
+	},
+	serperior: {
+		inherit: true,
+		types: ["Grass", "Dragon"],
+	},
+	mawile : {
+		inherit: true,
+		types: ["Dark", "Fairy"],
+	},
+	mawilemega: {
+		inherit: true,
+		types: ["Dark", "Fairy"],
+	},
 };
