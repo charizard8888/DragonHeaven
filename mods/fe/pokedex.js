@@ -13533,7 +13533,32 @@ darkchomp: {
         eggGroups: ["Undiscovered"],
     },
 
-    // Garzone and Mega 75004346
+    garzone: {
+num: 75004346,
+species: "Garzone",
+types: ["Dragon", "Electric"], 
+baseStats:{hp: 100, atk: 110, def: 105, spa: 115, spd: 90, spe: 85},
+abilities: {0: "Laser Beam"}, 
+},
+	garzonemega: {
+        num: 75004346,
+        species: "Garzone-Mega",
+        baseSpecies: "Garzone",
+        forme: "Mega",
+        formeLetter: "M",
+        types: ["Dragon", "Electric"], // 100	150	125	155	100	75
+        baseStats: {
+            hp: 100,
+            atk: 150,
+            def: 125,
+            spa: 155,
+            spd: 100,
+            spe: 75
+        },
+        abilities: {
+            0: "Sand Force"
+        },
+    },
 
     shitpost: {
         num: 7500437,
