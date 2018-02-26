@@ -13315,7 +13315,7 @@ darkchomp: {
             0: "Levi Stakes"
         },
     },
-    /* xurkino: {
+    xurkino: {
         num: 7500429,
         species: "Xurkino",
         types: ["Electric", "Normal"],
@@ -13338,9 +13338,6 @@ darkchomp: {
         weightkg: 65.5,
         color: "White",
         eggGroups: ["Undiscovered"],
-        otherFormes: {
-            "Xurkino-Mega"
-        },
     },
 
     xurkinomega: {
@@ -13371,7 +13368,7 @@ darkchomp: {
         eggGroups: ["Undiscovered"],
     },
 
-    yvelchan: {
+  /*  yvelchan: {
         num: 7500430,
         species: "Yvel-Chan",
         types: ["Flying", "Normal"],
