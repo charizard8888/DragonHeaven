@@ -13242,7 +13242,7 @@ darkchomp: {
         eggGroups: ["Water 1"],
     },
 
-     /*kyzor: {
+     kyzor: {
         num: 7500427,
         species: "Kyzor",
         types: ["Dragon", "Steel"],
@@ -13265,9 +13265,6 @@ darkchomp: {
         weightkg: 221.5,
         color: "Blue",
         eggGroups: ["Undiscovered"],
-        otherFormes: {
-            "Kyzor-Mega"
-        },
     },
 
     kyzormega: {
@@ -13298,7 +13295,7 @@ darkchomp: {
         eggGroups: ["Undiscovered"],
     },
 
-    gumanitoos: {
+   /* gumanitoos: {
         num: 7500428,
         species: "Gumanitoos",
         types: ["Normal", "Ghost"],
