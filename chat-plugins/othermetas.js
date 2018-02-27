@@ -682,17 +682,27 @@ sylveitems: function (target, room, user) {
 		let sylveDex = require('../mods/sylvemons/items.js').BattleItems;
 		if (!sylveDex) return this.errorReply("Error Fetching Sylvemons Data.");
 		Object.values(sylveDex).forEach(item => {
-			buf += `<button name="send" value="/dt ${item.id}, Sylvemons" style="background:none;border:none;">${item.name}</button><br>`;
+			buf += `<button name="send" value="/dt ${item.id}, Sylvemons" style="background:none;border:none;">${item.id}</button><br>`;
 		});
 		this.sendReplyBox(`${buf}</div>`);
 	},
 	sylvemoves: function (target, room, user) {
 		if (!this.runBroadcast()) return;
-		let buf = `<div class=infobox-limited><center><h2>List Of Sylvemons Items Additions/Alterations</h2></center>`;
+		let buf = `<div class=infobox-limited><center><h2>List Of Sylvemons Moves Additions/Alterations</h2></center>`;
 		let sylveDex = require('../mods/sylvemons/moves.js').BattleMovedex;
 		if (!sylveDex) return this.errorReply("Error Fetching Sylvemons Data.");
 		Object.values(sylveDex).forEach(move => {
-			buf += `<button name="send" value="/dt ${move.id}, Sylvemons" style="background:none;border:none;">${move.name}</button><br>`;
+			buf += `<button name="send" value="/dt ${move.id}, Sylvemons" style="background:none;border:none;">${move.id}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	sylveabilities: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Sylvemons Abilities Additions/Alterations</h2></center>`;
+		let sylveDex = require('../mods/sylvemons/abilities.js').BattleAbilities;
+		if (!sylveDex) return this.errorReply("Error Fetching Sylvemons Data.");
+		Object.values(sylveDex).forEach(ability => {
+			buf += `<button name="send" value="/dt ${ability.id}, Sylvemons" style="background:none;border:none;">${ability.id}</button><br>`;
 		});
 		this.sendReplyBox(`${buf}</div>`);
 	},
