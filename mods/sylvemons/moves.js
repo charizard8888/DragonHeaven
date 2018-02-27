@@ -51,15 +51,15 @@ exports.BattleMovedex = {
                 shortDesc: "Has 1/2 recoil",
                 zMovePower: 200,
         },
-        "meteorshower": {
+        "stalwartsword": {
                 accuracy: 100,
                 basePower: 130,
                 category: "Special",
                 desc: "Lowers the user's Special Attack by 2 stages.",
                 shortDesc: "Lowers the user's Sp. Atk by 2.",
-                id: "meteorshower",
+                id: "stalwartsword",
                 isViable: true,
-                name: "Meteor Shower",
+                name: "Stalwart Sword",
                 pp: 5,
                 priority: 0,
                 flags: {mirror: 1, protect: 1},
