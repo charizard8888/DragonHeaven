@@ -514,7 +514,50 @@ exports.BattleMovedex = {
 		type: "Fire",
 		zMovePower: 120,
 	},
-	
+	doublehit: {
+		inherit: true,
+		basePower: 50,
+		pp: 16,
+		zMovePower: 100,
+	},
+	doublekick: {
+		inherit: true,
+		basePower: 50,
+		pp: 16,
+		zMovePower: 100,
+	},
+		doublekick: {
+		inherit: true,
+		pp: 16,
+		zMovePower: 100,
+	},
+	"twineedle": {
+		num: 41,
+		accuracy: 100,
+		basePower: 25,
+		category: "Physical",
+		desc: "Hits twice, with each hit having a 20% chance to poison the target. If the first hit breaks the target's substitute, it will take damage for the second hit.",
+		shortDesc: "Hits 2 times. Each hit has 20% chance to poison.",
+		id: "twineedle",
+		name: "Twineedle",
+		pp: 16,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, contact: 1},
+		multihit: [2, 2],
+		secondary: {
+			chance: 20,
+			status: 'psn',
+		},
+		target: "normal",
+		type: "Bug",
+		zMovePower: 100,
+		contestType: "Cool",
+	},
+	dualchop: {
+		inherit: true,
+		pp: 16,
+		zMovePower: 100,
+	},
 	/* Haunting Scream	Ghost	Special	90, 100%	16 Max	Inflicts the Perish Song  effect on the opponent 30% of the time. (Sound)	Never-Ending Nightmare (175 BP)
 	Air Current	Flying	Status	--	16 Max	See abilities page under "Air Stream"	Raises the user's Speed by 1
 	Swampland	Water	Status	--	16 Max	Envelops the opponent’s side of the field in a Swamp (halves the opponent's team's Speed for 4 turns)	Raises the user's Special Attack by 1
