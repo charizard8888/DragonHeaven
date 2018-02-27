@@ -514,7 +514,70 @@ exports.BattleMovedex = {
 		type: "Fire",
 		zMovePower: 120,
 	},
-	
+	"thickfat": {
+		desc: "If a Pokemon uses a Fire- or Ice-type attack against this Pokemon, that Pokemon's attacking stat is halved when calculating the damage to this Pokemon.",
+		shortDesc: "Fire/Ice-type moves against this Pokemon deal damage with a halved attacking stat. Immune to hail damage, burn, and freeze.",
+		onModifyAtkPriority: 6,
+		onSourceModifyAtk: function (atk, attacker, defender, move) {
+			if (move.type === 'Ice' || move.type === 'Fire') {
+				this.debug('Thick Fat weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onSourceModifySpA: function (atk, attacker, defender, move) {
+			if (move.type === 'Ice' || move.type === 'Fire') {
+				this.debug('Thick Fat weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		onImmunity: function (type, pokemon) {
+			if (type === 'hail') return false;
+		},
+		onUpdate: function (pokemon) {
+			if (pokemon.status === 'brn' || pokemon.status === 'frz') {
+				this.add('-activate', pokemon, 'ability: Thick Fat');
+				pokemon.cureStatus();
+			}
+		},
+		id: "thickfat",
+		name: "Thick Fat",
+		rating: 3.5,
+		num: 47,
+	},
+	"liquidvoice": {
+		desc: "This Pokemon's sound-based moves become Water-type moves. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's sound-based moves become Water type and power up by 1.2x times.",
+		onModifyMovePriority: -1,
+		onModifyMove: function (move) {
+			if (move.flags['sound']) {
+				move.type = 'Water';
+				move.liquidvoiceBoosted = true;
+			}
+		},
+		onBasePowerPriority: 8,
+		onBasePower: function (basePower, pokemon, target, move) {
+			if (move.liquidvoiceBoosted) return this.chainModify([0x1333, 0x1000]);
+		},
+		id: "liquidvoice",
+		name: "Liquid Voice",
+		rating: 2.5,
+		num: 204,
+	},
+	"scrappy": {
+		shortDesc: "This Pokemon can hit Ghost types with Normal- and Fighting-type moves.",
+		onModifyMovePriority: -5,
+		onModifyMove: function (move) {
+			if (!move.ignoreImmunity) move.ignoreImmunity = {};
+			if (move.ignoreImmunity !== true) {
+				move.ignoreImmunity = true;
+			}
+		},
+		id: "scrappy",
+		name: "Scrappy",
+		rating: 3,
+		num: 113,
+	},
 	/* Haunting Scream	Ghost	Special	90, 100%	16 Max	Inflicts the Perish Song  effect on the opponent 30% of the time. (Sound)	Never-Ending Nightmare (175 BP)
 	Air Current	Flying	Status	--	16 Max	See abilities page under "Air Stream"	Raises the user's Speed by 1
 	Swampland	Water	Status	--	16 Max	Envelops the opponent’s side of the field in a Swamp (halves the opponent's team's Speed for 4 turns)	Raises the user's Special Attack by 1
