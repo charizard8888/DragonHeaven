@@ -682,7 +682,7 @@ sylveitems: function (target, room, user) {
 		let sylveDex = require('../mods/sylvemons/items.js').BattleItems;
 		if (!sylveDex) return this.errorReply("Error Fetching Sylvemons Data.");
 		Object.values(sylveDex).forEach(item => {
-			buf += `<button name="send" value="/dt ${item.name}, Sylvemons" style="background:none;border:none;">${item.id}</button><br>`;
+			buf += `<button name="send" value="/dt ${item.id}, Sylvemons" style="background:none;border:none;">${item.name}</button><br>`;
 		});
 		this.sendReplyBox(`${buf}</div>`);
 	},
@@ -692,7 +692,7 @@ sylveitems: function (target, room, user) {
 		let sylveDex = require('../mods/sylvemons/moves.js').BattleMovedex;
 		if (!sylveDex) return this.errorReply("Error Fetching Sylvemons Data.");
 		Object.values(sylveDex).forEach(move => {
-			buf += `<button name="send" value="/dt ${move.name}, Sylvemons" style="background:none;border:none;">${item.id}</button><br>`;
+			buf += `<button name="send" value="/dt ${move.id}, Sylvemons" style="background:none;border:none;">${move.name}</button><br>`;
 		});
 		this.sendReplyBox(`${buf}</div>`);
 	},
