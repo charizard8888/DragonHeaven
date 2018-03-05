@@ -3541,15 +3541,19 @@ exports.Formats = [
 		},
 	},
 	{
-		name: "No Status",
-		desc: ["&bullet; All Status moves are banned <br> &bullet; <a href=\"http://www.smogon.com/forums/threads/no-status.3542555/\">No Status</a>"],
-		ruleset: ['OU'],
-		validateSet: function(set) {
+		name: "[Gen 7] No Status",
+		desc: ["&bullet; <a href=\"https://www.smogon.com/forums/threads/3540979/\">No Status</a>"],
+		ruleset: ['[Gen 7] OU'],
+		banlist: ['Aegislash', 'Arceus', 'Blaziken', 'Darkrai', 'Deoxys', 'Deoxys-Attack', 'Deoxys-Speed', 'Dialga', 'Genesect', 'Giratina', 'Giratina-Origin', 'Greninja', 'Groudon',
+			'Ho-Oh', 'Kyogre', 'Kyurem-White', 'Landorus', 'Lugia', 'Mewtwo', 'Palkia', 'Rayquaza', 'Reshiram', 'Shaymin-Sky', 'Xerneas', 'Yveltal', 'Zekrom',
+			'Gengarite', 'Kangaskhanite', 'Lucarionite', 'Mawilite', 'Salamencite', 'Soul Dew'
+		],
+		validateSet: function (set) {
 			var problems = [];
 			if (set.moves) {
-				for (var i = 0; i < set.moves.length; i++) {
+				for (var i in set.moves) {
 					var move = this.getMove(set.moves[i]);
-					if (move.category === 'Status') problems.push(move.name + ' is banned due to it being a Status move.');
+					if (move.category === 'Status') problems.push(set.species + "'s move " + move.name + " is banned by No Status.");
 				}
 			}
 			return problems;
