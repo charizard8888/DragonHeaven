@@ -3543,7 +3543,6 @@ exports.Formats = [
 	{
 		name: "[Gen 7] No Status",
 		desc: ["&bullet; All Status moves are banned <br> &bullet; <a href=\"http://www.smogon.com/forums/threads/no-status.3542555/\">No Status</a>"],
-		mod: 'gen7',
 		ruleset: ['[Gen 7] OU'],
 		validateSet: function(set) {
 			var problems = [];
