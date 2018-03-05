@@ -3541,6 +3541,22 @@ exports.Formats = [
 		},
 	},
 	{
+		name: "[Gen 7] No Status",
+		desc: ["&bullet; All Status moves are banned <br> &bullet; <a href=\"http://www.smogon.com/forums/threads/no-status.3542555/\">No Status</a>"],
+		mod: 'gen7',
+		ruleset: ['[Gen 7] OU'],
+		validateSet: function(set) {
+			var problems = [];
+			if (set.moves) {
+				for (var i = 0; i < set.moves.length; i++) {
+					var move = this.getMove(set.moves[i]);
+					if (move.category === 'Status') problems.push(move.name + ' is banned due to it being a Status move.');
+				}
+			}
+			return problems;
+		}
+	},
+	{
 		name: "[Gen 7] Offensification",
 		desc: [
 			"All attacks are caclulated from the user's highest attacking stat.",
@@ -6244,21 +6260,7 @@ exports.Formats = [
 			'DeepSeaScale', 'DeepSeaTooth', 'Eviolite', 'Light Ball', 'Soul Dew', 'Thick Club', 'Arena Trap', 'Huge Power', 'Pure Power', 'Shadow Tag', 'Chatter',
 		],
 	},
-	{
-		name: "No Status",
-		desc: ["&bullet; All Status moves are banned <br> &bullet; <a href=\"http://www.smogon.com/forums/threads/no-status.3542555/\">No Status</a>"],
-		ruleset: ['OU'],
-		validateSet: function(set) {
-			var problems = [];
-			if (set.moves) {
-				for (var i = 0; i < set.moves.length; i++) {
-					var move = this.getMove(set.moves[i]);
-					if (move.category === 'Status') problems.push(move.name + ' is banned due to it being a Status move.');
-				}
-			}
-			return problems;
-		}
-	},
+	
 	{
 		name: "Protean Palace",
 		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/protean-palace.3496299/\">Protean Palace</a>"],
