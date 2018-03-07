@@ -1849,21 +1849,16 @@ exports.BattleAbilities = {
 		id: "fromashes",
 		name: "From Ashes",
 	},
-	// Tangled Flames: This pokemon's fire attacks are boosted 2x when confused. Fire Immunity.
-	tangledflames: {
-		shortDesc: "This pokemon's fire attacks are boosted 2x when confused. Fire Immunity.",
-		onModifyAtkPriority: 5,
-		onModifyAtk: function (atk, attacker, defender, move) {
-			if (move.type === 'Fire' && attacker.volatiles['confusion']) {
-				return this.chainModify(2);
+	slowandsteady: {
+		shortDesc: "This Pokemon takes 1/2 damage from attacks if it moves last.",
+		onModifyDamage: function (damage, target, pokemon, move) {
+			if (target.lastDamage > 0 && pokemon.lastAttackedBy && pokemon.lastAttackedBy.thisTurn && pokemon.lastAttackedBy.pokemon === target) {
+				return this.chainModify(0.5);
 			}
 		},
-		onModifySpAPriority: 5,
-		onModifySpA: function (atk, attacker, defender, move) {
-			if (move.type === 'Fire' && attacker.volatiles['confusion']) {
-				return this.chainModify(2);
-			}
-		},
+		id: "slowandsteady",
+		name: "Slow And Steady",
+	},
 	/*"seamonster": {
 		desc: "Lowers opponent's attack one stage upon switching in. Water-type attacks are boosted 10%.",
 		shortDesc: "Lowers opponent's attack one stage upon switching in. Water-type attacks are boosted 10%.",
@@ -1916,7 +1911,7 @@ exports.BattleAbilities = {
    // Breaker: This pokemon's attacks aren't hindered by stat boosts, drops or abilities.
 	// Bodyguard: Grants immunity to moves that would lower this Pokemon's stats.
 	// Hammer Space: If its item is used or lost during battle, the item will regenerate after it switches out.
-	// Tangled Flames: This pokemon's fire attacks are boosted 2x when confused. Fire Immunity.
+	
 	// Late Bloomer: Late Bloomer: Has a 30% chance of infatuating the opponent at the end of its turn if it moves last.
 	// Slow and Steady: This Pokemon takes 1/2 damage from attacks if it moves last.
 	// Error Marco: Physical moves hit off of special attack, and vice versa for special attacks. Stance change forms remain.
