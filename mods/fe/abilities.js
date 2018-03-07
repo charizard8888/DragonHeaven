@@ -1826,22 +1826,30 @@ exports.BattleAbilities = {
 		name: "Sea Monster",
 		},
 
-	/*
-
-
 	"sereneeyes": {
 		shortDesc: "Moves with secondary effect chances have their accuracy doubled.",
 		onModifyMovePriority: -2,
 		onModifyMove: function (move) {
 			if (move.secondaries) {
-				this.debug('sereneeyes - enhancing accuracy');
 			return accuracy * 1.3;
 			}
 		},
 		id: "sereneeyes",
 		name: "Serene Eyes",
 	},
-	"seamonster": {
+	"fromashes": {
+		desc: "If the Pokémon is burned, it will gain 1/8 of its maximum HP at the end of each turn instead of taking damage. The Pokémon with this Ability does not lose Attack due to burn.",
+		shortDesc: "If the Pokémon is burned, it will gain 1/8 of its maximum HP at the end of each turn instead of taking damage. The Pokémon with this Ability does not lose Attack due to burn.",
+		onDamage: function (damage, target, source, effect) {
+			if (effect.id === 'brn') {
+				this.heal(target.maxhp / 8);
+				return false;
+			}
+		},
+		id: "fromashes",
+		name: "From Ashes",
+	},
+	/*"seamonster": {
 		desc: "Lowers opponent's attack one stage upon switching in. Water-type attacks are boosted 10%.",
 		shortDesc: "Lowers opponent's attack one stage upon switching in. Water-type attacks are boosted 10%.",
 		onStart: function (pokemon) {
@@ -1869,18 +1877,7 @@ exports.BattleAbilities = {
 		name: "Sea Monster",
 	},
 
-	"fromashes": {
-		desc: "If the Pokémon is burned, it will gain 1/8 of its maximum HP at the end of each turn instead of taking damage. The Pokémon with this Ability does not lose Attack due to burn.",
-		shortDesc: "If the Pokémon is burned, it will gain 1/8 of its maximum HP at the end of each turn instead of taking damage. The Pokémon with this Ability does not lose Attack due to burn.",
-		onDamage: function (damage, target, source, effect) {
-			if (effect.id === 'brn') {
-				this.heal(target.maxhp / 8);
-				return false;
-			}
-		},
-		id: "fromashes",
-		name: "From Ashes",
-	},
+	
 	"torrenttempo": {
 		shortDesc: "If this Pokemon is confused, it snaps out of that confusion and gains a 50% boost to its Water-moves.",
 		onUpdate: function (pokemon) {
