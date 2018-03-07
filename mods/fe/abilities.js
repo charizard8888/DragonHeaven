@@ -1828,16 +1828,17 @@ exports.BattleAbilities = {
 		id: "fromashes",
 		name: "From Ashes",
 	},
-	slowandsteady: {
+	
+	/*slowandsteady: {
 		shortDesc: "This Pokemon takes 1/2 damage from attacks if it moves last.",
-		onModifyDamage: function (damage, target, source, move) {
+		onModifyDamage: function (damage, source, target, move) {
 			if (target.lastDamage > 0 && source.lastAttackedBy && source.lastAttackedBy.thisTurn && source.lastAttackedBy.pokemon === target) {
 				return this.chainModify(0.5);
 			}
 		},
 		id: "slowandsteady",
 		name: "Slow And Steady",
-	},
+	},*/
 	/*"seamonster": {
 		desc: "Lowers opponent's attack one stage upon switching in. Water-type attacks are boosted 10%.",
 		shortDesc: "Lowers opponent's attack one stage upon switching in. Water-type attacks are boosted 10%.",
@@ -1886,6 +1887,7 @@ exports.BattleAbilities = {
 		id: "torrenttempo",
 		name: "Torrent Tempo",
 	},
+	// Magic Fat	Thick Fat	Magician	Immune to Fire and Ice type moves as long as it holds an item.
 	// Under Pressure: This Pokemon's status is cured at the end of each turn, but it uses 2 PP every time it attacks.
    // Breaker: This pokemon's attacks aren't hindered by stat boosts, drops or abilities.
 	// Bodyguard: Grants immunity to moves that would lower this Pokemon's stats.
