@@ -1096,28 +1096,7 @@ exports.BattleAbilities = {
 		rating: 2,
 		num: 236
 	},
-	"slowandsteady": {
-		desc: "If a Pokemon uses a Fire- or Ice-type attack against this Pokemon, that Pokemon's attacking stat is halved when calculating the damage to this Pokemon.",
-		shortDesc: "Fire/Ice-type moves against this Pokemon deal damage with a halved attacking stat.",
-		onModifyAtkPriority: 8,
-		onSourceModifyAtk: function(attacker, defender, move) {
-			if (!this.willMove(defender)) {
-				this.debug('Slow and Steady weakens');
-				return this.chainModify(0.5);
-			}
-		},
-		onModifySpAPriority: 8,
-		onSourceModifySpA: function(attacker, defender, move) {
-			if (!this.willMove(defender)) {
-				this.debug('Slow and Steady weakens');
-				return this.chainModify(0.5);
-			}
-		},
-		id: "slowandsteady",
-		name: "Slow And Steady",
-		rating: 3.5,
-		num: 237
-	},
+
 	"errormacro": {
 		desc: "If this Pokemon is an Aegislash, it changes to Blade Forme before attempting to use an attacking move, and changes to Shield Forme before attempting to use King's Shield.",
 		shortDesc: "If Aegislash, changes Forme to Blade before attacks and Shield before King's Shield.",
