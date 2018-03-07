@@ -1830,8 +1830,8 @@ exports.BattleAbilities = {
 	},
 	slowandsteady: {
 		shortDesc: "This Pokemon takes 1/2 damage from attacks if it moves last.",
-		onModifyDamage: function (damage, target, pokemon, move) {
-			if (target.lastDamage > 0 && pokemon.lastAttackedBy && pokemon.lastAttackedBy.thisTurn && pokemon.lastAttackedBy.pokemon === target) {
+		onModifyDamage: function (damage, target, source, move) {
+			if (target.lastDamage > 0 && source.lastAttackedBy && source.lastAttackedBy.thisTurn && source.lastAttackedBy.pokemon === target) {
 				return this.chainModify(0.5);
 			}
 		},
