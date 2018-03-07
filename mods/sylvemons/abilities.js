@@ -28,7 +28,7 @@ etheralfist: {
 		},
 	onModifyMove: function (move) {
 		if  (move.flags['punch'] && move.category === 'Physical') {
-			move.category === 'Special'
+			move.category === 'Special';
 		}
 	},
 	id: "etheralfist",
