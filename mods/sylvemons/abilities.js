@@ -26,7 +26,8 @@ etheralfist: {
 				return this.chainModify([0x1333, 0x1000]);
 			}
 		},
-	onModifyMove: function (move) {
+	onModifyMovePriority: 8,
+	onModifyMove: function (move, pokemon) {
 		if  (move.flags['punch'] && move.category === 'Physical') {
 			move.category === 'Special';
 		}
