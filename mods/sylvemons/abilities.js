@@ -28,9 +28,7 @@ etheralfist: {
 		},
 	onModifyMovePriority: 8,
 	onModifyMove: function (move, pokemon) {
-		if  (move.flags['punch'] && move.category === 'Physical') {
-			move.category === 'Special';
-		}
+		if  (move.flags['punch'] && move.category === 'Physical') move.category === 'Special';
 	},
 	id: "etheralfist",
 	name: "Etheral Fist",
