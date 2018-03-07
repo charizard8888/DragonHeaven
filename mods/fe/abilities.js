@@ -1849,6 +1849,21 @@ exports.BattleAbilities = {
 		id: "fromashes",
 		name: "From Ashes",
 	},
+	// Tangled Flames: This pokemon's fire attacks are boosted 2x when confused. Fire Immunity.
+	tangledflames: {
+		shortDesc: "This pokemon's fire attacks are boosted 2x when confused. Fire Immunity.",
+		onModifyAtkPriority: 5,
+		onModifyAtk: function (atk, attacker, defender, move) {
+			if (move.type === 'Fire' && attacker.volatiles['confusion']) {
+				return this.chainModify(2);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA: function (atk, attacker, defender, move) {
+			if (move.type === 'Fire' && attacker.volatiles['confusion']) {
+				return this.chainModify(2);
+			}
+		},
 	/*"seamonster": {
 		desc: "Lowers opponent's attack one stage upon switching in. Water-type attacks are boosted 10%.",
 		shortDesc: "Lowers opponent's attack one stage upon switching in. Water-type attacks are boosted 10%.",
