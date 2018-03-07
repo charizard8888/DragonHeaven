@@ -18,11 +18,25 @@ Scrappy	Ignores every type inmunity when attacking.
 Technician	This Pokemon's moves of 75 power or less have 1.5x power. Includes Struggle. 
 Obstinacy	User gains a boost in it's moves the lower it's HP gets. Formula:  (1.0 - [Current percentage of HP in decimal form]) + 1.0
 */
-
+etheralfist: {
+	shortDesc: "Punch Moves become Special and gain 1.2x damage (Same Moves effected as Iron Fist).",
+	onBasePowerPriority: 8,
+		onBasePower: function (basePower, attacker, defender, move) {
+			if (move.flags['punch']) {
+				return this.chainModify([0x1333, 0x1000]);
+			}
+		},
+	onModifyMove: function (move) {
+		if  (move.flags['punch'] && move.category === 'Physical') {
+			move.category === 'Special'
+		}
+	},
+	id: "etheralfist",
+	name: "Etheral Fist",
+},
 	"magichealing": {
 		id: "magichealing",
 		name: "Magic Healing",
-		spritenum: 242,
 		onResidualOrder: 5,
 		onResidualSubOrder: 2,
 		onResidual: function (pokemon) {
