@@ -3426,7 +3426,7 @@ exports.Formats = [
 			this.runMove(pokemon.moves[pokemon.moves.length - 1], pokemon);
 		},
 	},
-	{
+	/*{
 		name: "[Gen 7] Linked [WIP]",
 		desc: [
 			"The selection of a Pokemon's first or second move will cause it to use both of those moves in a row on that same turn.",
@@ -3436,7 +3436,7 @@ exports.Formats = [
 		ruleset: ['[Gen 7] OU'],
 		//banlist: ['King\'s Rock', 'Razor Fang'],
 		team: 'random',
-		/*onValidateSet: function (set) {
+		\onValidateSet: function (set) {
 			let resMoves = ['banefulbunker', 'detect', 'dig', 'naturesmadness', 'nightshade', 'protect', 'seismictoss', 'skydrop', 'spikyshield', 'superfang'];
 			let problems = [];
 			for (let i = 0; i < 2; i++) {
@@ -3444,7 +3444,7 @@ exports.Formats = [
 				if (resMoves.includes(move.id)) problems.push(`${set.name || set.species} cannot have ${move.name} in Slot ${i + 1}.`);
 			}
 			return problems;
-		},*/
+		},
 		onAfterMove: function (source, target, move) {
 			if (!move.isZ && source.moves.indexOf(move.id) < 2 && !source.getItem().isChoice && !source.linky) {
 				source.linky = true;
@@ -3458,7 +3458,7 @@ exports.Formats = [
 				delete p1.pokemon[i].linky;
 			}
 		},
-	},
+	},*/
 	{
 		name: "[Gen 7] Lockdown",
 		desc: [
