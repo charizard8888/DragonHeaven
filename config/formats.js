@@ -3434,9 +3434,9 @@ exports.Formats = [
 		],
 		mod: 'gen7',
 		ruleset: ['[Gen 7] OU'],
-		banlist: ['King\'s Rock', 'Razor Fang'],
+		//banlist: ['King\'s Rock', 'Razor Fang'],
 		team: 'random',
-		onValidateSet: function (set) {
+		/*onValidateSet: function (set) {
 			let resMoves = ['banefulbunker', 'detect', 'dig', 'naturesmadness', 'nightshade', 'protect', 'seismictoss', 'skydrop', 'spikyshield', 'superfang'];
 			let problems = [];
 			for (let i = 0; i < 2; i++) {
@@ -3444,7 +3444,7 @@ exports.Formats = [
 				if (resMoves.includes(move.id)) problems.push(`${set.name || set.species} cannot have ${move.name} in Slot ${i + 1}.`);
 			}
 			return problems;
-		},
+		},*/
 		onAfterMove: function (source, target, move) {
 			if (!move.isZ && source.moves.indexOf(move.id) < 2 && !source.getItem().isChoice && !source.linky) {
 				source.linky = true;
