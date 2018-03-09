@@ -3453,14 +3453,10 @@ exports.Formats = [
 			}
 		},
 		onResidual: function () {
-			p2.pokemon.map(poke => {
-				delete poke.linky;
-				return poke;
-			});
-			p1.pokemon.map(poke => {
-				delete poke.linky;
-				return poke;
-			});
+			for (let i = 0; i < p2.pokemon.length; i++) {
+				delete p2.pokemon[i].linky;
+				delete p1.pokemon[i].linky;
+			}
 		},
 	},
 	{
