@@ -18,8 +18,28 @@ Obstinacy	User gains a boost in it's moves the lower it's HP gets. Formula:  (1.
 */
 	"timewarp": {
 		shortDesc: "On switch-in, this Pokemon summons Trick Room.",
-		onStart: function (source) {
-			this.pseudoWeather('trickroom');
+		onStart: function (target, source, effect) {
+			if (this.pseudoWeather['trickroom']) {
+				this.removePseudoWeather('trickroom', source, effect, '[of] ' + source);
+			} else {
+				this.addPseudoWeather('trickroom', source, effect, '[of] ' + source);
+			}
+		},
+		effect: {
+			duration: 5,
+			durationCallback: function (source, effect) {
+				if (source && source.hasAbility('persistent')) {
+					return 7;
+				}
+				return 5;
+			},
+			onStart: function (target, source) {
+				this.add('-fieldstart', 'move: Trick Room', '[of] ' + source);
+			},
+			onResidualOrder: 23,
+			onEnd: function () {
+				this.add('-fieldend', 'move: Trick Room');
+			},
 		},
 		id: "timewarp",
 		name: "Time Warp",
