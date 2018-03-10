@@ -30,7 +30,7 @@ Obstinacy	User gains a boost in it's moves the lower it's HP gets. Formula:  (1.
 			target.setBoost(sourceBoosts);
 			source.setBoost(targetBoosts);
 
-			this.add('-swapboost', source, target, '[from] move: Heart Swap');
+			this.add('-swapboost', source, target, '[from] ability: Mind Trick');
 		},
 		id: "mindtrick",
 	name: "Mind Trick",
