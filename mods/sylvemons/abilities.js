@@ -3,7 +3,6 @@
 exports.BattleAbilities = {
 
 /* 
-Ethereal Fist	Punch Moves become Special and gain 1.2x damage (Same Moves effected as Iron Fist).
 Disperal	Boosts Bullet Seed, Seed Bomb, and Seed Flare by 1.2x power, and Leech Seed deals 20% more damage and heals 30% more HP each turn.
 Housekeeping	Removes hazards upon switch-in.
 Mind Trick	Stat changes are received by the opposing pokemon and vice versa
@@ -15,9 +14,21 @@ Corrosion	This Pokemon can poison any Pokemon, and attack any Pokemon with Poiso
 Air Stream	Summons the new weather Air Current for 5 turns. In this weather, Flying-Types take 0.75* damage from Electric, Rock, and Ice-Type moves (kinda like Solid Rock), and the move Hurricane has perfect accuracy. Weather Ball doubles in power and becomes Flying-Type.
 Guard Up	Upon switch-in, this Pokemon's Defense or Special Defense goes up by 1 stage depending on the opponent's higher attacking stat (Download clone).
 Scrappy	Ignores every type inmunity when attacking.
-Technician	This Pokemon's moves of 75 power or less have 1.5x power. Includes Struggle. 
 Obstinacy	User gains a boost in it's moves the lower it's HP gets. Formula:  (1.0 - [Current percentage of HP in decimal form]) + 1.0
 */
+	housekeeping: {
+		shortDesc: "Removes hazards upon switch-in.",
+	onStart: function (pokemon) {
+				let sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb'];
+				for (const condition of sideConditions) {
+					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+						this.add('-sideend', pokemon.side, this.getEffect(condition).name, '[from] move: Rapid Spin', '[of] ' + pokemon);
+					}
+				}
+			},
+		id: "housekeeping",
+	name: "Housekeeping",
+	},
 etheralfist: {
 	shortDesc: "Punch Moves become Special and gain 1.2x damage (Same Moves effected as Iron Fist).",
 	onBasePowerPriority: 8,
@@ -48,21 +59,7 @@ etheralfist: {
 		},
 		desc: "At the end of every turn, the Pokemon restores 1/16 of its max HP.",
 	},
-	/*"etherealfist": {
-		desc: "This Pokemon's punch-based attacks have their power multiplied by 1.2 and become Special.",
-		shortDesc: "This Pokemon's punch-based attacks have 1.2x power and become Special. Sucker Punch is not boosted.",
-		onBasePowerPriority: 8,
-		onBasePower: function (basePower, attacker, defender, move) {
-			if (move.flags['punch']) {
-				this.debug('Iron Fist boost');
-				return this.chainModify([0x1333, 0x1000]);
-			}
-		},
-		id: "etherealfist",
-		name: "Ethereal Fist",
-		rating: 3,
-		num: 89,
-	},*/
+
 	"swarm": {
 		desc: "When this Pokemon has 1/2 or less of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Bug-type attack.",
 		shortDesc: "This Pokemon's attacking stat is 1.5x with Bug attacks.",
