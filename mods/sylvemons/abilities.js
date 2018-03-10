@@ -5,8 +5,8 @@ exports.BattleAbilities = {
 /* 
 Disperal	Boosts Bullet Seed, Seed Bomb, and Seed Flare by 1.2x power, and Leech Seed deals 20% more damage and heals 30% more HP each turn.
 
-Mind Trick	Stat changes are received by the opposing pokemon and vice versa
-Flare Boost	Doubles user's SpA when burned
+
+
 Knight's Blade	Boosts the power of sword, cut, slash, and blade moves by 1.5x (List: Psycho Cut, Cut, Slash, Night Slash, Solar Blade, Leaf Blade, X-Scissor, Cross Poison, Air Slash, Air Cutter, Fury Cutter, Sacred Sword, Secret Sword, Razor Shell)
 Forecast	If this Pokémon is holding a Weather Rock, its secondary typing becomes Water/Fire/Rock/Ice (depending on the rock) and summon the corresponding weather upon entering the field. Under Strong Winds, this mon gains the added Flying type. These items cannot be removed
 Time Warp	Sets Trick Room upon entry
@@ -16,6 +16,14 @@ Guard Up	Upon switch-in, this Pokemon's Defense or Special Defense goes up by 1 
 Scrappy	Ignores every type inmunity when attacking.
 Obstinacy	User gains a boost in it's moves the lower it's HP gets. Formula:  (1.0 - [Current percentage of HP in decimal form]) + 1.0
 */
+	"timewarp": {
+		shortDesc: "On switch-in, this Pokemon summons Trick Room.",
+		onStart: function (source) {
+			this.pseudoWeather('trickroom');
+		},
+		id: "timewarp",
+		name: "Time Warp",
+	},
 	mindtrick: {
 		shortDesc: "Stat changes are received by the opposing pokemon and vice versa",
 		onStart: function (target, source) {
