@@ -22,7 +22,7 @@ Obstinacy	User gains a boost in it's moves the lower it's HP gets. Formula:  (1.
 				let sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb'];
 				for (const condition of sideConditions) {
 					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
-						this.add('-sideend', pokemon.side, this.getEffect(condition).name, '[from] move: Rapid Spin', '[of] ' + pokemon);
+						this.add('-sideend', pokemon.side, this.getEffect(condition).name, '[from] ability: Housekeeping', '[of] ' + pokemon);
 					}
 				}
 			},
