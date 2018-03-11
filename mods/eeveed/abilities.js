@@ -90,6 +90,14 @@ exports.BattleAbilities = {
 		name: "Unbreakable",
 		rating: 2,
 	},
+	"lucky": {
+		shortDesc: "This mons attacks always crit unless Lucky Shield, shell armour or battle armour are active.",
+		onModifyCritRatio: function (critRatio) {
+			return critRatio + 6;
+		},
+		id: "lucky",
+		name: "Lucky",
+	},
 		"reaperslice": { /* Make the 1.2 somehow 1.3 + Add the infiltrating effect*/
 		desc: "Ghost type moves can bypass Subsitutes, they have also x1.3 power",
 		shortDesc: "Ghost type moves can bypass Subsitutes, they have also x1.3 power",
