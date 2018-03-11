@@ -98,15 +98,13 @@ exports.BattleAbilities = {
 		id: "lucky",
 		name: "Lucky",
 	},
-	"inverseivy": {
-		shortDesc: "The Pokemon's Grass type moves work like in inverse battles.",
-		onEffectiveness: function (move, typeMod, type) {
-			if (move.type === 'Grass') {
-			if (type === 'Flying') return 1;
-			}
+"quickclaws": {
+		shortDesc: "Any attack with 60 BP or less gets a +1 to priority",
+		onModifyPriority: function (basePower, attacker, defender, move, priority) {
+			if (basePower <= 60) return priority + 1;
 		},
-		id: "inverseivy",
-		name: "Inverse Ivy",
+		id: "quickclaws",
+		name: "Quick Claws",
 	},
 		"reaperslice": { /* Make the 1.2 somehow 1.3 + Add the infiltrating effect*/
 		desc: "Ghost type moves can bypass Subsitutes, they have also x1.3 power",
