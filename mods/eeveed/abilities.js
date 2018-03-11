@@ -98,6 +98,24 @@ exports.BattleAbilities = {
 		id: "lucky",
 		name: "Lucky",
 	},
+	"inverseivy": {
+		shortDesc: "The Pokemon's Grass type moves work like in inverse battles.",
+		onEffectiveness: function (move, typeMod, type) {
+			if (move.type === 'Grass') {
+			if (type === 'Water') return 1;
+			}
+		},
+		secondary: {
+			chance: 10,
+			status: 'frz',
+		},
+		secondary: {
+			chance: 10,
+			status: 'frz',
+		},
+		id: "inverseivy",
+		name: "Inverse Ivy",
+	},
 		"reaperslice": { /* Make the 1.2 somehow 1.3 + Add the infiltrating effect*/
 		desc: "Ghost type moves can bypass Subsitutes, they have also x1.3 power",
 		shortDesc: "Ghost type moves can bypass Subsitutes, they have also x1.3 power",
