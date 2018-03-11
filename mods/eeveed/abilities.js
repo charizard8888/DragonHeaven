@@ -100,8 +100,8 @@ exports.BattleAbilities = {
 	},
 "quickclaws": {
 		shortDesc: "Any attack with 60 BP or less gets a +1 to priority",
-		onModifyPriority: function (priority, pokemon, basePower, attacker, defender, move) {
-			if (basePower <= 60) return priority + 1;
+		onModifyPriority: function (basePower, pokemon, priority, move) {
+			if (move.basePower <= 60) return priority + 1;
 		},
 		id: "quickclaws",
 		name: "Quick Claws",
