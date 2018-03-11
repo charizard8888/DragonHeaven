@@ -313,6 +313,16 @@
 	        abilities: {0: "Aftermath", 1: "Technicican", H: "Levitate"},
 	        prevo: "Scyther"
    },
+	 reapthermega : {
+num: 9029,
+species: "Reapther-Mega",
+baseSpecies: "Reapther",
+forme: "Mega",
+formeLetter: "M", 
+types: ["Bug", "Ghost"], 
+baseStats:{hp: 40, atk: 150, def: 90, spa: 85, spd: 90, spe: 145},
+abilities: {0: "Reaper Slice"}, 
+},
    scypsy: {
 	        num: 9030,
 	        species: "Scypsy",
@@ -321,6 +331,16 @@
 	        abilities: {0: "Technician", 1: "Telepathy", H: "Magic Guard"},
 	        prevo: "Scyther"
    },
+	 scypsymega : {
+num: 9030,
+species: "Scypsy-Mega",
+baseSpecies: "Scypsy",
+forme: "Mega",
+formeLetter: "M", 
+types: ["Bug", "Psychic"], 
+baseStats:{hp: 65, atk: 140, def: 80, spa: 75, spd: 90, spe: 150},
+abilities: {0: "Dazzling"}, 
+},
    buzzsoar: {
 	        num: 9031,
 	        species: "Buzzsoar",
@@ -348,6 +368,19 @@ abilities: {0: "Speed Boost"},
 	        abilities: {0: "Tinted Lens", 1: "Poison Touch", H: "Acidic Touch"},
 	        prevo: "Scyther"
    },
+	 scyanidemega : {
+num: 9032,
+species: "Scyanide-Mega",
+baseSpecies: "Scyanide",
+forme: "Mega",
+formeLetter: "M", 
+types: ["Bug", "Poison"], 
+baseStats:{hp: 51, atk: 130, def: 80, spa: 140, spd: 70, spe: 129},
+abilities: {0: "Acidic Touch"}, 
+heightm: undefined, 
+weightkg: undefined, 
+},
+
    magzor: {
 	        num: 9033,
 	        species: "Magzor",
@@ -356,6 +389,16 @@ abilities: {0: "Speed Boost"},
 	        abilities: {0: "Blaze", 1: "Technician", H: "Guts"},
 	        prevo: "Scyther"
    },
+	 magzormega : {
+num: 9033,
+species: "Magzor-Mega",
+baseSpecies: "Magzor",
+forme: "Mega",
+formeLetter: "M", 
+types: ["Bug", "Fire"], 
+baseStats:{hp: 70, atk: 150, def: 65, spa: 100, spd: 75, spe: 140},
+abilities: {0: "Technician"}, 
+},
 	 alunix: {
 			num: 9034,
 			species: "Alunix",
@@ -365,6 +408,19 @@ abilities: {0: "Speed Boost"},
 			/*weightkg: undefined, */
 		   prevo: "Onix"
 	 },
+	 
+alunixmega : {
+num: 9034,
+species: "Alunix-Mega",
+baseSpecies: "Alunix",
+forme: "Mega",
+formeLetter: "M", 
+types: ["Electric", "Ground"], 
+baseStats:{hp: 85, atk: 50, def: 200, spa: 110, spd: 115, spe: 50},
+abilities: {0: "Electric Surge"}, 
+heightm: undefined, 
+weightkg: undefined, 
+},
 	 	coffilix: {
 			num: 9035,
 			species: "Coffilix",
@@ -374,6 +430,16 @@ abilities: {0: "Speed Boost"},
 			/*weightkg: undefined, */
 			prevo: "Onix"
 	 },
+	 coffilixmega : {
+num: 9035,
+species: "Coffilix-Mega",
+baseSpecies: "Coffilix",
+forme: "Mega",
+formeLetter: "M", 
+types: ["Ground", "Ghost"], 
+baseStats:{hp: 75, atk: 65, def: 190, spa: 130, spd: 65, spe: 85},
+abilities: {0: "Weak Armor"}, 
+},
 	 	 	crystix: {
 			num: 9036,
 			species: "Crystix",
@@ -383,6 +449,18 @@ abilities: {0: "Speed Boost"},
 			/*weightkg: undefined, */
 			prevo: "Onix"
 	 },
+	 crystixmega : {
+num: 9036,
+species: "Crystix-Mega",
+baseSpecies: "Crystix",
+forme: "Mega",
+formeLetter: "M", 
+types: ["Ice", "Dragon"], 
+baseStats:{hp: 100, atk: 150, def: 150, spa: 40, spd: 150, spe: 20},
+abilities: {0: "Crystal Reflection"}, 
+heightm: undefined, 
+weightkg: undefined, 
+},
 	 	 gemelix: {
 			num: 9037,
 			species: "Gemelix",
@@ -392,6 +470,16 @@ abilities: {0: "Speed Boost"},
 			/*weightkg: undefined, */
 			prevo: "Onix"
 	 },
+	 gemelixmega : {
+num: 9037,
+species: "Gemelix-Mega",
+baseSpecies: "Gemelix",
+forme: "Mega",
+formeLetter: "M", 
+types: ["Ground", "Fairy"], 
+baseStats:{hp: 80, atk: 105, def: 95, spa: 40, spd: 200, spe: 90},
+abilities: {0: "Misty Surge"}, 
+},
 	 	scarix: {
 			num: 9038,
 			species: "Scarix",
@@ -401,6 +489,16 @@ abilities: {0: "Speed Boost"},
 			/*weightkg: undefined, */
 			prevo: "Onix"
 	 },
+	 scarixmega : {
+num: 9038,
+species: "Scarix-Mega",
+baseSpecies: "Scarix",
+forme: "Mega",
+formeLetter: "M", 
+types: ["Rock", "FIghting"], 
+baseStats:{hp: 70, atk: 160, def: 110, spa: 30, spd: 110, spe: 130},
+abilities: {0: "Unbreakable"},  
+},
 	 riolu: {
 		 inherit: true,
 		 evos: ["lucario","chacario","cryocario","kobucha"],
