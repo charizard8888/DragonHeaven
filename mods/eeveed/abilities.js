@@ -105,14 +105,6 @@ exports.BattleAbilities = {
 			if (type === 'Flying') return 1;
 			}
 		},
-		secondary: {
-			chance: 10,
-			status: 'frz',
-		},
-		secondary: {
-			chance: 10,
-			status: 'frz',
-		},
 		id: "inverseivy",
 		name: "Inverse Ivy",
 	},
