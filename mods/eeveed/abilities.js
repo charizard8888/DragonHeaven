@@ -102,7 +102,7 @@ exports.BattleAbilities = {
 		shortDesc: "The Pokemon's Grass type moves work like in inverse battles.",
 		onEffectiveness: function (move, typeMod, type) {
 			if (move.type === 'Grass') {
-			if (type === 'Water') return 1;
+			if (type === 'Flying') return 1;
 			}
 		},
 		secondary: {
