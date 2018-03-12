@@ -586,6 +586,16 @@ exports.commands = {
 		this.sendReplyBox(`${buf}</div>`);
 	},
 	eternalmonsthelp: ["/eternalmons - Shows the list of Pokemon in Eternal Pokemon."],
+	eternalmoves: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Eternal Pokemon Moves</h2></center>`;
+		let eternalDex = require('../mods/eternal/moves.js').BattleMovedex;
+		if (!eternalDex) return this.errorReply("Error Fetching Eternal Data.");
+		Object.values(eternalDex).forEach(move => {
+			buf += `<button name="send" value="/dt ${move.id}, Eternal" style="background:none;border:none;">${move.id}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
 typeopt: function (target, room, user) {
 		if (!this.runBroadcast()) return;
 		let buf = `<div class=infobox-limited><center><h2>List Of Type Optimisation Pokemon</h2></center>`;
