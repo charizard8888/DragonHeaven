@@ -4004,20 +4004,13 @@ exports.Formats = [
 		column: 3,
 	},
 	{
-		name: "[Gen 7] Prehistoric",
-		desc: [
-			"&bullet; Coded by flufi.",
-			"A format that takes place in prehistoric times.",
-			"Over 100 Pokemon receive new Primal forms, along with",
-			"every one of those Pokemon getting a new signature move.",
-			"",
-			"NOTE: This is a long-term project and probably won't be done until June/July.",
-		],
-		mod: "prehistoric",
-
-		rulset: ['[Gen 7] Ubers'],
-		banlist: ['Blue Orb', 'Shadow Tag'],
-	},
+  		name: "[Gen 7] Alola Formes",
+  		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/alola-formes-v3.3617314/>Alola Formes</a>",
+		      ],
+  		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+		mod: 'alola',
+		// banlist: ['Unreleased', 'Illegal'],
+  	},
 	{
 		name: "Ascension",
 		desc: [
@@ -4065,7 +4058,7 @@ exports.Formats = [
 		},
 	},
 		{
-		name: "[Gen 7] Random Choonmons δ",
+		name: "[Gen 7] [Random] Choonmons δ",
 		mod: 'choonmons',
 		team: 'randomSeasonalMelee',
 		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
@@ -4149,21 +4142,20 @@ exports.Formats = [
 	},*/
 	
 	{
-		name: "[Gen 7] Clovermons",
-		desc: ["&bullet; <a href=http://pgenvp.wikia.com/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number>Clovermons</a>",
-		       "&bullet; <a href=http://pgenvp.wikia.com/wiki/Category:Moves>Moves</a><br>Brought to you by <font color=#0715b2><b>Zapmaster2010</b></font>",
-		      ],
-		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
-		banlist: [],
-		mod: 'clovermons',
-	},
-	{
   		name: "[Gen 7] Eevee'd",
   		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/eeveed-current-slate-sliggoo-and-sunkern-submissions.3602933/>Eeveed</a>",
 		      ],
   		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
   		//banlist: ['Unreleased', 'Illegal'],
 		mod: 'eeveed',
+  	},
+	{
+  		name: "[Gen 7] Eternal Pokemon",
+  		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/eternal-pok%C3%A9mon-voting-phase-pidgeotto-spearow-hoothoot.3594809/>Eternal Pokemon</a>",
+		      ],
+  		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+		mod: 'eternal',
+		// banlist: ['Unreleased', 'Illegal'],
   	},
 	{
   		name: "[Gen 7] Fusion Evolution",
@@ -4189,11 +4181,30 @@ exports.Formats = [
         },
   	},
 	{
-		name: "[Gen 7] Island Mons",
-		desc: ["Mons from the Sevii, Seafoam, Whirl Islands, and Alola only",],
-		mod: 'gen7',
-		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod','Swagger Clause', 'Baton Pass Clause'],
-		banlist: ['Illegal','Abomasnow','Absol','Accelgor','Aegislash','Aerodactyl','Aggron','Aipom','Alomomola','Altaria','Amaura','Ambipom','Amoonguss','Ampharos','Anorith','Arbok','Arceus','Archen','Archeops','Armaldo','Aromatisse','Aron','Articuno','Audino','Aurorus','Avalugg','Axew','Azelf','Azumarill','Azurill','Baltoy','Banette','Barbaracle','Barboach','Basculin','Bastiodon','Bayleef','Beartic','Beautifly','Beheeyem','Beldum','Bergmite','Bibarel','Bidoof','Binacle','Blastoise','Blaziken','Blitzle','Boldore','Bonsly','Bouffalant','Braixen','Braviary','Breloom','Bronzong','Bronzor','Budew','Buizel','Bulbasaur','Bunnelby','Burmy','Cacnea','Cacturne','Camerupt','Carbink','Carnivine','Carracosta','Carvanha','Cascoon','Castform','Celebi','Chandelure','Charizard','Charmander','Charmeleon','Chatot','Cherrim','Cherubi','Chesnaught','Chespin','Chikorita','Chimchar','Chimecho','Chinchou','Chingling','Cinccino','Clamperl','Clauncher','Clawitzer','Claydol','Cobalion','Cofagrigus','Combee','Combusken','Conkeldurr','Corphish','Corsola','Cottonee','Cradily','Cranidos','Crawdaunt','Cresselia','Croagunk','Croconaw','Crustle','Cryogonal','Cubchoo','Cyndaquil','Darkrai','Darmanitan','Darumaka','Dedenne','Deerling','Deino','Delcatty','Delphox','Deoxys','Dewott','Dialga','Diancie','Diggersby','Diglett','Ditto','Dodrio','Doduo','Doublade','Dragalge','Drapion','Drifblim','Drifloon','Drilbur','Druddigon','Ducklett','Dugtrio','Duosion','Durant','Dusclops','Dusknoir','Duskull','Dustox','Dwebble','Eelektrik','Eelektross','Eevee','Ekans','Electabuzz','Electivire','Electrike','Electrode','Elekid','Elgyem','Emboar','Emolga','Empoleon','Entei','Escavalier','Espeon','Espurr','Excadrill','Exeggcute','Exeggutor','Exploud','Farfetchd','Feebas','Fennekin','Feraligatr','Ferroseed','Ferrothorn','Finneon','Flaaffy','Flabébé','Flareon','Fletchinder','Fletchling','Floatzel','Floette','Florges','Foongus','Forretress','Fraxure','Frillish','Froakie','Frogadier','Froslass','Furfrou','Gabite','Gallade','Galvantula','Garbodor','Garchomp','Gardevoir','Gastrodon','Genesect','Geodude','Gible','Gigalith','Girafarig','Giratina','Glaceon','Glalie','Glameow','Gligar','Gliscor','Gogoat','Goldeen','Golett','Golurk','Goodra','Goomy','Gorebyss','Gothita','Gothitelle','Gothorita','Gourgeist','Granbull','Greninja','Grimer','Grotle','Groudon','Grovyle','Growlithe','Grumpig','Gulpin','Gurdurr','Hariyama','Haxorus','Heatmor','Heatran','Heliolisk','Helioptile','Herdier','Hippopotas','Hippowdon','Hitmonchan','Hitmonlee','Hitmontop','Ho-Oh','Honedge','Hoopa','Hoothoot','Houndoom','Houndour','Huntail','Hydreigon','Igglybuff','Illumise','Infernape','Inkay','Ivysaur','Jellicent','Jigglypuff','Jirachi','Jolteon','Joltik','Jynx','Kabuto','Kabutops','Kangaskhan','Karrablast','Kecleon','Keldeo','Kirlia','Klang','Klefki','Klink','Klinklang','Koffing','Kricketot','Kricketune','Krokorok','Krookodile','Kyogre','Kyurem','Lairon','Lampent','Landorus','Lanturn','Latias','Latios','Leafeon','Leavanny','Lickilicky','Lickitung','Liepard','Lileep','Lilligant','Lillipup','Linoone','Litleo','Litwick','Lombre','Lotad','Loudred','Lucario','Ludicolo','Lugia','Lumineon','Lunatone','Luvdisc','Luxio','Luxray','Magmar','Makuhita','Malamar','Manaphy','Mandibuzz','Manectric','Mankey','Mantine','Mantyke','Maractus','Mareep','Marill','Marshtomp','Masquerain','Medicham','Meditite','Meganium','Meloetta','Meowstic','Mesprit','Metagross','Metang','Mew','Mewtwo','Mienfoo','Mienshao','Mightyena','Milotic','Miltank','MimeJr.','Minccino','Minun','Moltres','Monferno','Mothim','Mr.Mime','Mudkip','Muk','Munchlax','Munna','Musharna','Nidoking','Nidoqueen','Nidoran-F','Nidoran-M','Nidorina','Nidorino','Nincada','Ninetales','Ninjask','Noctowl','Noibat','Noivern','Nosepass','Numel','Nuzleaf','Omanyte','Omastar','Oshawott','Pachirisu','Palkia','Palpitoad','Pancham','Pangoro','Panpour','Pansage','Pansear','Paras','Parasect','Patrat','Persian','Petilil','Phantump','Phione','Pichu','Pidove','Pignite','Pikachu','Pineco','Piplup','Plusle','Politoed','Poliwag','Poliwhirl','Poliwrath','Poochyena','Primeape','Prinplup','Probopass','Pumpkaboo','Purrloin','Purugly','Pyroar','Quagsire','Quilava','Quilladin','Qwilfish','Raichu','Raikou','Ralts','Rampardos','Raticate','Rattata','Rayquaza','Regice','Regigigas','Regirock','Registeel','Relicanth','Reshiram','Reuniclus','Rhydon','Rhyhorn','Rhyperior','Riolu','Roggenrola','Roselia','Roserade','Rotom','Rufflet','Samurott','Sandile','Sandshrew','Sandslash','Sawk','Sawsbuck','Scatterbug','Sceptile','Scolipede','Scrafty','Scraggy','Seaking','Sealeo','Seedot','Seismitoad','Serperior','Servine','Seviper','Sewaddle','Sharpedo','Shaymin','Shedinja','Shellos','Shelmet','Shieldon','Shiftry','Shinx','Shroomish','Shuckle','Shuppet','Sigilyph','Silcoon','Simipour','Simisage','Simisear','Skiddo','Skitty','Skorupi','Skrelp','Skuntank','Slaking','Slakoth','Sliggoo','Slurpuff','Smeargle','Smoochum','Snivy','Snorlax','Snorunt','Snover','Snubbull','Solosis','Solrock','Spewpa','Spheal','Spinda','Spiritomb','Spoink','Spritzee','Squirtle','Stantler','Staraptor','Staravia','Starly','Stoutland','Stunfisk','Stunky','Sudowoodo','Suicune','Sunflora','Sunkern','Surskit','Swablu','Swadloon','Swalot','Swampert','Swanna','Swellow','Swirlix','Swoobat','Sylveon','Taillow','Talonflame','Tangela','Tauros','Teddiursa','Tentacool','Tentacruel','Tepig','Terrakion','Throh','Thundurus','Timburr','Tirtouga','Togekiss','Togepi','Togetic','Torchic','Torkoal','Tornadus','Torterra','Totodile','Toxicroak','Tranquill','Trapinch','Treecko','Trevenant','Tropius','Trubbish','Turtwig','Tympole','Tynamo','Typhlosion','Tyrantrum','Tyrogue','Tyrunt','Umbreon','Unfezant','Ursaring','Uxie','Vanillish','Vanillite','Vanilluxe','Vaporeon','Venipede','Venusaur','Vespiquen','Vibrava','Victini','Vigoroth','Virizion','Vivillon','Volbeat','Volcanion','Voltorb','Vullaby','Vulpix','Wailmer','Wailord','Walrein','Wartortle','Watchog',' Weezing','Whimsicott','Whirlipede','Whiscash','Whismur','Wigglytuff','Woobat','Wooper','Wormadam','Wurmple','Xerneas','Yamask','Yveltal','Zangoose','Zapdos','Zebstrika','Zekrom','Zigzagoon','Zoroark','Zorua','Zweilous'],
+  		name: "[Gen 7] G-Luke's Ideal World",
+  		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/g-lukes-ideal-world-v1.3627945/>G-Luke's Ideal World</a>",
+		      ],
+  		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+		mod: 'lukemod',
+		banlist: ['Illegal'],
+		
+	},
+	{
+		name: "[Gen 7] Jillian",
+		desc: ["&bullet; A custom region",
+		      ],
+		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+		banlist: [],
+		mod: 'jillian',
+	},
+	{
+		name: "[Gen 7] Megas For All",
+		desc: ["&bullet; Megas",
+		      ],
+		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+		banlist: [],
+		mod: 'megasforall',
+		searchShow: false,
 	},
 	{
 		name: "[Gen 7] Move Mastery",
@@ -4344,13 +4355,7 @@ exports.Formats = [
 			}
 		}
 	},
-	{
-  		name: "[Gen 7] Mememons",
-  		desc: ["&bullet; <a href=https://pastebin.com/3MpyAJ4x>Mememons</a><br>Brought to you by smellslikememe",
-		      ],
-  		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
-  		mod: 'mememons',
-  	},
+	
 	{
   		name: "[Gen 7] Nerfmons",
   		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/nerfmons.3609844/>Nerfmons</a>",
@@ -4368,39 +4373,6 @@ exports.Formats = [
 		mod: 'opti',
   	},
 	{
-  		name: "[Gen 7] Type Optimisation",
-  		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/type-optimisation-slate-11-submissions-ghost-ghost-psychic-ghost-normal.3602766/>Type Optimisation</a>",
-		      ],
-  		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
-  		banlist: ['Unreleased', 'Illegal'],
-		mod: 'typeopt',
-  	},
-	{
-  		name: "[Gen 7] Eternal Pokemon",
-  		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/eternal-pok%C3%A9mon-voting-phase-pidgeotto-spearow-hoothoot.3594809/>Eternal Pokemon</a>",
-		      ],
-  		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
-		mod: 'eternal',
-		// banlist: ['Unreleased', 'Illegal'],
-  	},
-		{
-  		name: "[Gen 7] Alola Formes",
-  		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/alola-formes-v3.3617314/>Alola Formes</a>",
-		      ],
-  		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
-		mod: 'alola',
-		// banlist: ['Unreleased', 'Illegal'],
-  	},
-	{
-  		name: "[Gen 7] G-Luke's Ideal World",
-  		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/g-lukes-ideal-world-v1.3627945/>G-Luke's Ideal World</a>",
-		      ],
-  		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
-		mod: 'lukemod',
-		banlist: ['Illegal'],
-		
-	},
-	{
 		name: "[Gen 7] Pokemon: The New First Generation",
 		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/pokemon-the-new-first-gen-submissions-for-new-pokemon-over.3578653/>Pokemon: The New First Generation</a>",
 		       "&bullet; <a href=https://docs.google.com/spreadsheets/d/1RT8-Ntryi_SvlD_AwBCPWTso7bFZNpAGX4F7wuHBPQY/edit>Pokemon: The New First Gen Spreadhseet</a>",
@@ -4411,22 +4383,6 @@ exports.Formats = [
 		mod: 'thefirstnewgen',
 	},
 	{
-		name: "[Gen 7] Jillian",
-		desc: ["&bullet; A custom region",
-		      ],
-		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
-		banlist: [],
-		mod: 'jillian',
-	},
-	{
-		name: "[Gen 7] Megas For All",
-		desc: ["&bullet; Megas",
-		      ],
-		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
-		banlist: [],
-		mod: 'megasforall',
-	},
-	{
 		name: "[Gen 7] Sylvemons",
 		desc: ["&bullet; <a href=https://docs.google.com/spreadsheets/d/18DiYjbZXv1Nm7tU-W0OMgPow0ZO7J2ETJF-hWapwM-o/edit>Sylvemons</a>",
 		      ],
@@ -4434,14 +4390,14 @@ exports.Formats = [
 		banlist: [],
 		mod: 'sylvemons',
 	},
-
 	{
-		name: "Universal Ubers",
-		mod: 'primordialpokemon',
-
-		ruleset: ['Pokemon', 'Standard', 'Swagger Clause', 'Team Preview', 'Mega Rayquaza Clause'],
-		banlist: []
-	},
+  		name: "[Gen 7] Type Optimisation",
+  		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/type-optimisation-slate-11-submissions-ghost-ghost-psychic-ghost-normal.3602766/>Type Optimisation</a>",
+		      ],
+  		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+  		banlist: ['Unreleased', 'Illegal'],
+		mod: 'typeopt',
+  	},
 	{
 		name: "[Gen 7] Ultra Space Variants",
 		desc: ["&bullet; With the existence of alternate dimensions and regional Variants, why hasn't anyone combined the two? Welcome to the world of Ultra Space. This world is inhabited by strange creatures called Ultra Beasts. However, oddly enough, stranger creatures called Pokémon have slipped into our dimension through wormholes. These Pokemon have gone through odd changes, but somehow make them even stronger than usual. Astonishing, isn't it?",
@@ -4452,6 +4408,14 @@ exports.Formats = [
 		banlist: [],
 		mod: 'usv',
 	},
+	{
+		name: "Universal Ubers",
+		mod: 'primordialpokemon',
+
+		ruleset: ['Pokemon', 'Standard', 'Swagger Clause', 'Team Preview', 'Mega Rayquaza Clause'],
+		banlist: []
+	},
+	
 	{
 		name: "[Gen 7] Z-Moves Everywhere",
 		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/z-moves-everywhere-slate-4-ninetales-torkoal-groudon-submissions-phase-extended.3592186/>Z-Moves Everywhere</a>"],
@@ -6865,6 +6829,44 @@ exports.Formats = [
 			}
 		},
 	},
+	{
+		name: "[Gen 7] Prehistoric",
+		desc: [
+			"&bullet; Coded by flufi.",
+			"A format that takes place in prehistoric times.",
+			"Over 100 Pokemon receive new Primal forms, along with",
+			"every one of those Pokemon getting a new signature move.",
+			"",
+			"NOTE: This is a long-term project and probably won't be done until June/July.",
+		],
+		mod: "prehistoric",
+
+		rulset: ['[Gen 7] Ubers'],
+		banlist: ['Blue Orb', 'Shadow Tag'],
+	},
+	{
+		name: "[Gen 7] Clovermons",
+		desc: ["&bullet; <a href=http://pgenvp.wikia.com/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number>Clovermons</a>",
+		       "&bullet; <a href=http://pgenvp.wikia.com/wiki/Category:Moves>Moves</a><br>Brought to you by <font color=#0715b2><b>Zapmaster2010</b></font>",
+		      ],
+		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+		banlist: [],
+		mod: 'clovermons',
+	},
+	{
+		name: "[Gen 7] Island Mons",
+		desc: ["Mons from the Sevii, Seafoam, Whirl Islands, and Alola only",],
+		mod: 'gen7',
+		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod','Swagger Clause', 'Baton Pass Clause'],
+		banlist: ['Illegal','Abomasnow','Absol','Accelgor','Aegislash','Aerodactyl','Aggron','Aipom','Alomomola','Altaria','Amaura','Ambipom','Amoonguss','Ampharos','Anorith','Arbok','Arceus','Archen','Archeops','Armaldo','Aromatisse','Aron','Articuno','Audino','Aurorus','Avalugg','Axew','Azelf','Azumarill','Azurill','Baltoy','Banette','Barbaracle','Barboach','Basculin','Bastiodon','Bayleef','Beartic','Beautifly','Beheeyem','Beldum','Bergmite','Bibarel','Bidoof','Binacle','Blastoise','Blaziken','Blitzle','Boldore','Bonsly','Bouffalant','Braixen','Braviary','Breloom','Bronzong','Bronzor','Budew','Buizel','Bulbasaur','Bunnelby','Burmy','Cacnea','Cacturne','Camerupt','Carbink','Carnivine','Carracosta','Carvanha','Cascoon','Castform','Celebi','Chandelure','Charizard','Charmander','Charmeleon','Chatot','Cherrim','Cherubi','Chesnaught','Chespin','Chikorita','Chimchar','Chimecho','Chinchou','Chingling','Cinccino','Clamperl','Clauncher','Clawitzer','Claydol','Cobalion','Cofagrigus','Combee','Combusken','Conkeldurr','Corphish','Corsola','Cottonee','Cradily','Cranidos','Crawdaunt','Cresselia','Croagunk','Croconaw','Crustle','Cryogonal','Cubchoo','Cyndaquil','Darkrai','Darmanitan','Darumaka','Dedenne','Deerling','Deino','Delcatty','Delphox','Deoxys','Dewott','Dialga','Diancie','Diggersby','Diglett','Ditto','Dodrio','Doduo','Doublade','Dragalge','Drapion','Drifblim','Drifloon','Drilbur','Druddigon','Ducklett','Dugtrio','Duosion','Durant','Dusclops','Dusknoir','Duskull','Dustox','Dwebble','Eelektrik','Eelektross','Eevee','Ekans','Electabuzz','Electivire','Electrike','Electrode','Elekid','Elgyem','Emboar','Emolga','Empoleon','Entei','Escavalier','Espeon','Espurr','Excadrill','Exeggcute','Exeggutor','Exploud','Farfetchd','Feebas','Fennekin','Feraligatr','Ferroseed','Ferrothorn','Finneon','Flaaffy','Flabébé','Flareon','Fletchinder','Fletchling','Floatzel','Floette','Florges','Foongus','Forretress','Fraxure','Frillish','Froakie','Frogadier','Froslass','Furfrou','Gabite','Gallade','Galvantula','Garbodor','Garchomp','Gardevoir','Gastrodon','Genesect','Geodude','Gible','Gigalith','Girafarig','Giratina','Glaceon','Glalie','Glameow','Gligar','Gliscor','Gogoat','Goldeen','Golett','Golurk','Goodra','Goomy','Gorebyss','Gothita','Gothitelle','Gothorita','Gourgeist','Granbull','Greninja','Grimer','Grotle','Groudon','Grovyle','Growlithe','Grumpig','Gulpin','Gurdurr','Hariyama','Haxorus','Heatmor','Heatran','Heliolisk','Helioptile','Herdier','Hippopotas','Hippowdon','Hitmonchan','Hitmonlee','Hitmontop','Ho-Oh','Honedge','Hoopa','Hoothoot','Houndoom','Houndour','Huntail','Hydreigon','Igglybuff','Illumise','Infernape','Inkay','Ivysaur','Jellicent','Jigglypuff','Jirachi','Jolteon','Joltik','Jynx','Kabuto','Kabutops','Kangaskhan','Karrablast','Kecleon','Keldeo','Kirlia','Klang','Klefki','Klink','Klinklang','Koffing','Kricketot','Kricketune','Krokorok','Krookodile','Kyogre','Kyurem','Lairon','Lampent','Landorus','Lanturn','Latias','Latios','Leafeon','Leavanny','Lickilicky','Lickitung','Liepard','Lileep','Lilligant','Lillipup','Linoone','Litleo','Litwick','Lombre','Lotad','Loudred','Lucario','Ludicolo','Lugia','Lumineon','Lunatone','Luvdisc','Luxio','Luxray','Magmar','Makuhita','Malamar','Manaphy','Mandibuzz','Manectric','Mankey','Mantine','Mantyke','Maractus','Mareep','Marill','Marshtomp','Masquerain','Medicham','Meditite','Meganium','Meloetta','Meowstic','Mesprit','Metagross','Metang','Mew','Mewtwo','Mienfoo','Mienshao','Mightyena','Milotic','Miltank','MimeJr.','Minccino','Minun','Moltres','Monferno','Mothim','Mr.Mime','Mudkip','Muk','Munchlax','Munna','Musharna','Nidoking','Nidoqueen','Nidoran-F','Nidoran-M','Nidorina','Nidorino','Nincada','Ninetales','Ninjask','Noctowl','Noibat','Noivern','Nosepass','Numel','Nuzleaf','Omanyte','Omastar','Oshawott','Pachirisu','Palkia','Palpitoad','Pancham','Pangoro','Panpour','Pansage','Pansear','Paras','Parasect','Patrat','Persian','Petilil','Phantump','Phione','Pichu','Pidove','Pignite','Pikachu','Pineco','Piplup','Plusle','Politoed','Poliwag','Poliwhirl','Poliwrath','Poochyena','Primeape','Prinplup','Probopass','Pumpkaboo','Purrloin','Purugly','Pyroar','Quagsire','Quilava','Quilladin','Qwilfish','Raichu','Raikou','Ralts','Rampardos','Raticate','Rattata','Rayquaza','Regice','Regigigas','Regirock','Registeel','Relicanth','Reshiram','Reuniclus','Rhydon','Rhyhorn','Rhyperior','Riolu','Roggenrola','Roselia','Roserade','Rotom','Rufflet','Samurott','Sandile','Sandshrew','Sandslash','Sawk','Sawsbuck','Scatterbug','Sceptile','Scolipede','Scrafty','Scraggy','Seaking','Sealeo','Seedot','Seismitoad','Serperior','Servine','Seviper','Sewaddle','Sharpedo','Shaymin','Shedinja','Shellos','Shelmet','Shieldon','Shiftry','Shinx','Shroomish','Shuckle','Shuppet','Sigilyph','Silcoon','Simipour','Simisage','Simisear','Skiddo','Skitty','Skorupi','Skrelp','Skuntank','Slaking','Slakoth','Sliggoo','Slurpuff','Smeargle','Smoochum','Snivy','Snorlax','Snorunt','Snover','Snubbull','Solosis','Solrock','Spewpa','Spheal','Spinda','Spiritomb','Spoink','Spritzee','Squirtle','Stantler','Staraptor','Staravia','Starly','Stoutland','Stunfisk','Stunky','Sudowoodo','Suicune','Sunflora','Sunkern','Surskit','Swablu','Swadloon','Swalot','Swampert','Swanna','Swellow','Swirlix','Swoobat','Sylveon','Taillow','Talonflame','Tangela','Tauros','Teddiursa','Tentacool','Tentacruel','Tepig','Terrakion','Throh','Thundurus','Timburr','Tirtouga','Togekiss','Togepi','Togetic','Torchic','Torkoal','Tornadus','Torterra','Totodile','Toxicroak','Tranquill','Trapinch','Treecko','Trevenant','Tropius','Trubbish','Turtwig','Tympole','Tynamo','Typhlosion','Tyrantrum','Tyrogue','Tyrunt','Umbreon','Unfezant','Ursaring','Uxie','Vanillish','Vanillite','Vanilluxe','Vaporeon','Venipede','Venusaur','Vespiquen','Vibrava','Victini','Vigoroth','Virizion','Vivillon','Volbeat','Volcanion','Voltorb','Vullaby','Vulpix','Wailmer','Wailord','Walrein','Wartortle','Watchog',' Weezing','Whimsicott','Whirlipede','Whiscash','Whismur','Wigglytuff','Woobat','Wooper','Wormadam','Wurmple','Xerneas','Yamask','Yveltal','Zangoose','Zapdos','Zebstrika','Zekrom','Zigzagoon','Zoroark','Zorua','Zweilous'],
+	},
+	{
+  		name: "[Gen 7] Mememons",
+  		desc: ["&bullet; <a href=https://pastebin.com/3MpyAJ4x>Mememons</a><br>Brought to you by smellslikememe",
+		      ],
+  		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+  		mod: 'mememons',
+  	},
 	{
 		name: "Enchanted Items Plus",
 		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/enchanted-items-enchanted-items-plus-announced.3570431/page-20#post-6939744\">Enchanted Items Plus</a>"],
