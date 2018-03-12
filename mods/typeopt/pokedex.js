@@ -921,8 +921,20 @@ exports.BattlePokedex = {
 		},
 		abilities: {0: "Queenly Majesty", 1: "Tinted Lens", H: "Magic Bounce"},
 	},
-	
-	vanilluxe: {
+	ariados: {
+		inherit: true,
+		types: ["Psychic", "Bug"],
+		baseStats: {
+			hp: 80,
+			atk: 110,
+			def: 90,
+			spa: 60,
+			spd: 90,
+			spe: 140
+		},
+		abilities: {0: "Strong Jaw", 1: "Intimidate", H: "Mold Breaker"},
+	},
+vanilluxe: {
 		inherit: true,
 		types: ["Ice", "Normal"],
 		baseStats: { 
@@ -935,7 +947,7 @@ exports.BattlePokedex = {
 		},
 		abilities: {0: "No Guard", 1: "Snow Warning", H: "Tinted Lens"},
 	},
-	mightyena: {
+mightyena: {
 		inherit: true,
 		types: ["Ice", "Dark"],
 		baseStats: { 
@@ -948,57 +960,4 @@ exports.BattlePokedex = {
 		},
 		abilities: {0: "Strong Jaw", 1: "Guts", H: "Moxie"},
 	},
-	/*sandslashalola: {
-		inherit: true,
-		types: ["Psychic", "Bug"],
-		baseStats: {
-			hp: 80,
-			atk: 110,
-			def: 90,
-			spa: 60,
-			spd: 90,
-			spe: 140
-		},
-		abilities: {0: "Strong Jaw", 1: "Intimidate", H: "Mold Breaker"},
-	},
-	mandibuzz: {
-		inherit: true,
-		types: ["Psychic", "Bug"],
-		baseStats: {
-			hp: 80,
-			atk: 110,
-			def: 90,
-			spa: 60,
-			spd: 90,
-			spe: 140
-		},
-		abilities: {0: "Strong Jaw", 1: "Intimidate", H: "Mold Breaker"},
-	},
-	toucannon: {
-		inherit: true,
-		types: ["Psychic", "Bug"],
-		baseStats: {
-			hp: 80,
-			atk: 110,
-			def: 90,
-			spa: 60,
-			spd: 90,
-			spe: 140
-		},
-		abilities: {0: "Strong Jaw", 1: "Intimidate", H: "Mold Breaker"},
-	},
-	wigglytuff: {
-		inherit: true,
-		types: ["Psychic", "Bug"],
-		baseStats: {
-			hp: 80,
-			atk: 110,
-			def: 90,
-			spa: 60,
-			spd: 90,
-			spe: 140
-		},
-		abilities: {0: "Strong Jaw", 1: "Intimidate", H: "Mold Breaker"},
-	},*/
-
 };
