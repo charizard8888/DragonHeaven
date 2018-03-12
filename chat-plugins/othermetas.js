@@ -640,13 +640,13 @@ typeopthelp: ["/eternalmons - Shows the list of Pokemon in Type Optimisation Pok
 		this.sendReplyBox(`${buf}</div>`);
 	},
 	eeveedhelp: ["/eeveed - Shows the list of Pokemon in Eeevee'd."],
-	eeveedmoves: function (target, room, user) {
+	eeveedabilities: function (target, room, user) {
 		if (!this.runBroadcast()) return;
-		let buf = `<div class=infobox-limited><center><h2>List Of Eeveed Pokemon Moves</h2></center>`;
-		let eeveedDex = require('../mods/eeveed/moves.js').BattleMovedex;
+		let buf = `<div class=infobox-limited><center><h2>List Of Eeveed Abilities</h2></center>`;
+		let eeveedDex = require('../mods/eeveed/abilities.js').BattleMovedex;
 		if (!eeveedDex) return this.errorReply("Error Fetching Eeveed Data.");
-		Object.values(eternalDex).forEach(move => {
-			buf += `<button name="send" value="/dt ${move.id}, Eeveed" style="background:none;border:none;">${move.id}</button><br>`;
+		Object.values(eeveedDex).forEach(ability => {
+			buf += `<button name="send" value="/dt ${ability.id}, Eeveed" style="background:none;border:none;">${ability.id}</button><br>`;
 		});
 		this.sendReplyBox(`${buf}</div>`);
 	},
@@ -696,6 +696,16 @@ typeopthelp: ["/eternalmons - Shows the list of Pokemon in Type Optimisation Pok
 		this.sendReplyBox(`${buf}</div>`);
 	},
 	femegashelp: ["/femegas - Shows the list of Mega Stones in Fusion Evolution."],
+	feabilities: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Coded Fusion Evolution Abilities</h2></center>`;
+		let feDex = require('../mods/fe/abilities.js').BattleAbilities;
+		if (!feDex) return this.errorReply("Error Fetching FE Data.");
+		Object.values(feDex).forEach(ability => {
+			buf += `<button name="send" value="/dt ${ability.id}, FE" style="background:none;border:none;">${ability.id}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
 sylveitems: function (target, room, user) {
 		if (!this.runBroadcast()) return;
 		let buf = `<div class=infobox-limited><center><h2>List Of Sylvemons Items Additions/Alterations</h2></center>`;
