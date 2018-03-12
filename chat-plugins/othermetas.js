@@ -640,6 +640,16 @@ typeopthelp: ["/eternalmons - Shows the list of Pokemon in Type Optimisation Pok
 		this.sendReplyBox(`${buf}</div>`);
 	},
 	eeveedhelp: ["/eeveed - Shows the list of Pokemon in Eeevee'd."],
+	eeveedmoves: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Eeveed Pokemon Moves</h2></center>`;
+		let eeveedDex = require('../mods/eeveed/moves.js').BattleMovedex;
+		if (!eeveedDex) return this.errorReply("Error Fetching Eeveed Data.");
+		Object.values(eternalDex).forEach(move => {
+			buf += `<button name="send" value="/dt ${move.id}, Eeveed" style="background:none;border:none;">${move.id}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
 	
 	tnfg: function (target, room, user) {
 		if (!this.runBroadcast()) return;
