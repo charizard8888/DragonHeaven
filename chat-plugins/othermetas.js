@@ -642,10 +642,10 @@ typeopthelp: ["/eternalmons - Shows the list of Pokemon in Type Optimisation Pok
 	eeveedhelp: ["/eeveed - Shows the list of Pokemon in Eeevee'd."],
 	eeveedabilities: function (target, room, user) {
 		if (!this.runBroadcast()) return;
-		let buf = `<div class=infobox-limited><center><h2>List Of Eeveed Abilities</h2></center>`;
-		let eeveedDex = require('../mods/eeveed/abilities.js').BattleMovedex;
-		if (!eeveedDex) return this.errorReply("Error Fetching Eeveed Data.");
-		Object.values(eeveedDex).forEach(ability => {
+		let buf = `<div class=infobox-limited><center><h2>List Of Coded Eeveed Abilities</h2></center>`;
+		let feDex = require('../mods/eeveed/abilities.js').BattleAbilities;
+		if (!feDex) return this.errorReply("Error Fetching Eeveed Data.");
+		Object.values(feDex).forEach(ability => {
 			buf += `<button name="send" value="/dt ${ability.id}, Eeveed" style="background:none;border:none;">${ability.id}</button><br>`;
 		});
 		this.sendReplyBox(`${buf}</div>`);
