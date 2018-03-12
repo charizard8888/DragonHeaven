@@ -35,4 +35,8 @@ charizardmegax: {
 inerit: true,
 baseStats: {hp: 78, atk: 150, def: 111, spa: 100, spd: 85, spe: 110},
 },
+charizardmegay: {
+inerit: true,
+baseStats: {hp: 78, atk: 84, def: 78, spa: 159, spd: 115, spe: 120},
+},
 };
