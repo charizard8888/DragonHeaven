@@ -29,4 +29,10 @@ inherit: true,
 types: ["Poison", "Fire", "Luke"],
 abilities: {0: "Flash Fire", H: "Aftermath"},
 },
+	
+// Mega changes
+charizardmegax: {
+inerit: true,
+baseStats: {hp: 78, atk: 150, def: 111, spa: 100, spd: 85, spe: 110},
+},
 };
