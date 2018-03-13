@@ -1486,7 +1486,7 @@ class Pokemon {
 		}
 		// If a Fire/Flying type uses Burn Up and Roost, it becomes ???/Flying-type, but it's still grounded.
 		if ('roost' in this.volatiles && !types.includes('???')) {
-			types = types.filter(type => type !== 'Luke');
+			types = types.filter(type => type !== 'Flying' || type !== 'Luke');
 		}
 		if (types.length) return types;
 		return [this.battle.gen >= 5 ? 'Normal' : '???'];
@@ -1502,7 +1502,7 @@ class Pokemon {
 		let item = (this.ignoringItem() ? '' : this.item);
 		if (item === 'ironball') return true;
 		// If a Fire/Flying type uses Burn Up and Roost, it becomes ???/Flying-type, but it's still grounded.
-		if (!negateImmunity && this.hasType('Luke') && !('roost' in this.volatiles)) return false;
+		if (!negateImmunity && this.hasType('Flying') && !('roost' in this.volatiles)) return false;
 		if (this.hasAbility('levitate') && !this.battle.suppressingAttackEvents()) return null;
 		if ('magnetrise' in this.volatiles) return false;
 		if ('telekinesis' in this.volatiles) return false;
