@@ -552,7 +552,7 @@ exports.BattleMovedex = {
 	"armthrust": {
 		num: 292,
 		accuracy: 100,
-		basePower: 15,
+		basePower: 25,
 		category: "Physical",
 		desc: "Hits two to five times. Has a 1/3 chance to hit two or three times, and a 1/6 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Ability Skill Link, this move will always hit five times.",
 		shortDesc: "Hits 2-5 times in one turn.",
@@ -811,7 +811,7 @@ exports.BattleMovedex = {
 	"aurasphere": {
 		num: 396,
 		accuracy: true,
-		basePower: 80,
+		basePower: 90,
 		category: "Special",
 		desc: "This move does not check accuracy.",
 		shortDesc: "This move does not check accuracy.",
@@ -3853,7 +3853,7 @@ exports.BattleMovedex = {
 	"dragonpulse": {
 		num: 406,
 		accuracy: 100,
-		basePower: 85,
+		basePower: 90,
 		category: "Special",
 		desc: "No additional effect.",
 		shortDesc: "No additional effect.",
@@ -3872,15 +3872,14 @@ exports.BattleMovedex = {
 	"dragonrage": {
 		num: 82,
 		accuracy: 100,
-		basePower: 0,
-		damage: 40,
+		basePower: 40,
 		category: "Special",
 		desc: "Deals 40 HP of damage to the target.",
-		shortDesc: "Always does 40 HP of damage.",
+		shortDesc: "Usually goes first.",
 		id: "dragonrage",
 		name: "Dragon Rage",
 		pp: 10,
-		priority: 0,
+		priority: 1,
 		flags: {protect: 1, mirror: 1},
 		secondary: false,
 		target: "normal",
@@ -3931,7 +3930,7 @@ exports.BattleMovedex = {
 	"drainingkiss": {
 		num: 577,
 		accuracy: 100,
-		basePower: 50,
+		basePower: 70,
 		category: "Special",
 		desc: "The user recovers 3/4 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
 		shortDesc: "User recovers 75% of the damage dealt.",
@@ -8522,7 +8521,7 @@ exports.BattleMovedex = {
 		basePower: 100,
 		category: "Special",
 		desc: "Has a 100% chance to burn the target.",
-		shortDesc: "100% chance to burn the target.",
+		shortDesc: "100% chance to burn the target. Doesn't miss in Sun.",
 		id: "inferno",
 		name: "Inferno",
 		pp: 5,
@@ -8531,6 +8530,13 @@ exports.BattleMovedex = {
 		secondary: {
 			chance: 100,
 			status: 'brn',
+		},
+		onModifyMove: function (move) {
+			if (this.isWeather(['sunnyday', 'desolateland'])) {
+				move.accuracy = true;
+			} else {
+				move.accuracy = 50;
+			}
 		},
 		target: "normal",
 		type: "Fire",
@@ -10055,7 +10061,7 @@ exports.BattleMovedex = {
 		basePower: 80,
 		category: "Physical",
 		desc: "No additional effect.",
-		shortDesc: "No additional effect.",
+		shortDesc: "30% chance to flinch.",
 		id: "megapunch",
 		name: "Mega Punch",
 		pp: 20,
@@ -11490,16 +11496,16 @@ exports.BattleMovedex = {
 	"paraboliccharge": {
 		num: 570,
 		accuracy: 100,
-		basePower: 65,
+		basePower: 70,
 		category: "Special",
 		desc: "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
-		shortDesc: "User recovers 50% of the damage dealt.",
+		shortDesc: "User recovers 75% of the damage dealt.",
 		id: "paraboliccharge",
 		name: "Parabolic Charge",
 		pp: 20,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, heal: 1},
-		drain: [1, 2],
+		drain: [3, 4],
 		secondary: false,
 		target: "allAdjacent",
 		type: "Electric",
@@ -12098,7 +12104,7 @@ exports.BattleMovedex = {
 	"powergem": {
 		num: 408,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 90,
 		category: "Special",
 		desc: "No additional effect.",
 		shortDesc: "No additional effect.",
@@ -14314,7 +14320,7 @@ exports.BattleMovedex = {
 	"shadowball": {
 		num: 247,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 90,
 		category: "Special",
 		desc: "Has a 20% chance to lower the target's Special Defense by 1 stage.",
 		shortDesc: "20% chance to lower the target's Sp. Def by 1.",
@@ -15202,7 +15208,7 @@ exports.BattleMovedex = {
 	"sludgebomb": {
 		num: 188,
 		accuracy: 100,
-		basePower: 90,
+		basePower: 80,
 		category: "Special",
 		desc: "Has a 30% chance to poison the target.",
 		shortDesc: "30% chance to poison the target.",
@@ -15700,16 +15706,15 @@ exports.BattleMovedex = {
 	},
 	"sonicboom": {
 		num: 49,
-		accuracy: 90,
-		basePower: 0,
-		damage: 20,
+		accuracy: 100,
+		basePower: 40,
 		category: "Special",
 		desc: "Deals 20 HP of damage to the target.",
-		shortDesc: "Always does 20 HP of damage.",
+		shortDesc: "Usually goes first.",
 		id: "sonicboom",
 		name: "Sonic Boom",
 		pp: 20,
-		priority: 0,
+		priority: 1,
 		flags: {protect: 1, mirror: 1},
 		secondary: false,
 		target: "normal",
@@ -16480,8 +16485,8 @@ exports.BattleMovedex = {
 	},
 	"submission": {
 		num: 66,
-		accuracy: 80,
-		basePower: 80,
+		accuracy: 100,
+		basePower: 100,
 		category: "Physical",
 		desc: "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded half up, but not less than 1 HP.",
 		shortDesc: "Has 1/4 recoil.",
@@ -18499,7 +18504,7 @@ exports.BattleMovedex = {
 	"waterpulse": {
 		num: 352,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 75,
 		category: "Special",
 		desc: "Has a 20% chance to confuse the target.",
 		shortDesc: "20% chance to confuse the target.",
@@ -18762,7 +18767,7 @@ exports.BattleMovedex = {
 	"wildcharge": {
 		num: 528,
 		accuracy: 100,
-		basePower: 90,
+		basePower: 100,
 		category: "Physical",
 		desc: "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded half up, but not less than 1 HP.",
 		shortDesc: "Has 1/4 recoil.",
