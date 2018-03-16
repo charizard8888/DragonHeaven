@@ -1,7 +1,7 @@
 'use strict';
 
 exports.BattleStatuses = {
-	chimecho: {
+/*	chimecho: {
 		onImmunity: function (type, pokemon) {
 			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
 		},
@@ -20,13 +20,12 @@ exports.BattleStatuses = {
 		onImmunity: function (type, pokemon) {
 			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
 		},
-		},
+		},*/
 	gastly: {
 		onImmunity: function (type, pokemon) {
 			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
 		},
-		},
-	chandelure: {
+	/*chandelure: {
 		onImmunity: function (type, pokemon) {
 			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
 		},
@@ -50,7 +49,7 @@ exports.BattleStatuses = {
 		onImmunity: function (type, pokemon) {
 			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
 		},
-		},
+		},*/
 brn: {
 	effectType: 'Status',
 		onStart: function (target, source, sourceEffect) {
