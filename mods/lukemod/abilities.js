@@ -158,7 +158,7 @@ exports.BattleAbilities = {
 		shortDesc: "Prevents adjacent foes from choosing to switch unless they are airborne.",
 		onFoeTrapPokemon: function (pokemon) {
 			if (!this.isAdjacent(pokemon, this.effectData.target)) return;
-			if (pokemon.isGrounded()) {
+			if (pokemon.type === 'Ground') {
 				pokemon.tryTrap(true);
 			}
 		},
@@ -824,7 +824,7 @@ exports.BattleAbilities = {
     onModifyPriorityPriority: -1,
 		onModifyPriority: function (priority, pokemon) {
 			if (this.random(5) === 0) {
-				this.add('-activate', pokemon, 'item: Quick Claw');
+				this.add('-activate', pokemon, 'ability: Early Bird');
 				return Math.round(priority) + 0.1;
 			}
 		},
@@ -1422,7 +1422,7 @@ exports.BattleAbilities = {
 		num: 115,
 	},
 	"illuminate": {
-		shortDesc: "Lowers foe's accuracy by 1 stage upon switchin.",
+		shortDesc: "Lowers foe's evasion by 1 stage upon switchin.",
 		id: "illuminate",
 		name: "Illuminate",
     	onStart: function (pokemon) {
@@ -1437,7 +1437,7 @@ exports.BattleAbilities = {
 				if (foeactive[i].volatiles['substitute']) {
 					this.add('-immune', foeactive[i], '[msg]');
 				} else {
-					this.boost({acc: -1}, foeactive[i], pokemon);
+					this.boost({eva: -1}, foeactive[i], pokemon);
 				}
 			}
 		},
@@ -2742,7 +2742,7 @@ exports.BattleAbilities = {
 	},
 	"rockhead": {
 		desc: "This Pokemon does not take recoil damage besides Struggle, Life Orb, and crash damage.",
-		shortDesc: "This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage.",
+		shortDesc: "This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage. Doesn't make contact.",
 		onDamage: function (damage, target, source, effect) {
 			if (effect.id === 'recoil' && this.activeMove.id !== 'struggle') return null;
 		},
@@ -3652,7 +3652,7 @@ exports.BattleAbilities = {
 	},
 	"thickfat": {
 		desc: "If a Pokemon uses a Fire- or Ice-type attack against this Pokemon, that Pokemon's attacking stat is halved when calculating the damage to this Pokemon.",
-		shortDesc: "Fire/Ice-type moves against this Pokemon deal damage with a halved attacking stat.",
+		shortDesc: "Fire/Ice-type moves against this Pokemon deal damage with a halved attacking stat. Immunity to hail.",
 		onModifyAtkPriority: 6,
 		onSourceModifyAtk: function (atk, attacker, defender, move) {
 			if (move.type === 'Ice' || move.type === 'Fire') {
@@ -3666,6 +3666,9 @@ exports.BattleAbilities = {
 				this.debug('Thick Fat weaken');
 				return this.chainModify(0.5);
 			}
+		},
+		onImmunity: function (type, pokemon) {
+			if (type === 'hail') return false;
 		},
 		id: "thickfat",
 		name: "Thick Fat",
@@ -3849,7 +3852,7 @@ exports.BattleAbilities = {
 		num: 84,
 	},
 	"unnerve": {
-		shortDesc: "While this Pokemon is active, it prevents opposing Pokemon from using their Berries.",
+		shortDesc: "Lowers foe's SpA by 1 stage upon switchin.",
 		onStart: function (pokemon) {
 			let foeactive = pokemon.side.foe.active;
 			let activated = false;
