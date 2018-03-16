@@ -742,7 +742,7 @@ gutter: function (target, room, user) {
 		let jillianDex = require('../mods/fe/pokedex.js').BattlePokedex;
 		if (!jillianDex) return this.errorReply("Error Fetching Istor Data.");
 		Object.values(jillianDex).forEach(mon => {
-			buf += `&quot;${mon.species}&quot;: &quot;t1:&quot; &quot;${mon.types[0]}&quot;, <br>&quot;t2&quot;: &quot;${mon.types[1]}&quot;,<br> &quot;bs&quot;: { &quot;hp&quot;: mon.baseStats.hp, &quot;at&quot;: mon.baseStats.atk,<br> <button name="send" value="/dt ${mon.species}, alola" style="background:none;border:none;">${mon.species}</button><br>`;
+			buf += `&quot;${mon.species}&quot;: <br> &quot;t1:&quot; &quot;${mon.types[0]}&quot;, <br>&quot;t2&quot;: &quot;${mon.types[1]}&quot;,<br> &quot;bs&quot;: { &quot;hp&quot;: ${mon.baseStats.hp}, &quot;at&quot;: ${mon.baseStats.atk}, <br> &quot;df&quot;: ${mon.baseStats.def}, <br> &quot;sa&quot;: ${mon.baseStats.spa},<br>&quot;sd&quot;: ${mon.baseStats.spd}, <br>&quot;sp&quot; ${mon.baseStats.spe}, <br> }, <br> },<br> <button name="send" value="/dt ${mon.species}, alola" style="background:none;border:none;">${mon.species}</button><br>`;
 		});
 		this.sendReplyBox(`${buf}</div>`);
 	},
