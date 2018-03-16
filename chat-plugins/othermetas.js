@@ -736,4 +736,14 @@ sylveitems: function (target, room, user) {
 		});
 		this.sendReplyBox(`${buf}</div>`);
 	},
+gutter: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Alola Formes Pokemon</h2></center>`;
+		let jillianDex = require('../mods/fe/pokedex.js').BattlePokedex;
+		if (!jillianDex) return this.errorReply("Error Fetching Istor Data.");
+		Object.values(jillianDex).forEach(mon => {
+			buf += `${mon.types[0]} <br> ${mon.types[1]} <button name="send" value="/dt ${mon.species}, alola" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
 };
