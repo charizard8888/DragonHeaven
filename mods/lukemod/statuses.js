@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 
 exports.BattleStatuses = {
 	chimecho: {
@@ -718,4 +718,4 @@ brn: {
 			pokemon.setType(type, true);
 		},
 	},
-};
+};*/
