@@ -8,8 +8,8 @@ exports.BattleStatuses = {
 		},
 		onStart: function (pokemon) {
 			if (pokemon.ability === 'levitate') {
-				pokemon.ability = 'aftermath';
-				pokemon.baseAbility = 'aftermath';
+				pokemon.ability = 'intimidate';
+				pokemon.baseAbility = 'intimidate';
 			}
 		},
 	},
