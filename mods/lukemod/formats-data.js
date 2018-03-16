@@ -14,10 +14,10 @@ randomDoubleBattleMoves: ["", "", "", "", "",],
 requiredItem: "Sevipite",
 tier: "OU",
 }, 
-flygommega: {
+flygonmega: {
 randomBattleMoves: ["", "", "", "", "",], 
 randomDoubleBattleMoves: ["", "", "", "", "",],
-requiredItem: "Flygomite",
+requiredItem: "Flygonite",
 tier: "OU",
 }, 
 hydreigonmega: {
