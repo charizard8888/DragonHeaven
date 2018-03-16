@@ -1,6 +1,13 @@
 'use strict'
 exports.BattlePokedex = {
-
+ampharosmega: {
+  inherit: true,
+  abilities: {0: "Regenerator"},
+}
+charizardmegax: {
+  inherit: true,
+  baseStats: {atk: 150, spe: 110}
+},
 rapidash: {
 inherit: true,
 types: ["Fire", "Fairy"],

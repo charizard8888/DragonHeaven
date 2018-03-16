@@ -1,19 +1,433 @@
 'use strict';
 
 exports.BattleStatuses = {
-	
-	weezing: {
-		// Weezing: Aftermath
+	/*
+	chimecho: {
 		onImmunity: function (type, pokemon) {
 			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
 		},
-		onStart: function (pokemon) {
-			if (pokemon.ability === 'levitate') {
-				pokemon.ability = 'aftermath';
-				pokemon.baseAbility = 'aftermath';
-			}
+		chimecho: {
+			onImmunity: function (type, pokemon) {
+				if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+			},
+			chimecho: {
+				onImmunity: function (type, pokemon) {
+					if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+				},
+				chimecho: {
+					onImmunity: function (type, pokemon) {
+						if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+					},
+					chimecho: {
+						onImmunity: function (type, pokemon) {
+							if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+						},
+						chimecho: {
+							onImmunity: function (type, pokemon) {
+								if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+							},
+							chimecho: {
+								onImmunity: function (type, pokemon) {
+									if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+								},
+								chimecho: {
+									onImmunity: function (type, pokemon) {
+										if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+									},
+									chimecho: {
+										onImmunity: function (type, pokemon) {
+											if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+										},
+										chimecho: {
+											onImmunity: function (type, pokemon) {
+												if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+											},
+											chimecho: {
+												onImmunity: function (type, pokemon) {
+													if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+												},
+												chimecho: {
+													onImmunity: function (type, pokemon) {
+														if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+													},
+													chimecho: {
+														onImmunity: function (type, pokemon) {
+															if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+														},
+														chimecho: {
+															onImmunity: function (type, pokemon) {
+																if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+															},
+															chimecho: {
+																onImmunity: function (type, pokemon) {
+																	if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																},
+																chimecho: {
+																	onImmunity: function (type, pokemon) {
+																		if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																	},
+																	chimecho: {
+																		onImmunity: function (type, pokemon) {
+																			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																		},
+																		chimecho: {
+																			onImmunity: function (type, pokemon) {
+																				if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																			},
+																			chimecho: {
+																				onImmunity: function (type, pokemon) {
+																					if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																				},
+																				chimecho: {
+																					onImmunity: function (type, pokemon) {
+																						if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																					},
+																					chimecho: {
+																						onImmunity: function (type, pokemon) {
+																							if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																						},
+																						chimecho: {
+																							onImmunity: function (type, pokemon) {
+																								if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																							},
+																							chimecho: {
+																								onImmunity: function (type, pokemon) {
+																									if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																								},
+																								chimecho: {
+																									onImmunity: function (type, pokemon) {
+																										if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																									},
+																									chimecho: {
+																										onImmunity: function (type, pokemon) {
+																											if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																										},
+																										chimecho: {
+																											onImmunity: function (type, pokemon) {
+																												if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																											},
+																											chimecho: {
+																												onImmunity: function (type, pokemon) {
+																													if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																												},
+																												chimecho: {
+																													onImmunity: function (type, pokemon) {
+																														if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																													},
+																													chimecho: {
+																														onImmunity: function (type, pokemon) {
+																															if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																														},
+																														chimecho: {
+																															onImmunity: function (type, pokemon) {
+																																if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																															},
+																															chimecho: {
+																																onImmunity: function (type, pokemon) {
+																																	if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																},
+																																chimecho: {
+																																	onImmunity: function (type, pokemon) {
+																																		if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																	},
+																																	chimecho: {
+																																		onImmunity: function (type, pokemon) {
+																																			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																		},
+																																		chimecho: {
+																																			onImmunity: function (type, pokemon) {
+																																				if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																			},
+																																			chimecho: {
+																																				onImmunity: function (type, pokemon) {
+																																					if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																				},
+																																				chimecho: {
+																																					onImmunity: function (type, pokemon) {
+																																						if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																					},
+																																					chimecho: {
+																																						onImmunity: function (type, pokemon) {
+																																							if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																						},
+																																						chimecho: {
+																																							onImmunity: function (type, pokemon) {
+																																								if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																							},
+																																							chimecho: {
+																																								onImmunity: function (type, pokemon) {
+																																									if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																								},
+																																								chimecho: {
+																																									onImmunity: function (type, pokemon) {
+																																										if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																									},
+																																									chimecho: {
+																																										onImmunity: function (type, pokemon) {
+																																											if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																										},
+																																										chimecho: {
+																																											onImmunity: function (type, pokemon) {
+																																												if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																											},
+																																											chimecho: {
+																																												onImmunity: function (type, pokemon) {
+																																													if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																												},
+																																												chimecho: {
+																																													onImmunity: function (type, pokemon) {
+																																														if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																													},
+																																													chimecho: {
+																																														onImmunity: function (type, pokemon) {
+																																															if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																														},
+																																														chimecho: {
+																																															onImmunity: function (type, pokemon) {
+																																																if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																															},
+																																															chimecho: {
+																																																onImmunity: function (type, pokemon) {
+																																																	if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																},
+																																																chimecho: {
+																																																	onImmunity: function (type, pokemon) {
+																																																		if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																	},
+																																																	chimecho: {
+																																																		onImmunity: function (type, pokemon) {
+																																																			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																		},
+																																																		chimecho: {
+																																																			onImmunity: function (type, pokemon) {
+																																																				if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																			},
+																																																			chimecho: {
+																																																				onImmunity: function (type, pokemon) {
+																																																					if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																				},
+																																																				chimecho: {
+																																																					onImmunity: function (type, pokemon) {
+																																																						if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																					},
+																																																					chimecho: {
+																																																						onImmunity: function (type, pokemon) {
+																																																							if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																						},
+																																																						chimecho: {
+																																																							onImmunity: function (type, pokemon) {
+																																																								if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																							},
+																																																							chimecho: {
+																																																								onImmunity: function (type, pokemon) {
+																																																									if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																								},
+																																																								chimecho: {
+																																																									onImmunity: function (type, pokemon) {
+																																																										if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																									},
+																																																									chimecho: {
+																																																										onImmunity: function (type, pokemon) {
+																																																											if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																										},
+																																																										chimecho: {
+																																																											onImmunity: function (type, pokemon) {
+																																																												if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																											},
+																																																											chimecho: {
+																																																												onImmunity: function (type, pokemon) {
+																																																													if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																												},
+																																																												chimecho: {
+																																																													onImmunity: function (type, pokemon) {
+																																																														if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																													},
+																																																													chimecho: {
+																																																														onImmunity: function (type, pokemon) {
+																																																															if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																														},
+																																																														chimecho: {
+																																																															onImmunity: function (type, pokemon) {
+																																																																if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																															},
+																																																															chimecho: {
+																																																																onImmunity: function (type, pokemon) {
+																																																																	if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																},
+																																																																chimecho: {
+																																																																	onImmunity: function (type, pokemon) {
+																																																																		if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																	},
+																																																																	chimecho: {
+																																																																		onImmunity: function (type, pokemon) {
+																																																																			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																		},
+																																																																		chimecho: {
+																																																																			onImmunity: function (type, pokemon) {
+																																																																				if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																			},
+																																																																			chimecho: {
+																																																																				onImmunity: function (type, pokemon) {
+																																																																					if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																				},
+																																																																				chimecho: {
+																																																																					onImmunity: function (type, pokemon) {
+																																																																						if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																					},
+																																																																					chimecho: {
+																																																																						onImmunity: function (type, pokemon) {
+																																																																							if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																						},
+																																																																						chimecho: {
+																																																																							onImmunity: function (type, pokemon) {
+																																																																								if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																							},
+																																																																							chimecho: {
+																																																																								onImmunity: function (type, pokemon) {
+																																																																									if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																								},
+																																																																								chimecho: {
+																																																																									onImmunity: function (type, pokemon) {
+																																																																										if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																									},
+																																																																									chimecho: {
+																																																																										onImmunity: function (type, pokemon) {
+																																																																											if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																										},
+																																																																										chimecho: {
+																																																																											onImmunity: function (type, pokemon) {
+																																																																												if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																											},
+																																																																											chimecho: {
+																																																																												onImmunity: function (type, pokemon) {
+																																																																													if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																												},
+																																																																												chimecho: {
+																																																																													onImmunity: function (type, pokemon) {
+																																																																														if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																													},
+																																																																													chimecho: {
+																																																																														onImmunity: function (type, pokemon) {
+																																																																															if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																														},
+																																																																														chimecho: {
+																																																																															onImmunity: function (type, pokemon) {
+																																																																																if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																															},
+																																																																															chimecho: {
+																																																																																onImmunity: function (type, pokemon) {
+																																																																																	if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																																},
+																																																																																chimecho: {
+																																																																																	onImmunity: function (type, pokemon) {
+																																																																																		if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																																	},
+																																																																																	chimecho: {
+																																																																																		onImmunity: function (type, pokemon) {
+																																																																																			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																																		},
+																																																																																		chimecho: {
+																																																																																			onImmunity: function (type, pokemon) {
+																																																																																				if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																																			},
+																																																																																			chimecho: {
+																																																																																				onImmunity: function (type, pokemon) {
+																																																																																					if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																																				},
+																																																																																				chimecho: {
+																																																																																					onImmunity: function (type, pokemon) {
+																																																																																						if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																																					},
+																																																																																					chimecho: {
+																																																																																						onImmunity: function (type, pokemon) {
+																																																																																							if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																																						},
+																																																																																						chimecho: {
+																																																																																							onImmunity: function (type, pokemon) {
+																																																																																								if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																																							},
+																																																																																							chimecho: {
+																																																																																								onImmunity: function (type, pokemon) {
+																																																																																									if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																																								},
+																																																																																								chimecho: {
+																																																																																									onImmunity: function (type, pokemon) {
+																																																																																										if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																																									},
+																																																																																									chimecho: {
+																																																																																										onImmunity: function (type, pokemon) {
+																																																																																											if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																																										},
+																																																																																										chimecho: {
+																																																																																											onImmunity: function (type, pokemon) {
+																																																																																												if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																																											},
+																																																																																											chimecho: {
+																																																																																												onImmunity: function (type, pokemon) {
+																																																																																													if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																																												},
+																																																																																												chimecho: {
+																																																																																													onImmunity: function (type, pokemon) {
+																																																																																														if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																																													},
+																																																																																													chimecho: {
+																																																																																														onImmunity: function (type, pokemon) {
+																																																																																															if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																																														},
+																																																																																														chimecho: {
+																																																																																															onImmunity: function (type, pokemon) {
+																																																																																																if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																																															},
+																																																																																															chimecho: {
+																																																																																																onImmunity: function (type, pokemon) {
+																																																																																																	if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																																																},
+																																																																																																chimecho: {
+																																																																																																	onImmunity: function (type, pokemon) {
+																																																																																																		if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+																																																																																																	},
+																																																																																																		
+	*/
+	chimecho: {
+		onImmunity: function (type, pokemon) {
+			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
 		},
-	},
+	mew: {
+		onImmunity: function (type, pokemon) {
+			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+		},
+	gengar: {
+		onImmunity: function (type, pokemon) {
+			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+		},
+	haunter: {
+		onImmunity: function (type, pokemon) {
+			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+		},
+	gastly: {
+		onImmunity: function (type, pokemon) {
+			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+		},
+	chandelure: {
+		onImmunity: function (type, pokemon) {
+			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+		},
+	metagrossmega: {
+		onImmunity: function (type, pokemon) {
+			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+		},
+	shedinja: {
+		onImmunity: function (type, pokemon) {
+			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+		},
+	charizardmegax: {
+		onImmunity: function (type, pokemon) {
+			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+		},
+	weezing: {
+		onImmunity: function (type, pokemon) {
+			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+		},
 brn: {
 	effectType: 'Status',
 		onStart: function (target, source, sourceEffect) {
