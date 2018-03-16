@@ -272,15 +272,15 @@ exports.BattleMovedex = {
 		zMoveEffect: 'clearnegativeboost',
 		contestType: "Beautiful",
 	},
-	"meteormash": {
+	"stalwartsword": {
 		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
 		desc: "Has a high critical hit ratio and a 30% chance to increase the user’s Def by 1 stage. (Contact, Blade)",
 		shortDesc: "Has a high critical hit ratio and a 30% chance to increase the user’s Def by 1 stage. (Contact, Blade)",
-		id: "meteormash",
+		id: "stalwartsword",
 		isViable: true,
-		name: "Meteor Mash",
+		name: "Stalwart Sword",
 		pp: 10,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},

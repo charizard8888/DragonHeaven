@@ -934,4 +934,30 @@ exports.BattlePokedex = {
 		},
 		abilities: {0: "Strong Jaw", 1: "Intimidate", H: "Mold Breaker"},
 	},
+vanilluxe: {
+		inherit: true,
+		types: ["Ice", "Normal"],
+		baseStats: { 
+			hp: 81,
+			atk: 90,
+			def: 80,
+			spa: 130,
+			spd: 85,
+			spe: 104
+		},
+		abilities: {0: "No Guard", 1: "Snow Warning", H: "Tinted Lens"},
+	},
+mightyena: {
+		inherit: true,
+		types: ["Ice", "Dark"],
+		baseStats: { 
+			hp: 100,
+			atk: 135,
+			def: 90,
+			spa: 40,
+			spd: 90,
+			spe: 115
+		},
+		abilities: {0: "Strong Jaw", 1: "Guts", H: "Moxie"},
+	},
 };

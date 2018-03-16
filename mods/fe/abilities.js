@@ -1,6 +1,6 @@
 'use strict';
 exports.BattleAbilities = {
-	"sanddreams": {
+	"turnabouttorrent": {
 		desc: "When this Pokemon has 1/3 or more of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Water-type attack.",
 		shortDesc: "When this Pokemon has 1/3 or less of its max HP, its Water attacks do 1.5x damage. Stat changes are reversed",
 		onBoost: function(boost) {
@@ -22,8 +22,8 @@ exports.BattleAbilities = {
 				return this.chainModify(1.5);
 			}
 		},
-		id: "sanddreams",
-		name: "Sand Dreams",
+		id: "turnabouttorrent",
+		name: "Turnabout Torrent",
 		rating: 2,
 		num: 192
 	},
@@ -1096,28 +1096,7 @@ exports.BattleAbilities = {
 		rating: 2,
 		num: 236
 	},
-	"slowandsteady": {
-		desc: "If a Pokemon uses a Fire- or Ice-type attack against this Pokemon, that Pokemon's attacking stat is halved when calculating the damage to this Pokemon.",
-		shortDesc: "Fire/Ice-type moves against this Pokemon deal damage with a halved attacking stat.",
-		onModifyAtkPriority: 8,
-		onSourceModifyAtk: function(attacker, defender, move) {
-			if (!this.willMove(defender)) {
-				this.debug('Slow and Steady weakens');
-				return this.chainModify(0.5);
-			}
-		},
-		onModifySpAPriority: 8,
-		onSourceModifySpA: function(attacker, defender, move) {
-			if (!this.willMove(defender)) {
-				this.debug('Slow and Steady weakens');
-				return this.chainModify(0.5);
-			}
-		},
-		id: "slowandsteady",
-		name: "Slow And Steady",
-		rating: 3.5,
-		num: 237
-	},
+
 	"errormacro": {
 		desc: "If this Pokemon is an Aegislash, it changes to Blade Forme before attempting to use an attacking move, and changes to Shield Forme before attempting to use King's Shield.",
 		shortDesc: "If Aegislash, changes Forme to Blade before attacks and Shield before King's Shield.",
@@ -1826,22 +1805,41 @@ exports.BattleAbilities = {
 		name: "Sea Monster",
 		},
 
-	/*
-
-
 	"sereneeyes": {
 		shortDesc: "Moves with secondary effect chances have their accuracy doubled.",
 		onModifyMovePriority: -2,
 		onModifyMove: function (move) {
 			if (move.secondaries) {
-				this.debug('sereneeyes - enhancing accuracy');
 			return accuracy * 1.3;
 			}
 		},
 		id: "sereneeyes",
 		name: "Serene Eyes",
 	},
-	"seamonster": {
+	"fromashes": {
+		desc: "If the Pokémon is burned, it will gain 1/8 of its maximum HP at the end of each turn instead of taking damage. The Pokémon with this Ability does not lose Attack due to burn.",
+		shortDesc: "If the Pokémon is burned, it will gain 1/8 of its maximum HP at the end of each turn instead of taking damage. The Pokémon with this Ability does not lose Attack due to burn.",
+		onDamage: function (damage, target, source, effect) {
+			if (effect.id === 'brn') {
+				this.heal(target.maxhp / 8);
+				return false;
+			}
+		},
+		id: "fromashes",
+		name: "From Ashes",
+	},
+	
+	/*slowandsteady: {
+		shortDesc: "This Pokemon takes 1/2 damage from attacks if it moves last.",
+		onModifyDamage: function (damage, source, target, move) {
+			if (target.lastDamage > 0 && source.lastAttackedBy && source.lastAttackedBy.thisTurn && source.lastAttackedBy.pokemon === target) {
+				return this.chainModify(0.5);
+			}
+		},
+		id: "slowandsteady",
+		name: "Slow And Steady",
+	},*/
+	/*"seamonster": {
 		desc: "Lowers opponent's attack one stage upon switching in. Water-type attacks are boosted 10%.",
 		shortDesc: "Lowers opponent's attack one stage upon switching in. Water-type attacks are boosted 10%.",
 		onStart: function (pokemon) {
@@ -1869,18 +1867,7 @@ exports.BattleAbilities = {
 		name: "Sea Monster",
 	},
 
-	"fromashes": {
-		desc: "If the Pokémon is burned, it will gain 1/8 of its maximum HP at the end of each turn instead of taking damage. The Pokémon with this Ability does not lose Attack due to burn.",
-		shortDesc: "If the Pokémon is burned, it will gain 1/8 of its maximum HP at the end of each turn instead of taking damage. The Pokémon with this Ability does not lose Attack due to burn.",
-		onDamage: function (damage, target, source, effect) {
-			if (effect.id === 'brn') {
-				this.heal(target.maxhp / 8);
-				return false;
-			}
-		},
-		id: "fromashes",
-		name: "From Ashes",
-	},
+	
 	"torrenttempo": {
 		shortDesc: "If this Pokemon is confused, it snaps out of that confusion and gains a 50% boost to its Water-moves.",
 		onUpdate: function (pokemon) {
@@ -1900,11 +1887,12 @@ exports.BattleAbilities = {
 		id: "torrenttempo",
 		name: "Torrent Tempo",
 	},
+	// Magic Fat	Thick Fat	Magician	Immune to Fire and Ice type moves as long as it holds an item.
 	// Under Pressure: This Pokemon's status is cured at the end of each turn, but it uses 2 PP every time it attacks.
    // Breaker: This pokemon's attacks aren't hindered by stat boosts, drops or abilities.
 	// Bodyguard: Grants immunity to moves that would lower this Pokemon's stats.
 	// Hammer Space: If its item is used or lost during battle, the item will regenerate after it switches out.
-	// Tangled Flames: This pokemon's fire attacks are boosted 2x when confused. Fire Immunity.
+	
 	// Late Bloomer: Late Bloomer: Has a 30% chance of infatuating the opponent at the end of its turn if it moves last.
 	// Slow and Steady: This Pokemon takes 1/2 damage from attacks if it moves last.
 	// Error Marco: Physical moves hit off of special attack, and vice versa for special attacks. Stance change forms remain.
