@@ -34,14 +34,14 @@ exports.BattlePokedex = {
 			H: "Aftermath"
 		},
 	},
-	weezing: {
+/*	weezing: {
 		inherit: true,
 		types: ["Poison", "Fire", "Luke"],
 		abilities: {
 			0: "Flash Fire",
 			H: "Aftermath"
 		},
-	},
+	},*/
 	// Mega changes
 	charizardmegax: {
 		inerit: true,
