@@ -36,7 +36,7 @@ Ratings and how they work:
 
 */
 
-'use strict';
+/*'use strict';
 
 exports.BattleAbilities = {
 	"adaptability": {
@@ -4201,4 +4201,4 @@ exports.BattleAbilities = {
 		rating: 3.5,
 		num: -4,
 	},
-};
+};*/
