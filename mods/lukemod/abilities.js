@@ -50,7 +50,7 @@ exports.BattleAbilities = {
 		rating: 4,
 		num: 91,
 	},
-	"aftermath": {
+	/*"aftermath": {
 		desc: "If this Pokemon is knocked out with a contact move, that move's user loses 1/4 of its maximum HP, rounded down. If any active Pokemon has the Ability Damp, this effect is prevented.",
 		shortDesc: "If this Pokemon is KOed with a contact move, that move's user loses 1/4 its max HP.",
 		id: "aftermath",
@@ -4200,5 +4200,5 @@ exports.BattleAbilities = {
 		// implemented in the corresponding move
 		rating: 3.5,
 		num: -4,
-	},
+	},*/
 };
