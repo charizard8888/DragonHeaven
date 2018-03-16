@@ -4184,9 +4184,10 @@ exports.Formats = [
   		name: "[Gen 7] G-Luke's Ideal World",
   		desc: ["&bullet; <a href=http://www.smogon.com/forums/threads/g-lukes-ideal-world-v1.3627945/>G-Luke's Ideal World</a>",
 		      ],
-  		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+  		ruleset: ['Gen 7 [OU]'],
 		mod: 'lukemod',
 		banlist: ['Illegal'],
+		unbanlist: ['Blaziken', 'Shaymin-Sky', 'Kangaskhanite', 'Gengarite',],
 		
 	},
 	{
