@@ -38,12 +38,12 @@ exports.BattleItems = {
 		},
 		onAfterDamage: function (damage, target, source, move) {
 			if (move.type === 'Water' && target.useItem()) {
-				this.boost({spa: 1});
+				this.boost({spa: 2});
 			}
 		},
 		num: 545,
 		gen: 5,
-		desc: "Raises holder's Sp. Atk by 1 stage if hit by a Water-type attack. Single use.",
+		desc: "Raises holder's Sp. Atk by 2 stage if hit by a Water-type attack. Single use.",
 	},
 	"adamantorb": {
 		id: "adamantorb",
@@ -299,9 +299,9 @@ exports.BattleItems = {
 		gen: 6,
 		desc: "Holder's Sp. Def is 1.5x, but it can only select damaging moves.",
 	},
-	"combovest": {
-		id: "combovest",
-		name: "Combo Vest",
+	"combatvest": {
+		id: "combatvest",
+		name: "Combat Vest",
 		fling: {
 			basePower: 80,
 		},
@@ -435,12 +435,12 @@ exports.BattleItems = {
 		onTryHeal: function (damage, target, source, effect) {
 			let heals = {drain: 1, leechseed: 1, ingrain: 1, aquaring: 1, strengthsap: 1};
 			if (heals[effect.id]) {
-				return Math.ceil((damage * 1.3) - 0.5); // Big Root rounds half down
+				return Math.ceil((damage * 1.25) - 0.5); // Big Root rounds half down
 			}
 		},
 		num: 296,
 		gen: 4,
-		desc: "Holder gains 1.3x HP from draining/Aqua Ring/Ingrain/Leech Seed/Strength Sap.",
+		desc: "Holder gains 1.25x HP from draining/Aqua Ring/Ingrain/Leech Seed/Strength Sap.",
 	},
 	"bindingband": {
 		id: "bindingband",
@@ -700,12 +700,12 @@ exports.BattleItems = {
 		},
 		onAfterDamage: function (damage, target, source, move) {
 			if (move.type === 'Electric' && target.useItem()) {
-				this.boost({atk: 1});
+				this.boost({atk: 2});
 			}
 		},
 		num: 546,
 		gen: 5,
-		desc: "Raises holder's Attack by 1 if hit by an Electric-type attack. Single use.",
+		desc: "Raises holder's Attack by 2 if hit by an Electric-type attack. Single use.",
 	},
 	"charcoal": {
 		id: "charcoal",
@@ -5204,12 +5204,12 @@ exports.BattleItems = {
 		},
 		onAfterDamage: function (damage, target, source, move) {
 			if (move.type === 'Ice' && target.useItem()) {
-				this.boost({atk: 1});
+				this.boost({atk: 2});
 			}
 		},
 		num: 649,
 		gen: 6,
-		desc: "Raises holder's Attack by 1 if hit by an Ice-type attack. Single use.",
+		desc: "Raises holder's Attack by 2 if hit by an Ice-type attack. Single use.",
 	},
 	"softsand": {
 		id: "softsand",
