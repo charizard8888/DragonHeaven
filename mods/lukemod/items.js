@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 
 exports.BattleItems = {
 	"abomasite": {
@@ -4624,7 +4624,7 @@ exports.BattleItems = {
 			return true;
 		},
 		desc: "If held by a Unown, this item triggers its Primal Reversion in battle.",
-	},*/
+	},
 	"repeatball": {
 		id: "repeatball",
 		name: "Repeat Ball",
@@ -6379,4 +6379,4 @@ exports.BattleItems = {
 		isNonstandard: true,
 		desc: "If held by a Crucibelle, this item allows it to Mega Evolve in battle.",
 	},
-};
+};*/
