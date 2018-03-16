@@ -1,45 +1,55 @@
-/*'use strict';
+'use strict';
 
 exports.BattleStatuses = {
 	chimecho: {
 		onImmunity: function (type, pokemon) {
 			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
 		},
+		},
 	mew: {
 		onImmunity: function (type, pokemon) {
 			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
 		},
+	},
 	gengar: {
 		onImmunity: function (type, pokemon) {
 			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+		},
 		},
 	haunter: {
 		onImmunity: function (type, pokemon) {
 			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
 		},
+		},
 	gastly: {
 		onImmunity: function (type, pokemon) {
 			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+		},
 		},
 	chandelure: {
 		onImmunity: function (type, pokemon) {
 			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
 		},
+		},
 	metagrossmega: {
 		onImmunity: function (type, pokemon) {
 			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+		},
 		},
 	shedinja: {
 		onImmunity: function (type, pokemon) {
 			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
 		},
+		},
 	charizardmegax: {
 		onImmunity: function (type, pokemon) {
 			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
 		},
+		},
 	weezing: {
 		onImmunity: function (type, pokemon) {
 			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
+		},
 		},
 brn: {
 	effectType: 'Status',
@@ -718,4 +728,4 @@ brn: {
 			pokemon.setType(type, true);
 		},
 	},
-};*/
+};
