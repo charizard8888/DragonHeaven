@@ -1,5 +1,5 @@
-'use strict';
-/*
+/*'use strict';
+
 exports.BattleItems = {
 	"abomasite": {
 		id: "abomasite",
@@ -6378,5 +6378,5 @@ exports.BattleItems = {
 		gen: 6,
 		isNonstandard: true,
 		desc: "If held by a Crucibelle, this item allows it to Mega Evolve in battle.",
-	},*/
-};
+	},
+};*/
