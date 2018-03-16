@@ -148,10 +148,10 @@ abilities: {0: "Strong Jaw"},
 heightm: 2.7, 
 weightkg: 52.5, 
 },
-flygommega : {
+flygonmega : {
 num: 330,
-species: "Flygom-Mega",
-baseSpecies: "Flygom",
+species: "Flygon-Mega",
+baseSpecies: "Flygon",
 forme: "Mega",
 formeLetter: "M", 
 types: ["Ground", "Dragon"], 
