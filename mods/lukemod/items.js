@@ -6387,17 +6387,17 @@ return true;
 gen: 7,
 desc: "If holder is a Seviper, this item allows it to Mega Evolve in battle.",
 }, 
-"flygomite": {
-id:"flygomite", 
+"flygonite": {
+id:"flygonite", 
 name:"Flygomite",
-megaStone: "Flygom-Mega", 
-megaEvolves: "Flygom",
+megaStone: "Flygon-Mega", 
+megaEvolves: "Flygon",
 onTakeItem: function (item, source) {
 if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
 return true;
 },
 gen: 7,
-desc: "If holder is a Flygom, this item allows it to Mega Evolve in battle.",
+desc: "If holder is a Flygon, this item allows it to Mega Evolve in battle.",
 }, 
 "hydreigonite": {
 id:"hydreigonite", 
