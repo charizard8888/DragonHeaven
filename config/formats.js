@@ -4186,7 +4186,7 @@ exports.Formats = [
 		      ],
   		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
 		mod: 'lukemod',
-		banlist: ['Illegal'],
+		//banlist: ['Illegal'],
 		// unbanlist: ['Blaziken', 'Shaymin-Sky', 'Kangaskhanite', 'Gengarite',],
 		
 	},
