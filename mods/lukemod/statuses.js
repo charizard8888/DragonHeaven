@@ -1,6 +1,9 @@
 'use strict';
 
 exports.BattleStatuses = {
+	bidestall: {
+		duration: 3,
+	},
 	weezing: {
 		// Weezing: Aftermath
 		onImmunity: function (type, pokemon) {
