@@ -6361,6 +6361,58 @@ exports.BattleItems = {
 		id: "iceskates",
 		name: "Ice Skates",
 	},
+	// New Mega Stones
+	
+"zangooseite": {
+id:"zangooseite", 
+name:"Zangooseite",
+megaStone: "Zangoose-Mega", 
+megaEvolves: "Zangoose",
+onTakeItem: function (item, source) {
+if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+return true;
+},
+gen: 7,
+desc: "If holder is a Zangoose, this item allows it to Mega Evolve in battle.",
+}, 
+	"sevipite": {
+id:"sevipite", 
+name:"Sevipite",
+megaStone: "Seviper-Mega", 
+megaEvolves: "Seviper",
+onTakeItem: function (item, source) {
+if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+return true;
+},
+gen: 7,
+desc: "If holder is a Seviper, this item allows it to Mega Evolve in battle.",
+}, 
+"flygomite": {
+id:"flygomite", 
+name:"Flygomite",
+megaStone: "Flygom-Mega", 
+megaEvolves: "Flygom",
+onTakeItem: function (item, source) {
+if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+return true;
+},
+gen: 7,
+desc: "If holder is a Flygom, this item allows it to Mega Evolve in battle.",
+}, 
+"hydreigonite": {
+id:"hydreigonite", 
+name:"Hydreigonite",
+megaStone: "Hydreigon-Mega", 
+megaEvolves: "Hydreigon",
+onTakeItem: function (item, source) {
+if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+return true;
+},
+gen: 7,
+desc: "If holder is a Hydreigon, this item allows it to Mega Evolve in battle.",
+}, 
+
+
 
 	// CAP items
 
