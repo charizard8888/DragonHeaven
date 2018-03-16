@@ -1,6 +1,6 @@
 'use strict';
 
-exports.BattleStatuses = {
+/*exports.BattleStatuses = {
 	chimecho: {
 		onImmunity: function (type, pokemon) {
 			if (type === 'Ground' && (!this.suppressingAttackEvents() || this.activePokemon === pokemon)) return false;
@@ -717,5 +717,5 @@ brn: {
 			}
 			pokemon.setType(type, true);
 		},
-	},
+	},*/
 };
