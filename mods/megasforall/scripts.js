@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 export.BattleScripts = {
 runMegaEvo: function (pokemon) {
 		if (pokemon.template.isMega || pokemon.template.isPrimal) return false;
