@@ -767,7 +767,7 @@ gutter: function (target, room, user) {
 			let speedtierplus = 2.2 * mon.baseStats.spe + 108.9;
 			let speedtier = 2 * mon.baseStats.spe + 99;
 			let speedtierzero = 2 * mon.baseStats.spe + 36;
-			buf += `${speedtierplusscarf}: Scarf Fast+ ${mon.species}<br>${speedtierscarf}: Scarf Fast ${mon.species}<br>${speedtierplus}: Fast+ ${mon.species}<br>${speedtier}: Fast ${mon.species}<br>${speedtierzero}: Bulky ${mon.species}<br>`;
+			buf += `${speedtierplus}: Fast+ ${mon.species}<br>${speedtier}: Fast ${mon.species}<br>${speedtierzero}: Bulky ${mon.species}<br>`;
 		});
 		this.sendReplyBox(`${buf}</div>`);
 	},
@@ -786,5 +786,19 @@ gutter: function (target, room, user) {
 		});
 		this.sendReplyBox(`${buf}</div>`);
 	},
-	
+	fespeedscarf: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Fusion Evolution Pokemon</h2></center>`;
+		let feDex = require('../mods/fe/pokedex.js').BattlePokedex;
+		if (!feDex) return this.errorReply("Error Fetching FE Data.");
+		Object.values(feDex).forEach(mon => {
+			let speedtierplusscarf = (2.2 * mon.baseStats.spe + 108.9) * 1.5;
+			let speedtierscarf = (2 * mon.baseStats.spe + 99) * 1.5;
+			let speedtierplus = 2.2 * mon.baseStats.spe + 108.9;
+			let speedtier = 2 * mon.baseStats.spe + 99;
+			let speedtierzero = 2 * mon.baseStats.spe + 36;
+			buf += `${speedtierplusscarf}: Scarf Fast+ ${mon.species}<br>${speedtierscarf}: Scarf Fast ${mon.species}<br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
 };
