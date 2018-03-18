@@ -3,12 +3,56 @@
 // The server port - the port to run Pokemon Showdown under
 exports.port = 8000;
 
+// The server address - the address at which Pokemon Showdown should be hosting
+//   This should be kept set to 0.0.0.0 unless you know what you're doing.
+exports.bindaddress = '0.0.0.0';
+
+// workers - the number of networking child processes to spawn
+//   This should be no greater than the number of threads available on your
+//   server's CPU. If you're not sure how many you have, you can check from a
+//   terminal by running:
+//
+//   $ node -e "console.log(require('os').cpus().length)"
+//
+//   Using more workers than there are available threads will cause performance
+//   issues. Keeping a couple threads available for use for OS-related work and
+//   other PS processes will likely give you the best performance, if your
+//   server's CPU is capable of multithreading. If you don't know what any of
+//   this means or you are unfamiliar with PS' networking code, leave this set
+//   to 1.
+exports.workers = 1;
+
+// wsdeflate - compresses WebSocket messages
+//	 Toggles use of the Sec-WebSocket-Extension permessage-deflate extension.
+//	 This compresses messages sent and received over a WebSocket connection
+//	 using the zlib compression algorithm. As a caveat, message compression
+//	 may make messages take longer to procress.
+exports.wsdeflate = null;
+/**exports.wsdeflate = {
+	level: 5,
+	memLevel: 8,
+	strategy: 0,
+	noContextTakeover: true,
+	requestNoContextTakeover: true,
+	maxWindowBits: 15,
+	requestMaxWindowBits: 15,
+};**/
+
+// TODO: allow SSL to actually be possible to use for third-party servers at
+// some point.
+
 // proxyip - proxy IPs with trusted X-Forwarded-For headers
 //   This can be either false (meaning not to trust any proxies) or an array
 //   of strings. Each string should be either an IP address or a subnet given
 //   in CIDR notation. You should usually leave this as `false` unless you
 //   know what you are doing.
 exports.proxyip = false;
+
+// ofe - write heapdumps if sockets.js workers run out of memory.
+//   If you wish to enable this, you will need to install node-oom-heapdump,
+//   as it is sometimes not installed by default:
+//     $ npm install node-oom-heapdump
+exports.ofe = false;
 
 // Pokemon of the Day - put a pokemon's name here to make it Pokemon of the Day
 //   The PotD will always be in the #2 slot (not #1 so it won't be a lead)
@@ -47,7 +91,10 @@ Y929lRybWEiKUr+4Yw2O1W0CAwEAAQ==
 // crashguardemail - if the server has been running for more than an hour
 //   and crashes, send an email using these settings, rather than locking down
 //   the server. Uncomment this definition if you want to use this feature;
-//   otherwise, all crashes will lock down the server.
+//   otherwise, all crashes will lock down the server. If you wish to enable
+//   this setting, you will need to install nodemailer, as it is not installed
+//   by default:
+//     $ npm install nodemailer
 /**exports.crashguardemail = {
 	options: {
 		host: 'mail.example.com',
@@ -95,6 +142,25 @@ exports.reportbattles = true;
 //   Note that the feature of turning this off is deprecated.
 exports.reportbattlejoins = true;
 
+// notify staff when users have a certain amount of room punishments.
+//   Setting this to a number greater than zero will notify staff for everyone with
+//   the required amount of room punishments.
+//   Set this to 0 to turn the monitor off.
+exports.monitorminpunishments = 3;
+
+// allow punishmentmonitor to lock users with multiple roombans.
+//	 When set to `true`, this feature will automatically lock any users with three or more
+//	 active roombans, and notify the staff room.
+//   Note that this requires punishmentmonitor to be enabled, and therefore requires the `monitorminpunishments`
+//   option to be set to a number greater than zero. If `monitorminpunishments` is set to a value greater than 3,
+//   the autolock will only apply to people who pass this threshold.
+exports.punishmentautolock = false;
+
+// restrict sending links to autoconfirmed users only.
+//   If this is set to `true`, only autoconfirmed users can send links to either chatrooms or other users, except for staff members.
+//   This option can be used if your server has trouble with spammers mass PMing links to users, or trolls sending malicious links.
+exports.restrictLinks = false;
+
 // whitelist - prevent users below a certain group from doing things
 //   For the modchat settings, false will allow any user to participate, while a string
 //   with a group symbol will restrict it to that group and above. The string
@@ -107,8 +173,10 @@ exports.reportbattlejoins = true;
 exports.chatmodchat = false;
 // battle modchat - default minimum group for speaking in battles; changeable with /modchat
 exports.battlemodchat = false;
-// pm modchat - minimum group for PMing other users, challenging other users, and laddering
+// pm modchat - minimum group for PMing other users, challenging other users
 exports.pmmodchat = false;
+// ladder modchat - minimum group for laddering
+exports.laddermodchat = false;
 
 // forced timer - force the timer on for all battles
 //   Players will be unable to turn it off.
@@ -174,6 +242,11 @@ exports.tellsexpiryage = 1000 * 60 * 60 * 24 * 7;
 // to send offline messages.
 exports.tellrank = '+';
 
+// autolockdown - whether or not to automatically kill the server when it is
+// in lockdown mode and the final battle finishes.  This is potentially useful
+// to prevent forgetting to restart after a lockdown where battles are finished.
+exports.autolockdown = true;
+
 // Custom avatars.
 // This allows you to specify custom avatar images for users on your server.
 // Place custom avatar files under the /config/avatars/ directory.
@@ -196,18 +269,30 @@ exports.avatarurl = '';
 // tourroom - specify a room to receive tournament announcements (defaults to
 // the room 'tournaments').
 // tourannouncements - announcements are only allowed in these rooms
+// tourdefaultplayercap - a set cap of how many players can be in a tournament
+// ratedtours - toggles tournaments being ladder rated (true) or not (false)
 exports.tourroom = '';
 exports.tourannouncements = [/* roomids */];
+exports.tourdefaultplayercap = 0;
+exports.ratedtours = false;
 
 // appealurl - specify a URL containing information on how users can appeal
 // disciplinary actions on your section. You can also leave this blank, in
 // which case users won't be given any information on how to appeal.
 exports.appealurl = '';
 
+// repl - whether repl sockets are enabled or not
 // replsocketprefix - the prefix for the repl sockets to be listening on
 // replsocketmode - the file mode bits to use for the repl sockets
+exports.repl = true;
 exports.replsocketprefix = './logs/repl/';
 exports.replsocketmode = 0o600;
+
+// disablehotpatchall - disables `/hotpatch all`. Generally speaking, there's a
+// pretty big need for /hotpatch all - convenience. The only advantage any hotpatch
+// forms other than all is lower RAM use (which is only a problem for Main because
+// Main is huge), and to do pinpoint hotpatching (like /nohotpatch).
+exports.disablehotpatchall = false;
 
 // permissions and groups:
 //   Each entry in `grouplist' is a seperate group. Some of the members are "special"
@@ -244,7 +329,6 @@ exports.replsocketmode = 0o600;
 //     - lock: locking (ipmute) and unlocking.
 //     - receivemutedpms: Receive PMs from muted users.
 //     - forcerename: /fr command.
-//     - redirect: /redir command.
 //     - ip: IP checking.
 //     - alts: Alt checking.
 //     - modlog: view the moderator logs.
@@ -310,6 +394,21 @@ exports.grouplist = [
 	},
 	{
 		symbol: '\u2605',
+		id: "host",
+		name: "Host",
+		inherit: '@',
+		jurisdiction: 'u',
+		roommod: true,
+		roomdriver: true,
+		editroom: true,
+		declare: true,
+		modchat: true,
+		roomonly: true,
+		tournamentsmanagement: true,
+		gamemanagement: true,
+	},
+	{
+		symbol: '\u2606',
 		id: "player",
 		name: "Player",
 		inherit: '+',
@@ -351,9 +450,9 @@ exports.grouplist = [
 		inherit: '+',
 		jurisdiction: 'u',
 		announce: true,
-		warn: '\u2605u',
+		warn: '\u2606u',
 		kick: true,
-		mute: '\u2605u',
+		mute: '\u2606u',
 		lock: true,
 		forcerename: true,
 		timer: true,
@@ -377,5 +476,17 @@ exports.grouplist = [
 	{
 		symbol: ' ',
 		ip: 's',
+	},
+	{
+		name: 'Locked',
+		id: 'locked',
+		symbol: '\u203d',
+		punishgroup: 'LOCK',
+	},
+	{
+		name: 'Muted',
+		id: 'muted',
+		symbol: '!',
+		punishgroup: 'MUTE',
 	},
 ];

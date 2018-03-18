@@ -1,6 +1,360 @@
 "use strict";
 
 exports.BattleMovedex = {
+	"smackaround": {
+		accuracy: 100,
+		category: "Physical",
+		id: "smackaround",
+		isViable: true,
+		name: "Smack Around",
+		pp: 15,
+		shortDesc: "Smack Down + Earthquake + Smack Down. Raises Atk and Def by 1 stage.",
+		onTryHit: function (target, pokemon) {
+			this.add('-anim', pokemon, "Catastropika", target);
+			this.useMove("Smack Down", pokemon);
+			this.useMove("Bulk Up", pokemon);
+			this.useMove("Earthquake", pokemon);
+			this.useMove("Smack Down", pokemon);
+			this.add("c|@Iron Crusher|hah, Crushed!");
+		},
+		secondary: false,
+		target: "normal",
+		type: "Steel",
+	},
+		
+	"healingarea": {
+		accuracy: true,
+		category: "Status",
+		id: "healingarea",
+		shortDesc: "Recover, Wish and Grassy Terrain in one move",
+		isViable: true,
+		name: "Healing Area",
+		pp: 5,
+		priority: 0,
+		flags: {},
+		onTryHit: function (target, pokemon) {
+			this.add('-anim', pokemon, "Catastropika", target);
+			this.useMove("Recover", pokemon);
+			this.useMove("Wish", pokemon);
+			this.useMove("Grassy Terrain", pokemon);
+		},
+		secondary: false,
+		target: "normal",
+		type: "Dragon",
+	},
+	"fullhazards" :{
+		accuracy: true,
+		basePower: 0,
+		Category: "Status",
+		desc: "Sets up all hazards",
+		shortDesc: "Sets up all hazards",
+		id: "fullhazards",
+		isViable: true,
+		name: "Full Hazards",
+		pp: 15,
+		priority: 0,
+		flags: {reflectable: 1},
+		onPrepareHit: function (target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Stealth Rock", target);
+			this.add('-anim', source, "Spikes", target);
+			this.add('-anim', source, "Toxic Spikes", target);
+			this.add('-anim', source, "Sticky Web", target);
+		},
+		onHit: function (target, source) {
+			target.side.addSideCondition('toxicspikes', source);
+			target.side.addSideCondition('toxicspikes', source);
+			target.side.addSideCondition('toxicspikes', source);
+			target.side.addSideCondition('spikes', source);
+			target.side.addSideCondition('spikes', source);
+			target.side.addSideCondition('spikes', source);
+			target.side.addSideCondition('stealthrock', source);
+			target.side.addSideCondition('stickyweb', source);
+
+			if (source.name === 'EchoGaia') this.add("c|$EchoGaia|You're screwed now)");
+		},
+		secondary: false,
+		target: "foeSide",
+		type: "Ground",
+		zMoveBoost: {evasion: 1},
+		contestType: "Clever",
+	},
+	"corruptaura": {
+		accuracy: 80,
+		basePower: 140,
+		category: "Physical",
+		desc: "Can hit Ghost Types.",
+		shortDesc: "Can hit Ghost Types.",
+		id: "corruptaura",
+		isViable: true,
+		name: "Corrupt Aura",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, gravity: 1},
+		onPrepareHit: function (target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "High Jump Kick", target);
+		},
+		onEffectiveness: function (typeMod, type) {
+			if (type === 'Ghost') return 0;
+		},
+		secondary: false,
+		target: "normal",
+		type: "Fighting",
+		zMovePower: 195,
+		contestType: "Cool",
+	},
+		"shitpost": {
+		accuracy: true,
+		basePower: 170,
+		category: "Physical",
+		desc: "Targets all foes. Can hit Ghost-types.",
+		shortDesc: "Targets all foes. Can hit Ghost-types.",
+		id: "shitpost",
+		isViable: true,
+		name: "Shitpost",
+		pp: 24,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onEffectiveness: function (typeMod, type) {
+			if (type === 'Ghost') return 1;
+		},
+		onPrepareHit: function (target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "High Jump Kick", target);
+		},
+		target: "allAdjacentFoes",
+		type: "Fighting",
+		zMovePower: 230,
+		contestType: "Tough",
+	},
+	"kneeofjustice": {
+		accuracy: true,
+		basePower: 230,
+		category: "Physical",
+		desc: "Can hit Ghost Types.",
+		shortDesc: "Can hit Ghost Types.",
+		id: "kneeofjustice",
+		isViable: true,
+		name: "Knee of Justice",
+		pp: 1,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onPrepareHit: function (target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Dragon Ascent", target);
+		},
+		secondary: {
+			boosts: {
+				def: -3,
+				spd: -3,
+				atk: -3,
+			},
+		},
+		onEffectiveness: function (typeMod, type) {
+			if (type === 'Ghost') return 1;
+		},
+		secondary: false,
+		target: "normal",
+		type: "Fighting",
+		zMovePower: 230,
+		contestType: "Cool",
+		isZ: "zapmasteriumz",
+	},
+	"thenetherlandsfirst": {
+		accuracy: 100,
+		basePower: 150,
+		category: "Physical",
+		desc: "No additional effect.",
+		shortDesc: "Nearly always goes first.",
+		id: "thenetherlandsfirst",
+		isViable: true,
+		name: "The Netherlands First",
+		pp: 10,
+		priority: 2,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onPrepareHit: function (target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Extreme Speed", target);
+		},
+		self: {
+			boosts: {
+				def: -1,
+				spd: -1,
+			},
+		},
+		secondary: false,
+		target: "normal",
+		type: "Normal",
+		zMovePower: 160,
+		contestType: "Cool",
+	},
+	"superduperwombocombo": {
+		shortDesc: "Uses Nature Power, Weather Ball, Splash, and Belly Drum",
+		accuracy: true,
+		category: "Status",
+		id: "superduperwombocombo",
+		name: "Super Duper Wombo Combo",
+		pp: 5,
+		priority: 0,
+		flags: {},
+		onTryHit: function (target, pokemon) {
+			this.add('-anim', pokemon, "Revelation Dance", target);
+			this.useMove("Nature Power", pokemon);
+			this.useMove("Weather Ball", pokemon);
+			this.useMove("Splash", pokemon);
+			this.useMove("Belly Drum", pokemon);
+		},
+		secondary: false,
+		target: "normal",
+		type: "Dragon",
+	},
+	"zransei": {
+		shortDesc: "Mega evolves Ransei",
+		accuracy: 100,
+		basePower: 300,
+		category: "Special",
+		id: "zransei",
+		isViable: true,
+		name: "Z-Ransei",
+		pp: 10,
+		priority: 1,
+		flags: {authentic: 1},
+		onTryHit: function (target, pokemon) {
+			this.attrLastMove('[still]');
+			pokemon.formeChange('Rayquaza-Mega');
+			this.add('-formechange', pokemon, 'Rayquaza-Mega', '[msg]');
+			this.add('-anim', pokemon, "Dragon Pulse", target);
+		},
+		onAfterHit: function (target, pokemon) {
+			pokemon.formeChange('Rayquaza');
+			this.add('-formechange', pokemon, 'Rayquaza', '[msg]');
+		},
+		target: "allAdjacentFoes",
+		type: "Dragon",
+		isZ: "ransiumz",
+	},
+	"heroicbeatdown": {
+		shortDesc: "Boosts Def, SpD, and Atk by 1 stage and Speed by 2 stages",
+		accuracy: 100,
+		basePower: 120,
+		category: "Physical",
+		id: "heroicbeatdown",
+		isViable: true,
+		name: "Heroic Beatdown",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		self: {
+			boosts: {
+				def: 1,
+				spd: 1,
+				atk: 1,
+				spe: 2,
+			},
+		},
+		onPrepareHit: function (target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Close Combat", target);
+		},
+		secondary: false,
+		target: "normal",
+		type: "Fighting",
+		contestType: "Tough",
+	},
+	"eradicate": {
+		accuracy: 75,
+		basePower: 145,
+		category: "Physical",
+		desc: "This move combines Ground in its type effectiveness against the target. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
+		shortDesc: "Combines Ground in type effectiveness. 33% Recoil.",
+		id: "eradicate",
+		name: "Eradicate",
+		pp: 5,
+		flags: {contact: 1, protect: 1, mirror: 1, gravity: 1, distance: 1, nonsky: 1},
+	        recoil: [1, 3],
+		onEffectiveness: function (typeMod, type, move) {
+			return typeMod + this.getEffectiveness('Ground', type);
+		},
+		priority: 0,
+		secondary: false,
+		target: "allAdjacent",
+		type: "Dragon",
+		zMovePower: 200,
+		contestType: "Cool",
+	},
+	"totalannhilation": {
+		accuracy: true,
+		basePower: 300,
+		category: "Physical",
+		desc: "The user recovers the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+		shortDesc: "User recovers the damage dealt.",
+		id: "totalannhilation",
+		isViable: true,
+		name: "Total Annhilation",
+		pp: 1,
+		priority: 3,
+		ignoreEvasion: true,
+		ignoreDefensive: true,
+		flags: {heal: 1, authentic:1},
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					def: -1,
+					spd: -1,
+					atk: -1,
+					spa: -1,
+				},
+			},
+		},
+		drain: [4, 4],
+		onPrepareHit: function (target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "V-Create", target);
+			this.add('-anim', source, "Extreme Speed", target);
+			this.add('-anim', source, "Gigavolt Havoc", target);
+			this.add('-anim', source, "Explosion", target);
+			this.add("c|~Spandan|YOU DONT MESS WITH ME IDIOT");
+		},
+		onAfterMove: function(target, source, move) {
+			this.add("c|~Spandan|Huh im exhausted.")
+		},
+		type: "Flying",
+		isZ: "salamencite",
+	},
+	"powerlick": {
+		shortDesc: "Drains 25% of the damage dealt",
+		accuracy: 100,
+		basePower: 110,
+		category: "Special",
+		id: "powerlick",
+		name: "Power Lick",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onHit: function (target, source) {
+			if (this.random(10) < 1) {
+				stat = ['par','slp']
+				source.trySetStatus(stat[this.random(2)], target);
+			}
+			if (this.random(10) < 3) {
+				stat = ['atk','def','spa','spd','spe','evasion','accuracy']
+				boostobj = {};
+				boostobj[stat[this.random(6)]] = 1;
+				this.boost(boostobj, source);
+			}
+		},
+		onPrepareHit: function (target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Lick", target);
+		},
+		flags: {contact: 1, protect: 1, mirror: 1, heal: 1},
+		drain: [25, 200],
+		target: "normal",
+		type: "Ice",
+		contestType: "Beautiful",
+	},
 	"blizzard": {
 		num: 59,
 		accuracy: 70,
@@ -25,129 +379,26 @@ exports.BattleMovedex = {
 		type: "Ice",
 		contestType: "Beautiful",
 	},
-	"flirt": {
-		accuracy: 100,
-		basePower: 0,
-		category: "Status",
-		desc: "Causes the target to become infatuated, making it unable to attack 50% of the time. Fails if both the user and the target are the same gender, if either is genderless, or if the target is already infatuated. The effect ends when either the user or the target is no longer active. Pokemon with the Ability Oblivious or protected by the Ability Aroma Veil are immune.",
-		shortDesc: "A target of the opposite gender gets infatuated.",
-		id: "flirt",
-		name: "Flirt",
-		pp: 15,
-		priority: 0,
-		flags: {protect: 1, reflectable: 1, mirror: 1, authentic: 1},
-		volatileStatus: 'attract',
-		effect: {
-			noCopy: true, // doesn't get copied by Baton Pass
-			onStart: function (pokemon, source, effect) {
-				if (!this.runEvent('Attract', pokemon, source)) {
-					this.debug('Attract event failed');
-					return false;
-				}
-			},
-			onUpdate: function (pokemon) {
-				if (this.effectData.source && !this.effectData.source.isActive && pokemon.volatiles['attract']) {
-					this.debug('Removing Attract volatile on ' + pokemon);
-					pokemon.removeVolatile('attract');
-				}
-			},
-			onBeforeMovePriority: 2,
-			onBeforeMove: function (pokemon, target, move) {
-				this.add('-activate', pokemon, 'move: Attract', '[of] ' + this.effectData.source);
-				if (this.random(2) === 0) {
-					this.add('cant', pokemon, 'Attract');
-					return false;
-				}
-			},
-			onEnd: function (pokemon) {
-				this.add('-end', pokemon, 'Attract', '[silent]');
-			},
-		},
-		onPrepareHit: function (target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Attract", target);
-		},
-		secondary: false,
-		target: "normal",
-		type: "Normal",
-		contestType: "Cute",
-	},
-	"forcedassistance": {
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		id: "forcedassistance",
-		isViable: true,
-		name: "Forced Assistance",
-		pp: 15,
-		priority: 0,
-		flags: {snatch: 1},
-		sideCondition: 'tailwind',
-		effect: {
-			onStart: function (side) {
-				this.add('-sidestart', side, 'move: Forced Assistance');
-			},
-			onModifyAtk: function (spe, pokemon) {
-				return this.chainModify(1);
-			},
-			onModifySpa: function (spa, pokemon) {
-				return this.chainModify(1);
-			},
-			onResidualOrder: 21,
-			onResidualSubOrder: 4,
-			onEnd: function (side) {
-				this.add('-sideend', side, 'move: Forced Assistance');
-			},
-		},
-		secondary: false,
-		target: "allySide",
-		type: "Psychic",
-		contestType: "Cool",
-	},
-	"yandereblast": {
+	"hornleech": {
+		num: 532,
 		accuracy: 100,
 		basePower: 120,
-		category: "Special",
-		id: "yandereblast",
-		name: "Yandere Blast",
-		pp: 20,
-                recoil : [2, 5],
-		priority: 0,
-		flags: {protect: 1, mirror: 1},
-		secondary: {
-			chance: 30,
-			volatileStatus: 'confusion',
-		},
-		onPrepareHit: function (target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Night Slash", target);
-		},
-		target: "normal",
-		type: "Water",
-		contestType: "Beautiful",
-	},
-	"bitchslap": {
-		accuracy: 100,
-		basePower: 70,
 		category: "Physical",
-		id: "bitchslap",
-		name: "Bitch Slap",
-		pp: 20,
-                recoil : [2, 5],
+		desc: "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+		shortDesc: "User recovers 50% of the damage dealt.",
+		id: "hornleech",
+		isViable: true,
+		name: "Horn Leech",
+		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
-		secondary: {
-			chance: 20,
-			volatileStatus: 'flinch',
-		},
-		onPrepareHit: function (target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Wake-Up Slap", target);
-		},
+		flags: {contact: 1, protect: 1, mirror: 1, heal: 1},
+		drain: [1, 1],
+		secondary: false,
 		target: "normal",
-		type: "Ice",
-		contestType: "Beautiful",
+		type: "Grass",
+		contestType: "Tough",
 	},
+
 	"partingshotspam": {
 		num: 575,
 		accuracy: 100,
@@ -172,9 +423,10 @@ exports.BattleMovedex = {
 		contestType: "Cool",
 	},
 "theloomeffect": {
+		shortDesc: "Boosts Defense and Special Defense by 2 stages",
 		num: 407,
 		accuracy: 100,
-		basePower: 100,
+		basePower: 110,
 		category: "Special",
 		id: "theloomeffect",
 		name: "The Loom Effect",
@@ -192,14 +444,15 @@ exports.BattleMovedex = {
 		},
 		onPrepareHit: function (target, source) {
 			this.attrLastMove('[still]');
-			this.add('-anim', source, "Bolt Strike", target);
+			this.add('-anim', source, "Core Enforcer", target);
 		},
 		target: "normal",
 		type: "Dragon",
 	},
 	chachadance: {
+		shortDesc: "50% chance to raise the user's speed by 1 stage, confuses and burns it",
 		accuracy: 100,
-		basePower: 100,
+		basePower: 190,
 		category: "Physical",
 		id: "chachadance",
 		name: "Cha Cha Dance",
@@ -213,10 +466,10 @@ exports.BattleMovedex = {
 		},
 		self: {
 	        chance: 50,
-		boosts: {
-			spe: 1,
+			boosts: {
+				spe: 1,
+			},
 		},
-	},
 		onPrepareHit: function (target, source) {
 			this.attrLastMove('[still]');
                         if (source.name == 'Quiet Chimchar') this.add("c|@Quiet Chimchar|I like to Cha Cha");
@@ -225,7 +478,7 @@ exports.BattleMovedex = {
 		type: "Fire",
 		contestType: "Cool",
 	},
-        "rushb": {
+    "rushb": {
 		accuracy: 100,
 		basePower: 250,
 		category: "Special",
@@ -275,7 +528,7 @@ exports.BattleMovedex = {
 	//%Elcrest
 	"turbulence": {
 		accuracy: 100,
-		basePower: 60,
+		basePower: 110,
 		category: "Physical",
 		shortDesc: "Nearly always goes first.",
 		id: "turbulence",
@@ -284,7 +537,7 @@ exports.BattleMovedex = {
 		pp: 10,
 		onPrepareHit: function (target, source, move) {
 			this.attrLastMove('[still]');
-			this.add('-anim', source, "Brave Bird", target);
+			this.add('-anim', source, "Dragon Ascent", target);
 		},
 		priority: 2,
 		flags: {contact: 1, protect: 1, mirror: 1},
@@ -292,34 +545,8 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Flying"
 	},
-	llamadance: {
-		accuracy: 100,
-		basePower: 200,
-		category: "Physical",
-		desc: "If this move is successful, the user must recharge on the following turn and cannot make a move.",
-		shortDesc: "User cannot move next turn.",
-		id: "llamadance",
-		name: "llamadance",
-		pp: 12,
-		priority: 0,
-		ohko: true,
-		flags: {recharge: 1, protect: 1, mirror: 1},
-		self: {
-			volatileStatus: 'mustrecharge',
-		},
-		onHit: function (target, source) {
-			if (source.name == 'iAlain') this.add("c|~iAlain|Let's llamadance");
-		},
-		onPrepareHit: function (target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "earthquake", target);
-		},
-		secondary: false,
-		target: "normal",
-		type: "Dragon",
-		contestType: "Cool",
-	},
 	spacecompress: {
+		shortDesc: "Lowers the foe's Atk, Speed, and Def by 1 stage. Raises the user's SpA by 1 stage and SpD by 2 stages",
 		accuracy: 100,
 		category: "Status",
 		id: "spacecompress",
@@ -336,8 +563,7 @@ exports.BattleMovedex = {
 		self: {
 				boosts: {
 					spa: 1,
-					spd: 1,
-					evasion: 1,
+					spd: 2,
 				},
 			},
 		boosts: {
@@ -350,13 +576,14 @@ exports.BattleMovedex = {
 		type: "Dragon",
 	},
 	ggm8: {
+		shortDesc: "80% Chance to increase the user's speed by one stage, 50% chance to burn the target, has 40% Recoil.",
 		accuracy:100,
 		pp:15,
 		id: "ggm8",
-		name: "ggm8",
+		name: "gg m8",
 		isNonstandard: true,
 		isViable: true,
-		basePower:150,
+		basePower:200,
 		category:"Physical",
 		type:"Dragon",
 		target:"normal",
@@ -368,16 +595,20 @@ exports.BattleMovedex = {
 				},
 			},
 		},
-                recoil : [2, 5],
+                drain : [3, 4],
 		onHit: function (target, source) {
 			if (this.random(2) === 1) target.trySetStatus('brn', source);
 		},
 		onPrepareHit: function (target, source) {
 			this.attrLastMove('[still]');
+			this.add('-anim', source, "Tail Glow", source);
+			this.add('-anim', source, "Beak Blast", source);
 			this.add('-anim', source, "V-Create", target);
+			this.add("c|&charizard8888|gg m8!");
 		},
 	},
 	sacredhax: {
+		shortDesc: "40% Chance to burn the target",
 		accuracy:100,
 		pp:15,
 		id: "sacredhax",
@@ -400,28 +631,30 @@ exports.BattleMovedex = {
 		},
 	},
 	hyperspeedpunch: {
-	accuracy: 100,
-	basePower: 45,
-	category: "Physical",
-	id: "hyperspeedpunch",
-	isViable: true,
-	isNonstandard: true,
-	name: "Hyperspeed Punch",
-	pp: 10,
-	priority: 2,
-	flags: {protect: 1, mirror: 1},
-	onPrepareHit: function (target, source) {
-		this.attrLastMove('[still]');
-		this.add('-anim', source, "Mach Punch", target);
+		shortDesc: "20% chance to flinch the target",
+		accuracy: 100,
+		basePower: 45,
+		category: "Physical",
+		id: "hyperspeedpunch",
+		isViable: true,
+		isNonstandard: true,
+		name: "Hyperspeed Punch",
+		pp: 10,
+		priority: 2,
+		flags: {protect: 1, mirror: 1},
+		onPrepareHit: function (target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Mach Punch", target);
+		},
+		secondary: {
+			chance: 20,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Bug",
 	},
-	secondary: {
-		chance: 20,
-		volatileStatus: 'flinch',
-	},
-	target: "normal",
-	type: "Bug",
-	},
-        garchompepicness: {
+    garchompepicness: {
+	    	shortDesc: "Raises Def, Speed, and SpD by 3 stages and Attack by 4 stages. Sets up 3 layers of Toxic Spikes and Lucky Chant.",
 		accuracy: 100,
 		category: "Status",
 		id: "garchompepicness",
@@ -429,14 +662,15 @@ exports.BattleMovedex = {
 		name: "GARCHOMP EPICNESS",
 		pp: 5,
 		priority: 2,
-		flags: {protect: 1, reflectable: 1, mirror: 1, authentic: 1},
-		self: {boosts: {spe:1, atk:1, def:1}},
+		flags: {mirror: 1, authentic: 1},
+		self: {boosts: {spe:4, atk:4, def:4, spd: 4}},
 		secondary: {
 			self: {
 				boosts: {
-					atk: 1,
-					def: 2,
+					atk: 4,
+					def: 3,
 					spe: 3,
+					spd: 3,
 				},
 			},
 		},
@@ -455,10 +689,10 @@ exports.BattleMovedex = {
 	},
 	"blehflame": {
 		accuracy: 100,
-		basePower: 100,
+		basePower: 160,
 		category: "Special",
-		desc: "Has a 10% chance to raise the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage.",
-		shortDesc: "10% chance to raise all stats by 1 (not acc/eva).",
+		desc: "Has a 40% chance to raise the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage.",
+		shortDesc: "40% chance to raise SpA, Def, SpD, and Speed by 3 stages and Attack by 1 stage",
 		id: "blehflame",
 		isViable: true,
 		name: "Bleh fLame",
@@ -466,18 +700,18 @@ exports.BattleMovedex = {
 		priority: 0,
 		onPrepareHit: function (target, source) {
 			this.attrLastMove('[still]');
-			this.add('-anim', source, "Blue Flare", target);
+			this.add('-anim', source, "Inferno Overdrive", target);
 		},
 		flags: {protect: 1, mirror: 1},
 		secondary: {
-			chance: 40,
+			chance: 50,
 			self: {
 				boosts: {
 					atk: 1,
-					def: 1,
-					spa: 2,
-					spd: 1,
-					spe: 2,
+					def: 3,
+					spa: 3,
+					spd: 3,
+					spe: 3,
 				},
 			},
 		},
@@ -492,7 +726,7 @@ exports.BattleMovedex = {
 		name: "Haxing Rage",
 		isNonstandard: true,
 		isViable: true,
-		basePower:110,
+		basePower:120,
 		category:"Physical",
 		type:"Dragon",
 		target:"normal",
@@ -514,7 +748,7 @@ exports.BattleMovedex = {
 	},
 	"waitandhope": {
 		accuracy: 100,
-		basePower: 130,
+		basePower: 160,
 		category: "Special",
 		id: "waitandhope",
 		name: "Wait and hope",
@@ -559,26 +793,27 @@ exports.BattleMovedex = {
 			status: 'par',
 		},
 		target: "any",
-		type: "Flying",
+		type: "Dragon",
 	},
 	"yomammajoke": {
 		accuracy: 100,
-		basePower: 150,
+		basePower: 180,
 		category: "Physical",
 		desc: "The user recovers 3/4 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
 		shortDesc: "User recovers 75% of the damage dealt.",
 		id: "yomammajoke",
 		isViable: true,
-		name: "Yo MaMMa Joke",
+		name: "Yo Mamma Joke",
 		pp: 10,
 		priority: 1,
-		flags: {protect: 1, mirror: 1, distance: 1, heal: 1},
+		flags: {protect: 1, mirror: 1, distance: 1, heal: 1, sound:1},
 		drain: [3, 4],
 		secondary: false,
 		target: "any",
 		onPrepareHit: function (target, source, move) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Taunt", target);
+			this.add('-anim', source, "Boomburst", target);
 			this.add('-anim', source, "Extreme Speed", target);
 			this.add("c|~Spandan|"+["Yo mama so stupid she got locked in a grocery store and starved!", "Yo mama so fat that the Richie Rich had to pay for her lipo-suction operation.","Yo mama so fat it took her four weeks to die from lethal injection.","Yo mama so fat she sat on an iPhone and turned it into an iPad","Yo mama so fat when she stepped on the scale, the doctor said \"Holy Crap, That's My Phone Number\"","Yo mama so fat she uses Google Earth to take a selfie.","Yo mama so stupid when the computer said \"Press any key to continue\", she couldn't find the \"Any\" key.","Yo mama so bald, I could polish her head and take her bowling.","Yo mama is so ugly, Bob the builder said: 'i can't fix that.'","Yo mama so ugleh, the Illuminati closed its eye.","Yo mama so ugleh, Hello Kitty said goodbye.","Yo mama so ugly, One direction went the other direction."][this.random(12)]);
 		},
@@ -606,7 +841,7 @@ exports.BattleMovedex = {
 		onPrepareHit: function (target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Dragon Dance", source);
-			if (source.name === 'Flygonerz') this.add("c|&Flygonerz|Get re(kt)ddy");
+			if (source.name === 'Kyuramber') this.add("c|&Kyuramber|Get re(kt)ddy");
 			this.useMove('Wish', source);
 		},
 		target: "self",
@@ -651,11 +886,12 @@ exports.BattleMovedex = {
 		self: {
 			boosts: {
 				def: 1,
+				spd: 1,
 			},
 		},
 		onPrepareHit: function (target, source) {
 			this.attrLastMove('[still]');
-			this.add('-anim', source, "Nasty Plot", target);
+			this.add('-anim', source, "Black Hole Eclipse", target);
 		},
 		flags: {protect: 1, mirror: 1},
 		secondary: false,
@@ -751,7 +987,7 @@ exports.BattleMovedex = {
 		contestType: "Tough",
 	},
 	dragonsymphony: {
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 120,
 		category: "Physical",
 		id: "dragonsymphony",
@@ -764,7 +1000,7 @@ exports.BattleMovedex = {
 		flags: {mirror: 1, protect: 1},
 		onPrepareHit: function (target, source) {
 			this.attrLastMove('[still]');
-			this.add('-anim', source, "Crabhammer", target);
+			this.add('-anim', source, "Sunsteel Strike", target);
 		},
 		onHit: function (target, source) {
 			if (toId(source.name) === 'eternalmayhem') {
@@ -776,13 +1012,13 @@ exports.BattleMovedex = {
 			status: 'sleep',
 		},
 		self: {
-	        chance: 40,
+	        chance: 60,
 		boosts: {
-                        atk: 1,
-			spe: 1,
+                        atk: 2,
+			spe: 2,
 		},
 	},
-		recoil: [1, 2],
+		recoil: [1, 5],
 		target: "normal",
 		type: "Dragon",
 	},
@@ -819,6 +1055,51 @@ exports.BattleMovedex = {
 		secondary: false,
 		target: "ghost",
 		type: "Ghost",
+		contestType: "Tough",
+	},
+	girlygirl: {
+		shortDesc: "120 BP Special Normal-type move with 16 PP and 95% accuracy. It's a sound move and raises the user's speed sharply.",
+		accuracy: 100,
+		pp: 15,
+		id: "girlygirl",
+		name: "Girly Girl",
+		isNonstandard: true,
+		isViable: true,
+		basePower:120,
+		category:"Special",
+		type:"Normal",
+		target:"normal",
+		secondary:{
+			chance:100,
+			self: {
+				boosts: {
+					spe: 2, 
+					def: 1,
+				},
+			},
+		},
+		onPrepareHit: function (target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Boomburst", target);
+		},
+	},
+	"stonewrap": {
+		num: 42069,
+		accuracy: 100,
+		basePower: 20,
+		category: "Physical",
+		desc: "Prevents the target from switching for four or five turns; seven turns if the user is holding Grip Claw. Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute. This effect is not stackable or reset by using this or another partial-trapping move.",
+		shortDesc: "Traps and damages the target for 4-5 turns.",
+		id: "stonewrap",
+		name: "Stone Wrap",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		volatileStatus: 'partiallytrapped',
+		secondary: false,
+		target: "normal",
+		type: "Rock",
+		zMovePower: 100,
 		contestType: "Tough",
 	},
 	// Modified moves
@@ -870,4 +1151,14 @@ exports.BattleMovedex = {
 		inherit: true,
 		accuracy: 45,
 	},
+	"toxicspikes": {
+		inherit: true,
+		if (pokemon.hasType('Poison') || pokemon.template.species === 'Shuckle') {
+					this.add('-sideend', pokemon.side, 'move: Toxic Spikes', '[of] ' + pokemon);
+					pokemon.side.removeSideCondition('toxicspikes');
+				} else if (this.effectData.layers >= 2) {
+					pokemon.trySetStatus('tox', pokemon.side.foe.active[0]);
+				} else {
+					pokemon.trySetStatus('psn', pokemon.side.foe.active[0]);
+				}
 };

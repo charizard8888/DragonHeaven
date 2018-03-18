@@ -1,44 +1,62 @@
 'use strict';
 
-exports.BattleScripts = {    
-    init: function()
-    	{
-    			Object.values(this.data.Abilities).forEach(ability => {
-    				if(ability.id=="trace")
-    				{
-    					this.data.Statuses["trace"] = {
-							onUpdate: function (pokemon) {
-								let possibleTargets = [];
-								for (let i = 0; i < pokemon.side.foe.active.length; i++) {
-									if (pokemon.side.foe.active[i] && !pokemon.side.foe.active[i].fainted) possibleTargets.push(pokemon.side.foe.active[i]);
-								}
-								while (possibleTargets.length) {
-									let rand = 0;
-									if (possibleTargets.length > 1) rand = this.random(possibleTargets.length);
-									let target = possibleTargets[rand];
-									let ability = this.getAbility(target.innate);
-									let bannedAbilities = {flowergift:1, forecast:1, illusion:1, imposter:1, multitype:1, stancechange:1, trace:1, zenmode:1};
-									if (bannedAbilities[target.innate]) {
-										possibleTargets.splice(rand, 1);
-										continue;
-									}
-									this.add('-ability', pokemon, ability, '[from] ability: Trace', '[of] ' + target);
-									pokemon.removeVolatile(pokemon.innate);
-									pokemon.innate = ability.id;
-									pokemon.addVolatile(ability.id);
-									return;
-								}
-							},
-							id: "trace",
-							name: "Trace",
-							effectType: "Ability",
-						}
-    				}
-    				else
-    				{
-    					this.data.Statuses[ability.id] = ability;
-    					this.data.Statuses[ability.id].effectType = "Ability";
-    				}
-    			});
-    	},
-}
+exports.BattleScripts = {
+	getEffect: function (name) {
+		if (name && typeof name !== 'string') {
+			return name;
+		}
+		let id = toId(name);
+		if (id.startsWith('ability')) return Object.assign(Object.create(this.getAbility(id.slice(7))), {id});
+		return Object.getPrototypeOf(this).getEffect.call(this, name);
+	},
+	pokemon: {
+		setAbility: function (ability, source, isFromFormechange) {
+			if (!this.hp) return false;
+			ability = this.battle.getAbility(ability);
+			let oldAbility = this.ability;
+			if (!isFromFormechange) {
+				if (['illusion', 'battlebond', 'comatose', 'disguise', 'multitype', 'powerconstruct', 'rkssystem', 'schooling', 'shieldsdown', 'stancechange'].includes(ability.id)) return false;
+				if (['battlebond', 'comatose', 'disguise', 'multitype', 'powerconstruct', 'rkssystem', 'schooling', 'shieldsdown', 'stancechange'].includes(oldAbility)) return false;
+			}
+			this.battle.singleEvent('End', this.battle.getAbility(oldAbility), this.abilityData, this, source);
+			let ally = this.side.active.find(ally => ally && ally !== this && !ally.fainted);
+			if (ally && ally.innate) {
+				ally.removeVolatile(ally.innate);
+				delete ally.innate;
+			}
+			this.ability = ability.id;
+			this.abilityData = {id: ability.id, target: this};
+			if (ability.id) {
+				this.battle.singleEvent('Start', ability, this.abilityData, this, source);
+				if (ally && ally.ability !== this.ability) {
+					ally.innate = 'ability' + ability.id;
+					ally.addVolatile(ally.innate);
+				}
+			}
+			this.abilityOrder = this.battle.abilityOrder++;
+			return oldAbility;
+		},
+		hasAbility: function (ability) {
+			if (!this.ignoringAbility()) {
+				if (Array.isArray(ability) ? ability.map(toId).includes(this.ability) : toId(ability) === this.ability) {
+					return true;
+				}
+			}
+			let ally = this.side.active.find(ally => ally && ally !== this && !ally.fainted);
+			if (!ally || ally.ignoringAbility()) return false;
+			if (Array.isArray(ability)) return ability.map(toId).includes(ally.ability);
+			return toId(ability) === ally.ability;
+		},
+		getRequestData: function () {
+			let ally = this.side.active.find(ally => ally && ally !== this && !ally.fainted);
+			this.moveSlots = this.baseMoveSlots.concat(ally ? ally.baseMoveSlots : []);
+			for (const moveSlot of this.moveSlots) {
+				moveSlot.disabled = false;
+				moveSlot.disabledSource = '';
+			}
+			this.battle.runEvent('DisableMove', this);
+			if (!this.ateBerry) this.disableMove('belch');
+			return Object.getPrototypeOf(this).getRequestData.call(this);
+		},
+	},
+};

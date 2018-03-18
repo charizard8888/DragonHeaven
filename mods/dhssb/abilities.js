@@ -1,26 +1,199 @@
 'use strict';
 
 exports.BattleAbilities = {
-	shellarmorclone: {
-		onCriticalHit: false,
-		onModifyMove: function (move) {
-			move.willCrit = true;
-			if (move.secondaries) {
-				for (var i = 0; i < move.secondaries.length; i++) {
-					move.secondaries[i].chance = 100;
+	
+	"supremeshield": {
+		shortDesc: "Halves the damage of all supereffective moves.",
+		onSourceModifyDamage: function (damage, source, target, move) {
+			if (move.typeMod > 0) {
+				return this.chainModify(0.5);
+			}
+		},
+		id: "supremeshield",
+		name: "Supreme Shield",
+	},
+	"xremebulk": {
+		name:"Xreme Bulk",
+		id: "xremebulk",
+		shortDesc: "Damage taken 30%, negates Recoil, increases all damage dealt by 1.3x, immune to Burn, cannot be negated/ignored",
+		desc: "Damage taken 30%, negates Recoil, increases all damage dealt by 1.3x, immune to Burn, cannot be negated/ignored",
+		onBasePower: function (basePower, attacker, defender, move) {
+				return this.chainModify([0x14CD, 0x1000]);
+		},
+		onDamage: function (damage, target, source, effect) {
+			if (effect.id === 'recoil' && this.activeMove.id !== 'struggle') return null;
+		},
+		onUpdate: function (pokemon) {
+			if (pokemon.status === 'brn') {
+				this.add('-activate', pokemon, 'ability: Xreme Bulk');
+				pokemon.cureStatus();
+			}
+		},
+		onSetStatus: function (status, target, source, effect) {
+			if (status.id !== 'brn') return;
+			if (!effect || !effect.status) return false;
+			this.add('-immune', target, '[msg]', '[from] ability: Xreme Bulk');
+			return false;
+		},
+	},
+	"punishmentprize": {
+		desc: "If this Pokemon is Zap, it transforms into Zap-Pineapple after knocking out a Pokemon.",
+		shortDesc: "After KOing a Pokemon: becomes Zap-Pineapple. +1 all stats.",
+		onSourceFaint: function (target, source, effect) {
+			if (effect && effect.effectType === 'Move' && source.template.speciesid === 'scrafty' && source.hp && !source.transformed && source.side.foe.pokemonLeft) {
+				this.add('-activate', source, 'ability: Punishment Prize');
+				let template = this.getTemplate('Zapmaster-Pineapple');
+				source.formeChange(template);
+				source.baseTemplate = template;
+				source.details = template.species + (source.level === 100 ? '' : ', L' + source.level) + (source.gender === '' ? '' : ', ' + source.gender) + (source.set.shiny ? ', shiny' : '');
+				this.add('detailschange', source, source.details);
+			}
+		},
+		
+		id: "punishmentprize",
+		name: "Punishment Prize",
+		rating: 3,
+		num: 210,
+	},
+	"moonlightguard": {
+		name:"Moonlight Aura",
+		id: "moonlightaura",
+		shortDesc: "Raises SpD and Def by 2 stages upon switchin and removes all status conditions after the end of the turn",
+		desc: "Raises SpD and Def by 2 stages upon switchin and removes all status conditions after the end of the turn",
+		onStart: function(pokemon) {
+			this.add('-ability', pokemon, 'Moonlight Aura');
+			this.boost({def:2, spd:2});
+		},
+		
+	},
+	"extremeintimidate": { /* Fix this On switchin --> Haze --> Lower all of th foe's stats by one*/
+		name:"Extreme Intimidate",
+		id:"extremeintimidate",
+		onStart: function (pokemon) {
+			this.add('-clearallboost');
+			for (let i = 0; i < this.sides.length; i++) {
+				for (let j = 0; j < this.sides[i].active.length; j++) {
+					if (this.sides[i].active[j] && this.sides[i].active[j].isActive) this.sides[i].active[j].clearBoosts();
+				}
+			}
+			let foeactive = pokemon.side.foe.active;
+			let activated = false;
+			for (let i = 0; i < foeactive.length; i++) {
+				if (!foeactive[i] || !this.isAdjacent(foeactive[i], pokemon)) continue;
+				if (!activated) {
+					this.add('-ability', pokemon, 'Extreme Intimidate', 'boost');
+					activated = true;
+				}
+				if (foeactive[i].volatiles['substitute']) {
+					this.add('-immune', foeactive[i], '[msg]');
+				} else {
+					this.boost({atk: -1, def: -1, spa: -1, spd: -1, spe: -1}, foeactive[i], pokemon);
 				}
 			}
 		},
-		id: "shellarmorclone",
-		name: "Shell Armor",
-		rating: 1,
-		num: 1075,
 	},
-	//%Elcrest
-                "waterchange": {
-                     shortDesc: "If user is Elcrest and Rain Dance is active, it changes to Gyarados and it and allies' Attack and Speed are 1.5x.",
-                     onStart: function (pokemon) {
-			  delete this.effectData.forme;
+	"rawr": {
+		shortDesc: "Thick Fat + Clear Body",
+		onStart: function(pokemon) {
+			this.add('-ability', pokemon, 'Rawr');
+			this.add('-formechange', pokemon, 'Sharpedo-Mega', '[msg]');
+			this.add('-formechange', pokemon, 'Absol-Mega', '[msg]');
+			this.add('-formechange', pokemon, 'Zygarde-Complete', '[msg]');
+			pokemon.formeChange("Zygarde-Complete");
+		},
+		onSourceModifyAtk: function (atk, attacker, defender, move) {
+			if (move.type === 'Ice' || move.type === 'Fire') {
+				this.debug('Rawr weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onSourceModifySpA: function (atk, attacker, defender, move) {
+			if (move.type === 'Ice' || move.type === 'Fire') {
+				this.debug('Rawr weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		onBoost: function (boost, target, source, effect) {
+			if (source && target === source) return;
+			let showMsg = false;
+			for (let i in boost) {
+				if (boost[i] < 0) {
+					delete boost[i];
+					showMsg = true;
+				}
+			}
+			if (showMsg && !effect.secondaries) this.add("-fail", target, "unboost", "[from] ability: Rawr", "[of] " + target);
+		},
+		name:"Rawr",
+		id:"rawr",
+	},
+	"contraryplusplus": {
+		onModifyMove: function(move, pokemon) {
+			move.ignoreAbility = true;
+		},
+		onBoost: function (boost, target, source, effect) {
+			if (effect && effect.id === 'zpower') return;
+			for (let i in boost) {
+				boost[i] *= -1;
+			}
+		},
+		shortDesc: 'Contrary + Mold breaker.',
+		desc: 'Contrary + Mold breaker.',
+		id: "contraryplusplus",
+		name: "Contrary Plus Plus",
+	},
+	"ultratechnical": {
+		onBasePowerPriority: 8,
+		onBasePower: function (basePower, attacker, defender, move) {
+			if (basePower <= 90) {
+				this.debug('Technician boost');
+				return this.chainModify(1.5);
+			}
+		},
+		id: "ultratechnical",
+		name: "Ultra Technical",
+	},
+	"dankzone": {
+		shortDesc: "Truggets Grassy Terrain, Sunny Day and Trick Room on switch in",
+		onStart: function(pokemon) {
+			this.add('-ability', pokemon, 'Dank Zone');
+			this.addPseudoWeather('trickroom', pokemon);
+			this.setWeather('sunnyday');
+			this.setTerrain('grassyterrain');
+		},
+		name: 'Dank Zone',
+		id: 'dankzone',
+	},
+	"staticboost": {
+		shortDesc: "+1 in all stats upon switch in",
+		onStart: function (pokemon) {
+			this.add('-ability', pokemon, 'Static Boost');
+			this.boost({atk:1, def:1, spa:1, spd:1, spe:1, accuracy:2});
+		},
+		id:'staticboost',
+		name:'Static Boost',
+	},
+	"phantomguard": {
+		shortDesc: "This Pokemon can only be damaged by supereffective moves and indirect damage.",
+		onStart: function (pokemon) {
+			this.boost({def:3});
+		},
+		onTryHit: function (target, source, move) {
+			if (target.runEffectiveness(move) = 1) {
+				this.add('-immune', target, '[msg]', '[from] ability: Phantom Guard');
+				return null;
+			}
+		},
+		id: "phantomguard",
+		name: "Phantom Guard",
+		rating: 5,
+		num: 25,
+	},
+	"waterchange": {
+			shortDesc: "If user is Elcrest and Rain Dance is active, it changes to Gyarados and it and allies' Attack and Speed are 1.5x.",
+			onStart: function (pokemon) {
+			delete this.effectData.forme;
 		},
 		onUpdate: function (pokemon) {
 			if (!pokemon.isActive || pokemon.baseTemplate.speciesid !== 'dratini') return;
@@ -78,6 +251,7 @@ exports.BattleAbilities = {
 		name: "Russian Winter",
 	},
         "flairhax": {
+		shortDesc: "Serene Grace and Protean with +2 Speed on switch in",
 		onModifyMovePriority: -2,
 		onModifyMove: function (move) {
 			if (move.secondaries) {
@@ -102,6 +276,7 @@ exports.BattleAbilities = {
 		name: "Flair Hax",
 	},
 	pressurebreaker: {
+		shortDesc: "Pressure + Mold Breaker",
 		onStart: function (pokemon) {
 			this.add('-ability', pokemon, 'Pressure');
 			this.add('-ability', pokemon, 'Mold Breaker');
@@ -110,7 +285,9 @@ exports.BattleAbilities = {
 			if (target.side === source.side) return;
 			return 1;
 		},
-		stopAttackEvents: true,
+		onModifyMove: function(move, pokemon) {
+			move.ignoreAbility = true;
+		},
 		id: "pressurebreaker",
 		name: "Pressure Breaker",
 		rating: 1.5,
@@ -164,27 +341,8 @@ exports.BattleAbilities = {
 		id: "flameguard",
 		name: "Flame Guard",
 	},
-	discoverme: {
-		onTryHit: function (target, source, move) {
-			if (target !== source && (move.type === 'Water')) {
-				if (!this.heal(target.maxhp  / 20)) {
-					this.add('-immune', target, '[msg]', '[from] ability: discover me');
-				}
-				return null;
-			}
-		},
-                onSourceModifyDamage: function (damage, source, target, move) {
-			if (move.type== "Dragon") {
-				this.debug('discover me weaken');
-				return this.chainModify(0.5);
-			}
-		},
-		id: "discoverme",
-		name: "discover me",
-		rating: 3.5,
-		num: 10,
-	},
 	breakthrough: {
+		shortDesc: "This Pokemon's moves ignores type immunities",
 		onModifyMovePriority: -5,
 		onModifyMove: function (move) {
 			if (!move.ignoreImmunity) move.ignoreImmunity = {};
@@ -209,6 +367,7 @@ exports.BattleAbilities = {
 		rating: 3,
 	},
 	toughbounce: {
+		shortDesc: "Tough Claws + Magic Bounce + Own Tempo",
 	        onBasePowerPriority: 8,
 		onBasePower: function (basePower, attacker, defender, move) {
 			if (move.flags['contact']) {
@@ -256,6 +415,7 @@ exports.BattleAbilities = {
 		rating: 5,
 	},
 	breakingpoint: {
+		shortDesc: "Shadow Tag + No Guard",
 		onFoeTrapPokemon: function (pokemon) {
 			if ((!pokemon.hasAbility('shadowtag')&&!pokemon.hasAbility('breakingpoint')) && this.isAdjacent(pokemon, this.effectData.target)) {
 				pokemon.tryTrap(true);
@@ -278,6 +438,7 @@ exports.BattleAbilities = {
 		rating: 2,
 	},
 	"theunderlord": {
+		shortDesc: "Flame Body + changes type to resist the opposing Pokemon's last attack.",
 		onAfterDamage: function (damage, target, source, move) {
 			if (move && move.flags['contact']) {
 				if (parseInt(this.random(10)) == 7) {
@@ -302,14 +463,17 @@ exports.BattleAbilities = {
 				return false;
 			}
 			let randomType = possibleTypes[this.random(possibleTypes.length)];
-
-			if (!source.setType(randomType)) return false;
+			target.types = [].push(randomType);
 			this.add('-start', target, 'typechange', randomType);
+		},
+		onSwitchOut: function(pokemon) {
+			pokemon.types = pokemon.baseTemplate.types;
 		},
 		id: "theunderlord",
 		name: "The Underlord",
 	},
 	epicclaws: {
+		shortDesc: "Tough Claws + Magic Bounce",
 		onModifyAtkPriority: 5,
 		onModifyAtk: function (atk) {
 			return this.chainModify(1.5);
@@ -321,6 +485,7 @@ exports.BattleAbilities = {
 			}
 			let newMove = this.getMoveCopy(move.id);
 			newMove.hasBounced = true;
+			
 			this.useMove(newMove, target, source);
 			return null;
 		},
@@ -361,7 +526,9 @@ exports.BattleAbilities = {
 		onStart: function (pokemon) {
 			this.add('-ability', pokemon, 'Wonder Breaker');
 		},
-		stopAttackEvents: true,
+		onModifyMove: function(move, pokemon) {
+			move.ignoreAbility = true;
+		},
 		onAnyModifyBoost: function (boosts, target) {
 			let source = this.effectData.target;
 			if (source === target) return;
@@ -412,6 +579,7 @@ exports.BattleAbilities = {
 		},
 	},
 	blessedhax: {
+		shortDesc: "Speed Boost + Serne Grace and +1 Def and SpD boost on switch in",
 		onStart: function (pokemon) {
 			this.boost({def:1,spd:1});
 		},
@@ -433,6 +601,7 @@ exports.BattleAbilities = {
 		name:'Blessed Hax',
 	},
 	knowledge: {
+		shortDesc: "+3 Def and SpD on switch in, high crit ratio",
 		onStart: function (pokemon) {
 			this.boost({def:3,spd:3});
 		},
@@ -447,6 +616,7 @@ exports.BattleAbilities = {
 		},
 	},
 	'partingshotspam': {
+		shortDesc: "Uses Parting Shot on switch in",
 		onStart: function (source) {
 			this.useMove('Parting Shot Spam', source);
 		},
@@ -454,6 +624,7 @@ exports.BattleAbilities = {
 		name: "Parting Shot Spam",
 	},
 	'hidden': {
+		shortDesc: "Uses substitute on switch in",
 		onStart: function (source) {
 			this.useMove('Substitute', source);
 		},
@@ -472,6 +643,7 @@ exports.BattleAbilities = {
 		num: 83,
 	},
 	'slowchat': {
+		shortDesc: "Uses Defog, Sticky Web then Stealth Rock on switch in",
 		onStart: function (source) {
 			this.useMove('Defog', source);
 			this.useMove('Sticky Web', source);
@@ -480,5 +652,59 @@ exports.BattleAbilities = {
 		id: "slowchat",
 		name: "Slowchat",
 	},
-
+	"girlpower": {
+		shortDesc: "+1 Def on switch in + Fairy Aura + Pixilate",
+		onStart: function (source) {
+      this.useMove('Barrier', source);
+		},
+		onAnyBasePower: function (basePower, source, target, move) {
+			if (target === source || move.category === 'Status' || move.type !== 'Fairy' || move.auraBoost) return;
+			move.auraBoost = move.hasAuraBreak ? 0x0C00 : 0x1547;
+			return this.chainModify([move.auraBoost, 0x1000]);
+		},
+		isUnbreakable: true,
+		onModifyMove: function (move, pokemon) {
+			if (move.type === 'Normal' && !['judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'weatherball'].includes(move.id) && !(move.isZ && move.category !== 'Status')) {
+				move.type = 'Fairy';
+				move.pixilateBoosted = true;
+			}
+		},
+		onBasePowerPriority: 8,
+		onBasePower: function (basePower, pokemon, target, move) {
+			if (move.pixilateBoosted) return this.chainModify([0x1333, 0x1000]);
+		},
+		id:'girlpower',
+		name:'Girl Power', 
+	},
+   'juicedrink': {
+		shortDesc: "Immunity + Unaware",
+		onAnyModifyBoost: function (boosts, target) {
+            let source = this.effectData.target;
+            if (source === target) return;
+            if (source === this.activePokemon && target === this.activeTarget) {
+                boosts['def'] = 0;
+                boosts['spd'] = 0;
+                boosts['evasion'] = 0;
+            }
+            if (target === this.activePokemon && source === this.activeTarget) {
+                boosts['atk'] = 0;
+                boosts['spa'] = 0;
+                boosts['accuracy'] = 0;
+            }
+        },
+      onUpdate: function (pokemon) {
+            if (pokemon.status === 'psn' || pokemon.status === 'tox') {
+                this.add('-activate', pokemon, 'ability: Juice Drink');
+                pokemon.cureStatus();
+            }
+        },
+      onSetStatus: function (status, target, source, effect) {
+          if (status.id !== 'psn' && status.id !== 'tox') return;
+          if (!effect || !effect.status) return false;
+          this.add('-immune', target, '[msg]', '[from] ability: Juice Drink');
+          return false;
+      },
+		id: "juicedrink",
+		name: "Juice Drink",
+	},
 };

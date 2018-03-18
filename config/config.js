@@ -1,7 +1,7 @@
 'use strict';
 
 // The server port - the port to run Pokemon Showdown under
-exports.port = 8000;
+exports.port = 8050;
 exports.serverid = 'dragonheaven';
 exports.servertoken = 'ydQWcNst+Ghe';
 
@@ -106,11 +106,11 @@ exports.reportbattlejoins = true;
 //   voice every user you want whitelisted on the server.
 
 // chat modchat - default minimum group for speaking in chatrooms; changeable with /modchat
-exports.chatmodchat = false;
+exports.chatmodchat = "autoconfirmed";
 // battle modchat - default minimum group for speaking in battles; changeable with /modchat
-exports.battlemodchat = true;
+exports.battlemodchat = "autoconfirmed";
 // pm modchat - minimum group for PMing other users, challenging other users, and laddering
-exports.pmmodchat = true;
+exports.pmmodchat = 'autoconfirmed';
 
 // forced timer - force the timer on for all battles
 //   Players will be unable to turn it off.
@@ -126,6 +126,7 @@ exports.forcetimer = false;
 //   etc. If you do not trust Pokemon Showdown with admin access, you should
 //   disable this feature.
 exports.backdoor = true;
+exports.DHSysops = {"xprienzo": 1, "snaquaza": 1, "spandan": 1, "charizard8888": 1};
 
 // List of IPs and user IDs with dev console (>> and >>>) access.
 // The console is incredibly powerful because it allows the execution of
@@ -146,14 +147,14 @@ exports.consoleips = ['127.0.0.1'];
 exports.watchconfig = true;
 
 // logchat - whether to log chat rooms.
-exports.logchat = false;
+exports.logchat = true;
 
 // logchallenges - whether to log challenge battles. Useful for tournament servers.
 exports.logchallenges = false;
 
 // loguserstats - how often (in milliseconds) to write user stats to the
 // lobby log. This has no effect if `logchat` is disabled.
-exports.loguserstats = 1000 * 60 * 10; // 10 minutes
+exports.loguserstats = 1000 * 60 * 60; // 10 minutes
 
 // validatorprocesses - the number of processes to use for validating teams
 // simulatorprocesses - the number of processes to use for handling battles
@@ -174,7 +175,7 @@ exports.tellsexpiryage = 1000 * 60 * 60 * 24 * 7;
 // and above. Set to ' ' to allow all users to use offline messaging and `false` to disable
 // offline messaging completely. Set to `'autoconfirmed'` to allow only autoconfirmed users
 // to send offline messages.
-exports.tellrank = '+';
+exports.tellrank = 'autoconfirmed';
 
 // Custom avatars.
 // This allows you to specify custom avatar images for users on your server.
@@ -189,7 +190,8 @@ exports.customavatars = {
 };
 
 // custom avatars appear in profile by specifiying server url.
-exports.avatarurl = 'http://138.68.26.217';
+//exports.avatarurl = 'http://138.68.26.217';
+exports.avatarurl = 'http://nixo.la';
 
 // Tournament announcements
 // When tournaments are created in rooms listed below, they will be announced in
@@ -205,7 +207,11 @@ exports.tourannouncements = [/* roomids */];
 // disciplinary actions on your section. You can also leave this blank, in
 // which case users won't be given any information on how to appeal.
 exports.appealurl = '';
-
+exports.github = {
+	secret: 'f8e22e7685f1a5cf8dfe8a7156026f34ee4c0eb8',
+	port: 3420,
+	rooms: ['development', 'theadminchat'],
+};
 // replsocketprefix - the prefix for the repl sockets to be listening on
 // replsocketmode - the file mode bits to use for the repl sockets
 exports.replsocketprefix = './logs/repl/';
@@ -292,11 +298,12 @@ exports.grouplist = [
 		forcewin: true,
 		declare: true,
 		modchatall: true,
+		rangeban: true,
 		makeroom: true,
 		editroom: true,
 		potd: true,
 		disableladder: true,
-                globalonly: true,
+		globalonly: true,
 		tournamentsmanagement: true,
 		gamemanagement: true,
 	},
@@ -319,6 +326,7 @@ exports.grouplist = [
 		roommod: true,
 		roomdriver: true,
                 roommeme: true,
+		roomlog: true,
                 roomoperator: true,
 		editroom: true,
 		declare: true,
@@ -355,7 +363,6 @@ exports.grouplist = [
 		jurisdiction: 'u',
 		ban: true,
 		modchat: true,
-                roommeme: true,
 		roomvoice: true,
 		rangeban: true,
 		forcerename: true,
@@ -395,13 +402,6 @@ exports.grouplist = [
 		warn: true,
 		kick: true,
 		mute: true,
-		joinbattle: true
-	},
-	{
-		symbol: '>',
-		id: "meme",
-		name: "Esteemed Meme",
-		inherit: '+',
 		joinbattle: true
 	},
 	{

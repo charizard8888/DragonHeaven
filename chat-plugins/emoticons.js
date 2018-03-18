@@ -54,7 +54,7 @@ if (typeof demFeels.extendEmotes === 'function') {
 		'feelsrip':'http://i.imgur.com/ljl6Sfd.png',
 		'feelspoak':'http://i.imgur.com/jElHTOv.png',
 		'angryblanc': 'http://i.imgur.com/T5k0Tzq.png',
-		'(kappa)': 'http://i.imgur.com/ZxRU4z3.png?1',
+		'Kappa': 'http://i.imgur.com/ZxRU4z3.png?1',
 		'rainbowunicorn': 'http://media.boingboing.net/wp-content/uploads/2015/07/unicorn_riding_rainbow_by_k_rui-d3lmuln.gif',
 		'buttslappichu': 'http://i364.photobucket.com/albums/oo87/TailsTheFoxPrower/PAPSAV1.gif',
 		'dratinievolution': 'https://media0.giphy.com/media/huzj19aPb2EFO/200_s.gif',
@@ -90,7 +90,32 @@ if (typeof demFeels.extendEmotes === 'function') {
 		'llamacry': 'http://i.imgur.com/YWfKiyb.gif',
 		'llamamad': 'http://i.imgur.com/M4qpLQd.gif',
 		'gudone':'http://i.imgur.com/USkp1b9.png',
+		'feelsbadman':'http://i.imgur.com/xwfJb2z.png',
+		'Orly':'http://vignette3.wikia.nocookie.net/uncyclopedia/images/4/4a/Orly_owl.jpg/revision/latest?cb=20051112001744',
+		'llamanoodle':'http://i.imgur.com/SUZkz5p.gif',
+		'feelsbald':'http://i.imgur.com/Gv2BFxs.png',
+		'feelsflip':'http://i.imgur.com/uIIBChH.png',
+		'feelslag':'https://cdn.betterttv.net/emote/56758c29bf317838643c7e97/2x',
+		'Sanic':'http://i.imgur.com/Y6etmna.png',
+		'feelstab':'http://www.sherv.net/cm/emoticons/fighting/stabbing.gif',
+		'feelshigh':'http://i.imgur.com/s9I2bxp.jpg?1',
+		'feelskaneki':'http://i.imgur.com/h97QxFN.png',
+		'llamaconfuse':'http://orig01.deviantart.net/7863/f/2013/347/1/6/llama_emoji_38__confused___v2__by_jerikuto-d6uwuuu.gif',
 		'xoxo':'http://i.imgur.com/Yyw9ICj.png',
+		'feelsxp': 'http://i.imgur.com/sTXEtjS.jpg',
+		'feelsfab': 'http://i.imgur.com/vCPgsQA.jpg',
+		'eeveelutions!':'http://2.media.dorkly.cvcdn.com/25/38/4d9df0e6985ab9e9218f3874ccf9649d.gif',
+		'feelsluke':'http://i.imgur.com/ZQbYp9l.gif',
+		'getinthebag':'https://68.media.tumblr.com/209d1a0a125da03b7afcbd53316374c2/tumblr_ohuza1t4MW1qeb3ulo1_500.gif',
+		'oshat':'http://www.geekinsider.com/wp-content/uploads/2013/10/tumblr_mvblw72CTf1sal1obo1_400.gif',
+		'wowwy':'https://media.giphy.com/media/RfprItHPpSCf6/giphy.gif',
+		'feelszard':'http://i.imgur.com/SSJoM7P.gif',
+		'<3':'http://cliparts.co/cliparts/Rkc/M7K/RkcM7KXTj.png',
+		'feelsshivam':'http://i.imgur.com/jTTPtyW.jpg?1',
+		'Doge':'http://i.imgur.com/jfVcWbz.jpg',
+		'doge':'http://i.imgur.com/cUWrvHv.png',
+		'feelsweird':'https://cdn.betterttv.net/emote/5603731ce5fc5eff1de93229/2x',
+		'feelspika':'http://i.imgur.com/mBq3BAW.png',
 	});
 }
 
@@ -108,8 +133,8 @@ const emotesKeys = Object.keys(emotes).sort();
 * @returns {Boolean|String}
 */
 function parseEmoticons(message, room, user, pm) {
-	if (typeof message !== 'string' || (!pm && room.disableEmoticons)) return false;
-
+	if (room) if (typeof message !== 'string' || (!pm && room.disableEmoticons)) return false;
+	
 	let match = false;
 	let len = emotesKeys.length;
 
@@ -121,19 +146,32 @@ function parseEmoticons(message, room, user, pm) {
 	}
 
 	if (!match) return false;
-
+	
+	// Disallow emotes in /announce because that breaks everything
+	if (message.startsWith("/announce")) return false;
+	
 	// escape HTML
 	message = Chat.escapeHTML(message);
 
 	// add emotes
 	message = demFeels(message);
-
+	
 	// __italics__
 	message = message.replace(/\_\_([^< ](?:[^<]*?[^< ])?)\_\_(?![^<]*?<\/a)/g, '<i>$1</i>');
 
 	// **bold**
 	message = message.replace(/\*\*([^< ](?:[^<]*?[^< ])?)\*\*/g, '<b>$1</b>');
-
+	
+	// >greentext
+	console.log(message);
+	if (message.startsWith("&gt;")) message = "<font color='#187902'>" + message + "</font>";
+	
+	return message;
+	
+	/*
+	 * Old emote code, will never be called but I'm leaving it in here just in case anyone feels like ever retracing it
+	 * - TheMezStrikes
+	 */
 	let group = user.getIdentity().charAt(0);
 	if (room && room.auth) group = room.auth[user.userid] || group;
 	if (pm && !user.hiding) group = user.group;

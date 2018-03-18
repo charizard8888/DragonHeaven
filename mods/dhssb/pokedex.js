@@ -1,6 +1,11 @@
 'use strict';
 
 exports.BattlePokedex = {
+	//Iron Crusher
+	bastiodon: {
+		inherit: true,
+		baseStats: {hp: 60, atk: 83, def: 168, spa: 47, spd: 138, spe: 30},
+	},
 	//%Elcrest
 	dragonite: {
 		inherit: true,
@@ -20,4 +25,24 @@ exports.BattlePokedex = {
 		inherit: true,
 		otherForms: ["dragonite", "gyarados"],
 	},
+	zapmasterpineapple: {
+    num: 560,
+    species: "Zapmaster-Pineapple",
+    baseSpecies: "Scrafty",
+    forme: "Pineapple",
+    formeLetter: "P",
+    types: ["Fighting", "Dark"],
+    baseStats: {
+        hp: 80,
+        atk: 110,
+        def: 180,
+        spa: 60,
+        spd: 180,
+        spe: 73
+    },
+    abilities: {
+        0: "Punishment Prize"
+    },
+    weightkg: 30,
+},
 };

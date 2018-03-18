@@ -1,845 +1,409 @@
+// Other Metas plugin by Spandan
 'use strict';
 
-const ProcessManager = require('./../process-manager');
-
-const MAX_PROCESSES = 1;
-const RESULTS_MAX_LENGTH = 10;
-
-const PM = exports.PM = new ProcessManager({
-	maxProcesses: MAX_PROCESSES,
-	execFile: __filename,
-	onMessageUpstream: function (message) {
-		// Protocol:
-		// "[id]|JSON"
-		let pipeIndex = message.indexOf('|');
-		let id = +message.substr(0, pipeIndex);
-		let result = JSON.parse(message.slice(pipeIndex + 1));
-
-		if (this.pendingTasks.has(id)) {
-			this.pendingTasks.get(id)(result);
-			this.pendingTasks.delete(id);
-			this.release();
-		}
-	},
-	onMessageDownstream: function (message) {
-		// protocol:
-		// "[id]|{data, sig}"
-		let pipeIndex = message.indexOf('|');
-		let id = message.substr(0, pipeIndex);
-
-		let data = JSON.parse(message.slice(pipeIndex + 1));
-		process.send(id + '|' + JSON.stringify(this.receive(data)));
-	},
-	receive: function (data) {
-		let result;
-		try {
-			switch (data.cmd) {
-			case 'randpoke':
-			case 'dexsearch':
-				result = runDexsearch(data.target, data.cmd, data.canAll, data.message);
-				break;
-			case 'movesearch':
-				result = runMovesearch(data.target, data.cmd, data.canAll, data.message);
-				break;
-			case 'itemsearch':
-				result = runItemsearch(data.target, data.cmd, data.canAll, data.message);
-				break;
-			case 'learn':
-				result = runLearn(data.target, data.message);
-				break;
-			default:
-				result = null;
-			}
-		} catch (err) {
-			require('./../crashlogger')(err, 'A search query', data);
-			result = {error: "Sorry! Our search engine crashed on your query. We've been automatically notified and will fix this crash."};
-		}
-		return result;
-	},
-	isChatBased: true,
-});
-
-if (process.send && module === process.mainModule) {
-	// This is a child process!
-
-	global.Config = require('../config/config');
-
-	if (Config.crashguard) {
-		process.on('uncaughtException', err => {
-			require('../crashlogger')(err, 'A dexsearch process', true);
-		});
-	}
-
-	global.Tools = require('../tools');
-	global.toId = Tools.getId;
-	Tools.includeData();
-	Tools.includeMods();
-	global.TeamValidator = require('../team-validator');
-
-	process.on('message', message => PM.onMessageDownstream(message));
-	process.on('disconnect', () => process.exit());
-
-	require('../repl').start('dexsearch', cmd => eval(cmd));
-} else if (!PM.maxProcesses) {
-	process.nextTick(() => Tools.includeMods());
-}//All this isfrom datasearch.js
-let isMega = function(zom) {
-        var k = "",
-                b = false;
-        zom = rebuild(zom);
-        for (var i = 0; i < k.length; i++) {
-
-                if (k.charAt(i) == 'm' && k.charAt(i + 1) == 'e' && k.charAt(i + 2) == 'g' && k.charAt(i + 3) == 'a')
-                        b = true;
-        }
-        if (k == "yanmega")
-                b = false;
-        if (k.charAt(0) == 'm')
-                if (pokemen[k.substring(1, k.length) + "mega"] != undefined)
-                        b = true;
-        return b;
-}
-let natures = {
-        adamant: {
-                name: "Adamant",
-                swap: true,
-                plus: 'atk',
-                minus: 'spa'
-        },
-        bashful: {
-                name: "Bashful",
-                swap: false,
-        },
-        bold: {
-                name: "Bold",
-                swap: true,
-                plus: 'def',
-                minus: 'atk'
-        },
-        brave: {
-                name: "Brave",
-                swap: true,
-                plus: 'atk',
-                minus: 'spe'
-        },
-        calm: {
-                name: "Calm",
-                swap: true,
-                plus: 'spd',
-                minus: 'atk'
-        },
-        careful: {
-                name: "Careful",
-                swap: true,
-                plus: 'spd',
-                minus: 'spa'
-        },
-        docile: {
-                name: "Docile",
-                swap: false
-        },
-        gentle: {
-                name: "Gentle",
-                swap: true,
-                plus: 'spd',
-                minus: 'def'
-        },
-        hardy: {
-                name: "Hardy",
-                swap: false
-        },
-        hasty: {
-                name: "Hasty",
-                swap: true,
-                plus: 'spe',
-                minus: 'def'
-        },
-        impish: {
-                name: "Impish",
-                swap: true,
-                plus: 'def',
-                minus: 'spa'
-        },
-        jolly: {
-                name: "Jolly",
-                swap: true,
-                plus: 'spe',
-                minus: 'spa'
-        },
-        lax: {
-                name: "Lax",
-                swap: true,
-                plus: 'def',
-                minus: 'spd'
-        },
-        lonely: {
-                name: "Lonely",
-                swap: true,
-                plus: 'atk',
-                minus: 'def'
-        },
-        mild: {
-                name: "Mild",
-                swap: true,
-                plus: 'spa',
-                minus: 'def'
-        },
-        modest: {
-                name: "Modest",
-                swap: true,
-                plus: 'spa',
-                minus: 'atk'
-        },
-        naive: {
-                name: "Naive",
-                swap: true,
-                plus: 'spe',
-                minus: 'spd'
-        },
-        naughty: {
-                name: "Naughty",
-                swap: true,
-                plus: 'atk',
-                minus: 'spd'
-        },
-        quiet: {
-                name: "Quiet",
-                swap: true,
-                plus: 'spa',
-                minus: 'spe'
-        },
-        quirky: {
-                name: "Quirky",
-                swap: false
-        },
-        rash: {
-                name: "Rash",
-                swap: true,
-                plus: 'spa',
-                minus: 'spd'
-        },
-        relaxed: {
-                name: "Relaxed",
-                swap: true,
-                plus: 'def',
-                minus: 'spe'
-        },
-        sassy: {
-                name: "Sassy",
-                swap: true,
-                plus: 'spd',
-                minus: 'spe'
-        },
-        serious: {
-                name: "Serious",
-                swap: false
-        },
-        timid: {
-                name: "Timid",
-                swap: true,
-                plus: 'spe',
-                minus: 'atk'
-        },
-};
-exports.commands= {
-	mixandmega: 'mnm',
-        mnm: function(target, room, user) {
+exports.commands = {
+	'!othermetas': true,
+	om: 'othermetas',
+	othermetas: function (target, room, user) {
 		if (!this.runBroadcast()) return;
-                var text = "",arg=target,by=user,pokemen=Tools.data.Pokedex; 
-                var stones = {
-                        abomasite: {
-                                atk: 40,
-                                def: 30,
-                                spa: 40,
-                                spd: 20,
-                                spe: -30,
-                                ability: 'Snow Warning',
-                                type: 'None',
-                                wt: 49.5
-                        },
-                        absolite: {
-                                atk: 20,
-                                def: 0,
-                                spa: 40,
-                                spd: 0,
-                                spe: 40,
-                                ability: 'Magic Bounce',
-                                type: 'None',
-                                wt: 2
-                        },
-                        aerodactylite: {
-                                atk: 30,
-                                def: 20,
-                                spa: 10,
-                                spd: 20,
-                                spe: 20,
-                                ability: 'Tough Claws',
-                                type: 'None',
-                                wt: 20
-                        },
-                        aggronite: {
-                                atk: 30,
-                                def: 50,
-                                spa: 0,
-                                spd: 20,
-                                spe: 20,
-                                ability: 'Filter',
-                                type: 'Steel',
-                                wt: 35
-                        },
-                        alakazite: {
-                                atk: 0,
-                                def: 20,
-                                spa: 40,
-                                spd: 0,
-                                spe: 30,
-                                ability: 'Trace',
-                                type: 'None',
-                                wt: 0
-                        },
-                        altarianite: {
-                                atk: 40,
-                                def: 20,
-                                spa: 40,
-                                spd: 0,
-                                spe: 0,
-                                ability: 'Pixilate',
-                                type: 'Fairy',
-                                wt: 0
-                        },
-                        ampharosite: {
-                                atk: 20,
-                                def: 20,
-                                spa: 50,
-                                spd: 20,
-                                spe: -10,
-                                ability: 'Mold Breaker',
-                                type: 'Dragon',
-                                wt: 0
-                        },
-                        audinite: {
-                                atk: 0,
-                                def: 40,
-                                spa: 20,
-                                spd: 40,
-                                spe: 0,
-                                ability: 'Healer',
-                                type: 'Fairy',
-                                wt: 1
-                        },
-                        banettite: {
-                                atk: 50,
-                                def: 10,
-                                spa: 10,
-                                spd: 20,
-                                spe: 10,
-                                ability: 'Prankster',
-                                type: 'None',
-                                wt: 0.5
-                        },
-                        blastoisinite: {
-                                atk: 20,
-                                def: 20,
-                                spa: 50,
-                                spd: 10,
-                                spe: 0,
-                                ability: 'Mega Launcher',
-                                type: 'None',
-                                wt: 15.6
-                        },
-                        cameruptite: {
-                                atk: 20,
-                                def: 30,
-                                spa: 40,
-                                spd: 30,
-                                spe: -20,
-                                ability: 'Sheer Force',
-                                type: 'None',
-                                wt: 100.5
-                        },
-                        'charizardite x': {
-                                atk: 46,
-                                def: 33,
-                                spa: 21,
-                                spd: 0,
-                                spe: 0,
-                                ability: 'Tough Claws',
-                                type: 'Dragon',
-                                wt: 20
-                        },
-                        'charizardite y': {
-                                atk: 20,
-                                def: 0,
-                                spa: 50,
-                                spd: 30,
-                                spe: 0,
-                                ability: 'Drought',
-                                type: 'None',
-                                wt: 10
-                        },
-                        diancite: {
-                                atk: 60,
-                                def: -40,
-                                spa: 60,
-                                spd: -40,
-                                spe: 60,
-                                ability: 'Magic Bounce',
-                                type: 'None',
-                                wt: 19
-                        },
-                        galladite: {
-                                atk: 40,
-                                def: 30,
-                                spa: 0,
-                                spd: 0,
-                                spe: 30,
-                                ability: 'Inner Focus',
-                                type: 'None',
-                                wt: 4.4
-                        },
-                        garchompite: {
-                                atk: 40,
-                                def: 20,
-                                spa: 40,
-                                spd: 10,
-                                spe: -10,
-                                ability: 'Sand Force',
-                                type: 'None',
-                                wt: 0
-                        },
-                        gardevoirite: {
-                                atk: 20,
-                                def: 0,
-                                spa: 40,
-                                spd: 20,
-                                spe: 20,
-                                ability: 'Pixilate',
-                                type: 'None',
-                                wt: 0
-                        },
-                        gengarite: {
-                                atk: 0,
-                                def: 20,
-                                spa: 40,
-                                spd: 20,
-                                spe: 20,
-                                ability: 'Shadow Tag',
-                                type: 'None',
-                                wt: 0
-                        },
-                        glalitite: {
-                                atk: 40,
-                                def: 0,
-                                spa: 40,
-                                spd: 0,
-                                spe: 20,
-                                ability: 'Refrigerate',
-                                type: 'None',
-                                wt: 93.7
-                        },
-                        gyaradosite: {
-                                atk: 30,
-                                def: 30,
-                                spa: 10,
-                                spd: 30,
-                                spe: 0,
-                                ability: 'Mold Breaker',
-                                type: 'Dark',
-                                wt: 70
-                        },
-                        heracronite: {
-                                atk: 60,
-                                def: 40,
-                                spa: 0,
-                                spd: 10,
-                                spe: -10,
-                                ability: 'Skill Link',
-                                type: 'None',
-                                wt: 8.5
-                        },
-                        houndoominite: {
-                                atk: 0,
-                                def: 40,
-                                spa: 30,
-                                spd: 10,
-                                spe: 20,
-                                ability: 'Solar Power',
-                                type: 'None',
-                                wt: 14.5
-                        },
-                        latiasite: {
-                                atk: 20,
-                                def: 30,
-                                spa: 30,
-                                spd: 20,
-                                spe: 0,
-                                ability: 'Levitate',
-                                type: 'None',
-                                wt: 12
-                        },
-                        latiosite: {
-                                atk: 40,
-                                def: 20,
-                                spa: 30,
-                                spd: 10,
-                                spe: 0,
-                                ability: 'Levitate',
-                                type: 'None',
-                                wt: 10
-                        },
-                        lopunnite: {
-                                atk: 60,
-                                def: 10,
-                                spa: 0,
-                                spd: 0,
-                                spe: 30,
-                                ability: 'Scrappy',
-                                type: 'Fighting',
-                                wt: 5
-                        },
-                        lucarionite: {
-                                atk: 35,
-                                def: 18,
-                                spa: 25,
-                                spd: 0,
-                                spe: 22,
-                                ability: 'Adaptability',
-                                type: 'None',
-                                wt: 3.5
-                        },
-                        manectite: {
-                                atk: 0,
-                                def: 20,
-                                spa: 30,
-                                spd: 20,
-                                spe: 30,
-                                ability: 'Intimidate',
-                                type: 'None',
-                                wt: 3.8
-                        },
-                        metagrossite: {
-                                atk: 10,
-                                def: 20,
-                                spa: 10,
-                                spd: 20,
-                                spe: 40,
-                                ability: 'Tough Claws',
-                                type: 'None',
-                                wt: 392.9
-                        },
-                        'mewtwonite x': {
-                                atk: 80,
-                                def: 10,
-                                spa: 0,
-                                spd: 10,
-                                spe: 0,
-                                ability: 'Steadfast',
-                                type: 'Fighting',
-                                wt: 5
-                        },
-                        'mewtwonite y': {
-                                atk: 40,
-                                def: -20,
-                                spa: 40,
-                                spd: 30,
-                                spe: 10,
-                                ability: 'Insomnia',
-                                type: 'None',
-                                wt: 89
-                        },
-                        pidgeotite: {
-                                atk: 0,
-                                def: 5,
-                                spa: 65,
-                                spd: 10,
-                                spe: 20,
-                                ability: 'No Guard',
-                                type: 'None',
-                                wt: 11
-                        },
-                        pinsirite: {
-                                atk: 30,
-                                def: 20,
-                                spa: 10,
-                                spd: 20,
-                                spe: 20,
-                                ability: 'Aerilate',
-                                type: 'Flying',
-                                wt: 4
-                        },
-                        sablenite: {
-                                atk: 10,
-                                def: 50,
-                                spa: 20,
-                                spd: 50,
-                                spe: -30,
-                                ability: 'Magic Bounce',
-                                type: 'None',
-                                wt: 150
-                        },
-                        salamencite: {
-                                atk: 10,
-                                def: 50,
-                                spa: 10,
-                                spd: 10,
-                                spe: 20,
-                                ability: 'Aerilate',
-                                type: 'None',
-                                wt: 10
-                        },
-                        sceptilite: {
-                                atk: 25,
-                                def: 10,
-                                spa: 40,
-                                spd: 0,
-                                spe: 25,
-                                ability: 'Lightning Rod',
-                                type: 'Dragon',
-                                wt: 3
-                        },
-                        scizorite: {
-                                atk: 20,
-                                def: 40,
-                                spa: 10,
-                                spd: 20,
-                                spe: 10,
-                                ability: 'Technician',
-                                type: 'None',
-                                wt: 7
-                        },
-                        sharpedonite: {
-                                atk: 20,
-                                def: 30,
-                                spa: 15,
-                                spd: 25,
-                                spe: 10,
-                                ability: 'Strong Jaw',
-                                type: 'None',
-                                wt: 41.5
-                        },
-                        slowbronite: {
-                                atk: 0,
-                                def: 70,
-                                spa: 30,
-                                spd: 0,
-                                spe: 0,
-                                ability: 'Shell Armor',
-                                type: 'None',
-                                wt: 31.5
-                        },
-                        steelixite: {
-                                atk: 40,
-                                def: 30,
-                                spa: 0,
-                                spd: 30,
-                                spe: 0,
-                                ability: 'Sand Force',
-                                type: 'None',
-                                wt: 340
-                        },
-                        swampertite: {
-                                atk: 40,
-                                def: 20,
-                                spa: 10,
-                                spd: 20,
-                                spe: 10,
-                                ability: 'Swift Swim',
-                                type: 'None',
-                                wt: 20.1
-                        },
-                        tyranitarite: {
-                                atk: 40,
-                                def: 20,
-                                spa: 10,
-                                spd: 20,
-                                spe: 10,
-                                ability: 'Sand Stream',
-                                type: 'None',
-                                wt: 53
-                        },
-                        venusaurite: {
-                                atk: 18,
-                                def: 40,
-                                spa: 22,
-                                spd: 20,
-                                spe: 0,
-                                ability: 'Thick Fat',
-                                type: 'None',
-                                wt: 55.5
-                        },
-                        'red orb': {
-                                atk: 30,
-                                def: 20,
-                                spa: 50,
-                                spd: 0,
-                                spe: 0,
-                                ability: 'Desolate Land',
-                                type: 'Fire',
-                                wt: 49.7
-                        },
-                        'blue orb': {
-                                atk: 50,
-                                def: 0,
-                                spa: 30,
-                                spd: 20,
-                                spe: 0,
-                                ability: 'Primodal Sea',
-                                type: 'None',
-                                wt: 78
-                        },
-                        beedrillite: {
-                                atk: 60,
-                                def: 0,
-                                spa: -30,
-                                spd: 0,
-                                spe: 70,
-                                ability: 'Adaptability',
-                                type: 'None',
-                                wt: 11
-                        },
-                        blazikenite: {
-                                atk: 40,
-                                def: 10,
-                                spa: 20,
-                                spd: 10,
-                                spe: 20,
-                                ability: 'Speed Boost',
-                                type: 'None',
-                                wt: 0
-                        },
-                        kangaskhanite: {
-                                atk: 30,
-                                def: 20,
-                                spa: 20,
-                                spd: 20,
-                                spe: 10,
-                                ability: 'Parental Bond',
-                                type: 'None',
-                                wt: 20
-                        },
-                        mawilite: {
-                                atk: 20,
-                                def: 40,
-                                spa: 0,
-                                spd: 40,
-                                spe: 0,
-                                ability: 'Huge Power',
-                                type: 'None',
-                                wt: 12
-                        },
-                        medichamite: {
-                                atk: 40,
-                                def: 10,
-                                spa: 20,
-                                spd: 10,
-                                spe: 20,
-                                ability: 'Pure Power',
-                                type: 'None',
-                                wt: 0
-                        }
-                };
-                let separated = arg.split(" ");
-                let stone = ("" + separated[0]).toLowerCase();
-                let name = ("" + separated[1]).toLowerCase();
-                let justincase = ("" + separated[2]).toLowerCase();
-                stone = toId(stone);
-                name = toId(name);
-                justincase = toId(justincase);
-                if (name == 'x' || name == 'y' || name == 'orb') {
-                        stone = stone + ' ' + name;
-                        name = justincase;
-                }
-                if (arg == '' || arg == ' ')
-                        this.sendReplyBox("Usage: <code>/mnm &lt;Mega Stone Name> &lt;Pokemon Name></code>");
-                else if (stones[stone] == undefined)
-                        this.errorReply("Error: Mega stone not found")
-                else if (pokemen[name] == undefined)
-                        this.errorReply("Error: Pokemon not found");
-                else {
-                        if (!isMega(name)) {
-                                let tot = {};
-                                let secondtype;
-                                if (stones[stone].type != 'None') {
-                                        if (stones[stone].type == pokemen[name].types[0])
-                                                secondtype = "";
-                                        else
-                                                secondtype = "/" + stones[stone].type;
-                                } else {
-                                        if (pokemen[name].types[1] == undefined)
-                                                secondtype = "";
-                                        else
-                                                secondtype = "/" + pokemen[name].types[1];
-                                }
-                                tot['hp'] = pokemen[name].baseStats.hp;
-                                tot['atk'] = pokemen[name].baseStats.atk + stones[stone].atk;
-                                tot['def'] = pokemen[name].baseStats.def + stones[stone].def;
-                                tot['spa'] = pokemen[name].baseStats.spa + stones[stone].spa;
-                                tot['spd'] = pokemen[name].baseStats.spd + stones[stone].spd;
-                                tot['spe'] = pokemen[name].baseStats.spe + stones[stone].spe;
-                                tot['wt'] = pokemen[name].weightkg + stones[stone].wt;
-                                tot['type'] = pokemen[name].types[0] + secondtype;
-                                let gnbp = function(wtkg) {
-                                        var bp;
-                                        if (wtkg > 0.1 && wtkg <= 9.9)
-                                                bp = 20;
-                                        if (wtkg > 10 && wtkg <= 24.9)
-                                                bp = 40;
-                                        if (wtkg > 25 && wtkg <= 49.9)
-                                                bp = 60;
-                                        if (wtkg > 50 && wtkg <= 99.9)
-                                                bp = 80;
-                                        if (wtkg > 100 && wtkg <= 199.9)
-                                                bp = 100;
-                                        if (wtkg > 199.9)
-                                                bp = 120;
-                                        return bp;
-                                }
-                                if (tot['hp'] > 255 || tot['hp'] < 0 || tot['atk'] > 255 || tot['atk'] < 0 || tot['def'] > 255 || tot['def'] < 0 || tot['spa'] > 255 || tot['spa'] < 0 || tot['spd'] > 255 || tot['spd'] < 0 || tot['spe'] > 255 || tot['spe'] < 0) {
-                                        if (tot['hp'] > 255)
-                                                tot['hp'] = 255;
-                                        if (tot['atk'] > 255)
-                                                tot['atk'] = 255;
-                                        if (tot['def'] > 255)
-                                                tot['def'] = 255;
-                                        if (tot['spa'] > 255)
-                                                tot['spa'] = 255;
-                                        if (tot['spd'] > 255)
-                                                tot['spd'] = 255;
-                                        if (tot['spe'] > 255)
-                                                tot['spe'] = 255;
-                                        if (tot['hp'] < 1)
-                                                tot['hp'] = 1;
-                                        if (tot['atk'] < 1)
-                                                tot['atk'] = 1;
-                                        if (tot['def'] < 1)
-                                                tot['def'] = 1;
-                                        if (tot['spa'] < 1)
-                                                tot['spa'] = 1;
-                                        if (tot['spd'] < 1)
-                                                tot['spd'] = 1;
-                                        if (tot['spe'] < 1)
-                                                tot['spe'] = 1;
-                                        text = "The new stats are: " + tot['hp'] + "/" + tot['atk'] + "/" + tot['def'] + "/" + tot['spa'] + "/" + tot['spd'] + "/" + tot['spe'] + "<br />"
-+"Ability:<b>" + stones[stone].ability + "</b><br />" 
-+"Type:<b>" + tot['type'] + "</b><br />" 
-+"GrassKnot/LowKick Base Power:<b>" + gnbp(tot['wt'])+"</b>";
+		target = toId(target);
+		let buffer = "";
 
-                                } else
-                                        text = "The new stats are: " + tot['hp'] + "/" + tot['atk'] + "/" + tot['def'] + "/" + tot['spa'] + "/" + tot['spd'] + "/" + tot['spe'] + "<br />"
-+"Ability:<b>" + stones[stone].ability + "</b><br />" 
-+"Type:<b>" + tot['type'] + "</b><br />" 
-+"GrassKnot/LowKick Base Power:<b>" + gnbp(tot['wt'])+"</b>";
+		if (target === 'all' && this.broadcasting) {
+			return this.sendReplyBox("You cannot broadcast information about all Other Metagames at once.");
+		}
 
-                        } else
-                                text += "<font color=\"red\">Uh, I don't think you can mega evolve a mega Pokemon....</font>"
-                        this.sendReplyBox(text);
-                }
-        },
+		if (!target || target === 'all') {
+			buffer += "- <a href=\"http://www.smogon.com/forums/forums/394/\">Other Metagames Forum</a><br />";
+			if (!target) return this.sendReplyBox(buffer);
+		}
+		let showMonthly = (target === 'all' || target === 'omofthemonth' || target === 'omotm' || target === 'month');
+
+		if (target === 'all') {
+			// Display OMotM formats, with forum thread links as caption
+			this.parse('/formathelp omofthemonth');
+
+			// Display the rest of OM formats, with OM hub/index forum links as caption
+			this.parse('/formathelp othermetagames');
+			return this.sendReply('|raw|<center>' + buffer + '</center>');
+		}
+		if (showMonthly) {
+			this.target = 'omofthemonth';
+			this.run('formathelp');
+		} else {
+			this.run('formathelp');
+		}
+	},
+	othermetashelp: [
+		`/om - Provides links to information on the Other Metagames.`,
+		`!om - Show everyone that information. Requires: + % @ * # & ~`,
+	],
+
+	"!crossevolve": true,
+	ce: "crossevolve",
+	crossevo: "crossevolve",
+	crossevolve: function(target, user, room)
+	{
+		if (!this.runBroadcast()) return;
+		if (!target || !target.includes(',')) return this.parse('/help crossevo')
+		let pokes = target.split(",");
+		if (!Dex.data.Pokedex[toId(pokes[0])] || !Dex.data.Pokedex[toId(pokes[1])]) {
+			return this.errorReply('Error: Pokemon not found.')
+		}
+		let template = Object.assign({}, Dex.getTemplate(pokes[0])), crossTemplate = Object.assign({}, Dex.getTemplate(pokes[1]));
+		let prevo = Dex.getTemplate(crossTemplate.prevo);
+		let mixedTemplate = Object.assign({}, template);
+		if (!template.evos || !template.evos.length) {
+			return this.errorReply(`Error: ${template.species} does not evolve.`);
+		}
+		if (!prevo.exists) {
+			return this.errorReply(`Error: You cannot cross evolve into ${crossTemplate.species}.`);
+		}
+		let setStage = 1, crossStage = 1;
+		if (template.prevo) {
+			setStage++;
+			if (Dex.data.Pokedex[template.prevo].prevo) {
+				setStage++;
+			}
+		}
+		if (crossTemplate.prevo) {
+			crossStage++;
+			if (prevo.prevo) {
+				crossStage++;
+			}
+		}
+		if (setStage + 1 !== crossStage) {
+			return this.sendReply(`Error: Cross evolution must follow evolutionary stages. (${template.species} is Stage ${setStage} and can only cross evolve to Stage ${setStage + 1})`);
+		}
+		mixedTemplate.abilities = Object.assign({}, crossTemplate.abilities);
+		mixedTemplate.baseStats = {};
+		for (let statName in template.baseStats) {
+			mixedTemplate.baseStats[statName] = (crossTemplate.baseStats[statName] - prevo.baseStats[statName]) + Dex.data.Pokedex[template.id].baseStats[statName];
+		}
+		mixedTemplate.types = [Dex.data.Pokedex[template.id].types[0]];
+		if (Dex.data.Pokedex[template.id].types[1]) mixedTemplate.types.push(Dex.data.Pokedex[template.id].types[1]);
+		if (crossTemplate.types[0] !== prevo.types[0]) mixedTemplate.types[0] = crossTemplate.types[0];
+		if (crossTemplate.types[1] !== prevo.types[1]) mixedTemplate.types[1] = crossTemplate.types[1] || crossTemplate.types[0];
+		if (mixedTemplate.types[0] === mixedTemplate.types[1]) mixedTemplate.types.length = 1;
+		mixedTemplate.weightkg = crossTemplate.weightkg - prevo.weightkg + Dex.data.Pokedex[template.id].weightkg;
+		if (mixedTemplate.weightkg <= 0) {
+			mixedTemplate.weightkg = 0.1;
+		}
+		for (var i in mixedTemplate.baseStats) {
+			if (mixedTemplate.baseStats[i] < 1 || mixedTemplate.baseStats[i] > 255) {
+				return this.errorReply(`This Cross Evolution cannot happen since a stat goes below 0 or above 255.`);
+			}
+		}
+		mixedTemplate.tier = "CE";
+		let details;
+		let weighthit = 20;
+		if (mixedTemplate.weightkg >= 200) {
+			weighthit = 120;
+		} else if (mixedTemplate.weightkg >= 100) {
+			weighthit = 100;
+		} else if (mixedTemplate.weightkg >= 50) {
+			weighthit = 80;
+		} else if (mixedTemplate.weightkg >= 25) {
+			weighthit = 60;
+		} else if (mixedTemplate.weightkg >= 10) {
+			weighthit = 40;
+		}
+		details = {
+			"Dex#": mixedTemplate.num,
+			"Gen": mixedTemplate.gen,
+			"Height": mixedTemplate.heightm + " m",
+			"Weight": mixedTemplate.weightkg + " kg <em>(" + weighthit + " BP)</em>",
+			"Dex Colour": mixedTemplate.color,
+		};
+		if (mixedTemplate.eggGroups) details["Egg Group(s)"] = mixedTemplate.eggGroups.join(", ");
+		details['<font color="#686868">Does Not Evolve</font>'] = "";
+		this.sendReply(`|raw|${Chat.getDataPokemonHTML(mixedTemplate)}`);
+		this.sendReply('|raw|<font size="1">' + Object.keys(details).map(detail => {
+				if (details[detail] === '') return detail;
+				return '<font color="#686868">' + detail + ':</font> ' + details[detail];
+			}).join("&nbsp;|&ThickSpace;") + '</font>');
+	},
+	crossevolvehelp: ["/crossevo <base pokemon>, <evolved pokemon> - Shows the type and stats for the Cross Evolved Pokemon."],
+
+	"!mixandmega": true,
+	mnm: 'mixandmega',
+	mixandmega: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		if (!toId(target) || !target.includes('@')) return this.parse('/help mixandmega');
+		let sep = target.split('@');
+		let stone;
+		if (toId(sep[1]) === 'dragonascent') {
+			stone = {
+				megaStone: "Rayquaza-Mega",
+				megaEvolves: "Rayquaza",
+			};
+		} else {
+			stone = Dex.getItem(sep[1]);
+		}
+		let template = Object.assign({}, Dex.getTemplate(sep[0]));
+		if (!stone.megaEvolves && !stone.onPrimal) return this.errorReply(`Error: Mega Stone not found.`);
+		if (!template.exists) return this.errorReply(`Error: Pokemon not found.`);
+		if (template.isMega || (template.evos && Object.keys(template.evos).length > 0) || template.name === 'Necrozma-Ultra') { // Mega Pokemon and Ultra Necrozma cannot be mega evolved
+			this.errorReply(`Warning: You cannot mega evolve non-fully evolved Pokemon, Mega Pokemon, and Ultra Necrozma in Mix and Mega.`);
+		}
+		let banlist = Dex.getFormat('gen7mixandmega').banlist;
+		if (banlist.includes(stone.name)) {
+			this.errorReply(`Warning: ${stone.name} is banned from Mix and Mega.`);
+		}
+		let restrictedStones = Dex.getFormat('gen7mixandmega').restrictedStones;
+		if (restrictedStones.includes(stone.name) && template.name !== stone.megaEvolves) {
+			this.errorReply(`Warning: ${stone.name} is restricted to ${stone.megaEvolves} in Mix and Mega.`);
+		}
+		let cannotMega = Dex.getFormat('gen7mixandmega').cannotMega;
+		if (cannotMega.includes(template.name) && template.name !== stone.megaEvolves && !template.isMega) { // Separate messages because there's a difference between being already mega evolved / NFE and being banned from mega evolving
+			this.errorReply(`Warning: ${template.name} is banned from mega evolving with a non-native mega stone in Mix and Mega.`);
+		}
+		if (['Multitype', 'RKS System'].includes(template.abilities['0']) && !['Arceus', 'Silvally'].includes(template.name)) {
+			this.errorReply(`Warning: ${template.name} is required to hold ${template.baseSpecies === 'Silvally' ? template.requiredItem : 'either ' + template.requiredItems[0] + ' or ' + template.requiredItems[1]}.`);
+		}
+		if (stone.isUnreleased) {
+			this.errorReply(`Warning: ${stone.name} is unreleased and is not usable in current Mix and Mega.`);
+		}
+		if (toId(sep[1]) === 'dragonascent' && !['smeargle', 'rayquaza', 'rayquazamega'].includes(toId(sep[0]))) {
+			this.errorReply(`Warning: Only Pokemon with access to Dragon Ascent can mega evolve with Mega Rayquaza's traits.`);
+		}
+		// Fake Pokemon and Mega Stones
+		if (template.isNonstandard) {
+			this.errorReply(`Warning: ${template.name} is not a real Pokemon and is therefore not usable in Mix and Mega.`);
+		}
+		if (stone.isNonstandard) {
+			this.errorReply(`Warning: ${stone.name} is a fake mega stone created by the CAP Project and is restricted to the CAP ${stone.megaEvolves}.`);
+		}
+		let baseTemplate = Dex.getTemplate(stone.megaEvolves);
+		let megaTemplate = Dex.getTemplate(stone.megaStone);
+		if (stone.id === 'redorb') { // Orbs do not have 'Item.megaStone' or 'Item.megaEvolves' properties.
+			megaTemplate = Dex.getTemplate("Groudon-Primal");
+			baseTemplate = Dex.getTemplate("Groudon");
+		} else if (stone.id === 'blueorb') {
+			megaTemplate = Dex.getTemplate("Kyogre-Primal");
+			baseTemplate = Dex.getTemplate("Kyogre");
+		}
+		let deltas = {
+			baseStats: {},
+			weightkg: megaTemplate.weightkg - baseTemplate.weightkg,
+		};
+		for (let statId in megaTemplate.baseStats) {
+			deltas.baseStats[statId] = megaTemplate.baseStats[statId] - baseTemplate.baseStats[statId];
+		}
+		if (megaTemplate.types.length > baseTemplate.types.length) {
+			deltas.type = megaTemplate.types[1];
+		} else if (megaTemplate.types.length < baseTemplate.types.length) {
+			deltas.type = baseTemplate.types[0];
+		} else if (megaTemplate.types[1] !== baseTemplate.types[1]) {
+			deltas.type = megaTemplate.types[1];
+		}
+		//////////////////////////////////////////
+		let mixedTemplate = Object.assign({}, template);
+		mixedTemplate.abilities = Object.assign({}, megaTemplate.abilities);
+		if (mixedTemplate.types[0] === deltas.type) { // Add any type gains
+			mixedTemplate.types = [deltas.type];
+		} else if (deltas.type) {
+			mixedTemplate.types = [mixedTemplate.types[0], deltas.type];
+		}
+		mixedTemplate.baseStats = {};
+		for (let statName in template.baseStats) { // Add the changed stats and weight
+			mixedTemplate.baseStats[statName] = Dex.clampIntRange(Dex.data.Pokedex[template.id].baseStats[statName] + deltas.baseStats[statName], 1, 255);
+		}
+		mixedTemplate.weightkg = Math.round(Math.max(0.1, template.weightkg + deltas.weightkg) * 100) / 100;
+		mixedTemplate.tier = "MnM";
+		let details;
+		let weighthit = 20;
+		if (mixedTemplate.weightkg >= 200) {
+			weighthit = 120;
+		} else if (mixedTemplate.weightkg >= 100) {
+			weighthit = 100;
+		} else if (mixedTemplate.weightkg >= 50) {
+			weighthit = 80;
+		} else if (mixedTemplate.weightkg >= 25) {
+			weighthit = 60;
+		} else if (mixedTemplate.weightkg >= 10) {
+			weighthit = 40;
+		}
+		details = {
+			"Dex#": mixedTemplate.num,
+			"Gen": mixedTemplate.gen,
+			"Height": mixedTemplate.heightm + " m",
+			"Weight": mixedTemplate.weightkg + " kg <em>(" + weighthit + " BP)</em>",
+			"Dex Colour": mixedTemplate.color,
+		};
+		if (mixedTemplate.eggGroups) details["Egg Group(s)"] = mixedTemplate.eggGroups.join(", ");
+		details['<font color="#686868">Does Not Evolve</font>'] = "";
+		this.sendReply(`|raw|${Chat.getDataPokemonHTML(mixedTemplate)}`);
+		this.sendReply('|raw|<font size="1">' + Object.keys(details).map(detail => {
+			if (details[detail] === '') return detail;
+			return '<font color="#686868">' + detail + ':</font> ' + details[detail];
+		}).join("&nbsp;|&ThickSpace;") + '</font>');
+	},
+	mixandmegahelp: [`/mnm <pokemon> @ <mega stone> - Shows the Mix and Mega evolved Pokemon's type and stats.`],
+
+	'!stone': true,
+	orb: 'stone',
+	megastone: 'stone',
+	stone: function (target) {
+		if (!this.runBroadcast()) return;
+		let targetid = toId(target);
+		if (!targetid) return this.parse('/help stone');
+		let stone;
+		if (targetid === 'dragonascent') {
+			stone = {
+				megaStone: "Rayquaza-Mega",
+				megaEvolves: "Rayquaza",
+			};
+		} else {
+			stone = Dex.getItem(target);
+		}
+		if (!stone.megaEvolves && !stone.onPrimal) return this.errorReply(`Error: Mega Stone not found.`);
+		let banlist = Dex.getFormat('gen7mixandmega').banlist;
+		if (banlist.includes(stone.name)) {
+			this.errorReply(`Warning: ${stone.name} is banned from Mix and Mega.`);
+		}
+		let restrictedStones = Dex.getFormat('gen7mixandmega').restrictedStones;
+		if (restrictedStones.includes(stone.name)) {
+			this.errorReply(`Warning: ${stone.name} is restricted to ${stone.megaEvolves} in Mix and Mega.`);
+		}
+		if (stone.isUnreleased) {
+			this.errorReply(`Warning: ${stone.name} is unreleased and is not usable in current Mix and Mega.`);
+		}
+		if (targetid === 'dragonascent') {
+			this.errorReply(`Warning: Only Pokemon with access to Dragon Ascent can mega evolve with Mega Rayquaza's traits.`);
+		}
+		// Fake Mega Stones
+		if (stone.isNonstandard) {
+			this.errorReply(`Warning: ${stone.name} is a fake mega stone created by the CAP Project and is restricted to the CAP ${stone.megaEvolves}.`);
+		}
+		let baseTemplate = Dex.getTemplate(stone.megaEvolves);
+		let megaTemplate = Dex.getTemplate(stone.megaStone);
+		if (stone.id === 'redorb') { // Orbs do not have 'Item.megaStone' or 'Item.megaEvolves' properties.
+			baseTemplate = Dex.getTemplate("Groudon");
+			megaTemplate = Dex.getTemplate("Groudon-Primal");
+		} else if (stone.id === 'blueorb') {
+			baseTemplate = Dex.getTemplate("Kyogre");
+			megaTemplate = Dex.getTemplate("Kyogre-Primal");
+		}
+		let deltas = {
+			baseStats: {},
+			weightkg: megaTemplate.weightkg - baseTemplate.weightkg,
+		};
+		for (let statId in megaTemplate.baseStats) {
+			deltas.baseStats[statId] = megaTemplate.baseStats[statId] - baseTemplate.baseStats[statId];
+		}
+		if (megaTemplate.types.length > baseTemplate.types.length) {
+			deltas.type = megaTemplate.types[1];
+		} else if (megaTemplate.types.length < baseTemplate.types.length) {
+			deltas.type = baseTemplate.types[0];
+		} else if (megaTemplate.types[1] !== baseTemplate.types[1]) {
+			deltas.type = megaTemplate.types[1];
+		}
+		let details = {
+			"Gen": 6,
+			"Weight": (JSON.stringify(deltas.weightkg).startsWith("-") ? "" : "+") + Math.round(deltas.weightkg * 100) / 100 + " kg",
+		};
+		let tier;
+		if (['redorb', 'blueorb'].includes(stone.id)) {
+			tier = "Orb";
+		} else if (targetid === "dragonascent") {
+			tier = "Move";
+		} else {
+			tier = "Stone";
+		}
+		let buf = `<li class="result">`;
+		buf += `<span class="col numcol">${tier}</span> `;
+		if (targetid === "dragonascent") {
+			buf += `<span class="col itemiconcol"></span>`;
+		} else {
+			buf += `<span class="col itemiconcol"><psicon item="${targetid}"/></span> `;
+		}
+		if (targetid === "dragonascent") {
+			buf += `<span class="col movenamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/moves/${targetid}" target="_blank">Dragon Ascent</a></span> `;
+		} else {
+			buf += `<span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://pokemonshowdown.com/dex/items/${stone.id}" target="_blank">${stone.name}</a></span> `;
+		}
+		if (deltas.type) {
+			buf += `<span class="col typecol"><img src="https://play.pokemonshowdown.com/sprites/types/${deltas.type}.png" alt="${deltas.type}" height="14" width="32"></span> `;
+		} else {
+			buf += `<span class="col typecol"></span>`;
+		}
+		buf += `<span style="float:left;min-height:26px">`;
+		buf += `<span class="col abilitycol">${megaTemplate.abilities['0']}</span>`;
+		buf += `<span class="col abilitycol"></span>`;
+		buf += `</span>`;
+		buf += `<span style="float:left;min-height:26px">`;
+		buf += `<span class="col statcol"><em>HP</em><br />0</span> `;
+		buf += `<span class="col statcol"><em>Atk</em><br />${deltas.baseStats.atk}</span> `;
+		buf += `<span class="col statcol"><em>Def</em><br />${deltas.baseStats.def}</span> `;
+		buf += `<span class="col statcol"><em>SpA</em><br />${deltas.baseStats.spa}</span> `;
+		buf += `<span class="col statcol"><em>SpD</em><br />${deltas.baseStats.spd}</span> `;
+		buf += `<span class="col statcol"><em>Spe</em><br />${deltas.baseStats.spe}</span> `;
+		buf += `<span class="col bstcol"><em>BST<br />100</em></span> `;
+		buf += `</span>`;
+		buf += `</li>`;
+		this.sendReply(`|raw|<div class="message"><ul class="utilichart">${buf}<li style="clear:both"></li></ul></div>`);
+		this.sendReply(`|raw|<font size="1"><font color="#686868">Gen:</font> ${details["Gen"]}&nbsp;|&ThickSpace;<font color="#686868">Weight:</font> ${details["Weight"]}</font>`);
+	},
+	stonehelp: [`/stone <mega stone> - Shows the changes that a mega stone/orb applies to a Pokemon.`],
+
+	'!350cup': true,
+	'350': '350cup',
+	'350cup': function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		if (!toId(target)) return this.parse('/help 350cup');
+		let template = Object.assign({}, Dex.getTemplate(target));
+		if (!template.exists) return this.errorReply("Error: Pokemon not found.");
+		let bst = 0;
+		for (let i in template.baseStats) {
+			bst += template.baseStats[i];
+		}
+		let newStats = {};
+		for (let i in template.baseStats) {
+			newStats[i] = template.baseStats[i] * (bst <= 350 ? 2 : 1);
+		}
+		template.baseStats = Object.assign({}, newStats);
+		this.sendReply(`|html|${Chat.getDataPokemonHTML(template)}`);
+	},
+	'350cuphelp': [`/350 OR /350cup <pokemon> - Shows the base stats that a Pokemon would have in 350 Cup.`],
+
+	'!tiershift': true,
+	ts: 'tiershift',
+	tiershift: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		if (!toId(target)) return this.parse('/help tiershift');
+		let template = Object.assign({}, Dex.getTemplate(target));
+		if (!template.exists) return this.errorReply("Error: Pokemon not found.");
+		let boosts = {
+			'UU': 10,
+			'BL2': 10,
+			'RU': 20,
+			'BL3': 20,
+			'NU': 30,
+			'BL4': 30,
+			'PU': 40,
+			'NFE': 40,
+			'LC Uber': 40,
+			'LC': 40,
+		};
+		if (!(template.tier in boosts)) return this.sendReply(`|html|${Chat.getDataPokemonHTML(template)}`);
+		let boost = boosts[template.tier];
+		let newStats = Object.assign({}, template.baseStats);
+		for (let statName in template.baseStats) {
+			newStats[statName] = Dex.clampIntRange(newStats[statName] + boost, 1, 255);
+		}
+		template.baseStats = Object.assign({}, newStats);
+		this.sendReply(`|raw|${Chat.getDataPokemonHTML(template)}`);
+	},
+	tiershifthelp: [`/ts OR /tiershift <pokemon> - Shows the base stats that a Pokemon would have in Tier Shift.`],
+
+	//Misc commands for DragonHeaven
 	ns: 'natureswap',
         'natureswap': function(target, room, user) {
 		if (!this.runBroadcast()) return;
 		let arg=target,by=user;
-		let pokemen=Tools.data.Pokedex;
+		let natures = Object.assign({}, Dex.data.Natures);
+		let pokemen = Object.assign({}, Dex.data.Pokedex);
                 let text = "";
                 if (arg == " " || arg == '') {
                         text += "Usage: <code>/ns &lt;Nature> &lt;Pokemon></code>";
@@ -869,7 +433,7 @@ exports.commands= {
                                         name: pokemen[p].species,
                                 };
                                 let natureobj = natures[nat];
-                                if (natureobj['swap']) {
+                                if (natureobj.plus && natureobj.minus) {
                                         temp = "<b>" + pokeobj[natureobj['plus']] + "</b>";
                                         pokeobj[natureobj['plus']] = "<b>" + pokeobj[natureobj['minus']] + "</b>";
                                         pokeobj[natureobj['minus']] = temp;
@@ -879,260 +443,362 @@ exports.commands= {
                 }
                 this.sendReplyBox(text);
         },
-	'ei':function(target,room,user)
-	{
-                 if (!this.runBroadcast()) return;
-		let abilities =
-		{
-			aerilate : 'Air Balloon',
-			adaptability : 'Apicot Berry',
-			adapt : 'Apicot Berry',
-			analytic:'Water Gem',
-			anticipation : 'Black Belt',
-			arenatrap : 'Bug Gem',
-			aromaveil : 'Black Glasses',
-			aurabreak : 'Black Sludge',
-			baddreams : 'BrightPowder',
-			battlearmor : 'Cell Battery',
-			bigpecks : 'Charcoal',
-			blaze : 'Charti Berry',
-			bulletproof : 'Chesto Berry',
-			cheekpouch : 'Chilan Berry',
-			chlorophyll : 'Chople Berry',
-			clearbody : 'Coba Berry',
-			cloudnine : 'Colbur Berry',
-			colorchange : 'Custap Berry',
-			competitive : 'Damp Rock',
-			compoundeyes : 'Dragon Fang',
-			contrary : 'Dark Gem',
-			cursedbody : 'Eject Button',
-			cutecharm : 'Expert Belt',
-			damp : 'Flame Orb',
-			darkaura : 'Focus Band',
-			defeatist : 'Full Incense',
-			defiant : 'Ganlon Berry',
-			deltastream : 'Grepa Berry',
-			desolateland : 'Grip Claw',
-			desoland : 'Grip Claw',
-			download : 'Haban Berry',
-			drizzle : 'Hard Stone',
-			drought : 'Heat Rock',
-			dryskin : 'Iapapa Berry',
-			earlybird : 'Icy Rock',
-			effectspore : 'Kasib Berry',
-			fairyaura : 'Kebia Berry',
-			filter : 'Kee Berry',
-			flamebody : 'Kelpsy Berry',
-			flareboost : 'King\'s Rock',
-			flashfire : 'Lagging Tail',
-			flowergift : 'Lansat Berry',
-			flowerveil : 'Lax Incense',
-			forecast : 'Leppa Berry',
-			forewarn : 'Liechi Berry',
-			friendguard : 'Luminous Moss',
-			frisk : 'Magnet',
-			furcoat : 'Dragon Gem',
-			fc : 'Dragon Gem',
-			galewings : 'Maranga Berry',
-			gw : 'Maranga Berry',
-			gluttony : 'Metal Coat',
-			gooey: 'Metronome',
-			grasspelt : 'Micle Berry',
-			guts: 'Miracle Seed',
-			harvest : 'Muscle Band',
-			healer : 'Mystic Water',
-			heatproof : 'Never-Melt Ice',
-			heavymetal : 'Occa Berry',
-			honeygather : 'Odd Incense',
-			hugepower : 'Electric Gem',
-			hustle : 'Passho Berry',
-			hydration : 'Payapa Berry',
-			hypercutter : 'Petaya Berry',
-			icebody : 'Poison Barb',
-			illuminate : 'Quick Claw',
-			illusion : 'Razor Claw',
-			immunity : 'Razor Fang',
-			imposter : 'Fairy Gem',
-			infiltrator : 'Rindo Berry',
-			innerfocus : 'Rock Incense',
-			insomnia : 'Rose Incense',
-			intimidate : 'Red Card',
-			intim : 'Red Card',
-			ironbarbs : 'Roseli Berry',
-			ironfist : 'Safety Goggles',
-			justified : 'Salac Berry',
-			keeneye : 'Scope Lens',
-			klutz : 'Sea Incense',
-			leafguard : 'Sharp Beak',
-			levitate : 'Nomel Berry',
-			lightmetal : 'Shell Bell',
-			lightningrod : 'Shuca Berry',
-			limber : 'Silk Scarf',
-			liquidooze : 'SilverPowder',
-			mbounce : 'Smooth Rock',
-			magicbounce : 'Smooth Rock',
-			magicguard : 'Snowball',
-			mguard : 'Snowball',
-			magician : 'Soft Sand',
-			magmaarmor : 'Spell Tag',
-			magnetpull : 'Starf Berry',
-			marvelscale : 'Sticky Barb',
-			megalauncher : 'Tanga Berry',
-			minus : 'TwistedSpoon',
-			moldbreaker : 'Wacan Berry',
-			moody : 'Wave Incense',
-			motordrive : 'Weakness Policy',
-			moxie : 'White Herb',
-			multiscale : 'Wide Lens',
-			multitype : 'Wise Glasses',
-			mummy : 'Yache Berry',
-			naturalcure : 'Zoom Lens',
-			noguard : 'Adamant Orb',
-			normalize : 'Burn Drive',
-			oblivious : 'Chill Drive',
-			overcoat : 'DeepSeaScale',
-			overgrow : 'DeepSeaTooth',
-			owntempo : 'Douse Drive',
-			parentalbond : 'Fire Gem',
-			pbond : 'Fire Gem',
-			pickpocket : 'Light Ball',
-			pickup : 'Lucky Punch',
-			pixilate : 'Griseous Orb',
-			plus : 'Lustrous Orb',
-			poisonheal : 'Metal Powder',
-			ph : 'Metal Powder',
-			poisonpoint : 'Quick Powder',
-			poisontouch : 'Shock Drive',
-			prankster : 'Mail',
-			prank : 'Soul Dew',
-			pressure : 'Stick',
-			primordialsea : 'Thick Club',
-			primsea : 'Thick Club',
-			protean : 'Aguav Berry',
-			purepower : 'Ice Gem',
-			quickfeet : 'Aspear Berry',
-			raindish : 'Binding Band',
-			rattled : 'Cheri Berry',
-			reckless : 'Destiny Knot',
-			refrigerate : 'Enigma Berry',
-			fridge : 'Enigma Berry',
-			regen : 'Figy Berry',
-			regenerator : 'Figy Berry',
-			rivalry : 'Float Stone',
-			rockhead : 'Iron Ball',
-			roughskin : 'Jaboca Berry',
-			runaway : 'Macho Brace',
-			sandforce : 'Mago Berry',
-			sandrush : 'Oran Berry',
-			sandstream : 'Pecha Berry',
-			sandveil : 'Persim Berry',
-			sapsipper : 'Rawst Berry',
-			scrappy : 'Ring Target',
-			serenegrace : 'Rowap Berry',
-			serenevil : 'Rowap Berry',
-			shadowtag : 'Poison Gem',
-			shedskin : 'Wiki Berry',
-			sheerforce : 'Armor Fossil',
-			sf : 'Armor Fossil',
-			shellarmor : 'Belue Berry',
-			shielddust : 'Bluk Berry',
-			simple : 'Psychic Gem',
-			skilllink : 'Cherish Ball',
-			slowstart : 'Claw Fossil',
-			sniper : 'Cornn Berry',
-			snowcloak : 'Cover Fossil',
-			snowwarning : 'Dive Ball',
-			solarpower : 'Dome Fossil',
-			solidrock : 'Dream Ball',
-			soundproof : 'Durin Berry',
-			speedboost : 'Dusk Ball',
-			stall : 'Electrizer',
-			stancechange : 'Energy Powder',
-			static : 'Fast Ball',
-			steadfast : 'Freind Ball',
-			stench : 'Great Ball',
-			stickyhold : 'Heal Ball',
-			stormdrain : 'Heavy Ball',
-			strongjaw : 'Helix Fossil',
-			sturdy : 'Hondew Berry',
-			suctioncups : 'Level Ball',
-			superluck : 'Love Ball',
-			swarm : 'Lure Ball',
-			sweetveil : 'Luxury Ball',
-			swiftswim : 'Magost Berry',
-			symbiosis : 'Master Ball',
-			synchronize : 'Moon Ball',
-			tangledfeet : 'Nanab Berry',
-			technician : 'Nest Ball',
-			tech : 'Nest Ball',
-			telepathy : 'Net Ball',
-			thickfat : 'Old Amber',
-			tintedlens : 'Pamtre Berry',
-			torrent : 'Park Ball',
-			toughclaws : 'Pinap Berry',
-			toxicboost : 'Plume Fossil',
-			trace : 'Poke Ball',
-			truant : 'Pomeg Berry',
-			unaware : 'Qualot Berry',
-			unburden : 'Quick Ball',
-			unnerve : 'Rabuta Berry',
-			victorystar : 'Rare Bone',
-			vitalspirit : 'Razz Berry',
-			voltabsorb : 'Repeat Ball',
-			waterabsorb : 'Root Fossil',
-			waterveil : 'Safari Ball',
-			weakarmor : 'Skull Fossil',
-			whitesmoke : 'Spelon Berry',
-			wonderguard : 'Steel Gem',
-			wg : 'Steel Gem',
-			wonderskin : 'Sport Ball',
-			zenmode : 'Tamato Berry',
-			aftermath : 'Premier Ball'
-		};
-		let text = "";
-	        let abe = toId(target);
-	        if(target=='')
-	        	text+="Usage: <code>/ei <Ability></code>"
-			else if(target=='bans')
-	        	text+="The current banlist for Enchanted Items is: Ubers, Kyurem-Black, Chatter, Shedinja, and the held abilities of Arena Trap, Contrary, Fur Coat, Huge Power, Imposter, Parental Bond, Pure Power, Shadow Tag, Simple, Trace(temporarily) and Wonder Guard.";
-	        else if(target=='retain')
-	        	text+="These items retain their effects in EI: Assault Vest, Choice Band, Choice Scarf, Choice Specs, Eviolite, Focus Sash, Leftovers, Life Orb, Light Clay, Lum Berry, Mental Herb, Power Herb, Rocky Helmet, Sitrus Berry, Toxic Orb, Mega Stones and Type Plates."
-	        else if(target=='turboblaze' || target == 'teravolt')
-	        	text+="Please use Mold Breaker instead of that ability, because it doesn't have an Enchanted Item anymore. The Enchanted Item for Mold Breaker is: Wacan Berry.";
-	        else if(abilities[abe]==undefined)
-	        	text+="Sorry, that ability does not exist."
-	        else
-	        	text+="The Enchanted Item for "+target+" is <b>"+abilities[abe]+"</b>.";
-	        this.sendReplyBox(text);
-	},
 	fuse: function(target, room, user) {
-         if (!this.runBroadcast()) return;
-        let text = "";
-        let separated = target.split(",");
-        let name = (("" + separated[0]).trim()).toLowerCase();
-        let name2 = (("" + separated[1]).trim()).toLowerCase();
-        name = toId(name);
-        name2 = toId(name2);
-	let pokemen=Tools.data.Pokedex;
-        if (pokemen[name]==undefined || pokemen[name2]==undefined)
-        {
-                this.errorReply("Error: Pokemon not found");
-		return;
-        }
-        else {
-                let baseStats = {};
-                baseStats['avehp'] = Math.floor((pokemen[name].baseStats.hp + pokemen[name2].baseStats.hp) / 2);
-                baseStats['aveatk'] = Math.floor((pokemen[name].baseStats.atk + pokemen[name2].baseStats.atk) / 2);
-                baseStats['avedef'] = Math.floor((pokemen[name].baseStats.def + pokemen[name2].baseStats.def) / 2);
-                baseStats['avespa'] = Math.floor((pokemen[name].baseStats.spa + pokemen[name2].baseStats.spa) / 2);
-                baseStats['avespd'] = Math.floor((pokemen[name].baseStats.spd + pokemen[name2].baseStats.spd) / 2);
-                baseStats['avespe'] = Math.floor((pokemen[name].baseStats.spe + pokemen[name2].baseStats.spe) / 2);
-                let type = pokemen[name].types[0];
-                if (pokemen[name].types[0] != pokemen[name2].types[0])
-                        type = type + '/' + pokemen[name2].types[0];
-                let bst = baseStats['avehp'] + baseStats['aveatk'] + baseStats['avedef'] + baseStats['avespa'] + baseStats['avespd'] + baseStats['avespe'];
-                text = "Stats: " + baseStats['avehp'] + "/" + baseStats['aveatk'] + "/" + baseStats['avedef'] + "/" + baseStats['avespa'] + "/" + baseStats['avespd'] + "/" + baseStats['avespe'] + " <b>BST</b>:" + bst + " <b>Type:</b> " + type;
-                this.sendReplyBox(text);
-        }
-},
+		if (!this.runBroadcast()) return;
+		if(!target || target === ' ' || !target.includes(',')) return this.errorReply('Error: Invalid Argument(s).')
+		let text = "";
+		let separated = target.split(",");
+		let name = toId(separated[0]), name2 = toId(separated[1]);
+		if (!Dex.data.Pokedex[name] || !Dex.data.Pokedex[name2]) {
+			return this.errorReply("Error: Pokemon not found");;
+		}
+		let baseStats = {}, fusedTemplate = Object.assign({}, Dex.getTemplate(name)), template = Object.assign({}, Dex.getTemplate(name2));
+		Object.keys(fusedTemplate.baseStats).forEach(stat => {
+			baseStats[stat] = Math.floor((fusedTemplate.baseStats[stat] + template.baseStats[stat]) / 2);
+		});
+		fusedTemplate.baseStats = Object.assign({}, baseStats);
+		fusedTemplate.types = [fusedTemplate.types[0]];
+		let type = (separated[2] && toId(separated[2]) === 'shiny' && template.types[1]) ? 1 : 0;
+		if(template.types[type] && template.types[type] !== fusedTemplate.types[0]) fusedTemplate.types.push(template.types[type]);
+		let weight = (Dex.data.Pokedex[fusedTemplate.id].weightkg + template.weightkg) / 2;
+		fusedTemplate.weightkg = weight;
+		fusedTemplate.abilities = Object.assign({'S': `<b>${template.abilities['0']}</b>`}, Dex.data.Pokedex[fusedTemplate.id].abilities);
+		this.sendReply(`|html|${Chat.getDataPokemonHTML(fusedTemplate)}`);
+		let details;
+		let weighthit = 20;
+		if (fusedTemplate.weightkg >= 200) {
+			weighthit = 120;
+		} else if (fusedTemplate.weightkg >= 100) {
+			weighthit = 100;
+		} else if (fusedTemplate.weightkg >= 50) {
+			weighthit = 80;
+		} else if (fusedTemplate.weightkg >= 25) {
+			weighthit = 60;
+		} else if (fusedTemplate.weightkg >= 10) {
+			weighthit = 40;
+		}
+		details = {
+			"Dex#": fusedTemplate.num,
+			"Gen": fusedTemplate.gen,
+			"Height": fusedTemplate.heightm + " m",
+			"Weight": fusedTemplate.weightkg + " kg <em>(" + weighthit + " BP)</em>",
+			"Dex Colour": fusedTemplate.color,
+		};
+		details['<font color="#686868">Does Not Evolve</font>'] = "";
+		this.sendReply('|raw|<font size="1">' + Object.keys(details).map(detail => {
+				if (details[detail] === '') return detail;
+				return '<font color="#686868">' + detail + ':</font> ' + details[detail];
+			}).join("&nbsp;|&ThickSpace;") + '</font>');
+	},
+	learnistor: function(target, room, user) {
+		if (!this.runBroadcast()) return;
+		let learnstor = Dex.mod('istor').data.Learnsets, movestor = Dex.mod('istor').data.Movedex, dexstor = Dex.mod('istor').data.Pokedex;
+		if (!target || toId(target) === '') return this.sendReply("/learnistor: Shows the whether a Pokemon can learn a move, including Pokemon and Moves from istor.");
+		let targets = target.split(','), mon = targets[0], move = targets[1];
+		if (!mon || !dexstor[toId(mon)]) return this.errorReply("Error: Pokemon not found");
+		if (!learnstor[toId(mon)]) return this.errorReply("Error: Learnset not found");
+		if (!move || !movestor[toId(move)]) return this.errorReply("Error: Move not found");
+		mon = dexstor[toId(mon)];
+		move = movestor[toId(move)];
+		if (learnstor[toId(mon.species)].learnset[toId(move.name)]) {
+			return this.sendReplyBox("In Istor, " + mon.species + ' <font color="green"><u><b>can<b><u></font> learn ' + move.name);
+		}
+		return this.sendReplyBox("In Istor, " + mon.species + ' <font color="red"><u><b>can\'t<b><u></font> learn ' + move.name);
+	},
+	
+	'bnb' : 'badnboosted',
+	badnboosted : function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		if(!Dex.data.Pokedex[toId(target)]) {
+			return this.errorReply("Error: Pokemon not found.")
+		}
+		let template = Object.assign({}, Dex.getTemplate(target));
+		let newStats = Object.values(template.baseStats).map(function (stat) {
+ 			return (stat <= 70) ? (stat * 2) : stat;
+ 		});
+		this.sendReplyBox(`${Dex.data.Pokedex[toId(target)].species} in Bad 'n Boosted: <br /> ${newStats.join('/')}`);
+	},
+	badnboostedhelp: ["/bnb <pokemon> - Shows the base stats that a Pokemon would have in Bad 'n Boosted."],
+
+	istorlist: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Istor Pokemon</h2></center>`;
+		let istorDex = require('../mods/istor/pokedex.js').BattlePokedex;
+		if (!istorDex) return this.errorReply("Error Fetching Istor Data.");
+		Object.values(istorDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.species}, Istor" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	istorlisthelp: ["/istorlist - Shows the list of Istor Pokemon."],
+	felist: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Fusion Evolution Pokemon</h2></center>`;
+		let feDex = require('../mods/fe/pokedex.js').BattlePokedex;
+		if (!feDex) return this.errorReply("Error Fetching FE Data.");
+		Object.values(feDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.species}, FE" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	felisthelp: ["/felist - Shows the list of Pokemon in Fusion Evolution."],
+	nerfmons: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Nerfed Pokemon</h2></center>`;
+		let feDex = require('../mods/nerfmons/pokedex.js').BattlePokedex;
+		if (!feDex) return this.errorReply("Error Fetching Nerf Data.");
+		Object.values(feDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.species}, nerfmons" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	nerfmonshelp: ["/nerfmons - Shows the list of Nerfed Pokemon."],
+	optimons: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Optimized Pokemon</h2></center>`;
+		let feDex = require('../mods/opti/pokedex.js').BattlePokedex;
+		if (!feDex) return this.errorReply("Error Fetching Opti Data.");
+		Object.values(feDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.species}, opti" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	optimonshelp: ["/optimons - Shows the list of Optimized."],
+	jillianlist: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Jillian Pokemon</h2></center>`;
+		let jillianDex = require('../mods/jillian/pokedex.js').BattlePokedex;
+		if (!jillianDex) return this.errorReply("Error Fetching Istor Data.");
+		Object.values(jillianDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.species}, Jillian" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	jillianlisthelp: ["/jillianlist - Shows the list of Pokemon in Jillian."],
+	eternalmons: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Eternal Pokemon</h2></center>`;
+		let jillianDex = require('../mods/eternal/pokedex.js').BattlePokedex;
+		if (!jillianDex) return this.errorReply("Error Fetching Istor Data.");
+		Object.values(jillianDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.species}, Eternal" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	eternalmonsthelp: ["/eternalmons - Shows the list of Pokemon in Eternal Pokemon."],
+	eternalmoves: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Eternal Pokemon Moves</h2></center>`;
+		let eternalDex = require('../mods/eternal/moves.js').BattleMovedex;
+		if (!eternalDex) return this.errorReply("Error Fetching Eternal Data.");
+		Object.values(eternalDex).forEach(move => {
+			buf += `<button name="send" value="/dt ${move.id}, Eternal" style="background:none;border:none;">${move.id}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+typeopt: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Type Optimisation Pokemon</h2></center>`;
+		let jillianDex = require('../mods/typeopt/pokedex.js').BattlePokedex;
+		if (!jillianDex) return this.errorReply("Error Fetching Istor Data.");
+		Object.values(jillianDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.species}, Typeopt" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+typeopthelp: ["/eternalmons - Shows the list of Pokemon in Type Optimisation Pokemon."],
+	usv: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Ultra Space Variants Pokemon</h2></center>`;
+		let jillianDex = require('../mods/usv/pokedex.js').BattlePokedex;
+		if (!jillianDex) return this.errorReply("Error Fetching Istor Data.");
+		Object.values(jillianDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.species}, Usv" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	usvhelp: ["/eternalmons - Shows the list of Pokemon in Ultra Space Variant."],
+	clovermons: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Clovermons</h2></center>`;
+		let jillianDex = require('../mods/clovermons/pokedex.js').BattlePokedex;
+		if (!jillianDex) return this.errorReply("Error Fetching Istor Data.");
+		Object.values(jillianDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.species}, Clovermons" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	clovermonshelp: ["/clovermons - Shows the list of Clovermons."],
+		eeveed: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Eeeved Pokemon</h2></center>`;
+		let jillianDex = require('../mods/eeveed/pokedex.js').BattlePokedex;
+		if (!jillianDex) return this.errorReply("Error Fetching Istor Data.");
+		Object.values(jillianDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.species}, eeveed" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	eeveedhelp: ["/eeveed - Shows the list of Pokemon in Eeevee'd."],
+	eeveedabilities: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Coded Eeveed Abilities</h2></center>`;
+		let feDex = require('../mods/eeveed/abilities.js').BattleAbilities;
+		if (!feDex) return this.errorReply("Error Fetching Eeveed Data.");
+		Object.values(feDex).forEach(ability => {
+			buf += `<button name="send" value="/dt ${ability.id}, Eeveed" style="background:none;border:none;">${ability.id}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	
+	tnfg: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of PTNFG Pokemon</h2></center>`;
+		let jillianDex = require('../mods/thefirstnewgen/pokedex.js').BattlePokedex;
+		if (!jillianDex) return this.errorReply("Error Fetching Istor Data.");
+		Object.values(jillianDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.species}, thefirstnewgen" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	tnfghelp: ["/tnfg - Shows the list of Pokemon in Pokemon: The New First Gen."],
+	
+		mfa: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of MFA Pokemon</h2><br>Clickable list!</center>`;
+		let mfaDex = require('../mods/megasforall/pokedex.js').BattlePokedex;
+		if (!mfaDex) return this.errorReply("Error Fetching MFA Data.");
+		Object.values(mfaDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.species}, megasforall" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+		mfahelp: ["/mfa - Shows the list of Pokemon in Megas For All."],
+	 alola: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Alola Formes Pokemon</h2></center>`;
+		let jillianDex = require('../mods/alola/pokedex.js').BattlePokedex;
+		if (!jillianDex) return this.errorReply("Error Fetching Istor Data.");
+		Object.values(jillianDex).forEach(mon => {
+			buf += `<button name="send" value="/dt ${mon.species}, alola" style="background:none;border:none;">${mon.species}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	alolahelp: ["/alola - Shows the list of Pokemon in Alola Formes."],
+	femegas: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Fusion Evolution Mega Stones</h2></center>`;
+		let feDex = require('../mods/fe/items.js').BattleItems;
+		if (!feDex) return this.errorReply("Error Fetching FE Data.");
+		Object.values(feDex).forEach(item => {
+			buf += `<button name="send" value="/dt ${item.name}, FE" style="background:none;border:none;">${item.id}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	femegashelp: ["/femegas - Shows the list of Mega Stones in Fusion Evolution."],
+	feabilities: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Coded Fusion Evolution Abilities</h2></center>`;
+		let feDex = require('../mods/fe/abilities.js').BattleAbilities;
+		if (!feDex) return this.errorReply("Error Fetching FE Data.");
+		Object.values(feDex).forEach(ability => {
+			buf += `<button name="send" value="/dt ${ability.id}, FE" style="background:none;border:none;">${ability.id}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+sylveitems: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Sylvemons Items Additions/Alterations</h2></center>`;
+		let sylveDex = require('../mods/sylvemons/items.js').BattleItems;
+		if (!sylveDex) return this.errorReply("Error Fetching Sylvemons Data.");
+		Object.values(sylveDex).forEach(item => {
+			buf += `<button name="send" value="/dt ${item.id}, Sylvemons" style="background:none;border:none;">${item.id}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	sylvemoves: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Sylvemons Moves Additions/Alterations</h2></center>`;
+		let sylveDex = require('../mods/sylvemons/moves.js').BattleMovedex;
+		if (!sylveDex) return this.errorReply("Error Fetching Sylvemons Data.");
+		Object.values(sylveDex).forEach(move => {
+			buf += `<button name="send" value="/dt ${move.id}, Sylvemons" style="background:none;border:none;">${move.id}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	sylveabilities: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Sylvemons Abilities Additions/Alterations</h2></center>`;
+		let sylveDex = require('../mods/sylvemons/abilities.js').BattleAbilities;
+		if (!sylveDex) return this.errorReply("Error Fetching Sylvemons Data.");
+		Object.values(sylveDex).forEach(ability => {
+			buf += `<button name="send" value="/dt ${ability.id}, Sylvemons" style="background:none;border:none;">${ability.id}</button><br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+gutter: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Alola Formes Pokemon</h2></center>`;
+		let jillianDex = require('../mods/fe/pokedex.js').BattlePokedex;
+		if (!jillianDex) return this.errorReply("Error Fetching Istor Data.");
+		Object.values(jillianDex).forEach(mon => {
+			buf += `&quot;${mon.species}&quot;: {<br> &quot;t1&quot;: &quot;${mon.types[0]}&quot;, <br>&quot;t2&quot;: &quot;${mon.types[1]}&quot;,<br> &quot;bs&quot;: { <br>&quot;hp&quot;: ${mon.baseStats.hp}, <br>&quot;at&quot;: ${mon.baseStats.atk}, <br> &quot;df&quot;: ${mon.baseStats.def}, <br> &quot;sa&quot;: ${mon.baseStats.spa},<br>&quot;sd&quot;: ${mon.baseStats.spd}, <br>&quot;sp&quot;: ${mon.baseStats.spe} <br> }, <br> },`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	egutter: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Alola Formes Pokemon</h2></center>`;
+		let jillianDex = require('../mods/eternal/pokedex.js').BattlePokedex;
+		if (!jillianDex) return this.errorReply("Error Fetching Istor Data.");
+		Object.values(jillianDex).forEach(mon => {
+			buf += `&quot;${mon.species}&quot;: {<br> &quot;t1&quot;: &quot;${mon.types[0]}&quot;, <br>&quot;t2&quot;: &quot;${mon.types[1]}&quot;,<br> &quot;bs&quot;: { <br>&quot;hp&quot;: ${mon.baseStats.hp}, <br>&quot;at&quot;: ${mon.baseStats.atk}, <br> &quot;df&quot;: ${mon.baseStats.def}, <br> &quot;sa&quot;: ${mon.baseStats.spa},<br>&quot;sd&quot;: ${mon.baseStats.spd}, <br>&quot;sp&quot;: ${mon.baseStats.spe} <br> }, <br> },`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	fespeed: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Fusion Evolution Pokemon</h2></center>`;
+		let feDex = require('../mods/fe/pokedex.js').BattlePokedex;
+		if (!feDex) return this.errorReply("Error Fetching FE Data.");
+		Object.values(feDex).forEach(mon => {
+			let speedtierplusscarf = (2.2 * mon.baseStats.spe + 108.9) * 1.5;
+			let speedtierscarf = (2 * mon.baseStats.spe + 99) * 1.5;
+			let speedtierplus = 2.2 * mon.baseStats.spe + 108.9;
+			let speedtier = 2 * mon.baseStats.spe + 99;
+			let speedtierzero = 2 * mon.baseStats.spe + 36;
+			buf += `${speedtierplus}: Fast+ ${mon.species}<br>${speedtier}: Fast ${mon.species}<br>${speedtierzero}: Bulky ${mon.species}<br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	eternalspeed: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Fusion Evolution Pokemon</h2></center>`;
+		let feDex = require('../mods/eternal/pokedex.js').BattlePokedex;
+		if (!feDex) return this.errorReply("Error Fetching FE Data.");
+		Object.values(feDex).forEach(mon => {
+			let speedtierplusscarf = (2.2 * mon.baseStats.spe + 108.9) * 1.5;
+			let speedtierscarf = (2 * mon.baseStats.spe + 99) * 1.5;
+			let speedtierplus = 2.2 * mon.baseStats.spe + 108.9;
+			let speedtier = 2 * mon.baseStats.spe + 99;
+			let speedtierzero = 2 * mon.baseStats.spe + 36;
+			buf += `${speedtierplusscarf}: Scarf Fast+ ${mon.species}<br>${speedtierscarf}: Scarf Fast ${mon.species}<br>${speedtierplus}: Fast+ ${mon.species}<br>${speedtier}: Fast ${mon.species}<br>${speedtierzero}: Bulky ${mon.species}<br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
+	fespeedscarf: function (target, room, user) {
+		if (!this.runBroadcast()) return;
+		let buf = `<div class=infobox-limited><center><h2>List Of Fusion Evolution Pokemon</h2></center>`;
+		let feDex = require('../mods/fe/pokedex.js').BattlePokedex;
+		if (!feDex) return this.errorReply("Error Fetching FE Data.");
+		Object.values(feDex).forEach(mon => {
+			let speedtierplusscarf = (2.2 * mon.baseStats.spe + 108.9) * 1.5;
+			let speedtierscarf = (2 * mon.baseStats.spe + 99) * 1.5;
+			let speedtierplus = 2.2 * mon.baseStats.spe + 108.9;
+			let speedtier = 2 * mon.baseStats.spe + 99;
+			let speedtierzero = 2 * mon.baseStats.spe + 36;
+			buf += `${speedtierplusscarf}: Scarf Fast+ ${mon.species}<br>${speedtierscarf}: Scarf Fast ${mon.species}<br>`;
+		});
+		this.sendReplyBox(`${buf}</div>`);
+	},
 };

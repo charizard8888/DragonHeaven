@@ -1,0 +1,123 @@
+{
+  "lostcove": {
+    "Bank": "lostcause146",
+    "custompmbox": {
+      "Item Name": "Custom Pm Box",
+      "Description": " gets a pm box custom made for you (pm Lost Cause 146 after you buy it DONT BUY IT IF lost cause 146 ISNT ONLINE ON MAIN OR HERE (or another server youre on) (ask someone like xp or digital edge if theyre not here) (DONT BUY if you dont have access to some sort of code or Css or stylish",
+      "Price": 15
+    }
+  },
+  "dragonrusharena": {
+    "Bank": "outrageousbot",
+    "dragonwarrior": {
+      "Item Name": "Dragon Warrior",
+      "Description": "Gives you the title \"Dragon Warrior\" - The best battler",
+      "Price": 500
+    }
+  },
+  "houseofreluxing": {
+    "voice": {
+      "Item Name": "Voice",
+      "Description": " Get a mouth and talk!",
+      "Price": 750
+    },
+    "driver": {
+      "Item Name": "Driver",
+      "Description": " Swing your golf clubs people!",
+      "Price": 1500
+    },
+    "mod": {
+      "Item Name": "Mod",
+      "Description": " Have Mods for call of duty here!",
+      "Price": 3500
+    },
+    "Bank": "bbgun999",
+    "meme": {
+      "Item Name": "meme",
+      "Description": " memememememez boi",
+      "Price": 100
+    },
+    "legends": {
+      "Item Name": "legends",
+      "Description": " add yourself to the legends button!!!",
+      "Price": 6000
+    },
+    "zard": {
+      "Item Name": "zard",
+      "Description": " Have charizard8888 as a friend.",
+      "Price": 8888
+    },
+    "photoz": {
+      "Item Name": "Photoz",
+      "Description": " add a random pic to the room for lolz.",
+      "Price": 1500
+    },
+    "troll": {
+      "Item Name": "Troll",
+      "Description": " you can never get this thing.",
+      "Price": 9999999999
+    },
+    "muzik": {
+      "Item Name": "muzik",
+      "Description": " (insert Lady Gaga song here)",
+      "Price": 6750
+    }
+  },
+  "chillin": {
+    "gifadd": {
+      "Item Name": "GIF Add",
+      "Description": " Add a gif to the list of GIFs that people can use. PM PI★EddyChomp or charizard8888 the link and the name you want it to be called. ",
+      "Price": 45
+    },
+    "Bank": "outrageousbot",
+    "joke": {
+      "Item Name": "Joke",
+      "Description": " Force PI★EddyChomp to type a Joke. :P ",
+      "Price": 10
+    },
+    "morechillingames": {
+      "Item Name": "More Chillin Games",
+      "Description": " Add a new game to the list of Chillin Games.",
+      "Price": 50
+    }
+  },
+  "dragonplayground": {
+    "10points": {
+      "Item Name": "10 Points",
+      "Description": " 10 OutrageousBoT points for Point Shop",
+      "Price": 1
+    },
+    "Bank": "snakexzero5",
+    "100points": {
+      "Item Name": "100 Points",
+      "Description": " 100 OutrageousBoT points for Point Shop",
+      "Price": 10
+    },
+    "water": {
+      "Item Name": "Water",
+      "Description": " Just a random item for rich users",
+      "Price": 3
+    },
+    "1card": {
+      "Item Name": "1 Card",
+      "Description": " This item is NFS currently",
+      "Price": 0
+    },
+    "lotteryticket": {
+      "Item Name": "Lottery Ticket",
+      "Description": " Ticket for Dragon Lottery",
+      "Price": 1
+    }
+  },
+  "art": {
+    "Bank": "diarmuidodyna"
+  },
+  "darklight": {
+    "Bank": "darkqueenjenny",
+    "lives": {
+      "Item Name": "Lives",
+      "Description": "You wiill Get 5 Points as Lives",
+      "Price": 3
+    }
+  }
+}

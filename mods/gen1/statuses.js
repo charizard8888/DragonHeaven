@@ -61,8 +61,8 @@ exports.BattleStatuses = {
 		effectType: 'Status',
 		onStart: function (target) {
 			this.add('-status', target, 'slp');
-			// 1-7 turns. Put 1-7 since they awake at end of turn.
-			this.effectData.startTime = this.random(1, 7);
+			// 1-7 turns
+			this.effectData.startTime = this.random(1, 8);
 			this.effectData.time = this.effectData.startTime;
 		},
 		onBeforeMovePriority: 10,
@@ -71,7 +71,7 @@ exports.BattleStatuses = {
 			if (pokemon.statusData.time > 0) {
 				this.add('cant', pokemon, 'slp');
 			}
-			pokemon.lastMove = '';
+			pokemon.lastMove = null;
 			return false;
 		},
 		onAfterMoveSelf: function (pokemon) {
@@ -86,7 +86,7 @@ exports.BattleStatuses = {
 		onBeforeMovePriority: 10,
 		onBeforeMove: function (pokemon, target, move) {
 			this.add('cant', pokemon, 'frz');
-			pokemon.lastMove = '';
+			pokemon.lastMove = null;
 			return false;
 		},
 		onHit: function (target, source, move) {
@@ -123,7 +123,7 @@ exports.BattleStatuses = {
 		onAfterMoveSelfPriority: 2,
 		onAfterMoveSelf: function (pokemon) {
 			pokemon.volatiles['residualdmg'].counter++;
-			this.damage(this.clampIntRange(Math.floor(pokemon.maxhp / 16), 1) * pokemon.volatiles['residualdmg'].counter, pokemon);
+			this.damage(this.clampIntRange(Math.floor(pokemon.maxhp / 16), 1) * pokemon.volatiles['residualdmg'].counter, pokemon, pokemon);
 		},
 		onSwitchIn: function (pokemon) {
 			// Regular poison status and damage after a switchout -> switchin.
@@ -214,7 +214,7 @@ exports.BattleStatuses = {
 			return duration;
 		},
 		onResidual: function (target) {
-			if (target.lastMove === 'struggle' || target.status === 'slp') {
+			if (target.lastMove && target.lastMove.id === 'struggle' || target.status === 'slp') {
 				delete target.volatiles['partialtrappinglock'];
 			}
 		},
@@ -225,10 +225,9 @@ exports.BattleStatuses = {
 			if (!pokemon.hasMove(this.effectData.move)) {
 				return;
 			}
-			let moves = pokemon.moveset;
-			for (let i = 0; i < moves.length; i++) {
-				if (moves[i].id !== this.effectData.move) {
-					pokemon.disableMove(moves[i].id);
+			for (const moveSlot of pokemon.moveSlots) {
+				if (moveSlot.id !== this.effectData.move) {
+					pokemon.disableMove(moveSlot.id);
 				}
 			}
 		},
@@ -238,54 +237,6 @@ exports.BattleStatuses = {
 		inherit: true,
 		durationCallback: function () {
 			return this.random(3, 5);
-		},
-	},
-	futuremove: {
-		// this is a side condition
-		onStart: function (side) {
-			this.effectData.positions = [];
-			for (let i = 0; i < side.active.length; i++) {
-				this.effectData.positions[i] = null;
-			}
-		},
-		onResidualOrder: 3,
-		onResidual: function (side) {
-			let finished = true;
-			for (let i = 0; i < side.active.length; i++) {
-				let posData = this.effectData.positions[i];
-				if (!posData) continue;
-
-				posData.duration--;
-
-				if (posData.duration > 0) {
-					finished = false;
-					continue;
-				}
-
-				// time's up; time to hit! :D
-				let target = side.foe.active[posData.targetPosition];
-				let move = this.getMove(posData.move);
-				if (target.fainted) {
-					this.add('-hint', '' + move.name + ' did not hit because the target is fainted.');
-					this.effectData.positions[i] = null;
-					continue;
-				}
-
-				this.add('-fieldactivate', move);
-				target.removeVolatile('Protect');
-				target.removeVolatile('Endure');
-
-				if (posData.moveData.ignoreImmunity === undefined) {
-					posData.moveData.ignoreImmunity = false;
-				}
-
-				this.moveHit(target, posData.source, move, posData.moveData);
-
-				this.effectData.positions[i] = null;
-			}
-			if (finished) {
-				side.removeSideCondition('futuremove');
-			}
 		},
 	},
 	stall: {
