@@ -762,8 +762,10 @@ gutter: function (target, room, user) {
 		let feDex = require('../mods/fe/pokedex.js').BattlePokedex;
 		if (!feDex) return this.errorReply("Error Fetching FE Data.");
 		Object.values(feDex).forEach(mon => {
-			let speedtier = 2 * mon.baseStats.spe + 108.9;
-			buf += `${speedtier}: ${mon.species}<br>`;
+			let speedtierplus = 2.2 * mon.baseStats.spe + 108.9;
+			let speedtier = 2 * mon.baseStats.spe + 99;
+			let speedtierzero = 2 * mon.baseStats.spe + 36;
+			buf += `${speedtierplus}: Fast+ ${mon.species}<br>${speedtier}: Fast ${mon.species}<br>${speedtierzero}: Bulky ${mon.species}<br>`;
 		});
 		this.sendReplyBox(`${buf}</div>`);
 	},
